@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "pickers": "/components/ming-picker/ming-picker"
+  }
+}

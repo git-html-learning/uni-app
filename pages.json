@@ -1,0 +1,141 @@
+{
+
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+
+	"pages": [{
+			"path": "pages/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/nitrogen/nitrogen",
+			"style": {
+				"navigationBarTitleText": "充氮气调",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		{
+			"path": "pages/homepage/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#6147f4"
+			}
+		},
+		{
+			"path": "pages/details/tem",
+			"style": {
+				"navigationBarTitleText": "厢内外温湿度监测"
+			}
+		},
+		{
+			"path": "pages/details/oil",
+			"style": {
+				"navigationBarTitleText": "实时油位"
+			}
+		},
+		{
+			"path": "pages/details/tire_tem",
+			"style": {
+				"navigationBarTitleText": "胎温胎压监测"
+			}
+		},
+		{
+			"path": "pages/details/elec_switch",
+			"style": {
+				"navigationBarTitleText": "用电器开关状态"
+			}
+		},
+		{
+			"path": "pages/details/door",
+			"style": {
+				"navigationBarTitleText": "车门状态"
+			}
+		},
+		{
+			"path": "pages/details/vibration",
+			"style": {
+				"navigationBarTitleText": "震动监测"
+			}
+		},
+		{
+			"path": "pages/notice",
+			"style": {
+				"navigationBarTitleText": "通知"
+			}
+		},
+		{
+			"path": "pages/history",
+			"style": {
+				"navigationBarTitleText": "历史记录"
+			}
+		},
+		{
+			"path": "pages/myinfo/myinfo",
+			"style": {
+				"navigationBarTitleText": "我的信息"
+			}
+		},
+		{
+			"path": "pages/myinfo/myinfo_address",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/myinfo/myinfo_email",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/myinfo/myinfo_phone",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#6147f4",
+		"navigationBarTitleText": "冷藏车监控",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": { //默认颜色:#515151,active颜色:#6147f4,size:48
+		"selectionColor": "#1890FF",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/homepage/home",
+				"iconPath": "static/img/home.png",
+				"selectedIconPath": "static/img/home-active.png"
+			},
+			// {
+			// 	"text": "智能充氮",
+			// 	"pagePath": "pages/nitrogen/nitrogen",
+			// 	"iconPath": "static/img/nitrogen.png",
+			// 	"selectedIconPath": "static/img/nitrogen-active.png"
+			// },
+			{
+				"text": "通知",
+				"pagePath": "pages/notice",
+				"iconPath": "static/img/notice.png",
+				"selectedIconPath": "static/img/notice-active.png"
+			},
+			// {
+			// 	"text": "历史数据",
+			// 	"pagePath": "pages/history",
+			// 	"iconPath": "static/img/history.png",
+			// 	"selectedIconPath": "static/img/history-active.png"
+			// },
+			{
+				"text": "我的",
+				"pagePath": "pages/myinfo/myinfo",
+				"iconPath": "static/img/info.png",
+				"selectedIconPath": "static/img/info-active.png"
+			}
+		]
+	}
+}

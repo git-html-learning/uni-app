@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "车门状态",
+  "usingComponents": {
+    "u-tag": "/uview-ui/components/u-tag/u-tag"
+  }
+}

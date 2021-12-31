@@ -1,0 +1,1 @@
+.tem{overflow:hidden}.tem .title{height:50px;line-height:50px;color:#6147f4;text-align:center;letter-spacing:5px;background-color:#fff;margin:7rpx 0}.tem .title1{height:50px;line-height:50px;color:#000;text-align:center;background-color:#fff;margin:7rpx 0;font-size:50rpx;border-bottom-style:solid;border-bottom-width:.5px}.tem .charts-box{width:100%;height:300px}

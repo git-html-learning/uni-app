@@ -1,0 +1,1 @@
+<view class="oil"><view class="title1">皖A85230</view><u-notice-bar vue-id="5184fb2c-1" mode="horizontal" list="{{list}}" type="success" bind:__l="__l"></u-notice-bar><view class="charts-box"><qiun-data-charts vue-id="5184fb2c-2" type="arcbar" chartData="{{chartData}}" opts="{{options}}" background="none" bind:__l="__l"></qiun-data-charts></view></view>
