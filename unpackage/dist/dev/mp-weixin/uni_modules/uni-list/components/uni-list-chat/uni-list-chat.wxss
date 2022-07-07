@@ -28,13 +28,8 @@
 .uni-list-chat.data-v-3d9bc00b {
   font-size: 32rpx;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
 }
 .uni-list-chat--hover.data-v-3d9bc00b {
@@ -75,16 +70,9 @@
 }
 .uni-list-chat__container.data-v-3d9bc00b {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-          flex: 1;
+  flex-direction: row;
+  flex: 1;
   padding: 20rpx 30rpx;
   position: relative;
   overflow: hidden;
@@ -93,23 +81,12 @@
   position: relative;
 }
 .uni-list-chat__header.data-v-3d9bc00b {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-content: center;
-          align-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap-reverse;
-          flex-wrap: wrap-reverse;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
   width: 45px;
   height: 45px;
   border-radius: 5px;
@@ -120,8 +97,6 @@
 }
 .uni-list-chat__header-box.data-v-3d9bc00b {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   width: 45px;
   height: 45px;
@@ -154,34 +129,18 @@
   border-radius: 50%;
 }
 .uni-list-chat__content.data-v-3d9bc00b {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-          flex: 1;
+  flex-direction: row;
+  flex: 1;
   overflow: hidden;
   padding: 2px 0;
 }
 .uni-list-chat__content-main.data-v-3d9bc00b {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 20rpx;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-          flex: 1;
+  flex: 1;
   overflow: hidden;
 }
 .uni-list-chat__content-title.data-v-3d9bc00b {
@@ -198,21 +157,11 @@
   overflow: hidden;
 }
 .uni-list-chat__content-extra.data-v-3d9bc00b {
-  -webkit-flex-shrink: 0;
-          flex-shrink: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
+  flex-shrink: 0;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-          align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-left: 5px;
 }
 .uni-list-chat__content-extra-text.data-v-3d9bc00b {
@@ -227,15 +176,9 @@
   top: calc(20rpx/ 2 + 1px + 0px);
 }
 .uni-list-chat__badge.data-v-3d9bc00b {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px;
   background-color: #ff5a5f;
 }

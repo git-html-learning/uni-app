@@ -1,14 +1,8 @@
 
 .t-td {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	        flex: 1;
-	display: -webkit-box;
-	display: -webkit-flex;
+	flex: 1;
 	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	align-items: center;
 	width: 100%;
 	padding: 14rpx;
 	border-top: 1px #d0dee5 solid;

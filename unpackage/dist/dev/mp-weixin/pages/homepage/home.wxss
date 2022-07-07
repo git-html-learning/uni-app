@@ -26,19 +26,13 @@
 /* 文章场景相关 */
 /* uView引入 */
 .home .userinfo {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   margin: 5px 0;
   padding: 10px;
   border-radius: 5px;
   background-color: #FFFFFF;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   box-shadow: 0 0 5px #c8c7cc;
 }
 .home swiper {
@@ -50,8 +44,6 @@
   width: 100%;
 }
 .home .nav {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .home .nav .nav_item {

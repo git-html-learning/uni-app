@@ -26,15 +26,10 @@
 /* 文章场景相关 */
 /* uView引入 */
 .uni-list.data-v-5009d455 {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   background-color: #ffffff;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .uni-list--border.data-v-5009d455 {
   position: relative;

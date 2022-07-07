@@ -1,7 +1,7 @@
 <template>
 	<view class="oil">
 		<view class="title1">
-			皖A85230
+			{{productName}}
 		</view>
 		<!-- <view class="tip">
 			剩余油量较充足，可放心使用！
@@ -22,6 +22,7 @@
 	export default {
 		data() {
 			return {
+				productName:"",
 				oillevel: 0,
 				list: [, "可放心使用！"],
 				chartData: {
@@ -95,19 +96,15 @@
 			};
 		},
 		onShow() {
-			// console.log(this.oillevel);
-			// console.log(this.list);
-			// console.log(this.options.title);
 			this.productKey = uni.getStorageSync('truck_productKey')
-			// console.log(this.productKey);
 			console.log(this.chartData.series[0].data);
 			this.start()
 		},
 		methods: {
 			async start() {
 				const res = await this.$api.getDeviceList(this.productKey)
-				// console.log(res);
 				if (res.code == 200) {
+					this.productName = res.data.productName
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
 						if (res.data.deviceInfo[i].deviceType == "TempAndHumi") {
 							this.humiDkList.push(res.data.deviceInfo[i].deviceKey);
@@ -124,13 +121,23 @@
 				})
 				console.log(res);
 				if (res.code == 200) {
+					if (res.data.deviceData[0].oil <0) {
+						this.oillevel = 0
+					} else {
 					this.oillevel = res.data.deviceData[0].oil
+					}
+
 					this.options.title.name = this.oillevel + "%"
 					this.chartData.series[0].data = (this.oillevel) / 100
 					this.list[0] = "当前油量为" + this.oillevel + "%"
-					// console.log(this.chartData.series[0].data);
+				} else {
+					console.log(res.code)
+					this.oillevel = 0
+					this.options.title.name = this.oillevel + "%"
+					this.chartData.series[0].data = (this.oillevel) / 100
+					this.list[0] = "当前车辆无油位数据"
+					this.options.subtitle.name = "当前车辆无油位数据"
 				}
-				// console.log(this.oillevel);
 
 			},
 

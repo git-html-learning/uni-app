@@ -1,7 +1,7 @@
 <template>
 	<view class="home">
 		<view class="title1">
-			皖A85230
+			{{productName}}
 		</view>
 		<view class="charts-box">
 		<qiun-data-charts type="line" :chartData="chartData" background="none" :opts="chartOptions" />
@@ -14,6 +14,7 @@
 		data() {
 			return {
 				productKey: "",
+				productName:"",
 				humiDkList: [],
 				humiOriData: [],
 				humiHandleData: [],
@@ -66,7 +67,9 @@
 			async start() {
 				const res = await this.$api.getDeviceList(this.productKey)
 				// console.log(res);
+				
 				if (res.code == 200) {
+					this.productName = res.data.productName;
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
 						if (res.data.deviceInfo[i].deviceType == "TempAndHumi") {
 							this.humiDkList.push(res.data.deviceInfo[i].deviceKey);

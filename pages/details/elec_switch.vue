@@ -1,7 +1,7 @@
 <template>
 	<view class="elec">
 		<view class="title">
-			皖A85230
+			{{productName}}
 		</view>
 
 		<view class="nav">
@@ -40,6 +40,7 @@
 	export default {
 		data() {
 			return {
+				productName:"",
 				checked1: null,
 				checked2: true,
 				checked3: true,
@@ -65,6 +66,7 @@
 				const res = await this.$api.getDeviceList(this.productKey)
 				// console.log(res);
 				if (res.code == 200) {
+					this.productName = res.data.productName;
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
 						if (res.data.deviceInfo[i].deviceType == "door") {
 							this.doorDkList.push(res.data.deviceInfo[i].deviceKey);

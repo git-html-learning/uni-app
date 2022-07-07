@@ -40,8 +40,6 @@
   border-bottom-width: 0.5px;
 }
 .elec .nav {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .elec .nav .nav_item {

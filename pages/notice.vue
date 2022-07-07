@@ -13,6 +13,10 @@
 </template>
 
 <script>
+	import {
+		noticeByPage
+		
+	} from "@/services/notice";
 	export default {
 		data() {
 			return {
@@ -22,7 +26,7 @@
 						time: "2020/10/25 15:33"
 					},
 					{
-						carNum: "皖A85230",
+						carNum: "A7670C",
 						note: "该车在2020年10月24日10:23车厢温度传感器2湿度过高！",
 						time: "2020/10/24 10:23"
 					},
@@ -37,7 +41,12 @@
 						time: "2020/10/25 15:33"
 					},
 					{
-						carNum: "皖A85230",
+						carNum: "A7670C",
+						note: "该车在2020年10月25日15:33车厢温度传感器1温度过高！",
+						time: "2020/10/25 15:33"
+					},
+					{
+						carNum: "A7670C",
 						note: "该车在2020年10月25日15:33车厢温度传感器1温度过高！",
 						time: "2020/10/25 15:33"
 					},
@@ -52,12 +61,7 @@
 						time: "2020/10/25 15:33"
 					},
 					{
-						carNum: "皖A85230",
-						note: "该车在2020年10月25日15:33车厢温度传感器1温度过高！",
-						time: "2020/10/25 15:33"
-					},
-					{
-						carNum: "皖A85230",
+						carNum: "A7670C",
 						note: "该车在2020年10月25日15:33车厢温度传感器1温度过高！",
 						time: "2020/10/25 15:33"
 					},
@@ -74,7 +78,26 @@
 				]
 			}
 		},
+		created() {
+		this.dataPrepare()	
+		},
 		methods: {
+			dataPrepare() {
+				noticeByPage().then((res)=>{
+					console.log(res)
+					if (res.msg == "ok") {
+						res.data.alertInfo.forEach(item=>{
+							var obj = {
+								carNum:item.productName,
+								note: item.Content,
+								time:item.date
+							}
+							this.noticeData.push(obj)
+						})
+						// this.noticeData.push(res.data.alertInfo)
+					}
+				})
+			},
 			showMore(data) {
 				console.log(data);
 				uni.showModal({

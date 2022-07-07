@@ -10,7 +10,7 @@
 				</view> -->
 			</view>
 		</view>
-		<view class="user_item" @click="handleChangeEmail()">
+	<!-- 	<view class="user_item" >
 			<text class="iconfont icon-youxiang user_item_icon_email" ></text>
 			<view class="item_right item_right_border">
 				<view class="user_item_title">邮箱</view>
@@ -20,7 +20,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="user_item" @click="handleChangePhone()">
+		<view class="user_item" >
 			<text class="iconfont icon-shouji-copy-copy user_item_icon_phone"></text>
 			<view class="item_right item_right_border">
 				<view class="user_item_title">手机号</view>
@@ -29,7 +29,7 @@
 					<text class="iconfont icon-xiangyou"></text>
 				</view>
 			</view>
-		</view>
+		</view> -->
 		<view class="user_item" @click="handleChangeUserAddress()">
 			<text class="iconfont icon-dizhi user_item_icon_address"></text>
 			<view class="item_right">

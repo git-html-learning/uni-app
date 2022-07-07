@@ -1,7 +1,7 @@
 <template>
 	<view class="tem">
 		<view class="title1">
-			皖A85230
+			{{productName}}
 		</view>
 		<t-table>
 			<t-tr>
@@ -103,6 +103,7 @@
 						},
 					]
 				},
+				productName:"",
 				chartOptions: {
 					"type": "line",
 					"dataLabel": false,
@@ -127,25 +128,27 @@
 
 					},
 					"legend": {},
+						
 					"extra": {
 						"line": {
 							"type": "straight",
 							"width": 2
 						},
 					}
-				}
-
+				},
+			
 			};
 		},
 		onShow() {
 			this.productKey = uni.getStorageSync('truck_productKey')
-			// console.log(this.productKey);
+			console.log(this.productKey);
 			this.start()
 		},
 		methods: {
 			async start() {
 				const res = await this.$api.getDeviceList(this.productKey)
 				// console.log(res);
+				this.productName = res.data.productName;
 				if (res.code == 200) {
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
 						if (res.data.deviceInfo[i].deviceType == "TempAndHumi") {

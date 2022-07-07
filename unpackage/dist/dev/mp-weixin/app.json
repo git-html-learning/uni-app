@@ -3,11 +3,13 @@
     "pages/login",
     "pages/nitrogen/nitrogen",
     "pages/homepage/home",
+    "pages/details/register",
     "pages/details/tem",
     "pages/details/oil",
     "pages/details/tire_tem",
     "pages/details/elec_switch",
     "pages/details/door",
+    "pages/details/position",
     "pages/details/vibration",
     "pages/notice",
     "pages/history",
@@ -46,6 +48,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

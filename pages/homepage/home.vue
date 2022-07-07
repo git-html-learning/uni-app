@@ -35,32 +35,42 @@
 		</view>
 
 		<swiper circular :autoplay="true" :interval="5000" indicator-dots :duration="800">
-			<!-- <swiper-item>
-				<image src="../../static/WechatIMG1.jpeg"></image>
-			</swiper-item>
-			<swiper-item>
-				<image src="../../static/WechatIMG2.jpeg"></image>
-			</swiper-item>
-			<swiper-item>
-				<image src="../../static/WechatIMG3.jpeg"></image>
-			</swiper-item> -->
 			<swiper-item>
 				<image src="../../static/1.jpeg"></image>
 			</swiper-item>
-			<swiper-item>
+		<!-- 	<swiper-item>
 				<image src="../../static/2.jpeg"></image>
-			</swiper-item>
+			</swiper-item> -->
 		</swiper>
+		<view style="height: 50px; ">
+			<uni-row>
+				<uni-col :span = "22">
+					<uni-data-select  v-model="value" :localdata="options" @change="change"></uni-data-select>
+				</uni-col>
+				<uni-col :span = "2">
+						<img @click = "reset()" src="@/static/刷新.png" style = "width: 20px; height: 20px; margin-top: 25px; " alt="">
+				</uni-col>
+			</uni-row>
+					
 
-		<view style="margin-top: 20px;">
-			<u-dropdown height="50">
-				<u-dropdown-item v-model="value" height="400" :title="car" :options="options" @change="change">
-				</u-dropdown-item>
-			</u-dropdown>
 		</view>
 
 		<!-- 导航区域 -->
-		<view class="nav">
+		<view class="nav" style="margin-top: 30px;">
+					<view class="nav_item">
+						<view class="iconfont" @click="register()" style = "height: 60px;">
+							<img  src="@/static/冷藏车注册.png" style = "width: 45px; height: 45px;" alt="">
+							</view>
+						<text style = "margin-top: -10px;">冷藏车注册</text>
+					</view>
+					<view class="nav_item">
+						<view class="iconfont" @click="position()" style = "height: 60px;">
+							<img  src="@/static/定位.png" style = "width: 45px; height: 45px; " alt="">
+							</view>
+						<text>位置信息</text>
+					</view>
+				</view>
+		<view class="nav" >
 			<view class="nav_item">
 				<view class="iconfont" @click="tem()">&#xe600;</view>
 				<text>温湿度值</text>
@@ -91,23 +101,30 @@
 			</view>
 		</view>
 
+		<view>
+			<!-- 提示信息弹窗 -->
+			<uni-popup ref="message" type="message">
+				<uni-popup-message type="warn" message="请先选中冷藏车!!!" :duration="2000"></uni-popup-message>
+			</uni-popup>
+		</view>
 
 	</view>
 </template>
 
 <script>
+	import {
+		getProduct
+	} from "@/services/product";
 	export default {
 		data() {
 			return {
 				username: '',
 				modalName: null,
 				productKey: "",
-				value: 1,
-				options: [{
-					label: '皖A85230',
-					value: 1,
-				}],
-				car: "皖A85230",
+				value: "",
+				options: [
+
+				],
 
 			}
 		},
@@ -115,8 +132,34 @@
 			// 获取用户名
 			this.username = uni.getStorageSync('username_nitrogen')
 			this.start()
+			this.prepare();
+		
 		},
 		methods: {
+			prepare() {
+				this.value = ""
+				uni.setStorageSync('truck_productKey', this.value)
+				getProduct().then((res) => {
+					console.log(res)
+
+					if (res.msg == "ok") {
+						this.options = []
+						res.data.productInfo.forEach(item => {
+							if (item.productName !== "通宇项目司机") {
+								var obj = {
+									text: item.productName,
+									value: item.productKey
+								}
+								this.options.push(obj)
+							}
+
+						})
+						// this.options.pu
+						console.log(this.options)
+					}
+				})
+			},
+
 			// 对话框隐藏
 			hideModal() {
 				this.modalName = null
@@ -144,42 +187,88 @@
 					uni.setStorageSync('truck_productKey', this.productKey)
 				}
 			},
-			tem() {
-				console.log("1");
+			register() {
 				uni.navigateTo({
-					url: "../details/tem"
+					url: "../details/register"
 				})
+			},
+			position() {
+				// console.log(this.value);
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/position"
+					})
+				}
+
+			},
+			tem() {
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/tem"
+					})
+				}
+
 			},
 			oil() {
-				uni.navigateTo({
-					url: "../details/oil"
-				})
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/oil"
+					})
+				}
+
 			},
 			tire() {
-				uni.navigateTo({
-					url: "../details/tire_tem"
-				})
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/tire_tem"
+					})
+				}
+
 			},
 			elec() {
-				uni.navigateTo({
-					url: "../details/elec_switch"
-				})
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/elec_switch"
+					})
+				}
+
 			},
 			door() {
-				uni.navigateTo({
-					url: "../details/door"
-				})
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/door"
+					})
+				}
+
 			},
 			vibration() {
-				uni.navigateTo({
-					url: "../details/vibration"
-				})
+				if (this.value === "") {
+					this.$refs.message.open()
+				} else {
+					uni.navigateTo({
+						url: "../details/vibration"
+					})
+				}
 			},
 			change(index) {
-				// console.log(index);
-				this.car = this.options[index - 1].label
-				// console.log(this.options[index-1].label);
+				console.log(index)
+				uni.setStorageSync('truck_productKey', index)
 			},
+			reset() {
+				this.prepare()
+			}
 		}
 	}
 </script>
@@ -254,3 +343,4 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 </style>
+

@@ -1,30 +1,14 @@
 <template>
 	<view class="tem">
 		<view class="title1">
-			皖A85230
+			{{productName}}
 		</view>
 
-		<!-- <view>
-			<t-table>
-				<t-tr>
-					<t-th>传感器</t-th>
-					<t-th>温度/℃</t-th>
-					<t-th>压强/bar</t-th>
-					<t-th>最后更新时间</t-th>
-				</t-tr>
-				<t-tr v-for="(item,index) in tableList" :key="index">
-					<t-td>{{ item.name}}</t-td>
-					<t-td>{{ item.temp }}</t-td>
-					<t-td>{{ item.pressure }}</t-td>
-					<t-td>{{ item.time }}</t-td>
-				</t-tr>
-			</t-table>
-		</view> -->
 
 		<view class="layout">
 			<view class="pic">
 				<img src=".../../static/卡车.png" alt=""
-					style="margin-left: 22%; margin-top: 10px; width:200px; height: 150px;" />
+					style="margin-left: 8%; margin-top: 10px; width:300px; height: 150px;" />
 			</view>
 			<view class="left-item">
 				<table>
@@ -246,6 +230,7 @@
 		},
 		data() {
 			return {
+				productName:"",
 				list: [{
 					name: '胎1'
 				}, {
@@ -461,6 +446,7 @@
 				const res = await this.$api.getDeviceList(this.productKey)
 				// console.log(res);
 				if (res.code == 200) {
+					this.productName = res.data.productName;
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
 						if (res.data.deviceInfo[i].deviceType == "TireTempPress") {
 							this.tireDkList.push(res.data.deviceInfo[i].deviceKey);

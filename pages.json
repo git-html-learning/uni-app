@@ -26,6 +26,12 @@
 			}
 		},
 		{
+			"path": "pages/details/register",
+			"style": {
+				"navigationBarTitleText": "冷藏车注册"
+			}
+		},
+		{
 			"path": "pages/details/tem",
 			"style": {
 				"navigationBarTitleText": "厢内外温湿度监测"
@@ -53,6 +59,12 @@
 			"path": "pages/details/door",
 			"style": {
 				"navigationBarTitleText": "车门状态"
+			}
+		},
+		{
+			"path": "pages/details/position",
+			"style": {
+				"navigationBarTitleText": "位置信息"
 			}
 		},
 		{
