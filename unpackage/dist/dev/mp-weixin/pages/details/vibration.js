@@ -164,13 +164,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
+      dataShow: true,
       productKey: "",
       productName: "",
-      humiDkList: [],
+      accDkList: [],
       humiOriData: [],
       humiHandleData: [],
       hisVibDate: [],
@@ -221,93 +227,99 @@ var _default =
   methods: {
     start: function start() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                   _this.$api.getDeviceList(_this.productKey));case 2:res = _context.sent;
-                // console.log(res);
-
                 if (res.code == 200) {
+                  _this.accDkList = [];
                   _this.productName = res.data.productName;
                   for (i = 0; i < res.data.deviceInfo.length; i++) {
-                    if (res.data.deviceInfo[i].deviceType == "TempAndHumi") {
-                      _this.humiDkList.push(res.data.deviceInfo[i].deviceKey);
+                    if (res.data.deviceInfo[i].deviceType == "acc") {
+                      _this.accDkList.push(res.data.deviceInfo[i].deviceKey);
                     }
                   }
                   // console.log(this.humiDkList);
-                  _this.getHumi();
-                }case 4:case "end":return _context.stop();}}}, _callee);}))();
-    },
-    getHumi: function getHumi() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res, i, obj;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
-                  _this2.$api.getDeviceData({
-                    productKey: _this2.productKey,
-                    deviceKeyList: _this2.humiDkList }));case 2:res = _context2.sent;
-
-                // console.log(res);
-                if (res.code == 200) {
-                  for (i = 0; i < res.data.deviceData.length; i++) {
-                    obj = {
-                      sensor: res.data.deviceData[i].deviceName,
-                      temp: res.data.deviceData[i].temp,
-                      humi: res.data.deviceData[i].humi,
-                      time: res.data.deviceData[i].date,
-                      oil: res.data.deviceData[i].oil,
-                      dk: res.data.deviceData[i].deviceKey };
-
-                    _this2.humiOriData.push(obj);
-                  }
-                  // console.log("humiOriData", this.humiOriData);
-                  _this2.humiHandleData = JSON.parse(JSON.stringify(_this2.humiOriData));
-                  // console.log(this.humiHandleData);
-                  _this2.humiHandleData.sort(function (a, b) {
-                    var sensorA = a.sensor.toUpperCase(); // ignore upper and lowercase
-                    var sensorB = b.sensor.toUpperCase(); // ignore upper and lowercase
-                    if (sensorA < sensorB) {
-                      return -1;
-                    }
-                    if (sensorA > sensorB) {
-                      return 1;
-                    }
-                    return 0;
-                  });
-                  for (i = 0; i < _this2.humiHandleData.length; i++) {
-                    _this2.humiHandleData[i].sensor = _this2.humiHandleData[i].sensor.replace(
-                    "TH",
-                    "温湿度节点");
-
-                    // var obj1 = {
-                    //   name: this.humiHandleData[i].sensor,
-                    //   date: this.humiHandleData[i].time,
-                    //   dk: this.humiHandleData[i].dk,
-                    // };
-                    // this.sensorList.push(obj1);
-                  }
-                  // console.log("humiHandleData", this.humiHandleData);
-                  // console.log(this.sensorList);
+                  _this.getHisData();
                 }
-                _this2.getHisData();case 5:case "end":return _context2.stop();}}}, _callee2);}))();
+                console.log(_this.accDkList);case 5:case "end":return _context.stop();}}}, _callee);}))();
     },
-    getHisData: function getHisData() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var res, i, value;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
-                _this3.hisVibDate = [];
-                _this3.hisVib = [];
-                _this3.hisEndTime = Date.parse(new Date()) / 1000;_context3.next = 5;return (
-                  _this3.$api.getDeviceHisData({
-                    productKey: _this3.productKey,
-                    deviceKey: _this3.humiHandleData[1].dk,
-                    num: 50 }));case 5:res = _context3.sent;
+    // async getVib() {
+    // 	const res = await this.$api.getDeviceData({
+    // 		productKey: this.productKey,
+    // 		deviceKeyList: this.accDkList
+    // 	})
+    // 	console.log(res);
+    // 	if (res.code == 200) {
+    // 		for (var i = 0; i < res.data.deviceData.length; i++) {
+    // 			var obj = {
+    // 				sensor: res.data.deviceData[i].deviceName,
+    // 				temp: res.data.deviceData[i].temp,
+    // 				humi: res.data.deviceData[i].humi,
+    // 				time: res.data.deviceData[i].date,
+    // 				oil: res.data.deviceData[i].oil,
+    // 				dk: res.data.deviceData[i].deviceKey,
+    // 			};
+    // 			this.humiOriData.push(obj);
+    // 		}
+    // 		// console.log("humiOriData", this.humiOriData);
+    // 		this.humiHandleData = JSON.parse(JSON.stringify(this.humiOriData));
+    // 		// console.log(this.humiHandleData);
+    // 		this.humiHandleData.sort(function(a, b) {
+    // 			var sensorA = a.sensor.toUpperCase(); // ignore upper and lowercase
+    // 			var sensorB = b.sensor.toUpperCase(); // ignore upper and lowercase
+    // 			if (sensorA < sensorB) {
+    // 				return -1;
+    // 			}
+    // 			if (sensorA > sensorB) {
+    // 				return 1;
+    // 			}
+    // 			return 0;
+    // 		});
+    // 		for (var i = 0; i < this.humiHandleData.length; i++) {
+    // 			this.humiHandleData[i].sensor = this.humiHandleData[i].sensor.replace(
+    // 				"TH",
+    // 				"温湿度节点"
+    // 			);
+    // 			// var obj1 = {
+    // 			//   name: this.humiHandleData[i].sensor,
+    // 			//   date: this.humiHandleData[i].time,
+    // 			//   dk: this.humiHandleData[i].dk,
+    // 			// };
+    // 			// this.sensorList.push(obj1);
+    // 		}
+    // 		// console.log("humiHandleData", this.humiHandleData);
+    // 		// console.log(this.sensorList);
+    // 	}
+    // 	this.getHisData()
+    // },
+    getHisData: function getHisData() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res, i, value;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
+                _this2.hisVibDate = [];
+                _this2.hisVib = [];if (!(
+                _this2.accDkList.length !== 0)) {_context2.next = 15;break;}
+                _this2.dataShow = true;
+                _this2.hisEndTime = Date.parse(new Date()) / 1000;_context2.next = 7;return (
+                  _this2.$api.getDeviceHisData({
+                    productKey: _this2.productKey,
+                    deviceKey: _this2.accDkList[0],
+                    num: 50 }));case 7:res = _context2.sent;
 
                 console.log(res);
                 if (res.code == 200) {
                   for (i = 0; i < res.data.deviceData.length; i++) {
-                    _this3.hisVibDate.push(res.data.deviceData[i].date);
+                    _this2.hisVibDate.push(res.data.deviceData[i].date);
                     value =
                     res.data.deviceData[i].acc.X +
                     res.data.deviceData[i].acc.Y +
                     res.data.deviceData[i].acc.Z;
-                    _this3.hisVib.push(value);
+                    _this2.hisVib.push(value);
                   }
-                  console.log("hisVibDate", _this3.hisVibDate);
-                  console.log("hisVib", _this3.hisVib);
+                  console.log("hisVibDate", _this2.hisVibDate);
+                  console.log("hisVib", _this2.hisVib);
                 }
-                _this3.chartData.categories = _this3.hisVibDate;
-                _this3.chartData.series[0].name = "震动值";
-                _this3.chartData.series[0].data = _this3.hisVib;case 11:case "end":return _context3.stop();}}}, _callee3);}))();
+                _this2.chartData.categories = _this2.hisVibDate;
+                _this2.chartData.series[0].name = "震动值";
+                _this2.chartData.series[0].data = _this2.hisVib;_context2.next = 16;break;case 15:
+
+                _this2.dataShow = false;case 16:case "end":return _context2.stop();}}}, _callee2);}))();
+
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

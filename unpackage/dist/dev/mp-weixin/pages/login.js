@@ -214,10 +214,6 @@ var _default = { data: function data() {return { title: '冷藏车监控', usern
         _this.loadingBtn = false;
         console.log(res);
         _this.info = res.msg;
-        // this.$refs.uToast.show({
-        // 	title: this.info,
-        // 	type: 'success',
-        // })
         if (res.code === 200) {
           //	保存token
           uni.setStorageSync('token_nitrogen', res.data.token);
@@ -234,7 +230,6 @@ var _default = { data: function data() {return { title: '冷藏车监控', usern
 
           // 跳转
           uni.switchTab({
-            // url: "./nitrogen/nitrogen",
             url: "./homepage/home" });
 
         } else {

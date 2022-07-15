@@ -115,6 +115,9 @@
 	import {
 		getProduct
 	} from "@/services/product";
+	import {
+		getUserInfo
+	} from "@/services/user";
 	export default {
 		data() {
 			return {
@@ -123,7 +126,6 @@
 				productKey: "",
 				value: "",
 				options: [
-
 				],
 
 			}
@@ -131,13 +133,44 @@
 		onShow() {
 			// 获取用户名
 			this.username = uni.getStorageSync('username_nitrogen')
-			this.start()
+		},
+		onLoad() {
+			this.threshold();
 			this.prepare();
-		
 		},
 		methods: {
+			threshold() {
+				var username = uni.getStorageSync('username_nitrogen')
+				console.log(username)
+				getUserInfo(username).then((res)=>{
+					console.log(res)
+					if (res.msg == "ok") {
+						var tireTemp = res.data.extraInfo.thresholdValue.tire.tireTemp;
+						var tirePress = res.data.extraInfo.thresholdValue.tire.tirePress;
+						var shake = res.data.extraInfo.thresholdValue.shake;
+						var oil = res.data.extraInfo.thresholdValue.oil;
+						var humiDown = res.data.extraInfo.thresholdValue.tempAndHumi.humiDown;
+						var humiUp = res.data.extraInfo.thresholdValue.tempAndHumi.humiUp;
+						var tempDown = res.data.extraInfo.thresholdValue.tempAndHumi.tempDown;
+						var tempUp = res.data.extraInfo.thresholdValue.tempAndHumi.tempUp;
+						uni.setStorageSync('tireTemp', tireTemp)
+						uni.setStorageSync('tirePress', tirePress)
+						uni.setStorageSync('shake', shake)
+						uni.setStorageSync('oil', oil)
+						uni.setStorageSync('humiDown', humiDown)
+						uni.setStorageSync('humiUp', humiUp)
+						uni.setStorageSync('tempDown', tempDown)
+						uni.setStorageSync('tempUp', tempUp)
+						
+					}
+
+								
+				
+				})
+			},
 			prepare() {
-				this.value = ""
+				this.value= ""
+
 				uni.setStorageSync('truck_productKey', this.value)
 				getProduct().then((res) => {
 					console.log(res)
@@ -171,21 +204,6 @@
 				uni.reLaunch({
 					url: '../login'
 				})
-			},
-			async start() {
-				const res = await this.$api.getProduct()
-				// console.log("12");
-				console.log(res);
-				if (res.code == 200) {
-					for (var i = 0; i < res.data.productInfo.length; i++) {
-						if (res.data.productInfo[i].typeIdentify != "tysj") {
-							// console.log(res.data.productInfo[i]);
-							this.productKey = res.data.productInfo[i].productKey
-						}
-					}
-					console.log(this.productKey);
-					uni.setStorageSync('truck_productKey', this.productKey)
-				}
 			},
 			register() {
 				uni.navigateTo({
@@ -264,7 +282,9 @@
 			},
 			change(index) {
 				console.log(index)
-				uni.setStorageSync('truck_productKey', index)
+				this.value = index
+				uni.setStorageSync('truck_productKey', this.value)
+				uni.setStorageSync('value', this.value)
 			},
 			reset() {
 				this.prepare()

@@ -5,95 +5,112 @@
 		</view>
 
 
-		<view class="layout">
-			<view class="pic">
-				<img src=".../../static/卡车.png" alt=""
-					style="margin-left: 8%; margin-top: 10px; width:300px; height: 150px;" />
+		<view class="layout" v-if="dataShow">
+			<view class="pic" style="width: 70%; margin-left: 15%; height: 150px; ">
+				<img src=".../../static/卡车.png" alt="" style="margin-top: 10px; width:100%; height: 150px;" />
 			</view>
 			<view class="left-item">
 				<table>
 					<tr>
-						<td>胎2</td>
+						<td style="background-color: #f9f9f9">胎2</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal1">正常</td>
+						<td v-show="!normal1" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[1].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[1].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>胎1</td>
-					</tr>
-					<tr>
-						<td>正常</td>
-					</tr>
-					<tr>
-						<td>32°C</td>
-					</tr>
-					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[1].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[1].tirePress}}kPa</td>
 					</tr>
 				</table>
 				<table>
 					<tr>
-						<td>胎6</td>
+						<td style="background-color: #f9f9f9">胎1</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal0">正常</td>
+						<td v-show="!normal0" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[0].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[0].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[0].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[0].tirePress}}kPa</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td style="background-color: #f9f9f9">胎6</td>
+					</tr>
+					<tr>
+						<td v-show="normal5">正常</td>
+						<td v-show="!normal5" style="color: red">异常</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[5].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[5].tireTemp}}°C</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[5].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[5].tirePress}}kPa</td>
 					</tr>
 				</table>
 
 				<table>
 					<tr>
-						<td>胎5</td>
+						<td style="background-color: #f9f9f9">胎5</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal4">正常</td>
+						<td v-show="!normal4" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[4].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[4].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>胎10</td>
-					</tr>
-					<tr>
-						<td>正常</td>
-					</tr>
-					<tr>
-						<td>32°C</td>
-					</tr>
-					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[4].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[4].tirePress}}kPa</td>
 					</tr>
 				</table>
 				<table>
 					<tr>
-						<td>胎9</td>
+						<td style="background-color: #f9f9f9">胎10</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal9">正常</td>
+						<td v-show="!normal9" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[9].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[9].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[9].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[9].tirePress}}kPa</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td style="background-color: #f9f9f9">胎9</td>
+					</tr>
+					<tr>
+						<td v-show="normal8">正常</td>
+						<td v-show="!normal8" style="color: red">异常</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[8].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[8].tireTemp}}°C</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[8].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[8].tirePress}}kPa</td>
 					</tr>
 				</table>
 			</view>
@@ -110,107 +127,127 @@
 			<view class="right-item">
 				<table>
 					<tr>
-						<td>胎4</td>
+						<td style="background-color: #f9f9f9">胎4</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal3">正常</td>
+						<td v-show="!normal3" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[3].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[3].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>胎3</td>
-					</tr>
-					<tr>
-						<td>正常</td>
-					</tr>
-					<tr>
-						<td>32°C</td>
-					</tr>
-					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[3].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[3].tirePress}}kPa</td>
 					</tr>
 				</table>
 				<table>
 					<tr>
-						<td>胎8</td>
+						<td style="background-color: #f9f9f9">胎3</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal2">正常</td>
+						<td v-show="!normal2" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[2].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[2].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[2].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[2].tirePress}}kPa</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td style="background-color: #f9f9f9">胎8</td>
+					</tr>
+					<tr>
+						<td v-show="normal7">正常</td>
+						<td v-show="!normal7" style="color: red">异常</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[7].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[7].tireTemp}}°C</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[7].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[7].tirePress}}kPa</td>
 					</tr>
 				</table>
 
 				<table>
 					<tr>
-						<td>胎7</td>
+						<td style="background-color: #f9f9f9">胎7</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal6">正常</td>
+						<td v-show="!normal6" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[6].tireTemp)<parseInt(this.tireTemp )? '' : 'error']">
+							{{tireHandleData[6].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td>胎12</td>
-					</tr>
-					<tr>
-						<td>正常</td>
-					</tr>
-					<tr>
-						<td>32°C</td>
-					</tr>
-					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[6].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[6].tirePress}}kPa</td>
 					</tr>
 				</table>
 				<table>
 					<tr>
-						<td>胎11</td>
+						<td style="background-color: #f9f9f9">胎12</td>
 					</tr>
 					<tr>
-						<td>正常</td>
+						<td v-show="normal11">正常</td>
+						<td v-show="!normal11" style="color: red">异常</td>
 					</tr>
 					<tr>
-						<td>32°C</td>
+						<td :class="[parseInt(tireHandleData[11].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[11].tireTemp}}°C</td>
 					</tr>
 					<tr>
-						<td>6bar</td>
+						<td :class="[parseInt(tireHandleData[11].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[11].tirePress}}kPa</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td style="background-color: #f9f9f9">胎11</td>
+					</tr>
+					<tr>
+						<td v-show="normal10">正常</td>
+						<td v-show="!normal10" style="color: red">异常</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[10].tireTemp)<parseInt(this.tireTemp) ? '' : 'error']">
+							{{tireHandleData[10].tireTemp}}°C</td>
+					</tr>
+					<tr>
+						<td :class="[parseInt(tireHandleData[10].tirePress)<parseInt(this.tirePress) ? '' : 'error']">
+							{{tireHandleData[10].tirePress}}kPa</td>
 					</tr>
 				</table>
 			</view>
 		</view>
 
-
-		<view class="title">
+		<view class="layout1" v-if="!dataShow" style="line-height: 50px; text-align: center; margin-top: 50px;">
+			当前设备未注册胎温胎压设备，暂无数据！！
+		</view>
+		<view class="title" v-show="dataShow">
 			胎温胎压历史数据
 		</view>
-		<view>
+		<view v-if="dataShow">
 			<!-- <u-dropdown>
 				<u-dropdown-item v-model="value" height="400px" title="选择轮胎" :options="options" @change="change">
 				</u-dropdown-item>
 			</u-dropdown> -->
 			<u-tabs :list="list" :is-scroll="true" :current="current" @change="change"></u-tabs>
 		</view>
-		<view style="text-align: center;margin-top: 15px;">
+		<view style="text-align: center;margin-top: 15px;" v-show="dataShow">
 			{{tire}}
 		</view>
-		<view class="charts-box">
+		<view class="charts-box" v-show="dataShow">
 			<qiun-data-charts type="line" :chartData="chartData" background="none" :opts="chartOptions" />
 		</view>
 	</view>
@@ -221,6 +258,7 @@
 	import tTh from '@/components/t-table/t-th.vue';
 	import tTr from '@/components/t-table/t-tr.vue';
 	import tTd from '@/components/t-table/t-td.vue';
+
 	export default {
 		components: {
 			tTable,
@@ -230,7 +268,8 @@
 		},
 		data() {
 			return {
-				productName:"",
+				dataShow: false,
+				productName: "",
 				list: [{
 					name: '胎1'
 				}, {
@@ -432,7 +471,21 @@
 							"width": 2
 						},
 					}
-				}
+				},
+				tireDkList: [],
+				tireTemp: '90',
+				tirePress: '5000',
+				normal1: true,
+				normal2: true,
+				normal3: true,
+				normal4: true,
+				normal5: true,
+				normal6: true,
+				normal7: true,
+				normal8: true,
+				normal9: true,
+				normal10: true,
+				normal11: true,
 
 			};
 		},
@@ -443,62 +496,152 @@
 		},
 		methods: {
 			async start() {
+
+				this.tireTemp = uni.getStorageSync('tireTemp')
+				this.tirePress = uni.getStorageSync('tirePress')
 				const res = await this.$api.getDeviceList(this.productKey)
 				// console.log(res);
 				if (res.code == 200) {
 					this.productName = res.data.productName;
+					this.tireDkList = [];
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
 						if (res.data.deviceInfo[i].deviceType == "TireTempPress") {
 							this.tireDkList.push(res.data.deviceInfo[i].deviceKey);
 						}
 					}
-					// console.log(this.tireDkList);
-					this.getTire()
+					console.log(this.tireDkList);
+					if (this.tireDkList.length == 0) {
+						console.log("无数据")
+					} else {
+						this.dataShow = true;
+						this.getTire()
+
+					}
+
 				}
 			},
-			async getTire() {
-				const res = await this.$api.getDeviceData({
+			getTire() {
+				this.$api.getDeviceData({
 					productKey: this.productKey,
 					deviceKeyList: this.tireDkList
+				}).then((res) => {
+					if (res.code == 200) {
+						console.log(res)
+						for (var i = 0; i < res.data.deviceData.length; i++) {
+							var obj = {
+								tire: res.data.deviceData[i].deviceName,
+								tirePress: (res.data.deviceData[i].tirePress * 10 / 10000).toFixed(1),
+								tireTemp: (res.data.deviceData[i].tireTemp).toFixed(1),
+								time: res.data.deviceData[i].date,
+								dk: res.data.deviceData[i].deviceKey,
+							};
+							this.tireOriData.push(obj);
+						}
+
+						// console.log("tireOriData", this.tireOriData);
+						this.tireHandleData = JSON.parse(JSON.stringify(this.tireOriData));
+
+						if (parseInt(this.tireHandleData[1].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[1].tirePress) < parseInt(this.tirePress)) {
+							this.normal1 = true
+						} else {
+							this.normal1 = false
+						}
+						if (parseInt(this.tireHandleData[0].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[0].tirePress) < parseInt(this.tirePress)) {
+							this.normal0 = true
+						} else {
+							this.normal0 = false
+						}
+						if (parseInt(this.tireHandleData[2].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[2].tirePress) < parseInt(this.tirePress)) {
+							this.normal2 = true
+						} else {
+							this.normal2 = false
+						}
+
+						if (parseInt(this.tireHandleData[3].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[3].tirePress) < parseInt(this.tirePress)) {
+							this.normal3 = true
+						} else {
+							this.normal3 = false
+						}
+						if (parseInt(this.tireHandleData[4].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[4].tirePress) < parseInt(this.tirePress)) {
+							this.normal4 = true
+						} else {
+							this.normal4 = false
+						}
+						if (parseInt(this.tireHandleData[5].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[5].tirePress) < parseInt(this.tirePress)) {
+							this.normal5 = true
+						} else {
+							this.normal5 = false
+						}
+						if (parseInt(this.tireHandleData[6].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[6].tirePress) < parseInt(this.tirePress)) {
+							this.normal6 = true
+						} else {
+							this.normal6 = false
+						}
+						if (parseInt(this.tireHandleData[7].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[7].tirePress) < parseInt(this.tirePress)) {
+							this.normal7 = true
+						} else {
+							this.normal7 = false
+						}
+						if (parseInt(this.tireHandleData[8].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[8].tirePress) < parseInt(this.tirePress)) {
+							this.normal8 = true
+						} else {
+							this.normal8 = false
+						}
+						if (parseInt(this.tireHandleData[9].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[9].tirePress) < parseInt(this.tirePress)) {
+							this.normal9 = true
+						} else {
+							this.normal9 = false
+						}
+						if (parseInt(this.tireHandleData[10].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[10].tirePress) < parseInt(this.tirePress)) {
+							this.normal10 = true
+						} else {
+							this.normal10 = false
+						}
+						if (parseInt(this.tireHandleData[11].tireTemp) < parseInt(this.tireTemp) && parseInt(this
+								.tireHandleData[11].tirePress) < parseInt(this.tirePress)) {
+							this.normal11 = true
+						} else {
+							this.normal11 = false
+						}
+
+
+
+
+
+
+
+						console.log(this.tireHandleData);
+						this.tireHandleData.sort(function(a, b) {
+							var tireA = a.tire.toUpperCase(); // ignore upper and lowercase
+							var tireB = b.tire.toUpperCase(); // ignore upper and lowercase
+							if (tireA < tireB) {
+								return -1;
+							}
+							if (tireA > tireB) {
+								return 1;
+							}
+							return 0;
+						});
+						for (var i = 0; i < this.tireHandleData.length; i++) {
+							this.tireHandleData[i].tire = "胎" + (i + 1);
+
+						}
+						this.getHisData()
+					}
 				})
 				// console.log(res);
-				if (res.code == 200) {
-					for (var i = 0; i < res.data.deviceData.length; i++) {
-						var obj = {
-							tire: res.data.deviceData[i].deviceName,
-							tirePress: res.data.deviceData[i].tirePress,
-							tireTemp: res.data.deviceData[i].tireTemp,
-							time: res.data.deviceData[i].date,
-							dk: res.data.deviceData[i].deviceKey,
-						};
-						this.tireOriData.push(obj);
-					}
-					// console.log("tireOriData", this.tireOriData);
-					this.tireHandleData = JSON.parse(JSON.stringify(this.tireOriData));
-					// console.log(this.tireHandleData);
-					this.tireHandleData.sort(function(a, b) {
-						var tireA = a.tire.toUpperCase(); // ignore upper and lowercase
-						var tireB = b.tire.toUpperCase(); // ignore upper and lowercase
-						if (tireA < tireB) {
-							return -1;
-						}
-						if (tireA > tireB) {
-							return 1;
-						}
-						return 0;
-					});
-					for (var i = 0; i < this.tireHandleData.length; i++) {
-						this.tireHandleData[i].tire = "胎" + (i + 1);
-						// var obj1 = {
-						//   name: this.tireHandleData[i].tire,
-						//   date: this.tireHandleData[i].time,
-						//   dk: this.tireHandleData[i].dk,
-						// };
-						// this.tireList.push(obj1);
-					}
-					// console.log("tireHandleData", this.tireHandleData);
-				}
-				this.getHisData()
+
 			},
 			async getHisData() {
 				this.hisDate = []
@@ -599,13 +742,26 @@
 		}
 
 		.layout {
+			// margin-left: 1%;
+			background-color: #fff;
+			position: relative;
+			overflow: hidden;
+			margin-top: 2px;
+			margin-left: 2%;
+			width: 96%;
+			height: 550px;
+			border: 1px solid black;
+			border-radius: 20px;
+		}
+
+		.layout1 {
 			background-color: #fff;
 			position: relative;
 			overflow: hidden;
 			margin-top: 2px;
 			margin-left: 4%;
 			width: 350px;
-			height: 550px;
+			height: 50px;
 			border: 1px solid black;
 			border-radius: 20px;
 		}
@@ -617,65 +773,67 @@
 		}
 
 		.left-item {
-			width: 120px;
+			width: 40%;
 			height: 100%;
 			float: left;
-			
+
 			/* border: 1px solid black;  */
 		}
 
 		.right-item {
-			width: 120px;
+			width: 40%;
 			height: 100%;
 			float: right;
 			/* border: 1px solid black;  */
 		}
 
 		table {
-			border-right: 1px solid;
-			border-top: 1px solid;
+			border-right: 1px solid #e8ebf3;
+			border-top: 1px solid #e8ebf3;
 			border-collapse: collapse;
 			// margin-left: 10px;
 			margin-top: 35px;
 			float: left;
 		}
+
 		.left-item table {
 			margin-left: 10px;
 		}
+
 		.right-item table {
 			float: right;
 			margin-right: 10px;
 		}
 
 		td {
-			border-left: 1px solid;
-			border-bottom: 1px solid;
+			border-left: 1px solid #e8ebf3;
+			border-bottom: 1px solid #e8ebf3;
 			font-size: 14px;
 			padding: 2px 3px;
 		}
 
 		.left-num {
 			float: left;
-			width: 54px;
+			width: 10%;
 			height: 100%;
 		}
 
 		.right-num {
 			float: left;
-			width: 54px;
+			width: 10%;
 			height: 100%;
 		}
 
 		.first {
 			margin-top: 30px;
-			width: 54px;
+			width: 100%;
 			height: 58px;
 			border-bottom: 1px solid black;
 			border-right: 1px solid black;
 		}
 
 		.second {
-			width: 54px;
+			width: 100%;
 			height: 130px;
 			/* background-color: rgb(23, 39, 79);    */
 			border-bottom: 1px solid black;
@@ -683,7 +841,7 @@
 		}
 
 		.third {
-			width: 54px;
+			width: 100%;
 			height: 125px;
 			/* background-color: rgb(69, 141, 51); */
 			border-bottom: 1px solid black;
@@ -721,5 +879,9 @@
 			// border-left: none;
 		}
 
+	}
+
+	.error {
+		color: red;
 	}
 </style>

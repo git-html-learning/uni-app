@@ -42,12 +42,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 var _default =
 {
   data: function data() {
     return {
+      dataShow: true,
       productName: "",
       oillevel: 0,
       list: [, "可放心使用！"],
@@ -117,7 +116,9 @@ var _default =
 
 
       productKey: "",
-      humiDkList: [] };
+      oilDkList: [],
+      oilThres: "10",
+      noticeShow: false };
 
 
   },
@@ -132,18 +133,24 @@ var _default =
                 if (res.code == 200) {
                   _this.productName = res.data.productName;
                   for (i = 0; i < res.data.deviceInfo.length; i++) {
-                    if (res.data.deviceInfo[i].deviceType == "TempAndHumi") {
-                      _this.humiDkList.push(res.data.deviceInfo[i].deviceKey);
+                    if (res.data.deviceInfo[i].deviceType == "oil") {
+                      _this.oilDkList.push(res.data.deviceInfo[i].deviceKey);
                     }
                   }
                   // console.log(this.humiDkList);
-                  _this.getOil();
+                  if (_this.oilDkList.length !== 0) {
+                    _this.dataShow = true;
+                    _this.getOil();
+                  } else {
+                    _this.dataShow = false;
+                  }
+
                 }case 4:case "end":return _context.stop();}}}, _callee);}))();
     },
     getOil: function getOil() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
                   _this2.$api.getDeviceData({
                     productKey: _this2.productKey,
-                    deviceKeyList: _this2.humiDkList }));case 2:res = _context2.sent;
+                    deviceKeyList: _this2.oilDkList }));case 2:res = _context2.sent;
 
                 console.log(res);
                 if (res.code == 200) {
@@ -152,10 +159,21 @@ var _default =
                   } else {
                     _this2.oillevel = res.data.deviceData[0].oil;
                   }
+                  _this2.oilThres = uni.getStorageSync("oil");
+                  console.log(_this2.oilThres);
+                  if (_this2.oilThres <= _this2.oillevel) {
 
-                  _this2.options.title.name = _this2.oillevel + "%";
-                  _this2.chartData.series[0].data = _this2.oillevel / 100;
-                  _this2.list[0] = "当前油量为" + _this2.oillevel + "%";
+                    _this2.options.title.name = _this2.oillevel + "%";
+                    _this2.chartData.series[0].data = _this2.oillevel / 100;
+                    _this2.list[0] = "当前油量为" + _this2.oillevel + "%";
+                    _this2.noticeShow = false;
+                  } else {
+                    _this2.options.title.name = _this2.oillevel + "%";
+                    _this2.chartData.series[0].data = _this2.oillevel / 100;
+                    _this2.list[0] = "当前油量为" + _this2.oillevel + "，低于设定阈值" + _this2.oilThres;
+                    _this2.list[1] = "请注意！！！";
+                    _this2.noticeShow = true;
+                  }
                 } else {
                   console.log(res.code);
                   _this2.oillevel = 0;

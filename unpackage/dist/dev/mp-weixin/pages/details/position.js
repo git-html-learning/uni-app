@@ -173,6 +173,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
 var _product = __webpack_require__(/*! @/services/product */ 48);
 
 
@@ -192,25 +198,16 @@ var _device = __webpack_require__(/*! @/services/device */ 45); //
 //
 //
 //
-var _default = { data: function data() {return { id: 0, // 使用 marker点击事件 需要填写id
-      title: 'map', latitude: "", longitude: "", covers: [{ latitude: "", longitude: "", iconPath: '/static/location.png', width: 35, height: 35 }], zoom: true };
-
-  },
-  created: function created() {
-    this.prepare();
-  },
-  //监听页面卸载
-  onUnload: function onUnload() {
-    var pages = getCurrentPages().length - 1;
-    console.log('需要销毁的页面：' + pages);
-    wx.navigateBack({
-      delta: pages });
-
-  },
-
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { dataShow: true, id: 0, // 使用 marker点击事件 需要填写id
+      title: 'map', latitude: "", longitude: "", covers: [{ latitude: "", longitude: "", iconPath: '/static/location.png', width: 35, height: 35 }], zoom: true };}, onLoad: function onLoad() {this.prepare();},
   methods: {
     prepare: function prepare() {var _this = this;
-
       this.productKey = uni.getStorageSync('truck_productKey');
       console.log(this.productKey);
       (0, _product.getDeviceList)(this.productKey).then(function (res) {
@@ -226,19 +223,18 @@ var _default = { data: function data() {return { id: 0, // 使用 marker点击�
           });
           console.log(deviceKeys);
           if (deviceKeys.length == 0) {
-
-            console.log("为空");
+            _this.dataShow = false;
             _this.$refs.message.open("center");
           } else {
-
+            _this.dataShow = true;
             (0, _device.getDeviceData)({
               productKey: _this.productKey,
               deviceKeyList: deviceKeys }).
             then(function (res) {
               console.log(res);
               if (res.msg == "ok") {
-                _this.longitude = res.data.deviceData[0].Lon;
-                _this.latitude = res.data.deviceData[0].Lat;
+                _this.longitude = res.data.deviceData[0].gps.Lon;
+                _this.latitude = res.data.deviceData[0].gps.Lat;
                 _this.date = res.data.deviceData[0].date;
                 _this.covers = [{
                   latitude: _this.latitude,
@@ -248,16 +244,16 @@ var _default = { data: function data() {return { id: 0, // 使用 marker点击�
                   height: 35 }],
 
                 _this.center = {
-                  lng: _this.lng,
-                  lat: _this.lat };
+                  lng: _this.longitude,
+                  lat: _this.latitude };
 
-                _this.markerArr = {
-                  lng: _this.lng,
-                  lat: _this.lat,
-                  title: _this.productName,
-                  date: _this.date };
-
-                console.log(_this.markerArr);
+                // this.markerArr = {
+                // 	lng: this.lng,
+                // 	lat: this.lat,
+                // 	title: this.productName,
+                // 	date: this.date
+                // }
+                // console.log(this.markerArr)
               }
             });
           }

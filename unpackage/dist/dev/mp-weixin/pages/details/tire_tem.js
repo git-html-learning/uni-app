@@ -123,13 +123,108 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  var m0 = __webpack_require__(/*! .../../static/卡车.png */ 108)
-
+  var m0 = _vm.dataShow ? __webpack_require__(/*! .../../static/卡车.png */ 108) : null
+  var m1 = _vm.dataShow ? parseInt(_vm.tireHandleData[1].tireTemp) : null
+  var m2 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m3 = _vm.dataShow ? parseInt(_vm.tireHandleData[1].tirePress) : null
+  var m4 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m5 = _vm.dataShow ? parseInt(_vm.tireHandleData[0].tireTemp) : null
+  var m6 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m7 = _vm.dataShow ? parseInt(_vm.tireHandleData[0].tirePress) : null
+  var m8 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m9 = _vm.dataShow ? parseInt(_vm.tireHandleData[5].tireTemp) : null
+  var m10 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m11 = _vm.dataShow ? parseInt(_vm.tireHandleData[5].tirePress) : null
+  var m12 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m13 = _vm.dataShow ? parseInt(_vm.tireHandleData[4].tireTemp) : null
+  var m14 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m15 = _vm.dataShow ? parseInt(_vm.tireHandleData[4].tirePress) : null
+  var m16 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m17 = _vm.dataShow ? parseInt(_vm.tireHandleData[9].tireTemp) : null
+  var m18 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m19 = _vm.dataShow ? parseInt(_vm.tireHandleData[9].tirePress) : null
+  var m20 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m21 = _vm.dataShow ? parseInt(_vm.tireHandleData[8].tireTemp) : null
+  var m22 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m23 = _vm.dataShow ? parseInt(_vm.tireHandleData[8].tirePress) : null
+  var m24 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m25 = _vm.dataShow ? parseInt(_vm.tireHandleData[3].tireTemp) : null
+  var m26 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m27 = _vm.dataShow ? parseInt(_vm.tireHandleData[3].tirePress) : null
+  var m28 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m29 = _vm.dataShow ? parseInt(_vm.tireHandleData[2].tireTemp) : null
+  var m30 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m31 = _vm.dataShow ? parseInt(_vm.tireHandleData[2].tirePress) : null
+  var m32 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m33 = _vm.dataShow ? parseInt(_vm.tireHandleData[7].tireTemp) : null
+  var m34 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m35 = _vm.dataShow ? parseInt(_vm.tireHandleData[7].tirePress) : null
+  var m36 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m37 = _vm.dataShow ? parseInt(_vm.tireHandleData[6].tireTemp) : null
+  var m38 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m39 = _vm.dataShow ? parseInt(_vm.tireHandleData[6].tirePress) : null
+  var m40 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m41 = _vm.dataShow ? parseInt(_vm.tireHandleData[11].tireTemp) : null
+  var m42 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m43 = _vm.dataShow ? parseInt(_vm.tireHandleData[11].tirePress) : null
+  var m44 = _vm.dataShow ? parseInt(this.tirePress) : null
+  var m45 = _vm.dataShow ? parseInt(_vm.tireHandleData[10].tireTemp) : null
+  var m46 = _vm.dataShow ? parseInt(this.tireTemp) : null
+  var m47 = _vm.dataShow ? parseInt(_vm.tireHandleData[10].tirePress) : null
+  var m48 = _vm.dataShow ? parseInt(this.tirePress) : null
   _vm.$mp.data = Object.assign(
     {},
     {
       $root: {
-        m0: m0
+        m0: m0,
+        m1: m1,
+        m2: m2,
+        m3: m3,
+        m4: m4,
+        m5: m5,
+        m6: m6,
+        m7: m7,
+        m8: m8,
+        m9: m9,
+        m10: m10,
+        m11: m11,
+        m12: m12,
+        m13: m13,
+        m14: m14,
+        m15: m15,
+        m16: m16,
+        m17: m17,
+        m18: m18,
+        m19: m19,
+        m20: m20,
+        m21: m21,
+        m22: m22,
+        m23: m23,
+        m24: m24,
+        m25: m25,
+        m26: m26,
+        m27: m27,
+        m28: m28,
+        m29: m29,
+        m30: m30,
+        m31: m31,
+        m32: m32,
+        m33: m33,
+        m34: m34,
+        m35: m35,
+        m36: m36,
+        m37: m37,
+        m38: m38,
+        m39: m39,
+        m40: m40,
+        m41: m41,
+        m42: m42,
+        m43: m43,
+        m44: m44,
+        m45: m45,
+        m46: m46,
+        m47: m47,
+        m48: m48
       }
     }
   )
@@ -166,7 +261,45 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var tTable = function tTable() {__webpack_require__.e(/*! require.ensure | components/t-table/t-table */ "components/t-table/t-table").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-table.vue */ 268));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tTh = function tTh() {__webpack_require__.e(/*! require.ensure | components/t-table/t-th */ "components/t-table/t-th").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-th.vue */ 289));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tTr = function tTr() {__webpack_require__.e(/*! require.ensure | components/t-table/t-tr */ "components/t-table/t-tr").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-tr.vue */ 296));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tTd = function tTd() {__webpack_require__.e(/*! require.ensure | components/t-table/t-td */ "components/t-table/t-td").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-td.vue */ 303));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var tTable = function tTable() {__webpack_require__.e(/*! require.ensure | components/t-table/t-table */ "components/t-table/t-table").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-table.vue */ 268));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tTh = function tTh() {__webpack_require__.e(/*! require.ensure | components/t-table/t-th */ "components/t-table/t-th").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-th.vue */ 289));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tTr = function tTr() {__webpack_require__.e(/*! require.ensure | components/t-table/t-tr */ "components/t-table/t-tr").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-tr.vue */ 296));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tTd = function tTd() {__webpack_require__.e(/*! require.ensure | components/t-table/t-td */ "components/t-table/t-td").then((function () {return resolve(__webpack_require__(/*! @/components/t-table/t-td.vue */ 303));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -396,8 +529,9 @@ __webpack_require__.r(__webpack_exports__);
     tTr: tTr,
     tTd: tTd },
 
-  data: function data() {
-    return {
+  data: function data() {var _ref;
+    return _ref = {
+      dataShow: false,
       productName: "",
       list: [{
         name: '胎1' },
@@ -597,10 +731,24 @@ __webpack_require__.r(__webpack_exports__);
         "extra": {
           "line": {
             "type": "straight",
-            "width": 2 } } } };
+            "width": 2 } } } }, _defineProperty(_ref, "tireDkList",
 
 
 
+    []), _defineProperty(_ref, "tireTemp",
+    '90'), _defineProperty(_ref, "tirePress",
+    '5000'), _defineProperty(_ref, "normal1",
+    true), _defineProperty(_ref, "normal2",
+    true), _defineProperty(_ref, "normal3",
+    true), _defineProperty(_ref, "normal4",
+    true), _defineProperty(_ref, "normal5",
+    true), _defineProperty(_ref, "normal6",
+    true), _defineProperty(_ref, "normal7",
+    true), _defineProperty(_ref, "normal8",
+    true), _defineProperty(_ref, "normal9",
+    true), _defineProperty(_ref, "normal10",
+    true), _defineProperty(_ref, "normal11",
+    true), _ref;
 
 
   },
@@ -610,72 +758,162 @@ __webpack_require__.r(__webpack_exports__);
     this.start();
   },
   methods: {
-    start: function start() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                  _this.$api.getDeviceList(_this.productKey));case 2:res = _context.sent;
+    start: function start() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+
+                _this.tireTemp = uni.getStorageSync('tireTemp');
+                _this.tirePress = uni.getStorageSync('tirePress');_context.next = 4;return (
+                  _this.$api.getDeviceList(_this.productKey));case 4:res = _context.sent;
                 // console.log(res);
                 if (res.code == 200) {
                   _this.productName = res.data.productName;
+                  _this.tireDkList = [];
                   for (i = 0; i < res.data.deviceInfo.length; i++) {
                     if (res.data.deviceInfo[i].deviceType == "TireTempPress") {
                       _this.tireDkList.push(res.data.deviceInfo[i].deviceKey);
                     }
                   }
-                  // console.log(this.tireDkList);
-                  _this.getTire();
-                }case 4:case "end":return _context.stop();}}}, _callee);}))();
-    },
-    getTire: function getTire() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res, i, obj;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
-                  _this2.$api.getDeviceData({
-                    productKey: _this2.productKey,
-                    deviceKeyList: _this2.tireDkList }));case 2:res = _context2.sent;
+                  console.log(_this.tireDkList);
+                  if (_this.tireDkList.length == 0) {
+                    console.log("无数据");
+                  } else {
+                    _this.dataShow = true;
+                    _this.getTire();
 
-                // console.log(res);
-                if (res.code == 200) {
-                  for (i = 0; i < res.data.deviceData.length; i++) {
-                    obj = {
-                      tire: res.data.deviceData[i].deviceName,
-                      tirePress: res.data.deviceData[i].tirePress,
-                      tireTemp: res.data.deviceData[i].tireTemp,
-                      time: res.data.deviceData[i].date,
-                      dk: res.data.deviceData[i].deviceKey };
+                  }
 
-                    _this2.tireOriData.push(obj);
-                  }
-                  // console.log("tireOriData", this.tireOriData);
-                  _this2.tireHandleData = JSON.parse(JSON.stringify(_this2.tireOriData));
-                  // console.log(this.tireHandleData);
-                  _this2.tireHandleData.sort(function (a, b) {
-                    var tireA = a.tire.toUpperCase(); // ignore upper and lowercase
-                    var tireB = b.tire.toUpperCase(); // ignore upper and lowercase
-                    if (tireA < tireB) {
-                      return -1;
-                    }
-                    if (tireA > tireB) {
-                      return 1;
-                    }
-                    return 0;
-                  });
-                  for (i = 0; i < _this2.tireHandleData.length; i++) {
-                    _this2.tireHandleData[i].tire = "胎" + (i + 1);
-                    // var obj1 = {
-                    //   name: this.tireHandleData[i].tire,
-                    //   date: this.tireHandleData[i].time,
-                    //   dk: this.tireHandleData[i].dk,
-                    // };
-                    // this.tireList.push(obj1);
-                  }
-                  // console.log("tireHandleData", this.tireHandleData);
-                }
-                _this2.getHisData();case 5:case "end":return _context2.stop();}}}, _callee2);}))();
+                }case 6:case "end":return _context.stop();}}}, _callee);}))();
     },
-    getHisData: function getHisData() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var res, i;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
+    getTire: function getTire() {var _this2 = this;
+      this.$api.getDeviceData({
+        productKey: this.productKey,
+        deviceKeyList: this.tireDkList }).
+      then(function (res) {
+        if (res.code == 200) {
+          console.log(res);
+          for (var i = 0; i < res.data.deviceData.length; i++) {
+            var obj = {
+              tire: res.data.deviceData[i].deviceName,
+              tirePress: (res.data.deviceData[i].tirePress * 10 / 10000).toFixed(1),
+              tireTemp: res.data.deviceData[i].tireTemp.toFixed(1),
+              time: res.data.deviceData[i].date,
+              dk: res.data.deviceData[i].deviceKey };
+
+            _this2.tireOriData.push(obj);
+          }
+
+          // console.log("tireOriData", this.tireOriData);
+          _this2.tireHandleData = JSON.parse(JSON.stringify(_this2.tireOriData));
+
+          if (parseInt(_this2.tireHandleData[1].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[1].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal1 = true;
+          } else {
+            _this2.normal1 = false;
+          }
+          if (parseInt(_this2.tireHandleData[0].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[0].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal0 = true;
+          } else {
+            _this2.normal0 = false;
+          }
+          if (parseInt(_this2.tireHandleData[2].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[2].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal2 = true;
+          } else {
+            _this2.normal2 = false;
+          }
+
+          if (parseInt(_this2.tireHandleData[3].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[3].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal3 = true;
+          } else {
+            _this2.normal3 = false;
+          }
+          if (parseInt(_this2.tireHandleData[4].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[4].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal4 = true;
+          } else {
+            _this2.normal4 = false;
+          }
+          if (parseInt(_this2.tireHandleData[5].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[5].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal5 = true;
+          } else {
+            _this2.normal5 = false;
+          }
+          if (parseInt(_this2.tireHandleData[6].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[6].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal6 = true;
+          } else {
+            _this2.normal6 = false;
+          }
+          if (parseInt(_this2.tireHandleData[7].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[7].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal7 = true;
+          } else {
+            _this2.normal7 = false;
+          }
+          if (parseInt(_this2.tireHandleData[8].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[8].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal8 = true;
+          } else {
+            _this2.normal8 = false;
+          }
+          if (parseInt(_this2.tireHandleData[9].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[9].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal9 = true;
+          } else {
+            _this2.normal9 = false;
+          }
+          if (parseInt(_this2.tireHandleData[10].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[10].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal10 = true;
+          } else {
+            _this2.normal10 = false;
+          }
+          if (parseInt(_this2.tireHandleData[11].tireTemp) < parseInt(_this2.tireTemp) && parseInt(_this2.
+          tireHandleData[11].tirePress) < parseInt(_this2.tirePress)) {
+            _this2.normal11 = true;
+          } else {
+            _this2.normal11 = false;
+          }
+
+
+
+
+
+
+
+          console.log(_this2.tireHandleData);
+          _this2.tireHandleData.sort(function (a, b) {
+            var tireA = a.tire.toUpperCase(); // ignore upper and lowercase
+            var tireB = b.tire.toUpperCase(); // ignore upper and lowercase
+            if (tireA < tireB) {
+              return -1;
+            }
+            if (tireA > tireB) {
+              return 1;
+            }
+            return 0;
+          });
+          for (var i = 0; i < _this2.tireHandleData.length; i++) {
+            _this2.tireHandleData[i].tire = "胎" + (i + 1);
+
+          }
+          _this2.getHisData();
+        }
+      });
+      // console.log(res);
+
+    },
+    getHisData: function getHisData() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res, i;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
                 _this3.hisDate = [];
                 _this3.hisTireTemp = [];
-                _this3.hisTirePress = [];_context3.next = 5;return (
+                _this3.hisTirePress = [];_context2.next = 5;return (
                   _this3.$api.getDeviceHisData({
                     productKey: _this3.productKey,
                     deviceKey: _this3.tireHandleData[0].dk,
-                    num: 10 }));case 5:res = _context3.sent;
+                    num: 10 }));case 5:res = _context2.sent;
 
                 console.log(res);
                 if (res.code == 200) {
@@ -692,7 +930,7 @@ __webpack_require__.r(__webpack_exports__);
                 _this3.chartData.series[0].name = "胎温";
                 _this3.chartData.series[0].data = _this3.hisTireTemp;
                 _this3.chartData.series[1].name = "胎压";
-                _this3.chartData.series[1].data = _this3.hisTirePress;case 16:case "end":return _context3.stop();}}}, _callee3);}))();
+                _this3.chartData.series[1].data = _this3.hisTirePress;case 16:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     change: function change(index) {var _this4 = this;
       // console.log(index);

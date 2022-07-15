@@ -234,17 +234,17 @@ var _default =
     getLight: function getLight() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
                   _this2.$api.getDeviceData({
                     productKey: _this2.productKey,
-                    deviceKeyList: _this2.doorDkList }));case 2:res = _context2.sent;if (!(
+                    deviceKeyList: _this2.doorDkList }));case 2:res = _context2.sent;
 
-
-                res.code == 200)) {_context2.next = 12;break;}
+                console.log(res);if (!(
+                res.code == 200)) {_context2.next = 13;break;}
                 _this2.lightOriData = res.data.deviceData[0].electrical;_context2.t0 =
                 _this2.lightOriData[0];_context2.next = _context2.t0 ===
-                0 ? 8 : _context2.t0 ===
+                0 ? 9 : _context2.t0 ===
 
 
-                1 ? 10 : 12;break;case 8:_this2.checked1 = false;return _context2.abrupt("break", 12);case 10:
-                _this2.checked1 = true;return _context2.abrupt("break", 12);case 12:case "end":return _context2.stop();}}}, _callee2);}))();
+                1 ? 11 : 13;break;case 9:_this2.checked1 = false;return _context2.abrupt("break", 13);case 11:
+                _this2.checked1 = true;return _context2.abrupt("break", 13);case 13:case "end":return _context2.stop();}}}, _callee2);}))();
 
 
 

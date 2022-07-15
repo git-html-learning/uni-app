@@ -82,10 +82,6 @@
 					this.loadingBtn = false
 					console.log(res);
 					this.info = res.msg
-					// this.$refs.uToast.show({
-					// 	title: this.info,
-					// 	type: 'success',
-					// })
 					if (res.code === 200) {
 						//	保存token
 						uni.setStorageSync('token_nitrogen', res.data.token)
@@ -102,7 +98,6 @@
 
 						// 跳转
 						uni.switchTab({
-							// url: "./nitrogen/nitrogen",
 							url: "./homepage/home"
 						})
 					} else {

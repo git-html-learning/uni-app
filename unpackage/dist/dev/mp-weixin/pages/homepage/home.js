@@ -187,7 +187,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 14));
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -301,110 +301,128 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _product = __webpack_require__(/*! @/services/product */ 48);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var _default =
-
-
-{
-  data: function data() {
-    return {
-      username: '',
-      modalName: null,
-      productKey: "",
-      value: "",
-      options: [] };
-
-
-
-
-  },
-  onShow: function onShow() {
-    // 获取用户名
-    this.username = uni.getStorageSync('username_nitrogen');
-    this.start();
-    this.prepare();
-
-  },
-  methods: {
-    prepare: function prepare() {var _this = this;
-      this.value = "";
-      uni.setStorageSync('truck_productKey', this.value);
-      (0, _product.getProduct)().then(function (res) {
-        console.log(res);
-
-        if (res.msg == "ok") {
-          _this.options = [];
-          res.data.productInfo.forEach(function (item) {
-            if (item.productName !== "通宇项目司机") {
-              var obj = {
-                text: item.productName,
-                value: item.productKey };
-
-              _this.options.push(obj);
-            }
-
-          });
-          // this.options.pu
-          console.log(_this.options);
-        }
-      });
-    },
-
-    // 对话框隐藏
-    hideModal: function hideModal() {
-      this.modalName = null;
-    },
-    // 登出
-    logout: function logout() {
-      this.flagNewUser = true;
-      this.modalName = null;
-      uni.reLaunch({
-        url: '../login' });
-
-    },
-    start: function start() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                  _this2.$api.getProduct());case 2:res = _context.sent;
-                // console.log("12");
-                console.log(res);
-                if (res.code == 200) {
-                  for (i = 0; i < res.data.productInfo.length; i++) {
-                    if (res.data.productInfo[i].typeIdentify != "tysj") {
-                      // console.log(res.data.productInfo[i]);
-                      _this2.productKey = res.data.productInfo[i].productKey;
-                    }
-                  }
-                  console.log(_this2.productKey);
-                  uni.setStorageSync('truck_productKey', _this2.productKey);
-                }case 5:case "end":return _context.stop();}}}, _callee);}))();
-    },
-    register: function register() {
-      uni.navigateTo({
-        url: "../details/register" });
-
-    },
-    position: function position() {
-      // console.log(this.value);
-      if (this.value === "") {
-        this.$refs.message.open();
-      } else {
-        uni.navigateTo({
-          url: "../details/position" });
-
-      }
-
-    },
-    tem: function tem() {
-      if (this.value === "") {
-        this.$refs.message.open();
-      } else {
-        uni.navigateTo({
-          url: "../details/tem" });
-
-      }
-
-    },
-    oil: function oil() {
-      if (this.value === "") {
-        this.$refs.message.open();
+var _product = __webpack_require__(/*! @/services/product */ 48);
+
+
+var _user = __webpack_require__(/*! @/services/user */ 50); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { username: '', modalName: null, productKey: "", value: "", options: [] };}, onShow: function onShow() {// 获取用户名
+    this.username = uni.getStorageSync('username_nitrogen');}, onLoad: function onLoad() {this.threshold();this.prepare();}, methods: { threshold: function threshold() {var username = uni.getStorageSync('username_nitrogen');console.log(username);(0, _user.getUserInfo)(username).then(function (res) {console.log(res);if (res.msg == "ok") {var tireTemp = res.data.extraInfo.thresholdValue.tire.tireTemp;var tirePress = res.data.extraInfo.thresholdValue.tire.tirePress;var shake = res.data.extraInfo.thresholdValue.shake;var oil = res.data.extraInfo.thresholdValue.oil;var humiDown = res.data.extraInfo.thresholdValue.tempAndHumi.humiDown;var humiUp = res.data.extraInfo.thresholdValue.tempAndHumi.humiUp;var tempDown = res.data.extraInfo.thresholdValue.tempAndHumi.tempDown;var tempUp = res.data.extraInfo.thresholdValue.tempAndHumi.tempUp;uni.setStorageSync('tireTemp', tireTemp);uni.setStorageSync('tirePress', tirePress);uni.setStorageSync('shake', shake);uni.setStorageSync('oil', oil);uni.setStorageSync('humiDown', humiDown);uni.setStorageSync('humiUp', humiUp);uni.setStorageSync('tempDown', tempDown);uni.setStorageSync('tempUp', tempUp);}});}, prepare: function prepare() {var _this = this;this.value = "";uni.setStorageSync('truck_productKey', this.value);(0, _product.getProduct)().then(function (res) {console.log(res);if (res.msg == "ok") {_this.options = [];res.data.productInfo.forEach(function (item) {if (item.productName !== "通宇项目司机") {var obj = { text: item.productName, value: item.productKey };_this.options.push(obj);}}); // this.options.pu
+          console.log(_this.options);}});}, // 对话框隐藏
+    hideModal: function hideModal() {this.modalName = null;}, // 登出
+    logout: function logout() {this.flagNewUser = true;this.modalName = null;uni.reLaunch({ url: '../login' });}, register: function register() {uni.navigateTo({ url: "../details/register" });}, position: function position() {// console.log(this.value);
+      if (this.value === "") {this.$refs.message.open();} else {uni.navigateTo({ url: "../details/position" });}}, tem: function tem() {if (this.value === "") {this.$refs.message.open();} else {uni.navigateTo({ url: "../details/tem" });}}, oil: function oil() {if (this.value === "") {this.$refs.message.open();
       } else {
         uni.navigateTo({
           url: "../details/oil" });
@@ -453,7 +471,9 @@ var _product = __webpack_require__(/*! @/services/product */ 48);function _inter
     },
     change: function change(index) {
       console.log(index);
-      uni.setStorageSync('truck_productKey', index);
+      this.value = index;
+      uni.setStorageSync('truck_productKey', this.value);
+      uni.setStorageSync('value', this.value);
     },
     reset: function reset() {
       this.prepare();

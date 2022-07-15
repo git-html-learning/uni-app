@@ -81,7 +81,7 @@
 					productKey: this.productKey,
 					deviceKeyList: this.doorDkList
 				})
-				// console.log(res);
+				console.log(res);
 				if (res.code == 200) {
 					this.lightOriData = res.data.deviceData[0].electrical;
 					switch (this.lightOriData[0]) {

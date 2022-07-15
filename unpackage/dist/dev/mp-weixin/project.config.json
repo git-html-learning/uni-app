@@ -7,7 +7,6 @@
     "setting": {
         "urlCheck": false,
         "minified": true,
-        "ignoreUploadUnusedFiles": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],

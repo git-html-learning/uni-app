@@ -5,24 +5,24 @@
 		</view>
 		<view class="nav">
 			<view class="nav_item">
-				<view class="iconfont aa" v-show="door1">&#xe63d;</view>
-				<view class="iconfont aa" v-show="!door1">&#xe7bb;</view>
+				<view class="iconfont aa" v-show="!door1">&#xe63d;</view>
+				<view class="iconfont aa" v-show="door1">&#xe7bb;</view>
 				<text>门1</text>
 			</view>
 			<view class="nav_item">
-				<view class="iconfont aa" v-show="door2">&#xe63d;</view>
-				<view class="iconfont aa" v-show="!door2">&#xe7bb;</view>
+				<view class="iconfont aa" v-show="!door2">&#xe63d;</view>
+				<view class="iconfont aa" v-show="door2">&#xe7bb;</view>
 				<text>门2</text>
 			</view>
 		</view>
 		<view class="nav">
 			<view class="nav_item1">
-				<u-tag v-show="door1" text="已开启" type="error" />
-				<u-tag v-show="!door1" text="已关闭" color="#6147f4" border-color="#6147f4" />
+				<u-tag v-show="!door1" text="已开启" type="error" />
+				<u-tag v-show="door1" text="已关闭" color="#6147f4" border-color="#6147f4" />
 			</view>
 			<view class="nav_item1">
-				<u-tag v-show="door2" text="已开启" type="error" />
-				<u-tag v-show="!door2" text="已关闭" color="#6147f4" border-color="#6147f4" />
+				<u-tag v-show="!door2" text="已开启" type="error" />
+				<u-tag v-show="door2" text="已关闭" color="#6147f4" border-color="#6147f4" />
 			</view>
 		</view>
 	</view>

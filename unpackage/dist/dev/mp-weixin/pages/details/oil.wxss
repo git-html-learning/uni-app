@@ -65,4 +65,15 @@
   height: 375rpx;
   margin-top: 50px;
 }
+.layout1 {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-left: 4%;
+  width: 350px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
 

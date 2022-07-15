@@ -1,52 +1,53 @@
 {
-  "pages": [
-    "pages/login",
-    "pages/nitrogen/nitrogen",
-    "pages/homepage/home",
-    "pages/details/register",
-    "pages/details/tem",
-    "pages/details/oil",
-    "pages/details/tire_tem",
-    "pages/details/elec_switch",
-    "pages/details/door",
-    "pages/details/position",
-    "pages/details/vibration",
-    "pages/notice",
-    "pages/history",
-    "pages/myinfo/myinfo",
-    "pages/myinfo/myinfo_address",
-    "pages/myinfo/myinfo_email",
-    "pages/myinfo/myinfo_phone"
-  ],
-  "subPackages": [],
-  "window": {
-    "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#6147f4",
-    "navigationBarTitleText": "冷藏车监控",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "selectionColor": "#1890FF",
-    "list": [
-      {
-        "text": "首页",
-        "pagePath": "pages/homepage/home",
-        "iconPath": "static/img/home.png",
-        "selectedIconPath": "static/img/home-active.png"
-      },
-      {
-        "text": "通知",
-        "pagePath": "pages/notice",
-        "iconPath": "static/img/notice.png",
-        "selectedIconPath": "static/img/notice-active.png"
-      },
-      {
-        "text": "我的",
-        "pagePath": "pages/myinfo/myinfo",
-        "iconPath": "static/img/info.png",
-        "selectedIconPath": "static/img/info-active.png"
-      }
-    ]
-  },
-  "usingComponents": {}
+    "pages": [
+        "pages/login",
+        "pages/nitrogen/nitrogen",
+        "pages/homepage/home",
+        "pages/details/register",
+        "pages/details/tem",
+        "pages/details/oil",
+        "pages/details/tire_tem",
+        "pages/details/elec_switch",
+        "pages/details/door",
+        "pages/details/position",
+        "pages/details/vibration",
+        "pages/notice",
+        "pages/history",
+        "pages/myinfo/myinfo",
+        "pages/myinfo/myinfo_address",
+        "pages/myinfo/myinfo_email",
+        "pages/myinfo/myinfo_phone"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#6147f4",
+        "navigationBarTitleText": "冷藏车监控",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "selectionColor": "#1890FF",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/homepage/home",
+                "iconPath": "static/img/home.png",
+                "selectedIconPath": "static/img/home-active.png"
+            },
+            {
+                "text": "通知",
+                "pagePath": "pages/notice",
+                "iconPath": "static/img/notice.png",
+                "selectedIconPath": "static/img/notice-active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/myinfo/myinfo",
+                "iconPath": "static/img/info.png",
+                "selectedIconPath": "static/img/info-active.png"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
 }
