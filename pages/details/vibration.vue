@@ -1,16 +1,16 @@
 <template>
 	<view class="home">
-		<view class="" v-if = "dataShow">
+		<view class="" v-if="dataShow">
 			<view class="title1">
-					{{productName}}
-				</view>
-				<view class="charts-box">
+				{{productName}}
+			</view>
+			<view class="charts-box">
 				<qiun-data-charts type="line" :chartData="chartData" background="none" :opts="chartOptions" />
 			</view>
 		</view>
-<view class="layout1" v-if = "!dataShow" style="line-height: 50px; text-align: center; margin-top: 50px;">
-	当前设备未注册胎温胎压设备，暂无数据！！
-	</view>
+		<view class="layout1" v-if="!dataShow" style="line-height: 50px; text-align: center; margin-top: 50px;">
+			当前设备未注册胎温胎压设备，暂无数据！！
+		</view>
 	</view>
 </template>
 
@@ -20,7 +20,7 @@
 			return {
 				dataShow: true,
 				productKey: "",
-				productName:"",
+				productName: "",
 				accDkList: [],
 				humiOriData: [],
 				humiHandleData: [],
@@ -137,7 +137,7 @@
 			async getHisData() {
 				this.hisVibDate = []
 				this.hisVib = []
-				if (this.accDkList.length !==0) {
+				if (this.accDkList.length !== 0) {
 					this.dataShow = true
 					this.hisEndTime = Date.parse(new Date()) / 1000;
 					const res = await this.$api.getDeviceHisData({
@@ -157,14 +157,20 @@
 						}
 						console.log("hisVibDate", this.hisVibDate);
 						console.log("hisVib", this.hisVib);
+						this.chartData.categories = this.hisVibDate
+						this.chartData.series[0].name = "震动值"
+						this.chartData.series[0].data = this.hisVib
+					} else {
+						uni.showToast({
+							title: res.msg,
+							icon :'none'
+						})
 					}
-					this.chartData.categories = this.hisVibDate
-					this.chartData.series[0].name = "震动值"
-					this.chartData.series[0].data = this.hisVib
+			
 				} else {
 					this.dataShow = false
 				}
-			
+
 			},
 
 		}
@@ -204,6 +210,7 @@
 			height: 300px;
 		}
 	}
+
 	.layout1 {
 		background-color: #fff;
 		position: relative;

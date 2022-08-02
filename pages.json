@@ -96,19 +96,19 @@
 			"style": {
 				"navigationBarTitleText": ""
 			}
-		},
-		{
-			"path": "pages/myinfo/myinfo_email",
-			"style": {
-				"navigationBarTitleText": ""
-			}
-		},
-		{
-			"path": "pages/myinfo/myinfo_phone",
-			"style": {
-				"navigationBarTitleText": ""
-			}
 		}
+		// {
+		// 	"path": "pages/myinfo/myinfo_email",
+		// 	"style": {
+		// 		"navigationBarTitleText": ""
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/myinfo/myinfo_phone",
+		// 	"style": {
+		// 		"navigationBarTitleText": ""
+		// 	}
+		// }
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

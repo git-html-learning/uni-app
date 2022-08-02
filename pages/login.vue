@@ -1,4 +1,4 @@
-<template>
+ <template>
 	<view class="page-login">
 
 		<image class="login-image" src="../static/img/bgimg.jpg"></image>

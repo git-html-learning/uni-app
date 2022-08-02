@@ -89,13 +89,11 @@
 											lng: this.longitude,
 											lat: this.latitude
 										}
-									// this.markerArr = {
-									// 	lng: this.lng,
-									// 	lat: this.lat,
-									// 	title: this.productName,
-									// 	date: this.date
-									// }
-									// console.log(this.markerArr)
+								} else {
+									uni.showToast({
+										title: res.msg,
+										icon: 'none'
+									})
 								}
 							})
 						}

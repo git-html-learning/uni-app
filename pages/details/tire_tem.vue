@@ -694,6 +694,11 @@
 						this.chartData.series[0].data = this.hisTireTemp
 						this.chartData.series[1].name = "胎压"
 						this.chartData.series[1].data = this.hisTirePress
+					} else {
+				uni.showToast({
+					title: res.msg,
+					icon:'none'
+				})
 					}
 				})
 

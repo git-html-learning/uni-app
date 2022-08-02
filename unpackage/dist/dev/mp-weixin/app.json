@@ -14,9 +14,7 @@
         "pages/notice",
         "pages/history",
         "pages/myinfo/myinfo",
-        "pages/myinfo/myinfo_address",
-        "pages/myinfo/myinfo_email",
-        "pages/myinfo/myinfo_phone"
+        "pages/myinfo/myinfo_address"
     ],
     "subPackages": [],
     "window": {

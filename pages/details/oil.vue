@@ -1,18 +1,19 @@
 <template>
 	<view class="oil">
-		<view class="" v-if = "dataShow">
+		<view class="" v-if="dataShow">
 			<view class="title1">
 				{{productName}}
 			</view>
-			<u-notice-bar mode="horizontal" :list="list" type="success" v-if = "!noticeShow" ></u-notice-bar>
-			<u-notice-bar mode="horizontal" :list="list" type="success" color="#ff9649" background-color="#fff8e7" v-if = "noticeShow"></u-notice-bar>
+			<u-notice-bar mode="horizontal" :list="list" type="success" v-if="!noticeShow"></u-notice-bar>
+			<u-notice-bar mode="horizontal" :list="list" type="success" color="#ff9649" background-color="#fff8e7"
+				v-if="noticeShow"></u-notice-bar>
 			<view class="charts-box">
 				<qiun-data-charts type="arcbar" :chartData="chartData" :opts="options" background="none" />
 			</view>
 		</view>
-		<view class="layout1" v-if = "!dataShow" style="line-height: 50px; text-align: center; margin-top: 50px;">
+		<view class="layout1" v-if="!dataShow" style="line-height: 50px; text-align: center; margin-top: 50px;">
 			当前设备未注册胎温胎压设备，暂无数据！！
-			</view>
+		</view>
 	</view>
 </template>
 
@@ -21,7 +22,7 @@
 		data() {
 			return {
 				dataShow: true,
-				productName:"",
+				productName: "",
 				oillevel: 0,
 				list: [, "可放心使用！"],
 				chartData: {
@@ -112,13 +113,13 @@
 						}
 					}
 					// console.log(this.humiDkList);
-					if (this.oilDkList.length!==0) {
+					if (this.oilDkList.length !== 0) {
 						this.dataShow = true
 						this.getOil()
 					} else {
 						this.dataShow = false
 					}
-					
+
 				}
 			},
 			async getOil() {
@@ -128,33 +129,37 @@
 				})
 				console.log(res);
 				if (res.code == 200) {
-					if (res.data.deviceData[0].oil <0) {
+					if (res.data.deviceData[0].oil < 0) {
 						this.oillevel = 0
 					} else {
-					this.oillevel = res.data.deviceData[0].oil
+						this.oillevel = res.data.deviceData[0].oil
 					}
-this.oilThres = uni.getStorageSync("oil")
-console.log(this.oilThres)
-if (this.oilThres<=this.oillevel) {
-	
+					this.oilThres = uni.getStorageSync("oil")
+					console.log(this.oilThres)
+					if (this.oilThres <= this.oillevel) {
+
 						this.options.title.name = this.oillevel + "%"
 						this.chartData.series[0].data = (this.oillevel) / 100
 						this.list[0] = "当前油量为" + this.oillevel + "%"
-					this.noticeShow = false
-} else {
-	this.options.title.name = this.oillevel + "%"
-	this.chartData.series[0].data = (this.oillevel) / 100
-	this.list[0] = "当前油量为" + this.oillevel +"，低于设定阈值"+this.oilThres
-	this.list[1] = "请注意！！！"
-this.noticeShow = true
-}
+						this.noticeShow = false
+					} else {
+						this.options.title.name = this.oillevel + "%"
+						this.chartData.series[0].data = (this.oillevel) / 100
+						this.list[0] = "当前油量为" + this.oillevel + "，低于设定阈值" + this.oilThres
+						this.list[1] = "请注意！！！"
+						this.noticeShow = true
+					}
 				} else {
-					console.log(res.code)
-					this.oillevel = 0
-					this.options.title.name = this.oillevel + "%"
-					this.chartData.series[0].data = (this.oillevel) / 100
-					this.list[0] = "当前车辆无油位数据"
-					this.options.subtitle.name = "当前车辆无油位数据"
+					// console.log(res.code)
+					// this.oillevel = 0
+					// this.options.title.name = this.oillevel + "%"
+					// this.chartData.series[0].data = (this.oillevel) / 100
+					// this.list[0] = "当前车辆无油位数据"
+					// this.options.subtitle.name = "当前车辆无油位数据"
+					uni.showToast({
+						title: res.msg,
+						icon :'none'
+					})
 				}
 
 			},
@@ -211,6 +216,7 @@ this.noticeShow = true
 		height: 375rpx;
 		margin-top: 50px;
 	}
+
 	.layout1 {
 		background-color: #fff;
 		position: relative;

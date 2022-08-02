@@ -67,6 +67,14 @@ export const deviceTemplate = (devicetype) => { //获取指定设备模板
 	})
 }
 
+export const issuePort = (data) => { //下发接口
+	return $http({
+		url: baseUrl + '/newDownRaw?deviceType=kbox1&bodyType=json&timeout=2',
+		method: 'post',
+		data: data
+	})
+}
+
 export const checkFromHONEN = (simId) => { // 查看云平台是否有某设备
 	return $http({
 		url: baseUrl + '/deviceDetail',

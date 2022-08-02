@@ -30,6 +30,11 @@
 		<view class="charts-box">
 			<qiun-data-charts type="line" :chartData="chartData" background="none" :opts="chartOptions" />
 		</view>
+		<view class="section section_gap" style = "margin-bottom: 20px;">
+			<view class="body-view">
+				<slider @change="slider3change" max="29" min="5" value="20" show-value />
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -85,10 +90,14 @@
 				hisDate: [],
 				hisTemp: [],
 				hisHumi: [],
+				hisDate1: [],
+				hisTemp1: [],
+				hisHumi1: [],
 				maxtemp: "",
 				mintemp: "",
 				maxhumi: "",
 				minhumi: "",
+				num: "5",
 				chartData: {
 					"categories": [],
 					"series": [{
@@ -103,7 +112,7 @@
 						},
 					]
 				},
-				productName:"",
+				productName: "",
 				chartOptions: {
 					"type": "line",
 					"dataLabel": false,
@@ -112,6 +121,13 @@
 						"disableGrid": true,
 						// "rotateLabel":true,
 						"labelCount": 2,
+						"formatter": function(value) {
+							return value.slice(5, 10) + "\n" + value.slice(11, 16);
+						},
+						"textStyle": {
+							"color": "#fff" //坐标值得具体的颜色
+						}
+
 					},
 					"yAxis": {
 						"gridType": "dash",
@@ -128,15 +144,15 @@
 
 					},
 					"legend": {},
-						
+
 					"extra": {
 						"line": {
-							"type": "straight",
+							"type": "curve",
 							"width": 2
 						},
 					}
 				},
-			
+
 			};
 		},
 		onShow() {
@@ -164,8 +180,9 @@
 					productKey: this.productKey,
 					deviceKeyList: this.humiDkList
 				})
-				// console.log(res);
+				console.log(res);
 				if (res.code == 200) {
+					this.humiOriData = []
 					for (var i = 0; i < res.data.deviceData.length; i++) {
 						var obj = {
 							sensor: res.data.deviceData[i].deviceName,
@@ -208,6 +225,26 @@
 				}
 				this.getHisData()
 			},
+			slider3change(e) {
+				// console.log(e)
+				this.num = e.detail.value
+
+				this.hisDate1 = this.hisDate.slice(this.hisDate.length - this.num - 1, this.hisDate.length - 1)
+				this.hisTemp1 = this.hisTemp.slice(this.hisTemp.length - this.num - 1, this.hisTemp.length - 1)
+				this.hisHumi1 = this.hisHumi.slice(this.hisHumi.length - this.num - 1, this.hisHumi.length - 1)
+				this.maxtemp = Math.max.apply(null, this.hisTemp1);
+				this.mintemp = Math.min.apply(null, this.hisTemp1);
+
+				this.maxhumi = Math.max.apply(null, this.hisHumi1);
+				this.minhumi = Math.min.apply(null, this.hisHumi1);
+
+				this.chartData.categories = this.hisDate1
+				this.chartData.series[0].name = "温度"
+				this.chartData.series[0].data = this.hisTemp1
+				this.chartData.series[1].name = "湿度"
+				this.chartData.series[1].data = this.hisHumi1
+
+			},
 			async getHisData() {
 				this.hisDate = []
 				this.hisHumi = []
@@ -215,7 +252,7 @@
 				const res = await this.$api.getDeviceHisData({
 					productKey: this.productKey,
 					deviceKey: this.humiHandleData[0].dk,
-					num: 10
+					num: 30
 				})
 				console.log(res);
 				if (res.code == 200) {
@@ -226,13 +263,21 @@
 					}
 				}
 				console.log(this.hisDate);
-				console.log(this.hisTemp);
-				console.log(this.hisHumi);
-				this.maxtemp = Math.max.apply(null, this.hisTemp);
-				this.mintemp = Math.min.apply(null, this.hisTemp);
+				this.hisDate1 = this.hisDate
+				this.hisTemp1 = this.hisTemp
+				this.hisHumi1 = this.hisHumi
+				this.hisDate1 = this.hisDate.slice(this.hisDate.length - 20- 1, this.hisDate.length - 1)
+				this.hisTemp1 = this.hisTemp.slice(this.hisTemp.length - 20 - 1, this.hisTemp.length - 1)
+				this.hisHumi1 = this.hisHumi.slice(this.hisHumi.length - 20 - 1, this.hisHumi.length - 1)
+				console.log(this.hisDate);
+				console.log(this.hisDate1);
+				console.log(this.hisTemp1);
+				console.log(this.hisHumi1);
+				this.maxtemp = Math.max.apply(null, this.hisTemp1);
+				this.mintemp = Math.min.apply(null, this.hisTemp1);
 				// console.log(this.maxtemp,this.mintemp);
-				this.maxhumi = Math.max.apply(null, this.hisHumi);
-				this.minhumi = Math.min.apply(null, this.hisHumi);
+				this.maxhumi = Math.max.apply(null, this.hisHumi1);
+				this.minhumi = Math.min.apply(null, this.hisHumi1);
 				// console.log(this.maxhumi,this.minhumi);
 				// console.log(this.chartOptions.yAxis.splitNumber);
 				// if ((this.maxhumi - this.minhumi >= 5) || (this.maxhumi - this.minhumi >= 5) == 0) {
@@ -240,11 +285,11 @@
 				// } else {
 				// 	this.chartOptions.yAxis.splitNumber = this.maxhumi - this.minhumi
 				// }
-				this.chartData.categories = this.hisDate
+				this.chartData.categories = this.hisDate1
 				this.chartData.series[0].name = "温度"
-				this.chartData.series[0].data = this.hisTemp
+				this.chartData.series[0].data = this.hisTemp1
 				this.chartData.series[1].name = "湿度"
-				this.chartData.series[1].data = this.hisHumi
+				this.chartData.series[1].data = this.hisHumi1
 			},
 			edit(item) {
 				uni.showToast({
@@ -262,7 +307,7 @@
 				this.$api.getDeviceHisData({
 					productKey: this.productKey,
 					deviceKey: this.humiHandleData[index - 1].dk,
-					num: 10
+					num: 30
 				}).then((res) => {
 					console.log(res);
 					if (res.code == 200) {
@@ -271,17 +316,26 @@
 							this.hisTemp.push(res.data.deviceData[i].temp);
 							this.hisHumi.push(res.data.deviceData[i].humi);
 						}
-						this.maxtemp = Math.max.apply(null, this.hisTemp);
-						this.mintemp = Math.min.apply(null, this.hisTemp);
-						console.log(this.maxtemp, this.mintemp);
-						this.maxhumi = Math.max.apply(null, this.hisHumi);
-						this.minhumi = Math.min.apply(null, this.hisHumi);
-						console.log(this.maxhumi, this.minhumi);
-						this.chartData.categories = this.hisDate
+						this.hisDate1 = this.hisDate.slice(this.hisDate.length - this.num - 1, this.hisDate.length - 1)
+						this.hisTemp1 = this.hisTemp.slice(this.hisTemp.length - this.num - 1, this.hisTemp.length - 1)
+						this.hisHumi1 = this.hisHumi.slice(this.hisHumi.length - this.num - 1, this.hisHumi.length - 1)
+						this.maxtemp = Math.max.apply(null, this.hisTemp1);
+						this.mintemp = Math.min.apply(null, this.hisTemp1);
+						// console.log(this.maxtemp,this.mintemp);
+						this.maxhumi = Math.max.apply(null, this.hisHumi1);
+						this.minhumi = Math.min.apply(null, this.hisHumi1);
+						// console.log(this.maxhumi,this.minhumi);
+						// console.log(this.chartOptions.yAxis.splitNumber);
+						// if ((this.maxhumi - this.minhumi >= 5) || (this.maxhumi - this.minhumi >= 5) == 0) {
+						// 	this.chartOptions.yAxis.splitNumber = 5
+						// } else {
+						// 	this.chartOptions.yAxis.splitNumber = this.maxhumi - this.minhumi
+						// }
+						this.chartData.categories = this.hisDate1
 						this.chartData.series[0].name = "温度"
-						this.chartData.series[0].data = this.hisTemp
+						this.chartData.series[0].data = this.hisTemp1
 						this.chartData.series[1].name = "湿度"
-						this.chartData.series[1].data = this.hisHumi
+						this.chartData.series[1].data = this.hisHumi1
 					}
 				})
 

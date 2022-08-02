@@ -181,7 +181,8 @@
 							if (item.productName !== "通宇项目司机") {
 								var obj = {
 									text: item.productName,
-									value: item.productKey
+									value: item.productKey,
+									typeIdentify: item.typeIdentify
 								}
 								this.options.push(obj)
 							}
@@ -284,6 +285,18 @@
 				console.log(index)
 				this.value = index
 				uni.setStorageSync('truck_productKey', this.value)
+				console.log(this.options)
+				var typeIdentify = ""
+				if (this.options.length !==0) {
+					this.options.forEach(item=>{
+						if (item.value == this.value) {
+							typeIdentify = item.typeIdentify
+						}
+					})
+				}
+				console.log(typeIdentify)
+					uni.setStorageSync('truck_productKey', this.value)
+					uni.setStorageSync('truck_typeIdentify', typeIdentify)
 				uni.setStorageSync('value', this.value)
 			},
 			reset() {

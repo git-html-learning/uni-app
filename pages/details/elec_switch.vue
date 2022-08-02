@@ -37,6 +37,9 @@
 </template>
 
 <script>
+	import {
+		issuePort
+	} from "@/services/device";
 	export default {
 		data() {
 			return {
@@ -47,12 +50,15 @@
 				productKey: "",
 				doorDkList: [],
 				lightOriData: [],
+				typeIdentify:"",
 
 			};
 		},
 		onShow() {
 			this.productKey = uni.getStorageSync('truck_productKey')
+			this.typeIdentify = uni.getStorageSync('truck_typeIdentify')
 			// console.log(this.productKey);
+			console.log(this.typeIdentify)
 			this.start()
 		},
 		methods: {
@@ -64,7 +70,7 @@
 			},
 			async start() {
 				const res = await this.$api.getDeviceList(this.productKey)
-				// console.log(res);
+				console.log(res);
 				if (res.code == 200) {
 					this.productName = res.data.productName;
 					for (var i = 0; i < res.data.deviceInfo.length; i++) {
@@ -72,7 +78,7 @@
 							this.doorDkList.push(res.data.deviceInfo[i].deviceKey);
 						}
 					}
-					// console.log(this.doorDkList);
+					console.log(this.doorDkList);
 					this.getLight()
 				}
 			},
@@ -96,12 +102,25 @@
 			},
 			elecs1() {
 				console.log(this.checked1);
-				// if (this.checked1 = true) {
-				// 	console.log("正在开灯");
-				// 	console.log(this.checked1);
-				// } else if(this.checked1 = false) {
-				// 	console.log("正在关灯");
-				// }
+				var checkData = ""
+					
+				if (this.checked1 == false) {
+					checkData =  "EFEFEF0100CE"
+				} else if (this.checked1 == true) {
+					checkData =  "EFEFEF0101CF"
+				}
+ 				console.log(checkData)
+				var data= checkData+" "+this.typeIdentify
+				console.log(data)
+				issuePort(data).then((res)=>{
+					console.log(res)
+					
+						uni.showToast({
+							title: "下发成功",
+							icon:"more"
+						})
+				})
+				
 			},
 			elecs2() {
 				console.log(this.checked2);
