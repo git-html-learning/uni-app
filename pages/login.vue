@@ -35,11 +35,14 @@
 	import {
 		store
 	} from '../store/store.js'
+	import {
+		adminLogin
+	} from "@/services/admin";
 	export default {
 		data() {
 			return {
 
-				title: '冷藏车监控',
+				title: '智慧冷链与储运一体化管理系统',
 				username: '',
 				password: '',
 				memory: 1,
@@ -51,7 +54,9 @@
 				}]
 			}
 		},
-		onLoad() {},
+		onLoad() {
+		
+		},
 		onShow() {
 			this.username = uni.getStorageSync('username_nitrogen')
 			let memory = uni.getStorageSync('memory_nitrogen')
@@ -64,6 +69,15 @@
 			// 登录
 			handleLogin() {
 				// 预校验
+				//先登录一下超级管理员，获取密钥
+					
+	adminLogin("弘恩科技",'hongenkj&ahu@2020').then((res)=>{
+		console.log(res)
+				if(res.code == 200) {
+					uni.setStorageSync('adminToken_nitrogen', res.data.token)
+					console.log(res.data.token)
+				}
+			})
 				if (this.username === '') {
 					uni.showToast({
 						title: '请输入用户名',

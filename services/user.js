@@ -28,3 +28,11 @@ export const updateUserInfo = (data) => { // 更新个人信息
 	})
 }
 
+export const userRegister = (data) => { // 注册用户
+	return $http({
+		url: 'https://api.ahusmart.com/session',
+		method: 'put',
+		data
+	})
+}
+

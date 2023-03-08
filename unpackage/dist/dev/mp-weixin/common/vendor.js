@@ -8,8 +8,8 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createPlugin = createPlugin;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 3));
-var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 4);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+/* WEBPACK VAR INJECTION */(function(global) {Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createPlugin = createPlugin;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 3);
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 
 var realAtob;
 
@@ -128,6 +128,16 @@ var camelizeRE = /-(\w)/g;
 var camelize = cached(function (str) {
   return str.replace(camelizeRE, function (_, c) {return c ? c.toUpperCase() : '';});
 });
+
+function sortObject(obj) {
+  var sortObj = {};
+  if (isPlainObject(obj)) {
+    Object.keys(obj).sort().forEach(function (key) {
+      sortObj[key] = obj[key];
+    });
+  }
+  return !Object.keys(sortObj) ? obj : sortObj;
+}
 
 var HOOKS = [
 'invoke',
@@ -324,7 +334,7 @@ var promiseInterceptor = {
 
 
 var SYNC_API_RE =
-/^\$|Window$|WindowStyle$|sendHostEvent|sendNativeEvent|restoreGlobal|requireGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64|getLocale|setLocale/;
+/^\$|Window$|WindowStyle$|sendHostEvent|sendNativeEvent|restoreGlobal|requireGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64|getLocale|setLocale|invokePushCallback|getWindowInfo|getDeviceInfo|getAppBaseInfo|getSystemSetting|getAppAuthorizeSetting/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
 
@@ -332,7 +342,7 @@ var CONTEXT_API_RE = /^create|Manager$/;
 var CONTEXT_API_RE_EXC = ['createBLEConnection'];
 
 // 同步例外情况
-var ASYNC_API = ['createBLEConnection'];
+var ASYNC_API = ['createBLEConnection', 'createPushMessage'];
 
 var CALLBACK_API_RE = /^on|^off/;
 
@@ -437,7 +447,134 @@ function upx2px(number, newDeviceWidth) {
   return number < 0 ? -result : result;
 }
 
-function getLocale() {
+var LOCALE_ZH_HANS = 'zh-Hans';
+var LOCALE_ZH_HANT = 'zh-Hant';
+var LOCALE_EN = 'en';
+var LOCALE_FR = 'fr';
+var LOCALE_ES = 'es';
+
+var messages = {};
+
+var locale;
+
+{
+  locale = normalizeLocale(wx.getSystemInfoSync().language) || LOCALE_EN;
+}
+
+function initI18nMessages() {
+  if (!isEnableLocale()) {
+    return;
+  }
+  var localeKeys = Object.keys(__uniConfig.locales);
+  if (localeKeys.length) {
+    localeKeys.forEach(function (locale) {
+      var curMessages = messages[locale];
+      var userMessages = __uniConfig.locales[locale];
+      if (curMessages) {
+        Object.assign(curMessages, userMessages);
+      } else {
+        messages[locale] = userMessages;
+      }
+    });
+  }
+}
+
+initI18nMessages();
+
+var i18n = (0, _uniI18n.initVueI18n)(
+locale,
+{});
+
+var t = i18n.t;
+var i18nMixin = i18n.mixin = {
+  beforeCreate: function beforeCreate() {var _this = this;
+    var unwatch = i18n.i18n.watchLocale(function () {
+      _this.$forceUpdate();
+    });
+    this.$once('hook:beforeDestroy', function () {
+      unwatch();
+    });
+  },
+  methods: {
+    $$t: function $$t(key, values) {
+      return t(key, values);
+    } } };
+
+
+var setLocale = i18n.setLocale;
+var getLocale = i18n.getLocale;
+
+function initAppLocale(Vue, appVm, locale) {
+  var state = Vue.observable({
+    locale: locale || i18n.getLocale() });
+
+  var localeWatchers = [];
+  appVm.$watchLocale = function (fn) {
+    localeWatchers.push(fn);
+  };
+  Object.defineProperty(appVm, '$locale', {
+    get: function get() {
+      return state.locale;
+    },
+    set: function set(v) {
+      state.locale = v;
+      localeWatchers.forEach(function (watch) {return watch(v);});
+    } });
+
+}
+
+function isEnableLocale() {
+  return typeof __uniConfig !== 'undefined' && __uniConfig.locales && !!Object.keys(__uniConfig.locales).length;
+}
+
+function include(str, parts) {
+  return !!parts.find(function (part) {return str.indexOf(part) !== -1;});
+}
+
+function startsWith(str, parts) {
+  return parts.find(function (part) {return str.indexOf(part) === 0;});
+}
+
+function normalizeLocale(locale, messages) {
+  if (!locale) {
+    return;
+  }
+  locale = locale.trim().replace(/_/g, '-');
+  if (messages && messages[locale]) {
+    return locale;
+  }
+  locale = locale.toLowerCase();
+  if (locale === 'chinese') {
+    // 支付宝
+    return LOCALE_ZH_HANS;
+  }
+  if (locale.indexOf('zh') === 0) {
+    if (locale.indexOf('-hans') > -1) {
+      return LOCALE_ZH_HANS;
+    }
+    if (locale.indexOf('-hant') > -1) {
+      return LOCALE_ZH_HANT;
+    }
+    if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
+      return LOCALE_ZH_HANT;
+    }
+    return LOCALE_ZH_HANS;
+  }
+  var lang = startsWith(locale, [LOCALE_EN, LOCALE_FR, LOCALE_ES]);
+  if (lang) {
+    return lang;
+  }
+}
+// export function initI18n() {
+//   const localeKeys = Object.keys(__uniConfig.locales || {})
+//   if (localeKeys.length) {
+//     localeKeys.forEach((locale) =>
+//       i18n.add(locale, __uniConfig.locales[locale])
+//     )
+//   }
+// }
+
+function getLocale$1() {
   // 优先使用 $locale
   var app = getApp({
     allowDefault: true });
@@ -445,10 +582,10 @@ function getLocale() {
   if (app && app.$vm) {
     return app.$vm.$locale;
   }
-  return wx.getSystemInfoSync().language || 'zh-Hans';
+  return normalizeLocale(wx.getSystemInfoSync().language) || LOCALE_EN;
 }
 
-function setLocale(locale) {
+function setLocale$1(locale) {
   var app = getApp();
   if (!app) {
     return false;
@@ -472,7 +609,7 @@ function onLocaleChange(fn) {
 }
 
 if (typeof global !== 'undefined') {
-  global.getLocale = getLocale;
+  global.getLocale = getLocale$1;
 }
 
 var interceptors = {
@@ -482,8 +619,8 @@ var interceptors = {
 var baseApi = /*#__PURE__*/Object.freeze({
   __proto__: null,
   upx2px: upx2px,
-  getLocale: getLocale,
-  setLocale: setLocale,
+  getLocale: getLocale$1,
+  setLocale: setLocale$1,
   onLocaleChange: onLocaleChange,
   addInterceptor: addInterceptor,
   removeInterceptor: removeInterceptor,
@@ -558,7 +695,7 @@ var previewImage = {
 
 var UUID_KEY = '__DC_STAT_UUID';
 var deviceId;
-function addUuid(result) {
+function useDeviceId(result) {
   deviceId = deviceId || wx.getStorageSync(UUID_KEY);
   if (!deviceId) {
     deviceId = Date.now() + '' + Math.floor(Math.random() * 1e7);
@@ -577,15 +714,142 @@ function addSafeAreaInsets(result) {
       top: safeArea.top,
       left: safeArea.left,
       right: result.windowWidth - safeArea.right,
-      bottom: result.windowHeight - safeArea.bottom };
+      bottom: result.screenHeight - safeArea.bottom };
 
   }
 }
 
+function populateParameters(result) {var _result$brand =
+
+
+
+
+
+  result.brand,brand = _result$brand === void 0 ? '' : _result$brand,_result$model = result.model,model = _result$model === void 0 ? '' : _result$model,_result$system = result.system,system = _result$system === void 0 ? '' : _result$system,_result$language = result.language,language = _result$language === void 0 ? '' : _result$language,theme = result.theme,version = result.version,platform = result.platform,fontSizeSetting = result.fontSizeSetting,SDKVersion = result.SDKVersion,pixelRatio = result.pixelRatio,deviceOrientation = result.deviceOrientation;
+  // const isQuickApp = "mp-weixin".indexOf('quickapp-webview') !== -1
+
+  // osName osVersion
+  var osName = '';
+  var osVersion = '';
+  {
+    osName = system.split(' ')[0] || '';
+    osVersion = system.split(' ')[1] || '';
+  }
+  var hostVersion = version;
+
+  // deviceType
+  var deviceType = getGetDeviceType(result, model);
+
+  // deviceModel
+  var deviceBrand = getDeviceBrand(brand);
+
+  // hostName
+  var _hostName = getHostName(result);
+
+  // deviceOrientation
+  var _deviceOrientation = deviceOrientation; // 仅 微信 百度 支持
+
+  // devicePixelRatio
+  var _devicePixelRatio = pixelRatio;
+
+  // SDKVersion
+  var _SDKVersion = SDKVersion;
+
+  // hostLanguage
+  var hostLanguage = language.replace(/_/g, '-');
+
+  // wx.getAccountInfoSync
+
+  var parameters = {
+    appId: "__UNI__A3EB5CA",
+    appName: "冷藏车监控",
+    appVersion: "1.0.0",
+    appVersionCode: "100",
+    appLanguage: getAppLanguage(hostLanguage),
+    uniCompileVersion: "3.6.4",
+    uniRuntimeVersion: "3.6.4",
+    uniPlatform: undefined || "mp-weixin",
+    deviceBrand: deviceBrand,
+    deviceModel: model,
+    deviceType: deviceType,
+    devicePixelRatio: _devicePixelRatio,
+    deviceOrientation: _deviceOrientation,
+    osName: osName.toLocaleLowerCase(),
+    osVersion: osVersion,
+    hostTheme: theme,
+    hostVersion: hostVersion,
+    hostLanguage: hostLanguage,
+    hostName: _hostName,
+    hostSDKVersion: _SDKVersion,
+    hostFontSizeSetting: fontSizeSetting,
+    windowTop: 0,
+    windowBottom: 0,
+    // TODO
+    osLanguage: undefined,
+    osTheme: undefined,
+    ua: undefined,
+    hostPackageName: undefined,
+    browserName: undefined,
+    browserVersion: undefined };
+
+
+  Object.assign(result, parameters);
+}
+
+function getGetDeviceType(result, model) {
+  var deviceType = result.deviceType || 'phone';
+  {
+    var deviceTypeMaps = {
+      ipad: 'pad',
+      windows: 'pc',
+      mac: 'pc' };
+
+    var deviceTypeMapsKeys = Object.keys(deviceTypeMaps);
+    var _model = model.toLocaleLowerCase();
+    for (var index = 0; index < deviceTypeMapsKeys.length; index++) {
+      var _m = deviceTypeMapsKeys[index];
+      if (_model.indexOf(_m) !== -1) {
+        deviceType = deviceTypeMaps[_m];
+        break;
+      }
+    }
+  }
+  return deviceType;
+}
+
+function getDeviceBrand(brand) {
+  var deviceBrand = brand;
+  if (deviceBrand) {
+    deviceBrand = brand.toLocaleLowerCase();
+  }
+  return deviceBrand;
+}
+
+function getAppLanguage(defaultLanguage) {
+  return getLocale$1 ?
+  getLocale$1() :
+  defaultLanguage;
+}
+
+function getHostName(result) {
+  var _platform = 'WeChat';
+  var _hostName = result.hostName || _platform; // mp-jd
+  {
+    if (result.environment) {
+      _hostName = result.environment;
+    } else if (result.host && result.host.env) {
+      _hostName = result.host.env;
+    }
+  }
+
+  return _hostName;
+}
+
 var getSystemInfo = {
   returnValue: function returnValue(result) {
-    addUuid(result);
+    useDeviceId(result);
     addSafeAreaInsets(result);
+    populateParameters(result);
   } };
 
 
@@ -593,6 +857,68 @@ var showActionSheet = {
   args: function args(fromArgs) {
     if (typeof fromArgs === 'object') {
       fromArgs.alertText = fromArgs.title;
+    }
+  } };
+
+
+var getAppBaseInfo = {
+  returnValue: function returnValue(result) {var _result =
+    result,version = _result.version,language = _result.language,SDKVersion = _result.SDKVersion,theme = _result.theme;
+
+    var _hostName = getHostName(result);
+
+    var hostLanguage = language.replace('_', '-');
+
+    result = sortObject(Object.assign(result, {
+      appId: "__UNI__A3EB5CA",
+      appName: "冷藏车监控",
+      appVersion: "1.0.0",
+      appVersionCode: "100",
+      appLanguage: getAppLanguage(hostLanguage),
+      hostVersion: version,
+      hostLanguage: hostLanguage,
+      hostName: _hostName,
+      hostSDKVersion: SDKVersion,
+      hostTheme: theme }));
+
+  } };
+
+
+var getDeviceInfo = {
+  returnValue: function returnValue(result) {var _result2 =
+    result,brand = _result2.brand,model = _result2.model;
+    var deviceType = getGetDeviceType(result, model);
+    var deviceBrand = getDeviceBrand(brand);
+    useDeviceId(result);
+
+    result = sortObject(Object.assign(result, {
+      deviceType: deviceType,
+      deviceBrand: deviceBrand,
+      deviceModel: model }));
+
+  } };
+
+
+var getWindowInfo = {
+  returnValue: function returnValue(result) {
+    addSafeAreaInsets(result);
+
+    result = sortObject(Object.assign(result, {
+      windowTop: 0,
+      windowBottom: 0 }));
+
+  } };
+
+
+var getAppAuthorizeSetting = {
+  returnValue: function returnValue(result) {var
+    locationReducedAccuracy = result.locationReducedAccuracy;
+
+    result.locationAccuracy = 'unsupported';
+    if (locationReducedAccuracy === true) {
+      result.locationAccuracy = 'reduced';
+    } else if (locationReducedAccuracy === false) {
+      result.locationAccuracy = 'full';
     }
   } };
 
@@ -605,7 +931,11 @@ var protocols = {
   previewImage: previewImage,
   getSystemInfo: getSystemInfo,
   getSystemInfoSync: getSystemInfo,
-  showActionSheet: showActionSheet };
+  showActionSheet: showActionSheet,
+  getAppBaseInfo: getAppBaseInfo,
+  getDeviceInfo: getDeviceInfo,
+  getWindowInfo: getWindowInfo,
+  getAppAuthorizeSetting: getAppAuthorizeSetting };
 
 var todos = [
 'vibrate',
@@ -799,8 +1129,153 @@ var eventApi = /*#__PURE__*/Object.freeze({
   $emit: $emit });
 
 
+/**
+                    * 框架内 try-catch
+                    */
+/**
+                        * 开发者 try-catch
+                        */
+function tryCatch(fn) {
+  return function () {
+    try {
+      return fn.apply(fn, arguments);
+    } catch (e) {
+      // TODO
+      console.error(e);
+    }
+  };
+}
+
+function getApiCallbacks(params) {
+  var apiCallbacks = {};
+  for (var name in params) {
+    var param = params[name];
+    if (isFn(param)) {
+      apiCallbacks[name] = tryCatch(param);
+      delete params[name];
+    }
+  }
+  return apiCallbacks;
+}
+
+var cid;
+var cidErrMsg;
+var enabled;
+
+function normalizePushMessage(message) {
+  try {
+    return JSON.parse(message);
+  } catch (e) {}
+  return message;
+}
+
+function invokePushCallback(
+args)
+{
+  if (args.type === 'enabled') {
+    enabled = true;
+  } else if (args.type === 'clientId') {
+    cid = args.cid;
+    cidErrMsg = args.errMsg;
+    invokeGetPushCidCallbacks(cid, args.errMsg);
+  } else if (args.type === 'pushMsg') {
+    var message = {
+      type: 'receive',
+      data: normalizePushMessage(args.message) };
+
+    for (var i = 0; i < onPushMessageCallbacks.length; i++) {
+      var callback = onPushMessageCallbacks[i];
+      callback(message);
+      // 该消息已被阻止
+      if (message.stopped) {
+        break;
+      }
+    }
+  } else if (args.type === 'click') {
+    onPushMessageCallbacks.forEach(function (callback) {
+      callback({
+        type: 'click',
+        data: normalizePushMessage(args.message) });
+
+    });
+  }
+}
+
+var getPushCidCallbacks = [];
+
+function invokeGetPushCidCallbacks(cid, errMsg) {
+  getPushCidCallbacks.forEach(function (callback) {
+    callback(cid, errMsg);
+  });
+  getPushCidCallbacks.length = 0;
+}
+
+function getPushClientId(args) {
+  if (!isPlainObject(args)) {
+    args = {};
+  }var _getApiCallbacks =
+
+
+
+
+  getApiCallbacks(args),success = _getApiCallbacks.success,fail = _getApiCallbacks.fail,complete = _getApiCallbacks.complete;
+  var hasSuccess = isFn(success);
+  var hasFail = isFn(fail);
+  var hasComplete = isFn(complete);
+
+  Promise.resolve().then(function () {
+    if (typeof enabled === 'undefined') {
+      enabled = false;
+      cid = '';
+      cidErrMsg = 'uniPush is not enabled';
+    }
+    getPushCidCallbacks.push(function (cid, errMsg) {
+      var res;
+      if (cid) {
+        res = {
+          errMsg: 'getPushClientId:ok',
+          cid: cid };
+
+        hasSuccess && success(res);
+      } else {
+        res = {
+          errMsg: 'getPushClientId:fail' + (errMsg ? ' ' + errMsg : '') };
+
+        hasFail && fail(res);
+      }
+      hasComplete && complete(res);
+    });
+    if (typeof cid !== 'undefined') {
+      invokeGetPushCidCallbacks(cid, cidErrMsg);
+    }
+  });
+}
+
+var onPushMessageCallbacks = [];
+// 不使用 defineOnApi 实现，是因为 defineOnApi 依赖 UniServiceJSBridge ，该对象目前在小程序上未提供，故简单实现
+var onPushMessage = function onPushMessage(fn) {
+  if (onPushMessageCallbacks.indexOf(fn) === -1) {
+    onPushMessageCallbacks.push(fn);
+  }
+};
+
+var offPushMessage = function offPushMessage(fn) {
+  if (!fn) {
+    onPushMessageCallbacks.length = 0;
+  } else {
+    var index = onPushMessageCallbacks.indexOf(fn);
+    if (index > -1) {
+      onPushMessageCallbacks.splice(index, 1);
+    }
+  }
+};
+
 var api = /*#__PURE__*/Object.freeze({
-  __proto__: null });
+  __proto__: null,
+  getPushClientId: getPushClientId,
+  onPushMessage: onPushMessage,
+  offPushMessage: offPushMessage,
+  invokePushCallback: invokePushCallback });
 
 
 var MPPage = Page;
@@ -815,7 +1290,17 @@ var customize = cached(function (str) {
 function initTriggerEvent(mpInstance) {
   var oldTriggerEvent = mpInstance.triggerEvent;
   var newTriggerEvent = function newTriggerEvent(event) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
-    return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));
+    // 事件名统一转驼峰格式，仅处理：当前组件为 vue 组件、当前组件为 vue 组件子组件
+    if (this.$vm || this.dataset && this.dataset.comType) {
+      event = customize(event);
+    } else {
+      // 针对微信/QQ小程序单独补充驼峰格式事件，以兼容历史项目
+      var newEvent = customize(event);
+      if (newEvent !== event) {
+        oldTriggerEvent.apply(this, [newEvent].concat(args));
+      }
+    }
+    return oldTriggerEvent.apply(this, [event].concat(args));
   };
   try {
     // 京东小程序 triggerEvent 为只读
@@ -912,6 +1397,29 @@ function initHooks(mpOptions, hooks, vueOptions) {
       };
     }
   });
+}
+
+function initUnknownHooks(mpOptions, vueOptions) {var excludes = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+  findHooks(vueOptions).forEach(function (hook) {return initHook$1(mpOptions, hook, excludes);});
+}
+
+function findHooks(vueOptions) {var hooks = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+  if (vueOptions) {
+    Object.keys(vueOptions).forEach(function (name) {
+      if (name.indexOf('on') === 0 && isFn(vueOptions[name])) {
+        hooks.push(name);
+      }
+    });
+  }
+  return hooks;
+}
+
+function initHook$1(mpOptions, hook, excludes) {
+  if (excludes.indexOf(hook) === -1 && !hasOwn(mpOptions, hook)) {
+    mpOptions[hook] = function (args) {
+      return this.$vm && this.$vm.__call_hook(hook, args);
+    };
+  }
 }
 
 function initVueComponent(Vue, vueOptions) {
@@ -1051,18 +1559,25 @@ function parsePropType(key, type, defaultValue, file) {
   return type;
 }
 
-function initProperties(props) {var isBehavior = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;var file = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+function initProperties(props) {var isBehavior = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;var file = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';var options = arguments.length > 3 ? arguments[3] : undefined;
   var properties = {};
   if (!isBehavior) {
     properties.vueId = {
       type: String,
       value: '' };
 
-    // 用于字节跳动小程序模拟抽象节点
-    properties.generic = {
-      type: Object,
-      value: null };
+    {
+      if (options.virtualHost) {
+        properties.virtualHostStyle = {
+          type: null,
+          value: '' };
 
+        properties.virtualHostClass = {
+          type: null,
+          value: '' };
+
+      }
+    }
     // scopedSlotsCompiler auto
     properties.scopedSlotsCompiler = {
       type: String,
@@ -1192,7 +1707,7 @@ function getExtraValue(vm, dataPathsArray) {
   return context;
 }
 
-function processEventExtra(vm, extra, event) {
+function processEventExtra(vm, extra, event, __args__) {
   var extraObj = {};
 
   if (Array.isArray(extra) && extra.length) {
@@ -1215,11 +1730,7 @@ function processEventExtra(vm, extra, event) {
           if (dataPath === '$event') {// $event
             extraObj['$' + index] = event;
           } else if (dataPath === 'arguments') {
-            if (event.detail && event.detail.__args__) {
-              extraObj['$' + index] = event.detail.__args__;
-            } else {
-              extraObj['$' + index] = [event];
-            }
+            extraObj['$' + index] = event.detail ? event.detail.__args__ || __args__ : __args__;
           } else if (dataPath.indexOf('$event.') === 0) {// $event.target.value
             extraObj['$' + index] = vm.__get_value(dataPath.replace('$event.', ''), event);
           } else {
@@ -1246,6 +1757,12 @@ function getObjByArray(arr) {
 
 function processEventArgs(vm, event) {var args = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];var extra = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];var isCustom = arguments.length > 4 ? arguments[4] : undefined;var methodName = arguments.length > 5 ? arguments[5] : undefined;
   var isCustomMPEvent = false; // wxcomponent 组件，传递原始 event 对象
+
+  // fixed 用户直接触发 mpInstance.triggerEvent
+  var __args__ = isPlainObject(event.detail) ?
+  event.detail.__args__ || [event.detail] :
+  [event.detail];
+
   if (isCustom) {// 自定义事件
     isCustomMPEvent = event.currentTarget &&
     event.currentTarget.dataset &&
@@ -1254,11 +1771,11 @@ function processEventArgs(vm, event) {var args = arguments.length > 2 && argumen
       if (isCustomMPEvent) {
         return [event];
       }
-      return event.detail.__args__ || event.detail;
+      return __args__;
     }
   }
 
-  var extraObj = processEventExtra(vm, extra, event);
+  var extraObj = processEventExtra(vm, extra, event, __args__);
 
   var ret = [];
   args.forEach(function (arg) {
@@ -1267,7 +1784,7 @@ function processEventArgs(vm, event) {var args = arguments.length > 2 && argumen
         ret.push(event.target.value);
       } else {
         if (isCustom && !isCustomMPEvent) {
-          ret.push(event.detail.__args__[0]);
+          ret.push(__args__[0]);
         } else {// wxcomponent 组件或内置组件
           ret.push(event);
         }
@@ -1309,7 +1826,7 @@ function getContextVm(vm) {
   return $parent && $parent.$parent;
 }
 
-function handleEvent(event) {var _this = this;
+function handleEvent(event) {var _this2 = this;
   event = wrapper$1(event);
 
   // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]
@@ -1340,14 +1857,14 @@ function handleEvent(event) {var _this = this;
       eventsArray.forEach(function (eventArray) {
         var methodName = eventArray[0];
         if (methodName) {
-          var handlerCtx = _this.$vm;
+          var handlerCtx = _this2.$vm;
           if (handlerCtx.$options.generic) {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots
             handlerCtx = getContextVm(handlerCtx) || handlerCtx;
           }
           if (methodName === '$emit') {
             handlerCtx.$emit.apply(handlerCtx,
             processEventArgs(
-            _this.$vm,
+            _this2.$vm,
             event,
             eventArray[1],
             eventArray[2],
@@ -1358,7 +1875,9 @@ function handleEvent(event) {var _this = this;
           }
           var handler = handlerCtx[methodName];
           if (!isFn(handler)) {
-            throw new Error(" _vm.".concat(methodName, " is not a function"));
+            var _type = _this2.$vm.mpType === 'page' ? 'Page' : 'Component';
+            var path = _this2.route || _this2.is;
+            throw new Error("".concat(_type, " \"").concat(path, "\" does not have a method \"").concat(methodName, "\""));
           }
           if (isOnce) {
             if (handler.once) {
@@ -1367,7 +1886,7 @@ function handleEvent(event) {var _this = this;
             handler.once = true;
           }
           var params = processEventArgs(
-          _this.$vm,
+          _this2.$vm,
           event,
           eventArray[1],
           eventArray[2],
@@ -1394,89 +1913,6 @@ function handleEvent(event) {var _this = this;
     return ret[0];
   }
 }
-
-var messages = {};
-
-var locale;
-
-{
-  locale = wx.getSystemInfoSync().language;
-}
-
-function initI18nMessages() {
-  if (!isEnableLocale()) {
-    return;
-  }
-  var localeKeys = Object.keys(__uniConfig.locales);
-  if (localeKeys.length) {
-    localeKeys.forEach(function (locale) {
-      var curMessages = messages[locale];
-      var userMessages = __uniConfig.locales[locale];
-      if (curMessages) {
-        Object.assign(curMessages, userMessages);
-      } else {
-        messages[locale] = userMessages;
-      }
-    });
-  }
-}
-
-initI18nMessages();
-
-var i18n = (0, _uniI18n.initVueI18n)(
-locale,
-{});
-
-var t = i18n.t;
-var i18nMixin = i18n.mixin = {
-  beforeCreate: function beforeCreate() {var _this2 = this;
-    var unwatch = i18n.i18n.watchLocale(function () {
-      _this2.$forceUpdate();
-    });
-    this.$once('hook:beforeDestroy', function () {
-      unwatch();
-    });
-  },
-  methods: {
-    $$t: function $$t(key, values) {
-      return t(key, values);
-    } } };
-
-
-var setLocale$1 = i18n.setLocale;
-var getLocale$1 = i18n.getLocale;
-
-function initAppLocale(Vue, appVm, locale) {
-  var state = Vue.observable({
-    locale: locale || i18n.getLocale() });
-
-  var localeWatchers = [];
-  appVm.$watchLocale = function (fn) {
-    localeWatchers.push(fn);
-  };
-  Object.defineProperty(appVm, '$locale', {
-    get: function get() {
-      return state.locale;
-    },
-    set: function set(v) {
-      state.locale = v;
-      localeWatchers.forEach(function (watch) {return watch(v);});
-    } });
-
-}
-
-function isEnableLocale() {
-  return typeof __uniConfig !== 'undefined' && __uniConfig.locales && !!Object.keys(__uniConfig.locales).length;
-}
-
-// export function initI18n() {
-//   const localeKeys = Object.keys(__uniConfig.locales || {})
-//   if (localeKeys.length) {
-//     localeKeys.forEach((locale) =>
-//       i18n.add(locale, __uniConfig.locales[locale])
-//     )
-//   }
-// }
 
 var eventChannels = {};
 
@@ -1652,9 +2088,10 @@ function parseBaseApp(vm, _ref3)
     });
   }
 
-  initAppLocale(_vue.default, vm, wx.getSystemInfoSync().language || 'zh-Hans');
+  initAppLocale(_vue.default, vm, normalizeLocale(wx.getSystemInfoSync().language) || LOCALE_EN);
 
   initHooks(appOptions, hooks);
+  initUnknownHooks(appOptions, vm.$options);
 
   return appOptions;
 }
@@ -1824,7 +2261,7 @@ function parseBaseComponent(vueComponentOptions)
     options: options,
     data: initData(vueOptions, _vue.default.prototype),
     behaviors: initBehaviors(vueOptions, initBehavior),
-    properties: initProperties(vueOptions.props, false, vueOptions.__file),
+    properties: initProperties(vueOptions.props, false, vueOptions.__file, options),
     lifetimes: {
       attached: function attached() {
         var properties = this.properties;
@@ -1933,6 +2370,7 @@ function parseBasePage(vuePageOptions, _ref6)
     this.$vm.$mp.query = query; // 兼容 mpvue
     this.$vm.__call_hook('onLoad', query);
   };
+  initUnknownHooks(pageOptions.methods, vuePageOptions, ['onReady']);
 
   return pageOptions;
 }
@@ -2101,9 +2539,9 @@ uni$1;exports.default = _default;
 /***/ }),
 
 /***/ 10:
-/*!*************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/deepClone.js ***!
-  \*************************************************************************/
+/*!***********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/deepClone.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2134,21 +2572,10 @@ deepClone;exports.default = _default;
 
 /***/ }),
 
-/***/ 108:
-/*!***************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/static/卡车.png ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
-
 /***/ 11:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/test.js ***!
-  \********************************************************************/
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/test.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2387,10 +2814,21 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
 
 /***/ }),
 
+/***/ 110:
+/*!*************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/static/卡车.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
 /***/ 12:
-/*!***************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/queryParams.js ***!
-  \***************************************************************************/
+/*!*************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/queryParams.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2457,9 +2895,9 @@ queryParams;exports.default = _default;
 /***/ }),
 
 /***/ 13:
-/*!*********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/route.js ***!
-  \*********************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/route.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3382,9 +3820,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 17:
-/*!**************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/timeFormat.js ***!
-  \**************************************************************************/
+/*!************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/timeFormat.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3444,9 +3882,9 @@ timeFormat;exports.default = _default;
 /***/ }),
 
 /***/ 18:
-/*!************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/timeFrom.js ***!
-  \************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/timeFrom.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3501,7 +3939,7 @@ timeFrom;exports.default = _default;
 
 /***/ }),
 
-/***/ 180:
+/***/ 182:
 /*!************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js ***!
   \************************************************************************************/
@@ -3509,15 +3947,27 @@ timeFrom;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global, uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 14));var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 4);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e26) {throw _e26;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e27) {didErr = true;err = _e27;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _createSuper(Derived) {var hasNativeReflectConstruct = _isNativeReflectConstruct();return function _createSuperInternal() {var Super = _getPrototypeOf(Derived),result;if (hasNativeReflectConstruct) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _wrapNativeSuper(Class) {var _cache = typeof Map === "function" ? new Map() : undefined;_wrapNativeSuper = function _wrapNativeSuper(Class) {if (Class === null || !_isNativeFunction(Class)) return Class;if (typeof Class !== "function") {throw new TypeError("Super expression must either be null or a function");}if (typeof _cache !== "undefined") {if (_cache.has(Class)) return _cache.get(Class);_cache.set(Class, Wrapper);}function Wrapper() {return _construct(Class, arguments, _getPrototypeOf(this).constructor);}Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } });return _setPrototypeOf(Wrapper, Class);};return _wrapNativeSuper(Class);}function _construct(Parent, args, Class) {if (_isNativeReflectConstruct()) {_construct = Reflect.construct;} else {_construct = function _construct(Parent, args, Class) {var a = [null];a.push.apply(a, args);var Constructor = Function.bind.apply(Parent, a);var instance = new Constructor();if (Class) _setPrototypeOf(instance, Class.prototype);return instance;};}return _construct.apply(null, arguments);}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));return true;} catch (e) {return false;}}function _isNativeFunction(fn) {return Function.toString.call(fn).indexOf("[native code]") !== -1;}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}"undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self && self;function t(e) {return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;}function n(e, t, n) {return e(n = { path: t, exports: {}, require: function require(e, t) {return function () {throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs");}(null == t && n.path);} }, n.exports), n.exports;}var s = n(function (e, t) {var n;e.exports = (n = n || function (e, t) {var n = Object.create || function () {function e() {}return function (t) {var n;return e.prototype = t, n = new e(), e.prototype = null, n;};}(),s = {},r = s.lib = {},o = r.Base = { extend: function extend(e) {var t = n(this);return e && t.mixIn(e), t.hasOwnProperty("init") && this.init !== t.init || (t.init = function () {t.$super.init.apply(this, arguments);}), t.init.prototype = t, t.$super = this, t;}, create: function create() {var e = this.extend();return e.init.apply(e, arguments), e;}, init: function init() {}, mixIn: function mixIn(e) {for (var t in e) {e.hasOwnProperty(t) && (this[t] = e[t]);}e.hasOwnProperty("toString") && (this.toString = e.toString);}, clone: function clone() {return this.init.prototype.extend(this);} },i = r.WordArray = o.extend({ init: function init(e, n) {e = this.words = e || [], this.sigBytes = n != t ? n : 4 * e.length;}, toString: function toString(e) {return (e || c).stringify(this);}, concat: function concat(e) {var t = this.words,n = e.words,s = this.sigBytes,r = e.sigBytes;if (this.clamp(), s % 4) for (var o = 0; o < r; o++) {var i = n[o >>> 2] >>> 24 - o % 4 * 8 & 255;t[s + o >>> 2] |= i << 24 - (s + o) % 4 * 8;} else for (o = 0; o < r; o += 4) {t[s + o >>> 2] = n[o >>> 2];}return this.sigBytes += r, this;}, clamp: function clamp() {var t = this.words,n = this.sigBytes;t[n >>> 2] &= 4294967295 << 32 - n % 4 * 8, t.length = e.ceil(n / 4);}, clone: function clone() {var e = o.clone.call(this);return e.words = this.words.slice(0), e;}, random: function random(t) {for (var n, s = [], r = function r(t) {t = t;var n = 987654321,s = 4294967295;return function () {var r = ((n = 36969 * (65535 & n) + (n >> 16) & s) << 16) + (t = 18e3 * (65535 & t) + (t >> 16) & s) & s;return r /= 4294967296, (r += .5) * (e.random() > .5 ? 1 : -1);};}, o = 0; o < t; o += 4) {var a = r(4294967296 * (n || e.random()));n = 987654071 * a(), s.push(4294967296 * a() | 0);}return new i.init(s, t);} }),a = s.enc = {},c = a.Hex = { stringify: function stringify(e) {for (var t = e.words, n = e.sigBytes, s = [], r = 0; r < n; r++) {var o = t[r >>> 2] >>> 24 - r % 4 * 8 & 255;s.push((o >>> 4).toString(16)), s.push((15 & o).toString(16));}return s.join("");}, parse: function parse(e) {for (var t = e.length, n = [], s = 0; s < t; s += 2) {n[s >>> 3] |= parseInt(e.substr(s, 2), 16) << 24 - s % 8 * 4;}return new i.init(n, t / 2);} },u = a.Latin1 = { stringify: function stringify(e) {for (var t = e.words, n = e.sigBytes, s = [], r = 0; r < n; r++) {var o = t[r >>> 2] >>> 24 - r % 4 * 8 & 255;s.push(String.fromCharCode(o));}return s.join("");}, parse: function parse(e) {for (var t = e.length, n = [], s = 0; s < t; s++) {n[s >>> 2] |= (255 & e.charCodeAt(s)) << 24 - s % 4 * 8;}return new i.init(n, t);} },h = a.Utf8 = { stringify: function stringify(e) {try {return decodeURIComponent(escape(u.stringify(e)));} catch (e) {throw new Error("Malformed UTF-8 data");}}, parse: function parse(e) {return u.parse(unescape(encodeURIComponent(e)));} },l = r.BufferedBlockAlgorithm = o.extend({ reset: function reset() {this._data = new i.init(), this._nDataBytes = 0;}, _append: function _append(e) {"string" == typeof e && (e = h.parse(e)), this._data.concat(e), this._nDataBytes += e.sigBytes;}, _process: function _process(t) {var n = this._data,s = n.words,r = n.sigBytes,o = this.blockSize,a = r / (4 * o),c = (a = t ? e.ceil(a) : e.max((0 | a) - this._minBufferSize, 0)) * o,u = e.min(4 * c, r);if (c) {for (var h = 0; h < c; h += o) {this._doProcessBlock(s, h);}var l = s.splice(0, c);n.sigBytes -= u;}return new i.init(l, u);}, clone: function clone() {var e = o.clone.call(this);return e._data = this._data.clone(), e;}, _minBufferSize: 0 });r.Hasher = l.extend({ cfg: o.extend(), init: function init(e) {this.cfg = this.cfg.extend(e), this.reset();}, reset: function reset() {l.reset.call(this), this._doReset();}, update: function update(e) {return this._append(e), this._process(), this;}, finalize: function finalize(e) {return e && this._append(e), this._doFinalize();}, blockSize: 16, _createHelper: function _createHelper(e) {return function (t, n) {return new e.init(n).finalize(t);};}, _createHmacHelper: function _createHmacHelper(e) {return function (t, n) {return new d.HMAC.init(e, n).finalize(t);};} });var d = s.algo = {};return s;}(Math), n);}),r = (n(function (e, t) {var n;e.exports = (n = s, function (e) {var t = n,s = t.lib,r = s.WordArray,o = s.Hasher,i = t.algo,a = [];!function () {for (var t = 0; t < 64; t++) {a[t] = 4294967296 * e.abs(e.sin(t + 1)) | 0;}}();var c = i.MD5 = o.extend({ _doReset: function _doReset() {this._hash = new r.init([1732584193, 4023233417, 2562383102, 271733878]);}, _doProcessBlock: function _doProcessBlock(e, t) {for (var n = 0; n < 16; n++) {var s = t + n,r = e[s];e[s] = 16711935 & (r << 8 | r >>> 24) | 4278255360 & (r << 24 | r >>> 8);}var o = this._hash.words,i = e[t + 0],c = e[t + 1],f = e[t + 2],p = e[t + 3],g = e[t + 4],m = e[t + 5],y = e[t + 6],_ = e[t + 7],w = e[t + 8],k = e[t + 9],S = e[t + 10],v = e[t + 11],T = e[t + 12],A = e[t + 13],P = e[t + 14],I = e[t + 15],b = o[0],O = o[1],E = o[2],C = o[3];b = u(b, O, E, C, i, 7, a[0]), C = u(C, b, O, E, c, 12, a[1]), E = u(E, C, b, O, f, 17, a[2]), O = u(O, E, C, b, p, 22, a[3]), b = u(b, O, E, C, g, 7, a[4]), C = u(C, b, O, E, m, 12, a[5]), E = u(E, C, b, O, y, 17, a[6]), O = u(O, E, C, b, _, 22, a[7]), b = u(b, O, E, C, w, 7, a[8]), C = u(C, b, O, E, k, 12, a[9]), E = u(E, C, b, O, S, 17, a[10]), O = u(O, E, C, b, v, 22, a[11]), b = u(b, O, E, C, T, 7, a[12]), C = u(C, b, O, E, A, 12, a[13]), E = u(E, C, b, O, P, 17, a[14]), b = h(b, O = u(O, E, C, b, I, 22, a[15]), E, C, c, 5, a[16]), C = h(C, b, O, E, y, 9, a[17]), E = h(E, C, b, O, v, 14, a[18]), O = h(O, E, C, b, i, 20, a[19]), b = h(b, O, E, C, m, 5, a[20]), C = h(C, b, O, E, S, 9, a[21]), E = h(E, C, b, O, I, 14, a[22]), O = h(O, E, C, b, g, 20, a[23]), b = h(b, O, E, C, k, 5, a[24]), C = h(C, b, O, E, P, 9, a[25]), E = h(E, C, b, O, p, 14, a[26]), O = h(O, E, C, b, w, 20, a[27]), b = h(b, O, E, C, A, 5, a[28]), C = h(C, b, O, E, f, 9, a[29]), E = h(E, C, b, O, _, 14, a[30]), b = l(b, O = h(O, E, C, b, T, 20, a[31]), E, C, m, 4, a[32]), C = l(C, b, O, E, w, 11, a[33]), E = l(E, C, b, O, v, 16, a[34]), O = l(O, E, C, b, P, 23, a[35]), b = l(b, O, E, C, c, 4, a[36]), C = l(C, b, O, E, g, 11, a[37]), E = l(E, C, b, O, _, 16, a[38]), O = l(O, E, C, b, S, 23, a[39]), b = l(b, O, E, C, A, 4, a[40]), C = l(C, b, O, E, i, 11, a[41]), E = l(E, C, b, O, p, 16, a[42]), O = l(O, E, C, b, y, 23, a[43]), b = l(b, O, E, C, k, 4, a[44]), C = l(C, b, O, E, T, 11, a[45]), E = l(E, C, b, O, I, 16, a[46]), b = d(b, O = l(O, E, C, b, f, 23, a[47]), E, C, i, 6, a[48]), C = d(C, b, O, E, _, 10, a[49]), E = d(E, C, b, O, P, 15, a[50]), O = d(O, E, C, b, m, 21, a[51]), b = d(b, O, E, C, T, 6, a[52]), C = d(C, b, O, E, p, 10, a[53]), E = d(E, C, b, O, S, 15, a[54]), O = d(O, E, C, b, c, 21, a[55]), b = d(b, O, E, C, w, 6, a[56]), C = d(C, b, O, E, I, 10, a[57]), E = d(E, C, b, O, y, 15, a[58]), O = d(O, E, C, b, A, 21, a[59]), b = d(b, O, E, C, g, 6, a[60]), C = d(C, b, O, E, v, 10, a[61]), E = d(E, C, b, O, f, 15, a[62]), O = d(O, E, C, b, k, 21, a[63]), o[0] = o[0] + b | 0, o[1] = o[1] + O | 0, o[2] = o[2] + E | 0, o[3] = o[3] + C | 0;}, _doFinalize: function _doFinalize() {var t = this._data,n = t.words,s = 8 * this._nDataBytes,r = 8 * t.sigBytes;n[r >>> 5] |= 128 << 24 - r % 32;var o = e.floor(s / 4294967296),i = s;n[15 + (r + 64 >>> 9 << 4)] = 16711935 & (o << 8 | o >>> 24) | 4278255360 & (o << 24 | o >>> 8), n[14 + (r + 64 >>> 9 << 4)] = 16711935 & (i << 8 | i >>> 24) | 4278255360 & (i << 24 | i >>> 8), t.sigBytes = 4 * (n.length + 1), this._process();for (var a = this._hash, c = a.words, u = 0; u < 4; u++) {var h = c[u];c[u] = 16711935 & (h << 8 | h >>> 24) | 4278255360 & (h << 24 | h >>> 8);}return a;}, clone: function clone() {var e = o.clone.call(this);return e._hash = this._hash.clone(), e;} });function u(e, t, n, s, r, o, i) {var a = e + (t & n | ~t & s) + r + i;return (a << o | a >>> 32 - o) + t;}function h(e, t, n, s, r, o, i) {var a = e + (t & s | n & ~s) + r + i;return (a << o | a >>> 32 - o) + t;}function l(e, t, n, s, r, o, i) {var a = e + (t ^ n ^ s) + r + i;return (a << o | a >>> 32 - o) + t;}function d(e, t, n, s, r, o, i) {var a = e + (n ^ (t | ~s)) + r + i;return (a << o | a >>> 32 - o) + t;}t.MD5 = o._createHelper(c), t.HmacMD5 = o._createHmacHelper(c);}(Math), n.MD5);}), n(function (e, t) {var n, r, o;e.exports = (r = (n = s).lib.Base, o = n.enc.Utf8, void (n.algo.HMAC = r.extend({ init: function init(e, t) {e = this._hasher = new e.init(), "string" == typeof t && (t = o.parse(t));var n = e.blockSize,s = 4 * n;t.sigBytes > s && (t = e.finalize(t)), t.clamp();for (var r = this._oKey = t.clone(), i = this._iKey = t.clone(), a = r.words, c = i.words, u = 0; u < n; u++) {a[u] ^= 1549556828, c[u] ^= 909522486;}r.sigBytes = i.sigBytes = s, this.reset();}, reset: function reset() {var e = this._hasher;e.reset(), e.update(this._iKey);}, update: function update(e) {return this._hasher.update(e), this;}, finalize: function finalize(e) {var t = this._hasher,n = t.finalize(e);return t.reset(), t.finalize(this._oKey.clone().concat(n));} })));}), n(function (e, t) {e.exports = s.HmacMD5;}));var o = "FUNCTION",i = "OBJECT",a = "CLIENT_DB";function c(e) {return Object.prototype.toString.call(e).slice(8, -1).toLowerCase();}function u(e) {return "object" === c(e);}function h(e) {return e && "string" == typeof e ? JSON.parse(e) : e;}var l = "development" === "development",d = "mp-weixin",f = h(undefined),p = h([]),g = true;var m = "";try {{var _e2 = __webpack_require__(/*! uni-stat-config */ 181).default || __webpack_require__(/*! uni-stat-config */ 181);m = _e2.appid;}} catch (e) {}var y = {};function _(e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var n, s;return n = y, s = e, Object.prototype.hasOwnProperty.call(n, s) || (y[e] = t), y[e];}"app-plus" === d && (y = uni._globalUniCloudObj ? uni._globalUniCloudObj : uni._globalUniCloudObj = {});var w = ["invoke", "success", "fail", "complete"],k = _("_globalUniCloudInterceptor");function S(e, t) {k[e] || (k[e] = {}), u(t) && Object.keys(t).forEach(function (n) {w.indexOf(n) > -1 && function (e, t, n) {var s = k[e][t];s || (s = k[e][t] = []), -1 === s.indexOf(n) && "function" == typeof n && s.push(n);}(e, n, t[n]);});}function v(e, t) {k[e] || (k[e] = {}), u(t) ? Object.keys(t).forEach(function (n) {w.indexOf(n) > -1 && function (e, t, n) {var s = k[e][t];if (!s) return;var r = s.indexOf(n);r > -1 && s.splice(r, 1);}(e, n, t[n]);}) : delete k[e];}function T(e, t) {return e && 0 !== e.length ? e.reduce(function (e, n) {return e.then(function () {return n(t);});}, Promise.resolve()) : Promise.resolve();}function A(e, t) {return k[e] && k[e][t] || [];}function P(e, t) {return t ? function (n) {var _this = this;var s,r = !1;if ("callFunction" === t) {var _e3 = n && n.type || o;r = _e3 !== o;}s = this.isReady ? Promise.resolve() : this.initUniCloud, n = n || {};var i = s.then(function () {return r ? Promise.resolve() : T(A(t, "invoke"), n);}).then(function () {return e.call(_this, n);}).then(function (e) {return r ? Promise.resolve(e) : T(A(t, "success"), e).then(function () {return T(A(t, "complete"), e);}).then(function () {return Promise.resolve(e);});}, function (e) {return r ? Promise.reject(e) : T(A(t, "fail"), e).then(function () {return T(A(t, "complete"), e);}).then(function () {return Promise.reject(e);});});if (!(n.success || n.fail || n.complete)) return i;i.then(function (e) {n.success && n.success(e), n.complete && n.complete(e);}, function (e) {n.fail && n.fail(e), n.complete && n.complete(e);});} : function (t) {if (!((t = t || {}).success || t.fail || t.complete)) return e.call(this, t);e.call(this, t).then(function (e) {t.success && t.success(e), t.complete && t.complete(e);}, function (e) {t.fail && t.fail(e), t.complete && t.complete(e);});};}var I = /*#__PURE__*/function (_Error) {_inherits(I, _Error);var _super = _createSuper(I);function I(e) {var _this2;_classCallCheck(this, I);_this2 = _super.call(this, e.message), _this2.errMsg = e.message || "", _this2.errCode = _this2.code = e.code, _this2.requestId = e.requestId, Object.defineProperties(_assertThisInitialized(_this2), { message: { get: function get() {return this.errMsg;}, set: function set(e) {this.errMsg = e;} } });return _this2;}return I;}( /*#__PURE__*/_wrapNativeSuper(Error));var b;function O() {var e = uni.getLocale && uni.getLocale() || "en";if (b) return _objectSpread(_objectSpread({}, b), {}, { LOCALE: e });var _uni$getSystemInfoSyn = uni.getSystemInfoSync(),t = _uni$getSystemInfoSyn.deviceId,n = _uni$getSystemInfoSyn.platform;return b = { PLATFORM: d, OS: n, APPID: m, DEVICEID: t, CLIENT_SDK_VERSION: "1.0.25" }, _objectSpread(_objectSpread({}, b), {}, { LOCALE: e });}var E = { sign: function sign(e, t) {var n = "";return Object.keys(e).sort().forEach(function (t) {e[t] && (n = n + "&" + t + "=" + e[t]);}), n = n.slice(1), r(n, t).toString();}, wrappedRequest: function wrappedRequest(e, t) {return new Promise(function (n, s) {t(Object.assign(e, { complete: function complete(e) {e || (e = {}), l && "h5" === d && e.errMsg && 0 === e.errMsg.indexOf("request:fail") && console.warn("发布H5，需要在uniCloud后台操作，绑定安全域名，否则会因为跨域问题而无法访问。教程参考：https://uniapp.dcloud.io/uniCloud/quickstart?id=useinh5");var t = e.data && e.data.header && e.data.header["x-serverless-request-id"] || e.header && e.header["request-id"];if (!e.statusCode || e.statusCode >= 400) return s(new I({ code: "SYS_ERR", message: e.errMsg || "request:fail", requestId: t }));var r = e.data;if (r.error) return s(new I({ code: r.error.code, message: r.error.message, requestId: t }));r.result = r.data, r.requestId = t, delete r.data, n(r);} }));});} };var C = { request: function request(e) {return uni.request(e);}, uploadFile: function uploadFile(e) {return uni.uploadFile(e);}, setStorageSync: function setStorageSync(e, t) {return uni.setStorageSync(e, t);}, getStorageSync: function getStorageSync(e) {return uni.getStorageSync(e);}, removeStorageSync: function removeStorageSync(e) {return uni.removeStorageSync(e);}, clearStorageSync: function clearStorageSync() {return uni.clearStorageSync();} },U = { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" };var _e4 = (0, _uniI18n.initVueI18n)({ "zh-Hans": { "uniCloud.init.paramRequired": "缺少参数：{param}", "uniCloud.uploadFile.fileError": "filePath应为File对象" }, "zh-Hant": { "uniCloud.init.paramRequired": "缺少参数：{param}", "uniCloud.uploadFile.fileError": "filePath应为File对象" }, en: U, fr: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" }, es: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" }, ja: U }, "zh-Hans"),x = _e4.t;var D = /*#__PURE__*/function () {function D(e) {_classCallCheck(this, D);["spaceId", "clientSecret"].forEach(function (t) {if (!Object.prototype.hasOwnProperty.call(e, t)) throw new Error(x("uniCloud.init.paramRequired", { param: t }));}), this.config = Object.assign({}, { endpoint: "https://api.bspapp.com" }, e), this.config.provider = "aliyun", this.config.requestUrl = this.config.endpoint + "/client", this.config.envType = this.config.envType || "public", this.config.accessTokenKey = "access_token_" + this.config.spaceId, this.adapter = C, this._getAccessTokenPromise = null, this._getAccessTokenPromiseStatus = null;}_createClass(D, [{ key: "setAccessToken", value: function setAccessToken(e) {this.accessToken = e;} }, { key: "requestWrapped", value: function requestWrapped(e) {return E.wrappedRequest(e, this.adapter.request);} }, { key: "requestAuth", value: function requestAuth(e) {return this.requestWrapped(e);} }, { key: "request", value: function request(e, t) {var _this3 = this;return Promise.resolve().then(function () {return _this3.hasAccessToken ? t ? _this3.requestWrapped(e) : _this3.requestWrapped(e).catch(function (t) {return new Promise(function (e, n) {!t || "GATEWAY_INVALID_TOKEN" !== t.code && "InvalidParameter.InvalidToken" !== t.code ? n(t) : e();}).then(function () {return _this3.getAccessToken();}).then(function () {var t = _this3.rebuildRequest(e);return _this3.request(t, !0);});}) : _this3.getAccessToken().then(function () {var t = _this3.rebuildRequest(e);return _this3.request(t, !0);});});} }, { key: "rebuildRequest", value: function rebuildRequest(e) {var t = Object.assign({}, e);return t.data.token = this.accessToken, t.header["x-basement-token"] = this.accessToken, t.header["x-serverless-sign"] = E.sign(t.data, this.config.clientSecret), t;} }, { key: "setupRequest", value: function setupRequest(e, t) {var n = Object.assign({}, e, { spaceId: this.config.spaceId, timestamp: Date.now() }),s = { "Content-Type": "application/json" };return "auth" !== t && (n.token = this.accessToken, s["x-basement-token"] = this.accessToken), s["x-serverless-sign"] = E.sign(n, this.config.clientSecret), { url: this.config.requestUrl, method: "POST", data: n, dataType: "json", header: s };} }, { key: "getAccessToken", value: function getAccessToken() {var _this4 = this;if ("pending" === this._getAccessTokenPromiseStatus) return this._getAccessTokenPromise;this._getAccessTokenPromiseStatus = "pending";return this._getAccessTokenPromise = this.requestAuth(this.setupRequest({ method: "serverless.auth.user.anonymousAuthorize", params: "{}" }, "auth")).then(function (e) {return new Promise(function (t, n) {e.result && e.result.accessToken ? (_this4.setAccessToken(e.result.accessToken), _this4._getAccessTokenPromiseStatus = "fulfilled", t(_this4.accessToken)) : (_this4._getAccessTokenPromiseStatus = "rejected", n(new I({ code: "AUTH_FAILED", message: "获取accessToken失败" })));});}, function (e) {return _this4._getAccessTokenPromiseStatus = "rejected", Promise.reject(e);}), this._getAccessTokenPromise;} }, { key: "authorize", value: function authorize() {this.getAccessToken();} }, { key: "callFunction", value: function callFunction(e) {var t = { method: "serverless.function.runtime.invoke", params: JSON.stringify({ functionTarget: e.name, functionArgs: e.data || {} }) };return this.request(this.setupRequest(t));} }, { key: "getOSSUploadOptionsFromPath", value: function getOSSUploadOptionsFromPath(e) {var t = { method: "serverless.file.resource.generateProximalSign", params: JSON.stringify(e) };return this.request(this.setupRequest(t));} }, { key: "uploadFileToOSS", value: function uploadFileToOSS(_ref) {var _this5 = this;var e = _ref.url,t = _ref.formData,n = _ref.name,s = _ref.filePath,r = _ref.fileType,o = _ref.onUploadProgress;return new Promise(function (i, a) {var c = _this5.adapter.uploadFile({ url: e, formData: t, name: n, filePath: s, fileType: r, header: { "X-OSS-server-side-encrpytion": "AES256" }, success: function success(e) {e && e.statusCode < 400 ? i(e) : a(new I({ code: "UPLOAD_FAILED", message: "文件上传失败" }));}, fail: function fail(e) {a(new I({ code: e.code || "UPLOAD_FAILED", message: e.message || e.errMsg || "文件上传失败" }));} });"function" == typeof o && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (e) {o({ loaded: e.totalBytesSent, total: e.totalBytesExpectedToSend });});});} }, { key: "reportOSSUpload", value: function reportOSSUpload(e) {var t = { method: "serverless.file.resource.report", params: JSON.stringify(e) };return this.request(this.setupRequest(t));} }, { key: "uploadFile", value: function uploadFile(_ref2) {var _this6 = this;var e = _ref2.filePath,t = _ref2.cloudPath,_ref2$fileType = _ref2.fileType,n = _ref2$fileType === void 0 ? "image" : _ref2$fileType,s = _ref2.onUploadProgress,r = _ref2.config;if ("string" !== c(t)) throw new I({ code: "INVALID_PARAM", message: "cloudPath必须为字符串类型" });if (!(t = t.trim())) throw new I({ code: "CLOUDPATH_REQUIRED", message: "cloudPath不可为空" });if (/:\/\//.test(t)) throw new I({ code: "INVALID_PARAM", message: "cloudPath不合法" });var o = r && r.envType || this.config.envType;var i, a;return this.getOSSUploadOptionsFromPath({ env: o, filename: t }).then(function (t) {var r = t.result;i = r.id, a = "https://" + r.cdnDomain + "/" + r.ossPath;var o = { url: "https://" + r.host, formData: { "Cache-Control": "max-age=2592000", "Content-Disposition": "attachment", OSSAccessKeyId: r.accessKeyId, Signature: r.signature, host: r.host, id: i, key: r.ossPath, policy: r.policy, success_action_status: 200 }, fileName: "file", name: "file", filePath: e, fileType: n };return _this6.uploadFileToOSS(Object.assign({}, o, { onUploadProgress: s }));}).then(function () {return _this6.reportOSSUpload({ id: i });}).then(function (t) {return new Promise(function (n, s) {t.success ? n({ success: !0, filePath: e, fileID: a }) : s(new I({ code: "UPLOAD_FAILED", message: "文件上传失败" }));});});} }, { key: "deleteFile", value: function deleteFile(_ref3) {var e = _ref3.fileList;var t = { method: "serverless.file.resource.delete", params: JSON.stringify({ id: e[0] }) };return this.request(this.setupRequest(t));} }, { key: "getTempFileURL", value: function getTempFileURL() {var _ref4 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref4.fileList;return new Promise(function (t, n) {Array.isArray(e) && 0 !== e.length || n(new I({ code: "INVALID_PARAM", message: "fileList的元素必须是非空的字符串" })), t({ fileList: e.map(function (e) {return { fileID: e, tempFileURL: e };}) });});} }, { key: "hasAccessToken", get: function get() {return !!this.accessToken;} }]);return D;}();var q = { init: function init(e) {var t = new D(e),n = { signInAnonymously: function signInAnonymously() {return t.authorize();}, getLoginState: function getLoginState() {return Promise.resolve(!1);} };return t.auth = function () {return n;}, t.customAuth = t.auth, t;} };var R = "undefined" != typeof location && "http:" === location.protocol ? "http:" : "https:";var L;!function (e) {e.local = "local", e.none = "none", e.session = "session";}(L || (L = {}));var F = function F() {};var N = function N() {var e;if (!Promise) {e = function e() {}, e.promise = {};var _t2 = function _t2() {throw new Error('Your Node runtime does support ES6 Promises. Set "global.Promise" to your preferred implementation of promises.');};return Object.defineProperty(e.promise, "then", { get: _t2 }), Object.defineProperty(e.promise, "catch", { get: _t2 }), e;}var t = new Promise(function (t, n) {e = function e(_e5, s) {return _e5 ? n(_e5) : t(s);};});return e.promise = t, e;};function $(e) {return void 0 === e;}function j(e) {return "[object Null]" === Object.prototype.toString.call(e);}var M;function B(e) {var t = (n = e, "[object Array]" === Object.prototype.toString.call(n) ? e : [e]);var n;var _iterator = _createForOfIteratorHelper(t),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var _e6 = _step.value;var _t3 = _e6.isMatch,_n = _e6.genAdapter,_s = _e6.runtime;if (_t3()) return { adapter: _n(), runtime: _s };}} catch (err) {_iterator.e(err);} finally {_iterator.f();}}!function (e) {e.WEB = "web", e.WX_MP = "wx_mp";}(M || (M = {}));var K = { adapter: null, runtime: void 0 },H = ["anonymousUuidKey"];var W = /*#__PURE__*/function (_F) {_inherits(W, _F);var _super2 = _createSuper(W);function W() {var _this7;_classCallCheck(this, W);_this7 = _super2.call(this), K.adapter.root.tcbObject || (K.adapter.root.tcbObject = {});return _this7;}_createClass(W, [{ key: "setItem", value: function setItem(e, t) {K.adapter.root.tcbObject[e] = t;} }, { key: "getItem", value: function getItem(e) {return K.adapter.root.tcbObject[e];} }, { key: "removeItem", value: function removeItem(e) {delete K.adapter.root.tcbObject[e];} }, { key: "clear", value: function clear() {delete K.adapter.root.tcbObject;} }]);return W;}(F);function z(e, t) {switch (e) {case "local":return t.localStorage || new W();case "none":return new W();default:return t.sessionStorage || new W();}}var J = /*#__PURE__*/function () {function J(e) {_classCallCheck(this, J);if (!this._storage) {this._persistence = K.adapter.primaryStorage || e.persistence, this._storage = z(this._persistence, K.adapter);var _t4 = "access_token_".concat(e.env),_n2 = "access_token_expire_".concat(e.env),_s2 = "refresh_token_".concat(e.env),_r = "anonymous_uuid_".concat(e.env),_o = "login_type_".concat(e.env),_i = "user_info_".concat(e.env);this.keys = { accessTokenKey: _t4, accessTokenExpireKey: _n2, refreshTokenKey: _s2, anonymousUuidKey: _r, loginTypeKey: _o, userInfoKey: _i };}}_createClass(J, [{ key: "updatePersistence", value: function updatePersistence(e) {if (e === this._persistence) return;var t = "local" === this._persistence;this._persistence = e;var n = z(e, K.adapter);for (var _e7 in this.keys) {var _s3 = this.keys[_e7];if (t && H.includes(_e7)) continue;var _r2 = this._storage.getItem(_s3);$(_r2) || j(_r2) || (n.setItem(_s3, _r2), this._storage.removeItem(_s3));}this._storage = n;} }, { key: "setStore", value: function setStore(e, t, n) {if (!this._storage) return;var s = { version: n || "localCachev1", content: t },r = JSON.stringify(s);try {this._storage.setItem(e, r);} catch (e) {throw e;}} }, { key: "getStore", value: function getStore(e, t) {try {if (!this._storage) return;} catch (e) {return "";}t = t || "localCachev1";var n = this._storage.getItem(e);if (!n) return "";if (n.indexOf(t) >= 0) {return JSON.parse(n).content;}return "";} }, { key: "removeStore", value: function removeStore(e) {this._storage.removeItem(e);} }]);return J;}();var V = {},Y = {};function X(e) {return V[e];}var G = function G(e, t) {_classCallCheck(this, G);this.data = t || null, this.name = e;};var Q = /*#__PURE__*/function (_G) {_inherits(Q, _G);var _super3 = _createSuper(Q);function Q(e, t) {var _this8;_classCallCheck(this, Q);_this8 = _super3.call(this, "error", { error: e, data: t }), _this8.error = e;return _this8;}return Q;}(G);var Z = new ( /*#__PURE__*/function () {function _class() {_classCallCheck(this, _class);this._listeners = {};}_createClass(_class, [{ key: "on", value: function on(e, t) {return function (e, t, n) {n[e] = n[e] || [], n[e].push(t);}(e, t, this._listeners), this;} }, { key: "off", value: function off(e, t) {return function (e, t, n) {if (n && n[e]) {var _s4 = n[e].indexOf(t);-1 !== _s4 && n[e].splice(_s4, 1);}}(e, t, this._listeners), this;} }, { key: "fire", value: function fire(e, t) {if (e instanceof Q) return console.error(e.error), this;var n = "string" == typeof e ? new G(e, t || {}) : e;var s = n.name;if (this._listens(s)) {n.target = this;var _e8 = this._listeners[s] ? _toConsumableArray(this._listeners[s]) : [];var _iterator2 = _createForOfIteratorHelper(_e8),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var _t5 = _step2.value;_t5.call(this, n);}} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}}return this;} }, { key: "_listens", value: function _listens(e) {return this._listeners[e] && this._listeners[e].length > 0;} }]);return _class;}())();function ee(e, t) {Z.on(e, t);}function te(e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};Z.fire(e, t);}function ne(e, t) {Z.off(e, t);}var se = "loginStateChanged",re = "loginStateExpire",oe = "loginTypeChanged",ie = "anonymousConverted",ae = "refreshAccessToken";var ce;!function (e) {e.ANONYMOUS = "ANONYMOUS", e.WECHAT = "WECHAT", e.WECHAT_PUBLIC = "WECHAT-PUBLIC", e.WECHAT_OPEN = "WECHAT-OPEN", e.CUSTOM = "CUSTOM", e.EMAIL = "EMAIL", e.USERNAME = "USERNAME", e.NULL = "NULL";}(ce || (ce = {}));var ue = ["auth.getJwt", "auth.logout", "auth.signInWithTicket", "auth.signInAnonymously", "auth.signIn", "auth.fetchAccessTokenWithRefreshToken", "auth.signUpWithEmailAndPassword", "auth.activateEndUserMail", "auth.sendPasswordResetEmail", "auth.resetPasswordWithToken", "auth.isUsernameRegistered"],he = { "X-SDK-Version": "1.3.5" };function le(e, t, n) {var s = e[t];e[t] = function (t) {var r = {},o = {};n.forEach(function (n) {var _n$call = n.call(e, t),s = _n$call.data,i = _n$call.headers;Object.assign(r, s), Object.assign(o, i);});var i = t.data;return i && function () {var e;if (e = i, "[object FormData]" !== Object.prototype.toString.call(e)) t.data = _objectSpread(_objectSpread({}, i), r);else for (var _e9 in r) {i.append(_e9, r[_e9]);}}(), t.headers = _objectSpread(_objectSpread({}, t.headers || {}), o), s.call(e, t);};}function de() {var e = Math.random().toString(16).slice(2);return { data: { seqId: e }, headers: _objectSpread(_objectSpread({}, he), {}, { "x-seqid": e }) };}var fe = /*#__PURE__*/function () {function fe() {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, fe);var t;this.config = e, this._reqClass = new K.adapter.reqClass({ timeout: this.config.timeout, timeoutMsg: "\u8BF7\u6C42\u5728".concat(this.config.timeout / 1e3, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD"), restrictedMethods: ["post"] }), this._cache = X(this.config.env), this._localCache = (t = this.config.env, Y[t]), le(this._reqClass, "post", [de]), le(this._reqClass, "upload", [de]), le(this._reqClass, "download", [de]);}_createClass(fe, [{ key: "post", value: function () {var _post = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return this._reqClass.post(e);case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));function post(_x) {return _post.apply(this, arguments);}return post;}() }, { key: "upload", value: function () {var _upload = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2(e) {return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return this._reqClass.upload(e);case 2:return _context2.abrupt("return", _context2.sent);case 3:case "end":return _context2.stop();}}}, _callee2, this);}));function upload(_x2) {return _upload.apply(this, arguments);}return upload;}() }, { key: "download", value: function () {var _download = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3(e) {return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return this._reqClass.download(e);case 2:return _context3.abrupt("return", _context3.sent);case 3:case "end":return _context3.stop();}}}, _callee3, this);}));function download(_x3) {return _download.apply(this, arguments);}return download;}() }, { key: "refreshAccessToken", value: function () {var _refreshAccessToken2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var e, t;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:this._refreshAccessTokenPromise || (this._refreshAccessTokenPromise = this._refreshAccessToken());_context4.prev = 1;_context4.next = 4;return this._refreshAccessTokenPromise;case 4:e = _context4.sent;_context4.next = 10;break;case 7:_context4.prev = 7;_context4.t0 = _context4["catch"](1);t = _context4.t0;case 10:if (!(this._refreshAccessTokenPromise = null, this._shouldRefreshAccessTokenHook = null, t)) {_context4.next = 12;break;}throw t;case 12:return _context4.abrupt("return", e);case 13:case "end":return _context4.stop();}}}, _callee4, this, [[1, 7]]);}));function refreshAccessToken() {return _refreshAccessToken2.apply(this, arguments);}return refreshAccessToken;}() }, { key: "_refreshAccessToken", value: function () {var _refreshAccessToken3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee5() {var _this$_cache$keys, e, t, n, s, r, o, i, a, _e10, _e11, _t6, _s5;return _regenerator.default.wrap(function _callee5$(_context5) {while (1) {switch (_context5.prev = _context5.next) {case 0:_this$_cache$keys = this._cache.keys, e = _this$_cache$keys.accessTokenKey, t = _this$_cache$keys.accessTokenExpireKey, n = _this$_cache$keys.refreshTokenKey, s = _this$_cache$keys.loginTypeKey, r = _this$_cache$keys.anonymousUuidKey;this._cache.removeStore(e), this._cache.removeStore(t);o = this._cache.getStore(n);if (o) {_context5.next = 5;break;}throw new Error("未登录CloudBase");case 5:i = { refresh_token: o };_context5.next = 8;return this.request("auth.fetchAccessTokenWithRefreshToken", i);case 8:a = _context5.sent;if (!a.data.code) {_context5.next = 21;break;}_e10 = a.data.code;if (!("SIGN_PARAM_INVALID" === _e10 || "REFRESH_TOKEN_EXPIRED" === _e10 || "INVALID_REFRESH_TOKEN" === _e10)) {_context5.next = 20;break;}if (!(this._cache.getStore(s) === ce.ANONYMOUS && "INVALID_REFRESH_TOKEN" === _e10)) {_context5.next = 19;break;}_e11 = this._cache.getStore(r);_t6 = this._cache.getStore(n);_context5.next = 17;return this.send("auth.signInAnonymously", { anonymous_uuid: _e11, refresh_token: _t6 });case 17:_s5 = _context5.sent;return _context5.abrupt("return", (this.setRefreshToken(_s5.refresh_token), this._refreshAccessToken()));case 19:te(re), this._cache.removeStore(n);case 20:throw new Error("\u5237\u65B0access token\u5931\u8D25\uFF1A".concat(a.data.code));case 21:if (!a.data.access_token) {_context5.next = 23;break;}return _context5.abrupt("return", (te(ae), this._cache.setStore(e, a.data.access_token), this._cache.setStore(t, a.data.access_token_expire + Date.now()), { accessToken: a.data.access_token, accessTokenExpire: a.data.access_token_expire }));case 23:a.data.refresh_token && (this._cache.removeStore(n), this._cache.setStore(n, a.data.refresh_token), this._refreshAccessToken());case 24:case "end":return _context5.stop();}}}, _callee5, this);}));function _refreshAccessToken() {return _refreshAccessToken3.apply(this, arguments);}return _refreshAccessToken;}() }, { key: "getAccessToken", value: function () {var _getAccessToken = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee6() {var _this$_cache$keys2, e, t, n, s, r, o;return _regenerator.default.wrap(function _callee6$(_context6) {while (1) {switch (_context6.prev = _context6.next) {case 0:_this$_cache$keys2 = this._cache.keys, e = _this$_cache$keys2.accessTokenKey, t = _this$_cache$keys2.accessTokenExpireKey, n = _this$_cache$keys2.refreshTokenKey;if (this._cache.getStore(n)) {_context6.next = 3;break;}throw new Error("refresh token不存在，登录状态异常");case 3:s = this._cache.getStore(e), r = this._cache.getStore(t), o = !0;_context6.t0 = this._shouldRefreshAccessTokenHook;if (!_context6.t0) {_context6.next = 9;break;}_context6.next = 8;return this._shouldRefreshAccessTokenHook(s, r);case 8:_context6.t0 = !_context6.sent;case 9:_context6.t1 = _context6.t0;if (!_context6.t1) {_context6.next = 12;break;}o = !1;case 12:return _context6.abrupt("return", (!s || !r || r < Date.now()) && o ? this.refreshAccessToken() : { accessToken: s, accessTokenExpire: r });case 13:case "end":return _context6.stop();}}}, _callee6, this);}));function getAccessToken() {return _getAccessToken.apply(this, arguments);}return getAccessToken;}() }, { key: "request", value: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee7(e, t, n) {var s, r, o, _e12, i, _e13, _e14, a, c, u, h, l, d, f, p, g;return _regenerator.default.wrap(function _callee7$(_context7) {while (1) {switch (_context7.prev = _context7.next) {case 0:s = "x-tcb-trace_".concat(this.config.env);r = "application/x-www-form-urlencoded";o = _objectSpread({ action: e, env: this.config.env, dataVersion: "2019-08-16" }, t);if (!(-1 === ue.indexOf(e))) {_context7.next = 10;break;}_e12 = this._cache.keys.refreshTokenKey;_context7.t0 = this._cache.getStore(_e12);if (!_context7.t0) {_context7.next = 10;break;}_context7.next = 9;return this.getAccessToken();case 9:o.access_token = _context7.sent.accessToken;case 10:if ("storage.uploadFile" === e) {i = new FormData();for (_e13 in i) {i.hasOwnProperty(_e13) && void 0 !== i[_e13] && i.append(_e13, o[_e13]);}r = "multipart/form-data";} else {r = "application/json", i = {};for (_e14 in o) {void 0 !== o[_e14] && (i[_e14] = o[_e14]);}}a = { headers: { "content-type": r } };n && n.onUploadProgress && (a.onUploadProgress = n.onUploadProgress);c = this._localCache.getStore(s);c && (a.headers["X-TCB-Trace"] = c);u = t.parse, h = t.inQuery, l = t.search;d = { env: this.config.env };u && (d.parse = !0), h && (d = _objectSpread(_objectSpread({}, h), d));f = function (e, t) {var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};var s = /\?/.test(t);var r = "";for (var _e15 in n) {"" === r ? !s && (t += "?") : r += "&", r += "".concat(_e15, "=").concat(encodeURIComponent(n[_e15]));}return /^http(s)?\:\/\//.test(t += r) ? t : "".concat(e).concat(t);}(R, "//tcb-api.tencentcloudapi.com/web", d);l && (f += l);_context7.next = 22;return this.post(_objectSpread({ url: f, data: i }, a));case 22:p = _context7.sent;g = p.header && p.header["x-tcb-trace"];if (!(g && this._localCache.setStore(s, g), 200 !== Number(p.status) && 200 !== Number(p.statusCode) || !p.data)) {_context7.next = 26;break;}throw new Error("network request error");case 26:return _context7.abrupt("return", p);case 27:case "end":return _context7.stop();}}}, _callee7, this);}));function request(_x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}() }, { key: "send", value: function () {var _send = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee8(e) {var t,n,_n3,_args8 = arguments;return _regenerator.default.wrap(function _callee8$(_context8) {while (1) {switch (_context8.prev = _context8.next) {case 0:t = _args8.length > 1 && _args8[1] !== undefined ? _args8[1] : {};_context8.next = 3;return this.request(e, t, { onUploadProgress: t.onUploadProgress });case 3:n = _context8.sent;if (!("ACCESS_TOKEN_EXPIRED" === n.data.code && -1 === ue.indexOf(e))) {_context8.next = 13;break;}_context8.next = 7;return this.refreshAccessToken();case 7:_context8.next = 9;return this.request(e, t, { onUploadProgress: t.onUploadProgress });case 9:_n3 = _context8.sent;if (!_n3.data.code) {_context8.next = 12;break;}throw new Error("[".concat(_n3.data.code, "] ").concat(_n3.data.message));case 12:return _context8.abrupt("return", _n3.data);case 13:if (!n.data.code) {_context8.next = 15;break;}throw new Error("[".concat(n.data.code, "] ").concat(n.data.message));case 15:return _context8.abrupt("return", n.data);case 16:case "end":return _context8.stop();}}}, _callee8, this);}));function send(_x7) {return _send.apply(this, arguments);}return send;}() }, { key: "setRefreshToken", value: function setRefreshToken(e) {var _this$_cache$keys3 = this._cache.keys,t = _this$_cache$keys3.accessTokenKey,n = _this$_cache$keys3.accessTokenExpireKey,s = _this$_cache$keys3.refreshTokenKey;this._cache.removeStore(t), this._cache.removeStore(n), this._cache.setStore(s, e);} }]);return fe;}();var pe = {};function ge(e) {return pe[e];}var me = /*#__PURE__*/function () {function me(e) {_classCallCheck(this, me);this.config = e, this._cache = X(e.env), this._request = ge(e.env);}_createClass(me, [{ key: "setRefreshToken", value: function setRefreshToken(e) {var _this$_cache$keys4 = this._cache.keys,t = _this$_cache$keys4.accessTokenKey,n = _this$_cache$keys4.accessTokenExpireKey,s = _this$_cache$keys4.refreshTokenKey;this._cache.removeStore(t), this._cache.removeStore(n), this._cache.setStore(s, e);} }, { key: "setAccessToken", value: function setAccessToken(e, t) {var _this$_cache$keys5 = this._cache.keys,n = _this$_cache$keys5.accessTokenKey,s = _this$_cache$keys5.accessTokenExpireKey;this._cache.setStore(n, e), this._cache.setStore(s, t);} }, { key: "refreshUserInfo", value: function () {var _refreshUserInfo = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee9() {var _yield$this$_request$, e;return _regenerator.default.wrap(function _callee9$(_context9) {while (1) {switch (_context9.prev = _context9.next) {case 0:_context9.next = 2;return this._request.send("auth.getUserInfo", {});case 2:_yield$this$_request$ = _context9.sent;e = _yield$this$_request$.data;return _context9.abrupt("return", (this.setLocalUserInfo(e), e));case 5:case "end":return _context9.stop();}}}, _callee9, this);}));function refreshUserInfo() {return _refreshUserInfo.apply(this, arguments);}return refreshUserInfo;}() }, { key: "setLocalUserInfo", value: function setLocalUserInfo(e) {var t = this._cache.keys.userInfoKey;this._cache.setStore(t, e);} }]);return me;}();var ye = /*#__PURE__*/function () {function ye(e) {_classCallCheck(this, ye);if (!e) throw new Error("envId is not defined");this._envId = e, this._cache = X(this._envId), this._request = ge(this._envId), this.setUserInfo();}_createClass(ye, [{ key: "linkWithTicket", value: function linkWithTicket(e) {if ("string" != typeof e) throw new Error("ticket must be string");return this._request.send("auth.linkWithTicket", { ticket: e });} }, { key: "linkWithRedirect", value: function linkWithRedirect(e) {e.signInWithRedirect();} }, { key: "updatePassword", value: function updatePassword(e, t) {return this._request.send("auth.updatePassword", { oldPassword: t, newPassword: e });} }, { key: "updateEmail", value: function updateEmail(e) {return this._request.send("auth.updateEmail", { newEmail: e });} }, { key: "updateUsername", value: function updateUsername(e) {if ("string" != typeof e) throw new Error("username must be a string");return this._request.send("auth.updateUsername", { username: e });} }, { key: "getLinkedUidList", value: function () {var _getLinkedUidList = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee10() {var _yield$this$_request$2, e, t, n;return _regenerator.default.wrap(function _callee10$(_context10) {while (1) {switch (_context10.prev = _context10.next) {case 0:_context10.next = 2;return this._request.send("auth.getLinkedUidList", {});case 2:_yield$this$_request$2 = _context10.sent;e = _yield$this$_request$2.data;t = !1;n = e.users;return _context10.abrupt("return", (n.forEach(function (e) {e.wxOpenId && e.wxPublicId && (t = !0);}), { users: n, hasPrimaryUid: t }));case 7:case "end":return _context10.stop();}}}, _callee10, this);}));function getLinkedUidList() {return _getLinkedUidList.apply(this, arguments);}return getLinkedUidList;}() }, { key: "setPrimaryUid", value: function setPrimaryUid(e) {return this._request.send("auth.setPrimaryUid", { uid: e });} }, { key: "unlink", value: function unlink(e) {return this._request.send("auth.unlink", { platform: e });} }, { key: "update", value: function () {var _update = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee11(e) {var t, n, s, r, o, i, _yield$this$_request$3, a;return _regenerator.default.wrap(function _callee11$(_context11) {while (1) {switch (_context11.prev = _context11.next) {case 0:t = e.nickName;n = e.gender;s = e.avatarUrl;r = e.province;o = e.country;i = e.city;_context11.next = 8;return this._request.send("auth.updateUserInfo", { nickName: t, gender: n, avatarUrl: s, province: r, country: o, city: i });case 8:_yield$this$_request$3 = _context11.sent;a = _yield$this$_request$3.data;this.setLocalUserInfo(a);case 11:case "end":return _context11.stop();}}}, _callee11, this);}));function update(_x8) {return _update.apply(this, arguments);}return update;}() }, { key: "refresh", value: function () {var _refresh = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee12() {var _yield$this$_request$4, e;return _regenerator.default.wrap(function _callee12$(_context12) {while (1) {switch (_context12.prev = _context12.next) {case 0:_context12.next = 2;return this._request.send("auth.getUserInfo", {});case 2:_yield$this$_request$4 = _context12.sent;e = _yield$this$_request$4.data;return _context12.abrupt("return", (this.setLocalUserInfo(e), e));case 5:case "end":return _context12.stop();}}}, _callee12, this);}));function refresh() {return _refresh.apply(this, arguments);}return refresh;}() }, { key: "setUserInfo", value: function setUserInfo() {var _this9 = this;var e = this._cache.keys.userInfoKey,t = this._cache.getStore(e);["uid", "loginType", "openid", "wxOpenId", "wxPublicId", "unionId", "qqMiniOpenId", "email", "hasPassword", "customUserId", "nickName", "gender", "avatarUrl"].forEach(function (e) {_this9[e] = t[e];}), this.location = { country: t.country, province: t.province, city: t.city };} }, { key: "setLocalUserInfo", value: function setLocalUserInfo(e) {var t = this._cache.keys.userInfoKey;this._cache.setStore(t, e), this.setUserInfo();} }]);return ye;}();var _e = /*#__PURE__*/function () {function _e(e) {_classCallCheck(this, _e);if (!e) throw new Error("envId is not defined");this._cache = X(e);var _this$_cache$keys6 = this._cache.keys,t = _this$_cache$keys6.refreshTokenKey,n = _this$_cache$keys6.accessTokenKey,s = _this$_cache$keys6.accessTokenExpireKey,r = this._cache.getStore(t),o = this._cache.getStore(n),i = this._cache.getStore(s);this.credential = { refreshToken: r, accessToken: o, accessTokenExpire: i }, this.user = new ye(e);}_createClass(_e, [{ key: "isAnonymousAuth", get: function get() {return this.loginType === ce.ANONYMOUS;} }, { key: "isCustomAuth", get: function get() {return this.loginType === ce.CUSTOM;} }, { key: "isWeixinAuth", get: function get() {return this.loginType === ce.WECHAT || this.loginType === ce.WECHAT_OPEN || this.loginType === ce.WECHAT_PUBLIC;} }, { key: "loginType", get: function get() {return this._cache.getStore(this._cache.keys.loginTypeKey);} }]);return _e;}();var we = /*#__PURE__*/function (_me) {_inherits(we, _me);var _super4 = _createSuper(we);function we() {_classCallCheck(this, we);return _super4.apply(this, arguments);}_createClass(we, [{ key: "signIn", value: function () {var _signIn = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee13() {var _this$_cache$keys7, e, t, n, s, r, _e16;return _regenerator.default.wrap(function _callee13$(_context13) {while (1) {switch (_context13.prev = _context13.next) {case 0:this._cache.updatePersistence("local");_this$_cache$keys7 = this._cache.keys;e = _this$_cache$keys7.anonymousUuidKey;t = _this$_cache$keys7.refreshTokenKey;n = this._cache.getStore(e) || void 0;s = this._cache.getStore(t) || void 0;_context13.next = 8;return this._request.send("auth.signInAnonymously", { anonymous_uuid: n, refresh_token: s });case 8:r = _context13.sent;if (!(r.uuid && r.refresh_token)) {_context13.next = 20;break;}this._setAnonymousUUID(r.uuid);this.setRefreshToken(r.refresh_token);_context13.next = 14;return this._request.refreshAccessToken();case 14:te(se);te(oe, { env: this.config.env, loginType: ce.ANONYMOUS, persistence: "local" });_e16 = new _e(this.config.env);_context13.next = 19;return _e16.user.refresh();case 19:return _context13.abrupt("return", _e16);case 20:throw new Error("匿名登录失败");case 21:case "end":return _context13.stop();}}}, _callee13, this);}));function signIn() {return _signIn.apply(this, arguments);}return signIn;}() }, { key: "linkAndRetrieveDataWithTicket", value: function () {var _linkAndRetrieveDataWithTicket = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee14(e) {var _this$_cache$keys8, t, n, s, r, o;return _regenerator.default.wrap(function _callee14$(_context14) {while (1) {switch (_context14.prev = _context14.next) {case 0:_this$_cache$keys8 = this._cache.keys;t = _this$_cache$keys8.anonymousUuidKey;n = _this$_cache$keys8.refreshTokenKey;s = this._cache.getStore(t);r = this._cache.getStore(n);_context14.next = 7;return this._request.send("auth.linkAndRetrieveDataWithTicket", { anonymous_uuid: s, refresh_token: r, ticket: e });case 7:o = _context14.sent;if (!o.refresh_token) {_context14.next = 16;break;}this._clearAnonymousUUID();this.setRefreshToken(o.refresh_token);_context14.next = 13;return this._request.refreshAccessToken();case 13:te(ie, { env: this.config.env });te(oe, { loginType: ce.CUSTOM, persistence: "local" });return _context14.abrupt("return", { credential: { refreshToken: o.refresh_token } });case 16:throw new Error("匿名转化失败");case 17:case "end":return _context14.stop();}}}, _callee14, this);}));function linkAndRetrieveDataWithTicket(_x9) {return _linkAndRetrieveDataWithTicket.apply(this, arguments);}return linkAndRetrieveDataWithTicket;}() }, { key: "_setAnonymousUUID", value: function _setAnonymousUUID(e) {var _this$_cache$keys9 = this._cache.keys,t = _this$_cache$keys9.anonymousUuidKey,n = _this$_cache$keys9.loginTypeKey;this._cache.removeStore(t), this._cache.setStore(t, e), this._cache.setStore(n, ce.ANONYMOUS);} }, { key: "_clearAnonymousUUID", value: function _clearAnonymousUUID() {this._cache.removeStore(this._cache.keys.anonymousUuidKey);} }]);return we;}(me);var ke = /*#__PURE__*/function (_me2) {_inherits(ke, _me2);var _super5 = _createSuper(ke);function ke() {_classCallCheck(this, ke);return _super5.apply(this, arguments);}_createClass(ke, [{ key: "signIn", value: function () {var _signIn2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee15(e) {var t, n;return _regenerator.default.wrap(function _callee15$(_context15) {while (1) {switch (_context15.prev = _context15.next) {case 0:if (!("string" != typeof e)) {_context15.next = 2;break;}throw new Error("ticket must be a string");case 2:t = this._cache.keys.refreshTokenKey;_context15.next = 5;return this._request.send("auth.signInWithTicket", { ticket: e, refresh_token: this._cache.getStore(t) || "" });case 5:n = _context15.sent;if (!n.refresh_token) {_context15.next = 15;break;}this.setRefreshToken(n.refresh_token);_context15.next = 10;return this._request.refreshAccessToken();case 10:te(se);te(oe, { env: this.config.env, loginType: ce.CUSTOM, persistence: this.config.persistence });_context15.next = 14;return this.refreshUserInfo();case 14:return _context15.abrupt("return", new _e(this.config.env));case 15:throw new Error("自定义登录失败");case 16:case "end":return _context15.stop();}}}, _callee15, this);}));function signIn(_x10) {return _signIn2.apply(this, arguments);}return signIn;}() }]);return ke;}(me);var Se = /*#__PURE__*/function (_me3) {_inherits(Se, _me3);var _super6 = _createSuper(Se);function Se() {_classCallCheck(this, Se);return _super6.apply(this, arguments);}_createClass(Se, [{ key: "signIn", value: function () {var _signIn3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee16(e, t) {var n, s, r, o, i;return _regenerator.default.wrap(function _callee16$(_context16) {while (1) {switch (_context16.prev = _context16.next) {case 0:if (!("string" != typeof e)) {_context16.next = 2;break;}throw new Error("email must be a string");case 2:n = this._cache.keys.refreshTokenKey;_context16.next = 5;return this._request.send("auth.signIn", { loginType: "EMAIL", email: e, password: t, refresh_token: this._cache.getStore(n) || "" });case 5:s = _context16.sent;r = s.refresh_token;o = s.access_token;i = s.access_token_expire;if (!r) {_context16.next = 22;break;}this.setRefreshToken(r);if (!(o && i)) {_context16.next = 15;break;}this.setAccessToken(o, i);_context16.next = 17;break;case 15:_context16.next = 17;return this._request.refreshAccessToken();case 17:_context16.next = 19;return this.refreshUserInfo();case 19:te(se);te(oe, { env: this.config.env, loginType: ce.EMAIL, persistence: this.config.persistence });return _context16.abrupt("return", new _e(this.config.env));case 22:throw s.code ? new Error("\u90AE\u7BB1\u767B\u5F55\u5931\u8D25: [".concat(s.code, "] ").concat(s.message)) : new Error("邮箱登录失败");case 23:case "end":return _context16.stop();}}}, _callee16, this);}));function signIn(_x11, _x12) {return _signIn3.apply(this, arguments);}return signIn;}() }, { key: "activate", value: function () {var _activate = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee17(e) {return _regenerator.default.wrap(function _callee17$(_context17) {while (1) {switch (_context17.prev = _context17.next) {case 0:return _context17.abrupt("return", this._request.send("auth.activateEndUserMail", { token: e }));case 1:case "end":return _context17.stop();}}}, _callee17, this);}));function activate(_x13) {return _activate.apply(this, arguments);}return activate;}() }, { key: "resetPasswordWithToken", value: function () {var _resetPasswordWithToken = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee18(e, t) {return _regenerator.default.wrap(function _callee18$(_context18) {while (1) {switch (_context18.prev = _context18.next) {case 0:return _context18.abrupt("return", this._request.send("auth.resetPasswordWithToken", { token: e, newPassword: t }));case 1:case "end":return _context18.stop();}}}, _callee18, this);}));function resetPasswordWithToken(_x14, _x15) {return _resetPasswordWithToken.apply(this, arguments);}return resetPasswordWithToken;}() }]);return Se;}(me);var ve = /*#__PURE__*/function (_me4) {_inherits(ve, _me4);var _super7 = _createSuper(ve);function ve() {_classCallCheck(this, ve);return _super7.apply(this, arguments);}_createClass(ve, [{ key: "signIn", value: function () {var _signIn4 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee19(e, t) {var n, s, r, o, i;return _regenerator.default.wrap(function _callee19$(_context19) {while (1) {switch (_context19.prev = _context19.next) {case 0:if (!("string" != typeof e)) {_context19.next = 2;break;}throw new Error("username must be a string");case 2:"string" != typeof t && (t = "", console.warn("password is empty"));n = this._cache.keys.refreshTokenKey;_context19.next = 6;return this._request.send("auth.signIn", { loginType: ce.USERNAME, username: e, password: t, refresh_token: this._cache.getStore(n) || "" });case 6:s = _context19.sent;r = s.refresh_token;o = s.access_token_expire;i = s.access_token;if (!r) {_context19.next = 23;break;}this.setRefreshToken(r);if (!(i && o)) {_context19.next = 16;break;}this.setAccessToken(i, o);_context19.next = 18;break;case 16:_context19.next = 18;return this._request.refreshAccessToken();case 18:_context19.next = 20;return this.refreshUserInfo();case 20:te(se);te(oe, { env: this.config.env, loginType: ce.USERNAME, persistence: this.config.persistence });return _context19.abrupt("return", new _e(this.config.env));case 23:throw s.code ? new Error("\u7528\u6237\u540D\u5BC6\u7801\u767B\u5F55\u5931\u8D25: [".concat(s.code, "] ").concat(s.message)) : new Error("用户名密码登录失败");case 24:case "end":return _context19.stop();}}}, _callee19, this);}));function signIn(_x16, _x17) {return _signIn4.apply(this, arguments);}return signIn;}() }]);return ve;}(me);var Te = /*#__PURE__*/function () {function Te(e) {_classCallCheck(this, Te);this.config = e, this._cache = X(e.env), this._request = ge(e.env), this._onAnonymousConverted = this._onAnonymousConverted.bind(this), this._onLoginTypeChanged = this._onLoginTypeChanged.bind(this), ee(oe, this._onLoginTypeChanged);}_createClass(Te, [{ key: "anonymousAuthProvider", value: function anonymousAuthProvider() {return new we(this.config);} }, { key: "customAuthProvider", value: function customAuthProvider() {return new ke(this.config);} }, { key: "emailAuthProvider", value: function emailAuthProvider() {return new Se(this.config);} }, { key: "usernameAuthProvider", value: function usernameAuthProvider() {return new ve(this.config);} }, { key: "signInAnonymously", value: function () {var _signInAnonymously = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee20() {return _regenerator.default.wrap(function _callee20$(_context20) {while (1) {switch (_context20.prev = _context20.next) {case 0:return _context20.abrupt("return", new we(this.config).signIn());case 1:case "end":return _context20.stop();}}}, _callee20, this);}));function signInAnonymously() {return _signInAnonymously.apply(this, arguments);}return signInAnonymously;}() }, { key: "signInWithEmailAndPassword", value: function () {var _signInWithEmailAndPassword = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee21(e, t) {return _regenerator.default.wrap(function _callee21$(_context21) {while (1) {switch (_context21.prev = _context21.next) {case 0:return _context21.abrupt("return", new Se(this.config).signIn(e, t));case 1:case "end":return _context21.stop();}}}, _callee21, this);}));function signInWithEmailAndPassword(_x18, _x19) {return _signInWithEmailAndPassword.apply(this, arguments);}return signInWithEmailAndPassword;}() }, { key: "signInWithUsernameAndPassword", value: function signInWithUsernameAndPassword(e, t) {return new ve(this.config).signIn(e, t);} }, { key: "linkAndRetrieveDataWithTicket", value: function () {var _linkAndRetrieveDataWithTicket2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee22(e) {return _regenerator.default.wrap(function _callee22$(_context22) {while (1) {switch (_context22.prev = _context22.next) {case 0:this._anonymousAuthProvider || (this._anonymousAuthProvider = new we(this.config)), ee(ie, this._onAnonymousConverted);_context22.next = 3;return this._anonymousAuthProvider.linkAndRetrieveDataWithTicket(e);case 3:return _context22.abrupt("return", _context22.sent);case 4:case "end":return _context22.stop();}}}, _callee22, this);}));function linkAndRetrieveDataWithTicket(_x20) {return _linkAndRetrieveDataWithTicket2.apply(this, arguments);}return linkAndRetrieveDataWithTicket;}() }, { key: "signOut", value: function () {var _signOut = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee23() {var _this$_cache$keys10, e, t, n, s, r;return _regenerator.default.wrap(function _callee23$(_context23) {while (1) {switch (_context23.prev = _context23.next) {case 0:if (!(this.loginType === ce.ANONYMOUS)) {_context23.next = 2;break;}throw new Error("匿名用户不支持登出操作");case 2:_this$_cache$keys10 = this._cache.keys, e = _this$_cache$keys10.refreshTokenKey, t = _this$_cache$keys10.accessTokenKey, n = _this$_cache$keys10.accessTokenExpireKey, s = this._cache.getStore(e);if (s) {_context23.next = 5;break;}return _context23.abrupt("return");case 5:_context23.next = 7;return this._request.send("auth.logout", { refresh_token: s });case 7:r = _context23.sent;return _context23.abrupt("return", (this._cache.removeStore(e), this._cache.removeStore(t), this._cache.removeStore(n), te(se), te(oe, { env: this.config.env, loginType: ce.NULL, persistence: this.config.persistence }), r));case 9:case "end":return _context23.stop();}}}, _callee23, this);}));function signOut() {return _signOut.apply(this, arguments);}return signOut;}() }, { key: "signUpWithEmailAndPassword", value: function () {var _signUpWithEmailAndPassword = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee24(e, t) {return _regenerator.default.wrap(function _callee24$(_context24) {while (1) {switch (_context24.prev = _context24.next) {case 0:return _context24.abrupt("return", this._request.send("auth.signUpWithEmailAndPassword", { email: e, password: t }));case 1:case "end":return _context24.stop();}}}, _callee24, this);}));function signUpWithEmailAndPassword(_x21, _x22) {return _signUpWithEmailAndPassword.apply(this, arguments);}return signUpWithEmailAndPassword;}() }, { key: "sendPasswordResetEmail", value: function () {var _sendPasswordResetEmail = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee25(e) {return _regenerator.default.wrap(function _callee25$(_context25) {while (1) {switch (_context25.prev = _context25.next) {case 0:return _context25.abrupt("return", this._request.send("auth.sendPasswordResetEmail", { email: e }));case 1:case "end":return _context25.stop();}}}, _callee25, this);}));function sendPasswordResetEmail(_x23) {return _sendPasswordResetEmail.apply(this, arguments);}return sendPasswordResetEmail;}() }, { key: "onLoginStateChanged", value: function onLoginStateChanged(e) {var _this10 = this;ee(se, function () {var t = _this10.hasLoginState();e.call(_this10, t);});var t = this.hasLoginState();e.call(this, t);} }, { key: "onLoginStateExpired", value: function onLoginStateExpired(e) {ee(re, e.bind(this));} }, { key: "onAccessTokenRefreshed", value: function onAccessTokenRefreshed(e) {ee(ae, e.bind(this));} }, { key: "onAnonymousConverted", value: function onAnonymousConverted(e) {ee(ie, e.bind(this));} }, { key: "onLoginTypeChanged", value: function onLoginTypeChanged(e) {var _this11 = this;ee(oe, function () {var t = _this11.hasLoginState();e.call(_this11, t);});} }, { key: "getAccessToken", value: function () {var _getAccessToken2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee26() {return _regenerator.default.wrap(function _callee26$(_context26) {while (1) {switch (_context26.prev = _context26.next) {case 0:_context26.next = 2;return this._request.getAccessToken();case 2:_context26.t0 = _context26.sent.accessToken;_context26.t1 = this.config.env;return _context26.abrupt("return", { accessToken: _context26.t0, env: _context26.t1 });case 5:case "end":return _context26.stop();}}}, _callee26, this);}));function getAccessToken() {return _getAccessToken2.apply(this, arguments);}return getAccessToken;}() }, { key: "hasLoginState", value: function hasLoginState() {var e = this._cache.keys.refreshTokenKey;return this._cache.getStore(e) ? new _e(this.config.env) : null;} }, { key: "isUsernameRegistered", value: function () {var _isUsernameRegistered = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee27(e) {var _yield$this$_request$5, t;return _regenerator.default.wrap(function _callee27$(_context27) {while (1) {switch (_context27.prev = _context27.next) {case 0:if (!("string" != typeof e)) {_context27.next = 2;break;}throw new Error("username must be a string");case 2:_context27.next = 4;return this._request.send("auth.isUsernameRegistered", { username: e });case 4:_yield$this$_request$5 = _context27.sent;t = _yield$this$_request$5.data;return _context27.abrupt("return", t && t.isRegistered);case 7:case "end":return _context27.stop();}}}, _callee27, this);}));function isUsernameRegistered(_x24) {return _isUsernameRegistered.apply(this, arguments);}return isUsernameRegistered;}() }, { key: "getLoginState", value: function getLoginState() {return Promise.resolve(this.hasLoginState());} }, { key: "signInWithTicket", value: function () {var _signInWithTicket = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee28(e) {return _regenerator.default.wrap(function _callee28$(_context28) {while (1) {switch (_context28.prev = _context28.next) {case 0:return _context28.abrupt("return", new ke(this.config).signIn(e));case 1:case "end":return _context28.stop();}}}, _callee28, this);}));function signInWithTicket(_x25) {return _signInWithTicket.apply(this, arguments);}return signInWithTicket;}() }, { key: "shouldRefreshAccessToken", value: function shouldRefreshAccessToken(e) {this._request._shouldRefreshAccessTokenHook = e.bind(this);} }, { key: "getUserInfo", value: function getUserInfo() {return this._request.send("auth.getUserInfo", {}).then(function (e) {return e.code ? e : _objectSpread(_objectSpread({}, e.data), {}, { requestId: e.seqId });});} }, { key: "getAuthHeader", value: function getAuthHeader() {var _this$_cache$keys11 = this._cache.keys,e = _this$_cache$keys11.refreshTokenKey,t = _this$_cache$keys11.accessTokenKey,n = this._cache.getStore(e);return { "x-cloudbase-credentials": this._cache.getStore(t) + "/@@/" + n };} }, { key: "_onAnonymousConverted", value: function _onAnonymousConverted(e) {var t = e.data.env;t === this.config.env && this._cache.updatePersistence(this.config.persistence);} }, { key: "_onLoginTypeChanged", value: function _onLoginTypeChanged(e) {var _e$data = e.data,t = _e$data.loginType,n = _e$data.persistence,s = _e$data.env;s === this.config.env && (this._cache.updatePersistence(n), this._cache.setStore(this._cache.keys.loginTypeKey, t));} }, { key: "currentUser", get: function get() {var e = this.hasLoginState();return e && e.user || null;} }, { key: "loginType", get: function get() {return this._cache.getStore(this._cache.keys.loginTypeKey);} }]);return Te;}();var Ae = function Ae(e, t) {t = t || N();var n = ge(this.config.env),s = e.cloudPath,r = e.filePath,o = e.onUploadProgress,_e$fileType = e.fileType,i = _e$fileType === void 0 ? "image" : _e$fileType;return n.send("storage.getUploadMetadata", { path: s }).then(function (e) {var _e$data2 = e.data,a = _e$data2.url,c = _e$data2.authorization,u = _e$data2.token,h = _e$data2.fileId,l = _e$data2.cosFileId,d = e.requestId,f = { key: s, signature: c, "x-cos-meta-fileid": l, success_action_status: "201", "x-cos-security-token": u };n.upload({ url: a, data: f, file: r, name: s, fileType: i, onUploadProgress: o }).then(function (e) {201 === e.statusCode ? t(null, { fileID: h, requestId: d }) : t(new Error("STORAGE_REQUEST_FAIL: ".concat(e.data)));}).catch(function (e) {t(e);});}).catch(function (e) {t(e);}), t.promise;},Pe = function Pe(e, t) {t = t || N();var n = ge(this.config.env),s = e.cloudPath;return n.send("storage.getUploadMetadata", { path: s }).then(function (e) {t(null, e);}).catch(function (e) {t(e);}), t.promise;},Ie = function Ie(_ref5, t) {var e = _ref5.fileList;if (t = t || N(), !e || !Array.isArray(e)) return { code: "INVALID_PARAM", message: "fileList必须是非空的数组" };var _iterator3 = _createForOfIteratorHelper(e),_step3;try {for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {var _t7 = _step3.value;if (!_t7 || "string" != typeof _t7) return { code: "INVALID_PARAM", message: "fileList的元素必须是非空的字符串" };}} catch (err) {_iterator3.e(err);} finally {_iterator3.f();}var n = { fileid_list: e };return ge(this.config.env).send("storage.batchDeleteFile", n).then(function (e) {e.code ? t(null, e) : t(null, { fileList: e.data.delete_list, requestId: e.requestId });}).catch(function (e) {t(e);}), t.promise;},be = function be(_ref6, t) {var e = _ref6.fileList;t = t || N(), e && Array.isArray(e) || t(null, { code: "INVALID_PARAM", message: "fileList必须是非空的数组" });var n = [];var _iterator4 = _createForOfIteratorHelper(e),_step4;try {for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {var _s6 = _step4.value;"object" == typeof _s6 ? (_s6.hasOwnProperty("fileID") && _s6.hasOwnProperty("maxAge") || t(null, { code: "INVALID_PARAM", message: "fileList的元素必须是包含fileID和maxAge的对象" }), n.push({ fileid: _s6.fileID, max_age: _s6.maxAge })) : "string" == typeof _s6 ? n.push({ fileid: _s6 }) : t(null, { code: "INVALID_PARAM", message: "fileList的元素必须是字符串" });}} catch (err) {_iterator4.e(err);} finally {_iterator4.f();}var s = { file_list: n };return ge(this.config.env).send("storage.batchGetDownloadUrl", s).then(function (e) {e.code ? t(null, e) : t(null, { fileList: e.data.download_list, requestId: e.requestId });}).catch(function (e) {t(e);}), t.promise;},Oe = /*#__PURE__*/function () {var _ref8 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee29(_ref7, t) {var e, n, s, r;return _regenerator.default.wrap(function _callee29$(_context29) {while (1) {switch (_context29.prev = _context29.next) {case 0:e = _ref7.fileID;_context29.next = 3;return be.call(this, { fileList: [{ fileID: e, maxAge: 600 }] });case 3:n = _context29.sent.fileList[0];if (!("SUCCESS" !== n.code)) {_context29.next = 6;break;}return _context29.abrupt("return", t ? t(n) : new Promise(function (e) {e(n);}));case 6:s = ge(this.config.env);r = n.download_url;if (!(r = encodeURI(r), !t)) {_context29.next = 10;break;}return _context29.abrupt("return", s.download({ url: r }));case 10:_context29.t0 = t;_context29.next = 13;return s.download({ url: r });case 13:_context29.t1 = _context29.sent;(0, _context29.t0)(_context29.t1);case 15:case "end":return _context29.stop();}}}, _callee29, this);}));return function Oe(_x26, _x27) {return _ref8.apply(this, arguments);};}(),Ee = function Ee(_ref9, o) {var e = _ref9.name,t = _ref9.data,n = _ref9.query,s = _ref9.parse,r = _ref9.search;var i = o || N();var a;try {a = t ? JSON.stringify(t) : "";} catch (e) {return Promise.reject(e);}if (!e) return Promise.reject(new Error("函数名不能为空"));var c = { inQuery: n, parse: s, search: r, function_name: e, request_data: a };return ge(this.config.env).send("functions.invokeFunction", c).then(function (e) {if (e.code) i(null, e);else {var _t8 = e.data.response_data;if (s) i(null, { result: _t8, requestId: e.requestId });else try {_t8 = JSON.parse(e.data.response_data), i(null, { result: _t8, requestId: e.requestId });} catch (e) {i(new Error("response data must be json"));}}return i.promise;}).catch(function (e) {i(e);}), i.promise;},Ce = { timeout: 15e3, persistence: "session" },Ue = {};var xe = /*#__PURE__*/function () {function xe(e) {_classCallCheck(this, xe);this.config = e || this.config, this.authObj = void 0;}_createClass(xe, [{ key: "init", value: function init(e) {switch (K.adapter || (this.requestClient = new K.adapter.reqClass({ timeout: e.timeout || 5e3, timeoutMsg: "\u8BF7\u6C42\u5728".concat((e.timeout || 5e3) / 1e3, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD") })), this.config = _objectSpread(_objectSpread({}, Ce), e), !0) {case this.config.timeout > 6e5:console.warn("timeout大于可配置上限[10分钟]，已重置为上限数值"), this.config.timeout = 6e5;break;case this.config.timeout < 100:console.warn("timeout小于可配置下限[100ms]，已重置为下限数值"), this.config.timeout = 100;}return new xe(this.config);} }, { key: "auth", value: function auth() {var _ref10 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref10.persistence;if (this.authObj) return this.authObj;var t = e || K.adapter.primaryStorage || Ce.persistence;var n;return t !== this.config.persistence && (this.config.persistence = t), function (e) {var t = e.env;V[t] = new J(e), Y[t] = new J(_objectSpread(_objectSpread({}, e), {}, { persistence: "local" }));}(this.config), n = this.config, pe[n.env] = new fe(n), this.authObj = new Te(this.config), this.authObj;} }, { key: "on", value: function on(e, t) {return ee.apply(this, [e, t]);} }, { key: "off", value: function off(e, t) {return ne.apply(this, [e, t]);} }, { key: "callFunction", value: function callFunction(e, t) {return Ee.apply(this, [e, t]);} }, { key: "deleteFile", value: function deleteFile(e, t) {return Ie.apply(this, [e, t]);} }, { key: "getTempFileURL", value: function getTempFileURL(e, t) {return be.apply(this, [e, t]);} }, { key: "downloadFile", value: function downloadFile(e, t) {return Oe.apply(this, [e, t]);} }, { key: "uploadFile", value: function uploadFile(e, t) {return Ae.apply(this, [e, t]);} }, { key: "getUploadMetadata", value: function getUploadMetadata(e, t) {return Pe.apply(this, [e, t]);} }, { key: "registerExtension", value: function registerExtension(e) {Ue[e.name] = e;} }, { key: "invokeExtension", value: function () {var _invokeExtension = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee30(e, t) {var n;return _regenerator.default.wrap(function _callee30$(_context30) {while (1) {switch (_context30.prev = _context30.next) {case 0:n = Ue[e];if (n) {_context30.next = 3;break;}throw Error("\u6269\u5C55".concat(e, " \u5FC5\u987B\u5148\u6CE8\u518C"));case 3:_context30.next = 5;return n.invoke(t, this);case 5:return _context30.abrupt("return", _context30.sent);case 6:case "end":return _context30.stop();}}}, _callee30, this);}));function invokeExtension(_x28, _x29) {return _invokeExtension.apply(this, arguments);}return invokeExtension;}() }, { key: "useAdapters", value: function useAdapters(e) {var _ref11 = B(e) || {},t = _ref11.adapter,n = _ref11.runtime;t && (K.adapter = t), n && (K.runtime = n);} }]);return xe;}();var De = new xe();function qe(e, t, n) {void 0 === n && (n = {});var s = /\?/.test(t),r = "";for (var o in n) {"" === r ? !s && (t += "?") : r += "&", r += o + "=" + encodeURIComponent(n[o]);}return /^http(s)?:\/\//.test(t += r) ? t : "" + e + t;}var Re = /*#__PURE__*/function () {function Re() {_classCallCheck(this, Re);}_createClass(Re, [{ key: "post", value: function post(e) {var t = e.url,n = e.data,s = e.headers;return new Promise(function (e, r) {C.request({ url: qe("https:", t), data: n, method: "POST", header: s, success: function success(t) {e(t);}, fail: function fail(e) {r(e);} });});} }, { key: "upload", value: function upload(e) {return new Promise(function (t, n) {var s = e.url,r = e.file,o = e.data,i = e.headers,a = e.fileType,c = C.uploadFile({ url: qe("https:", s), name: "file", formData: Object.assign({}, o), filePath: r, fileType: a, header: i, success: function success(e) {var n = { statusCode: e.statusCode, data: e.data || {} };200 === e.statusCode && o.success_action_status && (n.statusCode = parseInt(o.success_action_status, 10)), t(n);}, fail: function fail(e) {l && "mp-alipay" === d && console.warn("支付宝小程序开发工具上传腾讯云时无法准确判断是否上传成功，请使用真机测试"), n(new Error(e.errMsg || "uploadFile:fail"));} });"function" == typeof e.onUploadProgress && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (t) {e.onUploadProgress({ loaded: t.totalBytesSent, total: t.totalBytesExpectedToSend });});});} }]);return Re;}();var Le = { setItem: function setItem(e, t) {C.setStorageSync(e, t);}, getItem: function getItem(e) {return C.getStorageSync(e);}, removeItem: function removeItem(e) {C.removeStorageSync(e);}, clear: function clear() {C.clearStorageSync();} };var Fe = { genAdapter: function genAdapter() {return { root: {}, reqClass: Re, localStorage: Le, primaryStorage: "local" };}, isMatch: function isMatch() {return !0;}, runtime: "uni_app" };De.useAdapters(Fe);var Ne = De,$e = Ne.init;Ne.init = function (e) {e.env = e.spaceId;var t = $e.call(this, e);t.config.provider = "tencent", t.config.spaceId = e.spaceId;var n = t.auth;return t.auth = function (e) {var t = n.call(this, e);return ["linkAndRetrieveDataWithTicket", "signInAnonymously", "signOut", "getAccessToken", "getLoginState", "signInWithTicket", "getUserInfo"].forEach(function (e) {t[e] = P(t[e]).bind(t);}), t;}, t.customAuth = t.auth, t;};var je = Ne;function Me() {return { token: C.getStorageSync("uni_id_token") || C.getStorageSync("uniIdToken"), tokenExpired: C.getStorageSync("uni_id_token_expired") };}function Be() {if (!l || "h5" !== d) return;uni.getStorageSync("__LAST_DCLOUD_APPID") !== m && (uni.setStorageSync("__LAST_DCLOUD_APPID", m), console.warn("检测到当前项目与上次运行到此端口的项目不一致，自动清理uni-id保存的token信息（仅开发调试时生效）"), C.removeStorageSync("uni_id_token"), C.removeStorageSync("uniIdToken"), C.removeStorageSync("uni_id_token_expired"));}var Ke = /*#__PURE__*/function (_D) {_inherits(Ke, _D);var _super8 = _createSuper(Ke);function Ke() {_classCallCheck(this, Ke);return _super8.apply(this, arguments);}_createClass(Ke, [{ key: "getAccessToken", value: function getAccessToken() {var _this12 = this;return new Promise(function (e, t) {var n = "Anonymous_Access_token";_this12.setAccessToken(n), e(n);});} }, { key: "setupRequest", value: function setupRequest(e, t) {var n = Object.assign({}, e, { spaceId: this.config.spaceId, timestamp: Date.now() }),s = { "Content-Type": "application/json" };"auth" !== t && (n.token = this.accessToken, s["x-basement-token"] = this.accessToken), s["x-serverless-sign"] = E.sign(n, this.config.clientSecret);var r = O();s["x-client-info"] = JSON.stringify(r);var _Me = Me(),o = _Me.token;return s["x-client-token"] = o, { url: this.config.requestUrl, method: "POST", data: n, dataType: "json", header: JSON.parse(JSON.stringify(s)) };} }, { key: "uploadFileToOSS", value: function uploadFileToOSS(_ref12) {var _this13 = this;var e = _ref12.url,t = _ref12.formData,n = _ref12.name,s = _ref12.filePath,r = _ref12.fileType,o = _ref12.onUploadProgress;return new Promise(function (i, a) {var c = _this13.adapter.uploadFile({ url: e, formData: t, name: n, filePath: s, fileType: r, success: function success(e) {e && e.statusCode < 400 ? i(e) : a(new I({ code: "UPLOAD_FAILED", message: "文件上传失败" }));}, fail: function fail(e) {a(new I({ code: e.code || "UPLOAD_FAILED", message: e.message || e.errMsg || "文件上传失败" }));} });"function" == typeof o && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (e) {o({ loaded: e.totalBytesSent, total: e.totalBytesExpectedToSend });});});} }, { key: "uploadFile", value: function uploadFile(_ref13) {var _this14 = this;var e = _ref13.filePath,t = _ref13.cloudPath,_ref13$fileType = _ref13.fileType,n = _ref13$fileType === void 0 ? "image" : _ref13$fileType,s = _ref13.onUploadProgress;if (!t) throw new I({ code: "CLOUDPATH_REQUIRED", message: "cloudPath不可为空" });var r;return this.getOSSUploadOptionsFromPath({ cloudPath: t }).then(function (t) {var _t$result = t.result,o = _t$result.url,i = _t$result.formData,a = _t$result.name;r = t.result.fileUrl;var c = { url: o, formData: i, name: a, filePath: e, fileType: n };return _this14.uploadFileToOSS(Object.assign({}, c, { onUploadProgress: s }));}).then(function () {return _this14.reportOSSUpload({ cloudPath: t });}).then(function (t) {return new Promise(function (n, s) {t.success ? n({ success: !0, filePath: e, fileID: r }) : s(new I({ code: "UPLOAD_FAILED", message: "文件上传失败" }));});});} }, { key: "deleteFile", value: function deleteFile(_ref14) {var e = _ref14.fileList;var t = { method: "serverless.file.resource.delete", params: JSON.stringify({ fileList: e }) };return this.request(this.setupRequest(t));} }, { key: "getTempFileURL", value: function getTempFileURL() {var _ref15 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref15.fileList;var t = { method: "serverless.file.resource.getTempFileURL", params: JSON.stringify({ fileList: e }) };return this.request(this.setupRequest(t));} }]);return Ke;}(D);var He = { init: function init(e) {var t = new Ke(e),n = { signInAnonymously: function signInAnonymously() {return t.authorize();}, getLoginState: function getLoginState() {return Promise.resolve(!1);} };return t.auth = function () {return n;}, t.customAuth = t.auth, t;} };function We(_ref16) {var e = _ref16.data;var t;t = O();var n = JSON.parse(JSON.stringify(e || {}));if (Object.assign(n, { clientInfo: t }), !n.uniIdToken) {var _Me2 = Me(),_e17 = _Me2.token;_e17 && (n.uniIdToken = _e17);}return n;}function ze(_ref17) {var _this15 = this;var e = _ref17.name,t = _ref17.data;var n = this.localAddress,s = this.localPort,r = { aliyun: "aliyun", tencent: "tcb" }[this.config.provider],o = this.config.spaceId,i = "http://".concat(n, ":").concat(s, "/system/check-function"),a = "http://".concat(n, ":").concat(s, "/cloudfunctions/").concat(e);return new Promise(function (t, n) {C.request({ method: "POST", url: i, data: { name: e, platform: d, provider: r, spaceId: o }, timeout: 3e3, success: function success(e) {t(e);}, fail: function fail() {t({ data: { code: "NETWORK_ERROR", message: "连接本地调试服务失败，请检查客户端是否和主机在同一局域网下，自动切换为已部署的云函数。" } });} });}).then(function () {var _ref18 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref18.data;var _ref19 = e || {},t = _ref19.code,n = _ref19.message;return { code: 0 === t ? 0 : t || "SYS_ERR", message: n || "SYS_ERR" };}).then(function (_ref20) {var n = _ref20.code,s = _ref20.message;if (0 !== n) {switch (n) {case "MODULE_ENCRYPTED":console.error("\u6B64\u4E91\u51FD\u6570\uFF08".concat(e, "\uFF09\u4F9D\u8D56\u52A0\u5BC6\u516C\u5171\u6A21\u5757\u4E0D\u53EF\u672C\u5730\u8C03\u8BD5\uFF0C\u81EA\u52A8\u5207\u6362\u4E3A\u4E91\u7AEF\u5DF2\u90E8\u7F72\u7684\u4E91\u51FD\u6570"));break;case "FUNCTION_ENCRYPTED":console.error("\u6B64\u4E91\u51FD\u6570\uFF08".concat(e, "\uFF09\u5DF2\u52A0\u5BC6\u4E0D\u53EF\u672C\u5730\u8C03\u8BD5\uFF0C\u81EA\u52A8\u5207\u6362\u4E3A\u4E91\u7AEF\u5DF2\u90E8\u7F72\u7684\u4E91\u51FD\u6570"));break;case "ACTION_ENCRYPTED":console.error(s || "需要访问加密的uni-clientDB-action，自动切换为云端环境");break;case "NETWORK_ERROR":{var _e18 = "连接本地调试服务失败，请检查客户端是否和主机在同一局域网下";throw console.error(_e18), new Error(_e18);}case "SWITCH_TO_CLOUD":break;default:{var _e19 = "\u68C0\u6D4B\u672C\u5730\u8C03\u8BD5\u670D\u52A1\u51FA\u73B0\u9519\u8BEF\uFF1A".concat(s, "\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u73AF\u5883\u6216\u91CD\u542F\u5BA2\u6237\u7AEF\u518D\u8BD5");throw console.error(_e19), new Error(_e19);}}return _this15._originCallFunction({ name: e, data: t });}return new Promise(function (e, n) {var s = We.call(_this15, { data: t });C.request({ method: "POST", url: a, data: { provider: r, platform: d, param: s }, success: function success() {var _ref21 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},t = _ref21.statusCode,s = _ref21.data;return !t || t >= 400 ? n(new I({ code: s.code || "SYS_ERR", message: s.message || "request:fail" })) : e({ result: s });}, fail: function fail(e) {n(new I({ code: e.code || e.errCode || "SYS_ERR", message: e.message || e.errMsg || "request:fail" }));} });});});}var Je = [{ rule: /fc_function_not_found|FUNCTION_NOT_FOUND/, content: "，云函数[{functionName}]在云端不存在，请检查此云函数名称是否正确以及该云函数是否已上传到服务空间", mode: "append" }];var Ve = /[\\^$.*+?()[\]{}|]/g,Ye = RegExp(Ve.source);function Xe(e, t, n) {return e.replace(new RegExp((s = t) && Ye.test(s) ? s.replace(Ve, "\\$&") : s, "g"), n);var s;}function Ge(_ref22) {var e = _ref22.functionName,t = _ref22.result,n = _ref22.logPvd;if (this.config.useDebugFunction && t && t.requestId) {var _s7 = JSON.stringify({ spaceId: this.config.spaceId, functionName: e, requestId: t.requestId });console.log("[".concat(n, "-request]").concat(_s7, "[/").concat(n, "-request]"));}}function Qe(e) {var t = e.callFunction,n = function n(_n4) {var _this16 = this;var s = _n4.name;_n4.data = We.call(e, { data: _n4.data });var r = { aliyun: "aliyun", tencent: "tcb" }[this.config.provider];return t.call(this, _n4).then(function (e) {return Ge.call(_this16, { functionName: s, result: e, logPvd: r }), Promise.resolve(e);}, function (e) {return Ge.call(_this16, { functionName: s, result: e, logPvd: r }), e && e.message && (e.message = function () {var _ref23 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref23$message = _ref23.message,e = _ref23$message === void 0 ? "" : _ref23$message,_ref23$extraInfo = _ref23.extraInfo,t = _ref23$extraInfo === void 0 ? {} : _ref23$extraInfo,_ref23$formatter = _ref23.formatter,n = _ref23$formatter === void 0 ? [] : _ref23$formatter;for (var _s8 = 0; _s8 < n.length; _s8++) {var _n$_s = n[_s8],_r3 = _n$_s.rule,_o2 = _n$_s.content,i = _n$_s.mode,_a = e.match(_r3);if (!_a) continue;var _c = _o2;for (var _e20 = 1; _e20 < _a.length; _e20++) {_c = Xe(_c, "{$".concat(_e20, "}"), _a[_e20]);}for (var _e21 in t) {_c = Xe(_c, "{".concat(_e21, "}"), t[_e21]);}return "replace" === i ? _c : e + _c;}return e;}({ message: "[".concat(_n4.name, "]: ").concat(e.message), formatter: Je, extraInfo: { functionName: s } })), Promise.reject(e);});};e.callFunction = function (t) {var s;return l && e.debugInfo && !e.debugInfo.forceRemote && p ? (e._originCallFunction || (e._originCallFunction = n), s = ze.call(this, t)) : s = n.call(this, t), Object.defineProperty(s, "result", { get: function get() {return console.warn("当前返回结果为Promise类型，不可直接访问其result属性，详情请参考：https://uniapp.dcloud.net.cn/uniCloud/faq?id=promise"), {};} }), s;};}var Ze = Symbol("CLIENT_DB_INTERNAL");function et(e, t) {return e.then = "DoNotReturnProxyWithAFunctionNamedThen", e._internalType = Ze, e.__ob__ = void 0, new Proxy(e, { get: function get(e, n, s) {if ("_uniClient" === n) return null;if (n in e || "string" != typeof n) {var _t9 = e[n];return "function" == typeof _t9 ? _t9.bind(e) : _t9;}return t.get(e, n, s);} });}function tt(e) {return { on: function on(t, n) {e[t] = e[t] || [], e[t].indexOf(n) > -1 || e[t].push(n);}, off: function off(t, n) {e[t] = e[t] || [];var s = e[t].indexOf(n);-1 !== s && e[t].splice(s, 1);} };}var nt = ["db.Geo", "db.command", "command.aggregate"];function st(e, t) {return nt.indexOf("".concat(e, ".").concat(t)) > -1;}function rt(e) {switch (c(e)) {case "array":return e.map(function (e) {return rt(e);});case "object":return e._internalType === Ze || Object.keys(e).forEach(function (t) {e[t] = rt(e[t]);}), e;case "regexp":return { $regexp: { source: e.source, flags: e.flags } };case "date":return { $date: e.toISOString() };default:return e;}}var ot = /*#__PURE__*/function () {function ot(e, t, n) {_classCallCheck(this, ot);this.content = e, this.prevStage = t || null, this.udb = null, this._database = n;}_createClass(ot, [{ key: "toJSON", value: function toJSON() {var e = this;var t = [e.content];for (; e.prevStage;) {e = e.prevStage, t.push(e.content);}return { $db: t.reverse().map(function (e) {return { $method: e.$method, $param: rt(e.$param) };}) };} }, { key: "getAction", value: function getAction() {var e = this.toJSON().$db.find(function (e) {return "action" === e.$method;});return e && e.$param && e.$param[0];} }, { key: "getCommand", value: function getCommand() {return { $db: this.toJSON().$db.filter(function (e) {return "action" !== e.$method;}) };} }, { key: "get", value: function get() {return this._send("get", Array.from(arguments));} }, { key: "add", value: function add() {return this._send("add", Array.from(arguments));} }, { key: "remove", value: function remove() {return this._send("remove", Array.from(arguments));} }, { key: "update", value: function update() {return this._send("update", Array.from(arguments));} }, { key: "end", value: function end() {return this._send("end", Array.from(arguments));} }, { key: "set", value: function set() {throw new Error("clientDB禁止使用set方法");} }, { key: "_send", value: function _send(e, t) {var n = this.getAction(),s = this.getCommand();if (s.$db.push({ $method: e, $param: rt(t) }), l) {var _e22 = s.$db.find(function (e) {return "collection" === e.$method;}),_t10 = _e22 && _e22.$param;_t10 && 1 === _t10.length && "string" == typeof _e22.$param[0] && _e22.$param[0].indexOf(",") > -1 && console.warn("检测到使用JQL语法联表查询时，未使用getTemp先过滤主表数据，在主表数据量大的情况下可能会查询缓慢。\n- 如何优化请参考此文档：https://uniapp.dcloud.net.cn/uniCloud/jql?id=lookup-with-temp \n- 如果主表数据量很小请忽略此信息，项目发行时不会出现此提示。");}return this._database._callCloudFunction({ action: n, command: s });} }, { key: "useAggregate", get: function get() {var e = this,t = !1;for (; e.prevStage;) {e = e.prevStage;var _n5 = e.content.$method;if ("aggregate" === _n5 || "pipeline" === _n5) {t = !0;break;}}return t;} }, { key: "count", get: function get() {if (!this.useAggregate) return function () {return this._send("count", Array.from(arguments));};var e = this;return function () {return it({ $method: "count", $param: rt(Array.from(arguments)) }, e, this._database);};} }]);return ot;}();function it(e, t, n) {return et(new ot(e, t, n), { get: function get(e, t) {var s = "db";return e && e.content && (s = e.content.$method), st(s, t) ? it({ $method: t }, e, n) : function () {return it({ $method: t, $param: rt(Array.from(arguments)) }, e, n);};} });}function at(_ref24) {var e = _ref24.path,t = _ref24.method;return /*#__PURE__*/function () {function _class2() {_classCallCheck(this, _class2);this.param = Array.from(arguments);}_createClass(_class2, [{ key: "toJSON", value: function toJSON() {return { $newDb: [].concat(_toConsumableArray(e.map(function (e) {return { $method: e };})), [{ $method: t, $param: this.param }]) };} }]);return _class2;}();}var ct = /*#__PURE__*/function (_ref25) {_inherits(ct, _ref25);var _super9 = _createSuper(ct);function ct() {_classCallCheck(this, ct);return _super9.apply(this, arguments);}_createClass(ct, [{ key: "_callCloudFunction", value: function _callCloudFunction(_ref26) {var _this17 = this;var e = _ref26.action,t = _ref26.command,n = _ref26.multiCommand,s = _ref26.queryList;function r(e, t) {if (n && s) for (var _n6 = 0; _n6 < s.length; _n6++) {var _r4 = s[_n6];_r4.udb && "function" == typeof _r4.udb.setResult && (t ? _r4.udb.setResult(t) : _r4.udb.setResult(e.result.dataList[_n6]));}}var o = T(A("database", "invoke")),i = this._uniClient;return o.then(function () {return i.callFunction({ name: "DCloud-clientDB", type: a, data: { action: e, command: t, multiCommand: n } });}).then(function (e) {var _e$result = e.result,t = _e$result.code,n = _e$result.message,s = _e$result.token,o = _e$result.tokenExpired,_e$result$systemInfo = _e$result.systemInfo,i = _e$result$systemInfo === void 0 ? [] : _e$result$systemInfo;if (i) for (var _e23 = 0; _e23 < i.length; _e23++) {var _i$_e = i[_e23],_t11 = _i$_e.level,_n7 = _i$_e.message,_s9 = _i$_e.detail,_r5 = console["app-plus" === d && "warn" === _t11 ? "error" : _t11] || console.log;var _o3 = "[System Info]" + _n7;_s9 && (_o3 = "".concat(_o3, "\n\u8BE6\u7EC6\u4FE1\u606F\uFF1A").concat(_s9)), _r5(_o3);}if (t) {var _s10 = new I({ message: n, code: t, requestId: e.requestId });return _this17._callback("error", [_s10]), Promise.reject(_s10);}s && o && (!function () {var _ref27 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref27.token,t = _ref27.tokenExpired;e && C.setStorageSync("uni_id_token", e), t && C.setStorageSync("uni_id_token_expired", t);}({ token: s, tokenExpired: o }), _this17._callbackAuth("refreshToken", [{ token: s, tokenExpired: o }]), _this17._callback("refreshToken", [{ token: s, tokenExpired: o }]));var a = e.result.affectedDocs;return "number" == typeof a && Object.defineProperty(e.result, "affectedDocs", { get: function get() {return console.warn("affectedDocs不再推荐使用，请使用inserted/deleted/updated/data.length替代"), a;} }), T(A("database", "success"), e).then(function () {return T(A("database", "complete"), e);}).then(function () {return r(e, null), Promise.resolve(e);});}, function (e) {var t = new I({ code: e.code || "SYSTEM_ERROR", message: e.message, requestId: e.requestId });return _this17._callback("error", [t]), /fc_function_not_found|FUNCTION_NOT_FOUND/g.test(e.message) && console.warn("clientDB未初始化，请在web控制台保存一次schema以开启clientDB"), T(A("database", "fail"), e).then(function () {return T(A("database", "complete"), e);}).then(function () {return r(null, e), Promise.reject(e);});});} }]);return ct;}( /*#__PURE__*/function () {function _class3() {var _ref28 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref28$uniClient = _ref28.uniClient,e = _ref28$uniClient === void 0 ? {} : _ref28$uniClient;_classCallCheck(this, _class3);this._uniClient = e, this._authCallBacks = {}, this._dbCallBacks = {}, e.isDefault && (this._dbCallBacks = _("_globalUniCloudDatabaseCallback")), this.auth = tt(this._authCallBacks), Object.assign(this, tt(this._dbCallBacks)), this.env = et({}, { get: function get(e, t) {return { $env: t };} }), this.Geo = et({}, { get: function get(e, t) {return at({ path: ["Geo"], method: t });} }), this.serverDate = at({ path: [], method: "serverDate" }), this.RegExp = at({ path: [], method: "RegExp" });}_createClass(_class3, [{ key: "getCloudEnv", value: function getCloudEnv(e) {if ("string" != typeof e || !e.trim()) throw new Error("getCloudEnv参数错误");return { $env: e.replace("$cloudEnv_", "") };} }, { key: "_callback", value: function _callback(e, t) {var n = this._dbCallBacks;n[e] && n[e].forEach(function (e) {e.apply(void 0, _toConsumableArray(t));});} }, { key: "_callbackAuth", value: function _callbackAuth(e, t) {var n = this._authCallBacks;n[e] && n[e].forEach(function (e) {e.apply(void 0, _toConsumableArray(t));});} }, { key: "multiSend", value: function multiSend() {var e = Array.from(arguments),t = e.map(function (e) {var t = e.getAction(),n = e.getCommand();if ("getTemp" !== n.$db[n.$db.length - 1].$method) throw new Error("multiSend只支持子命令内使用getTemp");return { action: t, command: n };});return this._callCloudFunction({ multiCommand: t, queryList: e });} }]);return _class3;}());function ut(e) {e.database = function (t) {if (t && Object.keys(t).length > 0) return e.init(t).database();if (this._database) return this._database;var n = function (e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};return et(new e(t), { get: function get(e, t) {return st("db", t) ? it({ $method: t }, null, e) : function () {return it({ $method: t, $param: rt(Array.from(arguments)) }, null, e);};} });}(ct, { uniClient: e });return this._database = n, n;};}var ht;var lt = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",dt = /^(?:[A-Za-z\d+/]{4})*?(?:[A-Za-z\d+/]{2}(?:==)?|[A-Za-z\d+/]{3}=?)?$/;function ft() {var e = Me().token || "",t = e.split(".");if (!e || 3 !== t.length) return { uid: null, role: [], permission: [], tokenExpired: 0 };var n;try {n = JSON.parse((s = t[1], decodeURIComponent(ht(s).split("").map(function (e) {return "%" + ("00" + e.charCodeAt(0).toString(16)).slice(-2);}).join(""))));} catch (e) {throw new Error("获取当前用户信息出错，详细错误信息为：" + e.message);}var s;return n.tokenExpired = 1e3 * n.exp, delete n.exp, delete n.iat, n;}ht = "function" != typeof atob ? function (e) {if (e = String(e).replace(/[\t\n\f\r ]+/g, ""), !dt.test(e)) throw new Error("Failed to execute 'atob' on 'Window': The string to be decoded is not correctly encoded.");var t;e += "==".slice(2 - (3 & e.length));for (var n, s, r = "", o = 0; o < e.length;) {t = lt.indexOf(e.charAt(o++)) << 18 | lt.indexOf(e.charAt(o++)) << 12 | (n = lt.indexOf(e.charAt(o++))) << 6 | (s = lt.indexOf(e.charAt(o++))), r += 64 === n ? String.fromCharCode(t >> 16 & 255) : 64 === s ? String.fromCharCode(t >> 16 & 255, t >> 8 & 255) : String.fromCharCode(t >> 16 & 255, t >> 8 & 255, 255 & t);}return r;} : atob;var pt = t(n(function (e, t) {Object.defineProperty(t, "__esModule", { value: !0 });var n = "chooseAndUploadFile:ok",s = "chooseAndUploadFile:fail";function r(e, t) {return e.tempFiles.forEach(function (e, n) {e.name || (e.name = e.path.substring(e.path.lastIndexOf("/") + 1)), t && (e.fileType = t), e.cloudPath = Date.now() + "_" + n + e.name.substring(e.name.lastIndexOf("."));}), e.tempFilePaths || (e.tempFilePaths = e.tempFiles.map(function (e) {return e.path;})), e;}function o(e, t, _ref29) {var s = _ref29.onChooseFile,r = _ref29.onUploadProgress;return t.then(function (e) {if (s) {var _t12 = s(e);if (void 0 !== _t12) return Promise.resolve(_t12).then(function (t) {return void 0 === t ? e : t;});}return e;}).then(function (t) {return !1 === t ? { errMsg: n, tempFilePaths: [], tempFiles: [] } : function (e, t) {var s = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 5;var r = arguments.length > 3 ? arguments[3] : undefined;(t = Object.assign({}, t)).errMsg = n;var o = t.tempFiles,i = o.length;var a = 0;return new Promise(function (n) {for (; a < s;) {c();}function c() {var s = a++;if (s >= i) return void (!o.find(function (e) {return !e.url && !e.errMsg;}) && n(t));var u = o[s];e.uploadFile({ filePath: u.path, cloudPath: u.cloudPath, fileType: u.fileType, onUploadProgress: function onUploadProgress(e) {e.index = s, e.tempFile = u, e.tempFilePath = u.path, r && r(e);} }).then(function (e) {u.url = e.fileID, s < i && c();}).catch(function (e) {u.errMsg = e.errMsg || e.message, s < i && c();});}});}(e, t, 5, r);});}t.initChooseAndUploadFile = function (e) {return function () {var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { type: "all" };return "image" === t.type ? o(e, function (e) {var t = e.count,n = e.sizeType,_e$sourceType = e.sourceType,o = _e$sourceType === void 0 ? ["album", "camera"] : _e$sourceType,i = e.extension;return new Promise(function (e, a) {uni.chooseImage({ count: t, sizeType: n, sourceType: o, extension: i, success: function success(t) {e(r(t, "image"));}, fail: function fail(e) {a({ errMsg: e.errMsg.replace("chooseImage:fail", s) });} });});}(t), t) : "video" === t.type ? o(e, function (e) {var t = e.camera,n = e.compressed,o = e.maxDuration,_e$sourceType2 = e.sourceType,i = _e$sourceType2 === void 0 ? ["album", "camera"] : _e$sourceType2,a = e.extension;return new Promise(function (e, c) {uni.chooseVideo({ camera: t, compressed: n, maxDuration: o, sourceType: i, extension: a, success: function success(t) {var n = t.tempFilePath,s = t.duration,o = t.size,i = t.height,a = t.width;e(r({ errMsg: "chooseVideo:ok", tempFilePaths: [n], tempFiles: [{ name: t.tempFile && t.tempFile.name || "", path: n, size: o, type: t.tempFile && t.tempFile.type || "", width: a, height: i, duration: s, fileType: "video", cloudPath: "" }] }, "video"));}, fail: function fail(e) {c({ errMsg: e.errMsg.replace("chooseVideo:fail", s) });} });});}(t), t) : o(e, function (e) {var t = e.count,n = e.extension;return new Promise(function (e, o) {var i = uni.chooseFile;if ("undefined" != typeof wx && "function" == typeof wx.chooseMessageFile && (i = wx.chooseMessageFile), "function" != typeof i) return o({ errMsg: s + " 请指定 type 类型，该平台仅支持选择 image 或 video。" });i({ type: "all", count: t, extension: n, success: function success(t) {e(r(t));}, fail: function fail(e) {o({ errMsg: e.errMsg.replace("chooseFile:fail", s) });} });});}(t), t);};};}));var gt = "manual";function mt(e) {return { props: { localdata: { type: Array, default: function _default() {return [];} }, options: { type: [Object, Array], default: function _default() {return {};} }, spaceInfo: { type: Object, default: function _default() {return {};} }, collection: { type: [String, Array], default: "" }, action: { type: String, default: "" }, field: { type: String, default: "" }, orderby: { type: String, default: "" }, where: { type: [String, Object], default: "" }, pageData: { type: String, default: "add" }, pageCurrent: { type: Number, default: 1 }, pageSize: { type: Number, default: 20 }, getcount: { type: [Boolean, String], default: !1 }, gettree: { type: [Boolean, String], default: !1 }, gettreepath: { type: [Boolean, String], default: !1 }, startwith: { type: String, default: "" }, limitlevel: { type: Number, default: 10 }, groupby: { type: String, default: "" }, groupField: { type: String, default: "" }, distinct: { type: [Boolean, String], default: !1 }, foreignKey: { type: String, default: "" }, loadtime: { type: String, default: "auto" }, manual: { type: Boolean, default: !1 } }, data: function data() {return { mixinDatacomLoading: !1, mixinDatacomHasMore: !1, mixinDatacomResData: [], mixinDatacomErrorMessage: "", mixinDatacomPage: {} };}, created: function created() {var _this18 = this;this.mixinDatacomPage = { current: this.pageCurrent, size: this.pageSize, count: 0 }, this.$watch(function () {var e = [];return ["pageCurrent", "pageSize", "localdata", "collection", "action", "field", "orderby", "where", "getont", "getcount", "gettree", "groupby", "groupField", "distinct"].forEach(function (t) {e.push(_this18[t]);}), e;}, function (e, t) {if (_this18.loadtime === gt) return;var n = !1;var s = [];for (var _r6 = 2; _r6 < e.length; _r6++) {e[_r6] !== t[_r6] && (s.push(e[_r6]), n = !0);}e[0] !== t[0] && (_this18.mixinDatacomPage.current = _this18.pageCurrent), _this18.mixinDatacomPage.size = _this18.pageSize, _this18.onMixinDatacomPropsChange(n, s);});}, methods: { onMixinDatacomPropsChange: function onMixinDatacomPropsChange(e, t) {}, mixinDatacomEasyGet: function mixinDatacomEasyGet() {var _this19 = this;var _ref30 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref30$getone = _ref30.getone,e = _ref30$getone === void 0 ? !1 : _ref30$getone,t = _ref30.success,n = _ref30.fail;this.mixinDatacomLoading || (this.mixinDatacomLoading = !0, this.mixinDatacomErrorMessage = "", this.mixinDatacomGet().then(function (n) {_this19.mixinDatacomLoading = !1;var _n$result = n.result,s = _n$result.data,r = _n$result.count;_this19.getcount && (_this19.mixinDatacomPage.count = r), _this19.mixinDatacomHasMore = s.length < _this19.pageSize;var o = e ? s.length ? s[0] : void 0 : s;_this19.mixinDatacomResData = o, t && t(o);}).catch(function (e) {_this19.mixinDatacomLoading = !1, _this19.mixinDatacomErrorMessage = e, n && n(e);}));}, mixinDatacomGet: function mixinDatacomGet() {var _n8;var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var n = e.database(this.spaceInfo);var s = t.action || this.action;s && (n = n.action(s));var r = t.collection || this.collection;n = Array.isArray(r) ? (_n8 = n).collection.apply(_n8, _toConsumableArray(r)) : n.collection(r);var o = t.where || this.where;o && Object.keys(o).length && (n = n.where(o));var i = t.field || this.field;i && (n = n.field(i));var a = t.foreignKey || this.foreignKey;a && (n = n.foreignKey(a));var c = t.groupby || this.groupby;c && (n = n.groupBy(c));var u = t.groupField || this.groupField;u && (n = n.groupField(u));!0 === (void 0 !== t.distinct ? t.distinct : this.distinct) && (n = n.distinct());var h = t.orderby || this.orderby;h && (n = n.orderBy(h));var l = void 0 !== t.pageCurrent ? t.pageCurrent : this.mixinDatacomPage.current,d = void 0 !== t.pageSize ? t.pageSize : this.mixinDatacomPage.size,f = void 0 !== t.getcount ? t.getcount : this.getcount,p = void 0 !== t.gettree ? t.gettree : this.gettree,g = void 0 !== t.gettreepath ? t.gettreepath : this.gettreepath,m = { getCount: f },y = { limitLevel: void 0 !== t.limitlevel ? t.limitlevel : this.limitlevel, startWith: void 0 !== t.startwith ? t.startwith : this.startwith };return p && (m.getTree = y), g && (m.getTreePath = y), n = n.skip(d * (l - 1)).limit(d).get(m), n;} } };}function yt(e) {return function (t) {var n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};n = function (e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};return e.customUI = t.customUI || e.customUI, Object.assign(e.loadingOptions, t.loadingOptions), Object.assign(e.errorOptions, t.errorOptions), e;}({ customUI: !1, loadingOptions: { text: "加载中...", mask: !0 }, errorOptions: { type: "modal", retry: !1 } }, n);var _n9 = n,s = _n9.customUI,r = _n9.loadingOptions,o = _n9.errorOptions,a = !s;return new Proxy({}, { get: function get(n, s) {return /*#__PURE__*/function () {var _n10 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee32() {var u,_len,c,_key,_ref31,h,l,_yield,_e25,_e24,_args32 = arguments;return _regenerator.default.wrap(function _callee32$(_context32) {while (1) {switch (_context32.prev = _context32.next) {case 0:a && uni.showLoading({ title: r.title, mask: r.mask });for (_len = _args32.length, c = new Array(_len), _key = 0; _key < _len; _key++) {c[_key] = _args32[_key];}_context32.prev = 2;_context32.next = 5;return e.callFunction({ name: t, type: i, data: { method: s, params: c } });case 5:u = _context32.sent;_context32.next = 11;break;case 8:_context32.prev = 8;_context32.t0 = _context32["catch"](2);u = { result: _context32.t0 };case 11:_ref31 = u.result || {}, h = _ref31.errCode, l = _ref31.errMsg;if (!(a && uni.hideLoading(), h)) {_context32.next = 28;break;}if (!a) {_context32.next = 26;break;}if (!("toast" === o.type)) {_context32.next = 18;break;}uni.showToast({ title: l, icon: "none" });_context32.next = 26;break;case 18:if (!("modal" !== o.type)) {_context32.next = 20;break;}throw new Error("Invalid errorOptions.type: ".concat(o.type));case 20:_context32.next = 22;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee31() {var _ref33,e,t,n,s,r,_args31 = arguments;return _regenerator.default.wrap(function _callee31$(_context31) {while (1) {switch (_context31.prev = _context31.next) {case 0:_ref33 = _args31.length > 0 && _args31[0] !== undefined ? _args31[0] : {}, e = _ref33.title, t = _ref33.content, n = _ref33.showCancel, s = _ref33.cancelText, r = _ref33.confirmText;return _context31.abrupt("return", new Promise(function (o, i) {uni.showModal({ title: e, content: t, showCancel: n, cancelText: s, confirmText: r, success: function success(e) {o(e);}, fail: function fail() {o({ confirm: !1, cancel: !0 });} });}));case 2:case "end":return _context31.stop();}}}, _callee31);}))({ title: "提示", content: l, showCancel: o.retry, cancelText: "取消", confirmText: o.retry ? "重试" : "确定" });case 22:_yield = _context32.sent;_e25 = _yield.confirm;if (!(o.retry && _e25)) {_context32.next = 26;break;}return _context32.abrupt("return", n.apply(void 0, c));case 26:_e24 = new I({ code: h, message: l, requestId: u.requestId });throw _e24.detail = u.result, _e24;case 28:return _context32.abrupt("return", u.result);case 29:case "end":return _context32.stop();}}}, _callee32, null, [[2, 8]]);}));function n() {return _n10.apply(this, arguments);}return n;}();} });};}function _t(_x30, _x31) {return _t13.apply(this, arguments);}function _t13() {_t13 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee34(e, t) {var n, _e28, s;return _regenerator.default.wrap(function _callee34$(_context34) {while (1) {switch (_context34.prev = _context34.next) {case 0:n = "http://".concat(e, ":").concat(t, "/system/ping");_context34.prev = 1;_context34.next = 4;return s = { url: n, timeout: 500 }, new Promise(function (e, t) {C.request(_objectSpread(_objectSpread({}, s), {}, { success: function success(t) {e(t);}, fail: function fail(e) {t(e);} }));});case 4:_e28 = _context34.sent;return _context34.abrupt("return", !(!_e28.data || 0 !== _e28.data.code));case 8:_context34.prev = 8;_context34.t0 = _context34["catch"](1);return _context34.abrupt("return", !1);case 11:case "end":return _context34.stop();}}}, _callee34, null, [[1, 8]]);}));return _t13.apply(this, arguments);}function wt(e) {if (e.initUniCloudStatus && "rejected" !== e.initUniCloudStatus) return;var t = Promise.resolve();var n;n = 1, t = new Promise(function (e, t) {setTimeout(function () {e();}, n);}), e.isReady = !1, e.isDefault = !1;var s = e.auth();e.initUniCloudStatus = "pending", e.initUniCloud = t.then(function () {return s.getLoginState();}).then(function (e) {return e ? Promise.resolve() : s.signInAnonymously();}).then(function () {if (!l) return Promise.resolve();if (l && e.debugInfo) {var _e$debugInfo = e.debugInfo,_t14 = _e$debugInfo.address,_n11 = _e$debugInfo.servePort;return function () {var _ref34 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee33(e, t) {var n, _s11, _r7;return _regenerator.default.wrap(function _callee33$(_context33) {while (1) {switch (_context33.prev = _context33.next) {case 0:_s11 = 0;case 1:if (!(_s11 < e.length)) {_context33.next = 11;break;}_r7 = e[_s11];_context33.next = 5;return _t(_r7, t);case 5:if (!_context33.sent) {_context33.next = 8;break;}n = _r7;return _context33.abrupt("break", 11);case 8:_s11++;_context33.next = 1;break;case 11:return _context33.abrupt("return", { address: n, port: t });case 12:case "end":return _context33.stop();}}}, _callee33);}));return function (_x32, _x33) {return _ref34.apply(this, arguments);};}()(_t14, _n11);}}).then(function () {var _ref35 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},t = _ref35.address,n = _ref35.port;if (!l) return Promise.resolve();if (t) e.localAddress = t, e.localPort = n;else if (e.debugInfo) {var _t15 = console["app-plus" === d ? "error" : "warn"];var _n12 = "";"remote" === e.debugInfo.initialLaunchType ? (e.debugInfo.forceRemote = !0, _n12 = "当前客户端和HBuilderX不在同一局域网下（或其他网络原因无法连接HBuilderX），uniCloud本地调试服务不对当前客户端生效。\n- 如果不使用uniCloud本地调试服务，请直接忽略此信息。\n- 如需使用uniCloud本地调试服务，请将客户端与主机连接到同一局域网下并重新运行到客户端。\n- 如果在HBuilderX开启的状态下切换过网络环境，请重启HBuilderX后再试\n- 检查系统防火墙是否拦截了HBuilderX自带的nodejs") : _n12 = "无法连接uniCloud本地调试服务，请检查当前客户端是否与主机在同一局域网下。\n- 如需使用uniCloud本地调试服务，请将客户端与主机连接到同一局域网下并重新运行到客户端。\n- 如果在HBuilderX开启的状态下切换过网络环境，请重启HBuilderX后再试\n- 检查系统防火墙是否拦截了HBuilderX自带的nodejs", "h5" === d && (_n12 += "\n- 部分浏览器开启节流模式之后访问本地地址受限，请检查是否启用了节流模式"), _t15(_n12);}}).then(function () {Be(), e.isReady = !0, e.initUniCloudStatus = "fulfilled";}).catch(function (t) {console.error(t), e.initUniCloudStatus = "rejected";});}var kt = new ( /*#__PURE__*/function () {function _class4() {_classCallCheck(this, _class4);}_createClass(_class4, [{ key: "init", value: function init(e) {var t = {};var n = !1 !== e.debugFunction && l && ("h5" === d && navigator.userAgent.indexOf("HBuilderX") > 0 || "app-plus" === d);switch (e.provider) {case "tencent":t = je.init(Object.assign(e, { useDebugFunction: n }));break;case "aliyun":t = q.init(Object.assign(e, { useDebugFunction: n }));break;case "private":t = He.init(Object.assign(e, { useDebugFunction: n }));break;default:throw new Error("未提供正确的provider参数");}var s = f;l && s && !s.code && (t.debugInfo = s), wt(t), t.reInit = function () {wt(this);}, Qe(t), function (e) {var t = e.uploadFile;e.uploadFile = function (e) {return t.call(this, e);};}(t), ut(t), function (e) {e.getCurrentUserInfo = ft, e.chooseAndUploadFile = pt.initChooseAndUploadFile(e), Object.assign(e, { get mixinDatacom() {return mt(e);} }), e.importObject = yt(e);}(t);return ["callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile", "chooseAndUploadFile"].forEach(function (e) {if (!t[e]) return;var n = t[e];t[e] = function () {return t.reInit(), n.apply(t, Array.from(arguments));}, t[e] = P(t[e], e).bind(t);}), t.init = this.init, t;} }]);return _class4;}())();(function () {{var e = p;var t = {};if (1 === e.length) t = e[0], kt = kt.init(t), kt.isDefault = !0;else {var _t16 = ["auth", "callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile", "database", "getCurrentUSerInfo", "importObject"];var _n13;_n13 = e && e.length > 0 ? "应用有多个服务空间，请通过uniCloud.init方法指定要使用的服务空间" : g ? "应用未关联服务空间，请在uniCloud目录右键关联服务空间" : "uni-app cli项目内使用uniCloud需要使用HBuilderX的运行菜单运行项目，且需要在uniCloud目录关联服务空间", _t16.forEach(function (e) {kt[e] = function () {return console.error(_n13), Promise.reject(new I({ code: "SYS_ERR", message: _n13 }));};});}Object.assign(kt, { get mixinDatacom() {return mt(kt);} }), kt.addInterceptor = S, kt.removeInterceptor = v, l && "h5" === d && (window.uniCloud = kt);}})();var St = kt;exports.default = St;
+/* WEBPACK VAR INJECTION */(function(global, uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 14));var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 3);var _pages = _interopRequireDefault(__webpack_require__(/*! @/pages.json */ 183));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e32) {throw _e32;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e33) {didErr = true;err = _e33;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _createSuper(Derived) {var hasNativeReflectConstruct = _isNativeReflectConstruct();return function _createSuperInternal() {var Super = _getPrototypeOf(Derived),result;if (hasNativeReflectConstruct) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _wrapNativeSuper(Class) {var _cache = typeof Map === "function" ? new Map() : undefined;_wrapNativeSuper = function _wrapNativeSuper(Class) {if (Class === null || !_isNativeFunction(Class)) return Class;if (typeof Class !== "function") {throw new TypeError("Super expression must either be null or a function");}if (typeof _cache !== "undefined") {if (_cache.has(Class)) return _cache.get(Class);_cache.set(Class, Wrapper);}function Wrapper() {return _construct(Class, arguments, _getPrototypeOf(this).constructor);}Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } });return _setPrototypeOf(Wrapper, Class);};return _wrapNativeSuper(Class);}function _construct(Parent, args, Class) {if (_isNativeReflectConstruct()) {_construct = Reflect.construct;} else {_construct = function _construct(Parent, args, Class) {var a = [null];a.push.apply(a, args);var Constructor = Function.bind.apply(Parent, a);var instance = new Constructor();if (Class) _setPrototypeOf(instance, Class.prototype);return instance;};}return _construct.apply(null, arguments);}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));return true;} catch (e) {return false;}}function _isNativeFunction(fn) {return Function.toString.call(fn).indexOf("[native code]") !== -1;}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}"undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self && self;function n(e) {return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;}function s(e, t, n) {return e(n = { path: t, exports: {}, require: function require(e, t) {return function () {throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs");}(null == t && n.path);} }, n.exports), n.exports;}var o = s(function (e, t) {var n;e.exports = (n = n || function (e, t) {var n = Object.create || function () {function e() {}return function (t) {var n;return e.prototype = t, n = new e(), e.prototype = null, n;};}(),s = {},o = s.lib = {},r = o.Base = { extend: function extend(e) {var t = n(this);return e && t.mixIn(e), t.hasOwnProperty("init") && this.init !== t.init || (t.init = function () {t.$super.init.apply(this, arguments);}), t.init.prototype = t, t.$super = this, t;}, create: function create() {var e = this.extend();return e.init.apply(e, arguments), e;}, init: function init() {}, mixIn: function mixIn(e) {for (var t in e) {e.hasOwnProperty(t) && (this[t] = e[t]);}e.hasOwnProperty("toString") && (this.toString = e.toString);}, clone: function clone() {return this.init.prototype.extend(this);} },i = o.WordArray = r.extend({ init: function init(e, n) {e = this.words = e || [], this.sigBytes = n != t ? n : 4 * e.length;}, toString: function toString(e) {return (e || c).stringify(this);}, concat: function concat(e) {var t = this.words,n = e.words,s = this.sigBytes,o = e.sigBytes;if (this.clamp(), s % 4) for (var r = 0; r < o; r++) {var i = n[r >>> 2] >>> 24 - r % 4 * 8 & 255;t[s + r >>> 2] |= i << 24 - (s + r) % 4 * 8;} else for (r = 0; r < o; r += 4) {t[s + r >>> 2] = n[r >>> 2];}return this.sigBytes += o, this;}, clamp: function clamp() {var t = this.words,n = this.sigBytes;t[n >>> 2] &= 4294967295 << 32 - n % 4 * 8, t.length = e.ceil(n / 4);}, clone: function clone() {var e = r.clone.call(this);return e.words = this.words.slice(0), e;}, random: function random(t) {for (var n, s = [], o = function o(t) {t = t;var n = 987654321,s = 4294967295;return function () {var o = ((n = 36969 * (65535 & n) + (n >> 16) & s) << 16) + (t = 18e3 * (65535 & t) + (t >> 16) & s) & s;return o /= 4294967296, (o += .5) * (e.random() > .5 ? 1 : -1);};}, r = 0; r < t; r += 4) {var a = o(4294967296 * (n || e.random()));n = 987654071 * a(), s.push(4294967296 * a() | 0);}return new i.init(s, t);} }),a = s.enc = {},c = a.Hex = { stringify: function stringify(e) {for (var t = e.words, n = e.sigBytes, s = [], o = 0; o < n; o++) {var r = t[o >>> 2] >>> 24 - o % 4 * 8 & 255;s.push((r >>> 4).toString(16)), s.push((15 & r).toString(16));}return s.join("");}, parse: function parse(e) {for (var t = e.length, n = [], s = 0; s < t; s += 2) {n[s >>> 3] |= parseInt(e.substr(s, 2), 16) << 24 - s % 8 * 4;}return new i.init(n, t / 2);} },u = a.Latin1 = { stringify: function stringify(e) {for (var t = e.words, n = e.sigBytes, s = [], o = 0; o < n; o++) {var r = t[o >>> 2] >>> 24 - o % 4 * 8 & 255;s.push(String.fromCharCode(r));}return s.join("");}, parse: function parse(e) {for (var t = e.length, n = [], s = 0; s < t; s++) {n[s >>> 2] |= (255 & e.charCodeAt(s)) << 24 - s % 4 * 8;}return new i.init(n, t);} },l = a.Utf8 = { stringify: function stringify(e) {try {return decodeURIComponent(escape(u.stringify(e)));} catch (e) {throw new Error("Malformed UTF-8 data");}}, parse: function parse(e) {return u.parse(unescape(encodeURIComponent(e)));} },h = o.BufferedBlockAlgorithm = r.extend({ reset: function reset() {this._data = new i.init(), this._nDataBytes = 0;}, _append: function _append(e) {"string" == typeof e && (e = l.parse(e)), this._data.concat(e), this._nDataBytes += e.sigBytes;}, _process: function _process(t) {var n = this._data,s = n.words,o = n.sigBytes,r = this.blockSize,a = o / (4 * r),c = (a = t ? e.ceil(a) : e.max((0 | a) - this._minBufferSize, 0)) * r,u = e.min(4 * c, o);if (c) {for (var l = 0; l < c; l += r) {this._doProcessBlock(s, l);}var h = s.splice(0, c);n.sigBytes -= u;}return new i.init(h, u);}, clone: function clone() {var e = r.clone.call(this);return e._data = this._data.clone(), e;}, _minBufferSize: 0 });o.Hasher = h.extend({ cfg: r.extend(), init: function init(e) {this.cfg = this.cfg.extend(e), this.reset();}, reset: function reset() {h.reset.call(this), this._doReset();}, update: function update(e) {return this._append(e), this._process(), this;}, finalize: function finalize(e) {return e && this._append(e), this._doFinalize();}, blockSize: 16, _createHelper: function _createHelper(e) {return function (t, n) {return new e.init(n).finalize(t);};}, _createHmacHelper: function _createHmacHelper(e) {return function (t, n) {return new d.HMAC.init(e, n).finalize(t);};} });var d = s.algo = {};return s;}(Math), n);}),r = (s(function (e, t) {var n;e.exports = (n = o, function (e) {var t = n,s = t.lib,o = s.WordArray,r = s.Hasher,i = t.algo,a = [];!function () {for (var t = 0; t < 64; t++) {a[t] = 4294967296 * e.abs(e.sin(t + 1)) | 0;}}();var c = i.MD5 = r.extend({ _doReset: function _doReset() {this._hash = new o.init([1732584193, 4023233417, 2562383102, 271733878]);}, _doProcessBlock: function _doProcessBlock(e, t) {for (var n = 0; n < 16; n++) {var s = t + n,o = e[s];e[s] = 16711935 & (o << 8 | o >>> 24) | 4278255360 & (o << 24 | o >>> 8);}var r = this._hash.words,i = e[t + 0],c = e[t + 1],f = e[t + 2],g = e[t + 3],p = e[t + 4],m = e[t + 5],y = e[t + 6],_ = e[t + 7],w = e[t + 8],k = e[t + 9],v = e[t + 10],T = e[t + 11],S = e[t + 12],P = e[t + 13],A = e[t + 14],I = e[t + 15],b = r[0],O = r[1],C = r[2],E = r[3];b = u(b, O, C, E, i, 7, a[0]), E = u(E, b, O, C, c, 12, a[1]), C = u(C, E, b, O, f, 17, a[2]), O = u(O, C, E, b, g, 22, a[3]), b = u(b, O, C, E, p, 7, a[4]), E = u(E, b, O, C, m, 12, a[5]), C = u(C, E, b, O, y, 17, a[6]), O = u(O, C, E, b, _, 22, a[7]), b = u(b, O, C, E, w, 7, a[8]), E = u(E, b, O, C, k, 12, a[9]), C = u(C, E, b, O, v, 17, a[10]), O = u(O, C, E, b, T, 22, a[11]), b = u(b, O, C, E, S, 7, a[12]), E = u(E, b, O, C, P, 12, a[13]), C = u(C, E, b, O, A, 17, a[14]), b = l(b, O = u(O, C, E, b, I, 22, a[15]), C, E, c, 5, a[16]), E = l(E, b, O, C, y, 9, a[17]), C = l(C, E, b, O, T, 14, a[18]), O = l(O, C, E, b, i, 20, a[19]), b = l(b, O, C, E, m, 5, a[20]), E = l(E, b, O, C, v, 9, a[21]), C = l(C, E, b, O, I, 14, a[22]), O = l(O, C, E, b, p, 20, a[23]), b = l(b, O, C, E, k, 5, a[24]), E = l(E, b, O, C, A, 9, a[25]), C = l(C, E, b, O, g, 14, a[26]), O = l(O, C, E, b, w, 20, a[27]), b = l(b, O, C, E, P, 5, a[28]), E = l(E, b, O, C, f, 9, a[29]), C = l(C, E, b, O, _, 14, a[30]), b = h(b, O = l(O, C, E, b, S, 20, a[31]), C, E, m, 4, a[32]), E = h(E, b, O, C, w, 11, a[33]), C = h(C, E, b, O, T, 16, a[34]), O = h(O, C, E, b, A, 23, a[35]), b = h(b, O, C, E, c, 4, a[36]), E = h(E, b, O, C, p, 11, a[37]), C = h(C, E, b, O, _, 16, a[38]), O = h(O, C, E, b, v, 23, a[39]), b = h(b, O, C, E, P, 4, a[40]), E = h(E, b, O, C, i, 11, a[41]), C = h(C, E, b, O, g, 16, a[42]), O = h(O, C, E, b, y, 23, a[43]), b = h(b, O, C, E, k, 4, a[44]), E = h(E, b, O, C, S, 11, a[45]), C = h(C, E, b, O, I, 16, a[46]), b = d(b, O = h(O, C, E, b, f, 23, a[47]), C, E, i, 6, a[48]), E = d(E, b, O, C, _, 10, a[49]), C = d(C, E, b, O, A, 15, a[50]), O = d(O, C, E, b, m, 21, a[51]), b = d(b, O, C, E, S, 6, a[52]), E = d(E, b, O, C, g, 10, a[53]), C = d(C, E, b, O, v, 15, a[54]), O = d(O, C, E, b, c, 21, a[55]), b = d(b, O, C, E, w, 6, a[56]), E = d(E, b, O, C, I, 10, a[57]), C = d(C, E, b, O, y, 15, a[58]), O = d(O, C, E, b, P, 21, a[59]), b = d(b, O, C, E, p, 6, a[60]), E = d(E, b, O, C, T, 10, a[61]), C = d(C, E, b, O, f, 15, a[62]), O = d(O, C, E, b, k, 21, a[63]), r[0] = r[0] + b | 0, r[1] = r[1] + O | 0, r[2] = r[2] + C | 0, r[3] = r[3] + E | 0;}, _doFinalize: function _doFinalize() {var t = this._data,n = t.words,s = 8 * this._nDataBytes,o = 8 * t.sigBytes;n[o >>> 5] |= 128 << 24 - o % 32;var r = e.floor(s / 4294967296),i = s;n[15 + (o + 64 >>> 9 << 4)] = 16711935 & (r << 8 | r >>> 24) | 4278255360 & (r << 24 | r >>> 8), n[14 + (o + 64 >>> 9 << 4)] = 16711935 & (i << 8 | i >>> 24) | 4278255360 & (i << 24 | i >>> 8), t.sigBytes = 4 * (n.length + 1), this._process();for (var a = this._hash, c = a.words, u = 0; u < 4; u++) {var l = c[u];c[u] = 16711935 & (l << 8 | l >>> 24) | 4278255360 & (l << 24 | l >>> 8);}return a;}, clone: function clone() {var e = r.clone.call(this);return e._hash = this._hash.clone(), e;} });function u(e, t, n, s, o, r, i) {var a = e + (t & n | ~t & s) + o + i;return (a << r | a >>> 32 - r) + t;}function l(e, t, n, s, o, r, i) {var a = e + (t & s | n & ~s) + o + i;return (a << r | a >>> 32 - r) + t;}function h(e, t, n, s, o, r, i) {var a = e + (t ^ n ^ s) + o + i;return (a << r | a >>> 32 - r) + t;}function d(e, t, n, s, o, r, i) {var a = e + (n ^ (t | ~s)) + o + i;return (a << r | a >>> 32 - r) + t;}t.MD5 = r._createHelper(c), t.HmacMD5 = r._createHmacHelper(c);}(Math), n.MD5);}), s(function (e, t) {var n, s, r;e.exports = (s = (n = o).lib.Base, r = n.enc.Utf8, void (n.algo.HMAC = s.extend({ init: function init(e, t) {e = this._hasher = new e.init(), "string" == typeof t && (t = r.parse(t));var n = e.blockSize,s = 4 * n;t.sigBytes > s && (t = e.finalize(t)), t.clamp();for (var o = this._oKey = t.clone(), i = this._iKey = t.clone(), a = o.words, c = i.words, u = 0; u < n; u++) {a[u] ^= 1549556828, c[u] ^= 909522486;}o.sigBytes = i.sigBytes = s, this.reset();}, reset: function reset() {var e = this._hasher;e.reset(), e.update(this._iKey);}, update: function update(e) {return this._hasher.update(e), this;}, finalize: function finalize(e) {var t = this._hasher,n = t.finalize(e);return t.reset(), t.finalize(this._oKey.clone().concat(n));} })));}), s(function (e, t) {e.exports = o.HmacMD5;}));var i = "FUNCTION",a = "OBJECT",c = "CLIENT_DB";function u(e) {return Object.prototype.toString.call(e).slice(8, -1).toLowerCase();}function l(e) {return "object" === u(e);}function h(e) {return e && "string" == typeof e ? JSON.parse(e) : e;}var d = "development" === "development",f = "mp-weixin";var g;switch (f) {case "h5":g = "web";break;case "app-plus":g = "app";break;default:g = f;}var p = h(undefined),m = h([]) || [],y = true;var _ = "";try {{var _e2 = __webpack_require__(/*! uni-stat-config */ 184).default || __webpack_require__(/*! uni-stat-config */ 184);_ = _e2.appid;}} catch (e) {}var w = {};function k(e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var n, s;return n = w, s = e, Object.prototype.hasOwnProperty.call(n, s) || (w[e] = t), w[e];}"app" === g && (w = uni._globalUniCloudObj ? uni._globalUniCloudObj : uni._globalUniCloudObj = {});var v = ["invoke", "success", "fail", "complete"],T = k("_globalUniCloudInterceptor");function S(e, t) {T[e] || (T[e] = {}), l(t) && Object.keys(t).forEach(function (n) {v.indexOf(n) > -1 && function (e, t, n) {var s = T[e][t];s || (s = T[e][t] = []), -1 === s.indexOf(n) && "function" == typeof n && s.push(n);}(e, n, t[n]);});}function P(e, t) {T[e] || (T[e] = {}), l(t) ? Object.keys(t).forEach(function (n) {v.indexOf(n) > -1 && function (e, t, n) {var s = T[e][t];if (!s) return;var o = s.indexOf(n);o > -1 && s.splice(o, 1);}(e, n, t[n]);}) : delete T[e];}function A(e, t) {return e && 0 !== e.length ? e.reduce(function (e, n) {return e.then(function () {return n(t);});}, Promise.resolve()) : Promise.resolve();}function I(e, t) {return T[e] && T[e][t] || [];}function b(e) {S("callObject", e);}var O = k("_globalUniCloudListener"),C = "response",E = "needLogin",R = "refreshToken",U = "clientdb",x = "cloudfunction",L = "cloudobject";function D(e) {return O[e] || (O[e] = []), O[e];}function N(e, t) {var n = D(e);n.includes(t) || n.push(t);}function q(e, t) {var n = D(e),s = n.indexOf(t);-1 !== s && n.splice(s, 1);}function F(e, t) {var n = D(e);for (var _e3 = 0; _e3 < n.length; _e3++) {(0, n[_e3])(t);}}var M = !1;var j = new Promise(function (e) {M && e(), function t() {if ("function" == typeof getCurrentPages) {var _t2 = getCurrentPages();_t2 && _t2[0] && (M = !0, e());}M || setTimeout(function () {t();}, 30);}();});function $() {return j;}function K(e, t) {return t ? function (n) {var _this = this;var s = !1;if ("callFunction" === t) {var _e4 = n && n.type || i;s = _e4 !== i;}var o = "callFunction" === t && !s;var r;r = this.isReady ? Promise.resolve() : this.initUniCloud, n = n || {};var a = r.then(function () {return s ? Promise.resolve() : A(I(t, "invoke"), n);}).then(function () {return e.call(_this, n);}).then(function (e) {return s ? Promise.resolve(e) : A(I(t, "success"), e).then(function () {return A(I(t, "complete"), e);}).then(function () {return o && F(C, { type: x, content: e }), Promise.resolve(e);});}, function (e) {return s ? Promise.reject(e) : A(I(t, "fail"), e).then(function () {return A(I(t, "complete"), e);}).then(function () {return F(C, { type: x, content: e }), Promise.reject(e);});});if (!(n.success || n.fail || n.complete)) return a;a.then(function (e) {n.success && n.success(e), n.complete && n.complete(e), o && F(C, { type: x, content: e });}, function (e) {n.fail && n.fail(e), n.complete && n.complete(e), o && F(C, { type: x, content: e });});} : function (t) {if (!((t = t || {}).success || t.fail || t.complete)) return e.call(this, t);e.call(this, t).then(function (e) {t.success && t.success(e), t.complete && t.complete(e);}, function (e) {t.fail && t.fail(e), t.complete && t.complete(e);});};}var B = /*#__PURE__*/function (_Error) {_inherits(B, _Error);var _super = _createSuper(B);function B(e) {var _this2;_classCallCheck(this, B);_this2 = _super.call(this, e.message), _this2.errMsg = e.message || "", _this2.errCode = _this2.code = e.code || "SYSTEM_ERROR", _this2.requestId = e.requestId;return _this2;}return B;}( /*#__PURE__*/_wrapNativeSuper(Error));function H() {var e, t;try {if (uni.getLaunchOptionsSync) {if (uni.getLaunchOptionsSync.toString().indexOf("not yet implemented") > -1) return;var _uni$getLaunchOptions = uni.getLaunchOptionsSync(),_n = _uni$getLaunchOptions.scene,_s = _uni$getLaunchOptions.channel;e = _s, t = _n;}} catch (e) {}return { channel: e, scene: t };}var W;function z() {var e = uni.getLocale && uni.getLocale() || "en";if (W) return _objectSpread(_objectSpread({}, W), {}, { locale: e, LOCALE: e });var t = uni.getSystemInfoSync(),n = t.deviceId,s = t.osName,o = t.uniPlatform,r = t.appId,i = ["pixelRatio", "brand", "model", "system", "language", "version", "platform", "host", "SDKVersion", "swanNativeVersion", "app", "AppPlatform", "fontSizeSetting"];for (var _e5 = 0; _e5 < i.length; _e5++) {delete t[i[_e5]];}return W = _objectSpread(_objectSpread({ PLATFORM: o, OS: s, APPID: r, DEVICEID: n }, H()), t), _objectSpread(_objectSpread({}, W), {}, { locale: e, LOCALE: e });}var J = { sign: function sign(e, t) {var n = "";return Object.keys(e).sort().forEach(function (t) {e[t] && (n = n + "&" + t + "=" + e[t]);}), n = n.slice(1), r(n, t).toString();}, wrappedRequest: function wrappedRequest(e, t) {return new Promise(function (n, s) {t(Object.assign(e, { complete: function complete(e) {e || (e = {}), d && "web" === g && e.errMsg && 0 === e.errMsg.indexOf("request:fail") && console.warn("发布H5，需要在uniCloud后台操作，绑定安全域名，否则会因为跨域问题而无法访问。教程参考：https://uniapp.dcloud.io/uniCloud/quickstart?id=useinh5");var t = e.data && e.data.header && e.data.header["x-serverless-request-id"] || e.header && e.header["request-id"];if (!e.statusCode || e.statusCode >= 400) return s(new B({ code: "SYS_ERR", message: e.errMsg || "request:fail", requestId: t }));var o = e.data;if (o.error) return s(new B({ code: o.error.code, message: o.error.message, requestId: t }));o.result = o.data, o.requestId = t, delete o.data, n(o);} }));});} };var V = { request: function request(e) {return uni.request(e);}, uploadFile: function uploadFile(e) {return uni.uploadFile(e);}, setStorageSync: function setStorageSync(e, t) {return uni.setStorageSync(e, t);}, getStorageSync: function getStorageSync(e) {return uni.getStorageSync(e);}, removeStorageSync: function removeStorageSync(e) {return uni.removeStorageSync(e);}, clearStorageSync: function clearStorageSync() {return uni.clearStorageSync();} },Y = { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" };var _e6 = (0, _uniI18n.initVueI18n)({ "zh-Hans": { "uniCloud.init.paramRequired": "缺少参数：{param}", "uniCloud.uploadFile.fileError": "filePath应为File对象" }, "zh-Hant": { "uniCloud.init.paramRequired": "缺少参数：{param}", "uniCloud.uploadFile.fileError": "filePath应为File对象" }, en: Y, fr: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" }, es: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" }, ja: Y }, "zh-Hans"),X = _e6.t;var G = /*#__PURE__*/function () {function G(e) {_classCallCheck(this, G);["spaceId", "clientSecret"].forEach(function (t) {if (!Object.prototype.hasOwnProperty.call(e, t)) throw new Error(X("uniCloud.init.paramRequired", { param: t }));}), this.config = Object.assign({}, { endpoint: "https://api.bspapp.com" }, e), this.config.provider = "aliyun", this.config.requestUrl = this.config.endpoint + "/client", this.config.envType = this.config.envType || "public", this.config.accessTokenKey = "access_token_" + this.config.spaceId, this.adapter = V, this._getAccessTokenPromise = null, this._getAccessTokenPromiseStatus = null;}_createClass(G, [{ key: "setAccessToken", value: function setAccessToken(e) {this.accessToken = e;} }, { key: "requestWrapped", value: function requestWrapped(e) {return J.wrappedRequest(e, this.adapter.request);} }, { key: "requestAuth", value: function requestAuth(e) {return this.requestWrapped(e);} }, { key: "request", value: function request(e, t) {var _this3 = this;return Promise.resolve().then(function () {return _this3.hasAccessToken ? t ? _this3.requestWrapped(e) : _this3.requestWrapped(e).catch(function (t) {return new Promise(function (e, n) {!t || "GATEWAY_INVALID_TOKEN" !== t.code && "InvalidParameter.InvalidToken" !== t.code ? n(t) : e();}).then(function () {return _this3.getAccessToken();}).then(function () {var t = _this3.rebuildRequest(e);return _this3.request(t, !0);});}) : _this3.getAccessToken().then(function () {var t = _this3.rebuildRequest(e);return _this3.request(t, !0);});});} }, { key: "rebuildRequest", value: function rebuildRequest(e) {var t = Object.assign({}, e);return t.data.token = this.accessToken, t.header["x-basement-token"] = this.accessToken, t.header["x-serverless-sign"] = J.sign(t.data, this.config.clientSecret), t;} }, { key: "setupRequest", value: function setupRequest(e, t) {var n = Object.assign({}, e, { spaceId: this.config.spaceId, timestamp: Date.now() }),s = { "Content-Type": "application/json" };return "auth" !== t && (n.token = this.accessToken, s["x-basement-token"] = this.accessToken), s["x-serverless-sign"] = J.sign(n, this.config.clientSecret), { url: this.config.requestUrl, method: "POST", data: n, dataType: "json", header: s };} }, { key: "getAccessToken", value: function getAccessToken() {var _this4 = this;if ("pending" === this._getAccessTokenPromiseStatus) return this._getAccessTokenPromise;this._getAccessTokenPromiseStatus = "pending";return this._getAccessTokenPromise = this.requestAuth(this.setupRequest({ method: "serverless.auth.user.anonymousAuthorize", params: "{}" }, "auth")).then(function (e) {return new Promise(function (t, n) {e.result && e.result.accessToken ? (_this4.setAccessToken(e.result.accessToken), _this4._getAccessTokenPromiseStatus = "fulfilled", t(_this4.accessToken)) : (_this4._getAccessTokenPromiseStatus = "rejected", n(new B({ code: "AUTH_FAILED", message: "获取accessToken失败" })));});}, function (e) {return _this4._getAccessTokenPromiseStatus = "rejected", Promise.reject(e);}), this._getAccessTokenPromise;} }, { key: "authorize", value: function authorize() {this.getAccessToken();} }, { key: "callFunction", value: function callFunction(e) {var t = { method: "serverless.function.runtime.invoke", params: JSON.stringify({ functionTarget: e.name, functionArgs: e.data || {} }) };return this.request(this.setupRequest(t));} }, { key: "getOSSUploadOptionsFromPath", value: function getOSSUploadOptionsFromPath(e) {var t = { method: "serverless.file.resource.generateProximalSign", params: JSON.stringify(e) };return this.request(this.setupRequest(t));} }, { key: "uploadFileToOSS", value: function uploadFileToOSS(_ref) {var _this5 = this;var e = _ref.url,t = _ref.formData,n = _ref.name,s = _ref.filePath,o = _ref.fileType,r = _ref.onUploadProgress;return new Promise(function (i, a) {var c = _this5.adapter.uploadFile({ url: e, formData: t, name: n, filePath: s, fileType: o, header: { "X-OSS-server-side-encrpytion": "AES256" }, success: function success(e) {e && e.statusCode < 400 ? i(e) : a(new B({ code: "UPLOAD_FAILED", message: "文件上传失败" }));}, fail: function fail(e) {a(new B({ code: e.code || "UPLOAD_FAILED", message: e.message || e.errMsg || "文件上传失败" }));} });"function" == typeof r && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (e) {r({ loaded: e.totalBytesSent, total: e.totalBytesExpectedToSend });});});} }, { key: "reportOSSUpload", value: function reportOSSUpload(e) {var t = { method: "serverless.file.resource.report", params: JSON.stringify(e) };return this.request(this.setupRequest(t));} }, { key: "uploadFile", value: function uploadFile(_ref2) {var _this6 = this;var e = _ref2.filePath,t = _ref2.cloudPath,_ref2$fileType = _ref2.fileType,n = _ref2$fileType === void 0 ? "image" : _ref2$fileType,s = _ref2.onUploadProgress,o = _ref2.config;if ("string" !== u(t)) throw new B({ code: "INVALID_PARAM", message: "cloudPath必须为字符串类型" });if (!(t = t.trim())) throw new B({ code: "CLOUDPATH_REQUIRED", message: "cloudPath不可为空" });if (/:\/\//.test(t)) throw new B({ code: "INVALID_PARAM", message: "cloudPath不合法" });var r = o && o.envType || this.config.envType;var i, a;return this.getOSSUploadOptionsFromPath({ env: r, filename: t }).then(function (t) {var o = t.result;i = o.id, a = "https://" + o.cdnDomain + "/" + o.ossPath;var r = { url: "https://" + o.host, formData: { "Cache-Control": "max-age=2592000", "Content-Disposition": "attachment", OSSAccessKeyId: o.accessKeyId, Signature: o.signature, host: o.host, id: i, key: o.ossPath, policy: o.policy, success_action_status: 200 }, fileName: "file", name: "file", filePath: e, fileType: n };return _this6.uploadFileToOSS(Object.assign({}, r, { onUploadProgress: s }));}).then(function () {return _this6.reportOSSUpload({ id: i });}).then(function (t) {return new Promise(function (n, s) {t.success ? n({ success: !0, filePath: e, fileID: a }) : s(new B({ code: "UPLOAD_FAILED", message: "文件上传失败" }));});});} }, { key: "deleteFile", value: function deleteFile(_ref3) {var e = _ref3.fileList;var t = { method: "serverless.file.resource.delete", params: JSON.stringify({ id: e[0] }) };return this.request(this.setupRequest(t));} }, { key: "getTempFileURL", value: function getTempFileURL() {var _ref4 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref4.fileList;return new Promise(function (t, n) {Array.isArray(e) && 0 !== e.length || n(new B({ code: "INVALID_PARAM", message: "fileList的元素必须是非空的字符串" })), t({ fileList: e.map(function (e) {return { fileID: e, tempFileURL: e };}) });});} }, { key: "hasAccessToken", get: function get() {return !!this.accessToken;} }]);return G;}();var Q = { init: function init(e) {var t = new G(e),n = { signInAnonymously: function signInAnonymously() {return t.authorize();}, getLoginState: function getLoginState() {return Promise.resolve(!1);} };return t.auth = function () {return n;}, t.customAuth = t.auth, t;} };var Z = "undefined" != typeof location && "http:" === location.protocol ? "http:" : "https:";var ee;!function (e) {e.local = "local", e.none = "none", e.session = "session";}(ee || (ee = {}));var te = function te() {};var ne = function ne() {var e;if (!Promise) {e = function e() {}, e.promise = {};var _t3 = function _t3() {throw new B({ message: 'Your Node runtime does support ES6 Promises. Set "global.Promise" to your preferred implementation of promises.' });};return Object.defineProperty(e.promise, "then", { get: _t3 }), Object.defineProperty(e.promise, "catch", { get: _t3 }), e;}var t = new Promise(function (t, n) {e = function e(_e7, s) {return _e7 ? n(_e7) : t(s);};});return e.promise = t, e;};function se(e) {return void 0 === e;}function oe(e) {return "[object Null]" === Object.prototype.toString.call(e);}var re;function ie(e) {var t = (n = e, "[object Array]" === Object.prototype.toString.call(n) ? e : [e]);var n;var _iterator = _createForOfIteratorHelper(t),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var _e8 = _step.value;var _t4 = _e8.isMatch,_n2 = _e8.genAdapter,_s2 = _e8.runtime;if (_t4()) return { adapter: _n2(), runtime: _s2 };}} catch (err) {_iterator.e(err);} finally {_iterator.f();}}!function (e) {e.WEB = "web", e.WX_MP = "wx_mp";}(re || (re = {}));var ae = { adapter: null, runtime: void 0 },ce = ["anonymousUuidKey"];var ue = /*#__PURE__*/function (_te) {_inherits(ue, _te);var _super2 = _createSuper(ue);function ue() {var _this7;_classCallCheck(this, ue);_this7 = _super2.call(this), ae.adapter.root.tcbObject || (ae.adapter.root.tcbObject = {});return _this7;}_createClass(ue, [{ key: "setItem", value: function setItem(e, t) {ae.adapter.root.tcbObject[e] = t;} }, { key: "getItem", value: function getItem(e) {return ae.adapter.root.tcbObject[e];} }, { key: "removeItem", value: function removeItem(e) {delete ae.adapter.root.tcbObject[e];} }, { key: "clear", value: function clear() {delete ae.adapter.root.tcbObject;} }]);return ue;}(te);function le(e, t) {switch (e) {case "local":return t.localStorage || new ue();case "none":return new ue();default:return t.sessionStorage || new ue();}}var he = /*#__PURE__*/function () {function he(e) {_classCallCheck(this, he);if (!this._storage) {this._persistence = ae.adapter.primaryStorage || e.persistence, this._storage = le(this._persistence, ae.adapter);var _t5 = "access_token_".concat(e.env),_n3 = "access_token_expire_".concat(e.env),_s3 = "refresh_token_".concat(e.env),_o = "anonymous_uuid_".concat(e.env),_r = "login_type_".concat(e.env),_i = "user_info_".concat(e.env);this.keys = { accessTokenKey: _t5, accessTokenExpireKey: _n3, refreshTokenKey: _s3, anonymousUuidKey: _o, loginTypeKey: _r, userInfoKey: _i };}}_createClass(he, [{ key: "updatePersistence", value: function updatePersistence(e) {if (e === this._persistence) return;var t = "local" === this._persistence;this._persistence = e;var n = le(e, ae.adapter);for (var _e9 in this.keys) {var _s4 = this.keys[_e9];if (t && ce.includes(_e9)) continue;var _o2 = this._storage.getItem(_s4);se(_o2) || oe(_o2) || (n.setItem(_s4, _o2), this._storage.removeItem(_s4));}this._storage = n;} }, { key: "setStore", value: function setStore(e, t, n) {if (!this._storage) return;var s = { version: n || "localCachev1", content: t },o = JSON.stringify(s);try {this._storage.setItem(e, o);} catch (e) {throw e;}} }, { key: "getStore", value: function getStore(e, t) {try {if (!this._storage) return;} catch (e) {return "";}t = t || "localCachev1";var n = this._storage.getItem(e);if (!n) return "";if (n.indexOf(t) >= 0) {return JSON.parse(n).content;}return "";} }, { key: "removeStore", value: function removeStore(e) {this._storage.removeItem(e);} }]);return he;}();var de = {},fe = {};function ge(e) {return de[e];}var pe = function pe(e, t) {_classCallCheck(this, pe);this.data = t || null, this.name = e;};var me = /*#__PURE__*/function (_pe) {_inherits(me, _pe);var _super3 = _createSuper(me);function me(e, t) {var _this8;_classCallCheck(this, me);_this8 = _super3.call(this, "error", { error: e, data: t }), _this8.error = e;return _this8;}return me;}(pe);var ye = new ( /*#__PURE__*/function () {function _class() {_classCallCheck(this, _class);this._listeners = {};}_createClass(_class, [{ key: "on", value: function on(e, t) {return function (e, t, n) {n[e] = n[e] || [], n[e].push(t);}(e, t, this._listeners), this;} }, { key: "off", value: function off(e, t) {return function (e, t, n) {if (n && n[e]) {var _s5 = n[e].indexOf(t);-1 !== _s5 && n[e].splice(_s5, 1);}}(e, t, this._listeners), this;} }, { key: "fire", value: function fire(e, t) {if (e instanceof me) return console.error(e.error), this;var n = "string" == typeof e ? new pe(e, t || {}) : e;var s = n.name;if (this._listens(s)) {n.target = this;var _e10 = this._listeners[s] ? _toConsumableArray(this._listeners[s]) : [];var _iterator2 = _createForOfIteratorHelper(_e10),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var _t6 = _step2.value;_t6.call(this, n);}} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}}return this;} }, { key: "_listens", value: function _listens(e) {return this._listeners[e] && this._listeners[e].length > 0;} }]);return _class;}())();function _e(e, t) {ye.on(e, t);}function we(e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};ye.fire(e, t);}function ke(e, t) {ye.off(e, t);}var ve = "loginStateChanged",Te = "loginStateExpire",Se = "loginTypeChanged",Pe = "anonymousConverted",Ae = "refreshAccessToken";var Ie;!function (e) {e.ANONYMOUS = "ANONYMOUS", e.WECHAT = "WECHAT", e.WECHAT_PUBLIC = "WECHAT-PUBLIC", e.WECHAT_OPEN = "WECHAT-OPEN", e.CUSTOM = "CUSTOM", e.EMAIL = "EMAIL", e.USERNAME = "USERNAME", e.NULL = "NULL";}(Ie || (Ie = {}));var be = ["auth.getJwt", "auth.logout", "auth.signInWithTicket", "auth.signInAnonymously", "auth.signIn", "auth.fetchAccessTokenWithRefreshToken", "auth.signUpWithEmailAndPassword", "auth.activateEndUserMail", "auth.sendPasswordResetEmail", "auth.resetPasswordWithToken", "auth.isUsernameRegistered"],Oe = { "X-SDK-Version": "1.3.5" };function Ce(e, t, n) {var s = e[t];e[t] = function (t) {var o = {},r = {};n.forEach(function (n) {var _n$call = n.call(e, t),s = _n$call.data,i = _n$call.headers;Object.assign(o, s), Object.assign(r, i);});var i = t.data;return i && function () {var e;if (e = i, "[object FormData]" !== Object.prototype.toString.call(e)) t.data = _objectSpread(_objectSpread({}, i), o);else for (var _e11 in o) {i.append(_e11, o[_e11]);}}(), t.headers = _objectSpread(_objectSpread({}, t.headers || {}), r), s.call(e, t);};}function Ee() {var e = Math.random().toString(16).slice(2);return { data: { seqId: e }, headers: _objectSpread(_objectSpread({}, Oe), {}, { "x-seqid": e }) };}var Re = /*#__PURE__*/function () {function Re() {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, Re);var t;this.config = e, this._reqClass = new ae.adapter.reqClass({ timeout: this.config.timeout, timeoutMsg: "\u8BF7\u6C42\u5728".concat(this.config.timeout / 1e3, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD"), restrictedMethods: ["post"] }), this._cache = ge(this.config.env), this._localCache = (t = this.config.env, fe[t]), Ce(this._reqClass, "post", [Ee]), Ce(this._reqClass, "upload", [Ee]), Ce(this._reqClass, "download", [Ee]);}_createClass(Re, [{ key: "post", value: function () {var _post = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return this._reqClass.post(e);case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));function post(_x) {return _post.apply(this, arguments);}return post;}() }, { key: "upload", value: function () {var _upload = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2(e) {return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return this._reqClass.upload(e);case 2:return _context2.abrupt("return", _context2.sent);case 3:case "end":return _context2.stop();}}}, _callee2, this);}));function upload(_x2) {return _upload.apply(this, arguments);}return upload;}() }, { key: "download", value: function () {var _download = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3(e) {return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return this._reqClass.download(e);case 2:return _context3.abrupt("return", _context3.sent);case 3:case "end":return _context3.stop();}}}, _callee3, this);}));function download(_x3) {return _download.apply(this, arguments);}return download;}() }, { key: "refreshAccessToken", value: function () {var _refreshAccessToken2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var e, t;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:this._refreshAccessTokenPromise || (this._refreshAccessTokenPromise = this._refreshAccessToken());_context4.prev = 1;_context4.next = 4;return this._refreshAccessTokenPromise;case 4:e = _context4.sent;_context4.next = 10;break;case 7:_context4.prev = 7;_context4.t0 = _context4["catch"](1);t = _context4.t0;case 10:if (!(this._refreshAccessTokenPromise = null, this._shouldRefreshAccessTokenHook = null, t)) {_context4.next = 12;break;}throw t;case 12:return _context4.abrupt("return", e);case 13:case "end":return _context4.stop();}}}, _callee4, this, [[1, 7]]);}));function refreshAccessToken() {return _refreshAccessToken2.apply(this, arguments);}return refreshAccessToken;}() }, { key: "_refreshAccessToken", value: function () {var _refreshAccessToken3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee5() {var _this$_cache$keys, e, t, n, s, o, r, i, a, _e12, _e13, _t7, _s6;return _regenerator.default.wrap(function _callee5$(_context5) {while (1) {switch (_context5.prev = _context5.next) {case 0:_this$_cache$keys = this._cache.keys, e = _this$_cache$keys.accessTokenKey, t = _this$_cache$keys.accessTokenExpireKey, n = _this$_cache$keys.refreshTokenKey, s = _this$_cache$keys.loginTypeKey, o = _this$_cache$keys.anonymousUuidKey;this._cache.removeStore(e), this._cache.removeStore(t);r = this._cache.getStore(n);if (r) {_context5.next = 5;break;}throw new B({ message: "未登录CloudBase" });case 5:i = { refresh_token: r };_context5.next = 8;return this.request("auth.fetchAccessTokenWithRefreshToken", i);case 8:a = _context5.sent;if (!a.data.code) {_context5.next = 21;break;}_e12 = a.data.code;if (!("SIGN_PARAM_INVALID" === _e12 || "REFRESH_TOKEN_EXPIRED" === _e12 || "INVALID_REFRESH_TOKEN" === _e12)) {_context5.next = 20;break;}if (!(this._cache.getStore(s) === Ie.ANONYMOUS && "INVALID_REFRESH_TOKEN" === _e12)) {_context5.next = 19;break;}_e13 = this._cache.getStore(o);_t7 = this._cache.getStore(n);_context5.next = 17;return this.send("auth.signInAnonymously", { anonymous_uuid: _e13, refresh_token: _t7 });case 17:_s6 = _context5.sent;return _context5.abrupt("return", (this.setRefreshToken(_s6.refresh_token), this._refreshAccessToken()));case 19:we(Te), this._cache.removeStore(n);case 20:throw new B({ code: a.data.code, message: "\u5237\u65B0access token\u5931\u8D25\uFF1A".concat(a.data.code) });case 21:if (!a.data.access_token) {_context5.next = 23;break;}return _context5.abrupt("return", (we(Ae), this._cache.setStore(e, a.data.access_token), this._cache.setStore(t, a.data.access_token_expire + Date.now()), { accessToken: a.data.access_token, accessTokenExpire: a.data.access_token_expire }));case 23:a.data.refresh_token && (this._cache.removeStore(n), this._cache.setStore(n, a.data.refresh_token), this._refreshAccessToken());case 24:case "end":return _context5.stop();}}}, _callee5, this);}));function _refreshAccessToken() {return _refreshAccessToken3.apply(this, arguments);}return _refreshAccessToken;}() }, { key: "getAccessToken", value: function () {var _getAccessToken = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee6() {var _this$_cache$keys2, e, t, n, s, o, r;return _regenerator.default.wrap(function _callee6$(_context6) {while (1) {switch (_context6.prev = _context6.next) {case 0:_this$_cache$keys2 = this._cache.keys, e = _this$_cache$keys2.accessTokenKey, t = _this$_cache$keys2.accessTokenExpireKey, n = _this$_cache$keys2.refreshTokenKey;if (this._cache.getStore(n)) {_context6.next = 3;break;}throw new B({ message: "refresh token不存在，登录状态异常" });case 3:s = this._cache.getStore(e), o = this._cache.getStore(t), r = !0;_context6.t0 = this._shouldRefreshAccessTokenHook;if (!_context6.t0) {_context6.next = 9;break;}_context6.next = 8;return this._shouldRefreshAccessTokenHook(s, o);case 8:_context6.t0 = !_context6.sent;case 9:_context6.t1 = _context6.t0;if (!_context6.t1) {_context6.next = 12;break;}r = !1;case 12:return _context6.abrupt("return", (!s || !o || o < Date.now()) && r ? this.refreshAccessToken() : { accessToken: s, accessTokenExpire: o });case 13:case "end":return _context6.stop();}}}, _callee6, this);}));function getAccessToken() {return _getAccessToken.apply(this, arguments);}return getAccessToken;}() }, { key: "request", value: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee7(e, t, n) {var s, o, r, _e14, i, _e15, _e16, a, c, u, l, h, d, f, g, p;return _regenerator.default.wrap(function _callee7$(_context7) {while (1) {switch (_context7.prev = _context7.next) {case 0:s = "x-tcb-trace_".concat(this.config.env);o = "application/x-www-form-urlencoded";r = _objectSpread({ action: e, env: this.config.env, dataVersion: "2019-08-16" }, t);if (!(-1 === be.indexOf(e))) {_context7.next = 10;break;}_e14 = this._cache.keys.refreshTokenKey;_context7.t0 = this._cache.getStore(_e14);if (!_context7.t0) {_context7.next = 10;break;}_context7.next = 9;return this.getAccessToken();case 9:r.access_token = _context7.sent.accessToken;case 10:if ("storage.uploadFile" === e) {i = new FormData();for (_e15 in i) {i.hasOwnProperty(_e15) && void 0 !== i[_e15] && i.append(_e15, r[_e15]);}o = "multipart/form-data";} else {o = "application/json", i = {};for (_e16 in r) {void 0 !== r[_e16] && (i[_e16] = r[_e16]);}}a = { headers: { "content-type": o } };n && n.onUploadProgress && (a.onUploadProgress = n.onUploadProgress);c = this._localCache.getStore(s);c && (a.headers["X-TCB-Trace"] = c);u = t.parse, l = t.inQuery, h = t.search;d = { env: this.config.env };u && (d.parse = !0), l && (d = _objectSpread(_objectSpread({}, l), d));f = function (e, t) {var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};var s = /\?/.test(t);var o = "";for (var _e17 in n) {"" === o ? !s && (t += "?") : o += "&", o += "".concat(_e17, "=").concat(encodeURIComponent(n[_e17]));}return /^http(s)?\:\/\//.test(t += o) ? t : "".concat(e).concat(t);}(Z, "//tcb-api.tencentcloudapi.com/web", d);h && (f += h);_context7.next = 22;return this.post(_objectSpread({ url: f, data: i }, a));case 22:g = _context7.sent;p = g.header && g.header["x-tcb-trace"];if (!(p && this._localCache.setStore(s, p), 200 !== Number(g.status) && 200 !== Number(g.statusCode) || !g.data)) {_context7.next = 26;break;}throw new B({ code: "NETWORK_ERROR", message: "network request error" });case 26:return _context7.abrupt("return", g);case 27:case "end":return _context7.stop();}}}, _callee7, this);}));function request(_x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}() }, { key: "send", value: function () {var _send = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee8(e) {var t,n,_n4,_args8 = arguments;return _regenerator.default.wrap(function _callee8$(_context8) {while (1) {switch (_context8.prev = _context8.next) {case 0:t = _args8.length > 1 && _args8[1] !== undefined ? _args8[1] : {};_context8.next = 3;return this.request(e, t, { onUploadProgress: t.onUploadProgress });case 3:n = _context8.sent;if (!("ACCESS_TOKEN_EXPIRED" === n.data.code && -1 === be.indexOf(e))) {_context8.next = 13;break;}_context8.next = 7;return this.refreshAccessToken();case 7:_context8.next = 9;return this.request(e, t, { onUploadProgress: t.onUploadProgress });case 9:_n4 = _context8.sent;if (!_n4.data.code) {_context8.next = 12;break;}throw new B({ code: _n4.data.code, message: _n4.data.message });case 12:return _context8.abrupt("return", _n4.data);case 13:if (!n.data.code) {_context8.next = 15;break;}throw new B({ code: n.data.code, message: n.data.message });case 15:return _context8.abrupt("return", n.data);case 16:case "end":return _context8.stop();}}}, _callee8, this);}));function send(_x7) {return _send.apply(this, arguments);}return send;}() }, { key: "setRefreshToken", value: function setRefreshToken(e) {var _this$_cache$keys3 = this._cache.keys,t = _this$_cache$keys3.accessTokenKey,n = _this$_cache$keys3.accessTokenExpireKey,s = _this$_cache$keys3.refreshTokenKey;this._cache.removeStore(t), this._cache.removeStore(n), this._cache.setStore(s, e);} }]);return Re;}();var Ue = {};function xe(e) {return Ue[e];}var Le = /*#__PURE__*/function () {function Le(e) {_classCallCheck(this, Le);this.config = e, this._cache = ge(e.env), this._request = xe(e.env);}_createClass(Le, [{ key: "setRefreshToken", value: function setRefreshToken(e) {var _this$_cache$keys4 = this._cache.keys,t = _this$_cache$keys4.accessTokenKey,n = _this$_cache$keys4.accessTokenExpireKey,s = _this$_cache$keys4.refreshTokenKey;this._cache.removeStore(t), this._cache.removeStore(n), this._cache.setStore(s, e);} }, { key: "setAccessToken", value: function setAccessToken(e, t) {var _this$_cache$keys5 = this._cache.keys,n = _this$_cache$keys5.accessTokenKey,s = _this$_cache$keys5.accessTokenExpireKey;this._cache.setStore(n, e), this._cache.setStore(s, t);} }, { key: "refreshUserInfo", value: function () {var _refreshUserInfo = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee9() {var _yield$this$_request$, e;return _regenerator.default.wrap(function _callee9$(_context9) {while (1) {switch (_context9.prev = _context9.next) {case 0:_context9.next = 2;return this._request.send("auth.getUserInfo", {});case 2:_yield$this$_request$ = _context9.sent;e = _yield$this$_request$.data;return _context9.abrupt("return", (this.setLocalUserInfo(e), e));case 5:case "end":return _context9.stop();}}}, _callee9, this);}));function refreshUserInfo() {return _refreshUserInfo.apply(this, arguments);}return refreshUserInfo;}() }, { key: "setLocalUserInfo", value: function setLocalUserInfo(e) {var t = this._cache.keys.userInfoKey;this._cache.setStore(t, e);} }]);return Le;}();var De = /*#__PURE__*/function () {function De(e) {_classCallCheck(this, De);if (!e) throw new B({ code: "PARAM_ERROR", message: "envId is not defined" });this._envId = e, this._cache = ge(this._envId), this._request = xe(this._envId), this.setUserInfo();}_createClass(De, [{ key: "linkWithTicket", value: function linkWithTicket(e) {if ("string" != typeof e) throw new B({ code: "PARAM_ERROR", message: "ticket must be string" });return this._request.send("auth.linkWithTicket", { ticket: e });} }, { key: "linkWithRedirect", value: function linkWithRedirect(e) {e.signInWithRedirect();} }, { key: "updatePassword", value: function updatePassword(e, t) {return this._request.send("auth.updatePassword", { oldPassword: t, newPassword: e });} }, { key: "updateEmail", value: function updateEmail(e) {return this._request.send("auth.updateEmail", { newEmail: e });} }, { key: "updateUsername", value: function updateUsername(e) {if ("string" != typeof e) throw new B({ code: "PARAM_ERROR", message: "username must be a string" });return this._request.send("auth.updateUsername", { username: e });} }, { key: "getLinkedUidList", value: function () {var _getLinkedUidList = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee10() {var _yield$this$_request$2, e, t, n;return _regenerator.default.wrap(function _callee10$(_context10) {while (1) {switch (_context10.prev = _context10.next) {case 0:_context10.next = 2;return this._request.send("auth.getLinkedUidList", {});case 2:_yield$this$_request$2 = _context10.sent;e = _yield$this$_request$2.data;t = !1;n = e.users;return _context10.abrupt("return", (n.forEach(function (e) {e.wxOpenId && e.wxPublicId && (t = !0);}), { users: n, hasPrimaryUid: t }));case 7:case "end":return _context10.stop();}}}, _callee10, this);}));function getLinkedUidList() {return _getLinkedUidList.apply(this, arguments);}return getLinkedUidList;}() }, { key: "setPrimaryUid", value: function setPrimaryUid(e) {return this._request.send("auth.setPrimaryUid", { uid: e });} }, { key: "unlink", value: function unlink(e) {return this._request.send("auth.unlink", { platform: e });} }, { key: "update", value: function () {var _update = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee11(e) {var t, n, s, o, r, i, _yield$this$_request$3, a;return _regenerator.default.wrap(function _callee11$(_context11) {while (1) {switch (_context11.prev = _context11.next) {case 0:t = e.nickName;n = e.gender;s = e.avatarUrl;o = e.province;r = e.country;i = e.city;_context11.next = 8;return this._request.send("auth.updateUserInfo", { nickName: t, gender: n, avatarUrl: s, province: o, country: r, city: i });case 8:_yield$this$_request$3 = _context11.sent;a = _yield$this$_request$3.data;this.setLocalUserInfo(a);case 11:case "end":return _context11.stop();}}}, _callee11, this);}));function update(_x8) {return _update.apply(this, arguments);}return update;}() }, { key: "refresh", value: function () {var _refresh = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee12() {var _yield$this$_request$4, e;return _regenerator.default.wrap(function _callee12$(_context12) {while (1) {switch (_context12.prev = _context12.next) {case 0:_context12.next = 2;return this._request.send("auth.getUserInfo", {});case 2:_yield$this$_request$4 = _context12.sent;e = _yield$this$_request$4.data;return _context12.abrupt("return", (this.setLocalUserInfo(e), e));case 5:case "end":return _context12.stop();}}}, _callee12, this);}));function refresh() {return _refresh.apply(this, arguments);}return refresh;}() }, { key: "setUserInfo", value: function setUserInfo() {var _this9 = this;var e = this._cache.keys.userInfoKey,t = this._cache.getStore(e);["uid", "loginType", "openid", "wxOpenId", "wxPublicId", "unionId", "qqMiniOpenId", "email", "hasPassword", "customUserId", "nickName", "gender", "avatarUrl"].forEach(function (e) {_this9[e] = t[e];}), this.location = { country: t.country, province: t.province, city: t.city };} }, { key: "setLocalUserInfo", value: function setLocalUserInfo(e) {var t = this._cache.keys.userInfoKey;this._cache.setStore(t, e), this.setUserInfo();} }]);return De;}();var Ne = /*#__PURE__*/function () {function Ne(e) {_classCallCheck(this, Ne);if (!e) throw new B({ code: "PARAM_ERROR", message: "envId is not defined" });this._cache = ge(e);var _this$_cache$keys6 = this._cache.keys,t = _this$_cache$keys6.refreshTokenKey,n = _this$_cache$keys6.accessTokenKey,s = _this$_cache$keys6.accessTokenExpireKey,o = this._cache.getStore(t),r = this._cache.getStore(n),i = this._cache.getStore(s);this.credential = { refreshToken: o, accessToken: r, accessTokenExpire: i }, this.user = new De(e);}_createClass(Ne, [{ key: "isAnonymousAuth", get: function get() {return this.loginType === Ie.ANONYMOUS;} }, { key: "isCustomAuth", get: function get() {return this.loginType === Ie.CUSTOM;} }, { key: "isWeixinAuth", get: function get() {return this.loginType === Ie.WECHAT || this.loginType === Ie.WECHAT_OPEN || this.loginType === Ie.WECHAT_PUBLIC;} }, { key: "loginType", get: function get() {return this._cache.getStore(this._cache.keys.loginTypeKey);} }]);return Ne;}();var qe = /*#__PURE__*/function (_Le) {_inherits(qe, _Le);var _super4 = _createSuper(qe);function qe() {_classCallCheck(this, qe);return _super4.apply(this, arguments);}_createClass(qe, [{ key: "signIn", value: function () {var _signIn = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee13() {var _this$_cache$keys7, e, t, n, s, o, _e18;return _regenerator.default.wrap(function _callee13$(_context13) {while (1) {switch (_context13.prev = _context13.next) {case 0:this._cache.updatePersistence("local");_this$_cache$keys7 = this._cache.keys;e = _this$_cache$keys7.anonymousUuidKey;t = _this$_cache$keys7.refreshTokenKey;n = this._cache.getStore(e) || void 0;s = this._cache.getStore(t) || void 0;_context13.next = 8;return this._request.send("auth.signInAnonymously", { anonymous_uuid: n, refresh_token: s });case 8:o = _context13.sent;if (!(o.uuid && o.refresh_token)) {_context13.next = 20;break;}this._setAnonymousUUID(o.uuid);this.setRefreshToken(o.refresh_token);_context13.next = 14;return this._request.refreshAccessToken();case 14:we(ve);we(Se, { env: this.config.env, loginType: Ie.ANONYMOUS, persistence: "local" });_e18 = new Ne(this.config.env);_context13.next = 19;return _e18.user.refresh();case 19:return _context13.abrupt("return", _e18);case 20:throw new B({ message: "匿名登录失败" });case 21:case "end":return _context13.stop();}}}, _callee13, this);}));function signIn() {return _signIn.apply(this, arguments);}return signIn;}() }, { key: "linkAndRetrieveDataWithTicket", value: function () {var _linkAndRetrieveDataWithTicket = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee14(e) {var _this$_cache$keys8, t, n, s, o, r;return _regenerator.default.wrap(function _callee14$(_context14) {while (1) {switch (_context14.prev = _context14.next) {case 0:_this$_cache$keys8 = this._cache.keys;t = _this$_cache$keys8.anonymousUuidKey;n = _this$_cache$keys8.refreshTokenKey;s = this._cache.getStore(t);o = this._cache.getStore(n);_context14.next = 7;return this._request.send("auth.linkAndRetrieveDataWithTicket", { anonymous_uuid: s, refresh_token: o, ticket: e });case 7:r = _context14.sent;if (!r.refresh_token) {_context14.next = 16;break;}this._clearAnonymousUUID();this.setRefreshToken(r.refresh_token);_context14.next = 13;return this._request.refreshAccessToken();case 13:we(Pe, { env: this.config.env });we(Se, { loginType: Ie.CUSTOM, persistence: "local" });return _context14.abrupt("return", { credential: { refreshToken: r.refresh_token } });case 16:throw new B({ message: "匿名转化失败" });case 17:case "end":return _context14.stop();}}}, _callee14, this);}));function linkAndRetrieveDataWithTicket(_x9) {return _linkAndRetrieveDataWithTicket.apply(this, arguments);}return linkAndRetrieveDataWithTicket;}() }, { key: "_setAnonymousUUID", value: function _setAnonymousUUID(e) {var _this$_cache$keys9 = this._cache.keys,t = _this$_cache$keys9.anonymousUuidKey,n = _this$_cache$keys9.loginTypeKey;this._cache.removeStore(t), this._cache.setStore(t, e), this._cache.setStore(n, Ie.ANONYMOUS);} }, { key: "_clearAnonymousUUID", value: function _clearAnonymousUUID() {this._cache.removeStore(this._cache.keys.anonymousUuidKey);} }]);return qe;}(Le);var Fe = /*#__PURE__*/function (_Le2) {_inherits(Fe, _Le2);var _super5 = _createSuper(Fe);function Fe() {_classCallCheck(this, Fe);return _super5.apply(this, arguments);}_createClass(Fe, [{ key: "signIn", value: function () {var _signIn2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee15(e) {var t, n;return _regenerator.default.wrap(function _callee15$(_context15) {while (1) {switch (_context15.prev = _context15.next) {case 0:if (!("string" != typeof e)) {_context15.next = 2;break;}throw new B({ param: "PARAM_ERROR", message: "ticket must be a string" });case 2:t = this._cache.keys.refreshTokenKey;_context15.next = 5;return this._request.send("auth.signInWithTicket", { ticket: e, refresh_token: this._cache.getStore(t) || "" });case 5:n = _context15.sent;if (!n.refresh_token) {_context15.next = 15;break;}this.setRefreshToken(n.refresh_token);_context15.next = 10;return this._request.refreshAccessToken();case 10:we(ve);we(Se, { env: this.config.env, loginType: Ie.CUSTOM, persistence: this.config.persistence });_context15.next = 14;return this.refreshUserInfo();case 14:return _context15.abrupt("return", new Ne(this.config.env));case 15:throw new B({ message: "自定义登录失败" });case 16:case "end":return _context15.stop();}}}, _callee15, this);}));function signIn(_x10) {return _signIn2.apply(this, arguments);}return signIn;}() }]);return Fe;}(Le);var Me = /*#__PURE__*/function (_Le3) {_inherits(Me, _Le3);var _super6 = _createSuper(Me);function Me() {_classCallCheck(this, Me);return _super6.apply(this, arguments);}_createClass(Me, [{ key: "signIn", value: function () {var _signIn3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee16(e, t) {var n, s, o, r, i;return _regenerator.default.wrap(function _callee16$(_context16) {while (1) {switch (_context16.prev = _context16.next) {case 0:if (!("string" != typeof e)) {_context16.next = 2;break;}throw new B({ code: "PARAM_ERROR", message: "email must be a string" });case 2:n = this._cache.keys.refreshTokenKey;_context16.next = 5;return this._request.send("auth.signIn", { loginType: "EMAIL", email: e, password: t, refresh_token: this._cache.getStore(n) || "" });case 5:s = _context16.sent;o = s.refresh_token;r = s.access_token;i = s.access_token_expire;if (!o) {_context16.next = 22;break;}this.setRefreshToken(o);if (!(r && i)) {_context16.next = 15;break;}this.setAccessToken(r, i);_context16.next = 17;break;case 15:_context16.next = 17;return this._request.refreshAccessToken();case 17:_context16.next = 19;return this.refreshUserInfo();case 19:we(ve);we(Se, { env: this.config.env, loginType: Ie.EMAIL, persistence: this.config.persistence });return _context16.abrupt("return", new Ne(this.config.env));case 22:throw s.code ? new B({ code: s.code, message: "\u90AE\u7BB1\u767B\u5F55\u5931\u8D25: ".concat(s.message) }) : new B({ message: "邮箱登录失败" });case 23:case "end":return _context16.stop();}}}, _callee16, this);}));function signIn(_x11, _x12) {return _signIn3.apply(this, arguments);}return signIn;}() }, { key: "activate", value: function () {var _activate = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee17(e) {return _regenerator.default.wrap(function _callee17$(_context17) {while (1) {switch (_context17.prev = _context17.next) {case 0:return _context17.abrupt("return", this._request.send("auth.activateEndUserMail", { token: e }));case 1:case "end":return _context17.stop();}}}, _callee17, this);}));function activate(_x13) {return _activate.apply(this, arguments);}return activate;}() }, { key: "resetPasswordWithToken", value: function () {var _resetPasswordWithToken = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee18(e, t) {return _regenerator.default.wrap(function _callee18$(_context18) {while (1) {switch (_context18.prev = _context18.next) {case 0:return _context18.abrupt("return", this._request.send("auth.resetPasswordWithToken", { token: e, newPassword: t }));case 1:case "end":return _context18.stop();}}}, _callee18, this);}));function resetPasswordWithToken(_x14, _x15) {return _resetPasswordWithToken.apply(this, arguments);}return resetPasswordWithToken;}() }]);return Me;}(Le);var je = /*#__PURE__*/function (_Le4) {_inherits(je, _Le4);var _super7 = _createSuper(je);function je() {_classCallCheck(this, je);return _super7.apply(this, arguments);}_createClass(je, [{ key: "signIn", value: function () {var _signIn4 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee19(e, t) {var n, s, o, r, i;return _regenerator.default.wrap(function _callee19$(_context19) {while (1) {switch (_context19.prev = _context19.next) {case 0:if (!("string" != typeof e)) {_context19.next = 2;break;}throw new B({ code: "PARAM_ERROR", message: "username must be a string" });case 2:"string" != typeof t && (t = "", console.warn("password is empty"));n = this._cache.keys.refreshTokenKey;_context19.next = 6;return this._request.send("auth.signIn", { loginType: Ie.USERNAME, username: e, password: t, refresh_token: this._cache.getStore(n) || "" });case 6:s = _context19.sent;o = s.refresh_token;r = s.access_token_expire;i = s.access_token;if (!o) {_context19.next = 23;break;}this.setRefreshToken(o);if (!(i && r)) {_context19.next = 16;break;}this.setAccessToken(i, r);_context19.next = 18;break;case 16:_context19.next = 18;return this._request.refreshAccessToken();case 18:_context19.next = 20;return this.refreshUserInfo();case 20:we(ve);we(Se, { env: this.config.env, loginType: Ie.USERNAME, persistence: this.config.persistence });return _context19.abrupt("return", new Ne(this.config.env));case 23:throw s.code ? new B({ code: s.code, message: "\u7528\u6237\u540D\u5BC6\u7801\u767B\u5F55\u5931\u8D25: ".concat(s.message) }) : new B({ message: "用户名密码登录失败" });case 24:case "end":return _context19.stop();}}}, _callee19, this);}));function signIn(_x16, _x17) {return _signIn4.apply(this, arguments);}return signIn;}() }]);return je;}(Le);var $e = /*#__PURE__*/function () {function $e(e) {_classCallCheck(this, $e);this.config = e, this._cache = ge(e.env), this._request = xe(e.env), this._onAnonymousConverted = this._onAnonymousConverted.bind(this), this._onLoginTypeChanged = this._onLoginTypeChanged.bind(this), _e(Se, this._onLoginTypeChanged);}_createClass($e, [{ key: "anonymousAuthProvider", value: function anonymousAuthProvider() {return new qe(this.config);} }, { key: "customAuthProvider", value: function customAuthProvider() {return new Fe(this.config);} }, { key: "emailAuthProvider", value: function emailAuthProvider() {return new Me(this.config);} }, { key: "usernameAuthProvider", value: function usernameAuthProvider() {return new je(this.config);} }, { key: "signInAnonymously", value: function () {var _signInAnonymously = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee20() {return _regenerator.default.wrap(function _callee20$(_context20) {while (1) {switch (_context20.prev = _context20.next) {case 0:return _context20.abrupt("return", new qe(this.config).signIn());case 1:case "end":return _context20.stop();}}}, _callee20, this);}));function signInAnonymously() {return _signInAnonymously.apply(this, arguments);}return signInAnonymously;}() }, { key: "signInWithEmailAndPassword", value: function () {var _signInWithEmailAndPassword = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee21(e, t) {return _regenerator.default.wrap(function _callee21$(_context21) {while (1) {switch (_context21.prev = _context21.next) {case 0:return _context21.abrupt("return", new Me(this.config).signIn(e, t));case 1:case "end":return _context21.stop();}}}, _callee21, this);}));function signInWithEmailAndPassword(_x18, _x19) {return _signInWithEmailAndPassword.apply(this, arguments);}return signInWithEmailAndPassword;}() }, { key: "signInWithUsernameAndPassword", value: function signInWithUsernameAndPassword(e, t) {return new je(this.config).signIn(e, t);} }, { key: "linkAndRetrieveDataWithTicket", value: function () {var _linkAndRetrieveDataWithTicket2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee22(e) {return _regenerator.default.wrap(function _callee22$(_context22) {while (1) {switch (_context22.prev = _context22.next) {case 0:this._anonymousAuthProvider || (this._anonymousAuthProvider = new qe(this.config)), _e(Pe, this._onAnonymousConverted);_context22.next = 3;return this._anonymousAuthProvider.linkAndRetrieveDataWithTicket(e);case 3:return _context22.abrupt("return", _context22.sent);case 4:case "end":return _context22.stop();}}}, _callee22, this);}));function linkAndRetrieveDataWithTicket(_x20) {return _linkAndRetrieveDataWithTicket2.apply(this, arguments);}return linkAndRetrieveDataWithTicket;}() }, { key: "signOut", value: function () {var _signOut = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee23() {var _this$_cache$keys10, e, t, n, s, o;return _regenerator.default.wrap(function _callee23$(_context23) {while (1) {switch (_context23.prev = _context23.next) {case 0:if (!(this.loginType === Ie.ANONYMOUS)) {_context23.next = 2;break;}throw new B({ message: "匿名用户不支持登出操作" });case 2:_this$_cache$keys10 = this._cache.keys, e = _this$_cache$keys10.refreshTokenKey, t = _this$_cache$keys10.accessTokenKey, n = _this$_cache$keys10.accessTokenExpireKey, s = this._cache.getStore(e);if (s) {_context23.next = 5;break;}return _context23.abrupt("return");case 5:_context23.next = 7;return this._request.send("auth.logout", { refresh_token: s });case 7:o = _context23.sent;return _context23.abrupt("return", (this._cache.removeStore(e), this._cache.removeStore(t), this._cache.removeStore(n), we(ve), we(Se, { env: this.config.env, loginType: Ie.NULL, persistence: this.config.persistence }), o));case 9:case "end":return _context23.stop();}}}, _callee23, this);}));function signOut() {return _signOut.apply(this, arguments);}return signOut;}() }, { key: "signUpWithEmailAndPassword", value: function () {var _signUpWithEmailAndPassword = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee24(e, t) {return _regenerator.default.wrap(function _callee24$(_context24) {while (1) {switch (_context24.prev = _context24.next) {case 0:return _context24.abrupt("return", this._request.send("auth.signUpWithEmailAndPassword", { email: e, password: t }));case 1:case "end":return _context24.stop();}}}, _callee24, this);}));function signUpWithEmailAndPassword(_x21, _x22) {return _signUpWithEmailAndPassword.apply(this, arguments);}return signUpWithEmailAndPassword;}() }, { key: "sendPasswordResetEmail", value: function () {var _sendPasswordResetEmail = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee25(e) {return _regenerator.default.wrap(function _callee25$(_context25) {while (1) {switch (_context25.prev = _context25.next) {case 0:return _context25.abrupt("return", this._request.send("auth.sendPasswordResetEmail", { email: e }));case 1:case "end":return _context25.stop();}}}, _callee25, this);}));function sendPasswordResetEmail(_x23) {return _sendPasswordResetEmail.apply(this, arguments);}return sendPasswordResetEmail;}() }, { key: "onLoginStateChanged", value: function onLoginStateChanged(e) {var _this10 = this;_e(ve, function () {var t = _this10.hasLoginState();e.call(_this10, t);});var t = this.hasLoginState();e.call(this, t);} }, { key: "onLoginStateExpired", value: function onLoginStateExpired(e) {_e(Te, e.bind(this));} }, { key: "onAccessTokenRefreshed", value: function onAccessTokenRefreshed(e) {_e(Ae, e.bind(this));} }, { key: "onAnonymousConverted", value: function onAnonymousConverted(e) {_e(Pe, e.bind(this));} }, { key: "onLoginTypeChanged", value: function onLoginTypeChanged(e) {var _this11 = this;_e(Se, function () {var t = _this11.hasLoginState();e.call(_this11, t);});} }, { key: "getAccessToken", value: function () {var _getAccessToken2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee26() {return _regenerator.default.wrap(function _callee26$(_context26) {while (1) {switch (_context26.prev = _context26.next) {case 0:_context26.next = 2;return this._request.getAccessToken();case 2:_context26.t0 = _context26.sent.accessToken;_context26.t1 = this.config.env;return _context26.abrupt("return", { accessToken: _context26.t0, env: _context26.t1 });case 5:case "end":return _context26.stop();}}}, _callee26, this);}));function getAccessToken() {return _getAccessToken2.apply(this, arguments);}return getAccessToken;}() }, { key: "hasLoginState", value: function hasLoginState() {var e = this._cache.keys.refreshTokenKey;return this._cache.getStore(e) ? new Ne(this.config.env) : null;} }, { key: "isUsernameRegistered", value: function () {var _isUsernameRegistered = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee27(e) {var _yield$this$_request$5, t;return _regenerator.default.wrap(function _callee27$(_context27) {while (1) {switch (_context27.prev = _context27.next) {case 0:if (!("string" != typeof e)) {_context27.next = 2;break;}throw new B({ code: "PARAM_ERROR", message: "username must be a string" });case 2:_context27.next = 4;return this._request.send("auth.isUsernameRegistered", { username: e });case 4:_yield$this$_request$5 = _context27.sent;t = _yield$this$_request$5.data;return _context27.abrupt("return", t && t.isRegistered);case 7:case "end":return _context27.stop();}}}, _callee27, this);}));function isUsernameRegistered(_x24) {return _isUsernameRegistered.apply(this, arguments);}return isUsernameRegistered;}() }, { key: "getLoginState", value: function getLoginState() {return Promise.resolve(this.hasLoginState());} }, { key: "signInWithTicket", value: function () {var _signInWithTicket = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee28(e) {return _regenerator.default.wrap(function _callee28$(_context28) {while (1) {switch (_context28.prev = _context28.next) {case 0:return _context28.abrupt("return", new Fe(this.config).signIn(e));case 1:case "end":return _context28.stop();}}}, _callee28, this);}));function signInWithTicket(_x25) {return _signInWithTicket.apply(this, arguments);}return signInWithTicket;}() }, { key: "shouldRefreshAccessToken", value: function shouldRefreshAccessToken(e) {this._request._shouldRefreshAccessTokenHook = e.bind(this);} }, { key: "getUserInfo", value: function getUserInfo() {return this._request.send("auth.getUserInfo", {}).then(function (e) {return e.code ? e : _objectSpread(_objectSpread({}, e.data), {}, { requestId: e.seqId });});} }, { key: "getAuthHeader", value: function getAuthHeader() {var _this$_cache$keys11 = this._cache.keys,e = _this$_cache$keys11.refreshTokenKey,t = _this$_cache$keys11.accessTokenKey,n = this._cache.getStore(e);return { "x-cloudbase-credentials": this._cache.getStore(t) + "/@@/" + n };} }, { key: "_onAnonymousConverted", value: function _onAnonymousConverted(e) {var t = e.data.env;t === this.config.env && this._cache.updatePersistence(this.config.persistence);} }, { key: "_onLoginTypeChanged", value: function _onLoginTypeChanged(e) {var _e$data = e.data,t = _e$data.loginType,n = _e$data.persistence,s = _e$data.env;s === this.config.env && (this._cache.updatePersistence(n), this._cache.setStore(this._cache.keys.loginTypeKey, t));} }, { key: "currentUser", get: function get() {var e = this.hasLoginState();return e && e.user || null;} }, { key: "loginType", get: function get() {return this._cache.getStore(this._cache.keys.loginTypeKey);} }]);return $e;}();var Ke = function Ke(e, t) {t = t || ne();var n = xe(this.config.env),s = e.cloudPath,o = e.filePath,r = e.onUploadProgress,_e$fileType = e.fileType,i = _e$fileType === void 0 ? "image" : _e$fileType;return n.send("storage.getUploadMetadata", { path: s }).then(function (e) {var _e$data2 = e.data,a = _e$data2.url,c = _e$data2.authorization,u = _e$data2.token,l = _e$data2.fileId,h = _e$data2.cosFileId,d = e.requestId,f = { key: s, signature: c, "x-cos-meta-fileid": h, success_action_status: "201", "x-cos-security-token": u };n.upload({ url: a, data: f, file: o, name: s, fileType: i, onUploadProgress: r }).then(function (e) {201 === e.statusCode ? t(null, { fileID: l, requestId: d }) : t(new B({ code: "STORAGE_REQUEST_FAIL", message: "STORAGE_REQUEST_FAIL: ".concat(e.data) }));}).catch(function (e) {t(e);});}).catch(function (e) {t(e);}), t.promise;},Be = function Be(e, t) {t = t || ne();var n = xe(this.config.env),s = e.cloudPath;return n.send("storage.getUploadMetadata", { path: s }).then(function (e) {t(null, e);}).catch(function (e) {t(e);}), t.promise;},He = function He(_ref5, t) {var e = _ref5.fileList;if (t = t || ne(), !e || !Array.isArray(e)) return { code: "INVALID_PARAM", message: "fileList必须是非空的数组" };var _iterator3 = _createForOfIteratorHelper(e),_step3;try {for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {var _t8 = _step3.value;if (!_t8 || "string" != typeof _t8) return { code: "INVALID_PARAM", message: "fileList的元素必须是非空的字符串" };}} catch (err) {_iterator3.e(err);} finally {_iterator3.f();}var n = { fileid_list: e };return xe(this.config.env).send("storage.batchDeleteFile", n).then(function (e) {e.code ? t(null, e) : t(null, { fileList: e.data.delete_list, requestId: e.requestId });}).catch(function (e) {t(e);}), t.promise;},We = function We(_ref6, t) {var e = _ref6.fileList;t = t || ne(), e && Array.isArray(e) || t(null, { code: "INVALID_PARAM", message: "fileList必须是非空的数组" });var n = [];var _iterator4 = _createForOfIteratorHelper(e),_step4;try {for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {var _s7 = _step4.value;"object" == typeof _s7 ? (_s7.hasOwnProperty("fileID") && _s7.hasOwnProperty("maxAge") || t(null, { code: "INVALID_PARAM", message: "fileList的元素必须是包含fileID和maxAge的对象" }), n.push({ fileid: _s7.fileID, max_age: _s7.maxAge })) : "string" == typeof _s7 ? n.push({ fileid: _s7 }) : t(null, { code: "INVALID_PARAM", message: "fileList的元素必须是字符串" });}} catch (err) {_iterator4.e(err);} finally {_iterator4.f();}var s = { file_list: n };return xe(this.config.env).send("storage.batchGetDownloadUrl", s).then(function (e) {e.code ? t(null, e) : t(null, { fileList: e.data.download_list, requestId: e.requestId });}).catch(function (e) {t(e);}), t.promise;},ze = /*#__PURE__*/function () {var _ref8 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee29(_ref7, t) {var e, n, s, o;return _regenerator.default.wrap(function _callee29$(_context29) {while (1) {switch (_context29.prev = _context29.next) {case 0:e = _ref7.fileID;_context29.next = 3;return We.call(this, { fileList: [{ fileID: e, maxAge: 600 }] });case 3:n = _context29.sent.fileList[0];if (!("SUCCESS" !== n.code)) {_context29.next = 6;break;}return _context29.abrupt("return", t ? t(n) : new Promise(function (e) {e(n);}));case 6:s = xe(this.config.env);o = n.download_url;if (!(o = encodeURI(o), !t)) {_context29.next = 10;break;}return _context29.abrupt("return", s.download({ url: o }));case 10:_context29.t0 = t;_context29.next = 13;return s.download({ url: o });case 13:_context29.t1 = _context29.sent;(0, _context29.t0)(_context29.t1);case 15:case "end":return _context29.stop();}}}, _callee29, this);}));return function ze(_x26, _x27) {return _ref8.apply(this, arguments);};}(),Je = function Je(_ref9, r) {var e = _ref9.name,t = _ref9.data,n = _ref9.query,s = _ref9.parse,o = _ref9.search;var i = r || ne();var a;try {a = t ? JSON.stringify(t) : "";} catch (e) {return Promise.reject(e);}if (!e) return Promise.reject(new B({ code: "PARAM_ERROR", message: "函数名不能为空" }));var c = { inQuery: n, parse: s, search: o, function_name: e, request_data: a };return xe(this.config.env).send("functions.invokeFunction", c).then(function (e) {if (e.code) i(null, e);else {var _t9 = e.data.response_data;if (s) i(null, { result: _t9, requestId: e.requestId });else try {_t9 = JSON.parse(e.data.response_data), i(null, { result: _t9, requestId: e.requestId });} catch (e) {i(new B({ message: "response data must be json" }));}}return i.promise;}).catch(function (e) {i(e);}), i.promise;},Ve = { timeout: 15e3, persistence: "session" },Ye = {};var Xe = /*#__PURE__*/function () {function Xe(e) {_classCallCheck(this, Xe);this.config = e || this.config, this.authObj = void 0;}_createClass(Xe, [{ key: "init", value: function init(e) {switch (ae.adapter || (this.requestClient = new ae.adapter.reqClass({ timeout: e.timeout || 5e3, timeoutMsg: "\u8BF7\u6C42\u5728".concat((e.timeout || 5e3) / 1e3, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD") })), this.config = _objectSpread(_objectSpread({}, Ve), e), !0) {case this.config.timeout > 6e5:console.warn("timeout大于可配置上限[10分钟]，已重置为上限数值"), this.config.timeout = 6e5;break;case this.config.timeout < 100:console.warn("timeout小于可配置下限[100ms]，已重置为下限数值"), this.config.timeout = 100;}return new Xe(this.config);} }, { key: "auth", value: function auth() {var _ref10 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref10.persistence;if (this.authObj) return this.authObj;var t = e || ae.adapter.primaryStorage || Ve.persistence;var n;return t !== this.config.persistence && (this.config.persistence = t), function (e) {var t = e.env;de[t] = new he(e), fe[t] = new he(_objectSpread(_objectSpread({}, e), {}, { persistence: "local" }));}(this.config), n = this.config, Ue[n.env] = new Re(n), this.authObj = new $e(this.config), this.authObj;} }, { key: "on", value: function on(e, t) {return _e.apply(this, [e, t]);} }, { key: "off", value: function off(e, t) {return ke.apply(this, [e, t]);} }, { key: "callFunction", value: function callFunction(e, t) {return Je.apply(this, [e, t]);} }, { key: "deleteFile", value: function deleteFile(e, t) {return He.apply(this, [e, t]);} }, { key: "getTempFileURL", value: function getTempFileURL(e, t) {return We.apply(this, [e, t]);} }, { key: "downloadFile", value: function downloadFile(e, t) {return ze.apply(this, [e, t]);} }, { key: "uploadFile", value: function uploadFile(e, t) {return Ke.apply(this, [e, t]);} }, { key: "getUploadMetadata", value: function getUploadMetadata(e, t) {return Be.apply(this, [e, t]);} }, { key: "registerExtension", value: function registerExtension(e) {Ye[e.name] = e;} }, { key: "invokeExtension", value: function () {var _invokeExtension = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee30(e, t) {var n;return _regenerator.default.wrap(function _callee30$(_context30) {while (1) {switch (_context30.prev = _context30.next) {case 0:n = Ye[e];if (n) {_context30.next = 3;break;}throw new B({ message: "\u6269\u5C55".concat(e, " \u5FC5\u987B\u5148\u6CE8\u518C") });case 3:_context30.next = 5;return n.invoke(t, this);case 5:return _context30.abrupt("return", _context30.sent);case 6:case "end":return _context30.stop();}}}, _callee30, this);}));function invokeExtension(_x28, _x29) {return _invokeExtension.apply(this, arguments);}return invokeExtension;}() }, { key: "useAdapters", value: function useAdapters(e) {var _ref11 = ie(e) || {},t = _ref11.adapter,n = _ref11.runtime;t && (ae.adapter = t), n && (ae.runtime = n);} }]);return Xe;}();var Ge = new Xe();function Qe(e, t, n) {void 0 === n && (n = {});var s = /\?/.test(t),o = "";for (var r in n) {"" === o ? !s && (t += "?") : o += "&", o += r + "=" + encodeURIComponent(n[r]);}return /^http(s)?:\/\//.test(t += o) ? t : "" + e + t;}var Ze = /*#__PURE__*/function () {function Ze() {_classCallCheck(this, Ze);}_createClass(Ze, [{ key: "post", value: function post(e) {var t = e.url,n = e.data,s = e.headers;return new Promise(function (e, o) {V.request({ url: Qe("https:", t), data: n, method: "POST", header: s, success: function success(t) {e(t);}, fail: function fail(e) {o(e);} });});} }, { key: "upload", value: function upload(e) {return new Promise(function (t, n) {var s = e.url,o = e.file,r = e.data,i = e.headers,a = e.fileType,c = V.uploadFile({ url: Qe("https:", s), name: "file", formData: Object.assign({}, r), filePath: o, fileType: a, header: i, success: function success(e) {var n = { statusCode: e.statusCode, data: e.data || {} };200 === e.statusCode && r.success_action_status && (n.statusCode = parseInt(r.success_action_status, 10)), t(n);}, fail: function fail(e) {n(new Error(e.errMsg || "uploadFile:fail"));} });"function" == typeof e.onUploadProgress && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (t) {e.onUploadProgress({ loaded: t.totalBytesSent, total: t.totalBytesExpectedToSend });});});} }]);return Ze;}();var et = { setItem: function setItem(e, t) {V.setStorageSync(e, t);}, getItem: function getItem(e) {return V.getStorageSync(e);}, removeItem: function removeItem(e) {V.removeStorageSync(e);}, clear: function clear() {V.clearStorageSync();} };var tt = { genAdapter: function genAdapter() {return { root: {}, reqClass: Ze, localStorage: et, primaryStorage: "local" };}, isMatch: function isMatch() {return !0;}, runtime: "uni_app" };Ge.useAdapters(tt);var nt = Ge,st = nt.init;nt.init = function (e) {e.env = e.spaceId;var t = st.call(this, e);t.config.provider = "tencent", t.config.spaceId = e.spaceId;var n = t.auth;return t.auth = function (e) {var t = n.call(this, e);return ["linkAndRetrieveDataWithTicket", "signInAnonymously", "signOut", "getAccessToken", "getLoginState", "signInWithTicket", "getUserInfo"].forEach(function (e) {t[e] = K(t[e]).bind(t);}), t;}, t.customAuth = t.auth, t;};var ot = nt;function rt() {return { token: V.getStorageSync("uni_id_token") || V.getStorageSync("uniIdToken"), tokenExpired: V.getStorageSync("uni_id_token_expired") };}function it() {var _ref12 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref12.token,t = _ref12.tokenExpired;e && V.setStorageSync("uni_id_token", e), t && V.setStorageSync("uni_id_token_expired", t);}function at() {if (!d || "web" !== g) return;uni.getStorageSync("__LAST_DCLOUD_APPID") !== _ && (uni.setStorageSync("__LAST_DCLOUD_APPID", _), console.warn("检测到当前项目与上次运行到此端口的项目不一致，自动清理uni-id保存的token信息（仅开发调试时生效）"), V.removeStorageSync("uni_id_token"), V.removeStorageSync("uniIdToken"), V.removeStorageSync("uni_id_token_expired"));}var ct = /*#__PURE__*/function (_G) {_inherits(ct, _G);var _super8 = _createSuper(ct);function ct() {_classCallCheck(this, ct);return _super8.apply(this, arguments);}_createClass(ct, [{ key: "getAccessToken", value: function getAccessToken() {var _this12 = this;return new Promise(function (e, t) {var n = "Anonymous_Access_token";_this12.setAccessToken(n), e(n);});} }, { key: "setupRequest", value: function setupRequest(e, t) {var n = Object.assign({}, e, { spaceId: this.config.spaceId, timestamp: Date.now() }),s = { "Content-Type": "application/json" };"auth" !== t && (n.token = this.accessToken, s["x-basement-token"] = this.accessToken), s["x-serverless-sign"] = J.sign(n, this.config.clientSecret);var o = z();s["x-client-info"] = encodeURIComponent(JSON.stringify(o));var _rt = rt(),r = _rt.token;return s["x-client-token"] = r, { url: this.config.requestUrl, method: "POST", data: n, dataType: "json", header: JSON.parse(JSON.stringify(s)) };} }, { key: "uploadFileToOSS", value: function uploadFileToOSS(_ref13) {var _this13 = this;var e = _ref13.url,t = _ref13.formData,n = _ref13.name,s = _ref13.filePath,o = _ref13.fileType,r = _ref13.onUploadProgress;return new Promise(function (i, a) {var c = _this13.adapter.uploadFile({ url: e, formData: t, name: n, filePath: s, fileType: o, success: function success(e) {e && e.statusCode < 400 ? i(e) : a(new B({ code: "UPLOAD_FAILED", message: "文件上传失败" }));}, fail: function fail(e) {a(new B({ code: e.code || "UPLOAD_FAILED", message: e.message || e.errMsg || "文件上传失败" }));} });"function" == typeof r && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (e) {r({ loaded: e.totalBytesSent, total: e.totalBytesExpectedToSend });});});} }, { key: "uploadFile", value: function uploadFile(_ref14) {var _this14 = this;var e = _ref14.filePath,t = _ref14.cloudPath,_ref14$fileType = _ref14.fileType,n = _ref14$fileType === void 0 ? "image" : _ref14$fileType,s = _ref14.onUploadProgress;if (!t) throw new B({ code: "CLOUDPATH_REQUIRED", message: "cloudPath不可为空" });var o;return this.getOSSUploadOptionsFromPath({ cloudPath: t }).then(function (t) {var _t$result = t.result,r = _t$result.url,i = _t$result.formData,a = _t$result.name;o = t.result.fileUrl;var c = { url: r, formData: i, name: a, filePath: e, fileType: n };return _this14.uploadFileToOSS(Object.assign({}, c, { onUploadProgress: s }));}).then(function () {return _this14.reportOSSUpload({ cloudPath: t });}).then(function (t) {return new Promise(function (n, s) {t.success ? n({ success: !0, filePath: e, fileID: o }) : s(new B({ code: "UPLOAD_FAILED", message: "文件上传失败" }));});});} }, { key: "deleteFile", value: function deleteFile(_ref15) {var e = _ref15.fileList;var t = { method: "serverless.file.resource.delete", params: JSON.stringify({ fileList: e }) };return this.request(this.setupRequest(t));} }, { key: "getTempFileURL", value: function getTempFileURL() {var _ref16 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref16.fileList;var t = { method: "serverless.file.resource.getTempFileURL", params: JSON.stringify({ fileList: e }) };return this.request(this.setupRequest(t));} }]);return ct;}(G);var ut = { init: function init(e) {var t = new ct(e),n = { signInAnonymously: function signInAnonymously() {return t.authorize();}, getLoginState: function getLoginState() {return Promise.resolve(!1);} };return t.auth = function () {return n;}, t.customAuth = t.auth, t;} };function lt(_ref17) {var e = _ref17.data;var t;t = z();var n = JSON.parse(JSON.stringify(e || {}));if (Object.assign(n, { clientInfo: t }), !n.uniIdToken) {var _rt2 = rt(),_e19 = _rt2.token;_e19 && (n.uniIdToken = _e19);}return n;}function ht() {var _this15 = this;var _ref18 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref18.name,t = _ref18.data;var _this$__dev__ = this.__dev__,n = _this$__dev__.localAddress,s = _this$__dev__.localPort,o = { aliyun: "aliyun", tencent: "tcb" }[this.config.provider],r = this.config.spaceId,i = "http://".concat(n, ":").concat(s, "/system/check-function"),a = "http://".concat(n, ":").concat(s, "/cloudfunctions/").concat(e);return new Promise(function (t, n) {V.request({ method: "POST", url: i, data: { name: e, platform: g, provider: o, spaceId: r }, timeout: 3e3, success: function success(e) {t(e);}, fail: function fail() {t({ data: { code: "NETWORK_ERROR", message: "连接本地调试服务失败，请检查客户端是否和主机在同一局域网下，自动切换为已部署的云函数。" } });} });}).then(function () {var _ref19 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref19.data;var _ref20 = e || {},t = _ref20.code,n = _ref20.message;return { code: 0 === t ? 0 : t || "SYS_ERR", message: n || "SYS_ERR" };}).then(function (_ref21) {var n = _ref21.code,s = _ref21.message;if (0 !== n) {switch (n) {case "MODULE_ENCRYPTED":console.error("\u6B64\u4E91\u51FD\u6570\uFF08".concat(e, "\uFF09\u4F9D\u8D56\u52A0\u5BC6\u516C\u5171\u6A21\u5757\u4E0D\u53EF\u672C\u5730\u8C03\u8BD5\uFF0C\u81EA\u52A8\u5207\u6362\u4E3A\u4E91\u7AEF\u5DF2\u90E8\u7F72\u7684\u4E91\u51FD\u6570"));break;case "FUNCTION_ENCRYPTED":console.error("\u6B64\u4E91\u51FD\u6570\uFF08".concat(e, "\uFF09\u5DF2\u52A0\u5BC6\u4E0D\u53EF\u672C\u5730\u8C03\u8BD5\uFF0C\u81EA\u52A8\u5207\u6362\u4E3A\u4E91\u7AEF\u5DF2\u90E8\u7F72\u7684\u4E91\u51FD\u6570"));break;case "ACTION_ENCRYPTED":console.error(s || "需要访问加密的uni-clientDB-action，自动切换为云端环境");break;case "NETWORK_ERROR":{var _e20 = "连接本地调试服务失败，请检查客户端是否和主机在同一局域网下";throw console.error(_e20), new Error(_e20);}case "SWITCH_TO_CLOUD":break;default:{var _e21 = "\u68C0\u6D4B\u672C\u5730\u8C03\u8BD5\u670D\u52A1\u51FA\u73B0\u9519\u8BEF\uFF1A".concat(s, "\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u73AF\u5883\u6216\u91CD\u542F\u5BA2\u6237\u7AEF\u518D\u8BD5");throw console.error(_e21), new Error(_e21);}}return _this15._callCloudFunction({ name: e, data: t });}return new Promise(function (e, n) {var s = lt.call(_this15, { data: t });V.request({ method: "POST", url: a, data: { provider: o, platform: g, param: s }, success: function success() {var _ref22 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},t = _ref22.statusCode,s = _ref22.data;return !t || t >= 400 ? n(new B({ code: s.code || "SYS_ERR", message: s.message || "request:fail" })) : e({ result: s });}, fail: function fail(e) {n(new B({ code: e.code || e.errCode || "SYS_ERR", message: e.message || e.errMsg || "request:fail" }));} });});});}var dt = [{ rule: /fc_function_not_found|FUNCTION_NOT_FOUND/, content: "，云函数[{functionName}]在云端不存在，请检查此云函数名称是否正确以及该云函数是否已上传到服务空间", mode: "append" }];var ft = /[\\^$.*+?()[\]{}|]/g,gt = RegExp(ft.source);function pt(e, t, n) {return e.replace(new RegExp((s = t) && gt.test(s) ? s.replace(ft, "\\$&") : s, "g"), n);var s;}function mt(_ref23) {var e = _ref23.functionName,t = _ref23.result,n = _ref23.logPvd;if (this.__dev__.debugLog && t && t.requestId) {var _s8 = JSON.stringify({ spaceId: this.config.spaceId, functionName: e, requestId: t.requestId });console.log("[".concat(n, "-request]").concat(_s8, "[/").concat(n, "-request]"));}}function yt(e) {var t = e.callFunction,n = function n(_n5) {var _this16 = this;var s = _n5.name;_n5.data = lt.call(e, { data: _n5.data });var o = { aliyun: "aliyun", tencent: "tcb", tcb: "tcb" }[this.config.provider];return t.call(this, _n5).then(function (e) {return e.errCode = 0, mt.call(_this16, { functionName: s, result: e, logPvd: o }), Promise.resolve(e);}, function (e) {return mt.call(_this16, { functionName: s, result: e, logPvd: o }), e && e.message && (e.message = function () {var _ref24 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref24$message = _ref24.message,e = _ref24$message === void 0 ? "" : _ref24$message,_ref24$extraInfo = _ref24.extraInfo,t = _ref24$extraInfo === void 0 ? {} : _ref24$extraInfo,_ref24$formatter = _ref24.formatter,n = _ref24$formatter === void 0 ? [] : _ref24$formatter;for (var _s9 = 0; _s9 < n.length; _s9++) {var _n$_s = n[_s9],_o3 = _n$_s.rule,_r2 = _n$_s.content,i = _n$_s.mode,_a = e.match(_o3);if (!_a) continue;var _c = _r2;for (var _e22 = 1; _e22 < _a.length; _e22++) {_c = pt(_c, "{$".concat(_e22, "}"), _a[_e22]);}for (var _e23 in t) {_c = pt(_c, "{".concat(_e23, "}"), t[_e23]);}return "replace" === i ? _c : e + _c;}return e;}({ message: "[".concat(_n5.name, "]: ").concat(e.message), formatter: dt, extraInfo: { functionName: s } })), Promise.reject(e);});};e.callFunction = function (t) {var s;d && e.__dev__.debugInfo && !e.__dev__.debugInfo.forceRemote && m ? (e._callCloudFunction || (e._callCloudFunction = n, e._callLocalFunction = ht), s = ht) : s = n;var o = s.call(this, t);return Object.defineProperty(o, "result", { get: function get() {return console.warn("当前返回结果为Promise类型，不可直接访问其result属性，详情请参考：https://uniapp.dcloud.net.cn/uniCloud/faq?id=promise"), {};} }), o;};}var _t = Symbol("CLIENT_DB_INTERNAL");function wt(e, t) {return e.then = "DoNotReturnProxyWithAFunctionNamedThen", e._internalType = _t, e.__ob__ = void 0, new Proxy(e, { get: function get(e, n, s) {if ("_uniClient" === n) return null;if (n in e || "string" != typeof n) {var _t10 = e[n];return "function" == typeof _t10 ? _t10.bind(e) : _t10;}return t.get(e, n, s);} });}function kt(e) {return { on: function on(t, n) {e[t] = e[t] || [], e[t].indexOf(n) > -1 || e[t].push(n);}, off: function off(t, n) {e[t] = e[t] || [];var s = e[t].indexOf(n);-1 !== s && e[t].splice(s, 1);} };}var vt = ["db.Geo", "db.command", "command.aggregate"];function Tt(e, t) {return vt.indexOf("".concat(e, ".").concat(t)) > -1;}function St(e) {switch (u(e)) {case "array":return e.map(function (e) {return St(e);});case "object":return e._internalType === _t || Object.keys(e).forEach(function (t) {e[t] = St(e[t]);}), e;case "regexp":return { $regexp: { source: e.source, flags: e.flags } };case "date":return { $date: e.toISOString() };default:return e;}}function Pt(e) {return e && e.content && e.content.$method;}var At = /*#__PURE__*/function () {function At(e, t, n) {_classCallCheck(this, At);this.content = e, this.prevStage = t || null, this.udb = null, this._database = n;}_createClass(At, [{ key: "toJSON", value: function toJSON() {var e = this;var t = [e.content];for (; e.prevStage;) {e = e.prevStage, t.push(e.content);}return { $db: t.reverse().map(function (e) {return { $method: e.$method, $param: St(e.$param) };}) };} }, { key: "getAction", value: function getAction() {var e = this.toJSON().$db.find(function (e) {return "action" === e.$method;});return e && e.$param && e.$param[0];} }, { key: "getCommand", value: function getCommand() {return { $db: this.toJSON().$db.filter(function (e) {return "action" !== e.$method;}) };} }, { key: "get", value: function get() {return this._send("get", Array.from(arguments));} }, { key: "add", value: function add() {return this._send("add", Array.from(arguments));} }, { key: "update", value: function update() {return this._send("update", Array.from(arguments));} }, { key: "end", value: function end() {return this._send("end", Array.from(arguments));} }, { key: "_send", value: function _send(e, t) {var n = this.getAction(),s = this.getCommand();if (s.$db.push({ $method: e, $param: St(t) }), d) {var _e24 = s.$db.find(function (e) {return "collection" === e.$method;}),_t11 = _e24 && _e24.$param;_t11 && 1 === _t11.length && "string" == typeof _e24.$param[0] && _e24.$param[0].indexOf(",") > -1 && console.warn("检测到使用JQL语法联表查询时，未使用getTemp先过滤主表数据，在主表数据量大的情况下可能会查询缓慢。\n- 如何优化请参考此文档：https://uniapp.dcloud.net.cn/uniCloud/jql?id=lookup-with-temp \n- 如果主表数据量很小请忽略此信息，项目发行时不会出现此提示。");}return this._database._callCloudFunction({ action: n, command: s });} }, { key: "isAggregate", get: function get() {var e = this;for (; e;) {var t = Pt(e),_n6 = Pt(e.prevStage);if ("aggregate" === t && "collection" === _n6 || "pipeline" === t) return !0;e = e.prevStage;}return !1;} }, { key: "isCommand", get: function get() {var e = this;for (; e;) {if ("command" === Pt(e)) return !0;e = e.prevStage;}return !1;} }, { key: "isAggregateCommand", get: function get() {var e = this;for (; e;) {var t = Pt(e),_n7 = Pt(e.prevStage);if ("aggregate" === t && "command" === _n7) return !0;e = e.prevStage;}return !1;} }, { key: "count", get: function get() {if (!this.isAggregate) return function () {return this._send("count", Array.from(arguments));};var e = this;return function () {return It({ $method: "count", $param: St(Array.from(arguments)) }, e, this._database);};} }, { key: "remove", get: function get() {if (!this.isCommand) return function () {return this._send("remove", Array.from(arguments));};var e = this;return function () {return It({ $method: "remove", $param: St(Array.from(arguments)) }, e, this._database);};} }, { key: "set", get: function get() {if (!this.isCommand) return function () {throw new Error("JQL禁止使用set方法");};var e = this;return function () {return It({ $method: "set", $param: St(Array.from(arguments)) }, e, this._database);};} }]);return At;}();function It(e, t, n) {return wt(new At(e, t, n), { get: function get(e, t) {var s = "db";return e && e.content && (s = e.content.$method), Tt(s, t) ? It({ $method: t }, e, n) : function () {return It({ $method: t, $param: St(Array.from(arguments)) }, e, n);};} });}function bt(_ref25) {var e = _ref25.path,t = _ref25.method;return /*#__PURE__*/function () {function _class2() {_classCallCheck(this, _class2);this.param = Array.from(arguments);}_createClass(_class2, [{ key: "toJSON", value: function toJSON() {return { $newDb: [].concat(_toConsumableArray(e.map(function (e) {return { $method: e };})), [{ $method: t, $param: this.param }]) };} }]);return _class2;}();}var Ot = /*#__PURE__*/function (_ref26) {_inherits(Ot, _ref26);var _super9 = _createSuper(Ot);function Ot() {_classCallCheck(this, Ot);return _super9.apply(this, arguments);}_createClass(Ot, [{ key: "_callCloudFunction", value: function _callCloudFunction(_ref27) {var _this17 = this;var e = _ref27.action,t = _ref27.command,n = _ref27.multiCommand,s = _ref27.queryList;function o(e, t) {if (n && s) for (var _n8 = 0; _n8 < s.length; _n8++) {var _o4 = s[_n8];_o4.udb && "function" == typeof _o4.udb.setResult && (t ? _o4.udb.setResult(t) : _o4.udb.setResult(e.result.dataList[_n8]));}}var r = this;function i(e) {return r._callback("error", [e]), A(I("database", "fail"), e).then(function () {return A(I("database", "complete"), e);}).then(function () {return o(null, e), F(C, { type: U, content: e }), Promise.reject(e);});}var a = A(I("database", "invoke")),u = this._uniClient;return a.then(function () {return u.callFunction({ name: "DCloud-clientDB", type: c, data: { action: e, command: t, multiCommand: n } });}).then(function (e) {var _e$result = e.result,t = _e$result.code,n = _e$result.message,s = _e$result.token,r = _e$result.tokenExpired,_e$result$systemInfo = _e$result.systemInfo,a = _e$result$systemInfo === void 0 ? [] : _e$result$systemInfo;if (a) for (var _e25 = 0; _e25 < a.length; _e25++) {var _a$_e = a[_e25],_t12 = _a$_e.level,_n9 = _a$_e.message,_s10 = _a$_e.detail,_o5 = console["app" === g && "warn" === _t12 ? "error" : _t12] || console.log;var _r3 = "[System Info]" + _n9;_s10 && (_r3 = "".concat(_r3, "\n\u8BE6\u7EC6\u4FE1\u606F\uFF1A").concat(_s10)), _o5(_r3);}if (t) {return i(new B({ code: t, message: n, requestId: e.requestId }));}e.result.errCode = e.result.code, e.result.errMsg = e.result.message, s && r && (it({ token: s, tokenExpired: r }), _this17._callbackAuth("refreshToken", [{ token: s, tokenExpired: r }]), _this17._callback("refreshToken", [{ token: s, tokenExpired: r }]), F(R, { token: s, tokenExpired: r }));var c = [{ prop: "affectedDocs", tips: "affectedDocs不再推荐使用，请使用inserted/deleted/updated/data.length替代" }, { prop: "code", tips: "code不再推荐使用，请使用errCode替代" }, { prop: "message", tips: "message不再推荐使用，请使用errMsg替代" }];var _loop = function _loop(_t13) {var _c$_t = c[_t13],n = _c$_t.prop,s = _c$_t.tips;if (n in e.result) {var _t14 = e.result[n];Object.defineProperty(e.result, n, { get: function get() {return console.warn(s), _t14;} });}};for (var _t13 = 0; _t13 < c.length; _t13++) {_loop(_t13);}return function (e) {return A(I("database", "success"), e).then(function () {return A(I("database", "complete"), e);}).then(function () {return o(e, null), F(C, { type: U, content: e }), Promise.resolve(e);});}(e);}, function (e) {/fc_function_not_found|FUNCTION_NOT_FOUND/g.test(e.message) && console.warn("clientDB未初始化，请在web控制台保存一次schema以开启clientDB");return i(new B({ code: e.code || "SYSTEM_ERROR", message: e.message, requestId: e.requestId }));});} }]);return Ot;}( /*#__PURE__*/function () {function _class3() {var _ref28 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref28$uniClient = _ref28.uniClient,e = _ref28$uniClient === void 0 ? {} : _ref28$uniClient;_classCallCheck(this, _class3);this._uniClient = e, this._authCallBacks = {}, this._dbCallBacks = {}, e.isDefault && (this._dbCallBacks = k("_globalUniCloudDatabaseCallback")), this.auth = kt(this._authCallBacks), Object.assign(this, kt(this._dbCallBacks)), this.env = wt({}, { get: function get(e, t) {return { $env: t };} }), this.Geo = wt({}, { get: function get(e, t) {return bt({ path: ["Geo"], method: t });} }), this.serverDate = bt({ path: [], method: "serverDate" }), this.RegExp = bt({ path: [], method: "RegExp" });}_createClass(_class3, [{ key: "getCloudEnv", value: function getCloudEnv(e) {if ("string" != typeof e || !e.trim()) throw new Error("getCloudEnv参数错误");return { $env: e.replace("$cloudEnv_", "") };} }, { key: "_callback", value: function _callback(e, t) {var n = this._dbCallBacks;n[e] && n[e].forEach(function (e) {e.apply(void 0, _toConsumableArray(t));});} }, { key: "_callbackAuth", value: function _callbackAuth(e, t) {var n = this._authCallBacks;n[e] && n[e].forEach(function (e) {e.apply(void 0, _toConsumableArray(t));});} }, { key: "multiSend", value: function multiSend() {var e = Array.from(arguments),t = e.map(function (e) {var t = e.getAction(),n = e.getCommand();if ("getTemp" !== n.$db[n.$db.length - 1].$method) throw new Error("multiSend只支持子命令内使用getTemp");return { action: t, command: n };});return this._callCloudFunction({ multiCommand: t, queryList: e });} }]);return _class3;}());function Ct(e) {e.database = function (t) {if (t && Object.keys(t).length > 0) return e.init(t).database();if (this._database) return this._database;var n = function (e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};return wt(new e(t), { get: function get(e, t) {return Tt("db", t) ? It({ $method: t }, null, e) : function () {return It({ $method: t, $param: St(Array.from(arguments)) }, null, e);};} });}(Ot, { uniClient: e });return this._database = n, n;};}var Et = "token无效，跳转登录页面",Rt = "token过期，跳转登录页面",Ut = { TOKEN_INVALID_TOKEN_EXPIRED: Rt, TOKEN_INVALID_INVALID_CLIENTID: Et, TOKEN_INVALID: Et, TOKEN_INVALID_WRONG_TOKEN: Et, TOKEN_INVALID_ANONYMOUS_USER: Et },xt = { "uni-id-token-expired": Rt, "uni-id-check-token-failed": Et, "uni-id-token-not-exist": Et, "uni-id-check-device-feature-failed": Et };function Lt(e, t) {var n = "";return n = e ? "".concat(e, "/").concat(t) : t, n.replace(/^\//, "");}function Dt() {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";var n = [],s = [];return e.forEach(function (e) {!0 === e.needLogin ? n.push(Lt(t, e.path)) : !1 === e.needLogin && s.push(Lt(t, e.path));}), { needLoginPage: n, notNeedLoginPage: s };}function Nt(e) {return e.split("?")[0].replace(/^\//, "");}function qt() {return function (e) {var t = e && e.$page && e.$page.fullPath || "";return t ? ("/" !== t.charAt(0) && (t = "/" + t), t) : t;}(function () {var e = getCurrentPages();return e[e.length - 1];}());}function Ft() {return Nt(qt());}function Mt() {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};if (!e) return !1;if (!(t && t.list && t.list.length)) return !1;var n = t.list,s = Nt(e);return n.some(function (e) {return e.pagePath === s;});}var jt = !!_pages.default.uniIdRouter;var _ref29 = function () {var _ref30 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _pages.default,_ref30$pages = _ref30.pages,e = _ref30$pages === void 0 ? [] : _ref30$pages,_ref30$subPackages = _ref30.subPackages,n = _ref30$subPackages === void 0 ? [] : _ref30$subPackages,_ref30$uniIdRouter = _ref30.uniIdRouter,s = _ref30$uniIdRouter === void 0 ? {} : _ref30$uniIdRouter,_ref30$tabBar = _ref30.tabBar,o = _ref30$tabBar === void 0 ? {} : _ref30$tabBar;var r = s.loginPage,_s$needLogin = s.needLogin,i = _s$needLogin === void 0 ? [] : _s$needLogin,_s$resToLogin = s.resToLogin,a = _s$resToLogin === void 0 ? !0 : _s$resToLogin,_Dt = Dt(e),c = _Dt.needLoginPage,u = _Dt.notNeedLoginPage,_ref31 = function () {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];var t = [],n = [];return e.forEach(function (e) {var s = e.root,_e$pages = e.pages,o = _e$pages === void 0 ? [] : _e$pages,_Dt2 = Dt(o, s),r = _Dt2.needLoginPage,i = _Dt2.notNeedLoginPage;t.push.apply(t, _toConsumableArray(r)), n.push.apply(n, _toConsumableArray(i));}), { needLoginPage: t, notNeedLoginPage: n };}(n),l = _ref31.needLoginPage,h = _ref31.notNeedLoginPage;return { loginPage: r, routerNeedLogin: i, resToLogin: a, needLoginPage: [].concat(_toConsumableArray(c), _toConsumableArray(l)), notNeedLoginPage: [].concat(_toConsumableArray(u), _toConsumableArray(h)), loginPageInTabBar: Mt(r, o) };}(),$t = _ref29.loginPage,Kt = _ref29.routerNeedLogin,Bt = _ref29.resToLogin,Ht = _ref29.needLoginPage,Wt = _ref29.notNeedLoginPage,zt = _ref29.loginPageInTabBar;if (Ht.indexOf($t) > -1) throw new Error("Login page [".concat($t, "] should not be \"needLogin\", please check your pages.json"));function Jt(e) {var t = Nt(function (e) {var t = Ft(),n = e.charAt(0),s = e.split("?")[0];if ("/" === n) return s;var o = s.replace(/^\//, "").split("/"),r = t.split("/");r.pop();for (var _e26 = 0; _e26 < o.length; _e26++) {var _t15 = o[_e26];".." === _t15 ? r.pop() : "." !== _t15 && r.push(_t15);}return "" === r[0] && r.shift(), r.join("/");}(e));return !(Wt.indexOf(t) > -1) && (Ht.indexOf(t) > -1 || Kt.some(function (t) {return function (e, t) {return new RegExp(t).test(e);}(e, t);}));}function Vt(_ref32) {var e = _ref32.redirect;var t = Nt(e),n = Nt($t);return Ft() !== n && t !== n;}function Yt() {var _ref33 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref33.api,t = _ref33.redirect;if (!t || !Vt({ redirect: t })) return;var n = function (e, t) {return "/" !== e.charAt(0) && (e = "/" + e), t ? e.indexOf("?") > -1 ? e + "&uniIdRedirectUrl=".concat(encodeURIComponent(t)) : e + "?uniIdRedirectUrl=".concat(encodeURIComponent(t)) : e;}($t, t);zt ? "navigateTo" !== e && "redirectTo" !== e || (e = "switchTab") : "switchTab" === e && (e = "navigateTo"), setTimeout(function () {uni[e]({ url: n });});}function Xt() {var _ref34 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref34.url;var t = { abortLoginPageJump: !1, autoToLoginPage: !1 },n = function () {var _rt3 = rt(),e = _rt3.token,t = _rt3.tokenExpired;var n;if (e) {if (t < Date.now()) {var _e27 = "uni-id-token-expired";n = { errCode: _e27, errMsg: xt[_e27] };}} else {var _e28 = "uni-id-check-token-failed";n = { errCode: _e28, errMsg: xt[_e28] };}return n;}();if (Jt(e) && n) {n.uniIdRedirectUrl = e;if (D(E).length > 0) return setTimeout(function () {F(E, n);}, 0), t.abortLoginPageJump = !0, t;t.autoToLoginPage = !0;}return t;}function Gt() {!function () {var e = qt(),_Xt = Xt({ url: e }),t = _Xt.abortLoginPageJump,n = _Xt.autoToLoginPage;t || n && Yt({ api: "redirectTo", redirect: e });}();var e = ["navigateTo", "redirectTo", "reLaunch", "switchTab"];var _loop2 = function _loop2(_t16) {var n = e[_t16];uni.addInterceptor(n, { invoke: function invoke(e) {var _Xt2 = Xt({ url: e.url }),t = _Xt2.abortLoginPageJump,s = _Xt2.autoToLoginPage;return t ? e : s ? (Yt({ api: n, redirect: e.url }), !1) : e;} });};for (var _t16 = 0; _t16 < e.length; _t16++) {_loop2(_t16);}}function Qt() {this.onResponse(function (e) {var t = e.type,n = e.content;var s = !1;switch (t) {case "cloudobject":s = function (e) {var t = e.errCode;return t in xt;}(n);break;case "clientdb":s = function (e) {var t = e.errCode;return t in Ut;}(n);}s && function () {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var t = D(E);$().then(function () {var n = qt();if (n && Vt({ redirect: n })) return t.length > 0 ? F(E, Object.assign({ uniIdRedirectUrl: n }, e)) : void ($t && Yt({ api: "navigateTo", redirect: n }));});}(n);});}function Zt(e) {!function (e) {e.onResponse = function (e) {N(C, e);}, e.offResponse = function (e) {q(C, e);};}(e), function (e) {e.onNeedLogin = function (e) {N(E, e);}, e.offNeedLogin = function (e) {q(E, e);}, jt && (k("uni-cloud-status").needLoginInit || (k("uni-cloud-status").needLoginInit = !0, $().then(function () {Gt.call(e);}), Bt && Qt.call(e)));}(e), function (e) {e.onRefreshToken = function (e) {N(R, e);}, e.offRefreshToken = function (e) {q(R, e);};}(e);}var en;var tn = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",nn = /^(?:[A-Za-z\d+/]{4})*?(?:[A-Za-z\d+/]{2}(?:==)?|[A-Za-z\d+/]{3}=?)?$/;function sn() {var e = rt().token || "",t = e.split(".");if (!e || 3 !== t.length) return { uid: null, role: [], permission: [], tokenExpired: 0 };var n;try {n = JSON.parse((s = t[1], decodeURIComponent(en(s).split("").map(function (e) {return "%" + ("00" + e.charCodeAt(0).toString(16)).slice(-2);}).join(""))));} catch (e) {throw new Error("获取当前用户信息出错，详细错误信息为：" + e.message);}var s;return n.tokenExpired = 1e3 * n.exp, delete n.exp, delete n.iat, n;}en = "function" != typeof atob ? function (e) {if (e = String(e).replace(/[\t\n\f\r ]+/g, ""), !nn.test(e)) throw new Error("Failed to execute 'atob' on 'Window': The string to be decoded is not correctly encoded.");var t;e += "==".slice(2 - (3 & e.length));for (var n, s, o = "", r = 0; r < e.length;) {t = tn.indexOf(e.charAt(r++)) << 18 | tn.indexOf(e.charAt(r++)) << 12 | (n = tn.indexOf(e.charAt(r++))) << 6 | (s = tn.indexOf(e.charAt(r++))), o += 64 === n ? String.fromCharCode(t >> 16 & 255) : 64 === s ? String.fromCharCode(t >> 16 & 255, t >> 8 & 255) : String.fromCharCode(t >> 16 & 255, t >> 8 & 255, 255 & t);}return o;} : atob;var on = s(function (e, t) {Object.defineProperty(t, "__esModule", { value: !0 });var n = "chooseAndUploadFile:ok",s = "chooseAndUploadFile:fail";function o(e, t) {return e.tempFiles.forEach(function (e, n) {e.name || (e.name = e.path.substring(e.path.lastIndexOf("/") + 1)), t && (e.fileType = t), e.cloudPath = Date.now() + "_" + n + e.name.substring(e.name.lastIndexOf("."));}), e.tempFilePaths || (e.tempFilePaths = e.tempFiles.map(function (e) {return e.path;})), e;}function r(e, t, _ref35) {var s = _ref35.onChooseFile,o = _ref35.onUploadProgress;return t.then(function (e) {if (s) {var _t17 = s(e);if (void 0 !== _t17) return Promise.resolve(_t17).then(function (t) {return void 0 === t ? e : t;});}return e;}).then(function (t) {return !1 === t ? { errMsg: n, tempFilePaths: [], tempFiles: [] } : function (e, t) {var s = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 5;var o = arguments.length > 3 ? arguments[3] : undefined;(t = Object.assign({}, t)).errMsg = n;var r = t.tempFiles,i = r.length;var a = 0;return new Promise(function (n) {for (; a < s;) {c();}function c() {var s = a++;if (s >= i) return void (!r.find(function (e) {return !e.url && !e.errMsg;}) && n(t));var u = r[s];e.uploadFile({ filePath: u.path, cloudPath: u.cloudPath, fileType: u.fileType, onUploadProgress: function onUploadProgress(e) {e.index = s, e.tempFile = u, e.tempFilePath = u.path, o && o(e);} }).then(function (e) {u.url = e.fileID, s < i && c();}).catch(function (e) {u.errMsg = e.errMsg || e.message, s < i && c();});}});}(e, t, 5, o);});}t.initChooseAndUploadFile = function (e) {return function () {var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { type: "all" };return "image" === t.type ? r(e, function (e) {var t = e.count,n = e.sizeType,_e$sourceType = e.sourceType,r = _e$sourceType === void 0 ? ["album", "camera"] : _e$sourceType,i = e.extension;return new Promise(function (e, a) {uni.chooseImage({ count: t, sizeType: n, sourceType: r, extension: i, success: function success(t) {e(o(t, "image"));}, fail: function fail(e) {a({ errMsg: e.errMsg.replace("chooseImage:fail", s) });} });});}(t), t) : "video" === t.type ? r(e, function (e) {var t = e.camera,n = e.compressed,r = e.maxDuration,_e$sourceType2 = e.sourceType,i = _e$sourceType2 === void 0 ? ["album", "camera"] : _e$sourceType2,a = e.extension;return new Promise(function (e, c) {uni.chooseVideo({ camera: t, compressed: n, maxDuration: r, sourceType: i, extension: a, success: function success(t) {var n = t.tempFilePath,s = t.duration,r = t.size,i = t.height,a = t.width;e(o({ errMsg: "chooseVideo:ok", tempFilePaths: [n], tempFiles: [{ name: t.tempFile && t.tempFile.name || "", path: n, size: r, type: t.tempFile && t.tempFile.type || "", width: a, height: i, duration: s, fileType: "video", cloudPath: "" }] }, "video"));}, fail: function fail(e) {c({ errMsg: e.errMsg.replace("chooseVideo:fail", s) });} });});}(t), t) : r(e, function (e) {var t = e.count,n = e.extension;return new Promise(function (e, r) {var i = uni.chooseFile;if ("undefined" != typeof wx && "function" == typeof wx.chooseMessageFile && (i = wx.chooseMessageFile), "function" != typeof i) return r({ errMsg: s + " 请指定 type 类型，该平台仅支持选择 image 或 video。" });i({ type: "all", count: t, extension: n, success: function success(t) {e(o(t));}, fail: function fail(e) {r({ errMsg: e.errMsg.replace("chooseFile:fail", s) });} });});}(t), t);};};}),rn = n(on);var an = "manual";function cn(e) {return { props: { localdata: { type: Array, default: function _default() {return [];} }, options: { type: [Object, Array], default: function _default() {return {};} }, spaceInfo: { type: Object, default: function _default() {return {};} }, collection: { type: [String, Array], default: "" }, action: { type: String, default: "" }, field: { type: String, default: "" }, orderby: { type: String, default: "" }, where: { type: [String, Object], default: "" }, pageData: { type: String, default: "add" }, pageCurrent: { type: Number, default: 1 }, pageSize: { type: Number, default: 20 }, getcount: { type: [Boolean, String], default: !1 }, gettree: { type: [Boolean, String], default: !1 }, gettreepath: { type: [Boolean, String], default: !1 }, startwith: { type: String, default: "" }, limitlevel: { type: Number, default: 10 }, groupby: { type: String, default: "" }, groupField: { type: String, default: "" }, distinct: { type: [Boolean, String], default: !1 }, foreignKey: { type: String, default: "" }, loadtime: { type: String, default: "auto" }, manual: { type: Boolean, default: !1 } }, data: function data() {return { mixinDatacomLoading: !1, mixinDatacomHasMore: !1, mixinDatacomResData: [], mixinDatacomErrorMessage: "", mixinDatacomPage: {} };}, created: function created() {var _this18 = this;this.mixinDatacomPage = { current: this.pageCurrent, size: this.pageSize, count: 0 }, this.$watch(function () {var e = [];return ["pageCurrent", "pageSize", "localdata", "collection", "action", "field", "orderby", "where", "getont", "getcount", "gettree", "groupby", "groupField", "distinct"].forEach(function (t) {e.push(_this18[t]);}), e;}, function (e, t) {if (_this18.loadtime === an) return;var n = !1;var s = [];for (var _o6 = 2; _o6 < e.length; _o6++) {e[_o6] !== t[_o6] && (s.push(e[_o6]), n = !0);}e[0] !== t[0] && (_this18.mixinDatacomPage.current = _this18.pageCurrent), _this18.mixinDatacomPage.size = _this18.pageSize, _this18.onMixinDatacomPropsChange(n, s);});}, methods: { onMixinDatacomPropsChange: function onMixinDatacomPropsChange(e, t) {}, mixinDatacomEasyGet: function mixinDatacomEasyGet() {var _this19 = this;var _ref36 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref36$getone = _ref36.getone,e = _ref36$getone === void 0 ? !1 : _ref36$getone,t = _ref36.success,n = _ref36.fail;this.mixinDatacomLoading || (this.mixinDatacomLoading = !0, this.mixinDatacomErrorMessage = "", this.mixinDatacomGet().then(function (n) {_this19.mixinDatacomLoading = !1;var _n$result = n.result,s = _n$result.data,o = _n$result.count;_this19.getcount && (_this19.mixinDatacomPage.count = o), _this19.mixinDatacomHasMore = s.length < _this19.pageSize;var r = e ? s.length ? s[0] : void 0 : s;_this19.mixinDatacomResData = r, t && t(r);}).catch(function (e) {_this19.mixinDatacomLoading = !1, _this19.mixinDatacomErrorMessage = e, n && n(e);}));}, mixinDatacomGet: function mixinDatacomGet() {var _n10;var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var n = e.database(this.spaceInfo);var s = t.action || this.action;s && (n = n.action(s));var o = t.collection || this.collection;n = Array.isArray(o) ? (_n10 = n).collection.apply(_n10, _toConsumableArray(o)) : n.collection(o);var r = t.where || this.where;r && Object.keys(r).length && (n = n.where(r));var i = t.field || this.field;i && (n = n.field(i));var a = t.foreignKey || this.foreignKey;a && (n = n.foreignKey(a));var c = t.groupby || this.groupby;c && (n = n.groupBy(c));var u = t.groupField || this.groupField;u && (n = n.groupField(u));!0 === (void 0 !== t.distinct ? t.distinct : this.distinct) && (n = n.distinct());var l = t.orderby || this.orderby;l && (n = n.orderBy(l));var h = void 0 !== t.pageCurrent ? t.pageCurrent : this.mixinDatacomPage.current,d = void 0 !== t.pageSize ? t.pageSize : this.mixinDatacomPage.size,f = void 0 !== t.getcount ? t.getcount : this.getcount,g = void 0 !== t.gettree ? t.gettree : this.gettree,p = void 0 !== t.gettreepath ? t.gettreepath : this.gettreepath,m = { getCount: f },y = { limitLevel: void 0 !== t.limitlevel ? t.limitlevel : this.limitlevel, startWith: void 0 !== t.startwith ? t.startwith : this.startwith };return g && (m.getTree = y), p && (m.getTreePath = y), n = n.skip(d * (h - 1)).limit(d).get(m), n;} } };}function un(e) {return function (t) {var n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};n = function (e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};return e.customUI = t.customUI || e.customUI, Object.assign(e.loadingOptions, t.loadingOptions), Object.assign(e.errorOptions, t.errorOptions), "object" == typeof t.secretMethods && (e.secretMethods = t.secretMethods), e;}({ customUI: !1, loadingOptions: { title: "加载中...", mask: !0 }, errorOptions: { type: "modal", retry: !1 } }, n);var _n11 = n,s = _n11.customUI,o = _n11.loadingOptions,r = _n11.errorOptions,i = !s;return new Proxy({}, { get: function get(s, c) {return function () {var _ref37 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref37.fn,t = _ref37.interceptorName,n = _ref37.getCallbackArgs;return /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee31() {var _len,s,_key,o,r,i,_args31 = arguments;return _regenerator.default.wrap(function _callee31$(_context31) {while (1) {switch (_context31.prev = _context31.next) {case 0:for (_len = _args31.length, s = new Array(_len), _key = 0; _key < _len; _key++) {s[_key] = _args31[_key];}o = n ? n({ params: s }) : {};_context31.prev = 2;_context31.next = 5;return A(I(t, "invoke"), _objectSpread({}, o));case 5:_context31.next = 7;return e.apply(void 0, s);case 7:r = _context31.sent;_context31.next = 10;return A(I(t, "success"), _objectSpread(_objectSpread({}, o), {}, { result: r }));case 10:return _context31.abrupt("return", r);case 13:_context31.prev = 13;_context31.t0 = _context31["catch"](2);i = _context31.t0;_context31.next = 18;return A(I(t, "fail"), _objectSpread(_objectSpread({}, o), {}, { error: i }));case 18:throw i;case 19:_context31.prev = 19;_context31.next = 22;return A(I(t, "complete"), i ? _objectSpread(_objectSpread({}, o), {}, { error: i }) : _objectSpread(_objectSpread({}, o), {}, { result: r }));case 22:return _context31.finish(19);case 23:case "end":return _context31.stop();}}}, _callee31, null, [[2, 13, 19, 23]]);}));}({ fn: function () {var _s11 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee33() {var l,_len2,u,_key2,h,_ref39,d,f,g,_yield,_e30,_e29,_args33 = arguments;return _regenerator.default.wrap(function _callee33$(_context33) {while (1) {switch (_context33.prev = _context33.next) {case 0:i && uni.showLoading({ title: o.title, mask: o.mask });for (_len2 = _args33.length, u = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {u[_key2] = _args33[_key2];}h = { name: t, type: a, data: { method: c, params: u } };"object" == typeof n.secretMethods && function (e, t) {var n = t.data.method,s = e.secretMethods[n];s && (t.secret = s);}(n, h);_context33.prev = 4;_context33.next = 7;return e.callFunction(h);case 7:l = _context33.sent;_context33.next = 13;break;case 10:_context33.prev = 10;_context33.t0 = _context33["catch"](4);l = { result: _context33.t0 };case 13:_ref39 = l.result || {}, d = _ref39.errCode, f = _ref39.errMsg, g = _ref39.newToken;if (!(i && uni.hideLoading(), g && g.token && g.tokenExpired && (it(g), F(R, _objectSpread({}, g))), d)) {_context33.next = 30;break;}if (!i) {_context33.next = 28;break;}if (!("toast" === r.type)) {_context33.next = 20;break;}uni.showToast({ title: f, icon: "none" });_context33.next = 28;break;case 20:if (!("modal" !== r.type)) {_context33.next = 22;break;}throw new Error("Invalid errorOptions.type: ".concat(r.type));case 22:_context33.next = 24;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee32() {var _ref41,e,t,n,s,o,_args32 = arguments;return _regenerator.default.wrap(function _callee32$(_context32) {while (1) {switch (_context32.prev = _context32.next) {case 0:_ref41 = _args32.length > 0 && _args32[0] !== undefined ? _args32[0] : {}, e = _ref41.title, t = _ref41.content, n = _ref41.showCancel, s = _ref41.cancelText, o = _ref41.confirmText;return _context32.abrupt("return", new Promise(function (r, i) {uni.showModal({ title: e, content: t, showCancel: n, cancelText: s, confirmText: o, success: function success(e) {r(e);}, fail: function fail() {r({ confirm: !1, cancel: !0 });} });}));case 2:case "end":return _context32.stop();}}}, _callee32);}))({ title: "提示", content: f, showCancel: r.retry, cancelText: "取消", confirmText: r.retry ? "重试" : "确定" });case 24:_yield = _context33.sent;_e30 = _yield.confirm;if (!(r.retry && _e30)) {_context33.next = 28;break;}return _context33.abrupt("return", s.apply(void 0, u));case 28:_e29 = new B({ code: d, message: f, requestId: l.requestId });throw _e29.detail = l.result, F(C, { type: L, content: _e29 }), _e29;case 30:return _context33.abrupt("return", (F(C, { type: L, content: l.result }), l.result));case 31:case "end":return _context33.stop();}}}, _callee33, null, [[4, 10]]);}));function s() {return _s11.apply(this, arguments);}return s;}(), interceptorName: "callObject", getCallbackArgs: function getCallbackArgs() {var _ref42 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref42.params;return { objectName: t, methodName: c, params: e };} });} });};}function ln(_x30, _x31) {return _ln.apply(this, arguments);}function _ln() {_ln = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee35(e, t) {var n, _e34, s;return _regenerator.default.wrap(function _callee35$(_context35) {while (1) {switch (_context35.prev = _context35.next) {case 0:n = "http://".concat(e, ":").concat(t, "/system/ping");_context35.prev = 1;_context35.next = 4;return s = { url: n, timeout: 500 }, new Promise(function (e, t) {V.request(_objectSpread(_objectSpread({}, s), {}, { success: function success(t) {e(t);}, fail: function fail(e) {t(e);} }));});case 4:_e34 = _context35.sent;return _context35.abrupt("return", !(!_e34.data || 0 !== _e34.data.code));case 8:_context35.prev = 8;_context35.t0 = _context35["catch"](1);return _context35.abrupt("return", !1);case 11:case "end":return _context35.stop();}}}, _callee35, null, [[1, 8]]);}));return _ln.apply(this, arguments);}function hn(e) {if (e.initUniCloudStatus && "rejected" !== e.initUniCloudStatus) return;var t = Promise.resolve();var n;n = 1, t = new Promise(function (e, t) {setTimeout(function () {e();}, n);}), e.isReady = !1, e.isDefault = !1;var s = e.auth();e.initUniCloudStatus = "pending", e.initUniCloud = t.then(function () {return s.getLoginState();}).then(function (e) {return e ? Promise.resolve() : s.signInAnonymously();}).then(function () {if (!d) return Promise.resolve();if ("app" === g) {var _uni$getSystemInfoSyn = uni.getSystemInfoSync(),_e31 = _uni$getSystemInfoSyn.osName,_t18 = _uni$getSystemInfoSyn.osVersion;"ios" === _e31 && function (e) {if (!e || "string" != typeof e) return 0;var t = e.match(/^(\d+)./);return t && t[1] ? parseInt(t[1]) : 0;}(_t18) >= 14 && console.warn("iOS 14及以上版本连接uniCloud本地调试服务需要允许客户端查找并连接到本地网络上的设备（仅开发模式生效，发行模式会连接uniCloud云端服务）");}if (d && e.__dev__.debugInfo) {var _e$__dev__$debugInfo = e.__dev__.debugInfo,_t19 = _e$__dev__$debugInfo.address,_n12 = _e$__dev__$debugInfo.servePort;return function () {var _ref43 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee34(e, t) {var n, _s12, _o7;return _regenerator.default.wrap(function _callee34$(_context34) {while (1) {switch (_context34.prev = _context34.next) {case 0:_s12 = 0;case 1:if (!(_s12 < e.length)) {_context34.next = 11;break;}_o7 = e[_s12];_context34.next = 5;return ln(_o7, t);case 5:if (!_context34.sent) {_context34.next = 8;break;}n = _o7;return _context34.abrupt("break", 11);case 8:_s12++;_context34.next = 1;break;case 11:return _context34.abrupt("return", { address: n, port: t });case 12:case "end":return _context34.stop();}}}, _callee34);}));return function (_x32, _x33) {return _ref43.apply(this, arguments);};}()(_t19, _n12);}}).then(function () {var _ref44 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},t = _ref44.address,n = _ref44.port;if (!d) return Promise.resolve();var s = console["app" === g ? "error" : "warn"];if (t) e.__dev__.localAddress = t, e.__dev__.localPort = n;else if (e.__dev__.debugInfo) {var _t20 = "";"remote" === e.__dev__.debugInfo.initialLaunchType ? (e.__dev__.debugInfo.forceRemote = !0, _t20 = "当前客户端和HBuilderX不在同一局域网下（或其他网络原因无法连接HBuilderX），uniCloud本地调试服务不对当前客户端生效。\n- 如果不使用uniCloud本地调试服务，请直接忽略此信息。\n- 如需使用uniCloud本地调试服务，请将客户端与主机连接到同一局域网下并重新运行到客户端。\n- 如果在HBuilderX开启的状态下切换过网络环境，请重启HBuilderX后再试\n- 检查系统防火墙是否拦截了HBuilderX自带的nodejs") : _t20 = "无法连接uniCloud本地调试服务，请检查当前客户端是否与主机在同一局域网下。\n- 如需使用uniCloud本地调试服务，请将客户端与主机连接到同一局域网下并重新运行到客户端。\n- 如果在HBuilderX开启的状态下切换过网络环境，请重启HBuilderX后再试\n- 检查系统防火墙是否拦截了HBuilderX自带的nodejs", "web" === g && (_t20 += "\n- 部分浏览器开启节流模式之后访问本地地址受限，请检查是否启用了节流模式"), 0 === g.indexOf("mp-") && (_t20 += "\n- 小程序中如何使用uniCloud，请参考：https://uniapp.dcloud.net.cn/uniCloud/publish.html#useinmp"), s(_t20);}}).then(function () {at(), e.isReady = !0, e.initUniCloudStatus = "fulfilled";}).catch(function (t) {console.error(t), e.initUniCloudStatus = "rejected";});}var dn = { tcb: ot, tencent: ot, aliyun: Q, private: ut };var fn = new ( /*#__PURE__*/function () {function _class4() {_classCallCheck(this, _class4);}_createClass(_class4, [{ key: "init", value: function init(e) {var t = {};var n = dn[e.provider];if (!n) throw new Error("未提供正确的provider参数");t = n.init(e), t.__dev__ = {}, t.__dev__.debugLog = d && ("web" === g && navigator.userAgent.indexOf("HBuilderX") > 0 || "app" === g);var s = p;d && s && !s.code && (t.__dev__.debugInfo = s), hn(t), t.reInit = function () {hn(this);}, yt(t), function (e) {var t = e.uploadFile;e.uploadFile = function (e) {return t.call(this, e);};}(t), Ct(t), function (e) {e.getCurrentUserInfo = sn, e.chooseAndUploadFile = rn.initChooseAndUploadFile(e), Object.assign(e, { get mixinDatacom() {return cn(e);} }), e.importObject = un(e);}(t);return ["callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile", "chooseAndUploadFile"].forEach(function (e) {if (!t[e]) return;var n = t[e];t[e] = function () {return t.reInit(), n.apply(t, Array.from(arguments));}, t[e] = K(t[e], e).bind(t);}), t.init = this.init, t;} }]);return _class4;}())();(function () {var e = m;var t = {};if (e && 1 === e.length) t = e[0], fn = fn.init(t), fn.isDefault = !0;else {var _t21 = ["auth", "callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile", "database", "getCurrentUSerInfo", "importObject"];var _n13;_n13 = e && e.length > 0 ? "应用有多个服务空间，请通过uniCloud.init方法指定要使用的服务空间" : y ? "应用未关联服务空间，请在uniCloud目录右键关联服务空间" : "uni-app cli项目内使用uniCloud需要使用HBuilderX的运行菜单运行项目，且需要在uniCloud目录关联服务空间", _t21.forEach(function (e) {fn[e] = function () {return console.error(_n13), Promise.reject(new B({ code: "SYS_ERR", message: _n13 }));};});}Object.assign(fn, { get mixinDatacom() {return cn(fn);} }), Zt(fn), fn.addInterceptor = S, fn.removeInterceptor = P, fn.interceptObject = b, d && "web" === g && (window.uniCloud = fn);})();var gn = fn;exports.default = gn;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 2), __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 181:
-/*!****************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/pages.json?{"type":"stat"} ***!
-  \****************************************************************/
+/***/ 183:
+/*!***************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/pages.json?{"type":"origin-pages-json"} ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "easycom": { "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue" }, "pages": [{ "path": "pages/login", "style": { "navigationBarTitleText": "登录" } }, { "path": "pages/nitrogen/nitrogen", "style": { "navigationBarTitleText": "充氮气调", "enablePullDownRefresh": true } }, { "path": "pages/homepage/home", "style": { "navigationBarTitleText": "首页", "navigationBarBackgroundColor": "#6147f4" } }, { "path": "pages/details/register", "style": { "navigationBarTitleText": "冷藏车注册" } }, { "path": "pages/details/tem", "style": { "navigationBarTitleText": "厢内外温湿度监测" } }, { "path": "pages/details/oil", "style": { "navigationBarTitleText": "实时油位" } }, { "path": "pages/details/tire_tem", "style": { "navigationBarTitleText": "胎温胎压监测" } }, { "path": "pages/details/elec_switch", "style": { "navigationBarTitleText": "用电器开关状态" } }, { "path": "pages/details/door", "style": { "navigationBarTitleText": "车门状态" } }, { "path": "pages/details/position", "style": { "navigationBarTitleText": "位置信息" } }, { "path": "pages/details/vibration", "style": { "navigationBarTitleText": "震动监测" } }, { "path": "pages/notice", "style": { "navigationBarTitleText": "通知" } }, { "path": "pages/history", "style": { "navigationBarTitleText": "历史记录" } }, { "path": "pages/myinfo/myinfo", "style": { "navigationBarTitleText": "我的信息" } }, { "path": "pages/myinfo/myinfo_address", "style": { "navigationBarTitleText": "" } }], "globalStyle": { "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#6147f4", "navigationBarTitleText": "冷藏车监控", "backgroundColor": "#F8F8F8" }, "tabBar": { "selectionColor": "#1890FF", "list": [{ "text": "首页", "pagePath": "pages/homepage/home", "iconPath": "static/img/home.png", "selectedIconPath": "static/img/home-active.png" }, { "text": "通知", "pagePath": "pages/notice", "iconPath": "static/img/notice.png", "selectedIconPath": "static/img/notice-active.png" }, { "text": "我的", "pagePath": "pages/myinfo/myinfo", "iconPath": "static/img/info.png", "selectedIconPath": "static/img/info-active.png" }] } };exports.default = _default;
+
+/***/ }),
+
+/***/ 184:
+/*!**************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/pages.json?{"type":"stat"} ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3526,10 +3976,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 182:
-/*!**********************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/qiun-data-charts/js_sdk/u-charts/u-charts.js ***!
-  \**********************************************************************************************/
+/***/ 185:
+/*!********************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/qiun-data-charts/js_sdk/u-charts/u-charts.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10350,10 +10800,10 @@ if ( true && typeof module.exports === "object") {
 
 /***/ }),
 
-/***/ 183:
-/*!****************************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/qiun-data-charts/js_sdk/u-charts/config-ucharts.js ***!
-  \****************************************************************************************************/
+/***/ 186:
+/*!**************************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/qiun-data-charts/js_sdk/u-charts/config-ucharts.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10981,9 +11431,9 @@ module.exports = {
 /***/ }),
 
 /***/ 19:
-/*!*****************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/colorGradient.js ***!
-  \*****************************************************************************/
+/*!***************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/colorGradient.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11156,9 +11606,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 20:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/guid.js ***!
-  \********************************************************************/
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/guid.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11208,9 +11658,9 @@ guid;exports.default = _default;
 /***/ }),
 
 /***/ 21:
-/*!*********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/color.js ***!
-  \*********************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/color.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11255,45 +11705,10 @@ color;exports.default = _default;
 
 /***/ }),
 
-/***/ 219:
-/*!*****************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/uni-popup/components/uni-popup/popup.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-{
-  data: function data() {
-    return {};
-
-
-  },
-  created: function created() {
-    this.popup = this.getParent();
-  },
-  methods: {
-    /**
-              * 获取父元素实例
-              */
-    getParent: function getParent() {var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
-      var parent = this.$parent;
-      var parentName = parent.$options.name;
-      while (parentName !== name) {
-        parent = parent.$parent;
-        if (!parent) return false;
-        parentName = parent.$options.name;
-      }
-      return parent;
-    } } };exports.default = _default;
-
-/***/ }),
-
 /***/ 22:
-/*!*************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/type2icon.js ***!
-  \*************************************************************************/
+/*!***********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/type2icon.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11336,10 +11751,63 @@ type2icon;exports.default = _default;
 
 /***/ }),
 
-/***/ 227:
-/*!********************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/uni-forms/components/uni-forms/validate.js ***!
-  \********************************************************************************************/
+/***/ 222:
+/*!***************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/uni-popup/components/uni-popup/popup.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+{
+  data: function data() {
+    return {};
+
+
+  },
+  created: function created() {
+    this.popup = this.getParent();
+  },
+  methods: {
+    /**
+              * 获取父元素实例
+              */
+    getParent: function getParent() {var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
+      var parent = this.$parent;
+      var parentName = parent.$options.name;
+      while (parentName !== name) {
+        parent = parent.$parent;
+        if (!parent) return false;
+        parentName = parent.$options.name;
+      }
+      return parent;
+    } } };exports.default = _default;
+
+/***/ }),
+
+/***/ 23:
+/*!*************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/randomArray.js ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 打乱数组
+function randomArray() {var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  // 原理是sort排序,Math.random()产生0<= x < 1之间的数,会导致x-0.05大于或者小于0
+  return array.sort(function () {return Math.random() - 0.5;});
+}var _default =
+
+randomArray;exports.default = _default;
+
+/***/ }),
+
+/***/ 230:
+/*!******************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/uni-forms/components/uni-forms/validate.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11833,10 +12301,10 @@ SchemaValidator;exports.default = _default;
 
 /***/ }),
 
-/***/ 228:
-/*!*****************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/uni-forms/components/uni-forms/utils.js ***!
-  \*****************************************************************************************/
+/***/ 231:
+/*!***************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/uni-forms/components/uni-forms/utils.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12137,28 +12605,10 @@ var isEqual = function isEqual(a, b) {
 
 /***/ }),
 
-/***/ 23:
-/*!***************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/randomArray.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 打乱数组
-function randomArray() {var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  // 原理是sort排序,Math.random()产生0<= x < 1之间的数,会导致x-0.05大于或者小于0
-  return array.sort(function () {return Math.random() - 0.5;});
-}var _default =
-
-randomArray;exports.default = _default;
-
-/***/ }),
-
 /***/ 24:
-/*!***********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/addUnit.js ***!
-  \***********************************************************************/
+/*!*********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/addUnit.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12175,9 +12625,9 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 /***/ }),
 
 /***/ 25:
-/*!**********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/random.js ***!
-  \**********************************************************************/
+/*!********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/random.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12196,9 +12646,9 @@ random;exports.default = _default;
 /***/ }),
 
 /***/ 26:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/trim.js ***!
-  \********************************************************************/
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/trim.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12222,9 +12672,9 @@ trim;exports.default = _default;
 /***/ }),
 
 /***/ 27:
-/*!*********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/toast.js ***!
-  \*********************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/toast.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12243,9 +12693,9 @@ toast;exports.default = _default;
 /***/ }),
 
 /***/ 28:
-/*!*************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/getParent.js ***!
-  \*************************************************************************/
+/*!***********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/getParent.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12301,9 +12751,9 @@ function getParent(name, keys) {
 /***/ }),
 
 /***/ 29:
-/*!***********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/$parent.js ***!
-  \***********************************************************************/
+/*!*********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/$parent.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12330,6 +12780,2109 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 /***/ }),
 
 /***/ 3:
+/*!*************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni, global) {Object.defineProperty(exports, "__esModule", { value: true });exports.compileI18nJsonStr = compileI18nJsonStr;exports.hasI18nJson = hasI18nJson;exports.initVueI18n = initVueI18n;exports.isI18nStr = isI18nStr;exports.normalizeLocale = normalizeLocale;exports.parseI18nJson = parseI18nJson;exports.resolveLocale = resolveLocale;exports.isString = exports.LOCALE_ZH_HANT = exports.LOCALE_ZH_HANS = exports.LOCALE_FR = exports.LOCALE_ES = exports.LOCALE_EN = exports.I18n = exports.Formatter = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var isArray = Array.isArray;
+var isObject = function isObject(val) {return val !== null && typeof val === 'object';};
+var defaultDelimiters = ['{', '}'];var
+BaseFormatter = /*#__PURE__*/function () {
+  function BaseFormatter() {_classCallCheck(this, BaseFormatter);
+    this._caches = Object.create(null);
+  }_createClass(BaseFormatter, [{ key: "interpolate", value: function interpolate(
+    message, values) {var delimiters = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : defaultDelimiters;
+      if (!values) {
+        return [message];
+      }
+      var tokens = this._caches[message];
+      if (!tokens) {
+        tokens = parse(message, delimiters);
+        this._caches[message] = tokens;
+      }
+      return compile(tokens, values);
+    } }]);return BaseFormatter;}();exports.Formatter = BaseFormatter;
+
+var RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
+var RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
+function parse(format, _ref) {var _ref2 = _slicedToArray(_ref, 2),startDelimiter = _ref2[0],endDelimiter = _ref2[1];
+  var tokens = [];
+  var position = 0;
+  var text = '';
+  while (position < format.length) {
+    var char = format[position++];
+    if (char === startDelimiter) {
+      if (text) {
+        tokens.push({ type: 'text', value: text });
+      }
+      text = '';
+      var sub = '';
+      char = format[position++];
+      while (char !== undefined && char !== endDelimiter) {
+        sub += char;
+        char = format[position++];
+      }
+      var isClosed = char === endDelimiter;
+      var type = RE_TOKEN_LIST_VALUE.test(sub) ?
+      'list' :
+      isClosed && RE_TOKEN_NAMED_VALUE.test(sub) ?
+      'named' :
+      'unknown';
+      tokens.push({ value: sub, type: type });
+    }
+    //  else if (char === '%') {
+    //   // when found rails i18n syntax, skip text capture
+    //   if (format[position] !== '{') {
+    //     text += char
+    //   }
+    // }
+    else {
+        text += char;
+      }
+  }
+  text && tokens.push({ type: 'text', value: text });
+  return tokens;
+}
+function compile(tokens, values) {
+  var compiled = [];
+  var index = 0;
+  var mode = isArray(values) ?
+  'list' :
+  isObject(values) ?
+  'named' :
+  'unknown';
+  if (mode === 'unknown') {
+    return compiled;
+  }
+  while (index < tokens.length) {
+    var token = tokens[index];
+    switch (token.type) {
+      case 'text':
+        compiled.push(token.value);
+        break;
+      case 'list':
+        compiled.push(values[parseInt(token.value, 10)]);
+        break;
+      case 'named':
+        if (mode === 'named') {
+          compiled.push(values[token.value]);
+        } else
+        {
+          if (true) {
+            console.warn("Type of token '".concat(token.type, "' and format of value '").concat(mode, "' don't match!"));
+          }
+        }
+        break;
+      case 'unknown':
+        if (true) {
+          console.warn("Detect 'unknown' type of token!");
+        }
+        break;}
+
+    index++;
+  }
+  return compiled;
+}
+
+var LOCALE_ZH_HANS = 'zh-Hans';exports.LOCALE_ZH_HANS = LOCALE_ZH_HANS;
+var LOCALE_ZH_HANT = 'zh-Hant';exports.LOCALE_ZH_HANT = LOCALE_ZH_HANT;
+var LOCALE_EN = 'en';exports.LOCALE_EN = LOCALE_EN;
+var LOCALE_FR = 'fr';exports.LOCALE_FR = LOCALE_FR;
+var LOCALE_ES = 'es';exports.LOCALE_ES = LOCALE_ES;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var hasOwn = function hasOwn(val, key) {return hasOwnProperty.call(val, key);};
+var defaultFormatter = new BaseFormatter();
+function include(str, parts) {
+  return !!parts.find(function (part) {return str.indexOf(part) !== -1;});
+}
+function startsWith(str, parts) {
+  return parts.find(function (part) {return str.indexOf(part) === 0;});
+}
+function normalizeLocale(locale, messages) {
+  if (!locale) {
+    return;
+  }
+  locale = locale.trim().replace(/_/g, '-');
+  if (messages && messages[locale]) {
+    return locale;
+  }
+  locale = locale.toLowerCase();
+  if (locale.indexOf('zh') === 0) {
+    if (locale.indexOf('-hans') > -1) {
+      return LOCALE_ZH_HANS;
+    }
+    if (locale.indexOf('-hant') > -1) {
+      return LOCALE_ZH_HANT;
+    }
+    if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
+      return LOCALE_ZH_HANT;
+    }
+    return LOCALE_ZH_HANS;
+  }
+  var lang = startsWith(locale, [LOCALE_EN, LOCALE_FR, LOCALE_ES]);
+  if (lang) {
+    return lang;
+  }
+}var
+I18n = /*#__PURE__*/function () {
+  function I18n(_ref3) {var locale = _ref3.locale,fallbackLocale = _ref3.fallbackLocale,messages = _ref3.messages,watcher = _ref3.watcher,formater = _ref3.formater;_classCallCheck(this, I18n);
+    this.locale = LOCALE_EN;
+    this.fallbackLocale = LOCALE_EN;
+    this.message = {};
+    this.messages = {};
+    this.watchers = [];
+    if (fallbackLocale) {
+      this.fallbackLocale = fallbackLocale;
+    }
+    this.formater = formater || defaultFormatter;
+    this.messages = messages || {};
+    this.setLocale(locale || LOCALE_EN);
+    if (watcher) {
+      this.watchLocale(watcher);
+    }
+  }_createClass(I18n, [{ key: "setLocale", value: function setLocale(
+    locale) {var _this = this;
+      var oldLocale = this.locale;
+      this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
+      if (!this.messages[this.locale]) {
+        // 可能初始化时不存在
+        this.messages[this.locale] = {};
+      }
+      this.message = this.messages[this.locale];
+      // 仅发生变化时，通知
+      if (oldLocale !== this.locale) {
+        this.watchers.forEach(function (watcher) {
+          watcher(_this.locale, oldLocale);
+        });
+      }
+    } }, { key: "getLocale", value: function getLocale()
+    {
+      return this.locale;
+    } }, { key: "watchLocale", value: function watchLocale(
+    fn) {var _this2 = this;
+      var index = this.watchers.push(fn) - 1;
+      return function () {
+        _this2.watchers.splice(index, 1);
+      };
+    } }, { key: "add", value: function add(
+    locale, message) {var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var curMessages = this.messages[locale];
+      if (curMessages) {
+        if (override) {
+          Object.assign(curMessages, message);
+        } else
+        {
+          Object.keys(message).forEach(function (key) {
+            if (!hasOwn(curMessages, key)) {
+              curMessages[key] = message[key];
+            }
+          });
+        }
+      } else
+      {
+        this.messages[locale] = message;
+      }
+    } }, { key: "f", value: function f(
+    message, values, delimiters) {
+      return this.formater.interpolate(message, values, delimiters).join('');
+    } }, { key: "t", value: function t(
+    key, locale, values) {
+      var message = this.message;
+      if (typeof locale === 'string') {
+        locale = normalizeLocale(locale, this.messages);
+        locale && (message = this.messages[locale]);
+      } else
+      {
+        values = locale;
+      }
+      if (!hasOwn(message, key)) {
+        console.warn("Cannot translate the value of keypath ".concat(key, ". Use the value of keypath as default."));
+        return key;
+      }
+      return this.formater.interpolate(message[key], values).join('');
+    } }]);return I18n;}();exports.I18n = I18n;
+
+
+function watchAppLocale(appVm, i18n) {
+  // 需要保证 watch 的触发在组件渲染之前
+  if (appVm.$watchLocale) {
+    // vue2
+    appVm.$watchLocale(function (newLocale) {
+      i18n.setLocale(newLocale);
+    });
+  } else
+  {
+    appVm.$watch(function () {return appVm.$locale;}, function (newLocale) {
+      i18n.setLocale(newLocale);
+    });
+  }
+}
+function getDefaultLocale() {
+  if (typeof uni !== 'undefined' && uni.getLocale) {
+    return uni.getLocale();
+  }
+  // 小程序平台，uni 和 uni-i18n 互相引用，导致访问不到 uni，故在 global 上挂了 getLocale
+  if (typeof global !== 'undefined' && global.getLocale) {
+    return global.getLocale();
+  }
+  return LOCALE_EN;
+}
+function initVueI18n(locale) {var messages = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var fallbackLocale = arguments.length > 2 ? arguments[2] : undefined;var watcher = arguments.length > 3 ? arguments[3] : undefined;
+  // 兼容旧版本入参
+  if (typeof locale !== 'string') {var _ref4 =
+    [
+    messages,
+    locale];locale = _ref4[0];messages = _ref4[1];
+
+  }
+  if (typeof locale !== 'string') {
+    // 因为小程序平台，uni-i18n 和 uni 互相引用，导致此时访问 uni 时，为 undefined
+    locale = getDefaultLocale();
+  }
+  if (typeof fallbackLocale !== 'string') {
+    fallbackLocale =
+    typeof __uniConfig !== 'undefined' && __uniConfig.fallbackLocale ||
+    LOCALE_EN;
+  }
+  var i18n = new I18n({
+    locale: locale,
+    fallbackLocale: fallbackLocale,
+    messages: messages,
+    watcher: watcher });
+
+  var _t = function t(key, values) {
+    if (typeof getApp !== 'function') {
+      // app view
+      /* eslint-disable no-func-assign */
+      _t = function t(key, values) {
+        return i18n.t(key, values);
+      };
+    } else
+    {
+      var isWatchedAppLocale = false;
+      _t = function t(key, values) {
+        var appVm = getApp().$vm;
+        // 可能$vm还不存在，比如在支付宝小程序中，组件定义较早，在props的default里使用了t()函数（如uni-goods-nav），此时app还未初始化
+        // options: {
+        // 	type: Array,
+        // 	default () {
+        // 		return [{
+        // 			icon: 'shop',
+        // 			text: t("uni-goods-nav.options.shop"),
+        // 		}, {
+        // 			icon: 'cart',
+        // 			text: t("uni-goods-nav.options.cart")
+        // 		}]
+        // 	}
+        // },
+        if (appVm) {
+          // 触发响应式
+          appVm.$locale;
+          if (!isWatchedAppLocale) {
+            isWatchedAppLocale = true;
+            watchAppLocale(appVm, i18n);
+          }
+        }
+        return i18n.t(key, values);
+      };
+    }
+    return _t(key, values);
+  };
+  return {
+    i18n: i18n,
+    f: function f(message, values, delimiters) {
+      return i18n.f(message, values, delimiters);
+    },
+    t: function t(key, values) {
+      return _t(key, values);
+    },
+    add: function add(locale, message) {var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      return i18n.add(locale, message, override);
+    },
+    watch: function watch(fn) {
+      return i18n.watchLocale(fn);
+    },
+    getLocale: function getLocale() {
+      return i18n.getLocale();
+    },
+    setLocale: function setLocale(newLocale) {
+      return i18n.setLocale(newLocale);
+    } };
+
+}
+
+var isString = function isString(val) {return typeof val === 'string';};exports.isString = isString;
+var formater;
+function hasI18nJson(jsonObj, delimiters) {
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  return walkJsonObj(jsonObj, function (jsonObj, key) {
+    var value = jsonObj[key];
+    if (isString(value)) {
+      if (isI18nStr(value, delimiters)) {
+        return true;
+      }
+    } else
+    {
+      return hasI18nJson(value, delimiters);
+    }
+  });
+}
+function parseI18nJson(jsonObj, values, delimiters) {
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  walkJsonObj(jsonObj, function (jsonObj, key) {
+    var value = jsonObj[key];
+    if (isString(value)) {
+      if (isI18nStr(value, delimiters)) {
+        jsonObj[key] = compileStr(value, values, delimiters);
+      }
+    } else
+    {
+      parseI18nJson(value, values, delimiters);
+    }
+  });
+  return jsonObj;
+}
+function compileI18nJsonStr(jsonStr, _ref5) {var locale = _ref5.locale,locales = _ref5.locales,delimiters = _ref5.delimiters;
+  if (!isI18nStr(jsonStr, delimiters)) {
+    return jsonStr;
+  }
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  var localeValues = [];
+  Object.keys(locales).forEach(function (name) {
+    if (name !== locale) {
+      localeValues.push({
+        locale: name,
+        values: locales[name] });
+
+    }
+  });
+  localeValues.unshift({ locale: locale, values: locales[locale] });
+  try {
+    return JSON.stringify(compileJsonObj(JSON.parse(jsonStr), localeValues, delimiters), null, 2);
+  }
+  catch (e) {}
+  return jsonStr;
+}
+function isI18nStr(value, delimiters) {
+  return value.indexOf(delimiters[0]) > -1;
+}
+function compileStr(value, values, delimiters) {
+  return formater.interpolate(value, values, delimiters).join('');
+}
+function compileValue(jsonObj, key, localeValues, delimiters) {
+  var value = jsonObj[key];
+  if (isString(value)) {
+    // 存在国际化
+    if (isI18nStr(value, delimiters)) {
+      jsonObj[key] = compileStr(value, localeValues[0].values, delimiters);
+      if (localeValues.length > 1) {
+        // 格式化国际化语言
+        var valueLocales = jsonObj[key + 'Locales'] = {};
+        localeValues.forEach(function (localValue) {
+          valueLocales[localValue.locale] = compileStr(value, localValue.values, delimiters);
+        });
+      }
+    }
+  } else
+  {
+    compileJsonObj(value, localeValues, delimiters);
+  }
+}
+function compileJsonObj(jsonObj, localeValues, delimiters) {
+  walkJsonObj(jsonObj, function (jsonObj, key) {
+    compileValue(jsonObj, key, localeValues, delimiters);
+  });
+  return jsonObj;
+}
+function walkJsonObj(jsonObj, walk) {
+  if (isArray(jsonObj)) {
+    for (var i = 0; i < jsonObj.length; i++) {
+      if (walk(jsonObj, i)) {
+        return true;
+      }
+    }
+  } else
+  if (isObject(jsonObj)) {
+    for (var key in jsonObj) {
+      if (walk(jsonObj, key)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+function resolveLocale(locales) {
+  return function (locale) {
+    if (!locale) {
+      return locale;
+    }
+    locale = normalizeLocale(locale) || locale;
+    return resolveLocaleChain(locale).find(function (locale) {return locales.indexOf(locale) > -1;});
+  };
+}
+function resolveLocaleChain(locale) {
+  var chain = [];
+  var tokens = locale.split('-');
+  while (tokens.length) {
+    chain.push(tokens.join('-'));
+    tokens.pop();
+  }
+  return chain;
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 2)))
+
+/***/ }),
+
+/***/ 30:
+/*!*****************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/sys.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.os = os;exports.sys = sys;function os() {
+  return uni.getSystemInfoSync().platform;
+};
+
+function sys() {
+  return uni.getSystemInfoSync();
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 31:
+/*!**********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/debounce.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var timeout = null;
+
+/**
+                                                                                                                         * 防抖原理：一定时间内，只有最后一次操作，再过wait毫秒后才执行函数
+                                                                                                                         * 
+                                                                                                                         * @param {Function} func 要执行的回调函数 
+                                                                                                                         * @param {Number} wait 延时的时间
+                                                                                                                         * @param {Boolean} immediate 是否立即执行 
+                                                                                                                         * @return null
+                                                                                                                         */
+function debounce(func) {var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;var immediate = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  // 清除定时器
+  if (timeout !== null) clearTimeout(timeout);
+  // 立即执行，此类情况一般用不到
+  if (immediate) {
+    var callNow = !timeout;
+    timeout = setTimeout(function () {
+      timeout = null;
+    }, wait);
+    if (callNow) typeof func === 'function' && func();
+  } else {
+    // 设置定时器，当最后一次操作后，timeout不会再被清除，所以在延时wait毫秒后执行func回调方法
+    timeout = setTimeout(function () {
+      typeof func === 'function' && func();
+    }, wait);
+  }
+}var _default =
+
+debounce;exports.default = _default;
+
+/***/ }),
+
+/***/ 32:
+/*!**********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/throttle.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var timer, flag;
+/**
+                                                                                                                      * 节流原理：在一定时间内，只能触发一次
+                                                                                                                      * 
+                                                                                                                      * @param {Function} func 要执行的回调函数 
+                                                                                                                      * @param {Number} wait 延时的时间
+                                                                                                                      * @param {Boolean} immediate 是否立即执行
+                                                                                                                      * @return null
+                                                                                                                      */
+function throttle(func) {var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;var immediate = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+  if (immediate) {
+    if (!flag) {
+      flag = true;
+      // 如果是立即执行，则在wait毫秒内开始时执行
+      typeof func === 'function' && func();
+      timer = setTimeout(function () {
+        flag = false;
+      }, wait);
+    }
+  } else {
+    if (!flag) {
+      flag = true;
+      // 如果是非立即执行，则在wait毫秒内的结束处执行
+      timer = setTimeout(function () {
+        flag = false;
+        typeof func === 'function' && func();
+      }, wait);
+    }
+
+  }
+};var _default =
+throttle;exports.default = _default;
+
+/***/ }),
+
+/***/ 33:
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/config/config.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 此版本发布于2020-03-17
+var version = '1.8.4';var _default =
+
+{
+  v: version,
+  version: version,
+  // 主题名称
+  type: [
+  'primary',
+  'success',
+  'info',
+  'error',
+  'warning'] };exports.default = _default;
+
+/***/ }),
+
+/***/ 34:
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/config/zIndex.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // uniapp在H5中各API的z-index值如下：
+/**
+ * actionsheet: 999
+ * modal: 999
+ * navigate: 998
+ * tabbar: 998
+ * toast: 999
+ */var _default =
+
+{
+  toast: 10090,
+  noNetwork: 10080,
+  // popup包含popup，actionsheet，keyboard，picker的值
+  popup: 10075,
+  mask: 10070,
+  navbar: 980,
+  topTips: 975,
+  sticky: 970,
+  indexListSticky: 965 };exports.default = _default;
+
+/***/ }),
+
+/***/ 351:
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/components/ming-picker/area.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var city = [{ "value": "11", "label": "北京市", "children": [{ "value": "1101", "label": "市辖区", "children": [{ "value": "110101", "label": "东城区" }, { "value": "110102", "label": "西城区" }, { "value": "110105", "label": "朝阳区" }, { "value": "110106", "label": "丰台区" }, { "value": "110107", "label": "石景山区" }, { "value": "110108", "label": "海淀区" }, { "value": "110109", "label": "门头沟区" }, { "value": "110111", "label": "房山区" }, { "value": "110112", "label": "通州区" }, { "value": "110113", "label": "顺义区" }, { "value": "110114", "label": "昌平区" }, { "value": "110115", "label": "大兴区" }, { "value": "110116", "label": "怀柔区" }, { "value": "110117", "label": "平谷区" }, { "value": "110118", "label": "密云区" }, { "value": "110119", "label": "延庆区" }] }] }, { "value": "12", "label": "天津市", "children": [{ "value": "1201", "label": "市辖区", "children": [{ "value": "120101", "label": "和平区" }, { "value": "120102", "label": "河东区" }, { "value": "120103", "label": "河西区" }, { "value": "120104", "label": "南开区" }, { "value": "120105", "label": "河北区" }, { "value": "120106", "label": "红桥区" }, { "value": "120110", "label": "东丽区" }, { "value": "120111", "label": "西青区" }, { "value": "120112", "label": "津南区" }, { "value": "120113", "label": "北辰区" }, { "value": "120114", "label": "武清区" }, { "value": "120115", "label": "宝坻区" }, { "value": "120116", "label": "滨海新区" }, { "value": "120117", "label": "宁河区" }, { "value": "120118", "label": "静海区" }, { "value": "120119", "label": "蓟州区" }] }] }, { "value": "13", "label": "河北省", "children": [{ "value": "1301", "label": "石家庄市", "children": [{ "value": "130102", "label": "长安区" }, { "value": "130104", "label": "桥西区" }, { "value": "130105", "label": "新华区" }, { "value": "130107", "label": "井陉矿区" }, { "value": "130108", "label": "裕华区" }, { "value": "130109", "label": "藁城区" }, { "value": "130110", "label": "鹿泉区" }, { "value": "130111", "label": "栾城区" }, { "value": "130121", "label": "井陉县" }, { "value": "130123", "label": "正定县" }, { "value": "130125", "label": "行唐县" }, { "value": "130126", "label": "灵寿县" }, { "value": "130127", "label": "高邑县" }, { "value": "130128", "label": "深泽县" }, { "value": "130129", "label": "赞皇县" }, { "value": "130130", "label": "无极县" }, { "value": "130131", "label": "平山县" }, { "value": "130132", "label": "元氏县" }, { "value": "130133", "label": "赵县" }, { "value": "130171", "label": "石家庄高新技术产业开发区" }, { "value": "130172", "label": "石家庄循环化工园区" }, { "value": "130181", "label": "辛集市" }, { "value": "130183", "label": "晋州市" }, { "value": "130184", "label": "新乐市" }] }, { "value": "1302", "label": "唐山市", "children": [{ "value": "130202", "label": "路南区" }, { "value": "130203", "label": "路北区" }, { "value": "130204", "label": "古冶区" }, { "value": "130205", "label": "开平区" }, { "value": "130207", "label": "丰南区" }, { "value": "130208", "label": "丰润区" }, { "value": "130209", "label": "曹妃甸区" }, { "value": "130224", "label": "滦南县" }, { "value": "130225", "label": "乐亭县" }, { "value": "130227", "label": "迁西县" }, { "value": "130229", "label": "玉田县" }, { "value": "130271", "label": "唐山市芦台经济技术开发区" }, { "value": "130272", "label": "唐山市汉沽管理区" }, { "value": "130273", "label": "唐山高新技术产业开发区" }, { "value": "130274", "label": "河北唐山海港经济开发区" }, { "value": "130281", "label": "遵化市" }, { "value": "130283", "label": "迁安市" }, { "value": "130284", "label": "滦州市" }] }, { "value": "1303", "label": "秦皇岛市", "children": [{ "value": "130302", "label": "海港区" }, { "value": "130303", "label": "山海关区" }, { "value": "130304", "label": "北戴河区" }, { "value": "130306", "label": "抚宁区" }, { "value": "130321", "label": "青龙满族自治县" }, { "value": "130322", "label": "昌黎县" }, { "value": "130324", "label": "卢龙县" }, { "value": "130371", "label": "秦皇岛市经济技术开发区" }, { "value": "130372", "label": "北戴河新区" }] }, { "value": "1304", "label": "邯郸市", "children": [{ "value": "130402", "label": "邯山区" }, { "value": "130403", "label": "丛台区" }, { "value": "130404", "label": "复兴区" }, { "value": "130406", "label": "峰峰矿区" }, { "value": "130407", "label": "肥乡区" }, { "value": "130408", "label": "永年区" }, { "value": "130423", "label": "临漳县" }, { "value": "130424", "label": "成安县" }, { "value": "130425", "label": "大名县" }, { "value": "130426", "label": "涉县" }, { "value": "130427", "label": "磁县" }, { "value": "130430", "label": "邱县" }, { "value": "130431", "label": "鸡泽县" }, { "value": "130432", "label": "广平县" }, { "value": "130433", "label": "馆陶县" }, { "value": "130434", "label": "魏县" }, { "value": "130435", "label": "曲周县" }, { "value": "130471", "label": "邯郸经济技术开发区" }, { "value": "130473", "label": "邯郸冀南新区" }, { "value": "130481", "label": "武安市" }] }, { "value": "1305", "label": "邢台市", "children": [{ "value": "130502", "label": "桥东区" }, { "value": "130503", "label": "桥西区" }, { "value": "130521", "label": "邢台县" }, { "value": "130522", "label": "临城县" }, { "value": "130523", "label": "内丘县" }, { "value": "130524", "label": "柏乡县" }, { "value": "130525", "label": "隆尧县" }, { "value": "130526", "label": "任县" }, { "value": "130527", "label": "南和县" }, { "value": "130528", "label": "宁晋县" }, { "value": "130529", "label": "巨鹿县" }, { "value": "130530", "label": "新河县" }, { "value": "130531", "label": "广宗县" }, { "value": "130532", "label": "平乡县" }, { "value": "130533", "label": "威县" }, { "value": "130534", "label": "清河县" }, { "value": "130535", "label": "临西县" }, { "value": "130571", "label": "河北邢台经济开发区" }, { "value": "130581", "label": "南宫市" }, { "value": "130582", "label": "沙河市" }] }, { "value": "1306", "label": "保定市", "children": [{ "value": "130602", "label": "竞秀区" }, { "value": "130606", "label": "莲池区" }, { "value": "130607", "label": "满城区" }, { "value": "130608", "label": "清苑区" }, { "value": "130609", "label": "徐水区" }, { "value": "130623", "label": "涞水县" }, { "value": "130624", "label": "阜平县" }, { "value": "130626", "label": "定兴县" }, { "value": "130627", "label": "唐县" }, { "value": "130628", "label": "高阳县" }, { "value": "130629", "label": "容城县" }, { "value": "130630", "label": "涞源县" }, { "value": "130631", "label": "望都县" }, { "value": "130632", "label": "安新县" }, { "value": "130633", "label": "易县" }, { "value": "130634", "label": "曲阳县" }, { "value": "130635", "label": "蠡县" }, { "value": "130636", "label": "顺平县" }, { "value": "130637", "label": "博野县" }, { "value": "130638", "label": "雄县" }, { "value": "130671", "label": "保定高新技术产业开发区" }, { "value": "130672", "label": "保定白沟新城" }, { "value": "130681", "label": "涿州市" }, { "value": "130682", "label": "定州市" }, { "value": "130683", "label": "安国市" }, { "value": "130684", "label": "高碑店市" }] }, { "value": "1307", "label": "张家口市", "children": [{ "value": "130702", "label": "桥东区" }, { "value": "130703", "label": "桥西区" }, { "value": "130705", "label": "宣化区" }, { "value": "130706", "label": "下花园区" }, { "value": "130708", "label": "万全区" }, { "value": "130709", "label": "崇礼区" }, { "value": "130722", "label": "张北县" }, { "value": "130723", "label": "康保县" }, { "value": "130724", "label": "沽源县" }, { "value": "130725", "label": "尚义县" }, { "value": "130726", "label": "蔚县" }, { "value": "130727", "label": "阳原县" }, { "value": "130728", "label": "怀安县" }, { "value": "130730", "label": "怀来县" }, { "value": "130731", "label": "涿鹿县" }, { "value": "130732", "label": "赤城县" }, { "value": "130771", "label": "张家口市高新技术产业开发区" }, { "value": "130772", "label": "张家口市察北管理区" }, { "value": "130773", "label": "张家口市塞北管理区" }] }, { "value": "1308", "label": "承德市", "children": [{ "value": "130802", "label": "双桥区" }, { "value": "130803", "label": "双滦区" }, { "value": "130804", "label": "鹰手营子矿区" }, { "value": "130821", "label": "承德县" }, { "value": "130822", "label": "兴隆县" }, { "value": "130824", "label": "滦平县" }, { "value": "130825", "label": "隆化县" }, { "value": "130826", "label": "丰宁满族自治县" }, { "value": "130827", "label": "宽城满族自治县" }, { "value": "130828", "label": "围场满族蒙古族自治县" }, { "value": "130871", "label": "承德高新技术产业开发区" }, { "value": "130881", "label": "平泉市" }] }, { "value": "1309", "label": "沧州市", "children": [{ "value": "130902", "label": "新华区" }, { "value": "130903", "label": "运河区" }, { "value": "130921", "label": "沧县" }, { "value": "130922", "label": "青县" }, { "value": "130923", "label": "东光县" }, { "value": "130924", "label": "海兴县" }, { "value": "130925", "label": "盐山县" }, { "value": "130926", "label": "肃宁县" }, { "value": "130927", "label": "南皮县" }, { "value": "130928", "label": "吴桥县" }, { "value": "130929", "label": "献县" }, { "value": "130930", "label": "孟村回族自治县" }, { "value": "130971", "label": "河北沧州经济开发区" }, { "value": "130972", "label": "沧州高新技术产业开发区" }, { "value": "130973", "label": "沧州渤海新区" }, { "value": "130981", "label": "泊头市" }, { "value": "130982", "label": "任丘市" }, { "value": "130983", "label": "黄骅市" }, { "value": "130984", "label": "河间市" }] }, { "value": "1310", "label": "廊坊市", "children": [{ "value": "131002", "label": "安次区" }, { "value": "131003", "label": "广阳区" }, { "value": "131022", "label": "固安县" }, { "value": "131023", "label": "永清县" }, { "value": "131024", "label": "香河县" }, { "value": "131025", "label": "大城县" }, { "value": "131026", "label": "文安县" }, { "value": "131028", "label": "大厂回族自治县" }, { "value": "131071", "label": "廊坊经济技术开发区" }, { "value": "131081", "label": "霸州市" }, { "value": "131082", "label": "三河市" }] }, { "value": "1311", "label": "衡水市", "children": [{ "value": "131102", "label": "桃城区" }, { "value": "131103", "label": "冀州区" }, { "value": "131121", "label": "枣强县" }, { "value": "131122", "label": "武邑县" }, { "value": "131123", "label": "武强县" }, { "value": "131124", "label": "饶阳县" }, { "value": "131125", "label": "安平县" }, { "value": "131126", "label": "故城县" }, { "value": "131127", "label": "景县" }, { "value": "131128", "label": "阜城县" }, { "value": "131171", "label": "河北衡水高新技术产业开发区" }, { "value": "131172", "label": "衡水滨湖新区" }, { "value": "131182", "label": "深州市" }] }] }, { "value": "14", "label": "山西省", "children": [{ "value": "1401", "label": "太原市", "children": [{ "value": "140105", "label": "小店区" }, { "value": "140106", "label": "迎泽区" }, { "value": "140107", "label": "杏花岭区" }, { "value": "140108", "label": "尖草坪区" }, { "value": "140109", "label": "万柏林区" }, { "value": "140110", "label": "晋源区" }, { "value": "140121", "label": "清徐县" }, { "value": "140122", "label": "阳曲县" }, { "value": "140123", "label": "娄烦县" }, { "value": "140171", "label": "山西转型综合改革示范区" }, { "value": "140181", "label": "古交市" }] }, { "value": "1402", "label": "大同市", "children": [{ "value": "140212", "label": "新荣区" }, { "value": "140213", "label": "平城区" }, { "value": "140214", "label": "云冈区" }, { "value": "140215", "label": "云州区" }, { "value": "140221", "label": "阳高县" }, { "value": "140222", "label": "天镇县" }, { "value": "140223", "label": "广灵县" }, { "value": "140224", "label": "灵丘县" }, { "value": "140225", "label": "浑源县" }, { "value": "140226", "label": "左云县" }, { "value": "140271", "label": "山西大同经济开发区" }] }, { "value": "1403", "label": "阳泉市", "children": [{ "value": "140302", "label": "城区" }, { "value": "140303", "label": "矿区" }, { "value": "140311", "label": "郊区" }, { "value": "140321", "label": "平定县" }, { "value": "140322", "label": "盂县" }] }, { "value": "1404", "label": "长治市", "children": [{ "value": "140403", "label": "潞州区" }, { "value": "140404", "label": "上党区" }, { "value": "140405", "label": "屯留区" }, { "value": "140406", "label": "潞城区" }, { "value": "140423", "label": "襄垣县" }, { "value": "140425", "label": "平顺县" }, { "value": "140426", "label": "黎城县" }, { "value": "140427", "label": "壶关县" }, { "value": "140428", "label": "长子县" }, { "value": "140429", "label": "武乡县" }, { "value": "140430", "label": "沁县" }, { "value": "140431", "label": "沁源县" }, { "value": "140471", "label": "山西长治高新技术产业园区" }] }, { "value": "1405", "label": "晋城市", "children": [{ "value": "140502", "label": "城区" }, { "value": "140521", "label": "沁水县" }, { "value": "140522", "label": "阳城县" }, { "value": "140524", "label": "陵川县" }, { "value": "140525", "label": "泽州县" }, { "value": "140581", "label": "高平市" }] }, { "value": "1406", "label": "朔州市", "children": [{ "value": "140602", "label": "朔城区" }, { "value": "140603", "label": "平鲁区" }, { "value": "140621", "label": "山阴县" }, { "value": "140622", "label": "应县" }, { "value": "140623", "label": "右玉县" }, { "value": "140671", "label": "山西朔州经济开发区" }, { "value": "140681", "label": "怀仁市" }] }, { "value": "1407", "label": "晋中市", "children": [{ "value": "140702", "label": "榆次区" }, { "value": "140721", "label": "榆社县" }, { "value": "140722", "label": "左权县" }, { "value": "140723", "label": "和顺县" }, { "value": "140724", "label": "昔阳县" }, { "value": "140725", "label": "寿阳县" }, { "value": "140726", "label": "太谷县" }, { "value": "140727", "label": "祁县" }, { "value": "140728", "label": "平遥县" }, { "value": "140729", "label": "灵石县" }, { "value": "140781", "label": "介休市" }] }, { "value": "1408", "label": "运城市", "children": [{ "value": "140802", "label": "盐湖区" }, { "value": "140821", "label": "临猗县" }, { "value": "140822", "label": "万荣县" }, { "value": "140823", "label": "闻喜县" }, { "value": "140824", "label": "稷山县" }, { "value": "140825", "label": "新绛县" }, { "value": "140826", "label": "绛县" }, { "value": "140827", "label": "垣曲县" }, { "value": "140828", "label": "夏县" }, { "value": "140829", "label": "平陆县" }, { "value": "140830", "label": "芮城县" }, { "value": "140881", "label": "永济市" }, { "value": "140882", "label": "河津市" }] }, { "value": "1409", "label": "忻州市", "children": [{ "value": "140902", "label": "忻府区" }, { "value": "140921", "label": "定襄县" }, { "value": "140922", "label": "五台县" }, { "value": "140923", "label": "代县" }, { "value": "140924", "label": "繁峙县" }, { "value": "140925", "label": "宁武县" }, { "value": "140926", "label": "静乐县" }, { "value": "140927", "label": "神池县" }, { "value": "140928", "label": "五寨县" }, { "value": "140929", "label": "岢岚县" }, { "value": "140930", "label": "河曲县" }, { "value": "140931", "label": "保德县" }, { "value": "140932", "label": "偏关县" }, { "value": "140971", "label": "五台山风景名胜区" }, { "value": "140981", "label": "原平市" }] }, { "value": "1410", "label": "临汾市", "children": [{ "value": "141002", "label": "尧都区" }, { "value": "141021", "label": "曲沃县" }, { "value": "141022", "label": "翼城县" }, { "value": "141023", "label": "襄汾县" }, { "value": "141024", "label": "洪洞县" }, { "value": "141025", "label": "古县" }, { "value": "141026", "label": "安泽县" }, { "value": "141027", "label": "浮山县" }, { "value": "141028", "label": "吉县" }, { "value": "141029", "label": "乡宁县" }, { "value": "141030", "label": "大宁县" }, { "value": "141031", "label": "隰县" }, { "value": "141032", "label": "永和县" }, { "value": "141033", "label": "蒲县" }, { "value": "141034", "label": "汾西县" }, { "value": "141081", "label": "侯马市" }, { "value": "141082", "label": "霍州市" }] }, { "value": "1411", "label": "吕梁市", "children": [{ "value": "141102", "label": "离石区" }, { "value": "141121", "label": "文水县" }, { "value": "141122", "label": "交城县" }, { "value": "141123", "label": "兴县" }, { "value": "141124", "label": "临县" }, { "value": "141125", "label": "柳林县" }, { "value": "141126", "label": "石楼县" }, { "value": "141127", "label": "岚县" }, { "value": "141128", "label": "方山县" }, { "value": "141129", "label": "中阳县" }, { "value": "141130", "label": "交口县" }, { "value": "141181", "label": "孝义市" }, { "value": "141182", "label": "汾阳市" }] }] }, { "value": "15", "label": "内蒙古自治区", "children": [{ "value": "1501", "label": "呼和浩特市", "children": [{ "value": "150102", "label": "新城区" }, { "value": "150103", "label": "回民区" }, { "value": "150104", "label": "玉泉区" }, { "value": "150105", "label": "赛罕区" }, { "value": "150121", "label": "土默特左旗" }, { "value": "150122", "label": "托克托县" }, { "value": "150123", "label": "和林格尔县" }, { "value": "150124", "label": "清水河县" }, { "value": "150125", "label": "武川县" }, { "value": "150171", "label": "呼和浩特金海工业园区" }, { "value": "150172", "label": "呼和浩特经济技术开发区" }] }, { "value": "1502", "label": "包头市", "children": [{ "value": "150202", "label": "东河区" }, { "value": "150203", "label": "昆都仑区" }, { "value": "150204", "label": "青山区" }, { "value": "150205", "label": "石拐区" }, { "value": "150206", "label": "白云鄂博矿区" }, { "value": "150207", "label": "九原区" }, { "value": "150221", "label": "土默特右旗" }, { "value": "150222", "label": "固阳县" }, { "value": "150223", "label": "达尔罕茂明安联合旗" }, { "value": "150271", "label": "包头稀土高新技术产业开发区" }] }, { "value": "1503", "label": "乌海市", "children": [{ "value": "150302", "label": "海勃湾区" }, { "value": "150303", "label": "海南区" }, { "value": "150304", "label": "乌达区" }] }, { "value": "1504", "label": "赤峰市", "children": [{ "value": "150402", "label": "红山区" }, { "value": "150403", "label": "元宝山区" }, { "value": "150404", "label": "松山区" }, { "value": "150421", "label": "阿鲁科尔沁旗" }, { "value": "150422", "label": "巴林左旗" }, { "value": "150423", "label": "巴林右旗" }, { "value": "150424", "label": "林西县" }, { "value": "150425", "label": "克什克腾旗" }, { "value": "150426", "label": "翁牛特旗" }, { "value": "150428", "label": "喀喇沁旗" }, { "value": "150429", "label": "宁城县" }, { "value": "150430", "label": "敖汉旗" }] }, { "value": "1505", "label": "通辽市", "children": [{ "value": "150502", "label": "科尔沁区" }, { "value": "150521", "label": "科尔沁左翼中旗" }, { "value": "150522", "label": "科尔沁左翼后旗" }, { "value": "150523", "label": "开鲁县" }, { "value": "150524", "label": "库伦旗" }, { "value": "150525", "label": "奈曼旗" }, { "value": "150526", "label": "扎鲁特旗" }, { "value": "150571", "label": "通辽经济技术开发区" }, { "value": "150581", "label": "霍林郭勒市" }] }, { "value": "1506", "label": "鄂尔多斯市", "children": [{ "value": "150602", "label": "东胜区" }, { "value": "150603", "label": "康巴什区" }, { "value": "150621", "label": "达拉特旗" }, { "value": "150622", "label": "准格尔旗" }, { "value": "150623", "label": "鄂托克前旗" }, { "value": "150624", "label": "鄂托克旗" }, { "value": "150625", "label": "杭锦旗" }, { "value": "150626", "label": "乌审旗" }, { "value": "150627", "label": "伊金霍洛旗" }] }, { "value": "1507", "label": "呼伦贝尔市", "children": [{ "value": "150702", "label": "海拉尔区" }, { "value": "150703", "label": "扎赉诺尔区" }, { "value": "150721", "label": "阿荣旗" }, { "value": "150722", "label": "莫力达瓦达斡尔族自治旗" }, { "value": "150723", "label": "鄂伦春自治旗" }, { "value": "150724", "label": "鄂温克族自治旗" }, { "value": "150725", "label": "陈巴尔虎旗" }, { "value": "150726", "label": "新巴尔虎左旗" }, { "value": "150727", "label": "新巴尔虎右旗" }, { "value": "150781", "label": "满洲里市" }, { "value": "150782", "label": "牙克石市" }, { "value": "150783", "label": "扎兰屯市" }, { "value": "150784", "label": "额尔古纳市" }, { "value": "150785", "label": "根河市" }] }, { "value": "1508", "label": "巴彦淖尔市", "children": [{ "value": "150802", "label": "临河区" }, { "value": "150821", "label": "五原县" }, { "value": "150822", "label": "磴口县" }, { "value": "150823", "label": "乌拉特前旗" }, { "value": "150824", "label": "乌拉特中旗" }, { "value": "150825", "label": "乌拉特后旗" }, { "value": "150826", "label": "杭锦后旗" }] }, { "value": "1509", "label": "乌兰察布市", "children": [{ "value": "150902", "label": "集宁区" }, { "value": "150921", "label": "卓资县" }, { "value": "150922", "label": "化德县" }, { "value": "150923", "label": "商都县" }, { "value": "150924", "label": "兴和县" }, { "value": "150925", "label": "凉城县" }, { "value": "150926", "label": "察哈尔右翼前旗" }, { "value": "150927", "label": "察哈尔右翼中旗" }, { "value": "150928", "label": "察哈尔右翼后旗" }, { "value": "150929", "label": "四子王旗" }, { "value": "150981", "label": "丰镇市" }] }, { "value": "1522", "label": "兴安盟", "children": [{ "value": "152201", "label": "乌兰浩特市" }, { "value": "152202", "label": "阿尔山市" }, { "value": "152221", "label": "科尔沁右翼前旗" }, { "value": "152222", "label": "科尔沁右翼中旗" }, { "value": "152223", "label": "扎赉特旗" }, { "value": "152224", "label": "突泉县" }] }, { "value": "1525", "label": "锡林郭勒盟", "children": [{ "value": "152501", "label": "二连浩特市" }, { "value": "152502", "label": "锡林浩特市" }, { "value": "152522", "label": "阿巴嘎旗" }, { "value": "152523", "label": "苏尼特左旗" }, { "value": "152524", "label": "苏尼特右旗" }, { "value": "152525", "label": "东乌珠穆沁旗" }, { "value": "152526", "label": "西乌珠穆沁旗" }, { "value": "152527", "label": "太仆寺旗" }, { "value": "152528", "label": "镶黄旗" }, { "value": "152529", "label": "正镶白旗" }, { "value": "152530", "label": "正蓝旗" }, { "value": "152531", "label": "多伦县" }, { "value": "152571", "label": "乌拉盖管委会" }] }, { "value": "1529", "label": "阿拉善盟", "children": [{ "value": "152921", "label": "阿拉善左旗" }, { "value": "152922", "label": "阿拉善右旗" }, { "value": "152923", "label": "额济纳旗" }, { "value": "152971", "label": "内蒙古阿拉善经济开发区" }] }] }, { "value": "21", "label": "辽宁省", "children": [{ "value": "2101", "label": "沈阳市", "children": [{ "value": "210102", "label": "和平区" }, { "value": "210103", "label": "沈河区" }, { "value": "210104", "label": "大东区" }, { "value": "210105", "label": "皇姑区" }, { "value": "210106", "label": "铁西区" }, { "value": "210111", "label": "苏家屯区" }, { "value": "210112", "label": "浑南区" }, { "value": "210113", "label": "沈北新区" }, { "value": "210114", "label": "于洪区" }, { "value": "210115", "label": "辽中区" }, { "value": "210123", "label": "康平县" }, { "value": "210124", "label": "法库县" }, { "value": "210181", "label": "新民市" }] }, { "value": "2102", "label": "大连市", "children": [{ "value": "210202", "label": "中山区" }, { "value": "210203", "label": "西岗区" }, { "value": "210204", "label": "沙河口区" }, { "value": "210211", "label": "甘井子区" }, { "value": "210212", "label": "旅顺口区" }, { "value": "210213", "label": "金州区" }, { "value": "210214", "label": "普兰店区" }, { "value": "210224", "label": "长海县" }, { "value": "210281", "label": "瓦房店市" }, { "value": "210283", "label": "庄河市" }] }, { "value": "2103", "label": "鞍山市", "children": [{ "value": "210302", "label": "铁东区" }, { "value": "210303", "label": "铁西区" }, { "value": "210304", "label": "立山区" }, { "value": "210311", "label": "千山区" }, { "value": "210321", "label": "台安县" }, { "value": "210323", "label": "岫岩满族自治县" }, { "value": "210381", "label": "海城市" }] }, { "value": "2104", "label": "抚顺市", "children": [{ "value": "210402", "label": "新抚区" }, { "value": "210403", "label": "东洲区" }, { "value": "210404", "label": "望花区" }, { "value": "210411", "label": "顺城区" }, { "value": "210421", "label": "抚顺县" }, { "value": "210422", "label": "新宾满族自治县" }, { "value": "210423", "label": "清原满族自治县" }] }, { "value": "2105", "label": "本溪市", "children": [{ "value": "210502", "label": "平山区" }, { "value": "210503", "label": "溪湖区" }, { "value": "210504", "label": "明山区" }, { "value": "210505", "label": "南芬区" }, { "value": "210521", "label": "本溪满族自治县" }, { "value": "210522", "label": "桓仁满族自治县" }] }, { "value": "2106", "label": "丹东市", "children": [{ "value": "210602", "label": "元宝区" }, { "value": "210603", "label": "振兴区" }, { "value": "210604", "label": "振安区" }, { "value": "210624", "label": "宽甸满族自治县" }, { "value": "210681", "label": "东港市" }, { "value": "210682", "label": "凤城市" }] }, { "value": "2107", "label": "锦州市", "children": [{ "value": "210702", "label": "古塔区" }, { "value": "210703", "label": "凌河区" }, { "value": "210711", "label": "太和区" }, { "value": "210726", "label": "黑山县" }, { "value": "210727", "label": "义县" }, { "value": "210781", "label": "凌海市" }, { "value": "210782", "label": "北镇市" }] }, { "value": "2108", "label": "营口市", "children": [{ "value": "210802", "label": "站前区" }, { "value": "210803", "label": "西市区" }, { "value": "210804", "label": "鲅鱼圈区" }, { "value": "210811", "label": "老边区" }, { "value": "210881", "label": "盖州市" }, { "value": "210882", "label": "大石桥市" }] }, { "value": "2109", "label": "阜新市", "children": [{ "value": "210902", "label": "海州区" }, { "value": "210903", "label": "新邱区" }, { "value": "210904", "label": "太平区" }, { "value": "210905", "label": "清河门区" }, { "value": "210911", "label": "细河区" }, { "value": "210921", "label": "阜新蒙古族自治县" }, { "value": "210922", "label": "彰武县" }] }, { "value": "2110", "label": "辽阳市", "children": [{ "value": "211002", "label": "白塔区" }, { "value": "211003", "label": "文圣区" }, { "value": "211004", "label": "宏伟区" }, { "value": "211005", "label": "弓长岭区" }, { "value": "211011", "label": "太子河区" }, { "value": "211021", "label": "辽阳县" }, { "value": "211081", "label": "灯塔市" }] }, { "value": "2111", "label": "盘锦市", "children": [{ "value": "211102", "label": "双台子区" }, { "value": "211103", "label": "兴隆台区" }, { "value": "211104", "label": "大洼区" }, { "value": "211122", "label": "盘山县" }] }, { "value": "2112", "label": "铁岭市", "children": [{ "value": "211202", "label": "银州区" }, { "value": "211204", "label": "清河区" }, { "value": "211221", "label": "铁岭县" }, { "value": "211223", "label": "西丰县" }, { "value": "211224", "label": "昌图县" }, { "value": "211281", "label": "调兵山市" }, { "value": "211282", "label": "开原市" }] }, { "value": "2113", "label": "朝阳市", "children": [{ "value": "211302", "label": "双塔区" }, { "value": "211303", "label": "龙城区" }, { "value": "211321", "label": "朝阳县" }, { "value": "211322", "label": "建平县" }, { "value": "211324", "label": "喀喇沁左翼蒙古族自治县" }, { "value": "211381", "label": "北票市" }, { "value": "211382", "label": "凌源市" }] }, { "value": "2114", "label": "葫芦岛市", "children": [{ "value": "211402", "label": "连山区" }, { "value": "211403", "label": "龙港区" }, { "value": "211404", "label": "南票区" }, { "value": "211421", "label": "绥中县" }, { "value": "211422", "label": "建昌县" }, { "value": "211481", "label": "兴城市" }] }] }, { "value": "22", "label": "吉林省", "children": [{ "value": "2201", "label": "长春市", "children": [{ "value": "220102", "label": "南关区" }, { "value": "220103", "label": "宽城区" }, { "value": "220104", "label": "朝阳区" }, { "value": "220105", "label": "二道区" }, { "value": "220106", "label": "绿园区" }, { "value": "220112", "label": "双阳区" }, { "value": "220113", "label": "九台区" }, { "value": "220122", "label": "农安县" }, { "value": "220171", "label": "长春经济技术开发区" }, { "value": "220172", "label": "长春净月高新技术产业开发区" }, { "value": "220173", "label": "长春高新技术产业开发区" }, { "value": "220174", "label": "长春汽车经济技术开发区" }, { "value": "220182", "label": "榆树市" }, { "value": "220183", "label": "德惠市" }] }, { "value": "2202", "label": "吉林市", "children": [{ "value": "220202", "label": "昌邑区" }, { "value": "220203", "label": "龙潭区" }, { "value": "220204", "label": "船营区" }, { "value": "220211", "label": "丰满区" }, { "value": "220221", "label": "永吉县" }, { "value": "220271", "label": "吉林经济开发区" }, { "value": "220272", "label": "吉林高新技术产业开发区" }, { "value": "220273", "label": "吉林中国新加坡食品区" }, { "value": "220281", "label": "蛟河市" }, { "value": "220282", "label": "桦甸市" }, { "value": "220283", "label": "舒兰市" }, { "value": "220284", "label": "磐石市" }] }, { "value": "2203", "label": "四平市", "children": [{ "value": "220302", "label": "铁西区" }, { "value": "220303", "label": "铁东区" }, { "value": "220322", "label": "梨树县" }, { "value": "220323", "label": "伊通满族自治县" }, { "value": "220381", "label": "公主岭市" }, { "value": "220382", "label": "双辽市" }] }, { "value": "2204", "label": "辽源市", "children": [{ "value": "220402", "label": "龙山区" }, { "value": "220403", "label": "西安区" }, { "value": "220421", "label": "东丰县" }, { "value": "220422", "label": "东辽县" }] }, { "value": "2205", "label": "通化市", "children": [{ "value": "220502", "label": "东昌区" }, { "value": "220503", "label": "二道江区" }, { "value": "220521", "label": "通化县" }, { "value": "220523", "label": "辉南县" }, { "value": "220524", "label": "柳河县" }, { "value": "220581", "label": "梅河口市" }, { "value": "220582", "label": "集安市" }] }, { "value": "2206", "label": "白山市", "children": [{ "value": "220602", "label": "浑江区" }, { "value": "220605", "label": "江源区" }, { "value": "220621", "label": "抚松县" }, { "value": "220622", "label": "靖宇县" }, { "value": "220623", "label": "长白朝鲜族自治县" }, { "value": "220681", "label": "临江市" }] }, { "value": "2207", "label": "松原市", "children": [{ "value": "220702", "label": "宁江区" }, { "value": "220721", "label": "前郭尔罗斯蒙古族自治县" }, { "value": "220722", "label": "长岭县" }, { "value": "220723", "label": "乾安县" }, { "value": "220771", "label": "吉林松原经济开发区" }, { "value": "220781", "label": "扶余市" }] }, { "value": "2208", "label": "白城市", "children": [{ "value": "220802", "label": "洮北区" }, { "value": "220821", "label": "镇赉县" }, { "value": "220822", "label": "通榆县" }, { "value": "220871", "label": "吉林白城经济开发区" }, { "value": "220881", "label": "洮南市" }, { "value": "220882", "label": "大安市" }] }, { "value": "2224", "label": "延边朝鲜族自治州", "children": [{ "value": "222401", "label": "延吉市" }, { "value": "222402", "label": "图们市" }, { "value": "222403", "label": "敦化市" }, { "value": "222404", "label": "珲春市" }, { "value": "222405", "label": "龙井市" }, { "value": "222406", "label": "和龙市" }, { "value": "222424", "label": "汪清县" }, { "value": "222426", "label": "安图县" }] }] }, { "value": "23", "label": "黑龙江省", "children": [{ "value": "2301", "label": "哈尔滨市", "children": [{ "value": "230102", "label": "道里区" }, { "value": "230103", "label": "南岗区" }, { "value": "230104", "label": "道外区" }, { "value": "230108", "label": "平房区" }, { "value": "230109", "label": "松北区" }, { "value": "230110", "label": "香坊区" }, { "value": "230111", "label": "呼兰区" }, { "value": "230112", "label": "阿城区" }, { "value": "230113", "label": "双城区" }, { "value": "230123", "label": "依兰县" }, { "value": "230124", "label": "方正县" }, { "value": "230125", "label": "宾县" }, { "value": "230126", "label": "巴彦县" }, { "value": "230127", "label": "木兰县" }, { "value": "230128", "label": "通河县" }, { "value": "230129", "label": "延寿县" }, { "value": "230183", "label": "尚志市" }, { "value": "230184", "label": "五常市" }] }, { "value": "2302", "label": "齐齐哈尔市", "children": [{ "value": "230202", "label": "龙沙区" }, { "value": "230203", "label": "建华区" }, { "value": "230204", "label": "铁锋区" }, { "value": "230205", "label": "昂昂溪区" }, { "value": "230206", "label": "富拉尔基区" }, { "value": "230207", "label": "碾子山区" }, { "value": "230208", "label": "梅里斯达斡尔族区" }, { "value": "230221", "label": "龙江县" }, { "value": "230223", "label": "依安县" }, { "value": "230224", "label": "泰来县" }, { "value": "230225", "label": "甘南县" }, { "value": "230227", "label": "富裕县" }, { "value": "230229", "label": "克山县" }, { "value": "230230", "label": "克东县" }, { "value": "230231", "label": "拜泉县" }, { "value": "230281", "label": "讷河市" }] }, { "value": "2303", "label": "鸡西市", "children": [{ "value": "230302", "label": "鸡冠区" }, { "value": "230303", "label": "恒山区" }, { "value": "230304", "label": "滴道区" }, { "value": "230305", "label": "梨树区" }, { "value": "230306", "label": "城子河区" }, { "value": "230307", "label": "麻山区" }, { "value": "230321", "label": "鸡东县" }, { "value": "230381", "label": "虎林市" }, { "value": "230382", "label": "密山市" }] }, { "value": "2304", "label": "鹤岗市", "children": [{ "value": "230402", "label": "向阳区" }, { "value": "230403", "label": "工农区" }, { "value": "230404", "label": "南山区" }, { "value": "230405", "label": "兴安区" }, { "value": "230406", "label": "东山区" }, { "value": "230407", "label": "兴山区" }, { "value": "230421", "label": "萝北县" }, { "value": "230422", "label": "绥滨县" }] }, { "value": "2305", "label": "双鸭山市", "children": [{ "value": "230502", "label": "尖山区" }, { "value": "230503", "label": "岭东区" }, { "value": "230505", "label": "四方台区" }, { "value": "230506", "label": "宝山区" }, { "value": "230521", "label": "集贤县" }, { "value": "230522", "label": "友谊县" }, { "value": "230523", "label": "宝清县" }, { "value": "230524", "label": "饶河县" }] }, { "value": "2306", "label": "大庆市", "children": [{ "value": "230602", "label": "萨尔图区" }, { "value": "230603", "label": "龙凤区" }, { "value": "230604", "label": "让胡路区" }, { "value": "230605", "label": "红岗区" }, { "value": "230606", "label": "大同区" }, { "value": "230621", "label": "肇州县" }, { "value": "230622", "label": "肇源县" }, { "value": "230623", "label": "林甸县" }, { "value": "230624", "label": "杜尔伯特蒙古族自治县" }, { "value": "230671", "label": "大庆高新技术产业开发区" }] }, { "value": "2307", "label": "伊春市", "children": [{ "value": "230702", "label": "伊春区" }, { "value": "230703", "label": "南岔区" }, { "value": "230704", "label": "友好区" }, { "value": "230705", "label": "西林区" }, { "value": "230706", "label": "翠峦区" }, { "value": "230707", "label": "新青区" }, { "value": "230708", "label": "美溪区" }, { "value": "230709", "label": "金山屯区" }, { "value": "230710", "label": "五营区" }, { "value": "230711", "label": "乌马河区" }, { "value": "230712", "label": "汤旺河区" }, { "value": "230713", "label": "带岭区" }, { "value": "230714", "label": "乌伊岭区" }, { "value": "230715", "label": "红星区" }, { "value": "230716", "label": "上甘岭区" }, { "value": "230722", "label": "嘉荫县" }, { "value": "230781", "label": "铁力市" }] }, { "value": "2308", "label": "佳木斯市", "children": [{ "value": "230803", "label": "向阳区" }, { "value": "230804", "label": "前进区" }, { "value": "230805", "label": "东风区" }, { "value": "230811", "label": "郊区" }, { "value": "230822", "label": "桦南县" }, { "value": "230826", "label": "桦川县" }, { "value": "230828", "label": "汤原县" }, { "value": "230881", "label": "同江市" }, { "value": "230882", "label": "富锦市" }, { "value": "230883", "label": "抚远市" }] }, { "value": "2309", "label": "七台河市", "children": [{ "value": "230902", "label": "新兴区" }, { "value": "230903", "label": "桃山区" }, { "value": "230904", "label": "茄子河区" }, { "value": "230921", "label": "勃利县" }] }, { "value": "2310", "label": "牡丹江市", "children": [{ "value": "231002", "label": "东安区" }, { "value": "231003", "label": "阳明区" }, { "value": "231004", "label": "爱民区" }, { "value": "231005", "label": "西安区" }, { "value": "231025", "label": "林口县" }, { "value": "231071", "label": "牡丹江经济技术开发区" }, { "value": "231081", "label": "绥芬河市" }, { "value": "231083", "label": "海林市" }, { "value": "231084", "label": "宁安市" }, { "value": "231085", "label": "穆棱市" }, { "value": "231086", "label": "东宁市" }] }, { "value": "2311", "label": "黑河市", "children": [{ "value": "231102", "label": "爱辉区" }, { "value": "231121", "label": "嫩江县" }, { "value": "231123", "label": "逊克县" }, { "value": "231124", "label": "孙吴县" }, { "value": "231181", "label": "北安市" }, { "value": "231182", "label": "五大连池市" }] }, { "value": "2312", "label": "绥化市", "children": [{ "value": "231202", "label": "北林区" }, { "value": "231221", "label": "望奎县" }, { "value": "231222", "label": "兰西县" }, { "value": "231223", "label": "青冈县" }, { "value": "231224", "label": "庆安县" }, { "value": "231225", "label": "明水县" }, { "value": "231226", "label": "绥棱县" }, { "value": "231281", "label": "安达市" }, { "value": "231282", "label": "肇东市" }, { "value": "231283", "label": "海伦市" }] }, { "value": "2327", "label": "大兴安岭地区", "children": [{ "value": "232701", "label": "漠河市" }, { "value": "232721", "label": "呼玛县" }, { "value": "232722", "label": "塔河县" }, { "value": "232761", "label": "加格达奇区" }, { "value": "232762", "label": "松岭区" }, { "value": "232763", "label": "新林区" }, { "value": "232764", "label": "呼中区" }] }] }, { "value": "31", "label": "上海市", "children": [{ "value": "3101", "label": "市辖区", "children": [{ "value": "310101", "label": "黄浦区" }, { "value": "310104", "label": "徐汇区" }, { "value": "310105", "label": "长宁区" }, { "value": "310106", "label": "静安区" }, { "value": "310107", "label": "普陀区" }, { "value": "310109", "label": "虹口区" }, { "value": "310110", "label": "杨浦区" }, { "value": "310112", "label": "闵行区" }, { "value": "310113", "label": "宝山区" }, { "value": "310114", "label": "嘉定区" }, { "value": "310115", "label": "浦东新区" }, { "value": "310116", "label": "金山区" }, { "value": "310117", "label": "松江区" }, { "value": "310118", "label": "青浦区" }, { "value": "310120", "label": "奉贤区" }, { "value": "310151", "label": "崇明区" }] }] }, { "value": "32", "label": "江苏省", "children": [{ "value": "3201", "label": "南京市", "children": [{ "value": "320102", "label": "玄武区" }, { "value": "320104", "label": "秦淮区" }, { "value": "320105", "label": "建邺区" }, { "value": "320106", "label": "鼓楼区" }, { "value": "320111", "label": "浦口区" }, { "value": "320113", "label": "栖霞区" }, { "value": "320114", "label": "雨花台区" }, { "value": "320115", "label": "江宁区" }, { "value": "320116", "label": "六合区" }, { "value": "320117", "label": "溧水区" }, { "value": "320118", "label": "高淳区" }] }, { "value": "3202", "label": "无锡市", "children": [{ "value": "320205", "label": "锡山区" }, { "value": "320206", "label": "惠山区" }, { "value": "320211", "label": "滨湖区" }, { "value": "320213", "label": "梁溪区" }, { "value": "320214", "label": "新吴区" }, { "value": "320281", "label": "江阴市" }, { "value": "320282", "label": "宜兴市" }] }, { "value": "3203", "label": "徐州市", "children": [{ "value": "320302", "label": "鼓楼区" }, { "value": "320303", "label": "云龙区" }, { "value": "320305", "label": "贾汪区" }, { "value": "320311", "label": "泉山区" }, { "value": "320312", "label": "铜山区" }, { "value": "320321", "label": "丰县" }, { "value": "320322", "label": "沛县" }, { "value": "320324", "label": "睢宁县" }, { "value": "320371", "label": "徐州经济技术开发区" }, { "value": "320381", "label": "新沂市" }, { "value": "320382", "label": "邳州市" }] }, { "value": "3204", "label": "常州市", "children": [{ "value": "320402", "label": "天宁区" }, { "value": "320404", "label": "钟楼区" }, { "value": "320411", "label": "新北区" }, { "value": "320412", "label": "武进区" }, { "value": "320413", "label": "金坛区" }, { "value": "320481", "label": "溧阳市" }] }, { "value": "3205", "label": "苏州市", "children": [{ "value": "320505", "label": "虎丘区" }, { "value": "320506", "label": "吴中区" }, { "value": "320507", "label": "相城区" }, { "value": "320508", "label": "姑苏区" }, { "value": "320509", "label": "吴江区" }, { "value": "320571", "label": "苏州工业园区" }, { "value": "320581", "label": "常熟市" }, { "value": "320582", "label": "张家港市" }, { "value": "320583", "label": "昆山市" }, { "value": "320585", "label": "太仓市" }] }, { "value": "3206", "label": "南通市", "children": [{ "value": "320602", "label": "崇川区" }, { "value": "320611", "label": "港闸区" }, { "value": "320612", "label": "通州区" }, { "value": "320623", "label": "如东县" }, { "value": "320671", "label": "南通经济技术开发区" }, { "value": "320681", "label": "启东市" }, { "value": "320682", "label": "如皋市" }, { "value": "320684", "label": "海门市" }, { "value": "320685", "label": "海安市" }] }, { "value": "3207", "label": "连云港市", "children": [{ "value": "320703", "label": "连云区" }, { "value": "320706", "label": "海州区" }, { "value": "320707", "label": "赣榆区" }, { "value": "320722", "label": "东海县" }, { "value": "320723", "label": "灌云县" }, { "value": "320724", "label": "灌南县" }, { "value": "320771", "label": "连云港经济技术开发区" }, { "value": "320772", "label": "连云港高新技术产业开发区" }] }, { "value": "3208", "label": "淮安市", "children": [{ "value": "320803", "label": "淮安区" }, { "value": "320804", "label": "淮阴区" }, { "value": "320812", "label": "清江浦区" }, { "value": "320813", "label": "洪泽区" }, { "value": "320826", "label": "涟水县" }, { "value": "320830", "label": "盱眙县" }, { "value": "320831", "label": "金湖县" }, { "value": "320871", "label": "淮安经济技术开发区" }] }, { "value": "3209", "label": "盐城市", "children": [{ "value": "320902", "label": "亭湖区" }, { "value": "320903", "label": "盐都区" }, { "value": "320904", "label": "大丰区" }, { "value": "320921", "label": "响水县" }, { "value": "320922", "label": "滨海县" }, { "value": "320923", "label": "阜宁县" }, { "value": "320924", "label": "射阳县" }, { "value": "320925", "label": "建湖县" }, { "value": "320971", "label": "盐城经济技术开发区" }, { "value": "320981", "label": "东台市" }] }, { "value": "3210", "label": "扬州市", "children": [{ "value": "321002", "label": "广陵区" }, { "value": "321003", "label": "邗江区" }, { "value": "321012", "label": "江都区" }, { "value": "321023", "label": "宝应县" }, { "value": "321071", "label": "扬州经济技术开发区" }, { "value": "321081", "label": "仪征市" }, { "value": "321084", "label": "高邮市" }] }, { "value": "3211", "label": "镇江市", "children": [{ "value": "321102", "label": "京口区" }, { "value": "321111", "label": "润州区" }, { "value": "321112", "label": "丹徒区" }, { "value": "321171", "label": "镇江新区" }, { "value": "321181", "label": "丹阳市" }, { "value": "321182", "label": "扬中市" }, { "value": "321183", "label": "句容市" }] }, { "value": "3212", "label": "泰州市", "children": [{ "value": "321202", "label": "海陵区" }, { "value": "321203", "label": "高港区" }, { "value": "321204", "label": "姜堰区" }, { "value": "321271", "label": "泰州医药高新技术产业开发区" }, { "value": "321281", "label": "兴化市" }, { "value": "321282", "label": "靖江市" }, { "value": "321283", "label": "泰兴市" }] }, { "value": "3213", "label": "宿迁市", "children": [{ "value": "321302", "label": "宿城区" }, { "value": "321311", "label": "宿豫区" }, { "value": "321322", "label": "沭阳县" }, { "value": "321323", "label": "泗阳县" }, { "value": "321324", "label": "泗洪县" }, { "value": "321371", "label": "宿迁经济技术开发区" }] }] }, { "value": "33", "label": "浙江省", "children": [{ "value": "3301", "label": "杭州市", "children": [{ "value": "330102", "label": "上城区" }, { "value": "330103", "label": "下城区" }, { "value": "330104", "label": "江干区" }, { "value": "330105", "label": "拱墅区" }, { "value": "330106", "label": "西湖区" }, { "value": "330108", "label": "滨江区" }, { "value": "330109", "label": "萧山区" }, { "value": "330110", "label": "余杭区" }, { "value": "330111", "label": "富阳区" }, { "value": "330112", "label": "临安区" }, { "value": "330122", "label": "桐庐县" }, { "value": "330127", "label": "淳安县" }, { "value": "330182", "label": "建德市" }] }, { "value": "3302", "label": "宁波市", "children": [{ "value": "330203", "label": "海曙区" }, { "value": "330205", "label": "江北区" }, { "value": "330206", "label": "北仑区" }, { "value": "330211", "label": "镇海区" }, { "value": "330212", "label": "鄞州区" }, { "value": "330213", "label": "奉化区" }, { "value": "330225", "label": "象山县" }, { "value": "330226", "label": "宁海县" }, { "value": "330281", "label": "余姚市" }, { "value": "330282", "label": "慈溪市" }] }, { "value": "3303", "label": "温州市", "children": [{ "value": "330302", "label": "鹿城区" }, { "value": "330303", "label": "龙湾区" }, { "value": "330304", "label": "瓯海区" }, { "value": "330305", "label": "洞头区" }, { "value": "330324", "label": "永嘉县" }, { "value": "330326", "label": "平阳县" }, { "value": "330327", "label": "苍南县" }, { "value": "330328", "label": "文成县" }, { "value": "330329", "label": "泰顺县" }, { "value": "330371", "label": "温州经济技术开发区" }, { "value": "330381", "label": "瑞安市" }, { "value": "330382", "label": "乐清市" }] }, { "value": "3304", "label": "嘉兴市", "children": [{ "value": "330402", "label": "南湖区" }, { "value": "330411", "label": "秀洲区" }, { "value": "330421", "label": "嘉善县" }, { "value": "330424", "label": "海盐县" }, { "value": "330481", "label": "海宁市" }, { "value": "330482", "label": "平湖市" }, { "value": "330483", "label": "桐乡市" }] }, { "value": "3305", "label": "湖州市", "children": [{ "value": "330502", "label": "吴兴区" }, { "value": "330503", "label": "南浔区" }, { "value": "330521", "label": "德清县" }, { "value": "330522", "label": "长兴县" }, { "value": "330523", "label": "安吉县" }] }, { "value": "3306", "label": "绍兴市", "children": [{ "value": "330602", "label": "越城区" }, { "value": "330603", "label": "柯桥区" }, { "value": "330604", "label": "上虞区" }, { "value": "330624", "label": "新昌县" }, { "value": "330681", "label": "诸暨市" }, { "value": "330683", "label": "嵊州市" }] }, { "value": "3307", "label": "金华市", "children": [{ "value": "330702", "label": "婺城区" }, { "value": "330703", "label": "金东区" }, { "value": "330723", "label": "武义县" }, { "value": "330726", "label": "浦江县" }, { "value": "330727", "label": "磐安县" }, { "value": "330781", "label": "兰溪市" }, { "value": "330782", "label": "义乌市" }, { "value": "330783", "label": "东阳市" }, { "value": "330784", "label": "永康市" }] }, { "value": "3308", "label": "衢州市", "children": [{ "value": "330802", "label": "柯城区" }, { "value": "330803", "label": "衢江区" }, { "value": "330822", "label": "常山县" }, { "value": "330824", "label": "开化县" }, { "value": "330825", "label": "龙游县" }, { "value": "330881", "label": "江山市" }] }, { "value": "3309", "label": "舟山市", "children": [{ "value": "330902", "label": "定海区" }, { "value": "330903", "label": "普陀区" }, { "value": "330921", "label": "岱山县" }, { "value": "330922", "label": "嵊泗县" }] }, { "value": "3310", "label": "台州市", "children": [{ "value": "331002", "label": "椒江区" }, { "value": "331003", "label": "黄岩区" }, { "value": "331004", "label": "路桥区" }, { "value": "331022", "label": "三门县" }, { "value": "331023", "label": "天台县" }, { "value": "331024", "label": "仙居县" }, { "value": "331081", "label": "温岭市" }, { "value": "331082", "label": "临海市" }, { "value": "331083", "label": "玉环市" }] }, { "value": "3311", "label": "丽水市", "children": [{ "value": "331102", "label": "莲都区" }, { "value": "331121", "label": "青田县" }, { "value": "331122", "label": "缙云县" }, { "value": "331123", "label": "遂昌县" }, { "value": "331124", "label": "松阳县" }, { "value": "331125", "label": "云和县" }, { "value": "331126", "label": "庆元县" }, { "value": "331127", "label": "景宁畲族自治县" }, { "value": "331181", "label": "龙泉市" }] }] }, { "value": "34", "label": "安徽省", "children": [{ "value": "3401", "label": "合肥市", "children": [{ "value": "340102", "label": "瑶海区" }, { "value": "340103", "label": "庐阳区" }, { "value": "340104", "label": "蜀山区" }, { "value": "340111", "label": "包河区" }, { "value": "340121", "label": "长丰县" }, { "value": "340122", "label": "肥东县" }, { "value": "340123", "label": "肥西县" }, { "value": "340124", "label": "庐江县" }, { "value": "340171", "label": "合肥高新技术产业开发区" }, { "value": "340172", "label": "合肥经济技术开发区" }, { "value": "340173", "label": "合肥新站高新技术产业开发区" }, { "value": "340181", "label": "巢湖市" }] }, { "value": "3402", "label": "芜湖市", "children": [{ "value": "340202", "label": "镜湖区" }, { "value": "340203", "label": "弋江区" }, { "value": "340207", "label": "鸠江区" }, { "value": "340208", "label": "三山区" }, { "value": "340221", "label": "芜湖县" }, { "value": "340222", "label": "繁昌县" }, { "value": "340223", "label": "南陵县" }, { "value": "340225", "label": "无为县" }, { "value": "340271", "label": "芜湖经济技术开发区" }, { "value": "340272", "label": "安徽芜湖长江大桥经济开发区" }] }, { "value": "3403", "label": "蚌埠市", "children": [{ "value": "340302", "label": "龙子湖区" }, { "value": "340303", "label": "蚌山区" }, { "value": "340304", "label": "禹会区" }, { "value": "340311", "label": "淮上区" }, { "value": "340321", "label": "怀远县" }, { "value": "340322", "label": "五河县" }, { "value": "340323", "label": "固镇县" }, { "value": "340371", "label": "蚌埠市高新技术开发区" }, { "value": "340372", "label": "蚌埠市经济开发区" }] }, { "value": "3404", "label": "淮南市", "children": [{ "value": "340402", "label": "大通区" }, { "value": "340403", "label": "田家庵区" }, { "value": "340404", "label": "谢家集区" }, { "value": "340405", "label": "八公山区" }, { "value": "340406", "label": "潘集区" }, { "value": "340421", "label": "凤台县" }, { "value": "340422", "label": "寿县" }] }, { "value": "3405", "label": "马鞍山市", "children": [{ "value": "340503", "label": "花山区" }, { "value": "340504", "label": "雨山区" }, { "value": "340506", "label": "博望区" }, { "value": "340521", "label": "当涂县" }, { "value": "340522", "label": "含山县" }, { "value": "340523", "label": "和县" }] }, { "value": "3406", "label": "淮北市", "children": [{ "value": "340602", "label": "杜集区" }, { "value": "340603", "label": "相山区" }, { "value": "340604", "label": "烈山区" }, { "value": "340621", "label": "濉溪县" }] }, { "value": "3407", "label": "铜陵市", "children": [{ "value": "340705", "label": "铜官区" }, { "value": "340706", "label": "义安区" }, { "value": "340711", "label": "郊区" }, { "value": "340722", "label": "枞阳县" }] }, { "value": "3408", "label": "安庆市", "children": [{ "value": "340802", "label": "迎江区" }, { "value": "340803", "label": "大观区" }, { "value": "340811", "label": "宜秀区" }, { "value": "340822", "label": "怀宁县" }, { "value": "340825", "label": "太湖县" }, { "value": "340826", "label": "宿松县" }, { "value": "340827", "label": "望江县" }, { "value": "340828", "label": "岳西县" }, { "value": "340871", "label": "安徽安庆经济开发区" }, { "value": "340881", "label": "桐城市" }, { "value": "340882", "label": "潜山市" }] }, { "value": "3410", "label": "黄山市", "children": [{ "value": "341002", "label": "屯溪区" }, { "value": "341003", "label": "黄山区" }, { "value": "341004", "label": "徽州区" }, { "value": "341021", "label": "歙县" }, { "value": "341022", "label": "休宁县" }, { "value": "341023", "label": "黟县" }, { "value": "341024", "label": "祁门县" }] }, { "value": "3411", "label": "滁州市", "children": [{ "value": "341102", "label": "琅琊区" }, { "value": "341103", "label": "南谯区" }, { "value": "341122", "label": "来安县" }, { "value": "341124", "label": "全椒县" }, { "value": "341125", "label": "定远县" }, { "value": "341126", "label": "凤阳县" }, { "value": "341171", "label": "苏滁现代产业园" }, { "value": "341172", "label": "滁州经济技术开发区" }, { "value": "341181", "label": "天长市" }, { "value": "341182", "label": "明光市" }] }, { "value": "3412", "label": "阜阳市", "children": [{ "value": "341202", "label": "颍州区" }, { "value": "341203", "label": "颍东区" }, { "value": "341204", "label": "颍泉区" }, { "value": "341221", "label": "临泉县" }, { "value": "341222", "label": "太和县" }, { "value": "341225", "label": "阜南县" }, { "value": "341226", "label": "颍上县" }, { "value": "341271", "label": "阜阳合肥现代产业园区" }, { "value": "341272", "label": "阜阳经济技术开发区" }, { "value": "341282", "label": "界首市" }] }, { "value": "3413", "label": "宿州市", "children": [{ "value": "341302", "label": "埇桥区" }, { "value": "341321", "label": "砀山县" }, { "value": "341322", "label": "萧县" }, { "value": "341323", "label": "灵璧县" }, { "value": "341324", "label": "泗县" }, { "value": "341371", "label": "宿州马鞍山现代产业园区" }, { "value": "341372", "label": "宿州经济技术开发区" }] }, { "value": "3415", "label": "六安市", "children": [{ "value": "341502", "label": "金安区" }, { "value": "341503", "label": "裕安区" }, { "value": "341504", "label": "叶集区" }, { "value": "341522", "label": "霍邱县" }, { "value": "341523", "label": "舒城县" }, { "value": "341524", "label": "金寨县" }, { "value": "341525", "label": "霍山县" }] }, { "value": "3416", "label": "亳州市", "children": [{ "value": "341602", "label": "谯城区" }, { "value": "341621", "label": "涡阳县" }, { "value": "341622", "label": "蒙城县" }, { "value": "341623", "label": "利辛县" }] }, { "value": "3417", "label": "池州市", "children": [{ "value": "341702", "label": "贵池区" }, { "value": "341721", "label": "东至县" }, { "value": "341722", "label": "石台县" }, { "value": "341723", "label": "青阳县" }] }, { "value": "3418", "label": "宣城市", "children": [{ "value": "341802", "label": "宣州区" }, { "value": "341821", "label": "郎溪县" }, { "value": "341822", "label": "广德县" }, { "value": "341823", "label": "泾县" }, { "value": "341824", "label": "绩溪县" }, { "value": "341825", "label": "旌德县" }, { "value": "341871", "label": "宣城市经济开发区" }, { "value": "341881", "label": "宁国市" }] }] }, { "value": "35", "label": "福建省", "children": [{ "value": "3501", "label": "福州市", "children": [{ "value": "350102", "label": "鼓楼区" }, { "value": "350103", "label": "台江区" }, { "value": "350104", "label": "仓山区" }, { "value": "350105", "label": "马尾区" }, { "value": "350111", "label": "晋安区" }, { "value": "350112", "label": "长乐区" }, { "value": "350121", "label": "闽侯县" }, { "value": "350122", "label": "连江县" }, { "value": "350123", "label": "罗源县" }, { "value": "350124", "label": "闽清县" }, { "value": "350125", "label": "永泰县" }, { "value": "350128", "label": "平潭县" }, { "value": "350181", "label": "福清市" }] }, { "value": "3502", "label": "厦门市", "children": [{ "value": "350203", "label": "思明区" }, { "value": "350205", "label": "海沧区" }, { "value": "350206", "label": "湖里区" }, { "value": "350211", "label": "集美区" }, { "value": "350212", "label": "同安区" }, { "value": "350213", "label": "翔安区" }] }, { "value": "3503", "label": "莆田市", "children": [{ "value": "350302", "label": "城厢区" }, { "value": "350303", "label": "涵江区" }, { "value": "350304", "label": "荔城区" }, { "value": "350305", "label": "秀屿区" }, { "value": "350322", "label": "仙游县" }] }, { "value": "3504", "label": "三明市", "children": [{ "value": "350402", "label": "梅列区" }, { "value": "350403", "label": "三元区" }, { "value": "350421", "label": "明溪县" }, { "value": "350423", "label": "清流县" }, { "value": "350424", "label": "宁化县" }, { "value": "350425", "label": "大田县" }, { "value": "350426", "label": "尤溪县" }, { "value": "350427", "label": "沙县" }, { "value": "350428", "label": "将乐县" }, { "value": "350429", "label": "泰宁县" }, { "value": "350430", "label": "建宁县" }, { "value": "350481", "label": "永安市" }] }, { "value": "3505", "label": "泉州市", "children": [{ "value": "350502", "label": "鲤城区" }, { "value": "350503", "label": "丰泽区" }, { "value": "350504", "label": "洛江区" }, { "value": "350505", "label": "泉港区" }, { "value": "350521", "label": "惠安县" }, { "value": "350524", "label": "安溪县" }, { "value": "350525", "label": "永春县" }, { "value": "350526", "label": "德化县" }, { "value": "350527", "label": "金门县" }, { "value": "350581", "label": "石狮市" }, { "value": "350582", "label": "晋江市" }, { "value": "350583", "label": "南安市" }] }, { "value": "3506", "label": "漳州市", "children": [{ "value": "350602", "label": "芗城区" }, { "value": "350603", "label": "龙文区" }, { "value": "350622", "label": "云霄县" }, { "value": "350623", "label": "漳浦县" }, { "value": "350624", "label": "诏安县" }, { "value": "350625", "label": "长泰县" }, { "value": "350626", "label": "东山县" }, { "value": "350627", "label": "南靖县" }, { "value": "350628", "label": "平和县" }, { "value": "350629", "label": "华安县" }, { "value": "350681", "label": "龙海市" }] }, { "value": "3507", "label": "南平市", "children": [{ "value": "350702", "label": "延平区" }, { "value": "350703", "label": "建阳区" }, { "value": "350721", "label": "顺昌县" }, { "value": "350722", "label": "浦城县" }, { "value": "350723", "label": "光泽县" }, { "value": "350724", "label": "松溪县" }, { "value": "350725", "label": "政和县" }, { "value": "350781", "label": "邵武市" }, { "value": "350782", "label": "武夷山市" }, { "value": "350783", "label": "建瓯市" }] }, { "value": "3508", "label": "龙岩市", "children": [{ "value": "350802", "label": "新罗区" }, { "value": "350803", "label": "永定区" }, { "value": "350821", "label": "长汀县" }, { "value": "350823", "label": "上杭县" }, { "value": "350824", "label": "武平县" }, { "value": "350825", "label": "连城县" }, { "value": "350881", "label": "漳平市" }] }, { "value": "3509", "label": "宁德市", "children": [{ "value": "350902", "label": "蕉城区" }, { "value": "350921", "label": "霞浦县" }, { "value": "350922", "label": "古田县" }, { "value": "350923", "label": "屏南县" }, { "value": "350924", "label": "寿宁县" }, { "value": "350925", "label": "周宁县" }, { "value": "350926", "label": "柘荣县" }, { "value": "350981", "label": "福安市" }, { "value": "350982", "label": "福鼎市" }] }] }, { "value": "36", "label": "江西省", "children": [{ "value": "3601", "label": "南昌市", "children": [{ "value": "360102", "label": "东湖区" }, { "value": "360103", "label": "西湖区" }, { "value": "360104", "label": "青云谱区" }, { "value": "360105", "label": "湾里区" }, { "value": "360111", "label": "青山湖区" }, { "value": "360112", "label": "新建区" }, { "value": "360121", "label": "南昌县" }, { "value": "360123", "label": "安义县" }, { "value": "360124", "label": "进贤县" }] }, { "value": "3602", "label": "景德镇市", "children": [{ "value": "360202", "label": "昌江区" }, { "value": "360203", "label": "珠山区" }, { "value": "360222", "label": "浮梁县" }, { "value": "360281", "label": "乐平市" }] }, { "value": "3603", "label": "萍乡市", "children": [{ "value": "360302", "label": "安源区" }, { "value": "360313", "label": "湘东区" }, { "value": "360321", "label": "莲花县" }, { "value": "360322", "label": "上栗县" }, { "value": "360323", "label": "芦溪县" }] }, { "value": "3604", "label": "九江市", "children": [{ "value": "360402", "label": "濂溪区" }, { "value": "360403", "label": "浔阳区" }, { "value": "360404", "label": "柴桑区" }, { "value": "360423", "label": "武宁县" }, { "value": "360424", "label": "修水县" }, { "value": "360425", "label": "永修县" }, { "value": "360426", "label": "德安县" }, { "value": "360428", "label": "都昌县" }, { "value": "360429", "label": "湖口县" }, { "value": "360430", "label": "彭泽县" }, { "value": "360481", "label": "瑞昌市" }, { "value": "360482", "label": "共青城市" }, { "value": "360483", "label": "庐山市" }] }, { "value": "3605", "label": "新余市", "children": [{ "value": "360502", "label": "渝水区" }, { "value": "360521", "label": "分宜县" }] }, { "value": "3606", "label": "鹰潭市", "children": [{ "value": "360602", "label": "月湖区" }, { "value": "360603", "label": "余江区" }, { "value": "360681", "label": "贵溪市" }] }, { "value": "3607", "label": "赣州市", "children": [{ "value": "360702", "label": "章贡区" }, { "value": "360703", "label": "南康区" }, { "value": "360704", "label": "赣县区" }, { "value": "360722", "label": "信丰县" }, { "value": "360723", "label": "大余县" }, { "value": "360724", "label": "上犹县" }, { "value": "360725", "label": "崇义县" }, { "value": "360726", "label": "安远县" }, { "value": "360727", "label": "龙南县" }, { "value": "360728", "label": "定南县" }, { "value": "360729", "label": "全南县" }, { "value": "360730", "label": "宁都县" }, { "value": "360731", "label": "于都县" }, { "value": "360732", "label": "兴国县" }, { "value": "360733", "label": "会昌县" }, { "value": "360734", "label": "寻乌县" }, { "value": "360735", "label": "石城县" }, { "value": "360781", "label": "瑞金市" }] }, { "value": "3608", "label": "吉安市", "children": [{ "value": "360802", "label": "吉州区" }, { "value": "360803", "label": "青原区" }, { "value": "360821", "label": "吉安县" }, { "value": "360822", "label": "吉水县" }, { "value": "360823", "label": "峡江县" }, { "value": "360824", "label": "新干县" }, { "value": "360825", "label": "永丰县" }, { "value": "360826", "label": "泰和县" }, { "value": "360827", "label": "遂川县" }, { "value": "360828", "label": "万安县" }, { "value": "360829", "label": "安福县" }, { "value": "360830", "label": "永新县" }, { "value": "360881", "label": "井冈山市" }] }, { "value": "3609", "label": "宜春市", "children": [{ "value": "360902", "label": "袁州区" }, { "value": "360921", "label": "奉新县" }, { "value": "360922", "label": "万载县" }, { "value": "360923", "label": "上高县" }, { "value": "360924", "label": "宜丰县" }, { "value": "360925", "label": "靖安县" }, { "value": "360926", "label": "铜鼓县" }, { "value": "360981", "label": "丰城市" }, { "value": "360982", "label": "樟树市" }, { "value": "360983", "label": "高安市" }] }, { "value": "3610", "label": "抚州市", "children": [{ "value": "361002", "label": "临川区" }, { "value": "361003", "label": "东乡区" }, { "value": "361021", "label": "南城县" }, { "value": "361022", "label": "黎川县" }, { "value": "361023", "label": "南丰县" }, { "value": "361024", "label": "崇仁县" }, { "value": "361025", "label": "乐安县" }, { "value": "361026", "label": "宜黄县" }, { "value": "361027", "label": "金溪县" }, { "value": "361028", "label": "资溪县" }, { "value": "361030", "label": "广昌县" }] }, { "value": "3611", "label": "上饶市", "children": [{ "value": "361102", "label": "信州区" }, { "value": "361103", "label": "广丰区" }, { "value": "361121", "label": "上饶县" }, { "value": "361123", "label": "玉山县" }, { "value": "361124", "label": "铅山县" }, { "value": "361125", "label": "横峰县" }, { "value": "361126", "label": "弋阳县" }, { "value": "361127", "label": "余干县" }, { "value": "361128", "label": "鄱阳县" }, { "value": "361129", "label": "万年县" }, { "value": "361130", "label": "婺源县" }, { "value": "361181", "label": "德兴市" }] }] }, { "value": "37", "label": "山东省", "children": [{ "value": "3701", "label": "济南市", "children": [{ "value": "370102", "label": "历下区" }, { "value": "370103", "label": "市中区" }, { "value": "370104", "label": "槐荫区" }, { "value": "370105", "label": "天桥区" }, { "value": "370112", "label": "历城区" }, { "value": "370113", "label": "长清区" }, { "value": "370114", "label": "章丘区" }, { "value": "370115", "label": "济阳区" }, { "value": "370124", "label": "平阴县" }, { "value": "370126", "label": "商河县" }, { "value": "370171", "label": "济南高新技术产业开发区" }] }, { "value": "3702", "label": "青岛市", "children": [{ "value": "370202", "label": "市南区" }, { "value": "370203", "label": "市北区" }, { "value": "370211", "label": "黄岛区" }, { "value": "370212", "label": "崂山区" }, { "value": "370213", "label": "李沧区" }, { "value": "370214", "label": "城阳区" }, { "value": "370215", "label": "即墨区" }, { "value": "370271", "label": "青岛高新技术产业开发区" }, { "value": "370281", "label": "胶州市" }, { "value": "370283", "label": "平度市" }, { "value": "370285", "label": "莱西市" }] }, { "value": "3703", "label": "淄博市", "children": [{ "value": "370302", "label": "淄川区" }, { "value": "370303", "label": "张店区" }, { "value": "370304", "label": "博山区" }, { "value": "370305", "label": "临淄区" }, { "value": "370306", "label": "周村区" }, { "value": "370321", "label": "桓台县" }, { "value": "370322", "label": "高青县" }, { "value": "370323", "label": "沂源县" }] }, { "value": "3704", "label": "枣庄市", "children": [{ "value": "370402", "label": "市中区" }, { "value": "370403", "label": "薛城区" }, { "value": "370404", "label": "峄城区" }, { "value": "370405", "label": "台儿庄区" }, { "value": "370406", "label": "山亭区" }, { "value": "370481", "label": "滕州市" }] }, { "value": "3705", "label": "东营市", "children": [{ "value": "370502", "label": "东营区" }, { "value": "370503", "label": "河口区" }, { "value": "370505", "label": "垦利区" }, { "value": "370522", "label": "利津县" }, { "value": "370523", "label": "广饶县" }, { "value": "370571", "label": "东营经济技术开发区" }, { "value": "370572", "label": "东营港经济开发区" }] }, { "value": "3706", "label": "烟台市", "children": [{ "value": "370602", "label": "芝罘区" }, { "value": "370611", "label": "福山区" }, { "value": "370612", "label": "牟平区" }, { "value": "370613", "label": "莱山区" }, { "value": "370634", "label": "长岛县" }, { "value": "370671", "label": "烟台高新技术产业开发区" }, { "value": "370672", "label": "烟台经济技术开发区" }, { "value": "370681", "label": "龙口市" }, { "value": "370682", "label": "莱阳市" }, { "value": "370683", "label": "莱州市" }, { "value": "370684", "label": "蓬莱市" }, { "value": "370685", "label": "招远市" }, { "value": "370686", "label": "栖霞市" }, { "value": "370687", "label": "海阳市" }] }, { "value": "3707", "label": "潍坊市", "children": [{ "value": "370702", "label": "潍城区" }, { "value": "370703", "label": "寒亭区" }, { "value": "370704", "label": "坊子区" }, { "value": "370705", "label": "奎文区" }, { "value": "370724", "label": "临朐县" }, { "value": "370725", "label": "昌乐县" }, { "value": "370772", "label": "潍坊滨海经济技术开发区" }, { "value": "370781", "label": "青州市" }, { "value": "370782", "label": "诸城市" }, { "value": "370783", "label": "寿光市" }, { "value": "370784", "label": "安丘市" }, { "value": "370785", "label": "高密市" }, { "value": "370786", "label": "昌邑市" }] }, { "value": "3708", "label": "济宁市", "children": [{ "value": "370811", "label": "任城区" }, { "value": "370812", "label": "兖州区" }, { "value": "370826", "label": "微山县" }, { "value": "370827", "label": "鱼台县" }, { "value": "370828", "label": "金乡县" }, { "value": "370829", "label": "嘉祥县" }, { "value": "370830", "label": "汶上县" }, { "value": "370831", "label": "泗水县" }, { "value": "370832", "label": "梁山县" }, { "value": "370871", "label": "济宁高新技术产业开发区" }, { "value": "370881", "label": "曲阜市" }, { "value": "370883", "label": "邹城市" }] }, { "value": "3709", "label": "泰安市", "children": [{ "value": "370902", "label": "泰山区" }, { "value": "370911", "label": "岱岳区" }, { "value": "370921", "label": "宁阳县" }, { "value": "370923", "label": "东平县" }, { "value": "370982", "label": "新泰市" }, { "value": "370983", "label": "肥城市" }] }, { "value": "3710", "label": "威海市", "children": [{ "value": "371002", "label": "环翠区" }, { "value": "371003", "label": "文登区" }, { "value": "371071", "label": "威海火炬高技术产业开发区" }, { "value": "371072", "label": "威海经济技术开发区" }, { "value": "371073", "label": "威海临港经济技术开发区" }, { "value": "371082", "label": "荣成市" }, { "value": "371083", "label": "乳山市" }] }, { "value": "3711", "label": "日照市", "children": [{ "value": "371102", "label": "东港区" }, { "value": "371103", "label": "岚山区" }, { "value": "371121", "label": "五莲县" }, { "value": "371122", "label": "莒县" }, { "value": "371171", "label": "日照经济技术开发区" }] }, { "value": "3712", "label": "莱芜市", "children": [{ "value": "371202", "label": "莱城区" }, { "value": "371203", "label": "钢城区" }] }, { "value": "3713", "label": "临沂市", "children": [{ "value": "371302", "label": "兰山区" }, { "value": "371311", "label": "罗庄区" }, { "value": "371312", "label": "河东区" }, { "value": "371321", "label": "沂南县" }, { "value": "371322", "label": "郯城县" }, { "value": "371323", "label": "沂水县" }, { "value": "371324", "label": "兰陵县" }, { "value": "371325", "label": "费县" }, { "value": "371326", "label": "平邑县" }, { "value": "371327", "label": "莒南县" }, { "value": "371328", "label": "蒙阴县" }, { "value": "371329", "label": "临沭县" }, { "value": "371371", "label": "临沂高新技术产业开发区" }, { "value": "371372", "label": "临沂经济技术开发区" }, { "value": "371373", "label": "临沂临港经济开发区" }] }, { "value": "3714", "label": "德州市", "children": [{ "value": "371402", "label": "德城区" }, { "value": "371403", "label": "陵城区" }, { "value": "371422", "label": "宁津县" }, { "value": "371423", "label": "庆云县" }, { "value": "371424", "label": "临邑县" }, { "value": "371425", "label": "齐河县" }, { "value": "371426", "label": "平原县" }, { "value": "371427", "label": "夏津县" }, { "value": "371428", "label": "武城县" }, { "value": "371471", "label": "德州经济技术开发区" }, { "value": "371472", "label": "德州运河经济开发区" }, { "value": "371481", "label": "乐陵市" }, { "value": "371482", "label": "禹城市" }] }, { "value": "3715", "label": "聊城市", "children": [{ "value": "371502", "label": "东昌府区" }, { "value": "371521", "label": "阳谷县" }, { "value": "371522", "label": "莘县" }, { "value": "371523", "label": "茌平县" }, { "value": "371524", "label": "东阿县" }, { "value": "371525", "label": "冠县" }, { "value": "371526", "label": "高唐县" }, { "value": "371581", "label": "临清市" }] }, { "value": "3716", "label": "滨州市", "children": [{ "value": "371602", "label": "滨城区" }, { "value": "371603", "label": "沾化区" }, { "value": "371621", "label": "惠民县" }, { "value": "371622", "label": "阳信县" }, { "value": "371623", "label": "无棣县" }, { "value": "371625", "label": "博兴县" }, { "value": "371681", "label": "邹平市" }] }, { "value": "3717", "label": "菏泽市", "children": [{ "value": "371702", "label": "牡丹区" }, { "value": "371703", "label": "定陶区" }, { "value": "371721", "label": "曹县" }, { "value": "371722", "label": "单县" }, { "value": "371723", "label": "成武县" }, { "value": "371724", "label": "巨野县" }, { "value": "371725", "label": "郓城县" }, { "value": "371726", "label": "鄄城县" }, { "value": "371728", "label": "东明县" }, { "value": "371771", "label": "菏泽经济技术开发区" }, { "value": "371772", "label": "菏泽高新技术开发区" }] }] }, { "value": "41", "label": "河南省", "children": [{ "value": "4101", "label": "郑州市", "children": [{ "value": "410102", "label": "中原区" }, { "value": "410103", "label": "二七区" }, { "value": "410104", "label": "管城回族区" }, { "value": "410105", "label": "金水区" }, { "value": "410106", "label": "上街区" }, { "value": "410108", "label": "惠济区" }, { "value": "410122", "label": "中牟县" }, { "value": "410171", "label": "郑州经济技术开发区" }, { "value": "410172", "label": "郑州高新技术产业开发区" }, { "value": "410173", "label": "郑州航空港经济综合实验区" }, { "value": "410181", "label": "巩义市" }, { "value": "410182", "label": "荥阳市" }, { "value": "410183", "label": "新密市" }, { "value": "410184", "label": "新郑市" }, { "value": "410185", "label": "登封市" }] }, { "value": "4102", "label": "开封市", "children": [{ "value": "410202", "label": "龙亭区" }, { "value": "410203", "label": "顺河回族区" }, { "value": "410204", "label": "鼓楼区" }, { "value": "410205", "label": "禹王台区" }, { "value": "410212", "label": "祥符区" }, { "value": "410221", "label": "杞县" }, { "value": "410222", "label": "通许县" }, { "value": "410223", "label": "尉氏县" }, { "value": "410225", "label": "兰考县" }] }, { "value": "4103", "label": "洛阳市", "children": [{ "value": "410302", "label": "老城区" }, { "value": "410303", "label": "西工区" }, { "value": "410304", "label": "瀍河回族区" }, { "value": "410305", "label": "涧西区" }, { "value": "410306", "label": "吉利区" }, { "value": "410311", "label": "洛龙区" }, { "value": "410322", "label": "孟津县" }, { "value": "410323", "label": "新安县" }, { "value": "410324", "label": "栾川县" }, { "value": "410325", "label": "嵩县" }, { "value": "410326", "label": "汝阳县" }, { "value": "410327", "label": "宜阳县" }, { "value": "410328", "label": "洛宁县" }, { "value": "410329", "label": "伊川县" }, { "value": "410371", "label": "洛阳高新技术产业开发区" }, { "value": "410381", "label": "偃师市" }] }, { "value": "4104", "label": "平顶山市", "children": [{ "value": "410402", "label": "新华区" }, { "value": "410403", "label": "卫东区" }, { "value": "410404", "label": "石龙区" }, { "value": "410411", "label": "湛河区" }, { "value": "410421", "label": "宝丰县" }, { "value": "410422", "label": "叶县" }, { "value": "410423", "label": "鲁山县" }, { "value": "410425", "label": "郏县" }, { "value": "410471", "label": "平顶山高新技术产业开发区" }, { "value": "410472", "label": "平顶山市新城区" }, { "value": "410481", "label": "舞钢市" }, { "value": "410482", "label": "汝州市" }] }, { "value": "4105", "label": "安阳市", "children": [{ "value": "410502", "label": "文峰区" }, { "value": "410503", "label": "北关区" }, { "value": "410505", "label": "殷都区" }, { "value": "410506", "label": "龙安区" }, { "value": "410522", "label": "安阳县" }, { "value": "410523", "label": "汤阴县" }, { "value": "410526", "label": "滑县" }, { "value": "410527", "label": "内黄县" }, { "value": "410571", "label": "安阳高新技术产业开发区" }, { "value": "410581", "label": "林州市" }] }, { "value": "4106", "label": "鹤壁市", "children": [{ "value": "410602", "label": "鹤山区" }, { "value": "410603", "label": "山城区" }, { "value": "410611", "label": "淇滨区" }, { "value": "410621", "label": "浚县" }, { "value": "410622", "label": "淇县" }, { "value": "410671", "label": "鹤壁经济技术开发区" }] }, { "value": "4107", "label": "新乡市", "children": [{ "value": "410702", "label": "红旗区" }, { "value": "410703", "label": "卫滨区" }, { "value": "410704", "label": "凤泉区" }, { "value": "410711", "label": "牧野区" }, { "value": "410721", "label": "新乡县" }, { "value": "410724", "label": "获嘉县" }, { "value": "410725", "label": "原阳县" }, { "value": "410726", "label": "延津县" }, { "value": "410727", "label": "封丘县" }, { "value": "410728", "label": "长垣县" }, { "value": "410771", "label": "新乡高新技术产业开发区" }, { "value": "410772", "label": "新乡经济技术开发区" }, { "value": "410773", "label": "新乡市平原城乡一体化示范区" }, { "value": "410781", "label": "卫辉市" }, { "value": "410782", "label": "辉县市" }] }, { "value": "4108", "label": "焦作市", "children": [{ "value": "410802", "label": "解放区" }, { "value": "410803", "label": "中站区" }, { "value": "410804", "label": "马村区" }, { "value": "410811", "label": "山阳区" }, { "value": "410821", "label": "修武县" }, { "value": "410822", "label": "博爱县" }, { "value": "410823", "label": "武陟县" }, { "value": "410825", "label": "温县" }, { "value": "410871", "label": "焦作城乡一体化示范区" }, { "value": "410882", "label": "沁阳市" }, { "value": "410883", "label": "孟州市" }] }, { "value": "4109", "label": "濮阳市", "children": [{ "value": "410902", "label": "华龙区" }, { "value": "410922", "label": "清丰县" }, { "value": "410923", "label": "南乐县" }, { "value": "410926", "label": "范县" }, { "value": "410927", "label": "台前县" }, { "value": "410928", "label": "濮阳县" }, { "value": "410971", "label": "河南濮阳工业园区" }, { "value": "410972", "label": "濮阳经济技术开发区" }] }, { "value": "4110", "label": "许昌市", "children": [{ "value": "411002", "label": "魏都区" }, { "value": "411003", "label": "建安区" }, { "value": "411024", "label": "鄢陵县" }, { "value": "411025", "label": "襄城县" }, { "value": "411071", "label": "许昌经济技术开发区" }, { "value": "411081", "label": "禹州市" }, { "value": "411082", "label": "长葛市" }] }, { "value": "4111", "label": "漯河市", "children": [{ "value": "411102", "label": "源汇区" }, { "value": "411103", "label": "郾城区" }, { "value": "411104", "label": "召陵区" }, { "value": "411121", "label": "舞阳县" }, { "value": "411122", "label": "临颍县" }, { "value": "411171", "label": "漯河经济技术开发区" }] }, { "value": "4112", "label": "三门峡市", "children": [{ "value": "411202", "label": "湖滨区" }, { "value": "411203", "label": "陕州区" }, { "value": "411221", "label": "渑池县" }, { "value": "411224", "label": "卢氏县" }, { "value": "411271", "label": "河南三门峡经济开发区" }, { "value": "411281", "label": "义马市" }, { "value": "411282", "label": "灵宝市" }] }, { "value": "4113", "label": "南阳市", "children": [{ "value": "411302", "label": "宛城区" }, { "value": "411303", "label": "卧龙区" }, { "value": "411321", "label": "南召县" }, { "value": "411322", "label": "方城县" }, { "value": "411323", "label": "西峡县" }, { "value": "411324", "label": "镇平县" }, { "value": "411325", "label": "内乡县" }, { "value": "411326", "label": "淅川县" }, { "value": "411327", "label": "社旗县" }, { "value": "411328", "label": "唐河县" }, { "value": "411329", "label": "新野县" }, { "value": "411330", "label": "桐柏县" }, { "value": "411371", "label": "南阳高新技术产业开发区" }, { "value": "411372", "label": "南阳市城乡一体化示范区" }, { "value": "411381", "label": "邓州市" }] }, { "value": "4114", "label": "商丘市", "children": [{ "value": "411402", "label": "梁园区" }, { "value": "411403", "label": "睢阳区" }, { "value": "411421", "label": "民权县" }, { "value": "411422", "label": "睢县" }, { "value": "411423", "label": "宁陵县" }, { "value": "411424", "label": "柘城县" }, { "value": "411425", "label": "虞城县" }, { "value": "411426", "label": "夏邑县" }, { "value": "411471", "label": "豫东综合物流产业聚集区" }, { "value": "411472", "label": "河南商丘经济开发区" }, { "value": "411481", "label": "永城市" }] }, { "value": "4115", "label": "信阳市", "children": [{ "value": "411502", "label": "浉河区" }, { "value": "411503", "label": "平桥区" }, { "value": "411521", "label": "罗山县" }, { "value": "411522", "label": "光山县" }, { "value": "411523", "label": "新县" }, { "value": "411524", "label": "商城县" }, { "value": "411525", "label": "固始县" }, { "value": "411526", "label": "潢川县" }, { "value": "411527", "label": "淮滨县" }, { "value": "411528", "label": "息县" }, { "value": "411571", "label": "信阳高新技术产业开发区" }] }, { "value": "4116", "label": "周口市", "children": [{ "value": "411602", "label": "川汇区" }, { "value": "411621", "label": "扶沟县" }, { "value": "411622", "label": "西华县" }, { "value": "411623", "label": "商水县" }, { "value": "411624", "label": "沈丘县" }, { "value": "411625", "label": "郸城县" }, { "value": "411626", "label": "淮阳县" }, { "value": "411627", "label": "太康县" }, { "value": "411628", "label": "鹿邑县" }, { "value": "411671", "label": "河南周口经济开发区" }, { "value": "411681", "label": "项城市" }] }, { "value": "4117", "label": "驻马店市", "children": [{ "value": "411702", "label": "驿城区" }, { "value": "411721", "label": "西平县" }, { "value": "411722", "label": "上蔡县" }, { "value": "411723", "label": "平舆县" }, { "value": "411724", "label": "正阳县" }, { "value": "411725", "label": "确山县" }, { "value": "411726", "label": "泌阳县" }, { "value": "411727", "label": "汝南县" }, { "value": "411728", "label": "遂平县" }, { "value": "411729", "label": "新蔡县" }, { "value": "411771", "label": "河南驻马店经济开发区" }] }, { "value": "4190", "label": "省直辖县级行政区划", "children": [{ "value": "419001", "label": "济源市" }] }] }, { "value": "42", "label": "湖北省", "children": [{ "value": "4201", "label": "武汉市", "children": [{ "value": "420102", "label": "江岸区" }, { "value": "420103", "label": "江汉区" }, { "value": "420104", "label": "硚口区" }, { "value": "420105", "label": "汉阳区" }, { "value": "420106", "label": "武昌区" }, { "value": "420107", "label": "青山区" }, { "value": "420111", "label": "洪山区" }, { "value": "420112", "label": "东西湖区" }, { "value": "420113", "label": "汉南区" }, { "value": "420114", "label": "蔡甸区" }, { "value": "420115", "label": "江夏区" }, { "value": "420116", "label": "黄陂区" }, { "value": "420117", "label": "新洲区" }] }, { "value": "4202", "label": "黄石市", "children": [{ "value": "420202", "label": "黄石港区" }, { "value": "420203", "label": "西塞山区" }, { "value": "420204", "label": "下陆区" }, { "value": "420205", "label": "铁山区" }, { "value": "420222", "label": "阳新县" }, { "value": "420281", "label": "大冶市" }] }, { "value": "4203", "label": "十堰市", "children": [{ "value": "420302", "label": "茅箭区" }, { "value": "420303", "label": "张湾区" }, { "value": "420304", "label": "郧阳区" }, { "value": "420322", "label": "郧西县" }, { "value": "420323", "label": "竹山县" }, { "value": "420324", "label": "竹溪县" }, { "value": "420325", "label": "房县" }, { "value": "420381", "label": "丹江口市" }] }, { "value": "4205", "label": "宜昌市", "children": [{ "value": "420502", "label": "西陵区" }, { "value": "420503", "label": "伍家岗区" }, { "value": "420504", "label": "点军区" }, { "value": "420505", "label": "猇亭区" }, { "value": "420506", "label": "夷陵区" }, { "value": "420525", "label": "远安县" }, { "value": "420526", "label": "兴山县" }, { "value": "420527", "label": "秭归县" }, { "value": "420528", "label": "长阳土家族自治县" }, { "value": "420529", "label": "五峰土家族自治县" }, { "value": "420581", "label": "宜都市" }, { "value": "420582", "label": "当阳市" }, { "value": "420583", "label": "枝江市" }] }, { "value": "4206", "label": "襄阳市", "children": [{ "value": "420602", "label": "襄城区" }, { "value": "420606", "label": "樊城区" }, { "value": "420607", "label": "襄州区" }, { "value": "420624", "label": "南漳县" }, { "value": "420625", "label": "谷城县" }, { "value": "420626", "label": "保康县" }, { "value": "420682", "label": "老河口市" }, { "value": "420683", "label": "枣阳市" }, { "value": "420684", "label": "宜城市" }] }, { "value": "4207", "label": "鄂州市", "children": [{ "value": "420702", "label": "梁子湖区" }, { "value": "420703", "label": "华容区" }, { "value": "420704", "label": "鄂城区" }] }, { "value": "4208", "label": "荆门市", "children": [{ "value": "420802", "label": "东宝区" }, { "value": "420804", "label": "掇刀区" }, { "value": "420822", "label": "沙洋县" }, { "value": "420881", "label": "钟祥市" }, { "value": "420882", "label": "京山市" }] }, { "value": "4209", "label": "孝感市", "children": [{ "value": "420902", "label": "孝南区" }, { "value": "420921", "label": "孝昌县" }, { "value": "420922", "label": "大悟县" }, { "value": "420923", "label": "云梦县" }, { "value": "420981", "label": "应城市" }, { "value": "420982", "label": "安陆市" }, { "value": "420984", "label": "汉川市" }] }, { "value": "4210", "label": "荆州市", "children": [{ "value": "421002", "label": "沙市区" }, { "value": "421003", "label": "荆州区" }, { "value": "421022", "label": "公安县" }, { "value": "421023", "label": "监利县" }, { "value": "421024", "label": "江陵县" }, { "value": "421071", "label": "荆州经济技术开发区" }, { "value": "421081", "label": "石首市" }, { "value": "421083", "label": "洪湖市" }, { "value": "421087", "label": "松滋市" }] }, { "value": "4211", "label": "黄冈市", "children": [{ "value": "421102", "label": "黄州区" }, { "value": "421121", "label": "团风县" }, { "value": "421122", "label": "红安县" }, { "value": "421123", "label": "罗田县" }, { "value": "421124", "label": "英山县" }, { "value": "421125", "label": "浠水县" }, { "value": "421126", "label": "蕲春县" }, { "value": "421127", "label": "黄梅县" }, { "value": "421171", "label": "龙感湖管理区" }, { "value": "421181", "label": "麻城市" }, { "value": "421182", "label": "武穴市" }] }, { "value": "4212", "label": "咸宁市", "children": [{ "value": "421202", "label": "咸安区" }, { "value": "421221", "label": "嘉鱼县" }, { "value": "421222", "label": "通城县" }, { "value": "421223", "label": "崇阳县" }, { "value": "421224", "label": "通山县" }, { "value": "421281", "label": "赤壁市" }] }, { "value": "4213", "label": "随州市", "children": [{ "value": "421303", "label": "曾都区" }, { "value": "421321", "label": "随县" }, { "value": "421381", "label": "广水市" }] }, { "value": "4228", "label": "恩施土家族苗族自治州", "children": [{ "value": "422801", "label": "恩施市" }, { "value": "422802", "label": "利川市" }, { "value": "422822", "label": "建始县" }, { "value": "422823", "label": "巴东县" }, { "value": "422825", "label": "宣恩县" }, { "value": "422826", "label": "咸丰县" }, { "value": "422827", "label": "来凤县" }, { "value": "422828", "label": "鹤峰县" }] }, { "value": "4290", "label": "省直辖县级行政区划", "children": [{ "value": "429004", "label": "仙桃市" }, { "value": "429005", "label": "潜江市" }, { "value": "429006", "label": "天门市" }, { "value": "429021", "label": "神农架林区" }] }] }, { "value": "43", "label": "湖南省", "children": [{ "value": "4301", "label": "长沙市", "children": [{ "value": "430102", "label": "芙蓉区" }, { "value": "430103", "label": "天心区" }, { "value": "430104", "label": "岳麓区" }, { "value": "430105", "label": "开福区" }, { "value": "430111", "label": "雨花区" }, { "value": "430112", "label": "望城区" }, { "value": "430121", "label": "长沙县" }, { "value": "430181", "label": "浏阳市" }, { "value": "430182", "label": "宁乡市" }] }, { "value": "4302", "label": "株洲市", "children": [{ "value": "430202", "label": "荷塘区" }, { "value": "430203", "label": "芦淞区" }, { "value": "430204", "label": "石峰区" }, { "value": "430211", "label": "天元区" }, { "value": "430212", "label": "渌口区" }, { "value": "430223", "label": "攸县" }, { "value": "430224", "label": "茶陵县" }, { "value": "430225", "label": "炎陵县" }, { "value": "430271", "label": "云龙示范区" }, { "value": "430281", "label": "醴陵市" }] }, { "value": "4303", "label": "湘潭市", "children": [{ "value": "430302", "label": "雨湖区" }, { "value": "430304", "label": "岳塘区" }, { "value": "430321", "label": "湘潭县" }, { "value": "430371", "label": "湖南湘潭高新技术产业园区" }, { "value": "430372", "label": "湘潭昭山示范区" }, { "value": "430373", "label": "湘潭九华示范区" }, { "value": "430381", "label": "湘乡市" }, { "value": "430382", "label": "韶山市" }] }, { "value": "4304", "label": "衡阳市", "children": [{ "value": "430405", "label": "珠晖区" }, { "value": "430406", "label": "雁峰区" }, { "value": "430407", "label": "石鼓区" }, { "value": "430408", "label": "蒸湘区" }, { "value": "430412", "label": "南岳区" }, { "value": "430421", "label": "衡阳县" }, { "value": "430422", "label": "衡南县" }, { "value": "430423", "label": "衡山县" }, { "value": "430424", "label": "衡东县" }, { "value": "430426", "label": "祁东县" }, { "value": "430471", "label": "衡阳综合保税区" }, { "value": "430472", "label": "湖南衡阳高新技术产业园区" }, { "value": "430473", "label": "湖南衡阳松木经济开发区" }, { "value": "430481", "label": "耒阳市" }, { "value": "430482", "label": "常宁市" }] }, { "value": "4305", "label": "邵阳市", "children": [{ "value": "430502", "label": "双清区" }, { "value": "430503", "label": "大祥区" }, { "value": "430511", "label": "北塔区" }, { "value": "430521", "label": "邵东县" }, { "value": "430522", "label": "新邵县" }, { "value": "430523", "label": "邵阳县" }, { "value": "430524", "label": "隆回县" }, { "value": "430525", "label": "洞口县" }, { "value": "430527", "label": "绥宁县" }, { "value": "430528", "label": "新宁县" }, { "value": "430529", "label": "城步苗族自治县" }, { "value": "430581", "label": "武冈市" }] }, { "value": "4306", "label": "岳阳市", "children": [{ "value": "430602", "label": "岳阳楼区" }, { "value": "430603", "label": "云溪区" }, { "value": "430611", "label": "君山区" }, { "value": "430621", "label": "岳阳县" }, { "value": "430623", "label": "华容县" }, { "value": "430624", "label": "湘阴县" }, { "value": "430626", "label": "平江县" }, { "value": "430671", "label": "岳阳市屈原管理区" }, { "value": "430681", "label": "汨罗市" }, { "value": "430682", "label": "临湘市" }] }, { "value": "4307", "label": "常德市", "children": [{ "value": "430702", "label": "武陵区" }, { "value": "430703", "label": "鼎城区" }, { "value": "430721", "label": "安乡县" }, { "value": "430722", "label": "汉寿县" }, { "value": "430723", "label": "澧县" }, { "value": "430724", "label": "临澧县" }, { "value": "430725", "label": "桃源县" }, { "value": "430726", "label": "石门县" }, { "value": "430771", "label": "常德市西洞庭管理区" }, { "value": "430781", "label": "津市市" }] }, { "value": "4308", "label": "张家界市", "children": [{ "value": "430802", "label": "永定区" }, { "value": "430811", "label": "武陵源区" }, { "value": "430821", "label": "慈利县" }, { "value": "430822", "label": "桑植县" }] }, { "value": "4309", "label": "益阳市", "children": [{ "value": "430902", "label": "资阳区" }, { "value": "430903", "label": "赫山区" }, { "value": "430921", "label": "南县" }, { "value": "430922", "label": "桃江县" }, { "value": "430923", "label": "安化县" }, { "value": "430971", "label": "益阳市大通湖管理区" }, { "value": "430972", "label": "湖南益阳高新技术产业园区" }, { "value": "430981", "label": "沅江市" }] }, { "value": "4310", "label": "郴州市", "children": [{ "value": "431002", "label": "北湖区" }, { "value": "431003", "label": "苏仙区" }, { "value": "431021", "label": "桂阳县" }, { "value": "431022", "label": "宜章县" }, { "value": "431023", "label": "永兴县" }, { "value": "431024", "label": "嘉禾县" }, { "value": "431025", "label": "临武县" }, { "value": "431026", "label": "汝城县" }, { "value": "431027", "label": "桂东县" }, { "value": "431028", "label": "安仁县" }, { "value": "431081", "label": "资兴市" }] }, { "value": "4311", "label": "永州市", "children": [{ "value": "431102", "label": "零陵区" }, { "value": "431103", "label": "冷水滩区" }, { "value": "431121", "label": "祁阳县" }, { "value": "431122", "label": "东安县" }, { "value": "431123", "label": "双牌县" }, { "value": "431124", "label": "道县" }, { "value": "431125", "label": "江永县" }, { "value": "431126", "label": "宁远县" }, { "value": "431127", "label": "蓝山县" }, { "value": "431128", "label": "新田县" }, { "value": "431129", "label": "江华瑶族自治县" }, { "value": "431171", "label": "永州经济技术开发区" }, { "value": "431172", "label": "永州市金洞管理区" }, { "value": "431173", "label": "永州市回龙圩管理区" }] }, { "value": "4312", "label": "怀化市", "children": [{ "value": "431202", "label": "鹤城区" }, { "value": "431221", "label": "中方县" }, { "value": "431222", "label": "沅陵县" }, { "value": "431223", "label": "辰溪县" }, { "value": "431224", "label": "溆浦县" }, { "value": "431225", "label": "会同县" }, { "value": "431226", "label": "麻阳苗族自治县" }, { "value": "431227", "label": "新晃侗族自治县" }, { "value": "431228", "label": "芷江侗族自治县" }, { "value": "431229", "label": "靖州苗族侗族自治县" }, { "value": "431230", "label": "通道侗族自治县" }, { "value": "431271", "label": "怀化市洪江管理区" }, { "value": "431281", "label": "洪江市" }] }, { "value": "4313", "label": "娄底市", "children": [{ "value": "431302", "label": "娄星区" }, { "value": "431321", "label": "双峰县" }, { "value": "431322", "label": "新化县" }, { "value": "431381", "label": "冷水江市" }, { "value": "431382", "label": "涟源市" }] }, { "value": "4331", "label": "湘西土家族苗族自治州", "children": [{ "value": "433101", "label": "吉首市" }, { "value": "433122", "label": "泸溪县" }, { "value": "433123", "label": "凤凰县" }, { "value": "433124", "label": "花垣县" }, { "value": "433125", "label": "保靖县" }, { "value": "433126", "label": "古丈县" }, { "value": "433127", "label": "永顺县" }, { "value": "433130", "label": "龙山县" }, { "value": "433172", "label": "湖南吉首经济开发区" }, { "value": "433173", "label": "湖南永顺经济开发区" }] }] }, { "value": "44", "label": "广东省", "children": [{ "value": "4401", "label": "广州市", "children": [{ "value": "440103", "label": "荔湾区" }, { "value": "440104", "label": "越秀区" }, { "value": "440105", "label": "海珠区" }, { "value": "440106", "label": "天河区" }, { "value": "440111", "label": "白云区" }, { "value": "440112", "label": "黄埔区" }, { "value": "440113", "label": "番禺区" }, { "value": "440114", "label": "花都区" }, { "value": "440115", "label": "南沙区" }, { "value": "440117", "label": "从化区" }, { "value": "440118", "label": "增城区" }] }, { "value": "4402", "label": "韶关市", "children": [{ "value": "440203", "label": "武江区" }, { "value": "440204", "label": "浈江区" }, { "value": "440205", "label": "曲江区" }, { "value": "440222", "label": "始兴县" }, { "value": "440224", "label": "仁化县" }, { "value": "440229", "label": "翁源县" }, { "value": "440232", "label": "乳源瑶族自治县" }, { "value": "440233", "label": "新丰县" }, { "value": "440281", "label": "乐昌市" }, { "value": "440282", "label": "南雄市" }] }, { "value": "4403", "label": "深圳市", "children": [{ "value": "440303", "label": "罗湖区" }, { "value": "440304", "label": "福田区" }, { "value": "440305", "label": "南山区" }, { "value": "440306", "label": "宝安区" }, { "value": "440307", "label": "龙岗区" }, { "value": "440308", "label": "盐田区" }, { "value": "440309", "label": "龙华区" }, { "value": "440310", "label": "坪山区" }, { "value": "440311", "label": "光明区" }] }, { "value": "4404", "label": "珠海市", "children": [{ "value": "440402", "label": "香洲区" }, { "value": "440403", "label": "斗门区" }, { "value": "440404", "label": "金湾区" }] }, { "value": "4405", "label": "汕头市", "children": [{ "value": "440507", "label": "龙湖区" }, { "value": "440511", "label": "金平区" }, { "value": "440512", "label": "濠江区" }, { "value": "440513", "label": "潮阳区" }, { "value": "440514", "label": "潮南区" }, { "value": "440515", "label": "澄海区" }, { "value": "440523", "label": "南澳县" }] }, { "value": "4406", "label": "佛山市", "children": [{ "value": "440604", "label": "禅城区" }, { "value": "440605", "label": "南海区" }, { "value": "440606", "label": "顺德区" }, { "value": "440607", "label": "三水区" }, { "value": "440608", "label": "高明区" }] }, { "value": "4407", "label": "江门市", "children": [{ "value": "440703", "label": "蓬江区" }, { "value": "440704", "label": "江海区" }, { "value": "440705", "label": "新会区" }, { "value": "440781", "label": "台山市" }, { "value": "440783", "label": "开平市" }, { "value": "440784", "label": "鹤山市" }, { "value": "440785", "label": "恩平市" }] }, { "value": "4408", "label": "湛江市", "children": [{ "value": "440802", "label": "赤坎区" }, { "value": "440803", "label": "霞山区" }, { "value": "440804", "label": "坡头区" }, { "value": "440811", "label": "麻章区" }, { "value": "440823", "label": "遂溪县" }, { "value": "440825", "label": "徐闻县" }, { "value": "440881", "label": "廉江市" }, { "value": "440882", "label": "雷州市" }, { "value": "440883", "label": "吴川市" }] }, { "value": "4409", "label": "茂名市", "children": [{ "value": "440902", "label": "茂南区" }, { "value": "440904", "label": "电白区" }, { "value": "440981", "label": "高州市" }, { "value": "440982", "label": "化州市" }, { "value": "440983", "label": "信宜市" }] }, { "value": "4412", "label": "肇庆市", "children": [{ "value": "441202", "label": "端州区" }, { "value": "441203", "label": "鼎湖区" }, { "value": "441204", "label": "高要区" }, { "value": "441223", "label": "广宁县" }, { "value": "441224", "label": "怀集县" }, { "value": "441225", "label": "封开县" }, { "value": "441226", "label": "德庆县" }, { "value": "441284", "label": "四会市" }] }, { "value": "4413", "label": "惠州市", "children": [{ "value": "441302", "label": "惠城区" }, { "value": "441303", "label": "惠阳区" }, { "value": "441322", "label": "博罗县" }, { "value": "441323", "label": "惠东县" }, { "value": "441324", "label": "龙门县" }] }, { "value": "4414", "label": "梅州市", "children": [{ "value": "441402", "label": "梅江区" }, { "value": "441403", "label": "梅县区" }, { "value": "441422", "label": "大埔县" }, { "value": "441423", "label": "丰顺县" }, { "value": "441424", "label": "五华县" }, { "value": "441426", "label": "平远县" }, { "value": "441427", "label": "蕉岭县" }, { "value": "441481", "label": "兴宁市" }] }, { "value": "4415", "label": "汕尾市", "children": [{ "value": "441502", "label": "城区" }, { "value": "441521", "label": "海丰县" }, { "value": "441523", "label": "陆河县" }, { "value": "441581", "label": "陆丰市" }] }, { "value": "4416", "label": "河源市", "children": [{ "value": "441602", "label": "源城区" }, { "value": "441621", "label": "紫金县" }, { "value": "441622", "label": "龙川县" }, { "value": "441623", "label": "连平县" }, { "value": "441624", "label": "和平县" }, { "value": "441625", "label": "东源县" }] }, { "value": "4417", "label": "阳江市", "children": [{ "value": "441702", "label": "江城区" }, { "value": "441704", "label": "阳东区" }, { "value": "441721", "label": "阳西县" }, { "value": "441781", "label": "阳春市" }] }, { "value": "4418", "label": "清远市", "children": [{ "value": "441802", "label": "清城区" }, { "value": "441803", "label": "清新区" }, { "value": "441821", "label": "佛冈县" }, { "value": "441823", "label": "阳山县" }, { "value": "441825", "label": "连山壮族瑶族自治县" }, { "value": "441826", "label": "连南瑶族自治县" }, { "value": "441881", "label": "英德市" }, { "value": "441882", "label": "连州市" }] }, { "value": "4419", "label": "东莞市", "children": [{ "value": "441900003", "label": "东城街道" }, { "value": "441900004", "label": "南城街道" }, { "value": "441900005", "label": "万江街道" }, { "value": "441900006", "label": "莞城街道" }, { "value": "441900101", "label": "石碣镇" }, { "value": "441900102", "label": "石龙镇" }, { "value": "441900103", "label": "茶山镇" }, { "value": "441900104", "label": "石排镇" }, { "value": "441900105", "label": "企石镇" }, { "value": "441900106", "label": "横沥镇" }, { "value": "441900107", "label": "桥头镇" }, { "value": "441900108", "label": "谢岗镇" }, { "value": "441900109", "label": "东坑镇" }, { "value": "441900110", "label": "常平镇" }, { "value": "441900111", "label": "寮步镇" }, { "value": "441900112", "label": "樟木头镇" }, { "value": "441900113", "label": "大朗镇" }, { "value": "441900114", "label": "黄江镇" }, { "value": "441900115", "label": "清溪镇" }, { "value": "441900116", "label": "塘厦镇" }, { "value": "441900117", "label": "凤岗镇" }, { "value": "441900118", "label": "大岭山镇" }, { "value": "441900119", "label": "长安镇" }, { "value": "441900121", "label": "虎门镇" }, { "value": "441900122", "label": "厚街镇" }, { "value": "441900123", "label": "沙田镇" }, { "value": "441900124", "label": "道滘镇" }, { "value": "441900125", "label": "洪梅镇" }, { "value": "441900126", "label": "麻涌镇" }, { "value": "441900127", "label": "望牛墩镇" }, { "value": "441900128", "label": "中堂镇" }, { "value": "441900129", "label": "高埗镇" }, { "value": "441900401", "label": "松山湖管委会" }, { "value": "441900402", "label": "东莞港" }, { "value": "441900403", "label": "东莞生态园" }] }, { "value": "4420", "label": "中山市", "children": [{ "value": "442000001", "label": "石岐区街道" }, { "value": "442000002", "label": "东区街道" }, { "value": "442000003", "label": "火炬开发区街道" }, { "value": "442000004", "label": "西区街道" }, { "value": "442000005", "label": "南区街道" }, { "value": "442000006", "label": "五桂山街道" }, { "value": "442000100", "label": "小榄镇" }, { "value": "442000101", "label": "黄圃镇" }, { "value": "442000102", "label": "民众镇" }, { "value": "442000103", "label": "东凤镇" }, { "value": "442000104", "label": "东升镇" }, { "value": "442000105", "label": "古镇镇" }, { "value": "442000106", "label": "沙溪镇" }, { "value": "442000107", "label": "坦洲镇" }, { "value": "442000108", "label": "港口镇" }, { "value": "442000109", "label": "三角镇" }, { "value": "442000110", "label": "横栏镇" }, { "value": "442000111", "label": "南头镇" }, { "value": "442000112", "label": "阜沙镇" }, { "value": "442000113", "label": "南朗镇" }, { "value": "442000114", "label": "三乡镇" }, { "value": "442000115", "label": "板芙镇" }, { "value": "442000116", "label": "大涌镇" }, { "value": "442000117", "label": "神湾镇" }] }, { "value": "4451", "label": "潮州市", "children": [{ "value": "445102", "label": "湘桥区" }, { "value": "445103", "label": "潮安区" }, { "value": "445122", "label": "饶平县" }] }, { "value": "4452", "label": "揭阳市", "children": [{ "value": "445202", "label": "榕城区" }, { "value": "445203", "label": "揭东区" }, { "value": "445222", "label": "揭西县" }, { "value": "445224", "label": "惠来县" }, { "value": "445281", "label": "普宁市" }] }, { "value": "4453", "label": "云浮市", "children": [{ "value": "445302", "label": "云城区" }, { "value": "445303", "label": "云安区" }, { "value": "445321", "label": "新兴县" }, { "value": "445322", "label": "郁南县" }, { "value": "445381", "label": "罗定市" }] }] }, { "value": "45", "label": "广西壮族自治区", "children": [{ "value": "4501", "label": "南宁市", "children": [{ "value": "450102", "label": "兴宁区" }, { "value": "450103", "label": "青秀区" }, { "value": "450105", "label": "江南区" }, { "value": "450107", "label": "西乡塘区" }, { "value": "450108", "label": "良庆区" }, { "value": "450109", "label": "邕宁区" }, { "value": "450110", "label": "武鸣区" }, { "value": "450123", "label": "隆安县" }, { "value": "450124", "label": "马山县" }, { "value": "450125", "label": "上林县" }, { "value": "450126", "label": "宾阳县" }, { "value": "450127", "label": "横县" }] }, { "value": "4502", "label": "柳州市", "children": [{ "value": "450202", "label": "城中区" }, { "value": "450203", "label": "鱼峰区" }, { "value": "450204", "label": "柳南区" }, { "value": "450205", "label": "柳北区" }, { "value": "450206", "label": "柳江区" }, { "value": "450222", "label": "柳城县" }, { "value": "450223", "label": "鹿寨县" }, { "value": "450224", "label": "融安县" }, { "value": "450225", "label": "融水苗族自治县" }, { "value": "450226", "label": "三江侗族自治县" }] }, { "value": "4503", "label": "桂林市", "children": [{ "value": "450302", "label": "秀峰区" }, { "value": "450303", "label": "叠彩区" }, { "value": "450304", "label": "象山区" }, { "value": "450305", "label": "七星区" }, { "value": "450311", "label": "雁山区" }, { "value": "450312", "label": "临桂区" }, { "value": "450321", "label": "阳朔县" }, { "value": "450323", "label": "灵川县" }, { "value": "450324", "label": "全州县" }, { "value": "450325", "label": "兴安县" }, { "value": "450326", "label": "永福县" }, { "value": "450327", "label": "灌阳县" }, { "value": "450328", "label": "龙胜各族自治县" }, { "value": "450329", "label": "资源县" }, { "value": "450330", "label": "平乐县" }, { "value": "450332", "label": "恭城瑶族自治县" }, { "value": "450381", "label": "荔浦市" }] }, { "value": "4504", "label": "梧州市", "children": [{ "value": "450403", "label": "万秀区" }, { "value": "450405", "label": "长洲区" }, { "value": "450406", "label": "龙圩区" }, { "value": "450421", "label": "苍梧县" }, { "value": "450422", "label": "藤县" }, { "value": "450423", "label": "蒙山县" }, { "value": "450481", "label": "岑溪市" }] }, { "value": "4505", "label": "北海市", "children": [{ "value": "450502", "label": "海城区" }, { "value": "450503", "label": "银海区" }, { "value": "450512", "label": "铁山港区" }, { "value": "450521", "label": "合浦县" }] }, { "value": "4506", "label": "防城港市", "children": [{ "value": "450602", "label": "港口区" }, { "value": "450603", "label": "防城区" }, { "value": "450621", "label": "上思县" }, { "value": "450681", "label": "东兴市" }] }, { "value": "4507", "label": "钦州市", "children": [{ "value": "450702", "label": "钦南区" }, { "value": "450703", "label": "钦北区" }, { "value": "450721", "label": "灵山县" }, { "value": "450722", "label": "浦北县" }] }, { "value": "4508", "label": "贵港市", "children": [{ "value": "450802", "label": "港北区" }, { "value": "450803", "label": "港南区" }, { "value": "450804", "label": "覃塘区" }, { "value": "450821", "label": "平南县" }, { "value": "450881", "label": "桂平市" }] }, { "value": "4509", "label": "玉林市", "children": [{ "value": "450902", "label": "玉州区" }, { "value": "450903", "label": "福绵区" }, { "value": "450921", "label": "容县" }, { "value": "450922", "label": "陆川县" }, { "value": "450923", "label": "博白县" }, { "value": "450924", "label": "兴业县" }, { "value": "450981", "label": "北流市" }] }, { "value": "4510", "label": "百色市", "children": [{ "value": "451002", "label": "右江区" }, { "value": "451021", "label": "田阳县" }, { "value": "451022", "label": "田东县" }, { "value": "451023", "label": "平果县" }, { "value": "451024", "label": "德保县" }, { "value": "451026", "label": "那坡县" }, { "value": "451027", "label": "凌云县" }, { "value": "451028", "label": "乐业县" }, { "value": "451029", "label": "田林县" }, { "value": "451030", "label": "西林县" }, { "value": "451031", "label": "隆林各族自治县" }, { "value": "451081", "label": "靖西市" }] }, { "value": "4511", "label": "贺州市", "children": [{ "value": "451102", "label": "八步区" }, { "value": "451103", "label": "平桂区" }, { "value": "451121", "label": "昭平县" }, { "value": "451122", "label": "钟山县" }, { "value": "451123", "label": "富川瑶族自治县" }] }, { "value": "4512", "label": "河池市", "children": [{ "value": "451202", "label": "金城江区" }, { "value": "451203", "label": "宜州区" }, { "value": "451221", "label": "南丹县" }, { "value": "451222", "label": "天峨县" }, { "value": "451223", "label": "凤山县" }, { "value": "451224", "label": "东兰县" }, { "value": "451225", "label": "罗城仫佬族自治县" }, { "value": "451226", "label": "环江毛南族自治县" }, { "value": "451227", "label": "巴马瑶族自治县" }, { "value": "451228", "label": "都安瑶族自治县" }, { "value": "451229", "label": "大化瑶族自治县" }] }, { "value": "4513", "label": "来宾市", "children": [{ "value": "451302", "label": "兴宾区" }, { "value": "451321", "label": "忻城县" }, { "value": "451322", "label": "象州县" }, { "value": "451323", "label": "武宣县" }, { "value": "451324", "label": "金秀瑶族自治县" }, { "value": "451381", "label": "合山市" }] }, { "value": "4514", "label": "崇左市", "children": [{ "value": "451402", "label": "江州区" }, { "value": "451421", "label": "扶绥县" }, { "value": "451422", "label": "宁明县" }, { "value": "451423", "label": "龙州县" }, { "value": "451424", "label": "大新县" }, { "value": "451425", "label": "天等县" }, { "value": "451481", "label": "凭祥市" }] }] }, { "value": "46", "label": "海南省", "children": [{ "value": "4601", "label": "海口市", "children": [{ "value": "460105", "label": "秀英区" }, { "value": "460106", "label": "龙华区" }, { "value": "460107", "label": "琼山区" }, { "value": "460108", "label": "美兰区" }] }, { "value": "4602", "label": "三亚市", "children": [{ "value": "460202", "label": "海棠区" }, { "value": "460203", "label": "吉阳区" }, { "value": "460204", "label": "天涯区" }, { "value": "460205", "label": "崖州区" }] }, { "value": "4603", "label": "三沙市", "children": [{ "value": "460321", "label": "西沙群岛" }, { "value": "460322", "label": "南沙群岛" }, { "value": "460323", "label": "中沙群岛的岛礁及其海域" }] }, { "value": "4604", "label": "儋州市", "children": [{ "value": "460400100", "label": "那大镇" }, { "value": "460400101", "label": "和庆镇" }, { "value": "460400102", "label": "南丰镇" }, { "value": "460400103", "label": "大成镇" }, { "value": "460400104", "label": "雅星镇" }, { "value": "460400105", "label": "兰洋镇" }, { "value": "460400106", "label": "光村镇" }, { "value": "460400107", "label": "木棠镇" }, { "value": "460400108", "label": "海头镇" }, { "value": "460400109", "label": "峨蔓镇" }, { "value": "460400111", "label": "王五镇" }, { "value": "460400112", "label": "白马井镇" }, { "value": "460400113", "label": "中和镇" }, { "value": "460400114", "label": "排浦镇" }, { "value": "460400115", "label": "东成镇" }, { "value": "460400116", "label": "新州镇" }, { "value": "460400499", "label": "洋浦经济开发区" }, { "value": "460400500", "label": "华南热作学院" }] }, { "value": "4690", "label": "省直辖县级行政区划", "children": [{ "value": "469001", "label": "五指山市" }, { "value": "469002", "label": "琼海市" }, { "value": "469005", "label": "文昌市" }, { "value": "469006", "label": "万宁市" }, { "value": "469007", "label": "东方市" }, { "value": "469021", "label": "定安县" }, { "value": "469022", "label": "屯昌县" }, { "value": "469023", "label": "澄迈县" }, { "value": "469024", "label": "临高县" }, { "value": "469025", "label": "白沙黎族自治县" }, { "value": "469026", "label": "昌江黎族自治县" }, { "value": "469027", "label": "乐东黎族自治县" }, { "value": "469028", "label": "陵水黎族自治县" }, { "value": "469029", "label": "保亭黎族苗族自治县" }, { "value": "469030", "label": "琼中黎族苗族自治县" }] }] }, { "value": "50", "label": "重庆市", "children": [{ "value": "5001", "label": "市辖区", "children": [{ "value": "500101", "label": "万州区" }, { "value": "500102", "label": "涪陵区" }, { "value": "500103", "label": "渝中区" }, { "value": "500104", "label": "大渡口区" }, { "value": "500105", "label": "江北区" }, { "value": "500106", "label": "沙坪坝区" }, { "value": "500107", "label": "九龙坡区" }, { "value": "500108", "label": "南岸区" }, { "value": "500109", "label": "北碚区" }, { "value": "500110", "label": "綦江区" }, { "value": "500111", "label": "大足区" }, { "value": "500112", "label": "渝北区" }, { "value": "500113", "label": "巴南区" }, { "value": "500114", "label": "黔江区" }, { "value": "500115", "label": "长寿区" }, { "value": "500116", "label": "江津区" }, { "value": "500117", "label": "合川区" }, { "value": "500118", "label": "永川区" }, { "value": "500119", "label": "南川区" }, { "value": "500120", "label": "璧山区" }, { "value": "500151", "label": "铜梁区" }, { "value": "500152", "label": "潼南区" }, { "value": "500153", "label": "荣昌区" }, { "value": "500154", "label": "开州区" }, { "value": "500155", "label": "梁平区" }, { "value": "500156", "label": "武隆区" }] }, { "value": "5002", "label": "县", "children": [{ "value": "500229", "label": "城口县" }, { "value": "500230", "label": "丰都县" }, { "value": "500231", "label": "垫江县" }, { "value": "500233", "label": "忠县" }, { "value": "500235", "label": "云阳县" }, { "value": "500236", "label": "奉节县" }, { "value": "500237", "label": "巫山县" }, { "value": "500238", "label": "巫溪县" }, { "value": "500240", "label": "石柱土家族自治县" }, { "value": "500241", "label": "秀山土家族苗族自治县" }, { "value": "500242", "label": "酉阳土家族苗族自治县" }, { "value": "500243", "label": "彭水苗族土家族自治县" }] }] }, { "value": "51", "label": "四川省", "children": [{ "value": "5101", "label": "成都市", "children": [{ "value": "510104", "label": "锦江区" }, { "value": "510105", "label": "青羊区" }, { "value": "510106", "label": "金牛区" }, { "value": "510107", "label": "武侯区" }, { "value": "510108", "label": "成华区" }, { "value": "510112", "label": "龙泉驿区" }, { "value": "510113", "label": "青白江区" }, { "value": "510114", "label": "新都区" }, { "value": "510115", "label": "温江区" }, { "value": "510116", "label": "双流区" }, { "value": "510117", "label": "郫都区" }, { "value": "510121", "label": "金堂县" }, { "value": "510129", "label": "大邑县" }, { "value": "510131", "label": "蒲江县" }, { "value": "510132", "label": "新津县" }, { "value": "510181", "label": "都江堰市" }, { "value": "510182", "label": "彭州市" }, { "value": "510183", "label": "邛崃市" }, { "value": "510184", "label": "崇州市" }, { "value": "510185", "label": "简阳市" }] }, { "value": "5103", "label": "自贡市", "children": [{ "value": "510302", "label": "自流井区" }, { "value": "510303", "label": "贡井区" }, { "value": "510304", "label": "大安区" }, { "value": "510311", "label": "沿滩区" }, { "value": "510321", "label": "荣县" }, { "value": "510322", "label": "富顺县" }] }, { "value": "5104", "label": "攀枝花市", "children": [{ "value": "510402", "label": "东区" }, { "value": "510403", "label": "西区" }, { "value": "510411", "label": "仁和区" }, { "value": "510421", "label": "米易县" }, { "value": "510422", "label": "盐边县" }] }, { "value": "5105", "label": "泸州市", "children": [{ "value": "510502", "label": "江阳区" }, { "value": "510503", "label": "纳溪区" }, { "value": "510504", "label": "龙马潭区" }, { "value": "510521", "label": "泸县" }, { "value": "510522", "label": "合江县" }, { "value": "510524", "label": "叙永县" }, { "value": "510525", "label": "古蔺县" }] }, { "value": "5106", "label": "德阳市", "children": [{ "value": "510603", "label": "旌阳区" }, { "value": "510604", "label": "罗江区" }, { "value": "510623", "label": "中江县" }, { "value": "510681", "label": "广汉市" }, { "value": "510682", "label": "什邡市" }, { "value": "510683", "label": "绵竹市" }] }, { "value": "5107", "label": "绵阳市", "children": [{ "value": "510703", "label": "涪城区" }, { "value": "510704", "label": "游仙区" }, { "value": "510705", "label": "安州区" }, { "value": "510722", "label": "三台县" }, { "value": "510723", "label": "盐亭县" }, { "value": "510725", "label": "梓潼县" }, { "value": "510726", "label": "北川羌族自治县" }, { "value": "510727", "label": "平武县" }, { "value": "510781", "label": "江油市" }] }, { "value": "5108", "label": "广元市", "children": [{ "value": "510802", "label": "利州区" }, { "value": "510811", "label": "昭化区" }, { "value": "510812", "label": "朝天区" }, { "value": "510821", "label": "旺苍县" }, { "value": "510822", "label": "青川县" }, { "value": "510823", "label": "剑阁县" }, { "value": "510824", "label": "苍溪县" }] }, { "value": "5109", "label": "遂宁市", "children": [{ "value": "510903", "label": "船山区" }, { "value": "510904", "label": "安居区" }, { "value": "510921", "label": "蓬溪县" }, { "value": "510922", "label": "射洪县" }, { "value": "510923", "label": "大英县" }] }, { "value": "5110", "label": "内江市", "children": [{ "value": "511002", "label": "市中区" }, { "value": "511011", "label": "东兴区" }, { "value": "511024", "label": "威远县" }, { "value": "511025", "label": "资中县" }, { "value": "511071", "label": "内江经济开发区" }, { "value": "511083", "label": "隆昌市" }] }, { "value": "5111", "label": "乐山市", "children": [{ "value": "511102", "label": "市中区" }, { "value": "511111", "label": "沙湾区" }, { "value": "511112", "label": "五通桥区" }, { "value": "511113", "label": "金口河区" }, { "value": "511123", "label": "犍为县" }, { "value": "511124", "label": "井研县" }, { "value": "511126", "label": "夹江县" }, { "value": "511129", "label": "沐川县" }, { "value": "511132", "label": "峨边彝族自治县" }, { "value": "511133", "label": "马边彝族自治县" }, { "value": "511181", "label": "峨眉山市" }] }, { "value": "5113", "label": "南充市", "children": [{ "value": "511302", "label": "顺庆区" }, { "value": "511303", "label": "高坪区" }, { "value": "511304", "label": "嘉陵区" }, { "value": "511321", "label": "南部县" }, { "value": "511322", "label": "营山县" }, { "value": "511323", "label": "蓬安县" }, { "value": "511324", "label": "仪陇县" }, { "value": "511325", "label": "西充县" }, { "value": "511381", "label": "阆中市" }] }, { "value": "5114", "label": "眉山市", "children": [{ "value": "511402", "label": "东坡区" }, { "value": "511403", "label": "彭山区" }, { "value": "511421", "label": "仁寿县" }, { "value": "511423", "label": "洪雅县" }, { "value": "511424", "label": "丹棱县" }, { "value": "511425", "label": "青神县" }] }, { "value": "5115", "label": "宜宾市", "children": [{ "value": "511502", "label": "翠屏区" }, { "value": "511503", "label": "南溪区" }, { "value": "511504", "label": "叙州区" }, { "value": "511523", "label": "江安县" }, { "value": "511524", "label": "长宁县" }, { "value": "511525", "label": "高县" }, { "value": "511526", "label": "珙县" }, { "value": "511527", "label": "筠连县" }, { "value": "511528", "label": "兴文县" }, { "value": "511529", "label": "屏山县" }] }, { "value": "5116", "label": "广安市", "children": [{ "value": "511602", "label": "广安区" }, { "value": "511603", "label": "前锋区" }, { "value": "511621", "label": "岳池县" }, { "value": "511622", "label": "武胜县" }, { "value": "511623", "label": "邻水县" }, { "value": "511681", "label": "华蓥市" }] }, { "value": "5117", "label": "达州市", "children": [{ "value": "511702", "label": "通川区" }, { "value": "511703", "label": "达川区" }, { "value": "511722", "label": "宣汉县" }, { "value": "511723", "label": "开江县" }, { "value": "511724", "label": "大竹县" }, { "value": "511725", "label": "渠县" }, { "value": "511771", "label": "达州经济开发区" }, { "value": "511781", "label": "万源市" }] }, { "value": "5118", "label": "雅安市", "children": [{ "value": "511802", "label": "雨城区" }, { "value": "511803", "label": "名山区" }, { "value": "511822", "label": "荥经县" }, { "value": "511823", "label": "汉源县" }, { "value": "511824", "label": "石棉县" }, { "value": "511825", "label": "天全县" }, { "value": "511826", "label": "芦山县" }, { "value": "511827", "label": "宝兴县" }] }, { "value": "5119", "label": "巴中市", "children": [{ "value": "511902", "label": "巴州区" }, { "value": "511903", "label": "恩阳区" }, { "value": "511921", "label": "通江县" }, { "value": "511922", "label": "南江县" }, { "value": "511923", "label": "平昌县" }, { "value": "511971", "label": "巴中经济开发区" }] }, { "value": "5120", "label": "资阳市", "children": [{ "value": "512002", "label": "雁江区" }, { "value": "512021", "label": "安岳县" }, { "value": "512022", "label": "乐至县" }] }, { "value": "5132", "label": "阿坝藏族羌族自治州", "children": [{ "value": "513201", "label": "马尔康市" }, { "value": "513221", "label": "汶川县" }, { "value": "513222", "label": "理县" }, { "value": "513223", "label": "茂县" }, { "value": "513224", "label": "松潘县" }, { "value": "513225", "label": "九寨沟县" }, { "value": "513226", "label": "金川县" }, { "value": "513227", "label": "小金县" }, { "value": "513228", "label": "黑水县" }, { "value": "513230", "label": "壤塘县" }, { "value": "513231", "label": "阿坝县" }, { "value": "513232", "label": "若尔盖县" }, { "value": "513233", "label": "红原县" }] }, { "value": "5133", "label": "甘孜藏族自治州", "children": [{ "value": "513301", "label": "康定市" }, { "value": "513322", "label": "泸定县" }, { "value": "513323", "label": "丹巴县" }, { "value": "513324", "label": "九龙县" }, { "value": "513325", "label": "雅江县" }, { "value": "513326", "label": "道孚县" }, { "value": "513327", "label": "炉霍县" }, { "value": "513328", "label": "甘孜县" }, { "value": "513329", "label": "新龙县" }, { "value": "513330", "label": "德格县" }, { "value": "513331", "label": "白玉县" }, { "value": "513332", "label": "石渠县" }, { "value": "513333", "label": "色达县" }, { "value": "513334", "label": "理塘县" }, { "value": "513335", "label": "巴塘县" }, { "value": "513336", "label": "乡城县" }, { "value": "513337", "label": "稻城县" }, { "value": "513338", "label": "得荣县" }] }, { "value": "5134", "label": "凉山彝族自治州", "children": [{ "value": "513401", "label": "西昌市" }, { "value": "513422", "label": "木里藏族自治县" }, { "value": "513423", "label": "盐源县" }, { "value": "513424", "label": "德昌县" }, { "value": "513425", "label": "会理县" }, { "value": "513426", "label": "会东县" }, { "value": "513427", "label": "宁南县" }, { "value": "513428", "label": "普格县" }, { "value": "513429", "label": "布拖县" }, { "value": "513430", "label": "金阳县" }, { "value": "513431", "label": "昭觉县" }, { "value": "513432", "label": "喜德县" }, { "value": "513433", "label": "冕宁县" }, { "value": "513434", "label": "越西县" }, { "value": "513435", "label": "甘洛县" }, { "value": "513436", "label": "美姑县" }, { "value": "513437", "label": "雷波县" }] }] }, { "value": "52", "label": "贵州省", "children": [{ "value": "5201", "label": "贵阳市", "children": [{ "value": "520102", "label": "南明区" }, { "value": "520103", "label": "云岩区" }, { "value": "520111", "label": "花溪区" }, { "value": "520112", "label": "乌当区" }, { "value": "520113", "label": "白云区" }, { "value": "520115", "label": "观山湖区" }, { "value": "520121", "label": "开阳县" }, { "value": "520122", "label": "息烽县" }, { "value": "520123", "label": "修文县" }, { "value": "520181", "label": "清镇市" }] }, { "value": "5202", "label": "六盘水市", "children": [{ "value": "520201", "label": "钟山区" }, { "value": "520203", "label": "六枝特区" }, { "value": "520221", "label": "水城县" }, { "value": "520281", "label": "盘州市" }] }, { "value": "5203", "label": "遵义市", "children": [{ "value": "520302", "label": "红花岗区" }, { "value": "520303", "label": "汇川区" }, { "value": "520304", "label": "播州区" }, { "value": "520322", "label": "桐梓县" }, { "value": "520323", "label": "绥阳县" }, { "value": "520324", "label": "正安县" }, { "value": "520325", "label": "道真仡佬族苗族自治县" }, { "value": "520326", "label": "务川仡佬族苗族自治县" }, { "value": "520327", "label": "凤冈县" }, { "value": "520328", "label": "湄潭县" }, { "value": "520329", "label": "余庆县" }, { "value": "520330", "label": "习水县" }, { "value": "520381", "label": "赤水市" }, { "value": "520382", "label": "仁怀市" }] }, { "value": "5204", "label": "安顺市", "children": [{ "value": "520402", "label": "西秀区" }, { "value": "520403", "label": "平坝区" }, { "value": "520422", "label": "普定县" }, { "value": "520423", "label": "镇宁布依族苗族自治县" }, { "value": "520424", "label": "关岭布依族苗族自治县" }, { "value": "520425", "label": "紫云苗族布依族自治县" }] }, { "value": "5205", "label": "毕节市", "children": [{ "value": "520502", "label": "七星关区" }, { "value": "520521", "label": "大方县" }, { "value": "520522", "label": "黔西县" }, { "value": "520523", "label": "金沙县" }, { "value": "520524", "label": "织金县" }, { "value": "520525", "label": "纳雍县" }, { "value": "520526", "label": "威宁彝族回族苗族自治县" }, { "value": "520527", "label": "赫章县" }] }, { "value": "5206", "label": "铜仁市", "children": [{ "value": "520602", "label": "碧江区" }, { "value": "520603", "label": "万山区" }, { "value": "520621", "label": "江口县" }, { "value": "520622", "label": "玉屏侗族自治县" }, { "value": "520623", "label": "石阡县" }, { "value": "520624", "label": "思南县" }, { "value": "520625", "label": "印江土家族苗族自治县" }, { "value": "520626", "label": "德江县" }, { "value": "520627", "label": "沿河土家族自治县" }, { "value": "520628", "label": "松桃苗族自治县" }] }, { "value": "5223", "label": "黔西南布依族苗族自治州", "children": [{ "value": "522301", "label": "兴义市" }, { "value": "522302", "label": "兴仁市" }, { "value": "522323", "label": "普安县" }, { "value": "522324", "label": "晴隆县" }, { "value": "522325", "label": "贞丰县" }, { "value": "522326", "label": "望谟县" }, { "value": "522327", "label": "册亨县" }, { "value": "522328", "label": "安龙县" }] }, { "value": "5226", "label": "黔东南苗族侗族自治州", "children": [{ "value": "522601", "label": "凯里市" }, { "value": "522622", "label": "黄平县" }, { "value": "522623", "label": "施秉县" }, { "value": "522624", "label": "三穗县" }, { "value": "522625", "label": "镇远县" }, { "value": "522626", "label": "岑巩县" }, { "value": "522627", "label": "天柱县" }, { "value": "522628", "label": "锦屏县" }, { "value": "522629", "label": "剑河县" }, { "value": "522630", "label": "台江县" }, { "value": "522631", "label": "黎平县" }, { "value": "522632", "label": "榕江县" }, { "value": "522633", "label": "从江县" }, { "value": "522634", "label": "雷山县" }, { "value": "522635", "label": "麻江县" }, { "value": "522636", "label": "丹寨县" }] }, { "value": "5227", "label": "黔南布依族苗族自治州", "children": [{ "value": "522701", "label": "都匀市" }, { "value": "522702", "label": "福泉市" }, { "value": "522722", "label": "荔波县" }, { "value": "522723", "label": "贵定县" }, { "value": "522725", "label": "瓮安县" }, { "value": "522726", "label": "独山县" }, { "value": "522727", "label": "平塘县" }, { "value": "522728", "label": "罗甸县" }, { "value": "522729", "label": "长顺县" }, { "value": "522730", "label": "龙里县" }, { "value": "522731", "label": "惠水县" }, { "value": "522732", "label": "三都水族自治县" }] }] }, { "value": "53", "label": "云南省", "children": [{ "value": "5301", "label": "昆明市", "children": [{ "value": "530102", "label": "五华区" }, { "value": "530103", "label": "盘龙区" }, { "value": "530111", "label": "官渡区" }, { "value": "530112", "label": "西山区" }, { "value": "530113", "label": "东川区" }, { "value": "530114", "label": "呈贡区" }, { "value": "530115", "label": "晋宁区" }, { "value": "530124", "label": "富民县" }, { "value": "530125", "label": "宜良县" }, { "value": "530126", "label": "石林彝族自治县" }, { "value": "530127", "label": "嵩明县" }, { "value": "530128", "label": "禄劝彝族苗族自治县" }, { "value": "530129", "label": "寻甸回族彝族自治县" }, { "value": "530181", "label": "安宁市" }] }, { "value": "5303", "label": "曲靖市", "children": [{ "value": "530302", "label": "麒麟区" }, { "value": "530303", "label": "沾益区" }, { "value": "530304", "label": "马龙区" }, { "value": "530322", "label": "陆良县" }, { "value": "530323", "label": "师宗县" }, { "value": "530324", "label": "罗平县" }, { "value": "530325", "label": "富源县" }, { "value": "530326", "label": "会泽县" }, { "value": "530381", "label": "宣威市" }] }, { "value": "5304", "label": "玉溪市", "children": [{ "value": "530402", "label": "红塔区" }, { "value": "530403", "label": "江川区" }, { "value": "530422", "label": "澄江县" }, { "value": "530423", "label": "通海县" }, { "value": "530424", "label": "华宁县" }, { "value": "530425", "label": "易门县" }, { "value": "530426", "label": "峨山彝族自治县" }, { "value": "530427", "label": "新平彝族傣族自治县" }, { "value": "530428", "label": "元江哈尼族彝族傣族自治县" }] }, { "value": "5305", "label": "保山市", "children": [{ "value": "530502", "label": "隆阳区" }, { "value": "530521", "label": "施甸县" }, { "value": "530523", "label": "龙陵县" }, { "value": "530524", "label": "昌宁县" }, { "value": "530581", "label": "腾冲市" }] }, { "value": "5306", "label": "昭通市", "children": [{ "value": "530602", "label": "昭阳区" }, { "value": "530621", "label": "鲁甸县" }, { "value": "530622", "label": "巧家县" }, { "value": "530623", "label": "盐津县" }, { "value": "530624", "label": "大关县" }, { "value": "530625", "label": "永善县" }, { "value": "530626", "label": "绥江县" }, { "value": "530627", "label": "镇雄县" }, { "value": "530628", "label": "彝良县" }, { "value": "530629", "label": "威信县" }, { "value": "530681", "label": "水富市" }] }, { "value": "5307", "label": "丽江市", "children": [{ "value": "530702", "label": "古城区" }, { "value": "530721", "label": "玉龙纳西族自治县" }, { "value": "530722", "label": "永胜县" }, { "value": "530723", "label": "华坪县" }, { "value": "530724", "label": "宁蒗彝族自治县" }] }, { "value": "5308", "label": "普洱市", "children": [{ "value": "530802", "label": "思茅区" }, { "value": "530821", "label": "宁洱哈尼族彝族自治县" }, { "value": "530822", "label": "墨江哈尼族自治县" }, { "value": "530823", "label": "景东彝族自治县" }, { "value": "530824", "label": "景谷傣族彝族自治县" }, { "value": "530825", "label": "镇沅彝族哈尼族拉祜族自治县" }, { "value": "530826", "label": "江城哈尼族彝族自治县" }, { "value": "530827", "label": "孟连傣族拉祜族佤族自治县" }, { "value": "530828", "label": "澜沧拉祜族自治县" }, { "value": "530829", "label": "西盟佤族自治县" }] }, { "value": "5309", "label": "临沧市", "children": [{ "value": "530902", "label": "临翔区" }, { "value": "530921", "label": "凤庆县" }, { "value": "530922", "label": "云县" }, { "value": "530923", "label": "永德县" }, { "value": "530924", "label": "镇康县" }, { "value": "530925", "label": "双江拉祜族佤族布朗族傣族自治县" }, { "value": "530926", "label": "耿马傣族佤族自治县" }, { "value": "530927", "label": "沧源佤族自治县" }] }, { "value": "5323", "label": "楚雄彝族自治州", "children": [{ "value": "532301", "label": "楚雄市" }, { "value": "532322", "label": "双柏县" }, { "value": "532323", "label": "牟定县" }, { "value": "532324", "label": "南华县" }, { "value": "532325", "label": "姚安县" }, { "value": "532326", "label": "大姚县" }, { "value": "532327", "label": "永仁县" }, { "value": "532328", "label": "元谋县" }, { "value": "532329", "label": "武定县" }, { "value": "532331", "label": "禄丰县" }] }, { "value": "5325", "label": "红河哈尼族彝族自治州", "children": [{ "value": "532501", "label": "个旧市" }, { "value": "532502", "label": "开远市" }, { "value": "532503", "label": "蒙自市" }, { "value": "532504", "label": "弥勒市" }, { "value": "532523", "label": "屏边苗族自治县" }, { "value": "532524", "label": "建水县" }, { "value": "532525", "label": "石屏县" }, { "value": "532527", "label": "泸西县" }, { "value": "532528", "label": "元阳县" }, { "value": "532529", "label": "红河县" }, { "value": "532530", "label": "金平苗族瑶族傣族自治县" }, { "value": "532531", "label": "绿春县" }, { "value": "532532", "label": "河口瑶族自治县" }] }, { "value": "5326", "label": "文山壮族苗族自治州", "children": [{ "value": "532601", "label": "文山市" }, { "value": "532622", "label": "砚山县" }, { "value": "532623", "label": "西畴县" }, { "value": "532624", "label": "麻栗坡县" }, { "value": "532625", "label": "马关县" }, { "value": "532626", "label": "丘北县" }, { "value": "532627", "label": "广南县" }, { "value": "532628", "label": "富宁县" }] }, { "value": "5328", "label": "西双版纳傣族自治州", "children": [{ "value": "532801", "label": "景洪市" }, { "value": "532822", "label": "勐海县" }, { "value": "532823", "label": "勐腊县" }] }, { "value": "5329", "label": "大理白族自治州", "children": [{ "value": "532901", "label": "大理市" }, { "value": "532922", "label": "漾濞彝族自治县" }, { "value": "532923", "label": "祥云县" }, { "value": "532924", "label": "宾川县" }, { "value": "532925", "label": "弥渡县" }, { "value": "532926", "label": "南涧彝族自治县" }, { "value": "532927", "label": "巍山彝族回族自治县" }, { "value": "532928", "label": "永平县" }, { "value": "532929", "label": "云龙县" }, { "value": "532930", "label": "洱源县" }, { "value": "532931", "label": "剑川县" }, { "value": "532932", "label": "鹤庆县" }] }, { "value": "5331", "label": "德宏傣族景颇族自治州", "children": [{ "value": "533102", "label": "瑞丽市" }, { "value": "533103", "label": "芒市" }, { "value": "533122", "label": "梁河县" }, { "value": "533123", "label": "盈江县" }, { "value": "533124", "label": "陇川县" }] }, { "value": "5333", "label": "怒江傈僳族自治州", "children": [{ "value": "533301", "label": "泸水市" }, { "value": "533323", "label": "福贡县" }, { "value": "533324", "label": "贡山独龙族怒族自治县" }, { "value": "533325", "label": "兰坪白族普米族自治县" }] }, { "value": "5334", "label": "迪庆藏族自治州", "children": [{ "value": "533401", "label": "香格里拉市" }, { "value": "533422", "label": "德钦县" }, { "value": "533423", "label": "维西傈僳族自治县" }] }] }, { "value": "54", "label": "西藏自治区", "children": [{ "value": "5401", "label": "拉萨市", "children": [{ "value": "540102", "label": "城关区" }, { "value": "540103", "label": "堆龙德庆区" }, { "value": "540104", "label": "达孜区" }, { "value": "540121", "label": "林周县" }, { "value": "540122", "label": "当雄县" }, { "value": "540123", "label": "尼木县" }, { "value": "540124", "label": "曲水县" }, { "value": "540127", "label": "墨竹工卡县" }, { "value": "540171", "label": "格尔木藏青工业园区" }, { "value": "540172", "label": "拉萨经济技术开发区" }, { "value": "540173", "label": "西藏文化旅游创意园区" }, { "value": "540174", "label": "达孜工业园区" }] }, { "value": "5402", "label": "日喀则市", "children": [{ "value": "540202", "label": "桑珠孜区" }, { "value": "540221", "label": "南木林县" }, { "value": "540222", "label": "江孜县" }, { "value": "540223", "label": "定日县" }, { "value": "540224", "label": "萨迦县" }, { "value": "540225", "label": "拉孜县" }, { "value": "540226", "label": "昂仁县" }, { "value": "540227", "label": "谢通门县" }, { "value": "540228", "label": "白朗县" }, { "value": "540229", "label": "仁布县" }, { "value": "540230", "label": "康马县" }, { "value": "540231", "label": "定结县" }, { "value": "540232", "label": "仲巴县" }, { "value": "540233", "label": "亚东县" }, { "value": "540234", "label": "吉隆县" }, { "value": "540235", "label": "聂拉木县" }, { "value": "540236", "label": "萨嘎县" }, { "value": "540237", "label": "岗巴县" }] }, { "value": "5403", "label": "昌都市", "children": [{ "value": "540302", "label": "卡若区" }, { "value": "540321", "label": "江达县" }, { "value": "540322", "label": "贡觉县" }, { "value": "540323", "label": "类乌齐县" }, { "value": "540324", "label": "丁青县" }, { "value": "540325", "label": "察雅县" }, { "value": "540326", "label": "八宿县" }, { "value": "540327", "label": "左贡县" }, { "value": "540328", "label": "芒康县" }, { "value": "540329", "label": "洛隆县" }, { "value": "540330", "label": "边坝县" }] }, { "value": "5404", "label": "林芝市", "children": [{ "value": "540402", "label": "巴宜区" }, { "value": "540421", "label": "工布江达县" }, { "value": "540422", "label": "米林县" }, { "value": "540423", "label": "墨脱县" }, { "value": "540424", "label": "波密县" }, { "value": "540425", "label": "察隅县" }, { "value": "540426", "label": "朗县" }] }, { "value": "5405", "label": "山南市", "children": [{ "value": "540502", "label": "乃东区" }, { "value": "540521", "label": "扎囊县" }, { "value": "540522", "label": "贡嘎县" }, { "value": "540523", "label": "桑日县" }, { "value": "540524", "label": "琼结县" }, { "value": "540525", "label": "曲松县" }, { "value": "540526", "label": "措美县" }, { "value": "540527", "label": "洛扎县" }, { "value": "540528", "label": "加查县" }, { "value": "540529", "label": "隆子县" }, { "value": "540530", "label": "错那县" }, { "value": "540531", "label": "浪卡子县" }] }, { "value": "5406", "label": "那曲市", "children": [{ "value": "540602", "label": "色尼区" }, { "value": "540621", "label": "嘉黎县" }, { "value": "540622", "label": "比如县" }, { "value": "540623", "label": "聂荣县" }, { "value": "540624", "label": "安多县" }, { "value": "540625", "label": "申扎县" }, { "value": "540626", "label": "索县" }, { "value": "540627", "label": "班戈县" }, { "value": "540628", "label": "巴青县" }, { "value": "540629", "label": "尼玛县" }, { "value": "540630", "label": "双湖县" }] }, { "value": "5425", "label": "阿里地区", "children": [{ "value": "542521", "label": "普兰县" }, { "value": "542522", "label": "札达县" }, { "value": "542523", "label": "噶尔县" }, { "value": "542524", "label": "日土县" }, { "value": "542525", "label": "革吉县" }, { "value": "542526", "label": "改则县" }, { "value": "542527", "label": "措勤县" }] }] }, { "value": "61", "label": "陕西省", "children": [{ "value": "6101", "label": "西安市", "children": [{ "value": "610102", "label": "新城区" }, { "value": "610103", "label": "碑林区" }, { "value": "610104", "label": "莲湖区" }, { "value": "610111", "label": "灞桥区" }, { "value": "610112", "label": "未央区" }, { "value": "610113", "label": "雁塔区" }, { "value": "610114", "label": "阎良区" }, { "value": "610115", "label": "临潼区" }, { "value": "610116", "label": "长安区" }, { "value": "610117", "label": "高陵区" }, { "value": "610118", "label": "鄠邑区" }, { "value": "610122", "label": "蓝田县" }, { "value": "610124", "label": "周至县" }] }, { "value": "6102", "label": "铜川市", "children": [{ "value": "610202", "label": "王益区" }, { "value": "610203", "label": "印台区" }, { "value": "610204", "label": "耀州区" }, { "value": "610222", "label": "宜君县" }] }, { "value": "6103", "label": "宝鸡市", "children": [{ "value": "610302", "label": "渭滨区" }, { "value": "610303", "label": "金台区" }, { "value": "610304", "label": "陈仓区" }, { "value": "610322", "label": "凤翔县" }, { "value": "610323", "label": "岐山县" }, { "value": "610324", "label": "扶风县" }, { "value": "610326", "label": "眉县" }, { "value": "610327", "label": "陇县" }, { "value": "610328", "label": "千阳县" }, { "value": "610329", "label": "麟游县" }, { "value": "610330", "label": "凤县" }, { "value": "610331", "label": "太白县" }] }, { "value": "6104", "label": "咸阳市", "children": [{ "value": "610402", "label": "秦都区" }, { "value": "610403", "label": "杨陵区" }, { "value": "610404", "label": "渭城区" }, { "value": "610422", "label": "三原县" }, { "value": "610423", "label": "泾阳县" }, { "value": "610424", "label": "乾县" }, { "value": "610425", "label": "礼泉县" }, { "value": "610426", "label": "永寿县" }, { "value": "610428", "label": "长武县" }, { "value": "610429", "label": "旬邑县" }, { "value": "610430", "label": "淳化县" }, { "value": "610431", "label": "武功县" }, { "value": "610481", "label": "兴平市" }, { "value": "610482", "label": "彬州市" }] }, { "value": "6105", "label": "渭南市", "children": [{ "value": "610502", "label": "临渭区" }, { "value": "610503", "label": "华州区" }, { "value": "610522", "label": "潼关县" }, { "value": "610523", "label": "大荔县" }, { "value": "610524", "label": "合阳县" }, { "value": "610525", "label": "澄城县" }, { "value": "610526", "label": "蒲城县" }, { "value": "610527", "label": "白水县" }, { "value": "610528", "label": "富平县" }, { "value": "610581", "label": "韩城市" }, { "value": "610582", "label": "华阴市" }] }, { "value": "6106", "label": "延安市", "children": [{ "value": "610602", "label": "宝塔区" }, { "value": "610603", "label": "安塞区" }, { "value": "610621", "label": "延长县" }, { "value": "610622", "label": "延川县" }, { "value": "610623", "label": "子长县" }, { "value": "610625", "label": "志丹县" }, { "value": "610626", "label": "吴起县" }, { "value": "610627", "label": "甘泉县" }, { "value": "610628", "label": "富县" }, { "value": "610629", "label": "洛川县" }, { "value": "610630", "label": "宜川县" }, { "value": "610631", "label": "黄龙县" }, { "value": "610632", "label": "黄陵县" }] }, { "value": "6107", "label": "汉中市", "children": [{ "value": "610702", "label": "汉台区" }, { "value": "610703", "label": "南郑区" }, { "value": "610722", "label": "城固县" }, { "value": "610723", "label": "洋县" }, { "value": "610724", "label": "西乡县" }, { "value": "610725", "label": "勉县" }, { "value": "610726", "label": "宁强县" }, { "value": "610727", "label": "略阳县" }, { "value": "610728", "label": "镇巴县" }, { "value": "610729", "label": "留坝县" }, { "value": "610730", "label": "佛坪县" }] }, { "value": "6108", "label": "榆林市", "children": [{ "value": "610802", "label": "榆阳区" }, { "value": "610803", "label": "横山区" }, { "value": "610822", "label": "府谷县" }, { "value": "610824", "label": "靖边县" }, { "value": "610825", "label": "定边县" }, { "value": "610826", "label": "绥德县" }, { "value": "610827", "label": "米脂县" }, { "value": "610828", "label": "佳县" }, { "value": "610829", "label": "吴堡县" }, { "value": "610830", "label": "清涧县" }, { "value": "610831", "label": "子洲县" }, { "value": "610881", "label": "神木市" }] }, { "value": "6109", "label": "安康市", "children": [{ "value": "610902", "label": "汉滨区" }, { "value": "610921", "label": "汉阴县" }, { "value": "610922", "label": "石泉县" }, { "value": "610923", "label": "宁陕县" }, { "value": "610924", "label": "紫阳县" }, { "value": "610925", "label": "岚皋县" }, { "value": "610926", "label": "平利县" }, { "value": "610927", "label": "镇坪县" }, { "value": "610928", "label": "旬阳县" }, { "value": "610929", "label": "白河县" }] }, { "value": "6110", "label": "商洛市", "children": [{ "value": "611002", "label": "商州区" }, { "value": "611021", "label": "洛南县" }, { "value": "611022", "label": "丹凤县" }, { "value": "611023", "label": "商南县" }, { "value": "611024", "label": "山阳县" }, { "value": "611025", "label": "镇安县" }, { "value": "611026", "label": "柞水县" }] }] }, { "value": "62", "label": "甘肃省", "children": [{ "value": "6201", "label": "兰州市", "children": [{ "value": "620102", "label": "城关区" }, { "value": "620103", "label": "七里河区" }, { "value": "620104", "label": "西固区" }, { "value": "620105", "label": "安宁区" }, { "value": "620111", "label": "红古区" }, { "value": "620121", "label": "永登县" }, { "value": "620122", "label": "皋兰县" }, { "value": "620123", "label": "榆中县" }, { "value": "620171", "label": "兰州新区" }] }, { "value": "6202", "label": "嘉峪关市", "children": [{ "value": "620201100", "label": "新城镇" }, { "value": "620201101", "label": "峪泉镇" }, { "value": "620201102", "label": "文殊镇" }, { "value": "620201401", "label": "雄关区" }, { "value": "620201402", "label": "镜铁区" }, { "value": "620201403", "label": "长城区" }] }, { "value": "6203", "label": "金昌市", "children": [{ "value": "620302", "label": "金川区" }, { "value": "620321", "label": "永昌县" }] }, { "value": "6204", "label": "白银市", "children": [{ "value": "620402", "label": "白银区" }, { "value": "620403", "label": "平川区" }, { "value": "620421", "label": "靖远县" }, { "value": "620422", "label": "会宁县" }, { "value": "620423", "label": "景泰县" }] }, { "value": "6205", "label": "天水市", "children": [{ "value": "620502", "label": "秦州区" }, { "value": "620503", "label": "麦积区" }, { "value": "620521", "label": "清水县" }, { "value": "620522", "label": "秦安县" }, { "value": "620523", "label": "甘谷县" }, { "value": "620524", "label": "武山县" }, { "value": "620525", "label": "张家川回族自治县" }] }, { "value": "6206", "label": "武威市", "children": [{ "value": "620602", "label": "凉州区" }, { "value": "620621", "label": "民勤县" }, { "value": "620622", "label": "古浪县" }, { "value": "620623", "label": "天祝藏族自治县" }] }, { "value": "6207", "label": "张掖市", "children": [{ "value": "620702", "label": "甘州区" }, { "value": "620721", "label": "肃南裕固族自治县" }, { "value": "620722", "label": "民乐县" }, { "value": "620723", "label": "临泽县" }, { "value": "620724", "label": "高台县" }, { "value": "620725", "label": "山丹县" }] }, { "value": "6208", "label": "平凉市", "children": [{ "value": "620802", "label": "崆峒区" }, { "value": "620821", "label": "泾川县" }, { "value": "620822", "label": "灵台县" }, { "value": "620823", "label": "崇信县" }, { "value": "620825", "label": "庄浪县" }, { "value": "620826", "label": "静宁县" }, { "value": "620881", "label": "华亭市" }] }, { "value": "6209", "label": "酒泉市", "children": [{ "value": "620902", "label": "肃州区" }, { "value": "620921", "label": "金塔县" }, { "value": "620922", "label": "瓜州县" }, { "value": "620923", "label": "肃北蒙古族自治县" }, { "value": "620924", "label": "阿克塞哈萨克族自治县" }, { "value": "620981", "label": "玉门市" }, { "value": "620982", "label": "敦煌市" }] }, { "value": "6210", "label": "庆阳市", "children": [{ "value": "621002", "label": "西峰区" }, { "value": "621021", "label": "庆城县" }, { "value": "621022", "label": "环县" }, { "value": "621023", "label": "华池县" }, { "value": "621024", "label": "合水县" }, { "value": "621025", "label": "正宁县" }, { "value": "621026", "label": "宁县" }, { "value": "621027", "label": "镇原县" }] }, { "value": "6211", "label": "定西市", "children": [{ "value": "621102", "label": "安定区" }, { "value": "621121", "label": "通渭县" }, { "value": "621122", "label": "陇西县" }, { "value": "621123", "label": "渭源县" }, { "value": "621124", "label": "临洮县" }, { "value": "621125", "label": "漳县" }, { "value": "621126", "label": "岷县" }] }, { "value": "6212", "label": "陇南市", "children": [{ "value": "621202", "label": "武都区" }, { "value": "621221", "label": "成县" }, { "value": "621222", "label": "文县" }, { "value": "621223", "label": "宕昌县" }, { "value": "621224", "label": "康县" }, { "value": "621225", "label": "西和县" }, { "value": "621226", "label": "礼县" }, { "value": "621227", "label": "徽县" }, { "value": "621228", "label": "两当县" }] }, { "value": "6229", "label": "临夏回族自治州", "children": [{ "value": "622901", "label": "临夏市" }, { "value": "622921", "label": "临夏县" }, { "value": "622922", "label": "康乐县" }, { "value": "622923", "label": "永靖县" }, { "value": "622924", "label": "广河县" }, { "value": "622925", "label": "和政县" }, { "value": "622926", "label": "东乡族自治县" }, { "value": "622927", "label": "积石山保安族东乡族撒拉族自治县" }] }, { "value": "6230", "label": "甘南藏族自治州", "children": [{ "value": "623001", "label": "合作市" }, { "value": "623021", "label": "临潭县" }, { "value": "623022", "label": "卓尼县" }, { "value": "623023", "label": "舟曲县" }, { "value": "623024", "label": "迭部县" }, { "value": "623025", "label": "玛曲县" }, { "value": "623026", "label": "碌曲县" }, { "value": "623027", "label": "夏河县" }] }] }, { "value": "63", "label": "青海省", "children": [{ "value": "6301", "label": "西宁市", "children": [{ "value": "630102", "label": "城东区" }, { "value": "630103", "label": "城中区" }, { "value": "630104", "label": "城西区" }, { "value": "630105", "label": "城北区" }, { "value": "630121", "label": "大通回族土族自治县" }, { "value": "630122", "label": "湟中县" }, { "value": "630123", "label": "湟源县" }] }, { "value": "6302", "label": "海东市", "children": [{ "value": "630202", "label": "乐都区" }, { "value": "630203", "label": "平安区" }, { "value": "630222", "label": "民和回族土族自治县" }, { "value": "630223", "label": "互助土族自治县" }, { "value": "630224", "label": "化隆回族自治县" }, { "value": "630225", "label": "循化撒拉族自治县" }] }, { "value": "6322", "label": "海北藏族自治州", "children": [{ "value": "632221", "label": "门源回族自治县" }, { "value": "632222", "label": "祁连县" }, { "value": "632223", "label": "海晏县" }, { "value": "632224", "label": "刚察县" }] }, { "value": "6323", "label": "黄南藏族自治州", "children": [{ "value": "632321", "label": "同仁县" }, { "value": "632322", "label": "尖扎县" }, { "value": "632323", "label": "泽库县" }, { "value": "632324", "label": "河南蒙古族自治县" }] }, { "value": "6325", "label": "海南藏族自治州", "children": [{ "value": "632521", "label": "共和县" }, { "value": "632522", "label": "同德县" }, { "value": "632523", "label": "贵德县" }, { "value": "632524", "label": "兴海县" }, { "value": "632525", "label": "贵南县" }] }, { "value": "6326", "label": "果洛藏族自治州", "children": [{ "value": "632621", "label": "玛沁县" }, { "value": "632622", "label": "班玛县" }, { "value": "632623", "label": "甘德县" }, { "value": "632624", "label": "达日县" }, { "value": "632625", "label": "久治县" }, { "value": "632626", "label": "玛多县" }] }, { "value": "6327", "label": "玉树藏族自治州", "children": [{ "value": "632701", "label": "玉树市" }, { "value": "632722", "label": "杂多县" }, { "value": "632723", "label": "称多县" }, { "value": "632724", "label": "治多县" }, { "value": "632725", "label": "囊谦县" }, { "value": "632726", "label": "曲麻莱县" }] }, { "value": "6328", "label": "海西蒙古族藏族自治州", "children": [{ "value": "632801", "label": "格尔木市" }, { "value": "632802", "label": "德令哈市" }, { "value": "632803", "label": "茫崖市" }, { "value": "632821", "label": "乌兰县" }, { "value": "632822", "label": "都兰县" }, { "value": "632823", "label": "天峻县" }, { "value": "632857", "label": "大柴旦行政委员会" }] }] }, { "value": "64", "label": "宁夏回族自治区", "children": [{ "value": "6401", "label": "银川市", "children": [{ "value": "640104", "label": "兴庆区" }, { "value": "640105", "label": "西夏区" }, { "value": "640106", "label": "金凤区" }, { "value": "640121", "label": "永宁县" }, { "value": "640122", "label": "贺兰县" }, { "value": "640181", "label": "灵武市" }] }, { "value": "6402", "label": "石嘴山市", "children": [{ "value": "640202", "label": "大武口区" }, { "value": "640205", "label": "惠农区" }, { "value": "640221", "label": "平罗县" }] }, { "value": "6403", "label": "吴忠市", "children": [{ "value": "640302", "label": "利通区" }, { "value": "640303", "label": "红寺堡区" }, { "value": "640323", "label": "盐池县" }, { "value": "640324", "label": "同心县" }, { "value": "640381", "label": "青铜峡市" }] }, { "value": "6404", "label": "固原市", "children": [{ "value": "640402", "label": "原州区" }, { "value": "640422", "label": "西吉县" }, { "value": "640423", "label": "隆德县" }, { "value": "640424", "label": "泾源县" }, { "value": "640425", "label": "彭阳县" }] }, { "value": "6405", "label": "中卫市", "children": [{ "value": "640502", "label": "沙坡头区" }, { "value": "640521", "label": "中宁县" }, { "value": "640522", "label": "海原县" }] }] }, { "value": "65", "label": "新疆维吾尔自治区", "children": [{ "value": "6501", "label": "乌鲁木齐市", "children": [{ "value": "650102", "label": "天山区" }, { "value": "650103", "label": "沙依巴克区" }, { "value": "650104", "label": "新市区" }, { "value": "650105", "label": "水磨沟区" }, { "value": "650106", "label": "头屯河区" }, { "value": "650107", "label": "达坂城区" }, { "value": "650109", "label": "米东区" }, { "value": "650121", "label": "乌鲁木齐县" }, { "value": "650171", "label": "乌鲁木齐经济技术开发区" }, { "value": "650172", "label": "乌鲁木齐高新技术产业开发区" }] }, { "value": "6502", "label": "克拉玛依市", "children": [{ "value": "650202", "label": "独山子区" }, { "value": "650203", "label": "克拉玛依区" }, { "value": "650204", "label": "白碱滩区" }, { "value": "650205", "label": "乌尔禾区" }] }, { "value": "6504", "label": "吐鲁番市", "children": [{ "value": "650402", "label": "高昌区" }, { "value": "650421", "label": "鄯善县" }, { "value": "650422", "label": "托克逊县" }] }, { "value": "6505", "label": "哈密市", "children": [{ "value": "650502", "label": "伊州区" }, { "value": "650521", "label": "巴里坤哈萨克自治县" }, { "value": "650522", "label": "伊吾县" }] }, { "value": "6523", "label": "昌吉回族自治州", "children": [{ "value": "652301", "label": "昌吉市" }, { "value": "652302", "label": "阜康市" }, { "value": "652323", "label": "呼图壁县" }, { "value": "652324", "label": "玛纳斯县" }, { "value": "652325", "label": "奇台县" }, { "value": "652327", "label": "吉木萨尔县" }, { "value": "652328", "label": "木垒哈萨克自治县" }] }, { "value": "6527", "label": "博尔塔拉蒙古自治州", "children": [{ "value": "652701", "label": "博乐市" }, { "value": "652702", "label": "阿拉山口市" }, { "value": "652722", "label": "精河县" }, { "value": "652723", "label": "温泉县" }] }, { "value": "6528", "label": "巴音郭楞蒙古自治州", "children": [{ "value": "652801", "label": "库尔勒市" }, { "value": "652822", "label": "轮台县" }, { "value": "652823", "label": "尉犁县" }, { "value": "652824", "label": "若羌县" }, { "value": "652825", "label": "且末县" }, { "value": "652826", "label": "焉耆回族自治县" }, { "value": "652827", "label": "和静县" }, { "value": "652828", "label": "和硕县" }, { "value": "652829", "label": "博湖县" }, { "value": "652871", "label": "库尔勒经济技术开发区" }] }, { "value": "6529", "label": "阿克苏地区", "children": [{ "value": "652901", "label": "阿克苏市" }, { "value": "652922", "label": "温宿县" }, { "value": "652923", "label": "库车县" }, { "value": "652924", "label": "沙雅县" }, { "value": "652925", "label": "新和县" }, { "value": "652926", "label": "拜城县" }, { "value": "652927", "label": "乌什县" }, { "value": "652928", "label": "阿瓦提县" }, { "value": "652929", "label": "柯坪县" }] }, { "value": "6530", "label": "克孜勒苏柯尔克孜自治州", "children": [{ "value": "653001", "label": "阿图什市" }, { "value": "653022", "label": "阿克陶县" }, { "value": "653023", "label": "阿合奇县" }, { "value": "653024", "label": "乌恰县" }] }, { "value": "6531", "label": "喀什地区", "children": [{ "value": "653101", "label": "喀什市" }, { "value": "653121", "label": "疏附县" }, { "value": "653122", "label": "疏勒县" }, { "value": "653123", "label": "英吉沙县" }, { "value": "653124", "label": "泽普县" }, { "value": "653125", "label": "莎车县" }, { "value": "653126", "label": "叶城县" }, { "value": "653127", "label": "麦盖提县" }, { "value": "653128", "label": "岳普湖县" }, { "value": "653129", "label": "伽师县" }, { "value": "653130", "label": "巴楚县" }, { "value": "653131", "label": "塔什库尔干塔吉克自治县" }] }, { "value": "6532", "label": "和田地区", "children": [{ "value": "653201", "label": "和田市" }, { "value": "653221", "label": "和田县" }, { "value": "653222", "label": "墨玉县" }, { "value": "653223", "label": "皮山县" }, { "value": "653224", "label": "洛浦县" }, { "value": "653225", "label": "策勒县" }, { "value": "653226", "label": "于田县" }, { "value": "653227", "label": "民丰县" }] }, { "value": "6540", "label": "伊犁哈萨克自治州", "children": [{ "value": "654002", "label": "伊宁市" }, { "value": "654003", "label": "奎屯市" }, { "value": "654004", "label": "霍尔果斯市" }, { "value": "654021", "label": "伊宁县" }, { "value": "654022", "label": "察布查尔锡伯自治县" }, { "value": "654023", "label": "霍城县" }, { "value": "654024", "label": "巩留县" }, { "value": "654025", "label": "新源县" }, { "value": "654026", "label": "昭苏县" }, { "value": "654027", "label": "特克斯县" }, { "value": "654028", "label": "尼勒克县" }] }, { "value": "6542", "label": "塔城地区", "children": [{ "value": "654201", "label": "塔城市" }, { "value": "654202", "label": "乌苏市" }, { "value": "654221", "label": "额敏县" }, { "value": "654223", "label": "沙湾县" }, { "value": "654224", "label": "托里县" }, { "value": "654225", "label": "裕民县" }, { "value": "654226", "label": "和布克赛尔蒙古自治县" }] }, { "value": "6543", "label": "阿勒泰地区", "children": [{ "value": "654301", "label": "阿勒泰市" }, { "value": "654321", "label": "布尔津县" }, { "value": "654322", "label": "富蕴县" }, { "value": "654323", "label": "福海县" }, { "value": "654324", "label": "哈巴河县" }, { "value": "654325", "label": "青河县" }, { "value": "654326", "label": "吉木乃县" }] }, { "value": "6590", "label": "自治区直辖县级行政区划", "children": [{ "value": "659001", "label": "石河子市" }, { "value": "659002", "label": "阿拉尔市" }, { "value": "659003", "label": "图木舒克市" }, { "value": "659004", "label": "五家渠市" }, { "value": "659006", "label": "铁门关市" }] }] },
+
+{
+  "value": "67", "label": "香港特别行政区", "children": [{
+    "value": "6701", "label": "香港", "children": [
+    { "value": "670101", "label": "中西区" },
+    { "value": "670102", "label": "湾仔区" },
+    { "value": "670103", "label": "东区" },
+    { "value": "670104", "label": "南区" },
+    { "value": "670105", "label": "九龙-油尖旺区" },
+    { "value": "670106", "label": "九龙-深水埗区" },
+    { "value": "670107", "label": "九龙-九龙城区" },
+    { "value": "670108", "label": "九龙-黄大仙区" },
+    { "value": "670109", "label": "九龙-观塘区" },
+    { "value": "670110", "label": "新界-北区" },
+    { "value": "670111", "label": "新界-大埔区" },
+    { "value": "670112", "label": "新界-沙田区" },
+    { "value": "670113", "label": "新界-西贡区" },
+    { "value": "670114", "label": "新界-荃湾区" },
+    { "value": "670115", "label": "新界-屯门区" },
+    { "value": "670116", "label": "新界-元朗区" },
+    { "value": "670117", "label": "新界-葵青区" },
+    { "value": "670118", "label": "新界-离岛区" }] }] },
+
+
+
+
+
+{
+  "value": "68", "label": "澳门特别行政区", "children": [{
+    "value": "6801", "label": "澳门", "children": [
+    { "value": "680101", "label": "花地玛堂区" },
+    { "value": "680102", "label": "圣安多尼堂区" },
+    { "value": "680103", "label": "大堂区" },
+    { "value": "680104", "label": "望德堂区" },
+    { "value": "680105", "label": "风顺堂区" },
+    { "value": "680106", "label": "嘉模堂区" },
+    { "value": "680107", "label": "圣方济各堂区" },
+    { "value": "680108", "label": "路氹城" }] }] },
+
+
+
+
+
+{
+  "value": "69", "label": "台湾省", "children": [
+  {
+    "value": "6901", "label": "台北市", "children":
+    [
+    { "value": "690101", "label": "中正区" },
+    { "value": "690102", "label": "大同区" },
+    { "value": "690103", "label": "中山区" },
+    { "value": "690104", "label": "松山区" },
+    { "value": "690105", "label": "大安区" },
+    { "value": "690106", "label": "万华区" },
+    { "value": "690107", "label": "信义区" },
+    { "value": "690108", "label": "士林区" },
+    { "value": "690109", "label": "北投区" },
+    { "value": "690110", "label": "内湖区" },
+    { "value": "690111", "label": "南港区" },
+    { "value": "690112", "label": "文山区" }] },
+
+
+  {
+    "value": "6902", "label": "高雄市", "children":
+    [
+    { "value": "690201", "label": "新兴区" },
+    { "value": "690202", "label": "前金区" },
+    { "value": "690203", "label": "芩雅区" },
+    { "value": "690204", "label": "盐埕区" },
+    { "value": "690205", "label": "鼓山区" },
+    { "value": "690206", "label": "旗津区" },
+    { "value": "690207", "label": "前镇区" },
+    { "value": "690208", "label": "三民区" },
+    { "value": "690209", "label": "左营区" },
+    { "value": "690210", "label": "楠梓区" },
+    { "value": "690211", "label": "小港区" }] },
+
+
+  {
+    "value": "6903", "label": "台南市", "children":
+    [
+    { "value": "690301", "label": "中西区" },
+    { "value": "690302", "label": "东区" },
+    { "value": "690303", "label": "南区" },
+    { "value": "690304", "label": "北区" },
+    { "value": "690305", "label": "安平区" },
+    { "value": "690306", "label": "安南区" }] },
+
+
+  {
+    "value": "6904", "label": "台中市", "children":
+    [
+    { "value": "690401", "label": "中区" },
+    { "value": "690402", "label": "东区" },
+    { "value": "690403", "label": "南区" },
+    { "value": "690404", "label": "西区" },
+    { "value": "690405", "label": "北区" },
+    { "value": "690406", "label": "北屯区" },
+    { "value": "690407", "label": "西屯区" },
+    { "value": "690408", "label": "南屯区" }] },
+
+
+  {
+    "value": "6905", "label": "基隆市", "children":
+    [
+    { "value": "690501", "label": "仁爱区" },
+    { "value": "690502", "label": "信义区" },
+    { "value": "690503", "label": "中正区" },
+    { "value": "690504", "label": "中山区" },
+    { "value": "690505", "label": "安乐区" },
+    { "value": "690506", "label": "暖暖区" },
+    { "value": "690507", "label": "七堵区" },
+    { "value": "690508", "label": "南屯区" }] },
+
+
+  {
+    "value": "6906", "label": "新竹市", "children":
+    [
+    { "value": "690601", "label": "东区" },
+    { "value": "690602", "label": "北区" },
+    { "value": "690603", "label": "香山区" }] },
+
+
+  {
+    "value": "6907", "label": "嘉义市", "children":
+    [
+    { "value": "690701", "label": "东区" },
+    { "value": "690702", "label": "西区" }] },
+
+
+  {
+    "value": "6908", "label": "县级", "children":
+    [
+    { "value": "690801", "label": "金门县" },
+    { "value": "690802", "label": "南投县" },
+    { "value": "690803", "label": "宜兰县" },
+    { "value": "690804", "label": "新竹县" },
+    { "value": "690805", "label": "桃园县" },
+    { "value": "690806", "label": "苗栗县" },
+    { "value": "690807", "label": "彰化县" },
+    { "value": "690808", "label": "嘉义县" },
+    { "value": "690809", "label": "云林县" },
+    { "value": "690810", "label": "屏东县" },
+    { "value": "690811", "label": "台东县" },
+    { "value": "690812", "label": "花莲县" },
+    { "value": "690813", "label": "澎湖县" }] }] }];var _default =
+
+
+
+
+
+
+
+city;exports.default = _default;
+
+/***/ }),
+
+/***/ 369:
+/*!***************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  "id": "2852637",
+  "name": "uniui图标库",
+  "font_family": "uniicons",
+  "css_prefix_text": "uniui-",
+  "description": "",
+  "glyphs": [
+  {
+    "icon_id": "25027049",
+    "name": "yanse",
+    "font_class": "color",
+    "unicode": "e6cf",
+    "unicode_decimal": 59087 },
+
+  {
+    "icon_id": "25027048",
+    "name": "wallet",
+    "font_class": "wallet",
+    "unicode": "e6b1",
+    "unicode_decimal": 59057 },
+
+  {
+    "icon_id": "25015720",
+    "name": "settings-filled",
+    "font_class": "settings-filled",
+    "unicode": "e6ce",
+    "unicode_decimal": 59086 },
+
+  {
+    "icon_id": "25015434",
+    "name": "shimingrenzheng-filled",
+    "font_class": "auth-filled",
+    "unicode": "e6cc",
+    "unicode_decimal": 59084 },
+
+  {
+    "icon_id": "24934246",
+    "name": "shop-filled",
+    "font_class": "shop-filled",
+    "unicode": "e6cd",
+    "unicode_decimal": 59085 },
+
+  {
+    "icon_id": "24934159",
+    "name": "staff-filled-01",
+    "font_class": "staff-filled",
+    "unicode": "e6cb",
+    "unicode_decimal": 59083 },
+
+  {
+    "icon_id": "24932461",
+    "name": "VIP-filled",
+    "font_class": "vip-filled",
+    "unicode": "e6c6",
+    "unicode_decimal": 59078 },
+
+  {
+    "icon_id": "24932462",
+    "name": "plus_circle_fill",
+    "font_class": "plus-filled",
+    "unicode": "e6c7",
+    "unicode_decimal": 59079 },
+
+  {
+    "icon_id": "24932463",
+    "name": "folder_add-filled",
+    "font_class": "folder-add-filled",
+    "unicode": "e6c8",
+    "unicode_decimal": 59080 },
+
+  {
+    "icon_id": "24932464",
+    "name": "yanse-filled",
+    "font_class": "color-filled",
+    "unicode": "e6c9",
+    "unicode_decimal": 59081 },
+
+  {
+    "icon_id": "24932465",
+    "name": "tune-filled",
+    "font_class": "tune-filled",
+    "unicode": "e6ca",
+    "unicode_decimal": 59082 },
+
+  {
+    "icon_id": "24932455",
+    "name": "a-rilidaka-filled",
+    "font_class": "calendar-filled",
+    "unicode": "e6c0",
+    "unicode_decimal": 59072 },
+
+  {
+    "icon_id": "24932456",
+    "name": "notification-filled",
+    "font_class": "notification-filled",
+    "unicode": "e6c1",
+    "unicode_decimal": 59073 },
+
+  {
+    "icon_id": "24932457",
+    "name": "wallet-filled",
+    "font_class": "wallet-filled",
+    "unicode": "e6c2",
+    "unicode_decimal": 59074 },
+
+  {
+    "icon_id": "24932458",
+    "name": "paihangbang-filled",
+    "font_class": "medal-filled",
+    "unicode": "e6c3",
+    "unicode_decimal": 59075 },
+
+  {
+    "icon_id": "24932459",
+    "name": "gift-filled",
+    "font_class": "gift-filled",
+    "unicode": "e6c4",
+    "unicode_decimal": 59076 },
+
+  {
+    "icon_id": "24932460",
+    "name": "fire-filled",
+    "font_class": "fire-filled",
+    "unicode": "e6c5",
+    "unicode_decimal": 59077 },
+
+  {
+    "icon_id": "24928001",
+    "name": "refreshempty",
+    "font_class": "refreshempty",
+    "unicode": "e6bf",
+    "unicode_decimal": 59071 },
+
+  {
+    "icon_id": "24926853",
+    "name": "location-ellipse",
+    "font_class": "location-filled",
+    "unicode": "e6af",
+    "unicode_decimal": 59055 },
+
+  {
+    "icon_id": "24926735",
+    "name": "person-filled",
+    "font_class": "person-filled",
+    "unicode": "e69d",
+    "unicode_decimal": 59037 },
+
+  {
+    "icon_id": "24926703",
+    "name": "personadd-filled",
+    "font_class": "personadd-filled",
+    "unicode": "e698",
+    "unicode_decimal": 59032 },
+
+  {
+    "icon_id": "24923351",
+    "name": "back",
+    "font_class": "back",
+    "unicode": "e6b9",
+    "unicode_decimal": 59065 },
+
+  {
+    "icon_id": "24923352",
+    "name": "forward",
+    "font_class": "forward",
+    "unicode": "e6ba",
+    "unicode_decimal": 59066 },
+
+  {
+    "icon_id": "24923353",
+    "name": "arrowthinright",
+    "font_class": "arrow-right",
+    "unicode": "e6bb",
+    "unicode_decimal": 59067 },
+
+  {
+    "icon_id": "24923353",
+    "name": "arrowthinright",
+    "font_class": "arrowthinright",
+    "unicode": "e6bb",
+    "unicode_decimal": 59067 },
+
+  {
+    "icon_id": "24923354",
+    "name": "arrowthinleft",
+    "font_class": "arrow-left",
+    "unicode": "e6bc",
+    "unicode_decimal": 59068 },
+
+  {
+    "icon_id": "24923354",
+    "name": "arrowthinleft",
+    "font_class": "arrowthinleft",
+    "unicode": "e6bc",
+    "unicode_decimal": 59068 },
+
+  {
+    "icon_id": "24923355",
+    "name": "arrowthinup",
+    "font_class": "arrow-up",
+    "unicode": "e6bd",
+    "unicode_decimal": 59069 },
+
+  {
+    "icon_id": "24923355",
+    "name": "arrowthinup",
+    "font_class": "arrowthinup",
+    "unicode": "e6bd",
+    "unicode_decimal": 59069 },
+
+  {
+    "icon_id": "24923356",
+    "name": "arrowthindown",
+    "font_class": "arrow-down",
+    "unicode": "e6be",
+    "unicode_decimal": 59070 },
+  {
+    "icon_id": "24923356",
+    "name": "arrowthindown",
+    "font_class": "arrowthindown",
+    "unicode": "e6be",
+    "unicode_decimal": 59070 },
+
+  {
+    "icon_id": "24923349",
+    "name": "arrowdown",
+    "font_class": "bottom",
+    "unicode": "e6b8",
+    "unicode_decimal": 59064 },
+  {
+    "icon_id": "24923349",
+    "name": "arrowdown",
+    "font_class": "arrowdown",
+    "unicode": "e6b8",
+    "unicode_decimal": 59064 },
+
+  {
+    "icon_id": "24923346",
+    "name": "arrowright",
+    "font_class": "right",
+    "unicode": "e6b5",
+    "unicode_decimal": 59061 },
+
+  {
+    "icon_id": "24923346",
+    "name": "arrowright",
+    "font_class": "arrowright",
+    "unicode": "e6b5",
+    "unicode_decimal": 59061 },
+
+  {
+    "icon_id": "24923347",
+    "name": "arrowup",
+    "font_class": "top",
+    "unicode": "e6b6",
+    "unicode_decimal": 59062 },
+
+  {
+    "icon_id": "24923347",
+    "name": "arrowup",
+    "font_class": "arrowup",
+    "unicode": "e6b6",
+    "unicode_decimal": 59062 },
+
+  {
+    "icon_id": "24923348",
+    "name": "arrowleft",
+    "font_class": "left",
+    "unicode": "e6b7",
+    "unicode_decimal": 59063 },
+
+  {
+    "icon_id": "24923348",
+    "name": "arrowleft",
+    "font_class": "arrowleft",
+    "unicode": "e6b7",
+    "unicode_decimal": 59063 },
+
+  {
+    "icon_id": "24923334",
+    "name": "eye",
+    "font_class": "eye",
+    "unicode": "e651",
+    "unicode_decimal": 58961 },
+
+  {
+    "icon_id": "24923335",
+    "name": "eye-filled",
+    "font_class": "eye-filled",
+    "unicode": "e66a",
+    "unicode_decimal": 58986 },
+
+  {
+    "icon_id": "24923336",
+    "name": "eye-slash",
+    "font_class": "eye-slash",
+    "unicode": "e6b3",
+    "unicode_decimal": 59059 },
+
+  {
+    "icon_id": "24923337",
+    "name": "eye-slash-filled",
+    "font_class": "eye-slash-filled",
+    "unicode": "e6b4",
+    "unicode_decimal": 59060 },
+
+  {
+    "icon_id": "24923305",
+    "name": "info-filled",
+    "font_class": "info-filled",
+    "unicode": "e649",
+    "unicode_decimal": 58953 },
+
+  {
+    "icon_id": "24923299",
+    "name": "reload-01",
+    "font_class": "reload",
+    "unicode": "e6b2",
+    "unicode_decimal": 59058 },
+
+  {
+    "icon_id": "24923195",
+    "name": "mic_slash_fill",
+    "font_class": "micoff-filled",
+    "unicode": "e6b0",
+    "unicode_decimal": 59056 },
+
+  {
+    "icon_id": "24923165",
+    "name": "map-pin-ellipse",
+    "font_class": "map-pin-ellipse",
+    "unicode": "e6ac",
+    "unicode_decimal": 59052 },
+
+  {
+    "icon_id": "24923166",
+    "name": "map-pin",
+    "font_class": "map-pin",
+    "unicode": "e6ad",
+    "unicode_decimal": 59053 },
+
+  {
+    "icon_id": "24923167",
+    "name": "location",
+    "font_class": "location",
+    "unicode": "e6ae",
+    "unicode_decimal": 59054 },
+
+  {
+    "icon_id": "24923064",
+    "name": "starhalf",
+    "font_class": "starhalf",
+    "unicode": "e683",
+    "unicode_decimal": 59011 },
+
+  {
+    "icon_id": "24923065",
+    "name": "star",
+    "font_class": "star",
+    "unicode": "e688",
+    "unicode_decimal": 59016 },
+
+  {
+    "icon_id": "24923066",
+    "name": "star-filled",
+    "font_class": "star-filled",
+    "unicode": "e68f",
+    "unicode_decimal": 59023 },
+
+  {
+    "icon_id": "24899646",
+    "name": "a-rilidaka",
+    "font_class": "calendar",
+    "unicode": "e6a0",
+    "unicode_decimal": 59040 },
+
+  {
+    "icon_id": "24899647",
+    "name": "fire",
+    "font_class": "fire",
+    "unicode": "e6a1",
+    "unicode_decimal": 59041 },
+
+  {
+    "icon_id": "24899648",
+    "name": "paihangbang",
+    "font_class": "medal",
+    "unicode": "e6a2",
+    "unicode_decimal": 59042 },
+
+  {
+    "icon_id": "24899649",
+    "name": "font",
+    "font_class": "font",
+    "unicode": "e6a3",
+    "unicode_decimal": 59043 },
+
+  {
+    "icon_id": "24899650",
+    "name": "gift",
+    "font_class": "gift",
+    "unicode": "e6a4",
+    "unicode_decimal": 59044 },
+
+  {
+    "icon_id": "24899651",
+    "name": "link",
+    "font_class": "link",
+    "unicode": "e6a5",
+    "unicode_decimal": 59045 },
+
+  {
+    "icon_id": "24899652",
+    "name": "notification",
+    "font_class": "notification",
+    "unicode": "e6a6",
+    "unicode_decimal": 59046 },
+
+  {
+    "icon_id": "24899653",
+    "name": "staff",
+    "font_class": "staff",
+    "unicode": "e6a7",
+    "unicode_decimal": 59047 },
+
+  {
+    "icon_id": "24899654",
+    "name": "VIP",
+    "font_class": "vip",
+    "unicode": "e6a8",
+    "unicode_decimal": 59048 },
+
+  {
+    "icon_id": "24899655",
+    "name": "folder_add",
+    "font_class": "folder-add",
+    "unicode": "e6a9",
+    "unicode_decimal": 59049 },
+
+  {
+    "icon_id": "24899656",
+    "name": "tune",
+    "font_class": "tune",
+    "unicode": "e6aa",
+    "unicode_decimal": 59050 },
+
+  {
+    "icon_id": "24899657",
+    "name": "shimingrenzheng",
+    "font_class": "auth",
+    "unicode": "e6ab",
+    "unicode_decimal": 59051 },
+
+  {
+    "icon_id": "24899565",
+    "name": "person",
+    "font_class": "person",
+    "unicode": "e699",
+    "unicode_decimal": 59033 },
+
+  {
+    "icon_id": "24899566",
+    "name": "email-filled",
+    "font_class": "email-filled",
+    "unicode": "e69a",
+    "unicode_decimal": 59034 },
+
+  {
+    "icon_id": "24899567",
+    "name": "phone-filled",
+    "font_class": "phone-filled",
+    "unicode": "e69b",
+    "unicode_decimal": 59035 },
+
+  {
+    "icon_id": "24899568",
+    "name": "phone",
+    "font_class": "phone",
+    "unicode": "e69c",
+    "unicode_decimal": 59036 },
+
+  {
+    "icon_id": "24899570",
+    "name": "email",
+    "font_class": "email",
+    "unicode": "e69e",
+    "unicode_decimal": 59038 },
+
+  {
+    "icon_id": "24899571",
+    "name": "personadd",
+    "font_class": "personadd",
+    "unicode": "e69f",
+    "unicode_decimal": 59039 },
+
+  {
+    "icon_id": "24899558",
+    "name": "chatboxes-filled",
+    "font_class": "chatboxes-filled",
+    "unicode": "e692",
+    "unicode_decimal": 59026 },
+
+  {
+    "icon_id": "24899559",
+    "name": "contact",
+    "font_class": "contact",
+    "unicode": "e693",
+    "unicode_decimal": 59027 },
+
+  {
+    "icon_id": "24899560",
+    "name": "chatbubble-filled",
+    "font_class": "chatbubble-filled",
+    "unicode": "e694",
+    "unicode_decimal": 59028 },
+
+  {
+    "icon_id": "24899561",
+    "name": "contact-filled",
+    "font_class": "contact-filled",
+    "unicode": "e695",
+    "unicode_decimal": 59029 },
+
+  {
+    "icon_id": "24899562",
+    "name": "chatboxes",
+    "font_class": "chatboxes",
+    "unicode": "e696",
+    "unicode_decimal": 59030 },
+
+  {
+    "icon_id": "24899563",
+    "name": "chatbubble",
+    "font_class": "chatbubble",
+    "unicode": "e697",
+    "unicode_decimal": 59031 },
+
+  {
+    "icon_id": "24881290",
+    "name": "upload-filled",
+    "font_class": "upload-filled",
+    "unicode": "e68e",
+    "unicode_decimal": 59022 },
+
+  {
+    "icon_id": "24881292",
+    "name": "upload",
+    "font_class": "upload",
+    "unicode": "e690",
+    "unicode_decimal": 59024 },
+
+  {
+    "icon_id": "24881293",
+    "name": "weixin",
+    "font_class": "weixin",
+    "unicode": "e691",
+    "unicode_decimal": 59025 },
+
+  {
+    "icon_id": "24881274",
+    "name": "compose",
+    "font_class": "compose",
+    "unicode": "e67f",
+    "unicode_decimal": 59007 },
+
+  {
+    "icon_id": "24881275",
+    "name": "qq",
+    "font_class": "qq",
+    "unicode": "e680",
+    "unicode_decimal": 59008 },
+
+  {
+    "icon_id": "24881276",
+    "name": "download-filled",
+    "font_class": "download-filled",
+    "unicode": "e681",
+    "unicode_decimal": 59009 },
+
+  {
+    "icon_id": "24881277",
+    "name": "pengyouquan",
+    "font_class": "pyq",
+    "unicode": "e682",
+    "unicode_decimal": 59010 },
+
+  {
+    "icon_id": "24881279",
+    "name": "sound",
+    "font_class": "sound",
+    "unicode": "e684",
+    "unicode_decimal": 59012 },
+
+  {
+    "icon_id": "24881280",
+    "name": "trash-filled",
+    "font_class": "trash-filled",
+    "unicode": "e685",
+    "unicode_decimal": 59013 },
+
+  {
+    "icon_id": "24881281",
+    "name": "sound-filled",
+    "font_class": "sound-filled",
+    "unicode": "e686",
+    "unicode_decimal": 59014 },
+
+  {
+    "icon_id": "24881282",
+    "name": "trash",
+    "font_class": "trash",
+    "unicode": "e687",
+    "unicode_decimal": 59015 },
+
+  {
+    "icon_id": "24881284",
+    "name": "videocam-filled",
+    "font_class": "videocam-filled",
+    "unicode": "e689",
+    "unicode_decimal": 59017 },
+
+  {
+    "icon_id": "24881285",
+    "name": "spinner-cycle",
+    "font_class": "spinner-cycle",
+    "unicode": "e68a",
+    "unicode_decimal": 59018 },
+
+  {
+    "icon_id": "24881286",
+    "name": "weibo",
+    "font_class": "weibo",
+    "unicode": "e68b",
+    "unicode_decimal": 59019 },
+
+  {
+    "icon_id": "24881288",
+    "name": "videocam",
+    "font_class": "videocam",
+    "unicode": "e68c",
+    "unicode_decimal": 59020 },
+
+  {
+    "icon_id": "24881289",
+    "name": "download",
+    "font_class": "download",
+    "unicode": "e68d",
+    "unicode_decimal": 59021 },
+
+  {
+    "icon_id": "24879601",
+    "name": "help",
+    "font_class": "help",
+    "unicode": "e679",
+    "unicode_decimal": 59001 },
+
+  {
+    "icon_id": "24879602",
+    "name": "navigate-filled",
+    "font_class": "navigate-filled",
+    "unicode": "e67a",
+    "unicode_decimal": 59002 },
+
+  {
+    "icon_id": "24879603",
+    "name": "plusempty",
+    "font_class": "plusempty",
+    "unicode": "e67b",
+    "unicode_decimal": 59003 },
+
+  {
+    "icon_id": "24879604",
+    "name": "smallcircle",
+    "font_class": "smallcircle",
+    "unicode": "e67c",
+    "unicode_decimal": 59004 },
+
+  {
+    "icon_id": "24879605",
+    "name": "minus-filled",
+    "font_class": "minus-filled",
+    "unicode": "e67d",
+    "unicode_decimal": 59005 },
+
+  {
+    "icon_id": "24879606",
+    "name": "micoff",
+    "font_class": "micoff",
+    "unicode": "e67e",
+    "unicode_decimal": 59006 },
+
+  {
+    "icon_id": "24879588",
+    "name": "closeempty",
+    "font_class": "closeempty",
+    "unicode": "e66c",
+    "unicode_decimal": 58988 },
+
+  {
+    "icon_id": "24879589",
+    "name": "clear",
+    "font_class": "clear",
+    "unicode": "e66d",
+    "unicode_decimal": 58989 },
+
+  {
+    "icon_id": "24879590",
+    "name": "navigate",
+    "font_class": "navigate",
+    "unicode": "e66e",
+    "unicode_decimal": 58990 },
+
+  {
+    "icon_id": "24879591",
+    "name": "minus",
+    "font_class": "minus",
+    "unicode": "e66f",
+    "unicode_decimal": 58991 },
+
+  {
+    "icon_id": "24879592",
+    "name": "image",
+    "font_class": "image",
+    "unicode": "e670",
+    "unicode_decimal": 58992 },
+
+  {
+    "icon_id": "24879593",
+    "name": "mic",
+    "font_class": "mic",
+    "unicode": "e671",
+    "unicode_decimal": 58993 },
+
+  {
+    "icon_id": "24879594",
+    "name": "paperplane",
+    "font_class": "paperplane",
+    "unicode": "e672",
+    "unicode_decimal": 58994 },
+
+  {
+    "icon_id": "24879595",
+    "name": "close",
+    "font_class": "close",
+    "unicode": "e673",
+    "unicode_decimal": 58995 },
+
+  {
+    "icon_id": "24879596",
+    "name": "help-filled",
+    "font_class": "help-filled",
+    "unicode": "e674",
+    "unicode_decimal": 58996 },
+
+  {
+    "icon_id": "24879597",
+    "name": "plus-filled",
+    "font_class": "paperplane-filled",
+    "unicode": "e675",
+    "unicode_decimal": 58997 },
+
+  {
+    "icon_id": "24879598",
+    "name": "plus",
+    "font_class": "plus",
+    "unicode": "e676",
+    "unicode_decimal": 58998 },
+
+  {
+    "icon_id": "24879599",
+    "name": "mic-filled",
+    "font_class": "mic-filled",
+    "unicode": "e677",
+    "unicode_decimal": 58999 },
+
+  {
+    "icon_id": "24879600",
+    "name": "image-filled",
+    "font_class": "image-filled",
+    "unicode": "e678",
+    "unicode_decimal": 59000 },
+
+  {
+    "icon_id": "24855900",
+    "name": "locked-filled",
+    "font_class": "locked-filled",
+    "unicode": "e668",
+    "unicode_decimal": 58984 },
+
+  {
+    "icon_id": "24855901",
+    "name": "info",
+    "font_class": "info",
+    "unicode": "e669",
+    "unicode_decimal": 58985 },
+
+  {
+    "icon_id": "24855903",
+    "name": "locked",
+    "font_class": "locked",
+    "unicode": "e66b",
+    "unicode_decimal": 58987 },
+
+  {
+    "icon_id": "24855884",
+    "name": "camera-filled",
+    "font_class": "camera-filled",
+    "unicode": "e658",
+    "unicode_decimal": 58968 },
+
+  {
+    "icon_id": "24855885",
+    "name": "chat-filled",
+    "font_class": "chat-filled",
+    "unicode": "e659",
+    "unicode_decimal": 58969 },
+
+  {
+    "icon_id": "24855886",
+    "name": "camera",
+    "font_class": "camera",
+    "unicode": "e65a",
+    "unicode_decimal": 58970 },
+
+  {
+    "icon_id": "24855887",
+    "name": "circle",
+    "font_class": "circle",
+    "unicode": "e65b",
+    "unicode_decimal": 58971 },
+
+  {
+    "icon_id": "24855888",
+    "name": "checkmarkempty",
+    "font_class": "checkmarkempty",
+    "unicode": "e65c",
+    "unicode_decimal": 58972 },
+
+  {
+    "icon_id": "24855889",
+    "name": "chat",
+    "font_class": "chat",
+    "unicode": "e65d",
+    "unicode_decimal": 58973 },
+
+  {
+    "icon_id": "24855890",
+    "name": "circle-filled",
+    "font_class": "circle-filled",
+    "unicode": "e65e",
+    "unicode_decimal": 58974 },
+
+  {
+    "icon_id": "24855891",
+    "name": "flag",
+    "font_class": "flag",
+    "unicode": "e65f",
+    "unicode_decimal": 58975 },
+
+  {
+    "icon_id": "24855892",
+    "name": "flag-filled",
+    "font_class": "flag-filled",
+    "unicode": "e660",
+    "unicode_decimal": 58976 },
+
+  {
+    "icon_id": "24855893",
+    "name": "gear-filled",
+    "font_class": "gear-filled",
+    "unicode": "e661",
+    "unicode_decimal": 58977 },
+
+  {
+    "icon_id": "24855894",
+    "name": "home",
+    "font_class": "home",
+    "unicode": "e662",
+    "unicode_decimal": 58978 },
+
+  {
+    "icon_id": "24855895",
+    "name": "home-filled",
+    "font_class": "home-filled",
+    "unicode": "e663",
+    "unicode_decimal": 58979 },
+
+  {
+    "icon_id": "24855896",
+    "name": "gear",
+    "font_class": "gear",
+    "unicode": "e664",
+    "unicode_decimal": 58980 },
+
+  {
+    "icon_id": "24855897",
+    "name": "smallcircle-filled",
+    "font_class": "smallcircle-filled",
+    "unicode": "e665",
+    "unicode_decimal": 58981 },
+
+  {
+    "icon_id": "24855898",
+    "name": "map-filled",
+    "font_class": "map-filled",
+    "unicode": "e666",
+    "unicode_decimal": 58982 },
+
+  {
+    "icon_id": "24855899",
+    "name": "map",
+    "font_class": "map",
+    "unicode": "e667",
+    "unicode_decimal": 58983 },
+
+  {
+    "icon_id": "24855825",
+    "name": "refresh-filled",
+    "font_class": "refresh-filled",
+    "unicode": "e656",
+    "unicode_decimal": 58966 },
+
+  {
+    "icon_id": "24855826",
+    "name": "refresh",
+    "font_class": "refresh",
+    "unicode": "e657",
+    "unicode_decimal": 58967 },
+
+  {
+    "icon_id": "24855808",
+    "name": "cloud-upload",
+    "font_class": "cloud-upload",
+    "unicode": "e645",
+    "unicode_decimal": 58949 },
+
+  {
+    "icon_id": "24855809",
+    "name": "cloud-download-filled",
+    "font_class": "cloud-download-filled",
+    "unicode": "e646",
+    "unicode_decimal": 58950 },
+
+  {
+    "icon_id": "24855810",
+    "name": "cloud-download",
+    "font_class": "cloud-download",
+    "unicode": "e647",
+    "unicode_decimal": 58951 },
+
+  {
+    "icon_id": "24855811",
+    "name": "cloud-upload-filled",
+    "font_class": "cloud-upload-filled",
+    "unicode": "e648",
+    "unicode_decimal": 58952 },
+
+  {
+    "icon_id": "24855813",
+    "name": "redo",
+    "font_class": "redo",
+    "unicode": "e64a",
+    "unicode_decimal": 58954 },
+
+  {
+    "icon_id": "24855814",
+    "name": "images-filled",
+    "font_class": "images-filled",
+    "unicode": "e64b",
+    "unicode_decimal": 58955 },
+
+  {
+    "icon_id": "24855815",
+    "name": "undo-filled",
+    "font_class": "undo-filled",
+    "unicode": "e64c",
+    "unicode_decimal": 58956 },
+
+  {
+    "icon_id": "24855816",
+    "name": "more",
+    "font_class": "more",
+    "unicode": "e64d",
+    "unicode_decimal": 58957 },
+
+  {
+    "icon_id": "24855817",
+    "name": "more-filled",
+    "font_class": "more-filled",
+    "unicode": "e64e",
+    "unicode_decimal": 58958 },
+
+  {
+    "icon_id": "24855818",
+    "name": "undo",
+    "font_class": "undo",
+    "unicode": "e64f",
+    "unicode_decimal": 58959 },
+
+  {
+    "icon_id": "24855819",
+    "name": "images",
+    "font_class": "images",
+    "unicode": "e650",
+    "unicode_decimal": 58960 },
+
+  {
+    "icon_id": "24855821",
+    "name": "paperclip",
+    "font_class": "paperclip",
+    "unicode": "e652",
+    "unicode_decimal": 58962 },
+
+  {
+    "icon_id": "24855822",
+    "name": "settings",
+    "font_class": "settings",
+    "unicode": "e653",
+    "unicode_decimal": 58963 },
+
+  {
+    "icon_id": "24855823",
+    "name": "search",
+    "font_class": "search",
+    "unicode": "e654",
+    "unicode_decimal": 58964 },
+
+  {
+    "icon_id": "24855824",
+    "name": "redo-filled",
+    "font_class": "redo-filled",
+    "unicode": "e655",
+    "unicode_decimal": 58965 },
+
+  {
+    "icon_id": "24841702",
+    "name": "list",
+    "font_class": "list",
+    "unicode": "e644",
+    "unicode_decimal": 58948 },
+
+  {
+    "icon_id": "24841489",
+    "name": "mail-open-filled",
+    "font_class": "mail-open-filled",
+    "unicode": "e63a",
+    "unicode_decimal": 58938 },
+
+  {
+    "icon_id": "24841491",
+    "name": "hand-thumbsdown-filled",
+    "font_class": "hand-down-filled",
+    "unicode": "e63c",
+    "unicode_decimal": 58940 },
+
+  {
+    "icon_id": "24841492",
+    "name": "hand-thumbsdown",
+    "font_class": "hand-down",
+    "unicode": "e63d",
+    "unicode_decimal": 58941 },
+
+  {
+    "icon_id": "24841493",
+    "name": "hand-thumbsup-filled",
+    "font_class": "hand-up-filled",
+    "unicode": "e63e",
+    "unicode_decimal": 58942 },
+
+  {
+    "icon_id": "24841494",
+    "name": "hand-thumbsup",
+    "font_class": "hand-up",
+    "unicode": "e63f",
+    "unicode_decimal": 58943 },
+
+  {
+    "icon_id": "24841496",
+    "name": "heart-filled",
+    "font_class": "heart-filled",
+    "unicode": "e641",
+    "unicode_decimal": 58945 },
+
+  {
+    "icon_id": "24841498",
+    "name": "mail-open",
+    "font_class": "mail-open",
+    "unicode": "e643",
+    "unicode_decimal": 58947 },
+
+  {
+    "icon_id": "24841488",
+    "name": "heart",
+    "font_class": "heart",
+    "unicode": "e639",
+    "unicode_decimal": 58937 },
+
+  {
+    "icon_id": "24839963",
+    "name": "loop",
+    "font_class": "loop",
+    "unicode": "e633",
+    "unicode_decimal": 58931 },
+
+  {
+    "icon_id": "24839866",
+    "name": "pulldown",
+    "font_class": "pulldown",
+    "unicode": "e632",
+    "unicode_decimal": 58930 },
+
+  {
+    "icon_id": "24813798",
+    "name": "scan",
+    "font_class": "scan",
+    "unicode": "e62a",
+    "unicode_decimal": 58922 },
+
+  {
+    "icon_id": "24813786",
+    "name": "bars",
+    "font_class": "bars",
+    "unicode": "e627",
+    "unicode_decimal": 58919 },
+
+  {
+    "icon_id": "24813788",
+    "name": "cart-filled",
+    "font_class": "cart-filled",
+    "unicode": "e629",
+    "unicode_decimal": 58921 },
+
+  {
+    "icon_id": "24813790",
+    "name": "checkbox",
+    "font_class": "checkbox",
+    "unicode": "e62b",
+    "unicode_decimal": 58923 },
+
+  {
+    "icon_id": "24813791",
+    "name": "checkbox-filled",
+    "font_class": "checkbox-filled",
+    "unicode": "e62c",
+    "unicode_decimal": 58924 },
+
+  {
+    "icon_id": "24813794",
+    "name": "shop",
+    "font_class": "shop",
+    "unicode": "e62f",
+    "unicode_decimal": 58927 },
+
+  {
+    "icon_id": "24813795",
+    "name": "headphones",
+    "font_class": "headphones",
+    "unicode": "e630",
+    "unicode_decimal": 58928 },
+
+  {
+    "icon_id": "24813796",
+    "name": "cart",
+    "font_class": "cart",
+    "unicode": "e631",
+    "unicode_decimal": 58929 }] };exports.default = _default;
+
+/***/ }),
+
+/***/ 377:
+/*!***********************************************************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.createAnimation = createAnimation;function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} // const defaultOption = {
+// 	duration: 300,
+// 	timingFunction: 'linear',
+// 	delay: 0,
+// 	transformOrigin: '50% 50% 0'
+// }
+var
+
+
+MPAnimation = /*#__PURE__*/function () {
+  function MPAnimation(options, _this) {_classCallCheck(this, MPAnimation);
+    this.options = options;
+    this.animation = uni.createAnimation(options);
+    this.currentStepAnimates = {};
+    this.next = 0;
+    this.$ = _this;
+
+  }_createClass(MPAnimation, [{ key: "_nvuePushAnimates", value: function _nvuePushAnimates(
+
+    type, args) {
+      var aniObj = this.currentStepAnimates[this.next];
+      var styles = {};
+      if (!aniObj) {
+        styles = {
+          styles: {},
+          config: {} };
+
+      } else {
+        styles = aniObj;
+      }
+      if (animateTypes1.includes(type)) {
+        if (!styles.styles.transform) {
+          styles.styles.transform = '';
+        }
+        var unit = '';
+        if (type === 'rotate') {
+          unit = 'deg';
+        }
+        styles.styles.transform += "".concat(type, "(").concat(args + unit, ") ");
+      } else {
+        styles.styles[type] = "".concat(args);
+      }
+      this.currentStepAnimates[this.next] = styles;
+    } }, { key: "_animateRun", value: function _animateRun()
+    {var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var ref = this.$.$refs['ani'].ref;
+      if (!ref) return;
+      return new Promise(function (resolve, reject) {
+        nvueAnimation.transition(ref, _objectSpread({
+          styles: styles },
+        config),
+        function (res) {
+          resolve();
+        });
+      });
+    } }, { key: "_nvueNextAnimate", value: function _nvueNextAnimate(
+
+    animates) {var _this2 = this;var step = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var fn = arguments.length > 2 ? arguments[2] : undefined;
+      var obj = animates[step];
+      if (obj) {var
+
+        styles =
+
+        obj.styles,config = obj.config;
+        this._animateRun(styles, config).then(function () {
+          step += 1;
+          _this2._nvueNextAnimate(animates, step, fn);
+        });
+      } else {
+        this.currentStepAnimates = {};
+        typeof fn === 'function' && fn();
+        this.isEnd = true;
+      }
+    } }, { key: "step", value: function step()
+
+    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      this.animation.step(config);
+
+
+
+
+
+
+      return this;
+    } }, { key: "run", value: function run(
+
+    fn) {
+
+      this.$.animationData = this.animation.export();
+      this.$.timer = setTimeout(function () {
+        typeof fn === 'function' && fn();
+      }, this.$.durationTime);
+
+
+
+
+
+
+
+
+    } }]);return MPAnimation;}();
+
+
+
+var animateTypes1 = ['matrix', 'matrix3d', 'rotate', 'rotate3d', 'rotateX', 'rotateY', 'rotateZ', 'scale', 'scale3d',
+'scaleX', 'scaleY', 'scaleZ', 'skew', 'skewX', 'skewY', 'translate', 'translate3d', 'translateX', 'translateY',
+'translateZ'];
+
+var animateTypes2 = ['opacity', 'backgroundColor'];
+var animateTypes3 = ['width', 'height', 'left', 'right', 'top', 'bottom'];
+animateTypes1.concat(animateTypes2, animateTypes3).forEach(function (type) {
+  MPAnimation.prototype[type] = function () {var _this$animation;
+
+    (_this$animation = this.animation)[type].apply(_this$animation, arguments);
+
+
+
+
+    return this;
+  };
+});
+
+function createAnimation(option, _this) {
+  if (!_this) return;
+  clearTimeout(_this.timer);
+  return new MPAnimation(option, _this);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 4:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
   \******************************************************************************************/
@@ -18155,9 +20708,12 @@ function internalMixin(Vue) {
 
   Vue.prototype.$emit = function(event) {
     if (this.$scope && event) {
-      (this.$scope['_triggerEvent'] || this.$scope['triggerEvent']).call(this.$scope, event, {
-        __args__: toArray(arguments, 1)
-      });
+      var triggerEvent = this.$scope['_triggerEvent'] || this.$scope['triggerEvent'];
+      if (triggerEvent) {
+        triggerEvent.call(this.$scope, event, {
+          __args__: toArray(arguments, 1)
+        });
+      }
     }
     return oldEmit.apply(this, arguments)
   };
@@ -18324,7 +20880,8 @@ var LIFECYCLE_HOOKS$1 = [
     // 'onReady', // 兼容旧版本，应该移除该事件
     'onPageShow',
     'onPageHide',
-    'onPageResize'
+    'onPageResize',
+    'onUploadDouyinVideo'
 ];
 function lifecycleMixin$1(Vue) {
 
@@ -18376,2109 +20933,6 @@ internalMixin(Vue);
 /* harmony default export */ __webpack_exports__["default"] = (Vue);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 2)))
-
-/***/ }),
-
-/***/ 30:
-/*!*******************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/sys.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.os = os;exports.sys = sys;function os() {
-  return uni.getSystemInfoSync().platform;
-};
-
-function sys() {
-  return uni.getSystemInfoSync();
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 31:
-/*!************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/debounce.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var timeout = null;
-
-/**
-                                                                                                                         * 防抖原理：一定时间内，只有最后一次操作，再过wait毫秒后才执行函数
-                                                                                                                         * 
-                                                                                                                         * @param {Function} func 要执行的回调函数 
-                                                                                                                         * @param {Number} wait 延时的时间
-                                                                                                                         * @param {Boolean} immediate 是否立即执行 
-                                                                                                                         * @return null
-                                                                                                                         */
-function debounce(func) {var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;var immediate = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  // 清除定时器
-  if (timeout !== null) clearTimeout(timeout);
-  // 立即执行，此类情况一般用不到
-  if (immediate) {
-    var callNow = !timeout;
-    timeout = setTimeout(function () {
-      timeout = null;
-    }, wait);
-    if (callNow) typeof func === 'function' && func();
-  } else {
-    // 设置定时器，当最后一次操作后，timeout不会再被清除，所以在延时wait毫秒后执行func回调方法
-    timeout = setTimeout(function () {
-      typeof func === 'function' && func();
-    }, wait);
-  }
-}var _default =
-
-debounce;exports.default = _default;
-
-/***/ }),
-
-/***/ 32:
-/*!************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/throttle.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var timer, flag;
-/**
-                                                                                                                      * 节流原理：在一定时间内，只能触发一次
-                                                                                                                      * 
-                                                                                                                      * @param {Function} func 要执行的回调函数 
-                                                                                                                      * @param {Number} wait 延时的时间
-                                                                                                                      * @param {Boolean} immediate 是否立即执行
-                                                                                                                      * @return null
-                                                                                                                      */
-function throttle(func) {var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;var immediate = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-  if (immediate) {
-    if (!flag) {
-      flag = true;
-      // 如果是立即执行，则在wait毫秒内开始时执行
-      typeof func === 'function' && func();
-      timer = setTimeout(function () {
-        flag = false;
-      }, wait);
-    }
-  } else {
-    if (!flag) {
-      flag = true;
-      // 如果是非立即执行，则在wait毫秒内的结束处执行
-      timer = setTimeout(function () {
-        flag = false;
-        typeof func === 'function' && func();
-      }, wait);
-    }
-
-  }
-};var _default =
-throttle;exports.default = _default;
-
-/***/ }),
-
-/***/ 33:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/config/config.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 此版本发布于2020-03-17
-var version = '1.8.4';var _default =
-
-{
-  v: version,
-  version: version,
-  // 主题名称
-  type: [
-  'primary',
-  'success',
-  'info',
-  'error',
-  'warning'] };exports.default = _default;
-
-/***/ }),
-
-/***/ 34:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/config/zIndex.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // uniapp在H5中各API的z-index值如下：
-/**
- * actionsheet: 999
- * modal: 999
- * navigate: 998
- * tabbar: 998
- * toast: 999
- */var _default =
-
-{
-  toast: 10090,
-  noNetwork: 10080,
-  // popup包含popup，actionsheet，keyboard，picker的值
-  popup: 10075,
-  mask: 10070,
-  navbar: 980,
-  topTips: 975,
-  sticky: 970,
-  indexListSticky: 965 };exports.default = _default;
-
-/***/ }),
-
-/***/ 348:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/components/ming-picker/area.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var city = [{ "value": "11", "label": "北京市", "children": [{ "value": "1101", "label": "市辖区", "children": [{ "value": "110101", "label": "东城区" }, { "value": "110102", "label": "西城区" }, { "value": "110105", "label": "朝阳区" }, { "value": "110106", "label": "丰台区" }, { "value": "110107", "label": "石景山区" }, { "value": "110108", "label": "海淀区" }, { "value": "110109", "label": "门头沟区" }, { "value": "110111", "label": "房山区" }, { "value": "110112", "label": "通州区" }, { "value": "110113", "label": "顺义区" }, { "value": "110114", "label": "昌平区" }, { "value": "110115", "label": "大兴区" }, { "value": "110116", "label": "怀柔区" }, { "value": "110117", "label": "平谷区" }, { "value": "110118", "label": "密云区" }, { "value": "110119", "label": "延庆区" }] }] }, { "value": "12", "label": "天津市", "children": [{ "value": "1201", "label": "市辖区", "children": [{ "value": "120101", "label": "和平区" }, { "value": "120102", "label": "河东区" }, { "value": "120103", "label": "河西区" }, { "value": "120104", "label": "南开区" }, { "value": "120105", "label": "河北区" }, { "value": "120106", "label": "红桥区" }, { "value": "120110", "label": "东丽区" }, { "value": "120111", "label": "西青区" }, { "value": "120112", "label": "津南区" }, { "value": "120113", "label": "北辰区" }, { "value": "120114", "label": "武清区" }, { "value": "120115", "label": "宝坻区" }, { "value": "120116", "label": "滨海新区" }, { "value": "120117", "label": "宁河区" }, { "value": "120118", "label": "静海区" }, { "value": "120119", "label": "蓟州区" }] }] }, { "value": "13", "label": "河北省", "children": [{ "value": "1301", "label": "石家庄市", "children": [{ "value": "130102", "label": "长安区" }, { "value": "130104", "label": "桥西区" }, { "value": "130105", "label": "新华区" }, { "value": "130107", "label": "井陉矿区" }, { "value": "130108", "label": "裕华区" }, { "value": "130109", "label": "藁城区" }, { "value": "130110", "label": "鹿泉区" }, { "value": "130111", "label": "栾城区" }, { "value": "130121", "label": "井陉县" }, { "value": "130123", "label": "正定县" }, { "value": "130125", "label": "行唐县" }, { "value": "130126", "label": "灵寿县" }, { "value": "130127", "label": "高邑县" }, { "value": "130128", "label": "深泽县" }, { "value": "130129", "label": "赞皇县" }, { "value": "130130", "label": "无极县" }, { "value": "130131", "label": "平山县" }, { "value": "130132", "label": "元氏县" }, { "value": "130133", "label": "赵县" }, { "value": "130171", "label": "石家庄高新技术产业开发区" }, { "value": "130172", "label": "石家庄循环化工园区" }, { "value": "130181", "label": "辛集市" }, { "value": "130183", "label": "晋州市" }, { "value": "130184", "label": "新乐市" }] }, { "value": "1302", "label": "唐山市", "children": [{ "value": "130202", "label": "路南区" }, { "value": "130203", "label": "路北区" }, { "value": "130204", "label": "古冶区" }, { "value": "130205", "label": "开平区" }, { "value": "130207", "label": "丰南区" }, { "value": "130208", "label": "丰润区" }, { "value": "130209", "label": "曹妃甸区" }, { "value": "130224", "label": "滦南县" }, { "value": "130225", "label": "乐亭县" }, { "value": "130227", "label": "迁西县" }, { "value": "130229", "label": "玉田县" }, { "value": "130271", "label": "唐山市芦台经济技术开发区" }, { "value": "130272", "label": "唐山市汉沽管理区" }, { "value": "130273", "label": "唐山高新技术产业开发区" }, { "value": "130274", "label": "河北唐山海港经济开发区" }, { "value": "130281", "label": "遵化市" }, { "value": "130283", "label": "迁安市" }, { "value": "130284", "label": "滦州市" }] }, { "value": "1303", "label": "秦皇岛市", "children": [{ "value": "130302", "label": "海港区" }, { "value": "130303", "label": "山海关区" }, { "value": "130304", "label": "北戴河区" }, { "value": "130306", "label": "抚宁区" }, { "value": "130321", "label": "青龙满族自治县" }, { "value": "130322", "label": "昌黎县" }, { "value": "130324", "label": "卢龙县" }, { "value": "130371", "label": "秦皇岛市经济技术开发区" }, { "value": "130372", "label": "北戴河新区" }] }, { "value": "1304", "label": "邯郸市", "children": [{ "value": "130402", "label": "邯山区" }, { "value": "130403", "label": "丛台区" }, { "value": "130404", "label": "复兴区" }, { "value": "130406", "label": "峰峰矿区" }, { "value": "130407", "label": "肥乡区" }, { "value": "130408", "label": "永年区" }, { "value": "130423", "label": "临漳县" }, { "value": "130424", "label": "成安县" }, { "value": "130425", "label": "大名县" }, { "value": "130426", "label": "涉县" }, { "value": "130427", "label": "磁县" }, { "value": "130430", "label": "邱县" }, { "value": "130431", "label": "鸡泽县" }, { "value": "130432", "label": "广平县" }, { "value": "130433", "label": "馆陶县" }, { "value": "130434", "label": "魏县" }, { "value": "130435", "label": "曲周县" }, { "value": "130471", "label": "邯郸经济技术开发区" }, { "value": "130473", "label": "邯郸冀南新区" }, { "value": "130481", "label": "武安市" }] }, { "value": "1305", "label": "邢台市", "children": [{ "value": "130502", "label": "桥东区" }, { "value": "130503", "label": "桥西区" }, { "value": "130521", "label": "邢台县" }, { "value": "130522", "label": "临城县" }, { "value": "130523", "label": "内丘县" }, { "value": "130524", "label": "柏乡县" }, { "value": "130525", "label": "隆尧县" }, { "value": "130526", "label": "任县" }, { "value": "130527", "label": "南和县" }, { "value": "130528", "label": "宁晋县" }, { "value": "130529", "label": "巨鹿县" }, { "value": "130530", "label": "新河县" }, { "value": "130531", "label": "广宗县" }, { "value": "130532", "label": "平乡县" }, { "value": "130533", "label": "威县" }, { "value": "130534", "label": "清河县" }, { "value": "130535", "label": "临西县" }, { "value": "130571", "label": "河北邢台经济开发区" }, { "value": "130581", "label": "南宫市" }, { "value": "130582", "label": "沙河市" }] }, { "value": "1306", "label": "保定市", "children": [{ "value": "130602", "label": "竞秀区" }, { "value": "130606", "label": "莲池区" }, { "value": "130607", "label": "满城区" }, { "value": "130608", "label": "清苑区" }, { "value": "130609", "label": "徐水区" }, { "value": "130623", "label": "涞水县" }, { "value": "130624", "label": "阜平县" }, { "value": "130626", "label": "定兴县" }, { "value": "130627", "label": "唐县" }, { "value": "130628", "label": "高阳县" }, { "value": "130629", "label": "容城县" }, { "value": "130630", "label": "涞源县" }, { "value": "130631", "label": "望都县" }, { "value": "130632", "label": "安新县" }, { "value": "130633", "label": "易县" }, { "value": "130634", "label": "曲阳县" }, { "value": "130635", "label": "蠡县" }, { "value": "130636", "label": "顺平县" }, { "value": "130637", "label": "博野县" }, { "value": "130638", "label": "雄县" }, { "value": "130671", "label": "保定高新技术产业开发区" }, { "value": "130672", "label": "保定白沟新城" }, { "value": "130681", "label": "涿州市" }, { "value": "130682", "label": "定州市" }, { "value": "130683", "label": "安国市" }, { "value": "130684", "label": "高碑店市" }] }, { "value": "1307", "label": "张家口市", "children": [{ "value": "130702", "label": "桥东区" }, { "value": "130703", "label": "桥西区" }, { "value": "130705", "label": "宣化区" }, { "value": "130706", "label": "下花园区" }, { "value": "130708", "label": "万全区" }, { "value": "130709", "label": "崇礼区" }, { "value": "130722", "label": "张北县" }, { "value": "130723", "label": "康保县" }, { "value": "130724", "label": "沽源县" }, { "value": "130725", "label": "尚义县" }, { "value": "130726", "label": "蔚县" }, { "value": "130727", "label": "阳原县" }, { "value": "130728", "label": "怀安县" }, { "value": "130730", "label": "怀来县" }, { "value": "130731", "label": "涿鹿县" }, { "value": "130732", "label": "赤城县" }, { "value": "130771", "label": "张家口市高新技术产业开发区" }, { "value": "130772", "label": "张家口市察北管理区" }, { "value": "130773", "label": "张家口市塞北管理区" }] }, { "value": "1308", "label": "承德市", "children": [{ "value": "130802", "label": "双桥区" }, { "value": "130803", "label": "双滦区" }, { "value": "130804", "label": "鹰手营子矿区" }, { "value": "130821", "label": "承德县" }, { "value": "130822", "label": "兴隆县" }, { "value": "130824", "label": "滦平县" }, { "value": "130825", "label": "隆化县" }, { "value": "130826", "label": "丰宁满族自治县" }, { "value": "130827", "label": "宽城满族自治县" }, { "value": "130828", "label": "围场满族蒙古族自治县" }, { "value": "130871", "label": "承德高新技术产业开发区" }, { "value": "130881", "label": "平泉市" }] }, { "value": "1309", "label": "沧州市", "children": [{ "value": "130902", "label": "新华区" }, { "value": "130903", "label": "运河区" }, { "value": "130921", "label": "沧县" }, { "value": "130922", "label": "青县" }, { "value": "130923", "label": "东光县" }, { "value": "130924", "label": "海兴县" }, { "value": "130925", "label": "盐山县" }, { "value": "130926", "label": "肃宁县" }, { "value": "130927", "label": "南皮县" }, { "value": "130928", "label": "吴桥县" }, { "value": "130929", "label": "献县" }, { "value": "130930", "label": "孟村回族自治县" }, { "value": "130971", "label": "河北沧州经济开发区" }, { "value": "130972", "label": "沧州高新技术产业开发区" }, { "value": "130973", "label": "沧州渤海新区" }, { "value": "130981", "label": "泊头市" }, { "value": "130982", "label": "任丘市" }, { "value": "130983", "label": "黄骅市" }, { "value": "130984", "label": "河间市" }] }, { "value": "1310", "label": "廊坊市", "children": [{ "value": "131002", "label": "安次区" }, { "value": "131003", "label": "广阳区" }, { "value": "131022", "label": "固安县" }, { "value": "131023", "label": "永清县" }, { "value": "131024", "label": "香河县" }, { "value": "131025", "label": "大城县" }, { "value": "131026", "label": "文安县" }, { "value": "131028", "label": "大厂回族自治县" }, { "value": "131071", "label": "廊坊经济技术开发区" }, { "value": "131081", "label": "霸州市" }, { "value": "131082", "label": "三河市" }] }, { "value": "1311", "label": "衡水市", "children": [{ "value": "131102", "label": "桃城区" }, { "value": "131103", "label": "冀州区" }, { "value": "131121", "label": "枣强县" }, { "value": "131122", "label": "武邑县" }, { "value": "131123", "label": "武强县" }, { "value": "131124", "label": "饶阳县" }, { "value": "131125", "label": "安平县" }, { "value": "131126", "label": "故城县" }, { "value": "131127", "label": "景县" }, { "value": "131128", "label": "阜城县" }, { "value": "131171", "label": "河北衡水高新技术产业开发区" }, { "value": "131172", "label": "衡水滨湖新区" }, { "value": "131182", "label": "深州市" }] }] }, { "value": "14", "label": "山西省", "children": [{ "value": "1401", "label": "太原市", "children": [{ "value": "140105", "label": "小店区" }, { "value": "140106", "label": "迎泽区" }, { "value": "140107", "label": "杏花岭区" }, { "value": "140108", "label": "尖草坪区" }, { "value": "140109", "label": "万柏林区" }, { "value": "140110", "label": "晋源区" }, { "value": "140121", "label": "清徐县" }, { "value": "140122", "label": "阳曲县" }, { "value": "140123", "label": "娄烦县" }, { "value": "140171", "label": "山西转型综合改革示范区" }, { "value": "140181", "label": "古交市" }] }, { "value": "1402", "label": "大同市", "children": [{ "value": "140212", "label": "新荣区" }, { "value": "140213", "label": "平城区" }, { "value": "140214", "label": "云冈区" }, { "value": "140215", "label": "云州区" }, { "value": "140221", "label": "阳高县" }, { "value": "140222", "label": "天镇县" }, { "value": "140223", "label": "广灵县" }, { "value": "140224", "label": "灵丘县" }, { "value": "140225", "label": "浑源县" }, { "value": "140226", "label": "左云县" }, { "value": "140271", "label": "山西大同经济开发区" }] }, { "value": "1403", "label": "阳泉市", "children": [{ "value": "140302", "label": "城区" }, { "value": "140303", "label": "矿区" }, { "value": "140311", "label": "郊区" }, { "value": "140321", "label": "平定县" }, { "value": "140322", "label": "盂县" }] }, { "value": "1404", "label": "长治市", "children": [{ "value": "140403", "label": "潞州区" }, { "value": "140404", "label": "上党区" }, { "value": "140405", "label": "屯留区" }, { "value": "140406", "label": "潞城区" }, { "value": "140423", "label": "襄垣县" }, { "value": "140425", "label": "平顺县" }, { "value": "140426", "label": "黎城县" }, { "value": "140427", "label": "壶关县" }, { "value": "140428", "label": "长子县" }, { "value": "140429", "label": "武乡县" }, { "value": "140430", "label": "沁县" }, { "value": "140431", "label": "沁源县" }, { "value": "140471", "label": "山西长治高新技术产业园区" }] }, { "value": "1405", "label": "晋城市", "children": [{ "value": "140502", "label": "城区" }, { "value": "140521", "label": "沁水县" }, { "value": "140522", "label": "阳城县" }, { "value": "140524", "label": "陵川县" }, { "value": "140525", "label": "泽州县" }, { "value": "140581", "label": "高平市" }] }, { "value": "1406", "label": "朔州市", "children": [{ "value": "140602", "label": "朔城区" }, { "value": "140603", "label": "平鲁区" }, { "value": "140621", "label": "山阴县" }, { "value": "140622", "label": "应县" }, { "value": "140623", "label": "右玉县" }, { "value": "140671", "label": "山西朔州经济开发区" }, { "value": "140681", "label": "怀仁市" }] }, { "value": "1407", "label": "晋中市", "children": [{ "value": "140702", "label": "榆次区" }, { "value": "140721", "label": "榆社县" }, { "value": "140722", "label": "左权县" }, { "value": "140723", "label": "和顺县" }, { "value": "140724", "label": "昔阳县" }, { "value": "140725", "label": "寿阳县" }, { "value": "140726", "label": "太谷县" }, { "value": "140727", "label": "祁县" }, { "value": "140728", "label": "平遥县" }, { "value": "140729", "label": "灵石县" }, { "value": "140781", "label": "介休市" }] }, { "value": "1408", "label": "运城市", "children": [{ "value": "140802", "label": "盐湖区" }, { "value": "140821", "label": "临猗县" }, { "value": "140822", "label": "万荣县" }, { "value": "140823", "label": "闻喜县" }, { "value": "140824", "label": "稷山县" }, { "value": "140825", "label": "新绛县" }, { "value": "140826", "label": "绛县" }, { "value": "140827", "label": "垣曲县" }, { "value": "140828", "label": "夏县" }, { "value": "140829", "label": "平陆县" }, { "value": "140830", "label": "芮城县" }, { "value": "140881", "label": "永济市" }, { "value": "140882", "label": "河津市" }] }, { "value": "1409", "label": "忻州市", "children": [{ "value": "140902", "label": "忻府区" }, { "value": "140921", "label": "定襄县" }, { "value": "140922", "label": "五台县" }, { "value": "140923", "label": "代县" }, { "value": "140924", "label": "繁峙县" }, { "value": "140925", "label": "宁武县" }, { "value": "140926", "label": "静乐县" }, { "value": "140927", "label": "神池县" }, { "value": "140928", "label": "五寨县" }, { "value": "140929", "label": "岢岚县" }, { "value": "140930", "label": "河曲县" }, { "value": "140931", "label": "保德县" }, { "value": "140932", "label": "偏关县" }, { "value": "140971", "label": "五台山风景名胜区" }, { "value": "140981", "label": "原平市" }] }, { "value": "1410", "label": "临汾市", "children": [{ "value": "141002", "label": "尧都区" }, { "value": "141021", "label": "曲沃县" }, { "value": "141022", "label": "翼城县" }, { "value": "141023", "label": "襄汾县" }, { "value": "141024", "label": "洪洞县" }, { "value": "141025", "label": "古县" }, { "value": "141026", "label": "安泽县" }, { "value": "141027", "label": "浮山县" }, { "value": "141028", "label": "吉县" }, { "value": "141029", "label": "乡宁县" }, { "value": "141030", "label": "大宁县" }, { "value": "141031", "label": "隰县" }, { "value": "141032", "label": "永和县" }, { "value": "141033", "label": "蒲县" }, { "value": "141034", "label": "汾西县" }, { "value": "141081", "label": "侯马市" }, { "value": "141082", "label": "霍州市" }] }, { "value": "1411", "label": "吕梁市", "children": [{ "value": "141102", "label": "离石区" }, { "value": "141121", "label": "文水县" }, { "value": "141122", "label": "交城县" }, { "value": "141123", "label": "兴县" }, { "value": "141124", "label": "临县" }, { "value": "141125", "label": "柳林县" }, { "value": "141126", "label": "石楼县" }, { "value": "141127", "label": "岚县" }, { "value": "141128", "label": "方山县" }, { "value": "141129", "label": "中阳县" }, { "value": "141130", "label": "交口县" }, { "value": "141181", "label": "孝义市" }, { "value": "141182", "label": "汾阳市" }] }] }, { "value": "15", "label": "内蒙古自治区", "children": [{ "value": "1501", "label": "呼和浩特市", "children": [{ "value": "150102", "label": "新城区" }, { "value": "150103", "label": "回民区" }, { "value": "150104", "label": "玉泉区" }, { "value": "150105", "label": "赛罕区" }, { "value": "150121", "label": "土默特左旗" }, { "value": "150122", "label": "托克托县" }, { "value": "150123", "label": "和林格尔县" }, { "value": "150124", "label": "清水河县" }, { "value": "150125", "label": "武川县" }, { "value": "150171", "label": "呼和浩特金海工业园区" }, { "value": "150172", "label": "呼和浩特经济技术开发区" }] }, { "value": "1502", "label": "包头市", "children": [{ "value": "150202", "label": "东河区" }, { "value": "150203", "label": "昆都仑区" }, { "value": "150204", "label": "青山区" }, { "value": "150205", "label": "石拐区" }, { "value": "150206", "label": "白云鄂博矿区" }, { "value": "150207", "label": "九原区" }, { "value": "150221", "label": "土默特右旗" }, { "value": "150222", "label": "固阳县" }, { "value": "150223", "label": "达尔罕茂明安联合旗" }, { "value": "150271", "label": "包头稀土高新技术产业开发区" }] }, { "value": "1503", "label": "乌海市", "children": [{ "value": "150302", "label": "海勃湾区" }, { "value": "150303", "label": "海南区" }, { "value": "150304", "label": "乌达区" }] }, { "value": "1504", "label": "赤峰市", "children": [{ "value": "150402", "label": "红山区" }, { "value": "150403", "label": "元宝山区" }, { "value": "150404", "label": "松山区" }, { "value": "150421", "label": "阿鲁科尔沁旗" }, { "value": "150422", "label": "巴林左旗" }, { "value": "150423", "label": "巴林右旗" }, { "value": "150424", "label": "林西县" }, { "value": "150425", "label": "克什克腾旗" }, { "value": "150426", "label": "翁牛特旗" }, { "value": "150428", "label": "喀喇沁旗" }, { "value": "150429", "label": "宁城县" }, { "value": "150430", "label": "敖汉旗" }] }, { "value": "1505", "label": "通辽市", "children": [{ "value": "150502", "label": "科尔沁区" }, { "value": "150521", "label": "科尔沁左翼中旗" }, { "value": "150522", "label": "科尔沁左翼后旗" }, { "value": "150523", "label": "开鲁县" }, { "value": "150524", "label": "库伦旗" }, { "value": "150525", "label": "奈曼旗" }, { "value": "150526", "label": "扎鲁特旗" }, { "value": "150571", "label": "通辽经济技术开发区" }, { "value": "150581", "label": "霍林郭勒市" }] }, { "value": "1506", "label": "鄂尔多斯市", "children": [{ "value": "150602", "label": "东胜区" }, { "value": "150603", "label": "康巴什区" }, { "value": "150621", "label": "达拉特旗" }, { "value": "150622", "label": "准格尔旗" }, { "value": "150623", "label": "鄂托克前旗" }, { "value": "150624", "label": "鄂托克旗" }, { "value": "150625", "label": "杭锦旗" }, { "value": "150626", "label": "乌审旗" }, { "value": "150627", "label": "伊金霍洛旗" }] }, { "value": "1507", "label": "呼伦贝尔市", "children": [{ "value": "150702", "label": "海拉尔区" }, { "value": "150703", "label": "扎赉诺尔区" }, { "value": "150721", "label": "阿荣旗" }, { "value": "150722", "label": "莫力达瓦达斡尔族自治旗" }, { "value": "150723", "label": "鄂伦春自治旗" }, { "value": "150724", "label": "鄂温克族自治旗" }, { "value": "150725", "label": "陈巴尔虎旗" }, { "value": "150726", "label": "新巴尔虎左旗" }, { "value": "150727", "label": "新巴尔虎右旗" }, { "value": "150781", "label": "满洲里市" }, { "value": "150782", "label": "牙克石市" }, { "value": "150783", "label": "扎兰屯市" }, { "value": "150784", "label": "额尔古纳市" }, { "value": "150785", "label": "根河市" }] }, { "value": "1508", "label": "巴彦淖尔市", "children": [{ "value": "150802", "label": "临河区" }, { "value": "150821", "label": "五原县" }, { "value": "150822", "label": "磴口县" }, { "value": "150823", "label": "乌拉特前旗" }, { "value": "150824", "label": "乌拉特中旗" }, { "value": "150825", "label": "乌拉特后旗" }, { "value": "150826", "label": "杭锦后旗" }] }, { "value": "1509", "label": "乌兰察布市", "children": [{ "value": "150902", "label": "集宁区" }, { "value": "150921", "label": "卓资县" }, { "value": "150922", "label": "化德县" }, { "value": "150923", "label": "商都县" }, { "value": "150924", "label": "兴和县" }, { "value": "150925", "label": "凉城县" }, { "value": "150926", "label": "察哈尔右翼前旗" }, { "value": "150927", "label": "察哈尔右翼中旗" }, { "value": "150928", "label": "察哈尔右翼后旗" }, { "value": "150929", "label": "四子王旗" }, { "value": "150981", "label": "丰镇市" }] }, { "value": "1522", "label": "兴安盟", "children": [{ "value": "152201", "label": "乌兰浩特市" }, { "value": "152202", "label": "阿尔山市" }, { "value": "152221", "label": "科尔沁右翼前旗" }, { "value": "152222", "label": "科尔沁右翼中旗" }, { "value": "152223", "label": "扎赉特旗" }, { "value": "152224", "label": "突泉县" }] }, { "value": "1525", "label": "锡林郭勒盟", "children": [{ "value": "152501", "label": "二连浩特市" }, { "value": "152502", "label": "锡林浩特市" }, { "value": "152522", "label": "阿巴嘎旗" }, { "value": "152523", "label": "苏尼特左旗" }, { "value": "152524", "label": "苏尼特右旗" }, { "value": "152525", "label": "东乌珠穆沁旗" }, { "value": "152526", "label": "西乌珠穆沁旗" }, { "value": "152527", "label": "太仆寺旗" }, { "value": "152528", "label": "镶黄旗" }, { "value": "152529", "label": "正镶白旗" }, { "value": "152530", "label": "正蓝旗" }, { "value": "152531", "label": "多伦县" }, { "value": "152571", "label": "乌拉盖管委会" }] }, { "value": "1529", "label": "阿拉善盟", "children": [{ "value": "152921", "label": "阿拉善左旗" }, { "value": "152922", "label": "阿拉善右旗" }, { "value": "152923", "label": "额济纳旗" }, { "value": "152971", "label": "内蒙古阿拉善经济开发区" }] }] }, { "value": "21", "label": "辽宁省", "children": [{ "value": "2101", "label": "沈阳市", "children": [{ "value": "210102", "label": "和平区" }, { "value": "210103", "label": "沈河区" }, { "value": "210104", "label": "大东区" }, { "value": "210105", "label": "皇姑区" }, { "value": "210106", "label": "铁西区" }, { "value": "210111", "label": "苏家屯区" }, { "value": "210112", "label": "浑南区" }, { "value": "210113", "label": "沈北新区" }, { "value": "210114", "label": "于洪区" }, { "value": "210115", "label": "辽中区" }, { "value": "210123", "label": "康平县" }, { "value": "210124", "label": "法库县" }, { "value": "210181", "label": "新民市" }] }, { "value": "2102", "label": "大连市", "children": [{ "value": "210202", "label": "中山区" }, { "value": "210203", "label": "西岗区" }, { "value": "210204", "label": "沙河口区" }, { "value": "210211", "label": "甘井子区" }, { "value": "210212", "label": "旅顺口区" }, { "value": "210213", "label": "金州区" }, { "value": "210214", "label": "普兰店区" }, { "value": "210224", "label": "长海县" }, { "value": "210281", "label": "瓦房店市" }, { "value": "210283", "label": "庄河市" }] }, { "value": "2103", "label": "鞍山市", "children": [{ "value": "210302", "label": "铁东区" }, { "value": "210303", "label": "铁西区" }, { "value": "210304", "label": "立山区" }, { "value": "210311", "label": "千山区" }, { "value": "210321", "label": "台安县" }, { "value": "210323", "label": "岫岩满族自治县" }, { "value": "210381", "label": "海城市" }] }, { "value": "2104", "label": "抚顺市", "children": [{ "value": "210402", "label": "新抚区" }, { "value": "210403", "label": "东洲区" }, { "value": "210404", "label": "望花区" }, { "value": "210411", "label": "顺城区" }, { "value": "210421", "label": "抚顺县" }, { "value": "210422", "label": "新宾满族自治县" }, { "value": "210423", "label": "清原满族自治县" }] }, { "value": "2105", "label": "本溪市", "children": [{ "value": "210502", "label": "平山区" }, { "value": "210503", "label": "溪湖区" }, { "value": "210504", "label": "明山区" }, { "value": "210505", "label": "南芬区" }, { "value": "210521", "label": "本溪满族自治县" }, { "value": "210522", "label": "桓仁满族自治县" }] }, { "value": "2106", "label": "丹东市", "children": [{ "value": "210602", "label": "元宝区" }, { "value": "210603", "label": "振兴区" }, { "value": "210604", "label": "振安区" }, { "value": "210624", "label": "宽甸满族自治县" }, { "value": "210681", "label": "东港市" }, { "value": "210682", "label": "凤城市" }] }, { "value": "2107", "label": "锦州市", "children": [{ "value": "210702", "label": "古塔区" }, { "value": "210703", "label": "凌河区" }, { "value": "210711", "label": "太和区" }, { "value": "210726", "label": "黑山县" }, { "value": "210727", "label": "义县" }, { "value": "210781", "label": "凌海市" }, { "value": "210782", "label": "北镇市" }] }, { "value": "2108", "label": "营口市", "children": [{ "value": "210802", "label": "站前区" }, { "value": "210803", "label": "西市区" }, { "value": "210804", "label": "鲅鱼圈区" }, { "value": "210811", "label": "老边区" }, { "value": "210881", "label": "盖州市" }, { "value": "210882", "label": "大石桥市" }] }, { "value": "2109", "label": "阜新市", "children": [{ "value": "210902", "label": "海州区" }, { "value": "210903", "label": "新邱区" }, { "value": "210904", "label": "太平区" }, { "value": "210905", "label": "清河门区" }, { "value": "210911", "label": "细河区" }, { "value": "210921", "label": "阜新蒙古族自治县" }, { "value": "210922", "label": "彰武县" }] }, { "value": "2110", "label": "辽阳市", "children": [{ "value": "211002", "label": "白塔区" }, { "value": "211003", "label": "文圣区" }, { "value": "211004", "label": "宏伟区" }, { "value": "211005", "label": "弓长岭区" }, { "value": "211011", "label": "太子河区" }, { "value": "211021", "label": "辽阳县" }, { "value": "211081", "label": "灯塔市" }] }, { "value": "2111", "label": "盘锦市", "children": [{ "value": "211102", "label": "双台子区" }, { "value": "211103", "label": "兴隆台区" }, { "value": "211104", "label": "大洼区" }, { "value": "211122", "label": "盘山县" }] }, { "value": "2112", "label": "铁岭市", "children": [{ "value": "211202", "label": "银州区" }, { "value": "211204", "label": "清河区" }, { "value": "211221", "label": "铁岭县" }, { "value": "211223", "label": "西丰县" }, { "value": "211224", "label": "昌图县" }, { "value": "211281", "label": "调兵山市" }, { "value": "211282", "label": "开原市" }] }, { "value": "2113", "label": "朝阳市", "children": [{ "value": "211302", "label": "双塔区" }, { "value": "211303", "label": "龙城区" }, { "value": "211321", "label": "朝阳县" }, { "value": "211322", "label": "建平县" }, { "value": "211324", "label": "喀喇沁左翼蒙古族自治县" }, { "value": "211381", "label": "北票市" }, { "value": "211382", "label": "凌源市" }] }, { "value": "2114", "label": "葫芦岛市", "children": [{ "value": "211402", "label": "连山区" }, { "value": "211403", "label": "龙港区" }, { "value": "211404", "label": "南票区" }, { "value": "211421", "label": "绥中县" }, { "value": "211422", "label": "建昌县" }, { "value": "211481", "label": "兴城市" }] }] }, { "value": "22", "label": "吉林省", "children": [{ "value": "2201", "label": "长春市", "children": [{ "value": "220102", "label": "南关区" }, { "value": "220103", "label": "宽城区" }, { "value": "220104", "label": "朝阳区" }, { "value": "220105", "label": "二道区" }, { "value": "220106", "label": "绿园区" }, { "value": "220112", "label": "双阳区" }, { "value": "220113", "label": "九台区" }, { "value": "220122", "label": "农安县" }, { "value": "220171", "label": "长春经济技术开发区" }, { "value": "220172", "label": "长春净月高新技术产业开发区" }, { "value": "220173", "label": "长春高新技术产业开发区" }, { "value": "220174", "label": "长春汽车经济技术开发区" }, { "value": "220182", "label": "榆树市" }, { "value": "220183", "label": "德惠市" }] }, { "value": "2202", "label": "吉林市", "children": [{ "value": "220202", "label": "昌邑区" }, { "value": "220203", "label": "龙潭区" }, { "value": "220204", "label": "船营区" }, { "value": "220211", "label": "丰满区" }, { "value": "220221", "label": "永吉县" }, { "value": "220271", "label": "吉林经济开发区" }, { "value": "220272", "label": "吉林高新技术产业开发区" }, { "value": "220273", "label": "吉林中国新加坡食品区" }, { "value": "220281", "label": "蛟河市" }, { "value": "220282", "label": "桦甸市" }, { "value": "220283", "label": "舒兰市" }, { "value": "220284", "label": "磐石市" }] }, { "value": "2203", "label": "四平市", "children": [{ "value": "220302", "label": "铁西区" }, { "value": "220303", "label": "铁东区" }, { "value": "220322", "label": "梨树县" }, { "value": "220323", "label": "伊通满族自治县" }, { "value": "220381", "label": "公主岭市" }, { "value": "220382", "label": "双辽市" }] }, { "value": "2204", "label": "辽源市", "children": [{ "value": "220402", "label": "龙山区" }, { "value": "220403", "label": "西安区" }, { "value": "220421", "label": "东丰县" }, { "value": "220422", "label": "东辽县" }] }, { "value": "2205", "label": "通化市", "children": [{ "value": "220502", "label": "东昌区" }, { "value": "220503", "label": "二道江区" }, { "value": "220521", "label": "通化县" }, { "value": "220523", "label": "辉南县" }, { "value": "220524", "label": "柳河县" }, { "value": "220581", "label": "梅河口市" }, { "value": "220582", "label": "集安市" }] }, { "value": "2206", "label": "白山市", "children": [{ "value": "220602", "label": "浑江区" }, { "value": "220605", "label": "江源区" }, { "value": "220621", "label": "抚松县" }, { "value": "220622", "label": "靖宇县" }, { "value": "220623", "label": "长白朝鲜族自治县" }, { "value": "220681", "label": "临江市" }] }, { "value": "2207", "label": "松原市", "children": [{ "value": "220702", "label": "宁江区" }, { "value": "220721", "label": "前郭尔罗斯蒙古族自治县" }, { "value": "220722", "label": "长岭县" }, { "value": "220723", "label": "乾安县" }, { "value": "220771", "label": "吉林松原经济开发区" }, { "value": "220781", "label": "扶余市" }] }, { "value": "2208", "label": "白城市", "children": [{ "value": "220802", "label": "洮北区" }, { "value": "220821", "label": "镇赉县" }, { "value": "220822", "label": "通榆县" }, { "value": "220871", "label": "吉林白城经济开发区" }, { "value": "220881", "label": "洮南市" }, { "value": "220882", "label": "大安市" }] }, { "value": "2224", "label": "延边朝鲜族自治州", "children": [{ "value": "222401", "label": "延吉市" }, { "value": "222402", "label": "图们市" }, { "value": "222403", "label": "敦化市" }, { "value": "222404", "label": "珲春市" }, { "value": "222405", "label": "龙井市" }, { "value": "222406", "label": "和龙市" }, { "value": "222424", "label": "汪清县" }, { "value": "222426", "label": "安图县" }] }] }, { "value": "23", "label": "黑龙江省", "children": [{ "value": "2301", "label": "哈尔滨市", "children": [{ "value": "230102", "label": "道里区" }, { "value": "230103", "label": "南岗区" }, { "value": "230104", "label": "道外区" }, { "value": "230108", "label": "平房区" }, { "value": "230109", "label": "松北区" }, { "value": "230110", "label": "香坊区" }, { "value": "230111", "label": "呼兰区" }, { "value": "230112", "label": "阿城区" }, { "value": "230113", "label": "双城区" }, { "value": "230123", "label": "依兰县" }, { "value": "230124", "label": "方正县" }, { "value": "230125", "label": "宾县" }, { "value": "230126", "label": "巴彦县" }, { "value": "230127", "label": "木兰县" }, { "value": "230128", "label": "通河县" }, { "value": "230129", "label": "延寿县" }, { "value": "230183", "label": "尚志市" }, { "value": "230184", "label": "五常市" }] }, { "value": "2302", "label": "齐齐哈尔市", "children": [{ "value": "230202", "label": "龙沙区" }, { "value": "230203", "label": "建华区" }, { "value": "230204", "label": "铁锋区" }, { "value": "230205", "label": "昂昂溪区" }, { "value": "230206", "label": "富拉尔基区" }, { "value": "230207", "label": "碾子山区" }, { "value": "230208", "label": "梅里斯达斡尔族区" }, { "value": "230221", "label": "龙江县" }, { "value": "230223", "label": "依安县" }, { "value": "230224", "label": "泰来县" }, { "value": "230225", "label": "甘南县" }, { "value": "230227", "label": "富裕县" }, { "value": "230229", "label": "克山县" }, { "value": "230230", "label": "克东县" }, { "value": "230231", "label": "拜泉县" }, { "value": "230281", "label": "讷河市" }] }, { "value": "2303", "label": "鸡西市", "children": [{ "value": "230302", "label": "鸡冠区" }, { "value": "230303", "label": "恒山区" }, { "value": "230304", "label": "滴道区" }, { "value": "230305", "label": "梨树区" }, { "value": "230306", "label": "城子河区" }, { "value": "230307", "label": "麻山区" }, { "value": "230321", "label": "鸡东县" }, { "value": "230381", "label": "虎林市" }, { "value": "230382", "label": "密山市" }] }, { "value": "2304", "label": "鹤岗市", "children": [{ "value": "230402", "label": "向阳区" }, { "value": "230403", "label": "工农区" }, { "value": "230404", "label": "南山区" }, { "value": "230405", "label": "兴安区" }, { "value": "230406", "label": "东山区" }, { "value": "230407", "label": "兴山区" }, { "value": "230421", "label": "萝北县" }, { "value": "230422", "label": "绥滨县" }] }, { "value": "2305", "label": "双鸭山市", "children": [{ "value": "230502", "label": "尖山区" }, { "value": "230503", "label": "岭东区" }, { "value": "230505", "label": "四方台区" }, { "value": "230506", "label": "宝山区" }, { "value": "230521", "label": "集贤县" }, { "value": "230522", "label": "友谊县" }, { "value": "230523", "label": "宝清县" }, { "value": "230524", "label": "饶河县" }] }, { "value": "2306", "label": "大庆市", "children": [{ "value": "230602", "label": "萨尔图区" }, { "value": "230603", "label": "龙凤区" }, { "value": "230604", "label": "让胡路区" }, { "value": "230605", "label": "红岗区" }, { "value": "230606", "label": "大同区" }, { "value": "230621", "label": "肇州县" }, { "value": "230622", "label": "肇源县" }, { "value": "230623", "label": "林甸县" }, { "value": "230624", "label": "杜尔伯特蒙古族自治县" }, { "value": "230671", "label": "大庆高新技术产业开发区" }] }, { "value": "2307", "label": "伊春市", "children": [{ "value": "230702", "label": "伊春区" }, { "value": "230703", "label": "南岔区" }, { "value": "230704", "label": "友好区" }, { "value": "230705", "label": "西林区" }, { "value": "230706", "label": "翠峦区" }, { "value": "230707", "label": "新青区" }, { "value": "230708", "label": "美溪区" }, { "value": "230709", "label": "金山屯区" }, { "value": "230710", "label": "五营区" }, { "value": "230711", "label": "乌马河区" }, { "value": "230712", "label": "汤旺河区" }, { "value": "230713", "label": "带岭区" }, { "value": "230714", "label": "乌伊岭区" }, { "value": "230715", "label": "红星区" }, { "value": "230716", "label": "上甘岭区" }, { "value": "230722", "label": "嘉荫县" }, { "value": "230781", "label": "铁力市" }] }, { "value": "2308", "label": "佳木斯市", "children": [{ "value": "230803", "label": "向阳区" }, { "value": "230804", "label": "前进区" }, { "value": "230805", "label": "东风区" }, { "value": "230811", "label": "郊区" }, { "value": "230822", "label": "桦南县" }, { "value": "230826", "label": "桦川县" }, { "value": "230828", "label": "汤原县" }, { "value": "230881", "label": "同江市" }, { "value": "230882", "label": "富锦市" }, { "value": "230883", "label": "抚远市" }] }, { "value": "2309", "label": "七台河市", "children": [{ "value": "230902", "label": "新兴区" }, { "value": "230903", "label": "桃山区" }, { "value": "230904", "label": "茄子河区" }, { "value": "230921", "label": "勃利县" }] }, { "value": "2310", "label": "牡丹江市", "children": [{ "value": "231002", "label": "东安区" }, { "value": "231003", "label": "阳明区" }, { "value": "231004", "label": "爱民区" }, { "value": "231005", "label": "西安区" }, { "value": "231025", "label": "林口县" }, { "value": "231071", "label": "牡丹江经济技术开发区" }, { "value": "231081", "label": "绥芬河市" }, { "value": "231083", "label": "海林市" }, { "value": "231084", "label": "宁安市" }, { "value": "231085", "label": "穆棱市" }, { "value": "231086", "label": "东宁市" }] }, { "value": "2311", "label": "黑河市", "children": [{ "value": "231102", "label": "爱辉区" }, { "value": "231121", "label": "嫩江县" }, { "value": "231123", "label": "逊克县" }, { "value": "231124", "label": "孙吴县" }, { "value": "231181", "label": "北安市" }, { "value": "231182", "label": "五大连池市" }] }, { "value": "2312", "label": "绥化市", "children": [{ "value": "231202", "label": "北林区" }, { "value": "231221", "label": "望奎县" }, { "value": "231222", "label": "兰西县" }, { "value": "231223", "label": "青冈县" }, { "value": "231224", "label": "庆安县" }, { "value": "231225", "label": "明水县" }, { "value": "231226", "label": "绥棱县" }, { "value": "231281", "label": "安达市" }, { "value": "231282", "label": "肇东市" }, { "value": "231283", "label": "海伦市" }] }, { "value": "2327", "label": "大兴安岭地区", "children": [{ "value": "232701", "label": "漠河市" }, { "value": "232721", "label": "呼玛县" }, { "value": "232722", "label": "塔河县" }, { "value": "232761", "label": "加格达奇区" }, { "value": "232762", "label": "松岭区" }, { "value": "232763", "label": "新林区" }, { "value": "232764", "label": "呼中区" }] }] }, { "value": "31", "label": "上海市", "children": [{ "value": "3101", "label": "市辖区", "children": [{ "value": "310101", "label": "黄浦区" }, { "value": "310104", "label": "徐汇区" }, { "value": "310105", "label": "长宁区" }, { "value": "310106", "label": "静安区" }, { "value": "310107", "label": "普陀区" }, { "value": "310109", "label": "虹口区" }, { "value": "310110", "label": "杨浦区" }, { "value": "310112", "label": "闵行区" }, { "value": "310113", "label": "宝山区" }, { "value": "310114", "label": "嘉定区" }, { "value": "310115", "label": "浦东新区" }, { "value": "310116", "label": "金山区" }, { "value": "310117", "label": "松江区" }, { "value": "310118", "label": "青浦区" }, { "value": "310120", "label": "奉贤区" }, { "value": "310151", "label": "崇明区" }] }] }, { "value": "32", "label": "江苏省", "children": [{ "value": "3201", "label": "南京市", "children": [{ "value": "320102", "label": "玄武区" }, { "value": "320104", "label": "秦淮区" }, { "value": "320105", "label": "建邺区" }, { "value": "320106", "label": "鼓楼区" }, { "value": "320111", "label": "浦口区" }, { "value": "320113", "label": "栖霞区" }, { "value": "320114", "label": "雨花台区" }, { "value": "320115", "label": "江宁区" }, { "value": "320116", "label": "六合区" }, { "value": "320117", "label": "溧水区" }, { "value": "320118", "label": "高淳区" }] }, { "value": "3202", "label": "无锡市", "children": [{ "value": "320205", "label": "锡山区" }, { "value": "320206", "label": "惠山区" }, { "value": "320211", "label": "滨湖区" }, { "value": "320213", "label": "梁溪区" }, { "value": "320214", "label": "新吴区" }, { "value": "320281", "label": "江阴市" }, { "value": "320282", "label": "宜兴市" }] }, { "value": "3203", "label": "徐州市", "children": [{ "value": "320302", "label": "鼓楼区" }, { "value": "320303", "label": "云龙区" }, { "value": "320305", "label": "贾汪区" }, { "value": "320311", "label": "泉山区" }, { "value": "320312", "label": "铜山区" }, { "value": "320321", "label": "丰县" }, { "value": "320322", "label": "沛县" }, { "value": "320324", "label": "睢宁县" }, { "value": "320371", "label": "徐州经济技术开发区" }, { "value": "320381", "label": "新沂市" }, { "value": "320382", "label": "邳州市" }] }, { "value": "3204", "label": "常州市", "children": [{ "value": "320402", "label": "天宁区" }, { "value": "320404", "label": "钟楼区" }, { "value": "320411", "label": "新北区" }, { "value": "320412", "label": "武进区" }, { "value": "320413", "label": "金坛区" }, { "value": "320481", "label": "溧阳市" }] }, { "value": "3205", "label": "苏州市", "children": [{ "value": "320505", "label": "虎丘区" }, { "value": "320506", "label": "吴中区" }, { "value": "320507", "label": "相城区" }, { "value": "320508", "label": "姑苏区" }, { "value": "320509", "label": "吴江区" }, { "value": "320571", "label": "苏州工业园区" }, { "value": "320581", "label": "常熟市" }, { "value": "320582", "label": "张家港市" }, { "value": "320583", "label": "昆山市" }, { "value": "320585", "label": "太仓市" }] }, { "value": "3206", "label": "南通市", "children": [{ "value": "320602", "label": "崇川区" }, { "value": "320611", "label": "港闸区" }, { "value": "320612", "label": "通州区" }, { "value": "320623", "label": "如东县" }, { "value": "320671", "label": "南通经济技术开发区" }, { "value": "320681", "label": "启东市" }, { "value": "320682", "label": "如皋市" }, { "value": "320684", "label": "海门市" }, { "value": "320685", "label": "海安市" }] }, { "value": "3207", "label": "连云港市", "children": [{ "value": "320703", "label": "连云区" }, { "value": "320706", "label": "海州区" }, { "value": "320707", "label": "赣榆区" }, { "value": "320722", "label": "东海县" }, { "value": "320723", "label": "灌云县" }, { "value": "320724", "label": "灌南县" }, { "value": "320771", "label": "连云港经济技术开发区" }, { "value": "320772", "label": "连云港高新技术产业开发区" }] }, { "value": "3208", "label": "淮安市", "children": [{ "value": "320803", "label": "淮安区" }, { "value": "320804", "label": "淮阴区" }, { "value": "320812", "label": "清江浦区" }, { "value": "320813", "label": "洪泽区" }, { "value": "320826", "label": "涟水县" }, { "value": "320830", "label": "盱眙县" }, { "value": "320831", "label": "金湖县" }, { "value": "320871", "label": "淮安经济技术开发区" }] }, { "value": "3209", "label": "盐城市", "children": [{ "value": "320902", "label": "亭湖区" }, { "value": "320903", "label": "盐都区" }, { "value": "320904", "label": "大丰区" }, { "value": "320921", "label": "响水县" }, { "value": "320922", "label": "滨海县" }, { "value": "320923", "label": "阜宁县" }, { "value": "320924", "label": "射阳县" }, { "value": "320925", "label": "建湖县" }, { "value": "320971", "label": "盐城经济技术开发区" }, { "value": "320981", "label": "东台市" }] }, { "value": "3210", "label": "扬州市", "children": [{ "value": "321002", "label": "广陵区" }, { "value": "321003", "label": "邗江区" }, { "value": "321012", "label": "江都区" }, { "value": "321023", "label": "宝应县" }, { "value": "321071", "label": "扬州经济技术开发区" }, { "value": "321081", "label": "仪征市" }, { "value": "321084", "label": "高邮市" }] }, { "value": "3211", "label": "镇江市", "children": [{ "value": "321102", "label": "京口区" }, { "value": "321111", "label": "润州区" }, { "value": "321112", "label": "丹徒区" }, { "value": "321171", "label": "镇江新区" }, { "value": "321181", "label": "丹阳市" }, { "value": "321182", "label": "扬中市" }, { "value": "321183", "label": "句容市" }] }, { "value": "3212", "label": "泰州市", "children": [{ "value": "321202", "label": "海陵区" }, { "value": "321203", "label": "高港区" }, { "value": "321204", "label": "姜堰区" }, { "value": "321271", "label": "泰州医药高新技术产业开发区" }, { "value": "321281", "label": "兴化市" }, { "value": "321282", "label": "靖江市" }, { "value": "321283", "label": "泰兴市" }] }, { "value": "3213", "label": "宿迁市", "children": [{ "value": "321302", "label": "宿城区" }, { "value": "321311", "label": "宿豫区" }, { "value": "321322", "label": "沭阳县" }, { "value": "321323", "label": "泗阳县" }, { "value": "321324", "label": "泗洪县" }, { "value": "321371", "label": "宿迁经济技术开发区" }] }] }, { "value": "33", "label": "浙江省", "children": [{ "value": "3301", "label": "杭州市", "children": [{ "value": "330102", "label": "上城区" }, { "value": "330103", "label": "下城区" }, { "value": "330104", "label": "江干区" }, { "value": "330105", "label": "拱墅区" }, { "value": "330106", "label": "西湖区" }, { "value": "330108", "label": "滨江区" }, { "value": "330109", "label": "萧山区" }, { "value": "330110", "label": "余杭区" }, { "value": "330111", "label": "富阳区" }, { "value": "330112", "label": "临安区" }, { "value": "330122", "label": "桐庐县" }, { "value": "330127", "label": "淳安县" }, { "value": "330182", "label": "建德市" }] }, { "value": "3302", "label": "宁波市", "children": [{ "value": "330203", "label": "海曙区" }, { "value": "330205", "label": "江北区" }, { "value": "330206", "label": "北仑区" }, { "value": "330211", "label": "镇海区" }, { "value": "330212", "label": "鄞州区" }, { "value": "330213", "label": "奉化区" }, { "value": "330225", "label": "象山县" }, { "value": "330226", "label": "宁海县" }, { "value": "330281", "label": "余姚市" }, { "value": "330282", "label": "慈溪市" }] }, { "value": "3303", "label": "温州市", "children": [{ "value": "330302", "label": "鹿城区" }, { "value": "330303", "label": "龙湾区" }, { "value": "330304", "label": "瓯海区" }, { "value": "330305", "label": "洞头区" }, { "value": "330324", "label": "永嘉县" }, { "value": "330326", "label": "平阳县" }, { "value": "330327", "label": "苍南县" }, { "value": "330328", "label": "文成县" }, { "value": "330329", "label": "泰顺县" }, { "value": "330371", "label": "温州经济技术开发区" }, { "value": "330381", "label": "瑞安市" }, { "value": "330382", "label": "乐清市" }] }, { "value": "3304", "label": "嘉兴市", "children": [{ "value": "330402", "label": "南湖区" }, { "value": "330411", "label": "秀洲区" }, { "value": "330421", "label": "嘉善县" }, { "value": "330424", "label": "海盐县" }, { "value": "330481", "label": "海宁市" }, { "value": "330482", "label": "平湖市" }, { "value": "330483", "label": "桐乡市" }] }, { "value": "3305", "label": "湖州市", "children": [{ "value": "330502", "label": "吴兴区" }, { "value": "330503", "label": "南浔区" }, { "value": "330521", "label": "德清县" }, { "value": "330522", "label": "长兴县" }, { "value": "330523", "label": "安吉县" }] }, { "value": "3306", "label": "绍兴市", "children": [{ "value": "330602", "label": "越城区" }, { "value": "330603", "label": "柯桥区" }, { "value": "330604", "label": "上虞区" }, { "value": "330624", "label": "新昌县" }, { "value": "330681", "label": "诸暨市" }, { "value": "330683", "label": "嵊州市" }] }, { "value": "3307", "label": "金华市", "children": [{ "value": "330702", "label": "婺城区" }, { "value": "330703", "label": "金东区" }, { "value": "330723", "label": "武义县" }, { "value": "330726", "label": "浦江县" }, { "value": "330727", "label": "磐安县" }, { "value": "330781", "label": "兰溪市" }, { "value": "330782", "label": "义乌市" }, { "value": "330783", "label": "东阳市" }, { "value": "330784", "label": "永康市" }] }, { "value": "3308", "label": "衢州市", "children": [{ "value": "330802", "label": "柯城区" }, { "value": "330803", "label": "衢江区" }, { "value": "330822", "label": "常山县" }, { "value": "330824", "label": "开化县" }, { "value": "330825", "label": "龙游县" }, { "value": "330881", "label": "江山市" }] }, { "value": "3309", "label": "舟山市", "children": [{ "value": "330902", "label": "定海区" }, { "value": "330903", "label": "普陀区" }, { "value": "330921", "label": "岱山县" }, { "value": "330922", "label": "嵊泗县" }] }, { "value": "3310", "label": "台州市", "children": [{ "value": "331002", "label": "椒江区" }, { "value": "331003", "label": "黄岩区" }, { "value": "331004", "label": "路桥区" }, { "value": "331022", "label": "三门县" }, { "value": "331023", "label": "天台县" }, { "value": "331024", "label": "仙居县" }, { "value": "331081", "label": "温岭市" }, { "value": "331082", "label": "临海市" }, { "value": "331083", "label": "玉环市" }] }, { "value": "3311", "label": "丽水市", "children": [{ "value": "331102", "label": "莲都区" }, { "value": "331121", "label": "青田县" }, { "value": "331122", "label": "缙云县" }, { "value": "331123", "label": "遂昌县" }, { "value": "331124", "label": "松阳县" }, { "value": "331125", "label": "云和县" }, { "value": "331126", "label": "庆元县" }, { "value": "331127", "label": "景宁畲族自治县" }, { "value": "331181", "label": "龙泉市" }] }] }, { "value": "34", "label": "安徽省", "children": [{ "value": "3401", "label": "合肥市", "children": [{ "value": "340102", "label": "瑶海区" }, { "value": "340103", "label": "庐阳区" }, { "value": "340104", "label": "蜀山区" }, { "value": "340111", "label": "包河区" }, { "value": "340121", "label": "长丰县" }, { "value": "340122", "label": "肥东县" }, { "value": "340123", "label": "肥西县" }, { "value": "340124", "label": "庐江县" }, { "value": "340171", "label": "合肥高新技术产业开发区" }, { "value": "340172", "label": "合肥经济技术开发区" }, { "value": "340173", "label": "合肥新站高新技术产业开发区" }, { "value": "340181", "label": "巢湖市" }] }, { "value": "3402", "label": "芜湖市", "children": [{ "value": "340202", "label": "镜湖区" }, { "value": "340203", "label": "弋江区" }, { "value": "340207", "label": "鸠江区" }, { "value": "340208", "label": "三山区" }, { "value": "340221", "label": "芜湖县" }, { "value": "340222", "label": "繁昌县" }, { "value": "340223", "label": "南陵县" }, { "value": "340225", "label": "无为县" }, { "value": "340271", "label": "芜湖经济技术开发区" }, { "value": "340272", "label": "安徽芜湖长江大桥经济开发区" }] }, { "value": "3403", "label": "蚌埠市", "children": [{ "value": "340302", "label": "龙子湖区" }, { "value": "340303", "label": "蚌山区" }, { "value": "340304", "label": "禹会区" }, { "value": "340311", "label": "淮上区" }, { "value": "340321", "label": "怀远县" }, { "value": "340322", "label": "五河县" }, { "value": "340323", "label": "固镇县" }, { "value": "340371", "label": "蚌埠市高新技术开发区" }, { "value": "340372", "label": "蚌埠市经济开发区" }] }, { "value": "3404", "label": "淮南市", "children": [{ "value": "340402", "label": "大通区" }, { "value": "340403", "label": "田家庵区" }, { "value": "340404", "label": "谢家集区" }, { "value": "340405", "label": "八公山区" }, { "value": "340406", "label": "潘集区" }, { "value": "340421", "label": "凤台县" }, { "value": "340422", "label": "寿县" }] }, { "value": "3405", "label": "马鞍山市", "children": [{ "value": "340503", "label": "花山区" }, { "value": "340504", "label": "雨山区" }, { "value": "340506", "label": "博望区" }, { "value": "340521", "label": "当涂县" }, { "value": "340522", "label": "含山县" }, { "value": "340523", "label": "和县" }] }, { "value": "3406", "label": "淮北市", "children": [{ "value": "340602", "label": "杜集区" }, { "value": "340603", "label": "相山区" }, { "value": "340604", "label": "烈山区" }, { "value": "340621", "label": "濉溪县" }] }, { "value": "3407", "label": "铜陵市", "children": [{ "value": "340705", "label": "铜官区" }, { "value": "340706", "label": "义安区" }, { "value": "340711", "label": "郊区" }, { "value": "340722", "label": "枞阳县" }] }, { "value": "3408", "label": "安庆市", "children": [{ "value": "340802", "label": "迎江区" }, { "value": "340803", "label": "大观区" }, { "value": "340811", "label": "宜秀区" }, { "value": "340822", "label": "怀宁县" }, { "value": "340825", "label": "太湖县" }, { "value": "340826", "label": "宿松县" }, { "value": "340827", "label": "望江县" }, { "value": "340828", "label": "岳西县" }, { "value": "340871", "label": "安徽安庆经济开发区" }, { "value": "340881", "label": "桐城市" }, { "value": "340882", "label": "潜山市" }] }, { "value": "3410", "label": "黄山市", "children": [{ "value": "341002", "label": "屯溪区" }, { "value": "341003", "label": "黄山区" }, { "value": "341004", "label": "徽州区" }, { "value": "341021", "label": "歙县" }, { "value": "341022", "label": "休宁县" }, { "value": "341023", "label": "黟县" }, { "value": "341024", "label": "祁门县" }] }, { "value": "3411", "label": "滁州市", "children": [{ "value": "341102", "label": "琅琊区" }, { "value": "341103", "label": "南谯区" }, { "value": "341122", "label": "来安县" }, { "value": "341124", "label": "全椒县" }, { "value": "341125", "label": "定远县" }, { "value": "341126", "label": "凤阳县" }, { "value": "341171", "label": "苏滁现代产业园" }, { "value": "341172", "label": "滁州经济技术开发区" }, { "value": "341181", "label": "天长市" }, { "value": "341182", "label": "明光市" }] }, { "value": "3412", "label": "阜阳市", "children": [{ "value": "341202", "label": "颍州区" }, { "value": "341203", "label": "颍东区" }, { "value": "341204", "label": "颍泉区" }, { "value": "341221", "label": "临泉县" }, { "value": "341222", "label": "太和县" }, { "value": "341225", "label": "阜南县" }, { "value": "341226", "label": "颍上县" }, { "value": "341271", "label": "阜阳合肥现代产业园区" }, { "value": "341272", "label": "阜阳经济技术开发区" }, { "value": "341282", "label": "界首市" }] }, { "value": "3413", "label": "宿州市", "children": [{ "value": "341302", "label": "埇桥区" }, { "value": "341321", "label": "砀山县" }, { "value": "341322", "label": "萧县" }, { "value": "341323", "label": "灵璧县" }, { "value": "341324", "label": "泗县" }, { "value": "341371", "label": "宿州马鞍山现代产业园区" }, { "value": "341372", "label": "宿州经济技术开发区" }] }, { "value": "3415", "label": "六安市", "children": [{ "value": "341502", "label": "金安区" }, { "value": "341503", "label": "裕安区" }, { "value": "341504", "label": "叶集区" }, { "value": "341522", "label": "霍邱县" }, { "value": "341523", "label": "舒城县" }, { "value": "341524", "label": "金寨县" }, { "value": "341525", "label": "霍山县" }] }, { "value": "3416", "label": "亳州市", "children": [{ "value": "341602", "label": "谯城区" }, { "value": "341621", "label": "涡阳县" }, { "value": "341622", "label": "蒙城县" }, { "value": "341623", "label": "利辛县" }] }, { "value": "3417", "label": "池州市", "children": [{ "value": "341702", "label": "贵池区" }, { "value": "341721", "label": "东至县" }, { "value": "341722", "label": "石台县" }, { "value": "341723", "label": "青阳县" }] }, { "value": "3418", "label": "宣城市", "children": [{ "value": "341802", "label": "宣州区" }, { "value": "341821", "label": "郎溪县" }, { "value": "341822", "label": "广德县" }, { "value": "341823", "label": "泾县" }, { "value": "341824", "label": "绩溪县" }, { "value": "341825", "label": "旌德县" }, { "value": "341871", "label": "宣城市经济开发区" }, { "value": "341881", "label": "宁国市" }] }] }, { "value": "35", "label": "福建省", "children": [{ "value": "3501", "label": "福州市", "children": [{ "value": "350102", "label": "鼓楼区" }, { "value": "350103", "label": "台江区" }, { "value": "350104", "label": "仓山区" }, { "value": "350105", "label": "马尾区" }, { "value": "350111", "label": "晋安区" }, { "value": "350112", "label": "长乐区" }, { "value": "350121", "label": "闽侯县" }, { "value": "350122", "label": "连江县" }, { "value": "350123", "label": "罗源县" }, { "value": "350124", "label": "闽清县" }, { "value": "350125", "label": "永泰县" }, { "value": "350128", "label": "平潭县" }, { "value": "350181", "label": "福清市" }] }, { "value": "3502", "label": "厦门市", "children": [{ "value": "350203", "label": "思明区" }, { "value": "350205", "label": "海沧区" }, { "value": "350206", "label": "湖里区" }, { "value": "350211", "label": "集美区" }, { "value": "350212", "label": "同安区" }, { "value": "350213", "label": "翔安区" }] }, { "value": "3503", "label": "莆田市", "children": [{ "value": "350302", "label": "城厢区" }, { "value": "350303", "label": "涵江区" }, { "value": "350304", "label": "荔城区" }, { "value": "350305", "label": "秀屿区" }, { "value": "350322", "label": "仙游县" }] }, { "value": "3504", "label": "三明市", "children": [{ "value": "350402", "label": "梅列区" }, { "value": "350403", "label": "三元区" }, { "value": "350421", "label": "明溪县" }, { "value": "350423", "label": "清流县" }, { "value": "350424", "label": "宁化县" }, { "value": "350425", "label": "大田县" }, { "value": "350426", "label": "尤溪县" }, { "value": "350427", "label": "沙县" }, { "value": "350428", "label": "将乐县" }, { "value": "350429", "label": "泰宁县" }, { "value": "350430", "label": "建宁县" }, { "value": "350481", "label": "永安市" }] }, { "value": "3505", "label": "泉州市", "children": [{ "value": "350502", "label": "鲤城区" }, { "value": "350503", "label": "丰泽区" }, { "value": "350504", "label": "洛江区" }, { "value": "350505", "label": "泉港区" }, { "value": "350521", "label": "惠安县" }, { "value": "350524", "label": "安溪县" }, { "value": "350525", "label": "永春县" }, { "value": "350526", "label": "德化县" }, { "value": "350527", "label": "金门县" }, { "value": "350581", "label": "石狮市" }, { "value": "350582", "label": "晋江市" }, { "value": "350583", "label": "南安市" }] }, { "value": "3506", "label": "漳州市", "children": [{ "value": "350602", "label": "芗城区" }, { "value": "350603", "label": "龙文区" }, { "value": "350622", "label": "云霄县" }, { "value": "350623", "label": "漳浦县" }, { "value": "350624", "label": "诏安县" }, { "value": "350625", "label": "长泰县" }, { "value": "350626", "label": "东山县" }, { "value": "350627", "label": "南靖县" }, { "value": "350628", "label": "平和县" }, { "value": "350629", "label": "华安县" }, { "value": "350681", "label": "龙海市" }] }, { "value": "3507", "label": "南平市", "children": [{ "value": "350702", "label": "延平区" }, { "value": "350703", "label": "建阳区" }, { "value": "350721", "label": "顺昌县" }, { "value": "350722", "label": "浦城县" }, { "value": "350723", "label": "光泽县" }, { "value": "350724", "label": "松溪县" }, { "value": "350725", "label": "政和县" }, { "value": "350781", "label": "邵武市" }, { "value": "350782", "label": "武夷山市" }, { "value": "350783", "label": "建瓯市" }] }, { "value": "3508", "label": "龙岩市", "children": [{ "value": "350802", "label": "新罗区" }, { "value": "350803", "label": "永定区" }, { "value": "350821", "label": "长汀县" }, { "value": "350823", "label": "上杭县" }, { "value": "350824", "label": "武平县" }, { "value": "350825", "label": "连城县" }, { "value": "350881", "label": "漳平市" }] }, { "value": "3509", "label": "宁德市", "children": [{ "value": "350902", "label": "蕉城区" }, { "value": "350921", "label": "霞浦县" }, { "value": "350922", "label": "古田县" }, { "value": "350923", "label": "屏南县" }, { "value": "350924", "label": "寿宁县" }, { "value": "350925", "label": "周宁县" }, { "value": "350926", "label": "柘荣县" }, { "value": "350981", "label": "福安市" }, { "value": "350982", "label": "福鼎市" }] }] }, { "value": "36", "label": "江西省", "children": [{ "value": "3601", "label": "南昌市", "children": [{ "value": "360102", "label": "东湖区" }, { "value": "360103", "label": "西湖区" }, { "value": "360104", "label": "青云谱区" }, { "value": "360105", "label": "湾里区" }, { "value": "360111", "label": "青山湖区" }, { "value": "360112", "label": "新建区" }, { "value": "360121", "label": "南昌县" }, { "value": "360123", "label": "安义县" }, { "value": "360124", "label": "进贤县" }] }, { "value": "3602", "label": "景德镇市", "children": [{ "value": "360202", "label": "昌江区" }, { "value": "360203", "label": "珠山区" }, { "value": "360222", "label": "浮梁县" }, { "value": "360281", "label": "乐平市" }] }, { "value": "3603", "label": "萍乡市", "children": [{ "value": "360302", "label": "安源区" }, { "value": "360313", "label": "湘东区" }, { "value": "360321", "label": "莲花县" }, { "value": "360322", "label": "上栗县" }, { "value": "360323", "label": "芦溪县" }] }, { "value": "3604", "label": "九江市", "children": [{ "value": "360402", "label": "濂溪区" }, { "value": "360403", "label": "浔阳区" }, { "value": "360404", "label": "柴桑区" }, { "value": "360423", "label": "武宁县" }, { "value": "360424", "label": "修水县" }, { "value": "360425", "label": "永修县" }, { "value": "360426", "label": "德安县" }, { "value": "360428", "label": "都昌县" }, { "value": "360429", "label": "湖口县" }, { "value": "360430", "label": "彭泽县" }, { "value": "360481", "label": "瑞昌市" }, { "value": "360482", "label": "共青城市" }, { "value": "360483", "label": "庐山市" }] }, { "value": "3605", "label": "新余市", "children": [{ "value": "360502", "label": "渝水区" }, { "value": "360521", "label": "分宜县" }] }, { "value": "3606", "label": "鹰潭市", "children": [{ "value": "360602", "label": "月湖区" }, { "value": "360603", "label": "余江区" }, { "value": "360681", "label": "贵溪市" }] }, { "value": "3607", "label": "赣州市", "children": [{ "value": "360702", "label": "章贡区" }, { "value": "360703", "label": "南康区" }, { "value": "360704", "label": "赣县区" }, { "value": "360722", "label": "信丰县" }, { "value": "360723", "label": "大余县" }, { "value": "360724", "label": "上犹县" }, { "value": "360725", "label": "崇义县" }, { "value": "360726", "label": "安远县" }, { "value": "360727", "label": "龙南县" }, { "value": "360728", "label": "定南县" }, { "value": "360729", "label": "全南县" }, { "value": "360730", "label": "宁都县" }, { "value": "360731", "label": "于都县" }, { "value": "360732", "label": "兴国县" }, { "value": "360733", "label": "会昌县" }, { "value": "360734", "label": "寻乌县" }, { "value": "360735", "label": "石城县" }, { "value": "360781", "label": "瑞金市" }] }, { "value": "3608", "label": "吉安市", "children": [{ "value": "360802", "label": "吉州区" }, { "value": "360803", "label": "青原区" }, { "value": "360821", "label": "吉安县" }, { "value": "360822", "label": "吉水县" }, { "value": "360823", "label": "峡江县" }, { "value": "360824", "label": "新干县" }, { "value": "360825", "label": "永丰县" }, { "value": "360826", "label": "泰和县" }, { "value": "360827", "label": "遂川县" }, { "value": "360828", "label": "万安县" }, { "value": "360829", "label": "安福县" }, { "value": "360830", "label": "永新县" }, { "value": "360881", "label": "井冈山市" }] }, { "value": "3609", "label": "宜春市", "children": [{ "value": "360902", "label": "袁州区" }, { "value": "360921", "label": "奉新县" }, { "value": "360922", "label": "万载县" }, { "value": "360923", "label": "上高县" }, { "value": "360924", "label": "宜丰县" }, { "value": "360925", "label": "靖安县" }, { "value": "360926", "label": "铜鼓县" }, { "value": "360981", "label": "丰城市" }, { "value": "360982", "label": "樟树市" }, { "value": "360983", "label": "高安市" }] }, { "value": "3610", "label": "抚州市", "children": [{ "value": "361002", "label": "临川区" }, { "value": "361003", "label": "东乡区" }, { "value": "361021", "label": "南城县" }, { "value": "361022", "label": "黎川县" }, { "value": "361023", "label": "南丰县" }, { "value": "361024", "label": "崇仁县" }, { "value": "361025", "label": "乐安县" }, { "value": "361026", "label": "宜黄县" }, { "value": "361027", "label": "金溪县" }, { "value": "361028", "label": "资溪县" }, { "value": "361030", "label": "广昌县" }] }, { "value": "3611", "label": "上饶市", "children": [{ "value": "361102", "label": "信州区" }, { "value": "361103", "label": "广丰区" }, { "value": "361121", "label": "上饶县" }, { "value": "361123", "label": "玉山县" }, { "value": "361124", "label": "铅山县" }, { "value": "361125", "label": "横峰县" }, { "value": "361126", "label": "弋阳县" }, { "value": "361127", "label": "余干县" }, { "value": "361128", "label": "鄱阳县" }, { "value": "361129", "label": "万年县" }, { "value": "361130", "label": "婺源县" }, { "value": "361181", "label": "德兴市" }] }] }, { "value": "37", "label": "山东省", "children": [{ "value": "3701", "label": "济南市", "children": [{ "value": "370102", "label": "历下区" }, { "value": "370103", "label": "市中区" }, { "value": "370104", "label": "槐荫区" }, { "value": "370105", "label": "天桥区" }, { "value": "370112", "label": "历城区" }, { "value": "370113", "label": "长清区" }, { "value": "370114", "label": "章丘区" }, { "value": "370115", "label": "济阳区" }, { "value": "370124", "label": "平阴县" }, { "value": "370126", "label": "商河县" }, { "value": "370171", "label": "济南高新技术产业开发区" }] }, { "value": "3702", "label": "青岛市", "children": [{ "value": "370202", "label": "市南区" }, { "value": "370203", "label": "市北区" }, { "value": "370211", "label": "黄岛区" }, { "value": "370212", "label": "崂山区" }, { "value": "370213", "label": "李沧区" }, { "value": "370214", "label": "城阳区" }, { "value": "370215", "label": "即墨区" }, { "value": "370271", "label": "青岛高新技术产业开发区" }, { "value": "370281", "label": "胶州市" }, { "value": "370283", "label": "平度市" }, { "value": "370285", "label": "莱西市" }] }, { "value": "3703", "label": "淄博市", "children": [{ "value": "370302", "label": "淄川区" }, { "value": "370303", "label": "张店区" }, { "value": "370304", "label": "博山区" }, { "value": "370305", "label": "临淄区" }, { "value": "370306", "label": "周村区" }, { "value": "370321", "label": "桓台县" }, { "value": "370322", "label": "高青县" }, { "value": "370323", "label": "沂源县" }] }, { "value": "3704", "label": "枣庄市", "children": [{ "value": "370402", "label": "市中区" }, { "value": "370403", "label": "薛城区" }, { "value": "370404", "label": "峄城区" }, { "value": "370405", "label": "台儿庄区" }, { "value": "370406", "label": "山亭区" }, { "value": "370481", "label": "滕州市" }] }, { "value": "3705", "label": "东营市", "children": [{ "value": "370502", "label": "东营区" }, { "value": "370503", "label": "河口区" }, { "value": "370505", "label": "垦利区" }, { "value": "370522", "label": "利津县" }, { "value": "370523", "label": "广饶县" }, { "value": "370571", "label": "东营经济技术开发区" }, { "value": "370572", "label": "东营港经济开发区" }] }, { "value": "3706", "label": "烟台市", "children": [{ "value": "370602", "label": "芝罘区" }, { "value": "370611", "label": "福山区" }, { "value": "370612", "label": "牟平区" }, { "value": "370613", "label": "莱山区" }, { "value": "370634", "label": "长岛县" }, { "value": "370671", "label": "烟台高新技术产业开发区" }, { "value": "370672", "label": "烟台经济技术开发区" }, { "value": "370681", "label": "龙口市" }, { "value": "370682", "label": "莱阳市" }, { "value": "370683", "label": "莱州市" }, { "value": "370684", "label": "蓬莱市" }, { "value": "370685", "label": "招远市" }, { "value": "370686", "label": "栖霞市" }, { "value": "370687", "label": "海阳市" }] }, { "value": "3707", "label": "潍坊市", "children": [{ "value": "370702", "label": "潍城区" }, { "value": "370703", "label": "寒亭区" }, { "value": "370704", "label": "坊子区" }, { "value": "370705", "label": "奎文区" }, { "value": "370724", "label": "临朐县" }, { "value": "370725", "label": "昌乐县" }, { "value": "370772", "label": "潍坊滨海经济技术开发区" }, { "value": "370781", "label": "青州市" }, { "value": "370782", "label": "诸城市" }, { "value": "370783", "label": "寿光市" }, { "value": "370784", "label": "安丘市" }, { "value": "370785", "label": "高密市" }, { "value": "370786", "label": "昌邑市" }] }, { "value": "3708", "label": "济宁市", "children": [{ "value": "370811", "label": "任城区" }, { "value": "370812", "label": "兖州区" }, { "value": "370826", "label": "微山县" }, { "value": "370827", "label": "鱼台县" }, { "value": "370828", "label": "金乡县" }, { "value": "370829", "label": "嘉祥县" }, { "value": "370830", "label": "汶上县" }, { "value": "370831", "label": "泗水县" }, { "value": "370832", "label": "梁山县" }, { "value": "370871", "label": "济宁高新技术产业开发区" }, { "value": "370881", "label": "曲阜市" }, { "value": "370883", "label": "邹城市" }] }, { "value": "3709", "label": "泰安市", "children": [{ "value": "370902", "label": "泰山区" }, { "value": "370911", "label": "岱岳区" }, { "value": "370921", "label": "宁阳县" }, { "value": "370923", "label": "东平县" }, { "value": "370982", "label": "新泰市" }, { "value": "370983", "label": "肥城市" }] }, { "value": "3710", "label": "威海市", "children": [{ "value": "371002", "label": "环翠区" }, { "value": "371003", "label": "文登区" }, { "value": "371071", "label": "威海火炬高技术产业开发区" }, { "value": "371072", "label": "威海经济技术开发区" }, { "value": "371073", "label": "威海临港经济技术开发区" }, { "value": "371082", "label": "荣成市" }, { "value": "371083", "label": "乳山市" }] }, { "value": "3711", "label": "日照市", "children": [{ "value": "371102", "label": "东港区" }, { "value": "371103", "label": "岚山区" }, { "value": "371121", "label": "五莲县" }, { "value": "371122", "label": "莒县" }, { "value": "371171", "label": "日照经济技术开发区" }] }, { "value": "3712", "label": "莱芜市", "children": [{ "value": "371202", "label": "莱城区" }, { "value": "371203", "label": "钢城区" }] }, { "value": "3713", "label": "临沂市", "children": [{ "value": "371302", "label": "兰山区" }, { "value": "371311", "label": "罗庄区" }, { "value": "371312", "label": "河东区" }, { "value": "371321", "label": "沂南县" }, { "value": "371322", "label": "郯城县" }, { "value": "371323", "label": "沂水县" }, { "value": "371324", "label": "兰陵县" }, { "value": "371325", "label": "费县" }, { "value": "371326", "label": "平邑县" }, { "value": "371327", "label": "莒南县" }, { "value": "371328", "label": "蒙阴县" }, { "value": "371329", "label": "临沭县" }, { "value": "371371", "label": "临沂高新技术产业开发区" }, { "value": "371372", "label": "临沂经济技术开发区" }, { "value": "371373", "label": "临沂临港经济开发区" }] }, { "value": "3714", "label": "德州市", "children": [{ "value": "371402", "label": "德城区" }, { "value": "371403", "label": "陵城区" }, { "value": "371422", "label": "宁津县" }, { "value": "371423", "label": "庆云县" }, { "value": "371424", "label": "临邑县" }, { "value": "371425", "label": "齐河县" }, { "value": "371426", "label": "平原县" }, { "value": "371427", "label": "夏津县" }, { "value": "371428", "label": "武城县" }, { "value": "371471", "label": "德州经济技术开发区" }, { "value": "371472", "label": "德州运河经济开发区" }, { "value": "371481", "label": "乐陵市" }, { "value": "371482", "label": "禹城市" }] }, { "value": "3715", "label": "聊城市", "children": [{ "value": "371502", "label": "东昌府区" }, { "value": "371521", "label": "阳谷县" }, { "value": "371522", "label": "莘县" }, { "value": "371523", "label": "茌平县" }, { "value": "371524", "label": "东阿县" }, { "value": "371525", "label": "冠县" }, { "value": "371526", "label": "高唐县" }, { "value": "371581", "label": "临清市" }] }, { "value": "3716", "label": "滨州市", "children": [{ "value": "371602", "label": "滨城区" }, { "value": "371603", "label": "沾化区" }, { "value": "371621", "label": "惠民县" }, { "value": "371622", "label": "阳信县" }, { "value": "371623", "label": "无棣县" }, { "value": "371625", "label": "博兴县" }, { "value": "371681", "label": "邹平市" }] }, { "value": "3717", "label": "菏泽市", "children": [{ "value": "371702", "label": "牡丹区" }, { "value": "371703", "label": "定陶区" }, { "value": "371721", "label": "曹县" }, { "value": "371722", "label": "单县" }, { "value": "371723", "label": "成武县" }, { "value": "371724", "label": "巨野县" }, { "value": "371725", "label": "郓城县" }, { "value": "371726", "label": "鄄城县" }, { "value": "371728", "label": "东明县" }, { "value": "371771", "label": "菏泽经济技术开发区" }, { "value": "371772", "label": "菏泽高新技术开发区" }] }] }, { "value": "41", "label": "河南省", "children": [{ "value": "4101", "label": "郑州市", "children": [{ "value": "410102", "label": "中原区" }, { "value": "410103", "label": "二七区" }, { "value": "410104", "label": "管城回族区" }, { "value": "410105", "label": "金水区" }, { "value": "410106", "label": "上街区" }, { "value": "410108", "label": "惠济区" }, { "value": "410122", "label": "中牟县" }, { "value": "410171", "label": "郑州经济技术开发区" }, { "value": "410172", "label": "郑州高新技术产业开发区" }, { "value": "410173", "label": "郑州航空港经济综合实验区" }, { "value": "410181", "label": "巩义市" }, { "value": "410182", "label": "荥阳市" }, { "value": "410183", "label": "新密市" }, { "value": "410184", "label": "新郑市" }, { "value": "410185", "label": "登封市" }] }, { "value": "4102", "label": "开封市", "children": [{ "value": "410202", "label": "龙亭区" }, { "value": "410203", "label": "顺河回族区" }, { "value": "410204", "label": "鼓楼区" }, { "value": "410205", "label": "禹王台区" }, { "value": "410212", "label": "祥符区" }, { "value": "410221", "label": "杞县" }, { "value": "410222", "label": "通许县" }, { "value": "410223", "label": "尉氏县" }, { "value": "410225", "label": "兰考县" }] }, { "value": "4103", "label": "洛阳市", "children": [{ "value": "410302", "label": "老城区" }, { "value": "410303", "label": "西工区" }, { "value": "410304", "label": "瀍河回族区" }, { "value": "410305", "label": "涧西区" }, { "value": "410306", "label": "吉利区" }, { "value": "410311", "label": "洛龙区" }, { "value": "410322", "label": "孟津县" }, { "value": "410323", "label": "新安县" }, { "value": "410324", "label": "栾川县" }, { "value": "410325", "label": "嵩县" }, { "value": "410326", "label": "汝阳县" }, { "value": "410327", "label": "宜阳县" }, { "value": "410328", "label": "洛宁县" }, { "value": "410329", "label": "伊川县" }, { "value": "410371", "label": "洛阳高新技术产业开发区" }, { "value": "410381", "label": "偃师市" }] }, { "value": "4104", "label": "平顶山市", "children": [{ "value": "410402", "label": "新华区" }, { "value": "410403", "label": "卫东区" }, { "value": "410404", "label": "石龙区" }, { "value": "410411", "label": "湛河区" }, { "value": "410421", "label": "宝丰县" }, { "value": "410422", "label": "叶县" }, { "value": "410423", "label": "鲁山县" }, { "value": "410425", "label": "郏县" }, { "value": "410471", "label": "平顶山高新技术产业开发区" }, { "value": "410472", "label": "平顶山市新城区" }, { "value": "410481", "label": "舞钢市" }, { "value": "410482", "label": "汝州市" }] }, { "value": "4105", "label": "安阳市", "children": [{ "value": "410502", "label": "文峰区" }, { "value": "410503", "label": "北关区" }, { "value": "410505", "label": "殷都区" }, { "value": "410506", "label": "龙安区" }, { "value": "410522", "label": "安阳县" }, { "value": "410523", "label": "汤阴县" }, { "value": "410526", "label": "滑县" }, { "value": "410527", "label": "内黄县" }, { "value": "410571", "label": "安阳高新技术产业开发区" }, { "value": "410581", "label": "林州市" }] }, { "value": "4106", "label": "鹤壁市", "children": [{ "value": "410602", "label": "鹤山区" }, { "value": "410603", "label": "山城区" }, { "value": "410611", "label": "淇滨区" }, { "value": "410621", "label": "浚县" }, { "value": "410622", "label": "淇县" }, { "value": "410671", "label": "鹤壁经济技术开发区" }] }, { "value": "4107", "label": "新乡市", "children": [{ "value": "410702", "label": "红旗区" }, { "value": "410703", "label": "卫滨区" }, { "value": "410704", "label": "凤泉区" }, { "value": "410711", "label": "牧野区" }, { "value": "410721", "label": "新乡县" }, { "value": "410724", "label": "获嘉县" }, { "value": "410725", "label": "原阳县" }, { "value": "410726", "label": "延津县" }, { "value": "410727", "label": "封丘县" }, { "value": "410728", "label": "长垣县" }, { "value": "410771", "label": "新乡高新技术产业开发区" }, { "value": "410772", "label": "新乡经济技术开发区" }, { "value": "410773", "label": "新乡市平原城乡一体化示范区" }, { "value": "410781", "label": "卫辉市" }, { "value": "410782", "label": "辉县市" }] }, { "value": "4108", "label": "焦作市", "children": [{ "value": "410802", "label": "解放区" }, { "value": "410803", "label": "中站区" }, { "value": "410804", "label": "马村区" }, { "value": "410811", "label": "山阳区" }, { "value": "410821", "label": "修武县" }, { "value": "410822", "label": "博爱县" }, { "value": "410823", "label": "武陟县" }, { "value": "410825", "label": "温县" }, { "value": "410871", "label": "焦作城乡一体化示范区" }, { "value": "410882", "label": "沁阳市" }, { "value": "410883", "label": "孟州市" }] }, { "value": "4109", "label": "濮阳市", "children": [{ "value": "410902", "label": "华龙区" }, { "value": "410922", "label": "清丰县" }, { "value": "410923", "label": "南乐县" }, { "value": "410926", "label": "范县" }, { "value": "410927", "label": "台前县" }, { "value": "410928", "label": "濮阳县" }, { "value": "410971", "label": "河南濮阳工业园区" }, { "value": "410972", "label": "濮阳经济技术开发区" }] }, { "value": "4110", "label": "许昌市", "children": [{ "value": "411002", "label": "魏都区" }, { "value": "411003", "label": "建安区" }, { "value": "411024", "label": "鄢陵县" }, { "value": "411025", "label": "襄城县" }, { "value": "411071", "label": "许昌经济技术开发区" }, { "value": "411081", "label": "禹州市" }, { "value": "411082", "label": "长葛市" }] }, { "value": "4111", "label": "漯河市", "children": [{ "value": "411102", "label": "源汇区" }, { "value": "411103", "label": "郾城区" }, { "value": "411104", "label": "召陵区" }, { "value": "411121", "label": "舞阳县" }, { "value": "411122", "label": "临颍县" }, { "value": "411171", "label": "漯河经济技术开发区" }] }, { "value": "4112", "label": "三门峡市", "children": [{ "value": "411202", "label": "湖滨区" }, { "value": "411203", "label": "陕州区" }, { "value": "411221", "label": "渑池县" }, { "value": "411224", "label": "卢氏县" }, { "value": "411271", "label": "河南三门峡经济开发区" }, { "value": "411281", "label": "义马市" }, { "value": "411282", "label": "灵宝市" }] }, { "value": "4113", "label": "南阳市", "children": [{ "value": "411302", "label": "宛城区" }, { "value": "411303", "label": "卧龙区" }, { "value": "411321", "label": "南召县" }, { "value": "411322", "label": "方城县" }, { "value": "411323", "label": "西峡县" }, { "value": "411324", "label": "镇平县" }, { "value": "411325", "label": "内乡县" }, { "value": "411326", "label": "淅川县" }, { "value": "411327", "label": "社旗县" }, { "value": "411328", "label": "唐河县" }, { "value": "411329", "label": "新野县" }, { "value": "411330", "label": "桐柏县" }, { "value": "411371", "label": "南阳高新技术产业开发区" }, { "value": "411372", "label": "南阳市城乡一体化示范区" }, { "value": "411381", "label": "邓州市" }] }, { "value": "4114", "label": "商丘市", "children": [{ "value": "411402", "label": "梁园区" }, { "value": "411403", "label": "睢阳区" }, { "value": "411421", "label": "民权县" }, { "value": "411422", "label": "睢县" }, { "value": "411423", "label": "宁陵县" }, { "value": "411424", "label": "柘城县" }, { "value": "411425", "label": "虞城县" }, { "value": "411426", "label": "夏邑县" }, { "value": "411471", "label": "豫东综合物流产业聚集区" }, { "value": "411472", "label": "河南商丘经济开发区" }, { "value": "411481", "label": "永城市" }] }, { "value": "4115", "label": "信阳市", "children": [{ "value": "411502", "label": "浉河区" }, { "value": "411503", "label": "平桥区" }, { "value": "411521", "label": "罗山县" }, { "value": "411522", "label": "光山县" }, { "value": "411523", "label": "新县" }, { "value": "411524", "label": "商城县" }, { "value": "411525", "label": "固始县" }, { "value": "411526", "label": "潢川县" }, { "value": "411527", "label": "淮滨县" }, { "value": "411528", "label": "息县" }, { "value": "411571", "label": "信阳高新技术产业开发区" }] }, { "value": "4116", "label": "周口市", "children": [{ "value": "411602", "label": "川汇区" }, { "value": "411621", "label": "扶沟县" }, { "value": "411622", "label": "西华县" }, { "value": "411623", "label": "商水县" }, { "value": "411624", "label": "沈丘县" }, { "value": "411625", "label": "郸城县" }, { "value": "411626", "label": "淮阳县" }, { "value": "411627", "label": "太康县" }, { "value": "411628", "label": "鹿邑县" }, { "value": "411671", "label": "河南周口经济开发区" }, { "value": "411681", "label": "项城市" }] }, { "value": "4117", "label": "驻马店市", "children": [{ "value": "411702", "label": "驿城区" }, { "value": "411721", "label": "西平县" }, { "value": "411722", "label": "上蔡县" }, { "value": "411723", "label": "平舆县" }, { "value": "411724", "label": "正阳县" }, { "value": "411725", "label": "确山县" }, { "value": "411726", "label": "泌阳县" }, { "value": "411727", "label": "汝南县" }, { "value": "411728", "label": "遂平县" }, { "value": "411729", "label": "新蔡县" }, { "value": "411771", "label": "河南驻马店经济开发区" }] }, { "value": "4190", "label": "省直辖县级行政区划", "children": [{ "value": "419001", "label": "济源市" }] }] }, { "value": "42", "label": "湖北省", "children": [{ "value": "4201", "label": "武汉市", "children": [{ "value": "420102", "label": "江岸区" }, { "value": "420103", "label": "江汉区" }, { "value": "420104", "label": "硚口区" }, { "value": "420105", "label": "汉阳区" }, { "value": "420106", "label": "武昌区" }, { "value": "420107", "label": "青山区" }, { "value": "420111", "label": "洪山区" }, { "value": "420112", "label": "东西湖区" }, { "value": "420113", "label": "汉南区" }, { "value": "420114", "label": "蔡甸区" }, { "value": "420115", "label": "江夏区" }, { "value": "420116", "label": "黄陂区" }, { "value": "420117", "label": "新洲区" }] }, { "value": "4202", "label": "黄石市", "children": [{ "value": "420202", "label": "黄石港区" }, { "value": "420203", "label": "西塞山区" }, { "value": "420204", "label": "下陆区" }, { "value": "420205", "label": "铁山区" }, { "value": "420222", "label": "阳新县" }, { "value": "420281", "label": "大冶市" }] }, { "value": "4203", "label": "十堰市", "children": [{ "value": "420302", "label": "茅箭区" }, { "value": "420303", "label": "张湾区" }, { "value": "420304", "label": "郧阳区" }, { "value": "420322", "label": "郧西县" }, { "value": "420323", "label": "竹山县" }, { "value": "420324", "label": "竹溪县" }, { "value": "420325", "label": "房县" }, { "value": "420381", "label": "丹江口市" }] }, { "value": "4205", "label": "宜昌市", "children": [{ "value": "420502", "label": "西陵区" }, { "value": "420503", "label": "伍家岗区" }, { "value": "420504", "label": "点军区" }, { "value": "420505", "label": "猇亭区" }, { "value": "420506", "label": "夷陵区" }, { "value": "420525", "label": "远安县" }, { "value": "420526", "label": "兴山县" }, { "value": "420527", "label": "秭归县" }, { "value": "420528", "label": "长阳土家族自治县" }, { "value": "420529", "label": "五峰土家族自治县" }, { "value": "420581", "label": "宜都市" }, { "value": "420582", "label": "当阳市" }, { "value": "420583", "label": "枝江市" }] }, { "value": "4206", "label": "襄阳市", "children": [{ "value": "420602", "label": "襄城区" }, { "value": "420606", "label": "樊城区" }, { "value": "420607", "label": "襄州区" }, { "value": "420624", "label": "南漳县" }, { "value": "420625", "label": "谷城县" }, { "value": "420626", "label": "保康县" }, { "value": "420682", "label": "老河口市" }, { "value": "420683", "label": "枣阳市" }, { "value": "420684", "label": "宜城市" }] }, { "value": "4207", "label": "鄂州市", "children": [{ "value": "420702", "label": "梁子湖区" }, { "value": "420703", "label": "华容区" }, { "value": "420704", "label": "鄂城区" }] }, { "value": "4208", "label": "荆门市", "children": [{ "value": "420802", "label": "东宝区" }, { "value": "420804", "label": "掇刀区" }, { "value": "420822", "label": "沙洋县" }, { "value": "420881", "label": "钟祥市" }, { "value": "420882", "label": "京山市" }] }, { "value": "4209", "label": "孝感市", "children": [{ "value": "420902", "label": "孝南区" }, { "value": "420921", "label": "孝昌县" }, { "value": "420922", "label": "大悟县" }, { "value": "420923", "label": "云梦县" }, { "value": "420981", "label": "应城市" }, { "value": "420982", "label": "安陆市" }, { "value": "420984", "label": "汉川市" }] }, { "value": "4210", "label": "荆州市", "children": [{ "value": "421002", "label": "沙市区" }, { "value": "421003", "label": "荆州区" }, { "value": "421022", "label": "公安县" }, { "value": "421023", "label": "监利县" }, { "value": "421024", "label": "江陵县" }, { "value": "421071", "label": "荆州经济技术开发区" }, { "value": "421081", "label": "石首市" }, { "value": "421083", "label": "洪湖市" }, { "value": "421087", "label": "松滋市" }] }, { "value": "4211", "label": "黄冈市", "children": [{ "value": "421102", "label": "黄州区" }, { "value": "421121", "label": "团风县" }, { "value": "421122", "label": "红安县" }, { "value": "421123", "label": "罗田县" }, { "value": "421124", "label": "英山县" }, { "value": "421125", "label": "浠水县" }, { "value": "421126", "label": "蕲春县" }, { "value": "421127", "label": "黄梅县" }, { "value": "421171", "label": "龙感湖管理区" }, { "value": "421181", "label": "麻城市" }, { "value": "421182", "label": "武穴市" }] }, { "value": "4212", "label": "咸宁市", "children": [{ "value": "421202", "label": "咸安区" }, { "value": "421221", "label": "嘉鱼县" }, { "value": "421222", "label": "通城县" }, { "value": "421223", "label": "崇阳县" }, { "value": "421224", "label": "通山县" }, { "value": "421281", "label": "赤壁市" }] }, { "value": "4213", "label": "随州市", "children": [{ "value": "421303", "label": "曾都区" }, { "value": "421321", "label": "随县" }, { "value": "421381", "label": "广水市" }] }, { "value": "4228", "label": "恩施土家族苗族自治州", "children": [{ "value": "422801", "label": "恩施市" }, { "value": "422802", "label": "利川市" }, { "value": "422822", "label": "建始县" }, { "value": "422823", "label": "巴东县" }, { "value": "422825", "label": "宣恩县" }, { "value": "422826", "label": "咸丰县" }, { "value": "422827", "label": "来凤县" }, { "value": "422828", "label": "鹤峰县" }] }, { "value": "4290", "label": "省直辖县级行政区划", "children": [{ "value": "429004", "label": "仙桃市" }, { "value": "429005", "label": "潜江市" }, { "value": "429006", "label": "天门市" }, { "value": "429021", "label": "神农架林区" }] }] }, { "value": "43", "label": "湖南省", "children": [{ "value": "4301", "label": "长沙市", "children": [{ "value": "430102", "label": "芙蓉区" }, { "value": "430103", "label": "天心区" }, { "value": "430104", "label": "岳麓区" }, { "value": "430105", "label": "开福区" }, { "value": "430111", "label": "雨花区" }, { "value": "430112", "label": "望城区" }, { "value": "430121", "label": "长沙县" }, { "value": "430181", "label": "浏阳市" }, { "value": "430182", "label": "宁乡市" }] }, { "value": "4302", "label": "株洲市", "children": [{ "value": "430202", "label": "荷塘区" }, { "value": "430203", "label": "芦淞区" }, { "value": "430204", "label": "石峰区" }, { "value": "430211", "label": "天元区" }, { "value": "430212", "label": "渌口区" }, { "value": "430223", "label": "攸县" }, { "value": "430224", "label": "茶陵县" }, { "value": "430225", "label": "炎陵县" }, { "value": "430271", "label": "云龙示范区" }, { "value": "430281", "label": "醴陵市" }] }, { "value": "4303", "label": "湘潭市", "children": [{ "value": "430302", "label": "雨湖区" }, { "value": "430304", "label": "岳塘区" }, { "value": "430321", "label": "湘潭县" }, { "value": "430371", "label": "湖南湘潭高新技术产业园区" }, { "value": "430372", "label": "湘潭昭山示范区" }, { "value": "430373", "label": "湘潭九华示范区" }, { "value": "430381", "label": "湘乡市" }, { "value": "430382", "label": "韶山市" }] }, { "value": "4304", "label": "衡阳市", "children": [{ "value": "430405", "label": "珠晖区" }, { "value": "430406", "label": "雁峰区" }, { "value": "430407", "label": "石鼓区" }, { "value": "430408", "label": "蒸湘区" }, { "value": "430412", "label": "南岳区" }, { "value": "430421", "label": "衡阳县" }, { "value": "430422", "label": "衡南县" }, { "value": "430423", "label": "衡山县" }, { "value": "430424", "label": "衡东县" }, { "value": "430426", "label": "祁东县" }, { "value": "430471", "label": "衡阳综合保税区" }, { "value": "430472", "label": "湖南衡阳高新技术产业园区" }, { "value": "430473", "label": "湖南衡阳松木经济开发区" }, { "value": "430481", "label": "耒阳市" }, { "value": "430482", "label": "常宁市" }] }, { "value": "4305", "label": "邵阳市", "children": [{ "value": "430502", "label": "双清区" }, { "value": "430503", "label": "大祥区" }, { "value": "430511", "label": "北塔区" }, { "value": "430521", "label": "邵东县" }, { "value": "430522", "label": "新邵县" }, { "value": "430523", "label": "邵阳县" }, { "value": "430524", "label": "隆回县" }, { "value": "430525", "label": "洞口县" }, { "value": "430527", "label": "绥宁县" }, { "value": "430528", "label": "新宁县" }, { "value": "430529", "label": "城步苗族自治县" }, { "value": "430581", "label": "武冈市" }] }, { "value": "4306", "label": "岳阳市", "children": [{ "value": "430602", "label": "岳阳楼区" }, { "value": "430603", "label": "云溪区" }, { "value": "430611", "label": "君山区" }, { "value": "430621", "label": "岳阳县" }, { "value": "430623", "label": "华容县" }, { "value": "430624", "label": "湘阴县" }, { "value": "430626", "label": "平江县" }, { "value": "430671", "label": "岳阳市屈原管理区" }, { "value": "430681", "label": "汨罗市" }, { "value": "430682", "label": "临湘市" }] }, { "value": "4307", "label": "常德市", "children": [{ "value": "430702", "label": "武陵区" }, { "value": "430703", "label": "鼎城区" }, { "value": "430721", "label": "安乡县" }, { "value": "430722", "label": "汉寿县" }, { "value": "430723", "label": "澧县" }, { "value": "430724", "label": "临澧县" }, { "value": "430725", "label": "桃源县" }, { "value": "430726", "label": "石门县" }, { "value": "430771", "label": "常德市西洞庭管理区" }, { "value": "430781", "label": "津市市" }] }, { "value": "4308", "label": "张家界市", "children": [{ "value": "430802", "label": "永定区" }, { "value": "430811", "label": "武陵源区" }, { "value": "430821", "label": "慈利县" }, { "value": "430822", "label": "桑植县" }] }, { "value": "4309", "label": "益阳市", "children": [{ "value": "430902", "label": "资阳区" }, { "value": "430903", "label": "赫山区" }, { "value": "430921", "label": "南县" }, { "value": "430922", "label": "桃江县" }, { "value": "430923", "label": "安化县" }, { "value": "430971", "label": "益阳市大通湖管理区" }, { "value": "430972", "label": "湖南益阳高新技术产业园区" }, { "value": "430981", "label": "沅江市" }] }, { "value": "4310", "label": "郴州市", "children": [{ "value": "431002", "label": "北湖区" }, { "value": "431003", "label": "苏仙区" }, { "value": "431021", "label": "桂阳县" }, { "value": "431022", "label": "宜章县" }, { "value": "431023", "label": "永兴县" }, { "value": "431024", "label": "嘉禾县" }, { "value": "431025", "label": "临武县" }, { "value": "431026", "label": "汝城县" }, { "value": "431027", "label": "桂东县" }, { "value": "431028", "label": "安仁县" }, { "value": "431081", "label": "资兴市" }] }, { "value": "4311", "label": "永州市", "children": [{ "value": "431102", "label": "零陵区" }, { "value": "431103", "label": "冷水滩区" }, { "value": "431121", "label": "祁阳县" }, { "value": "431122", "label": "东安县" }, { "value": "431123", "label": "双牌县" }, { "value": "431124", "label": "道县" }, { "value": "431125", "label": "江永县" }, { "value": "431126", "label": "宁远县" }, { "value": "431127", "label": "蓝山县" }, { "value": "431128", "label": "新田县" }, { "value": "431129", "label": "江华瑶族自治县" }, { "value": "431171", "label": "永州经济技术开发区" }, { "value": "431172", "label": "永州市金洞管理区" }, { "value": "431173", "label": "永州市回龙圩管理区" }] }, { "value": "4312", "label": "怀化市", "children": [{ "value": "431202", "label": "鹤城区" }, { "value": "431221", "label": "中方县" }, { "value": "431222", "label": "沅陵县" }, { "value": "431223", "label": "辰溪县" }, { "value": "431224", "label": "溆浦县" }, { "value": "431225", "label": "会同县" }, { "value": "431226", "label": "麻阳苗族自治县" }, { "value": "431227", "label": "新晃侗族自治县" }, { "value": "431228", "label": "芷江侗族自治县" }, { "value": "431229", "label": "靖州苗族侗族自治县" }, { "value": "431230", "label": "通道侗族自治县" }, { "value": "431271", "label": "怀化市洪江管理区" }, { "value": "431281", "label": "洪江市" }] }, { "value": "4313", "label": "娄底市", "children": [{ "value": "431302", "label": "娄星区" }, { "value": "431321", "label": "双峰县" }, { "value": "431322", "label": "新化县" }, { "value": "431381", "label": "冷水江市" }, { "value": "431382", "label": "涟源市" }] }, { "value": "4331", "label": "湘西土家族苗族自治州", "children": [{ "value": "433101", "label": "吉首市" }, { "value": "433122", "label": "泸溪县" }, { "value": "433123", "label": "凤凰县" }, { "value": "433124", "label": "花垣县" }, { "value": "433125", "label": "保靖县" }, { "value": "433126", "label": "古丈县" }, { "value": "433127", "label": "永顺县" }, { "value": "433130", "label": "龙山县" }, { "value": "433172", "label": "湖南吉首经济开发区" }, { "value": "433173", "label": "湖南永顺经济开发区" }] }] }, { "value": "44", "label": "广东省", "children": [{ "value": "4401", "label": "广州市", "children": [{ "value": "440103", "label": "荔湾区" }, { "value": "440104", "label": "越秀区" }, { "value": "440105", "label": "海珠区" }, { "value": "440106", "label": "天河区" }, { "value": "440111", "label": "白云区" }, { "value": "440112", "label": "黄埔区" }, { "value": "440113", "label": "番禺区" }, { "value": "440114", "label": "花都区" }, { "value": "440115", "label": "南沙区" }, { "value": "440117", "label": "从化区" }, { "value": "440118", "label": "增城区" }] }, { "value": "4402", "label": "韶关市", "children": [{ "value": "440203", "label": "武江区" }, { "value": "440204", "label": "浈江区" }, { "value": "440205", "label": "曲江区" }, { "value": "440222", "label": "始兴县" }, { "value": "440224", "label": "仁化县" }, { "value": "440229", "label": "翁源县" }, { "value": "440232", "label": "乳源瑶族自治县" }, { "value": "440233", "label": "新丰县" }, { "value": "440281", "label": "乐昌市" }, { "value": "440282", "label": "南雄市" }] }, { "value": "4403", "label": "深圳市", "children": [{ "value": "440303", "label": "罗湖区" }, { "value": "440304", "label": "福田区" }, { "value": "440305", "label": "南山区" }, { "value": "440306", "label": "宝安区" }, { "value": "440307", "label": "龙岗区" }, { "value": "440308", "label": "盐田区" }, { "value": "440309", "label": "龙华区" }, { "value": "440310", "label": "坪山区" }, { "value": "440311", "label": "光明区" }] }, { "value": "4404", "label": "珠海市", "children": [{ "value": "440402", "label": "香洲区" }, { "value": "440403", "label": "斗门区" }, { "value": "440404", "label": "金湾区" }] }, { "value": "4405", "label": "汕头市", "children": [{ "value": "440507", "label": "龙湖区" }, { "value": "440511", "label": "金平区" }, { "value": "440512", "label": "濠江区" }, { "value": "440513", "label": "潮阳区" }, { "value": "440514", "label": "潮南区" }, { "value": "440515", "label": "澄海区" }, { "value": "440523", "label": "南澳县" }] }, { "value": "4406", "label": "佛山市", "children": [{ "value": "440604", "label": "禅城区" }, { "value": "440605", "label": "南海区" }, { "value": "440606", "label": "顺德区" }, { "value": "440607", "label": "三水区" }, { "value": "440608", "label": "高明区" }] }, { "value": "4407", "label": "江门市", "children": [{ "value": "440703", "label": "蓬江区" }, { "value": "440704", "label": "江海区" }, { "value": "440705", "label": "新会区" }, { "value": "440781", "label": "台山市" }, { "value": "440783", "label": "开平市" }, { "value": "440784", "label": "鹤山市" }, { "value": "440785", "label": "恩平市" }] }, { "value": "4408", "label": "湛江市", "children": [{ "value": "440802", "label": "赤坎区" }, { "value": "440803", "label": "霞山区" }, { "value": "440804", "label": "坡头区" }, { "value": "440811", "label": "麻章区" }, { "value": "440823", "label": "遂溪县" }, { "value": "440825", "label": "徐闻县" }, { "value": "440881", "label": "廉江市" }, { "value": "440882", "label": "雷州市" }, { "value": "440883", "label": "吴川市" }] }, { "value": "4409", "label": "茂名市", "children": [{ "value": "440902", "label": "茂南区" }, { "value": "440904", "label": "电白区" }, { "value": "440981", "label": "高州市" }, { "value": "440982", "label": "化州市" }, { "value": "440983", "label": "信宜市" }] }, { "value": "4412", "label": "肇庆市", "children": [{ "value": "441202", "label": "端州区" }, { "value": "441203", "label": "鼎湖区" }, { "value": "441204", "label": "高要区" }, { "value": "441223", "label": "广宁县" }, { "value": "441224", "label": "怀集县" }, { "value": "441225", "label": "封开县" }, { "value": "441226", "label": "德庆县" }, { "value": "441284", "label": "四会市" }] }, { "value": "4413", "label": "惠州市", "children": [{ "value": "441302", "label": "惠城区" }, { "value": "441303", "label": "惠阳区" }, { "value": "441322", "label": "博罗县" }, { "value": "441323", "label": "惠东县" }, { "value": "441324", "label": "龙门县" }] }, { "value": "4414", "label": "梅州市", "children": [{ "value": "441402", "label": "梅江区" }, { "value": "441403", "label": "梅县区" }, { "value": "441422", "label": "大埔县" }, { "value": "441423", "label": "丰顺县" }, { "value": "441424", "label": "五华县" }, { "value": "441426", "label": "平远县" }, { "value": "441427", "label": "蕉岭县" }, { "value": "441481", "label": "兴宁市" }] }, { "value": "4415", "label": "汕尾市", "children": [{ "value": "441502", "label": "城区" }, { "value": "441521", "label": "海丰县" }, { "value": "441523", "label": "陆河县" }, { "value": "441581", "label": "陆丰市" }] }, { "value": "4416", "label": "河源市", "children": [{ "value": "441602", "label": "源城区" }, { "value": "441621", "label": "紫金县" }, { "value": "441622", "label": "龙川县" }, { "value": "441623", "label": "连平县" }, { "value": "441624", "label": "和平县" }, { "value": "441625", "label": "东源县" }] }, { "value": "4417", "label": "阳江市", "children": [{ "value": "441702", "label": "江城区" }, { "value": "441704", "label": "阳东区" }, { "value": "441721", "label": "阳西县" }, { "value": "441781", "label": "阳春市" }] }, { "value": "4418", "label": "清远市", "children": [{ "value": "441802", "label": "清城区" }, { "value": "441803", "label": "清新区" }, { "value": "441821", "label": "佛冈县" }, { "value": "441823", "label": "阳山县" }, { "value": "441825", "label": "连山壮族瑶族自治县" }, { "value": "441826", "label": "连南瑶族自治县" }, { "value": "441881", "label": "英德市" }, { "value": "441882", "label": "连州市" }] }, { "value": "4419", "label": "东莞市", "children": [{ "value": "441900003", "label": "东城街道" }, { "value": "441900004", "label": "南城街道" }, { "value": "441900005", "label": "万江街道" }, { "value": "441900006", "label": "莞城街道" }, { "value": "441900101", "label": "石碣镇" }, { "value": "441900102", "label": "石龙镇" }, { "value": "441900103", "label": "茶山镇" }, { "value": "441900104", "label": "石排镇" }, { "value": "441900105", "label": "企石镇" }, { "value": "441900106", "label": "横沥镇" }, { "value": "441900107", "label": "桥头镇" }, { "value": "441900108", "label": "谢岗镇" }, { "value": "441900109", "label": "东坑镇" }, { "value": "441900110", "label": "常平镇" }, { "value": "441900111", "label": "寮步镇" }, { "value": "441900112", "label": "樟木头镇" }, { "value": "441900113", "label": "大朗镇" }, { "value": "441900114", "label": "黄江镇" }, { "value": "441900115", "label": "清溪镇" }, { "value": "441900116", "label": "塘厦镇" }, { "value": "441900117", "label": "凤岗镇" }, { "value": "441900118", "label": "大岭山镇" }, { "value": "441900119", "label": "长安镇" }, { "value": "441900121", "label": "虎门镇" }, { "value": "441900122", "label": "厚街镇" }, { "value": "441900123", "label": "沙田镇" }, { "value": "441900124", "label": "道滘镇" }, { "value": "441900125", "label": "洪梅镇" }, { "value": "441900126", "label": "麻涌镇" }, { "value": "441900127", "label": "望牛墩镇" }, { "value": "441900128", "label": "中堂镇" }, { "value": "441900129", "label": "高埗镇" }, { "value": "441900401", "label": "松山湖管委会" }, { "value": "441900402", "label": "东莞港" }, { "value": "441900403", "label": "东莞生态园" }] }, { "value": "4420", "label": "中山市", "children": [{ "value": "442000001", "label": "石岐区街道" }, { "value": "442000002", "label": "东区街道" }, { "value": "442000003", "label": "火炬开发区街道" }, { "value": "442000004", "label": "西区街道" }, { "value": "442000005", "label": "南区街道" }, { "value": "442000006", "label": "五桂山街道" }, { "value": "442000100", "label": "小榄镇" }, { "value": "442000101", "label": "黄圃镇" }, { "value": "442000102", "label": "民众镇" }, { "value": "442000103", "label": "东凤镇" }, { "value": "442000104", "label": "东升镇" }, { "value": "442000105", "label": "古镇镇" }, { "value": "442000106", "label": "沙溪镇" }, { "value": "442000107", "label": "坦洲镇" }, { "value": "442000108", "label": "港口镇" }, { "value": "442000109", "label": "三角镇" }, { "value": "442000110", "label": "横栏镇" }, { "value": "442000111", "label": "南头镇" }, { "value": "442000112", "label": "阜沙镇" }, { "value": "442000113", "label": "南朗镇" }, { "value": "442000114", "label": "三乡镇" }, { "value": "442000115", "label": "板芙镇" }, { "value": "442000116", "label": "大涌镇" }, { "value": "442000117", "label": "神湾镇" }] }, { "value": "4451", "label": "潮州市", "children": [{ "value": "445102", "label": "湘桥区" }, { "value": "445103", "label": "潮安区" }, { "value": "445122", "label": "饶平县" }] }, { "value": "4452", "label": "揭阳市", "children": [{ "value": "445202", "label": "榕城区" }, { "value": "445203", "label": "揭东区" }, { "value": "445222", "label": "揭西县" }, { "value": "445224", "label": "惠来县" }, { "value": "445281", "label": "普宁市" }] }, { "value": "4453", "label": "云浮市", "children": [{ "value": "445302", "label": "云城区" }, { "value": "445303", "label": "云安区" }, { "value": "445321", "label": "新兴县" }, { "value": "445322", "label": "郁南县" }, { "value": "445381", "label": "罗定市" }] }] }, { "value": "45", "label": "广西壮族自治区", "children": [{ "value": "4501", "label": "南宁市", "children": [{ "value": "450102", "label": "兴宁区" }, { "value": "450103", "label": "青秀区" }, { "value": "450105", "label": "江南区" }, { "value": "450107", "label": "西乡塘区" }, { "value": "450108", "label": "良庆区" }, { "value": "450109", "label": "邕宁区" }, { "value": "450110", "label": "武鸣区" }, { "value": "450123", "label": "隆安县" }, { "value": "450124", "label": "马山县" }, { "value": "450125", "label": "上林县" }, { "value": "450126", "label": "宾阳县" }, { "value": "450127", "label": "横县" }] }, { "value": "4502", "label": "柳州市", "children": [{ "value": "450202", "label": "城中区" }, { "value": "450203", "label": "鱼峰区" }, { "value": "450204", "label": "柳南区" }, { "value": "450205", "label": "柳北区" }, { "value": "450206", "label": "柳江区" }, { "value": "450222", "label": "柳城县" }, { "value": "450223", "label": "鹿寨县" }, { "value": "450224", "label": "融安县" }, { "value": "450225", "label": "融水苗族自治县" }, { "value": "450226", "label": "三江侗族自治县" }] }, { "value": "4503", "label": "桂林市", "children": [{ "value": "450302", "label": "秀峰区" }, { "value": "450303", "label": "叠彩区" }, { "value": "450304", "label": "象山区" }, { "value": "450305", "label": "七星区" }, { "value": "450311", "label": "雁山区" }, { "value": "450312", "label": "临桂区" }, { "value": "450321", "label": "阳朔县" }, { "value": "450323", "label": "灵川县" }, { "value": "450324", "label": "全州县" }, { "value": "450325", "label": "兴安县" }, { "value": "450326", "label": "永福县" }, { "value": "450327", "label": "灌阳县" }, { "value": "450328", "label": "龙胜各族自治县" }, { "value": "450329", "label": "资源县" }, { "value": "450330", "label": "平乐县" }, { "value": "450332", "label": "恭城瑶族自治县" }, { "value": "450381", "label": "荔浦市" }] }, { "value": "4504", "label": "梧州市", "children": [{ "value": "450403", "label": "万秀区" }, { "value": "450405", "label": "长洲区" }, { "value": "450406", "label": "龙圩区" }, { "value": "450421", "label": "苍梧县" }, { "value": "450422", "label": "藤县" }, { "value": "450423", "label": "蒙山县" }, { "value": "450481", "label": "岑溪市" }] }, { "value": "4505", "label": "北海市", "children": [{ "value": "450502", "label": "海城区" }, { "value": "450503", "label": "银海区" }, { "value": "450512", "label": "铁山港区" }, { "value": "450521", "label": "合浦县" }] }, { "value": "4506", "label": "防城港市", "children": [{ "value": "450602", "label": "港口区" }, { "value": "450603", "label": "防城区" }, { "value": "450621", "label": "上思县" }, { "value": "450681", "label": "东兴市" }] }, { "value": "4507", "label": "钦州市", "children": [{ "value": "450702", "label": "钦南区" }, { "value": "450703", "label": "钦北区" }, { "value": "450721", "label": "灵山县" }, { "value": "450722", "label": "浦北县" }] }, { "value": "4508", "label": "贵港市", "children": [{ "value": "450802", "label": "港北区" }, { "value": "450803", "label": "港南区" }, { "value": "450804", "label": "覃塘区" }, { "value": "450821", "label": "平南县" }, { "value": "450881", "label": "桂平市" }] }, { "value": "4509", "label": "玉林市", "children": [{ "value": "450902", "label": "玉州区" }, { "value": "450903", "label": "福绵区" }, { "value": "450921", "label": "容县" }, { "value": "450922", "label": "陆川县" }, { "value": "450923", "label": "博白县" }, { "value": "450924", "label": "兴业县" }, { "value": "450981", "label": "北流市" }] }, { "value": "4510", "label": "百色市", "children": [{ "value": "451002", "label": "右江区" }, { "value": "451021", "label": "田阳县" }, { "value": "451022", "label": "田东县" }, { "value": "451023", "label": "平果县" }, { "value": "451024", "label": "德保县" }, { "value": "451026", "label": "那坡县" }, { "value": "451027", "label": "凌云县" }, { "value": "451028", "label": "乐业县" }, { "value": "451029", "label": "田林县" }, { "value": "451030", "label": "西林县" }, { "value": "451031", "label": "隆林各族自治县" }, { "value": "451081", "label": "靖西市" }] }, { "value": "4511", "label": "贺州市", "children": [{ "value": "451102", "label": "八步区" }, { "value": "451103", "label": "平桂区" }, { "value": "451121", "label": "昭平县" }, { "value": "451122", "label": "钟山县" }, { "value": "451123", "label": "富川瑶族自治县" }] }, { "value": "4512", "label": "河池市", "children": [{ "value": "451202", "label": "金城江区" }, { "value": "451203", "label": "宜州区" }, { "value": "451221", "label": "南丹县" }, { "value": "451222", "label": "天峨县" }, { "value": "451223", "label": "凤山县" }, { "value": "451224", "label": "东兰县" }, { "value": "451225", "label": "罗城仫佬族自治县" }, { "value": "451226", "label": "环江毛南族自治县" }, { "value": "451227", "label": "巴马瑶族自治县" }, { "value": "451228", "label": "都安瑶族自治县" }, { "value": "451229", "label": "大化瑶族自治县" }] }, { "value": "4513", "label": "来宾市", "children": [{ "value": "451302", "label": "兴宾区" }, { "value": "451321", "label": "忻城县" }, { "value": "451322", "label": "象州县" }, { "value": "451323", "label": "武宣县" }, { "value": "451324", "label": "金秀瑶族自治县" }, { "value": "451381", "label": "合山市" }] }, { "value": "4514", "label": "崇左市", "children": [{ "value": "451402", "label": "江州区" }, { "value": "451421", "label": "扶绥县" }, { "value": "451422", "label": "宁明县" }, { "value": "451423", "label": "龙州县" }, { "value": "451424", "label": "大新县" }, { "value": "451425", "label": "天等县" }, { "value": "451481", "label": "凭祥市" }] }] }, { "value": "46", "label": "海南省", "children": [{ "value": "4601", "label": "海口市", "children": [{ "value": "460105", "label": "秀英区" }, { "value": "460106", "label": "龙华区" }, { "value": "460107", "label": "琼山区" }, { "value": "460108", "label": "美兰区" }] }, { "value": "4602", "label": "三亚市", "children": [{ "value": "460202", "label": "海棠区" }, { "value": "460203", "label": "吉阳区" }, { "value": "460204", "label": "天涯区" }, { "value": "460205", "label": "崖州区" }] }, { "value": "4603", "label": "三沙市", "children": [{ "value": "460321", "label": "西沙群岛" }, { "value": "460322", "label": "南沙群岛" }, { "value": "460323", "label": "中沙群岛的岛礁及其海域" }] }, { "value": "4604", "label": "儋州市", "children": [{ "value": "460400100", "label": "那大镇" }, { "value": "460400101", "label": "和庆镇" }, { "value": "460400102", "label": "南丰镇" }, { "value": "460400103", "label": "大成镇" }, { "value": "460400104", "label": "雅星镇" }, { "value": "460400105", "label": "兰洋镇" }, { "value": "460400106", "label": "光村镇" }, { "value": "460400107", "label": "木棠镇" }, { "value": "460400108", "label": "海头镇" }, { "value": "460400109", "label": "峨蔓镇" }, { "value": "460400111", "label": "王五镇" }, { "value": "460400112", "label": "白马井镇" }, { "value": "460400113", "label": "中和镇" }, { "value": "460400114", "label": "排浦镇" }, { "value": "460400115", "label": "东成镇" }, { "value": "460400116", "label": "新州镇" }, { "value": "460400499", "label": "洋浦经济开发区" }, { "value": "460400500", "label": "华南热作学院" }] }, { "value": "4690", "label": "省直辖县级行政区划", "children": [{ "value": "469001", "label": "五指山市" }, { "value": "469002", "label": "琼海市" }, { "value": "469005", "label": "文昌市" }, { "value": "469006", "label": "万宁市" }, { "value": "469007", "label": "东方市" }, { "value": "469021", "label": "定安县" }, { "value": "469022", "label": "屯昌县" }, { "value": "469023", "label": "澄迈县" }, { "value": "469024", "label": "临高县" }, { "value": "469025", "label": "白沙黎族自治县" }, { "value": "469026", "label": "昌江黎族自治县" }, { "value": "469027", "label": "乐东黎族自治县" }, { "value": "469028", "label": "陵水黎族自治县" }, { "value": "469029", "label": "保亭黎族苗族自治县" }, { "value": "469030", "label": "琼中黎族苗族自治县" }] }] }, { "value": "50", "label": "重庆市", "children": [{ "value": "5001", "label": "市辖区", "children": [{ "value": "500101", "label": "万州区" }, { "value": "500102", "label": "涪陵区" }, { "value": "500103", "label": "渝中区" }, { "value": "500104", "label": "大渡口区" }, { "value": "500105", "label": "江北区" }, { "value": "500106", "label": "沙坪坝区" }, { "value": "500107", "label": "九龙坡区" }, { "value": "500108", "label": "南岸区" }, { "value": "500109", "label": "北碚区" }, { "value": "500110", "label": "綦江区" }, { "value": "500111", "label": "大足区" }, { "value": "500112", "label": "渝北区" }, { "value": "500113", "label": "巴南区" }, { "value": "500114", "label": "黔江区" }, { "value": "500115", "label": "长寿区" }, { "value": "500116", "label": "江津区" }, { "value": "500117", "label": "合川区" }, { "value": "500118", "label": "永川区" }, { "value": "500119", "label": "南川区" }, { "value": "500120", "label": "璧山区" }, { "value": "500151", "label": "铜梁区" }, { "value": "500152", "label": "潼南区" }, { "value": "500153", "label": "荣昌区" }, { "value": "500154", "label": "开州区" }, { "value": "500155", "label": "梁平区" }, { "value": "500156", "label": "武隆区" }] }, { "value": "5002", "label": "县", "children": [{ "value": "500229", "label": "城口县" }, { "value": "500230", "label": "丰都县" }, { "value": "500231", "label": "垫江县" }, { "value": "500233", "label": "忠县" }, { "value": "500235", "label": "云阳县" }, { "value": "500236", "label": "奉节县" }, { "value": "500237", "label": "巫山县" }, { "value": "500238", "label": "巫溪县" }, { "value": "500240", "label": "石柱土家族自治县" }, { "value": "500241", "label": "秀山土家族苗族自治县" }, { "value": "500242", "label": "酉阳土家族苗族自治县" }, { "value": "500243", "label": "彭水苗族土家族自治县" }] }] }, { "value": "51", "label": "四川省", "children": [{ "value": "5101", "label": "成都市", "children": [{ "value": "510104", "label": "锦江区" }, { "value": "510105", "label": "青羊区" }, { "value": "510106", "label": "金牛区" }, { "value": "510107", "label": "武侯区" }, { "value": "510108", "label": "成华区" }, { "value": "510112", "label": "龙泉驿区" }, { "value": "510113", "label": "青白江区" }, { "value": "510114", "label": "新都区" }, { "value": "510115", "label": "温江区" }, { "value": "510116", "label": "双流区" }, { "value": "510117", "label": "郫都区" }, { "value": "510121", "label": "金堂县" }, { "value": "510129", "label": "大邑县" }, { "value": "510131", "label": "蒲江县" }, { "value": "510132", "label": "新津县" }, { "value": "510181", "label": "都江堰市" }, { "value": "510182", "label": "彭州市" }, { "value": "510183", "label": "邛崃市" }, { "value": "510184", "label": "崇州市" }, { "value": "510185", "label": "简阳市" }] }, { "value": "5103", "label": "自贡市", "children": [{ "value": "510302", "label": "自流井区" }, { "value": "510303", "label": "贡井区" }, { "value": "510304", "label": "大安区" }, { "value": "510311", "label": "沿滩区" }, { "value": "510321", "label": "荣县" }, { "value": "510322", "label": "富顺县" }] }, { "value": "5104", "label": "攀枝花市", "children": [{ "value": "510402", "label": "东区" }, { "value": "510403", "label": "西区" }, { "value": "510411", "label": "仁和区" }, { "value": "510421", "label": "米易县" }, { "value": "510422", "label": "盐边县" }] }, { "value": "5105", "label": "泸州市", "children": [{ "value": "510502", "label": "江阳区" }, { "value": "510503", "label": "纳溪区" }, { "value": "510504", "label": "龙马潭区" }, { "value": "510521", "label": "泸县" }, { "value": "510522", "label": "合江县" }, { "value": "510524", "label": "叙永县" }, { "value": "510525", "label": "古蔺县" }] }, { "value": "5106", "label": "德阳市", "children": [{ "value": "510603", "label": "旌阳区" }, { "value": "510604", "label": "罗江区" }, { "value": "510623", "label": "中江县" }, { "value": "510681", "label": "广汉市" }, { "value": "510682", "label": "什邡市" }, { "value": "510683", "label": "绵竹市" }] }, { "value": "5107", "label": "绵阳市", "children": [{ "value": "510703", "label": "涪城区" }, { "value": "510704", "label": "游仙区" }, { "value": "510705", "label": "安州区" }, { "value": "510722", "label": "三台县" }, { "value": "510723", "label": "盐亭县" }, { "value": "510725", "label": "梓潼县" }, { "value": "510726", "label": "北川羌族自治县" }, { "value": "510727", "label": "平武县" }, { "value": "510781", "label": "江油市" }] }, { "value": "5108", "label": "广元市", "children": [{ "value": "510802", "label": "利州区" }, { "value": "510811", "label": "昭化区" }, { "value": "510812", "label": "朝天区" }, { "value": "510821", "label": "旺苍县" }, { "value": "510822", "label": "青川县" }, { "value": "510823", "label": "剑阁县" }, { "value": "510824", "label": "苍溪县" }] }, { "value": "5109", "label": "遂宁市", "children": [{ "value": "510903", "label": "船山区" }, { "value": "510904", "label": "安居区" }, { "value": "510921", "label": "蓬溪县" }, { "value": "510922", "label": "射洪县" }, { "value": "510923", "label": "大英县" }] }, { "value": "5110", "label": "内江市", "children": [{ "value": "511002", "label": "市中区" }, { "value": "511011", "label": "东兴区" }, { "value": "511024", "label": "威远县" }, { "value": "511025", "label": "资中县" }, { "value": "511071", "label": "内江经济开发区" }, { "value": "511083", "label": "隆昌市" }] }, { "value": "5111", "label": "乐山市", "children": [{ "value": "511102", "label": "市中区" }, { "value": "511111", "label": "沙湾区" }, { "value": "511112", "label": "五通桥区" }, { "value": "511113", "label": "金口河区" }, { "value": "511123", "label": "犍为县" }, { "value": "511124", "label": "井研县" }, { "value": "511126", "label": "夹江县" }, { "value": "511129", "label": "沐川县" }, { "value": "511132", "label": "峨边彝族自治县" }, { "value": "511133", "label": "马边彝族自治县" }, { "value": "511181", "label": "峨眉山市" }] }, { "value": "5113", "label": "南充市", "children": [{ "value": "511302", "label": "顺庆区" }, { "value": "511303", "label": "高坪区" }, { "value": "511304", "label": "嘉陵区" }, { "value": "511321", "label": "南部县" }, { "value": "511322", "label": "营山县" }, { "value": "511323", "label": "蓬安县" }, { "value": "511324", "label": "仪陇县" }, { "value": "511325", "label": "西充县" }, { "value": "511381", "label": "阆中市" }] }, { "value": "5114", "label": "眉山市", "children": [{ "value": "511402", "label": "东坡区" }, { "value": "511403", "label": "彭山区" }, { "value": "511421", "label": "仁寿县" }, { "value": "511423", "label": "洪雅县" }, { "value": "511424", "label": "丹棱县" }, { "value": "511425", "label": "青神县" }] }, { "value": "5115", "label": "宜宾市", "children": [{ "value": "511502", "label": "翠屏区" }, { "value": "511503", "label": "南溪区" }, { "value": "511504", "label": "叙州区" }, { "value": "511523", "label": "江安县" }, { "value": "511524", "label": "长宁县" }, { "value": "511525", "label": "高县" }, { "value": "511526", "label": "珙县" }, { "value": "511527", "label": "筠连县" }, { "value": "511528", "label": "兴文县" }, { "value": "511529", "label": "屏山县" }] }, { "value": "5116", "label": "广安市", "children": [{ "value": "511602", "label": "广安区" }, { "value": "511603", "label": "前锋区" }, { "value": "511621", "label": "岳池县" }, { "value": "511622", "label": "武胜县" }, { "value": "511623", "label": "邻水县" }, { "value": "511681", "label": "华蓥市" }] }, { "value": "5117", "label": "达州市", "children": [{ "value": "511702", "label": "通川区" }, { "value": "511703", "label": "达川区" }, { "value": "511722", "label": "宣汉县" }, { "value": "511723", "label": "开江县" }, { "value": "511724", "label": "大竹县" }, { "value": "511725", "label": "渠县" }, { "value": "511771", "label": "达州经济开发区" }, { "value": "511781", "label": "万源市" }] }, { "value": "5118", "label": "雅安市", "children": [{ "value": "511802", "label": "雨城区" }, { "value": "511803", "label": "名山区" }, { "value": "511822", "label": "荥经县" }, { "value": "511823", "label": "汉源县" }, { "value": "511824", "label": "石棉县" }, { "value": "511825", "label": "天全县" }, { "value": "511826", "label": "芦山县" }, { "value": "511827", "label": "宝兴县" }] }, { "value": "5119", "label": "巴中市", "children": [{ "value": "511902", "label": "巴州区" }, { "value": "511903", "label": "恩阳区" }, { "value": "511921", "label": "通江县" }, { "value": "511922", "label": "南江县" }, { "value": "511923", "label": "平昌县" }, { "value": "511971", "label": "巴中经济开发区" }] }, { "value": "5120", "label": "资阳市", "children": [{ "value": "512002", "label": "雁江区" }, { "value": "512021", "label": "安岳县" }, { "value": "512022", "label": "乐至县" }] }, { "value": "5132", "label": "阿坝藏族羌族自治州", "children": [{ "value": "513201", "label": "马尔康市" }, { "value": "513221", "label": "汶川县" }, { "value": "513222", "label": "理县" }, { "value": "513223", "label": "茂县" }, { "value": "513224", "label": "松潘县" }, { "value": "513225", "label": "九寨沟县" }, { "value": "513226", "label": "金川县" }, { "value": "513227", "label": "小金县" }, { "value": "513228", "label": "黑水县" }, { "value": "513230", "label": "壤塘县" }, { "value": "513231", "label": "阿坝县" }, { "value": "513232", "label": "若尔盖县" }, { "value": "513233", "label": "红原县" }] }, { "value": "5133", "label": "甘孜藏族自治州", "children": [{ "value": "513301", "label": "康定市" }, { "value": "513322", "label": "泸定县" }, { "value": "513323", "label": "丹巴县" }, { "value": "513324", "label": "九龙县" }, { "value": "513325", "label": "雅江县" }, { "value": "513326", "label": "道孚县" }, { "value": "513327", "label": "炉霍县" }, { "value": "513328", "label": "甘孜县" }, { "value": "513329", "label": "新龙县" }, { "value": "513330", "label": "德格县" }, { "value": "513331", "label": "白玉县" }, { "value": "513332", "label": "石渠县" }, { "value": "513333", "label": "色达县" }, { "value": "513334", "label": "理塘县" }, { "value": "513335", "label": "巴塘县" }, { "value": "513336", "label": "乡城县" }, { "value": "513337", "label": "稻城县" }, { "value": "513338", "label": "得荣县" }] }, { "value": "5134", "label": "凉山彝族自治州", "children": [{ "value": "513401", "label": "西昌市" }, { "value": "513422", "label": "木里藏族自治县" }, { "value": "513423", "label": "盐源县" }, { "value": "513424", "label": "德昌县" }, { "value": "513425", "label": "会理县" }, { "value": "513426", "label": "会东县" }, { "value": "513427", "label": "宁南县" }, { "value": "513428", "label": "普格县" }, { "value": "513429", "label": "布拖县" }, { "value": "513430", "label": "金阳县" }, { "value": "513431", "label": "昭觉县" }, { "value": "513432", "label": "喜德县" }, { "value": "513433", "label": "冕宁县" }, { "value": "513434", "label": "越西县" }, { "value": "513435", "label": "甘洛县" }, { "value": "513436", "label": "美姑县" }, { "value": "513437", "label": "雷波县" }] }] }, { "value": "52", "label": "贵州省", "children": [{ "value": "5201", "label": "贵阳市", "children": [{ "value": "520102", "label": "南明区" }, { "value": "520103", "label": "云岩区" }, { "value": "520111", "label": "花溪区" }, { "value": "520112", "label": "乌当区" }, { "value": "520113", "label": "白云区" }, { "value": "520115", "label": "观山湖区" }, { "value": "520121", "label": "开阳县" }, { "value": "520122", "label": "息烽县" }, { "value": "520123", "label": "修文县" }, { "value": "520181", "label": "清镇市" }] }, { "value": "5202", "label": "六盘水市", "children": [{ "value": "520201", "label": "钟山区" }, { "value": "520203", "label": "六枝特区" }, { "value": "520221", "label": "水城县" }, { "value": "520281", "label": "盘州市" }] }, { "value": "5203", "label": "遵义市", "children": [{ "value": "520302", "label": "红花岗区" }, { "value": "520303", "label": "汇川区" }, { "value": "520304", "label": "播州区" }, { "value": "520322", "label": "桐梓县" }, { "value": "520323", "label": "绥阳县" }, { "value": "520324", "label": "正安县" }, { "value": "520325", "label": "道真仡佬族苗族自治县" }, { "value": "520326", "label": "务川仡佬族苗族自治县" }, { "value": "520327", "label": "凤冈县" }, { "value": "520328", "label": "湄潭县" }, { "value": "520329", "label": "余庆县" }, { "value": "520330", "label": "习水县" }, { "value": "520381", "label": "赤水市" }, { "value": "520382", "label": "仁怀市" }] }, { "value": "5204", "label": "安顺市", "children": [{ "value": "520402", "label": "西秀区" }, { "value": "520403", "label": "平坝区" }, { "value": "520422", "label": "普定县" }, { "value": "520423", "label": "镇宁布依族苗族自治县" }, { "value": "520424", "label": "关岭布依族苗族自治县" }, { "value": "520425", "label": "紫云苗族布依族自治县" }] }, { "value": "5205", "label": "毕节市", "children": [{ "value": "520502", "label": "七星关区" }, { "value": "520521", "label": "大方县" }, { "value": "520522", "label": "黔西县" }, { "value": "520523", "label": "金沙县" }, { "value": "520524", "label": "织金县" }, { "value": "520525", "label": "纳雍县" }, { "value": "520526", "label": "威宁彝族回族苗族自治县" }, { "value": "520527", "label": "赫章县" }] }, { "value": "5206", "label": "铜仁市", "children": [{ "value": "520602", "label": "碧江区" }, { "value": "520603", "label": "万山区" }, { "value": "520621", "label": "江口县" }, { "value": "520622", "label": "玉屏侗族自治县" }, { "value": "520623", "label": "石阡县" }, { "value": "520624", "label": "思南县" }, { "value": "520625", "label": "印江土家族苗族自治县" }, { "value": "520626", "label": "德江县" }, { "value": "520627", "label": "沿河土家族自治县" }, { "value": "520628", "label": "松桃苗族自治县" }] }, { "value": "5223", "label": "黔西南布依族苗族自治州", "children": [{ "value": "522301", "label": "兴义市" }, { "value": "522302", "label": "兴仁市" }, { "value": "522323", "label": "普安县" }, { "value": "522324", "label": "晴隆县" }, { "value": "522325", "label": "贞丰县" }, { "value": "522326", "label": "望谟县" }, { "value": "522327", "label": "册亨县" }, { "value": "522328", "label": "安龙县" }] }, { "value": "5226", "label": "黔东南苗族侗族自治州", "children": [{ "value": "522601", "label": "凯里市" }, { "value": "522622", "label": "黄平县" }, { "value": "522623", "label": "施秉县" }, { "value": "522624", "label": "三穗县" }, { "value": "522625", "label": "镇远县" }, { "value": "522626", "label": "岑巩县" }, { "value": "522627", "label": "天柱县" }, { "value": "522628", "label": "锦屏县" }, { "value": "522629", "label": "剑河县" }, { "value": "522630", "label": "台江县" }, { "value": "522631", "label": "黎平县" }, { "value": "522632", "label": "榕江县" }, { "value": "522633", "label": "从江县" }, { "value": "522634", "label": "雷山县" }, { "value": "522635", "label": "麻江县" }, { "value": "522636", "label": "丹寨县" }] }, { "value": "5227", "label": "黔南布依族苗族自治州", "children": [{ "value": "522701", "label": "都匀市" }, { "value": "522702", "label": "福泉市" }, { "value": "522722", "label": "荔波县" }, { "value": "522723", "label": "贵定县" }, { "value": "522725", "label": "瓮安县" }, { "value": "522726", "label": "独山县" }, { "value": "522727", "label": "平塘县" }, { "value": "522728", "label": "罗甸县" }, { "value": "522729", "label": "长顺县" }, { "value": "522730", "label": "龙里县" }, { "value": "522731", "label": "惠水县" }, { "value": "522732", "label": "三都水族自治县" }] }] }, { "value": "53", "label": "云南省", "children": [{ "value": "5301", "label": "昆明市", "children": [{ "value": "530102", "label": "五华区" }, { "value": "530103", "label": "盘龙区" }, { "value": "530111", "label": "官渡区" }, { "value": "530112", "label": "西山区" }, { "value": "530113", "label": "东川区" }, { "value": "530114", "label": "呈贡区" }, { "value": "530115", "label": "晋宁区" }, { "value": "530124", "label": "富民县" }, { "value": "530125", "label": "宜良县" }, { "value": "530126", "label": "石林彝族自治县" }, { "value": "530127", "label": "嵩明县" }, { "value": "530128", "label": "禄劝彝族苗族自治县" }, { "value": "530129", "label": "寻甸回族彝族自治县" }, { "value": "530181", "label": "安宁市" }] }, { "value": "5303", "label": "曲靖市", "children": [{ "value": "530302", "label": "麒麟区" }, { "value": "530303", "label": "沾益区" }, { "value": "530304", "label": "马龙区" }, { "value": "530322", "label": "陆良县" }, { "value": "530323", "label": "师宗县" }, { "value": "530324", "label": "罗平县" }, { "value": "530325", "label": "富源县" }, { "value": "530326", "label": "会泽县" }, { "value": "530381", "label": "宣威市" }] }, { "value": "5304", "label": "玉溪市", "children": [{ "value": "530402", "label": "红塔区" }, { "value": "530403", "label": "江川区" }, { "value": "530422", "label": "澄江县" }, { "value": "530423", "label": "通海县" }, { "value": "530424", "label": "华宁县" }, { "value": "530425", "label": "易门县" }, { "value": "530426", "label": "峨山彝族自治县" }, { "value": "530427", "label": "新平彝族傣族自治县" }, { "value": "530428", "label": "元江哈尼族彝族傣族自治县" }] }, { "value": "5305", "label": "保山市", "children": [{ "value": "530502", "label": "隆阳区" }, { "value": "530521", "label": "施甸县" }, { "value": "530523", "label": "龙陵县" }, { "value": "530524", "label": "昌宁县" }, { "value": "530581", "label": "腾冲市" }] }, { "value": "5306", "label": "昭通市", "children": [{ "value": "530602", "label": "昭阳区" }, { "value": "530621", "label": "鲁甸县" }, { "value": "530622", "label": "巧家县" }, { "value": "530623", "label": "盐津县" }, { "value": "530624", "label": "大关县" }, { "value": "530625", "label": "永善县" }, { "value": "530626", "label": "绥江县" }, { "value": "530627", "label": "镇雄县" }, { "value": "530628", "label": "彝良县" }, { "value": "530629", "label": "威信县" }, { "value": "530681", "label": "水富市" }] }, { "value": "5307", "label": "丽江市", "children": [{ "value": "530702", "label": "古城区" }, { "value": "530721", "label": "玉龙纳西族自治县" }, { "value": "530722", "label": "永胜县" }, { "value": "530723", "label": "华坪县" }, { "value": "530724", "label": "宁蒗彝族自治县" }] }, { "value": "5308", "label": "普洱市", "children": [{ "value": "530802", "label": "思茅区" }, { "value": "530821", "label": "宁洱哈尼族彝族自治县" }, { "value": "530822", "label": "墨江哈尼族自治县" }, { "value": "530823", "label": "景东彝族自治县" }, { "value": "530824", "label": "景谷傣族彝族自治县" }, { "value": "530825", "label": "镇沅彝族哈尼族拉祜族自治县" }, { "value": "530826", "label": "江城哈尼族彝族自治县" }, { "value": "530827", "label": "孟连傣族拉祜族佤族自治县" }, { "value": "530828", "label": "澜沧拉祜族自治县" }, { "value": "530829", "label": "西盟佤族自治县" }] }, { "value": "5309", "label": "临沧市", "children": [{ "value": "530902", "label": "临翔区" }, { "value": "530921", "label": "凤庆县" }, { "value": "530922", "label": "云县" }, { "value": "530923", "label": "永德县" }, { "value": "530924", "label": "镇康县" }, { "value": "530925", "label": "双江拉祜族佤族布朗族傣族自治县" }, { "value": "530926", "label": "耿马傣族佤族自治县" }, { "value": "530927", "label": "沧源佤族自治县" }] }, { "value": "5323", "label": "楚雄彝族自治州", "children": [{ "value": "532301", "label": "楚雄市" }, { "value": "532322", "label": "双柏县" }, { "value": "532323", "label": "牟定县" }, { "value": "532324", "label": "南华县" }, { "value": "532325", "label": "姚安县" }, { "value": "532326", "label": "大姚县" }, { "value": "532327", "label": "永仁县" }, { "value": "532328", "label": "元谋县" }, { "value": "532329", "label": "武定县" }, { "value": "532331", "label": "禄丰县" }] }, { "value": "5325", "label": "红河哈尼族彝族自治州", "children": [{ "value": "532501", "label": "个旧市" }, { "value": "532502", "label": "开远市" }, { "value": "532503", "label": "蒙自市" }, { "value": "532504", "label": "弥勒市" }, { "value": "532523", "label": "屏边苗族自治县" }, { "value": "532524", "label": "建水县" }, { "value": "532525", "label": "石屏县" }, { "value": "532527", "label": "泸西县" }, { "value": "532528", "label": "元阳县" }, { "value": "532529", "label": "红河县" }, { "value": "532530", "label": "金平苗族瑶族傣族自治县" }, { "value": "532531", "label": "绿春县" }, { "value": "532532", "label": "河口瑶族自治县" }] }, { "value": "5326", "label": "文山壮族苗族自治州", "children": [{ "value": "532601", "label": "文山市" }, { "value": "532622", "label": "砚山县" }, { "value": "532623", "label": "西畴县" }, { "value": "532624", "label": "麻栗坡县" }, { "value": "532625", "label": "马关县" }, { "value": "532626", "label": "丘北县" }, { "value": "532627", "label": "广南县" }, { "value": "532628", "label": "富宁县" }] }, { "value": "5328", "label": "西双版纳傣族自治州", "children": [{ "value": "532801", "label": "景洪市" }, { "value": "532822", "label": "勐海县" }, { "value": "532823", "label": "勐腊县" }] }, { "value": "5329", "label": "大理白族自治州", "children": [{ "value": "532901", "label": "大理市" }, { "value": "532922", "label": "漾濞彝族自治县" }, { "value": "532923", "label": "祥云县" }, { "value": "532924", "label": "宾川县" }, { "value": "532925", "label": "弥渡县" }, { "value": "532926", "label": "南涧彝族自治县" }, { "value": "532927", "label": "巍山彝族回族自治县" }, { "value": "532928", "label": "永平县" }, { "value": "532929", "label": "云龙县" }, { "value": "532930", "label": "洱源县" }, { "value": "532931", "label": "剑川县" }, { "value": "532932", "label": "鹤庆县" }] }, { "value": "5331", "label": "德宏傣族景颇族自治州", "children": [{ "value": "533102", "label": "瑞丽市" }, { "value": "533103", "label": "芒市" }, { "value": "533122", "label": "梁河县" }, { "value": "533123", "label": "盈江县" }, { "value": "533124", "label": "陇川县" }] }, { "value": "5333", "label": "怒江傈僳族自治州", "children": [{ "value": "533301", "label": "泸水市" }, { "value": "533323", "label": "福贡县" }, { "value": "533324", "label": "贡山独龙族怒族自治县" }, { "value": "533325", "label": "兰坪白族普米族自治县" }] }, { "value": "5334", "label": "迪庆藏族自治州", "children": [{ "value": "533401", "label": "香格里拉市" }, { "value": "533422", "label": "德钦县" }, { "value": "533423", "label": "维西傈僳族自治县" }] }] }, { "value": "54", "label": "西藏自治区", "children": [{ "value": "5401", "label": "拉萨市", "children": [{ "value": "540102", "label": "城关区" }, { "value": "540103", "label": "堆龙德庆区" }, { "value": "540104", "label": "达孜区" }, { "value": "540121", "label": "林周县" }, { "value": "540122", "label": "当雄县" }, { "value": "540123", "label": "尼木县" }, { "value": "540124", "label": "曲水县" }, { "value": "540127", "label": "墨竹工卡县" }, { "value": "540171", "label": "格尔木藏青工业园区" }, { "value": "540172", "label": "拉萨经济技术开发区" }, { "value": "540173", "label": "西藏文化旅游创意园区" }, { "value": "540174", "label": "达孜工业园区" }] }, { "value": "5402", "label": "日喀则市", "children": [{ "value": "540202", "label": "桑珠孜区" }, { "value": "540221", "label": "南木林县" }, { "value": "540222", "label": "江孜县" }, { "value": "540223", "label": "定日县" }, { "value": "540224", "label": "萨迦县" }, { "value": "540225", "label": "拉孜县" }, { "value": "540226", "label": "昂仁县" }, { "value": "540227", "label": "谢通门县" }, { "value": "540228", "label": "白朗县" }, { "value": "540229", "label": "仁布县" }, { "value": "540230", "label": "康马县" }, { "value": "540231", "label": "定结县" }, { "value": "540232", "label": "仲巴县" }, { "value": "540233", "label": "亚东县" }, { "value": "540234", "label": "吉隆县" }, { "value": "540235", "label": "聂拉木县" }, { "value": "540236", "label": "萨嘎县" }, { "value": "540237", "label": "岗巴县" }] }, { "value": "5403", "label": "昌都市", "children": [{ "value": "540302", "label": "卡若区" }, { "value": "540321", "label": "江达县" }, { "value": "540322", "label": "贡觉县" }, { "value": "540323", "label": "类乌齐县" }, { "value": "540324", "label": "丁青县" }, { "value": "540325", "label": "察雅县" }, { "value": "540326", "label": "八宿县" }, { "value": "540327", "label": "左贡县" }, { "value": "540328", "label": "芒康县" }, { "value": "540329", "label": "洛隆县" }, { "value": "540330", "label": "边坝县" }] }, { "value": "5404", "label": "林芝市", "children": [{ "value": "540402", "label": "巴宜区" }, { "value": "540421", "label": "工布江达县" }, { "value": "540422", "label": "米林县" }, { "value": "540423", "label": "墨脱县" }, { "value": "540424", "label": "波密县" }, { "value": "540425", "label": "察隅县" }, { "value": "540426", "label": "朗县" }] }, { "value": "5405", "label": "山南市", "children": [{ "value": "540502", "label": "乃东区" }, { "value": "540521", "label": "扎囊县" }, { "value": "540522", "label": "贡嘎县" }, { "value": "540523", "label": "桑日县" }, { "value": "540524", "label": "琼结县" }, { "value": "540525", "label": "曲松县" }, { "value": "540526", "label": "措美县" }, { "value": "540527", "label": "洛扎县" }, { "value": "540528", "label": "加查县" }, { "value": "540529", "label": "隆子县" }, { "value": "540530", "label": "错那县" }, { "value": "540531", "label": "浪卡子县" }] }, { "value": "5406", "label": "那曲市", "children": [{ "value": "540602", "label": "色尼区" }, { "value": "540621", "label": "嘉黎县" }, { "value": "540622", "label": "比如县" }, { "value": "540623", "label": "聂荣县" }, { "value": "540624", "label": "安多县" }, { "value": "540625", "label": "申扎县" }, { "value": "540626", "label": "索县" }, { "value": "540627", "label": "班戈县" }, { "value": "540628", "label": "巴青县" }, { "value": "540629", "label": "尼玛县" }, { "value": "540630", "label": "双湖县" }] }, { "value": "5425", "label": "阿里地区", "children": [{ "value": "542521", "label": "普兰县" }, { "value": "542522", "label": "札达县" }, { "value": "542523", "label": "噶尔县" }, { "value": "542524", "label": "日土县" }, { "value": "542525", "label": "革吉县" }, { "value": "542526", "label": "改则县" }, { "value": "542527", "label": "措勤县" }] }] }, { "value": "61", "label": "陕西省", "children": [{ "value": "6101", "label": "西安市", "children": [{ "value": "610102", "label": "新城区" }, { "value": "610103", "label": "碑林区" }, { "value": "610104", "label": "莲湖区" }, { "value": "610111", "label": "灞桥区" }, { "value": "610112", "label": "未央区" }, { "value": "610113", "label": "雁塔区" }, { "value": "610114", "label": "阎良区" }, { "value": "610115", "label": "临潼区" }, { "value": "610116", "label": "长安区" }, { "value": "610117", "label": "高陵区" }, { "value": "610118", "label": "鄠邑区" }, { "value": "610122", "label": "蓝田县" }, { "value": "610124", "label": "周至县" }] }, { "value": "6102", "label": "铜川市", "children": [{ "value": "610202", "label": "王益区" }, { "value": "610203", "label": "印台区" }, { "value": "610204", "label": "耀州区" }, { "value": "610222", "label": "宜君县" }] }, { "value": "6103", "label": "宝鸡市", "children": [{ "value": "610302", "label": "渭滨区" }, { "value": "610303", "label": "金台区" }, { "value": "610304", "label": "陈仓区" }, { "value": "610322", "label": "凤翔县" }, { "value": "610323", "label": "岐山县" }, { "value": "610324", "label": "扶风县" }, { "value": "610326", "label": "眉县" }, { "value": "610327", "label": "陇县" }, { "value": "610328", "label": "千阳县" }, { "value": "610329", "label": "麟游县" }, { "value": "610330", "label": "凤县" }, { "value": "610331", "label": "太白县" }] }, { "value": "6104", "label": "咸阳市", "children": [{ "value": "610402", "label": "秦都区" }, { "value": "610403", "label": "杨陵区" }, { "value": "610404", "label": "渭城区" }, { "value": "610422", "label": "三原县" }, { "value": "610423", "label": "泾阳县" }, { "value": "610424", "label": "乾县" }, { "value": "610425", "label": "礼泉县" }, { "value": "610426", "label": "永寿县" }, { "value": "610428", "label": "长武县" }, { "value": "610429", "label": "旬邑县" }, { "value": "610430", "label": "淳化县" }, { "value": "610431", "label": "武功县" }, { "value": "610481", "label": "兴平市" }, { "value": "610482", "label": "彬州市" }] }, { "value": "6105", "label": "渭南市", "children": [{ "value": "610502", "label": "临渭区" }, { "value": "610503", "label": "华州区" }, { "value": "610522", "label": "潼关县" }, { "value": "610523", "label": "大荔县" }, { "value": "610524", "label": "合阳县" }, { "value": "610525", "label": "澄城县" }, { "value": "610526", "label": "蒲城县" }, { "value": "610527", "label": "白水县" }, { "value": "610528", "label": "富平县" }, { "value": "610581", "label": "韩城市" }, { "value": "610582", "label": "华阴市" }] }, { "value": "6106", "label": "延安市", "children": [{ "value": "610602", "label": "宝塔区" }, { "value": "610603", "label": "安塞区" }, { "value": "610621", "label": "延长县" }, { "value": "610622", "label": "延川县" }, { "value": "610623", "label": "子长县" }, { "value": "610625", "label": "志丹县" }, { "value": "610626", "label": "吴起县" }, { "value": "610627", "label": "甘泉县" }, { "value": "610628", "label": "富县" }, { "value": "610629", "label": "洛川县" }, { "value": "610630", "label": "宜川县" }, { "value": "610631", "label": "黄龙县" }, { "value": "610632", "label": "黄陵县" }] }, { "value": "6107", "label": "汉中市", "children": [{ "value": "610702", "label": "汉台区" }, { "value": "610703", "label": "南郑区" }, { "value": "610722", "label": "城固县" }, { "value": "610723", "label": "洋县" }, { "value": "610724", "label": "西乡县" }, { "value": "610725", "label": "勉县" }, { "value": "610726", "label": "宁强县" }, { "value": "610727", "label": "略阳县" }, { "value": "610728", "label": "镇巴县" }, { "value": "610729", "label": "留坝县" }, { "value": "610730", "label": "佛坪县" }] }, { "value": "6108", "label": "榆林市", "children": [{ "value": "610802", "label": "榆阳区" }, { "value": "610803", "label": "横山区" }, { "value": "610822", "label": "府谷县" }, { "value": "610824", "label": "靖边县" }, { "value": "610825", "label": "定边县" }, { "value": "610826", "label": "绥德县" }, { "value": "610827", "label": "米脂县" }, { "value": "610828", "label": "佳县" }, { "value": "610829", "label": "吴堡县" }, { "value": "610830", "label": "清涧县" }, { "value": "610831", "label": "子洲县" }, { "value": "610881", "label": "神木市" }] }, { "value": "6109", "label": "安康市", "children": [{ "value": "610902", "label": "汉滨区" }, { "value": "610921", "label": "汉阴县" }, { "value": "610922", "label": "石泉县" }, { "value": "610923", "label": "宁陕县" }, { "value": "610924", "label": "紫阳县" }, { "value": "610925", "label": "岚皋县" }, { "value": "610926", "label": "平利县" }, { "value": "610927", "label": "镇坪县" }, { "value": "610928", "label": "旬阳县" }, { "value": "610929", "label": "白河县" }] }, { "value": "6110", "label": "商洛市", "children": [{ "value": "611002", "label": "商州区" }, { "value": "611021", "label": "洛南县" }, { "value": "611022", "label": "丹凤县" }, { "value": "611023", "label": "商南县" }, { "value": "611024", "label": "山阳县" }, { "value": "611025", "label": "镇安县" }, { "value": "611026", "label": "柞水县" }] }] }, { "value": "62", "label": "甘肃省", "children": [{ "value": "6201", "label": "兰州市", "children": [{ "value": "620102", "label": "城关区" }, { "value": "620103", "label": "七里河区" }, { "value": "620104", "label": "西固区" }, { "value": "620105", "label": "安宁区" }, { "value": "620111", "label": "红古区" }, { "value": "620121", "label": "永登县" }, { "value": "620122", "label": "皋兰县" }, { "value": "620123", "label": "榆中县" }, { "value": "620171", "label": "兰州新区" }] }, { "value": "6202", "label": "嘉峪关市", "children": [{ "value": "620201100", "label": "新城镇" }, { "value": "620201101", "label": "峪泉镇" }, { "value": "620201102", "label": "文殊镇" }, { "value": "620201401", "label": "雄关区" }, { "value": "620201402", "label": "镜铁区" }, { "value": "620201403", "label": "长城区" }] }, { "value": "6203", "label": "金昌市", "children": [{ "value": "620302", "label": "金川区" }, { "value": "620321", "label": "永昌县" }] }, { "value": "6204", "label": "白银市", "children": [{ "value": "620402", "label": "白银区" }, { "value": "620403", "label": "平川区" }, { "value": "620421", "label": "靖远县" }, { "value": "620422", "label": "会宁县" }, { "value": "620423", "label": "景泰县" }] }, { "value": "6205", "label": "天水市", "children": [{ "value": "620502", "label": "秦州区" }, { "value": "620503", "label": "麦积区" }, { "value": "620521", "label": "清水县" }, { "value": "620522", "label": "秦安县" }, { "value": "620523", "label": "甘谷县" }, { "value": "620524", "label": "武山县" }, { "value": "620525", "label": "张家川回族自治县" }] }, { "value": "6206", "label": "武威市", "children": [{ "value": "620602", "label": "凉州区" }, { "value": "620621", "label": "民勤县" }, { "value": "620622", "label": "古浪县" }, { "value": "620623", "label": "天祝藏族自治县" }] }, { "value": "6207", "label": "张掖市", "children": [{ "value": "620702", "label": "甘州区" }, { "value": "620721", "label": "肃南裕固族自治县" }, { "value": "620722", "label": "民乐县" }, { "value": "620723", "label": "临泽县" }, { "value": "620724", "label": "高台县" }, { "value": "620725", "label": "山丹县" }] }, { "value": "6208", "label": "平凉市", "children": [{ "value": "620802", "label": "崆峒区" }, { "value": "620821", "label": "泾川县" }, { "value": "620822", "label": "灵台县" }, { "value": "620823", "label": "崇信县" }, { "value": "620825", "label": "庄浪县" }, { "value": "620826", "label": "静宁县" }, { "value": "620881", "label": "华亭市" }] }, { "value": "6209", "label": "酒泉市", "children": [{ "value": "620902", "label": "肃州区" }, { "value": "620921", "label": "金塔县" }, { "value": "620922", "label": "瓜州县" }, { "value": "620923", "label": "肃北蒙古族自治县" }, { "value": "620924", "label": "阿克塞哈萨克族自治县" }, { "value": "620981", "label": "玉门市" }, { "value": "620982", "label": "敦煌市" }] }, { "value": "6210", "label": "庆阳市", "children": [{ "value": "621002", "label": "西峰区" }, { "value": "621021", "label": "庆城县" }, { "value": "621022", "label": "环县" }, { "value": "621023", "label": "华池县" }, { "value": "621024", "label": "合水县" }, { "value": "621025", "label": "正宁县" }, { "value": "621026", "label": "宁县" }, { "value": "621027", "label": "镇原县" }] }, { "value": "6211", "label": "定西市", "children": [{ "value": "621102", "label": "安定区" }, { "value": "621121", "label": "通渭县" }, { "value": "621122", "label": "陇西县" }, { "value": "621123", "label": "渭源县" }, { "value": "621124", "label": "临洮县" }, { "value": "621125", "label": "漳县" }, { "value": "621126", "label": "岷县" }] }, { "value": "6212", "label": "陇南市", "children": [{ "value": "621202", "label": "武都区" }, { "value": "621221", "label": "成县" }, { "value": "621222", "label": "文县" }, { "value": "621223", "label": "宕昌县" }, { "value": "621224", "label": "康县" }, { "value": "621225", "label": "西和县" }, { "value": "621226", "label": "礼县" }, { "value": "621227", "label": "徽县" }, { "value": "621228", "label": "两当县" }] }, { "value": "6229", "label": "临夏回族自治州", "children": [{ "value": "622901", "label": "临夏市" }, { "value": "622921", "label": "临夏县" }, { "value": "622922", "label": "康乐县" }, { "value": "622923", "label": "永靖县" }, { "value": "622924", "label": "广河县" }, { "value": "622925", "label": "和政县" }, { "value": "622926", "label": "东乡族自治县" }, { "value": "622927", "label": "积石山保安族东乡族撒拉族自治县" }] }, { "value": "6230", "label": "甘南藏族自治州", "children": [{ "value": "623001", "label": "合作市" }, { "value": "623021", "label": "临潭县" }, { "value": "623022", "label": "卓尼县" }, { "value": "623023", "label": "舟曲县" }, { "value": "623024", "label": "迭部县" }, { "value": "623025", "label": "玛曲县" }, { "value": "623026", "label": "碌曲县" }, { "value": "623027", "label": "夏河县" }] }] }, { "value": "63", "label": "青海省", "children": [{ "value": "6301", "label": "西宁市", "children": [{ "value": "630102", "label": "城东区" }, { "value": "630103", "label": "城中区" }, { "value": "630104", "label": "城西区" }, { "value": "630105", "label": "城北区" }, { "value": "630121", "label": "大通回族土族自治县" }, { "value": "630122", "label": "湟中县" }, { "value": "630123", "label": "湟源县" }] }, { "value": "6302", "label": "海东市", "children": [{ "value": "630202", "label": "乐都区" }, { "value": "630203", "label": "平安区" }, { "value": "630222", "label": "民和回族土族自治县" }, { "value": "630223", "label": "互助土族自治县" }, { "value": "630224", "label": "化隆回族自治县" }, { "value": "630225", "label": "循化撒拉族自治县" }] }, { "value": "6322", "label": "海北藏族自治州", "children": [{ "value": "632221", "label": "门源回族自治县" }, { "value": "632222", "label": "祁连县" }, { "value": "632223", "label": "海晏县" }, { "value": "632224", "label": "刚察县" }] }, { "value": "6323", "label": "黄南藏族自治州", "children": [{ "value": "632321", "label": "同仁县" }, { "value": "632322", "label": "尖扎县" }, { "value": "632323", "label": "泽库县" }, { "value": "632324", "label": "河南蒙古族自治县" }] }, { "value": "6325", "label": "海南藏族自治州", "children": [{ "value": "632521", "label": "共和县" }, { "value": "632522", "label": "同德县" }, { "value": "632523", "label": "贵德县" }, { "value": "632524", "label": "兴海县" }, { "value": "632525", "label": "贵南县" }] }, { "value": "6326", "label": "果洛藏族自治州", "children": [{ "value": "632621", "label": "玛沁县" }, { "value": "632622", "label": "班玛县" }, { "value": "632623", "label": "甘德县" }, { "value": "632624", "label": "达日县" }, { "value": "632625", "label": "久治县" }, { "value": "632626", "label": "玛多县" }] }, { "value": "6327", "label": "玉树藏族自治州", "children": [{ "value": "632701", "label": "玉树市" }, { "value": "632722", "label": "杂多县" }, { "value": "632723", "label": "称多县" }, { "value": "632724", "label": "治多县" }, { "value": "632725", "label": "囊谦县" }, { "value": "632726", "label": "曲麻莱县" }] }, { "value": "6328", "label": "海西蒙古族藏族自治州", "children": [{ "value": "632801", "label": "格尔木市" }, { "value": "632802", "label": "德令哈市" }, { "value": "632803", "label": "茫崖市" }, { "value": "632821", "label": "乌兰县" }, { "value": "632822", "label": "都兰县" }, { "value": "632823", "label": "天峻县" }, { "value": "632857", "label": "大柴旦行政委员会" }] }] }, { "value": "64", "label": "宁夏回族自治区", "children": [{ "value": "6401", "label": "银川市", "children": [{ "value": "640104", "label": "兴庆区" }, { "value": "640105", "label": "西夏区" }, { "value": "640106", "label": "金凤区" }, { "value": "640121", "label": "永宁县" }, { "value": "640122", "label": "贺兰县" }, { "value": "640181", "label": "灵武市" }] }, { "value": "6402", "label": "石嘴山市", "children": [{ "value": "640202", "label": "大武口区" }, { "value": "640205", "label": "惠农区" }, { "value": "640221", "label": "平罗县" }] }, { "value": "6403", "label": "吴忠市", "children": [{ "value": "640302", "label": "利通区" }, { "value": "640303", "label": "红寺堡区" }, { "value": "640323", "label": "盐池县" }, { "value": "640324", "label": "同心县" }, { "value": "640381", "label": "青铜峡市" }] }, { "value": "6404", "label": "固原市", "children": [{ "value": "640402", "label": "原州区" }, { "value": "640422", "label": "西吉县" }, { "value": "640423", "label": "隆德县" }, { "value": "640424", "label": "泾源县" }, { "value": "640425", "label": "彭阳县" }] }, { "value": "6405", "label": "中卫市", "children": [{ "value": "640502", "label": "沙坡头区" }, { "value": "640521", "label": "中宁县" }, { "value": "640522", "label": "海原县" }] }] }, { "value": "65", "label": "新疆维吾尔自治区", "children": [{ "value": "6501", "label": "乌鲁木齐市", "children": [{ "value": "650102", "label": "天山区" }, { "value": "650103", "label": "沙依巴克区" }, { "value": "650104", "label": "新市区" }, { "value": "650105", "label": "水磨沟区" }, { "value": "650106", "label": "头屯河区" }, { "value": "650107", "label": "达坂城区" }, { "value": "650109", "label": "米东区" }, { "value": "650121", "label": "乌鲁木齐县" }, { "value": "650171", "label": "乌鲁木齐经济技术开发区" }, { "value": "650172", "label": "乌鲁木齐高新技术产业开发区" }] }, { "value": "6502", "label": "克拉玛依市", "children": [{ "value": "650202", "label": "独山子区" }, { "value": "650203", "label": "克拉玛依区" }, { "value": "650204", "label": "白碱滩区" }, { "value": "650205", "label": "乌尔禾区" }] }, { "value": "6504", "label": "吐鲁番市", "children": [{ "value": "650402", "label": "高昌区" }, { "value": "650421", "label": "鄯善县" }, { "value": "650422", "label": "托克逊县" }] }, { "value": "6505", "label": "哈密市", "children": [{ "value": "650502", "label": "伊州区" }, { "value": "650521", "label": "巴里坤哈萨克自治县" }, { "value": "650522", "label": "伊吾县" }] }, { "value": "6523", "label": "昌吉回族自治州", "children": [{ "value": "652301", "label": "昌吉市" }, { "value": "652302", "label": "阜康市" }, { "value": "652323", "label": "呼图壁县" }, { "value": "652324", "label": "玛纳斯县" }, { "value": "652325", "label": "奇台县" }, { "value": "652327", "label": "吉木萨尔县" }, { "value": "652328", "label": "木垒哈萨克自治县" }] }, { "value": "6527", "label": "博尔塔拉蒙古自治州", "children": [{ "value": "652701", "label": "博乐市" }, { "value": "652702", "label": "阿拉山口市" }, { "value": "652722", "label": "精河县" }, { "value": "652723", "label": "温泉县" }] }, { "value": "6528", "label": "巴音郭楞蒙古自治州", "children": [{ "value": "652801", "label": "库尔勒市" }, { "value": "652822", "label": "轮台县" }, { "value": "652823", "label": "尉犁县" }, { "value": "652824", "label": "若羌县" }, { "value": "652825", "label": "且末县" }, { "value": "652826", "label": "焉耆回族自治县" }, { "value": "652827", "label": "和静县" }, { "value": "652828", "label": "和硕县" }, { "value": "652829", "label": "博湖县" }, { "value": "652871", "label": "库尔勒经济技术开发区" }] }, { "value": "6529", "label": "阿克苏地区", "children": [{ "value": "652901", "label": "阿克苏市" }, { "value": "652922", "label": "温宿县" }, { "value": "652923", "label": "库车县" }, { "value": "652924", "label": "沙雅县" }, { "value": "652925", "label": "新和县" }, { "value": "652926", "label": "拜城县" }, { "value": "652927", "label": "乌什县" }, { "value": "652928", "label": "阿瓦提县" }, { "value": "652929", "label": "柯坪县" }] }, { "value": "6530", "label": "克孜勒苏柯尔克孜自治州", "children": [{ "value": "653001", "label": "阿图什市" }, { "value": "653022", "label": "阿克陶县" }, { "value": "653023", "label": "阿合奇县" }, { "value": "653024", "label": "乌恰县" }] }, { "value": "6531", "label": "喀什地区", "children": [{ "value": "653101", "label": "喀什市" }, { "value": "653121", "label": "疏附县" }, { "value": "653122", "label": "疏勒县" }, { "value": "653123", "label": "英吉沙县" }, { "value": "653124", "label": "泽普县" }, { "value": "653125", "label": "莎车县" }, { "value": "653126", "label": "叶城县" }, { "value": "653127", "label": "麦盖提县" }, { "value": "653128", "label": "岳普湖县" }, { "value": "653129", "label": "伽师县" }, { "value": "653130", "label": "巴楚县" }, { "value": "653131", "label": "塔什库尔干塔吉克自治县" }] }, { "value": "6532", "label": "和田地区", "children": [{ "value": "653201", "label": "和田市" }, { "value": "653221", "label": "和田县" }, { "value": "653222", "label": "墨玉县" }, { "value": "653223", "label": "皮山县" }, { "value": "653224", "label": "洛浦县" }, { "value": "653225", "label": "策勒县" }, { "value": "653226", "label": "于田县" }, { "value": "653227", "label": "民丰县" }] }, { "value": "6540", "label": "伊犁哈萨克自治州", "children": [{ "value": "654002", "label": "伊宁市" }, { "value": "654003", "label": "奎屯市" }, { "value": "654004", "label": "霍尔果斯市" }, { "value": "654021", "label": "伊宁县" }, { "value": "654022", "label": "察布查尔锡伯自治县" }, { "value": "654023", "label": "霍城县" }, { "value": "654024", "label": "巩留县" }, { "value": "654025", "label": "新源县" }, { "value": "654026", "label": "昭苏县" }, { "value": "654027", "label": "特克斯县" }, { "value": "654028", "label": "尼勒克县" }] }, { "value": "6542", "label": "塔城地区", "children": [{ "value": "654201", "label": "塔城市" }, { "value": "654202", "label": "乌苏市" }, { "value": "654221", "label": "额敏县" }, { "value": "654223", "label": "沙湾县" }, { "value": "654224", "label": "托里县" }, { "value": "654225", "label": "裕民县" }, { "value": "654226", "label": "和布克赛尔蒙古自治县" }] }, { "value": "6543", "label": "阿勒泰地区", "children": [{ "value": "654301", "label": "阿勒泰市" }, { "value": "654321", "label": "布尔津县" }, { "value": "654322", "label": "富蕴县" }, { "value": "654323", "label": "福海县" }, { "value": "654324", "label": "哈巴河县" }, { "value": "654325", "label": "青河县" }, { "value": "654326", "label": "吉木乃县" }] }, { "value": "6590", "label": "自治区直辖县级行政区划", "children": [{ "value": "659001", "label": "石河子市" }, { "value": "659002", "label": "阿拉尔市" }, { "value": "659003", "label": "图木舒克市" }, { "value": "659004", "label": "五家渠市" }, { "value": "659006", "label": "铁门关市" }] }] },
-
-{
-  "value": "67", "label": "香港特别行政区", "children": [{
-    "value": "6701", "label": "香港", "children": [
-    { "value": "670101", "label": "中西区" },
-    { "value": "670102", "label": "湾仔区" },
-    { "value": "670103", "label": "东区" },
-    { "value": "670104", "label": "南区" },
-    { "value": "670105", "label": "九龙-油尖旺区" },
-    { "value": "670106", "label": "九龙-深水埗区" },
-    { "value": "670107", "label": "九龙-九龙城区" },
-    { "value": "670108", "label": "九龙-黄大仙区" },
-    { "value": "670109", "label": "九龙-观塘区" },
-    { "value": "670110", "label": "新界-北区" },
-    { "value": "670111", "label": "新界-大埔区" },
-    { "value": "670112", "label": "新界-沙田区" },
-    { "value": "670113", "label": "新界-西贡区" },
-    { "value": "670114", "label": "新界-荃湾区" },
-    { "value": "670115", "label": "新界-屯门区" },
-    { "value": "670116", "label": "新界-元朗区" },
-    { "value": "670117", "label": "新界-葵青区" },
-    { "value": "670118", "label": "新界-离岛区" }] }] },
-
-
-
-
-
-{
-  "value": "68", "label": "澳门特别行政区", "children": [{
-    "value": "6801", "label": "澳门", "children": [
-    { "value": "680101", "label": "花地玛堂区" },
-    { "value": "680102", "label": "圣安多尼堂区" },
-    { "value": "680103", "label": "大堂区" },
-    { "value": "680104", "label": "望德堂区" },
-    { "value": "680105", "label": "风顺堂区" },
-    { "value": "680106", "label": "嘉模堂区" },
-    { "value": "680107", "label": "圣方济各堂区" },
-    { "value": "680108", "label": "路氹城" }] }] },
-
-
-
-
-
-{
-  "value": "69", "label": "台湾省", "children": [
-  {
-    "value": "6901", "label": "台北市", "children":
-    [
-    { "value": "690101", "label": "中正区" },
-    { "value": "690102", "label": "大同区" },
-    { "value": "690103", "label": "中山区" },
-    { "value": "690104", "label": "松山区" },
-    { "value": "690105", "label": "大安区" },
-    { "value": "690106", "label": "万华区" },
-    { "value": "690107", "label": "信义区" },
-    { "value": "690108", "label": "士林区" },
-    { "value": "690109", "label": "北投区" },
-    { "value": "690110", "label": "内湖区" },
-    { "value": "690111", "label": "南港区" },
-    { "value": "690112", "label": "文山区" }] },
-
-
-  {
-    "value": "6902", "label": "高雄市", "children":
-    [
-    { "value": "690201", "label": "新兴区" },
-    { "value": "690202", "label": "前金区" },
-    { "value": "690203", "label": "芩雅区" },
-    { "value": "690204", "label": "盐埕区" },
-    { "value": "690205", "label": "鼓山区" },
-    { "value": "690206", "label": "旗津区" },
-    { "value": "690207", "label": "前镇区" },
-    { "value": "690208", "label": "三民区" },
-    { "value": "690209", "label": "左营区" },
-    { "value": "690210", "label": "楠梓区" },
-    { "value": "690211", "label": "小港区" }] },
-
-
-  {
-    "value": "6903", "label": "台南市", "children":
-    [
-    { "value": "690301", "label": "中西区" },
-    { "value": "690302", "label": "东区" },
-    { "value": "690303", "label": "南区" },
-    { "value": "690304", "label": "北区" },
-    { "value": "690305", "label": "安平区" },
-    { "value": "690306", "label": "安南区" }] },
-
-
-  {
-    "value": "6904", "label": "台中市", "children":
-    [
-    { "value": "690401", "label": "中区" },
-    { "value": "690402", "label": "东区" },
-    { "value": "690403", "label": "南区" },
-    { "value": "690404", "label": "西区" },
-    { "value": "690405", "label": "北区" },
-    { "value": "690406", "label": "北屯区" },
-    { "value": "690407", "label": "西屯区" },
-    { "value": "690408", "label": "南屯区" }] },
-
-
-  {
-    "value": "6905", "label": "基隆市", "children":
-    [
-    { "value": "690501", "label": "仁爱区" },
-    { "value": "690502", "label": "信义区" },
-    { "value": "690503", "label": "中正区" },
-    { "value": "690504", "label": "中山区" },
-    { "value": "690505", "label": "安乐区" },
-    { "value": "690506", "label": "暖暖区" },
-    { "value": "690507", "label": "七堵区" },
-    { "value": "690508", "label": "南屯区" }] },
-
-
-  {
-    "value": "6906", "label": "新竹市", "children":
-    [
-    { "value": "690601", "label": "东区" },
-    { "value": "690602", "label": "北区" },
-    { "value": "690603", "label": "香山区" }] },
-
-
-  {
-    "value": "6907", "label": "嘉义市", "children":
-    [
-    { "value": "690701", "label": "东区" },
-    { "value": "690702", "label": "西区" }] },
-
-
-  {
-    "value": "6908", "label": "县级", "children":
-    [
-    { "value": "690801", "label": "金门县" },
-    { "value": "690802", "label": "南投县" },
-    { "value": "690803", "label": "宜兰县" },
-    { "value": "690804", "label": "新竹县" },
-    { "value": "690805", "label": "桃园县" },
-    { "value": "690806", "label": "苗栗县" },
-    { "value": "690807", "label": "彰化县" },
-    { "value": "690808", "label": "嘉义县" },
-    { "value": "690809", "label": "云林县" },
-    { "value": "690810", "label": "屏东县" },
-    { "value": "690811", "label": "台东县" },
-    { "value": "690812", "label": "花莲县" },
-    { "value": "690813", "label": "澎湖县" }] }] }];var _default =
-
-
-
-
-
-
-
-city;exports.default = _default;
-
-/***/ }),
-
-/***/ 366:
-/*!*****************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "id": "2852637",
-  "name": "uniui图标库",
-  "font_family": "uniicons",
-  "css_prefix_text": "uniui-",
-  "description": "",
-  "glyphs": [
-  {
-    "icon_id": "25027049",
-    "name": "yanse",
-    "font_class": "color",
-    "unicode": "e6cf",
-    "unicode_decimal": 59087 },
-
-  {
-    "icon_id": "25027048",
-    "name": "wallet",
-    "font_class": "wallet",
-    "unicode": "e6b1",
-    "unicode_decimal": 59057 },
-
-  {
-    "icon_id": "25015720",
-    "name": "settings-filled",
-    "font_class": "settings-filled",
-    "unicode": "e6ce",
-    "unicode_decimal": 59086 },
-
-  {
-    "icon_id": "25015434",
-    "name": "shimingrenzheng-filled",
-    "font_class": "auth-filled",
-    "unicode": "e6cc",
-    "unicode_decimal": 59084 },
-
-  {
-    "icon_id": "24934246",
-    "name": "shop-filled",
-    "font_class": "shop-filled",
-    "unicode": "e6cd",
-    "unicode_decimal": 59085 },
-
-  {
-    "icon_id": "24934159",
-    "name": "staff-filled-01",
-    "font_class": "staff-filled",
-    "unicode": "e6cb",
-    "unicode_decimal": 59083 },
-
-  {
-    "icon_id": "24932461",
-    "name": "VIP-filled",
-    "font_class": "vip-filled",
-    "unicode": "e6c6",
-    "unicode_decimal": 59078 },
-
-  {
-    "icon_id": "24932462",
-    "name": "plus_circle_fill",
-    "font_class": "plus-filled",
-    "unicode": "e6c7",
-    "unicode_decimal": 59079 },
-
-  {
-    "icon_id": "24932463",
-    "name": "folder_add-filled",
-    "font_class": "folder-add-filled",
-    "unicode": "e6c8",
-    "unicode_decimal": 59080 },
-
-  {
-    "icon_id": "24932464",
-    "name": "yanse-filled",
-    "font_class": "color-filled",
-    "unicode": "e6c9",
-    "unicode_decimal": 59081 },
-
-  {
-    "icon_id": "24932465",
-    "name": "tune-filled",
-    "font_class": "tune-filled",
-    "unicode": "e6ca",
-    "unicode_decimal": 59082 },
-
-  {
-    "icon_id": "24932455",
-    "name": "a-rilidaka-filled",
-    "font_class": "calendar-filled",
-    "unicode": "e6c0",
-    "unicode_decimal": 59072 },
-
-  {
-    "icon_id": "24932456",
-    "name": "notification-filled",
-    "font_class": "notification-filled",
-    "unicode": "e6c1",
-    "unicode_decimal": 59073 },
-
-  {
-    "icon_id": "24932457",
-    "name": "wallet-filled",
-    "font_class": "wallet-filled",
-    "unicode": "e6c2",
-    "unicode_decimal": 59074 },
-
-  {
-    "icon_id": "24932458",
-    "name": "paihangbang-filled",
-    "font_class": "medal-filled",
-    "unicode": "e6c3",
-    "unicode_decimal": 59075 },
-
-  {
-    "icon_id": "24932459",
-    "name": "gift-filled",
-    "font_class": "gift-filled",
-    "unicode": "e6c4",
-    "unicode_decimal": 59076 },
-
-  {
-    "icon_id": "24932460",
-    "name": "fire-filled",
-    "font_class": "fire-filled",
-    "unicode": "e6c5",
-    "unicode_decimal": 59077 },
-
-  {
-    "icon_id": "24928001",
-    "name": "refreshempty",
-    "font_class": "refreshempty",
-    "unicode": "e6bf",
-    "unicode_decimal": 59071 },
-
-  {
-    "icon_id": "24926853",
-    "name": "location-ellipse",
-    "font_class": "location-filled",
-    "unicode": "e6af",
-    "unicode_decimal": 59055 },
-
-  {
-    "icon_id": "24926735",
-    "name": "person-filled",
-    "font_class": "person-filled",
-    "unicode": "e69d",
-    "unicode_decimal": 59037 },
-
-  {
-    "icon_id": "24926703",
-    "name": "personadd-filled",
-    "font_class": "personadd-filled",
-    "unicode": "e698",
-    "unicode_decimal": 59032 },
-
-  {
-    "icon_id": "24923351",
-    "name": "back",
-    "font_class": "back",
-    "unicode": "e6b9",
-    "unicode_decimal": 59065 },
-
-  {
-    "icon_id": "24923352",
-    "name": "forward",
-    "font_class": "forward",
-    "unicode": "e6ba",
-    "unicode_decimal": 59066 },
-
-  {
-    "icon_id": "24923353",
-    "name": "arrowthinright",
-    "font_class": "arrow-right",
-    "unicode": "e6bb",
-    "unicode_decimal": 59067 },
-
-  {
-    "icon_id": "24923353",
-    "name": "arrowthinright",
-    "font_class": "arrowthinright",
-    "unicode": "e6bb",
-    "unicode_decimal": 59067 },
-
-  {
-    "icon_id": "24923354",
-    "name": "arrowthinleft",
-    "font_class": "arrow-left",
-    "unicode": "e6bc",
-    "unicode_decimal": 59068 },
-
-  {
-    "icon_id": "24923354",
-    "name": "arrowthinleft",
-    "font_class": "arrowthinleft",
-    "unicode": "e6bc",
-    "unicode_decimal": 59068 },
-
-  {
-    "icon_id": "24923355",
-    "name": "arrowthinup",
-    "font_class": "arrow-up",
-    "unicode": "e6bd",
-    "unicode_decimal": 59069 },
-
-  {
-    "icon_id": "24923355",
-    "name": "arrowthinup",
-    "font_class": "arrowthinup",
-    "unicode": "e6bd",
-    "unicode_decimal": 59069 },
-
-  {
-    "icon_id": "24923356",
-    "name": "arrowthindown",
-    "font_class": "arrow-down",
-    "unicode": "e6be",
-    "unicode_decimal": 59070 },
-  {
-    "icon_id": "24923356",
-    "name": "arrowthindown",
-    "font_class": "arrowthindown",
-    "unicode": "e6be",
-    "unicode_decimal": 59070 },
-
-  {
-    "icon_id": "24923349",
-    "name": "arrowdown",
-    "font_class": "bottom",
-    "unicode": "e6b8",
-    "unicode_decimal": 59064 },
-  {
-    "icon_id": "24923349",
-    "name": "arrowdown",
-    "font_class": "arrowdown",
-    "unicode": "e6b8",
-    "unicode_decimal": 59064 },
-
-  {
-    "icon_id": "24923346",
-    "name": "arrowright",
-    "font_class": "right",
-    "unicode": "e6b5",
-    "unicode_decimal": 59061 },
-
-  {
-    "icon_id": "24923346",
-    "name": "arrowright",
-    "font_class": "arrowright",
-    "unicode": "e6b5",
-    "unicode_decimal": 59061 },
-
-  {
-    "icon_id": "24923347",
-    "name": "arrowup",
-    "font_class": "top",
-    "unicode": "e6b6",
-    "unicode_decimal": 59062 },
-
-  {
-    "icon_id": "24923347",
-    "name": "arrowup",
-    "font_class": "arrowup",
-    "unicode": "e6b6",
-    "unicode_decimal": 59062 },
-
-  {
-    "icon_id": "24923348",
-    "name": "arrowleft",
-    "font_class": "left",
-    "unicode": "e6b7",
-    "unicode_decimal": 59063 },
-
-  {
-    "icon_id": "24923348",
-    "name": "arrowleft",
-    "font_class": "arrowleft",
-    "unicode": "e6b7",
-    "unicode_decimal": 59063 },
-
-  {
-    "icon_id": "24923334",
-    "name": "eye",
-    "font_class": "eye",
-    "unicode": "e651",
-    "unicode_decimal": 58961 },
-
-  {
-    "icon_id": "24923335",
-    "name": "eye-filled",
-    "font_class": "eye-filled",
-    "unicode": "e66a",
-    "unicode_decimal": 58986 },
-
-  {
-    "icon_id": "24923336",
-    "name": "eye-slash",
-    "font_class": "eye-slash",
-    "unicode": "e6b3",
-    "unicode_decimal": 59059 },
-
-  {
-    "icon_id": "24923337",
-    "name": "eye-slash-filled",
-    "font_class": "eye-slash-filled",
-    "unicode": "e6b4",
-    "unicode_decimal": 59060 },
-
-  {
-    "icon_id": "24923305",
-    "name": "info-filled",
-    "font_class": "info-filled",
-    "unicode": "e649",
-    "unicode_decimal": 58953 },
-
-  {
-    "icon_id": "24923299",
-    "name": "reload-01",
-    "font_class": "reload",
-    "unicode": "e6b2",
-    "unicode_decimal": 59058 },
-
-  {
-    "icon_id": "24923195",
-    "name": "mic_slash_fill",
-    "font_class": "micoff-filled",
-    "unicode": "e6b0",
-    "unicode_decimal": 59056 },
-
-  {
-    "icon_id": "24923165",
-    "name": "map-pin-ellipse",
-    "font_class": "map-pin-ellipse",
-    "unicode": "e6ac",
-    "unicode_decimal": 59052 },
-
-  {
-    "icon_id": "24923166",
-    "name": "map-pin",
-    "font_class": "map-pin",
-    "unicode": "e6ad",
-    "unicode_decimal": 59053 },
-
-  {
-    "icon_id": "24923167",
-    "name": "location",
-    "font_class": "location",
-    "unicode": "e6ae",
-    "unicode_decimal": 59054 },
-
-  {
-    "icon_id": "24923064",
-    "name": "starhalf",
-    "font_class": "starhalf",
-    "unicode": "e683",
-    "unicode_decimal": 59011 },
-
-  {
-    "icon_id": "24923065",
-    "name": "star",
-    "font_class": "star",
-    "unicode": "e688",
-    "unicode_decimal": 59016 },
-
-  {
-    "icon_id": "24923066",
-    "name": "star-filled",
-    "font_class": "star-filled",
-    "unicode": "e68f",
-    "unicode_decimal": 59023 },
-
-  {
-    "icon_id": "24899646",
-    "name": "a-rilidaka",
-    "font_class": "calendar",
-    "unicode": "e6a0",
-    "unicode_decimal": 59040 },
-
-  {
-    "icon_id": "24899647",
-    "name": "fire",
-    "font_class": "fire",
-    "unicode": "e6a1",
-    "unicode_decimal": 59041 },
-
-  {
-    "icon_id": "24899648",
-    "name": "paihangbang",
-    "font_class": "medal",
-    "unicode": "e6a2",
-    "unicode_decimal": 59042 },
-
-  {
-    "icon_id": "24899649",
-    "name": "font",
-    "font_class": "font",
-    "unicode": "e6a3",
-    "unicode_decimal": 59043 },
-
-  {
-    "icon_id": "24899650",
-    "name": "gift",
-    "font_class": "gift",
-    "unicode": "e6a4",
-    "unicode_decimal": 59044 },
-
-  {
-    "icon_id": "24899651",
-    "name": "link",
-    "font_class": "link",
-    "unicode": "e6a5",
-    "unicode_decimal": 59045 },
-
-  {
-    "icon_id": "24899652",
-    "name": "notification",
-    "font_class": "notification",
-    "unicode": "e6a6",
-    "unicode_decimal": 59046 },
-
-  {
-    "icon_id": "24899653",
-    "name": "staff",
-    "font_class": "staff",
-    "unicode": "e6a7",
-    "unicode_decimal": 59047 },
-
-  {
-    "icon_id": "24899654",
-    "name": "VIP",
-    "font_class": "vip",
-    "unicode": "e6a8",
-    "unicode_decimal": 59048 },
-
-  {
-    "icon_id": "24899655",
-    "name": "folder_add",
-    "font_class": "folder-add",
-    "unicode": "e6a9",
-    "unicode_decimal": 59049 },
-
-  {
-    "icon_id": "24899656",
-    "name": "tune",
-    "font_class": "tune",
-    "unicode": "e6aa",
-    "unicode_decimal": 59050 },
-
-  {
-    "icon_id": "24899657",
-    "name": "shimingrenzheng",
-    "font_class": "auth",
-    "unicode": "e6ab",
-    "unicode_decimal": 59051 },
-
-  {
-    "icon_id": "24899565",
-    "name": "person",
-    "font_class": "person",
-    "unicode": "e699",
-    "unicode_decimal": 59033 },
-
-  {
-    "icon_id": "24899566",
-    "name": "email-filled",
-    "font_class": "email-filled",
-    "unicode": "e69a",
-    "unicode_decimal": 59034 },
-
-  {
-    "icon_id": "24899567",
-    "name": "phone-filled",
-    "font_class": "phone-filled",
-    "unicode": "e69b",
-    "unicode_decimal": 59035 },
-
-  {
-    "icon_id": "24899568",
-    "name": "phone",
-    "font_class": "phone",
-    "unicode": "e69c",
-    "unicode_decimal": 59036 },
-
-  {
-    "icon_id": "24899570",
-    "name": "email",
-    "font_class": "email",
-    "unicode": "e69e",
-    "unicode_decimal": 59038 },
-
-  {
-    "icon_id": "24899571",
-    "name": "personadd",
-    "font_class": "personadd",
-    "unicode": "e69f",
-    "unicode_decimal": 59039 },
-
-  {
-    "icon_id": "24899558",
-    "name": "chatboxes-filled",
-    "font_class": "chatboxes-filled",
-    "unicode": "e692",
-    "unicode_decimal": 59026 },
-
-  {
-    "icon_id": "24899559",
-    "name": "contact",
-    "font_class": "contact",
-    "unicode": "e693",
-    "unicode_decimal": 59027 },
-
-  {
-    "icon_id": "24899560",
-    "name": "chatbubble-filled",
-    "font_class": "chatbubble-filled",
-    "unicode": "e694",
-    "unicode_decimal": 59028 },
-
-  {
-    "icon_id": "24899561",
-    "name": "contact-filled",
-    "font_class": "contact-filled",
-    "unicode": "e695",
-    "unicode_decimal": 59029 },
-
-  {
-    "icon_id": "24899562",
-    "name": "chatboxes",
-    "font_class": "chatboxes",
-    "unicode": "e696",
-    "unicode_decimal": 59030 },
-
-  {
-    "icon_id": "24899563",
-    "name": "chatbubble",
-    "font_class": "chatbubble",
-    "unicode": "e697",
-    "unicode_decimal": 59031 },
-
-  {
-    "icon_id": "24881290",
-    "name": "upload-filled",
-    "font_class": "upload-filled",
-    "unicode": "e68e",
-    "unicode_decimal": 59022 },
-
-  {
-    "icon_id": "24881292",
-    "name": "upload",
-    "font_class": "upload",
-    "unicode": "e690",
-    "unicode_decimal": 59024 },
-
-  {
-    "icon_id": "24881293",
-    "name": "weixin",
-    "font_class": "weixin",
-    "unicode": "e691",
-    "unicode_decimal": 59025 },
-
-  {
-    "icon_id": "24881274",
-    "name": "compose",
-    "font_class": "compose",
-    "unicode": "e67f",
-    "unicode_decimal": 59007 },
-
-  {
-    "icon_id": "24881275",
-    "name": "qq",
-    "font_class": "qq",
-    "unicode": "e680",
-    "unicode_decimal": 59008 },
-
-  {
-    "icon_id": "24881276",
-    "name": "download-filled",
-    "font_class": "download-filled",
-    "unicode": "e681",
-    "unicode_decimal": 59009 },
-
-  {
-    "icon_id": "24881277",
-    "name": "pengyouquan",
-    "font_class": "pyq",
-    "unicode": "e682",
-    "unicode_decimal": 59010 },
-
-  {
-    "icon_id": "24881279",
-    "name": "sound",
-    "font_class": "sound",
-    "unicode": "e684",
-    "unicode_decimal": 59012 },
-
-  {
-    "icon_id": "24881280",
-    "name": "trash-filled",
-    "font_class": "trash-filled",
-    "unicode": "e685",
-    "unicode_decimal": 59013 },
-
-  {
-    "icon_id": "24881281",
-    "name": "sound-filled",
-    "font_class": "sound-filled",
-    "unicode": "e686",
-    "unicode_decimal": 59014 },
-
-  {
-    "icon_id": "24881282",
-    "name": "trash",
-    "font_class": "trash",
-    "unicode": "e687",
-    "unicode_decimal": 59015 },
-
-  {
-    "icon_id": "24881284",
-    "name": "videocam-filled",
-    "font_class": "videocam-filled",
-    "unicode": "e689",
-    "unicode_decimal": 59017 },
-
-  {
-    "icon_id": "24881285",
-    "name": "spinner-cycle",
-    "font_class": "spinner-cycle",
-    "unicode": "e68a",
-    "unicode_decimal": 59018 },
-
-  {
-    "icon_id": "24881286",
-    "name": "weibo",
-    "font_class": "weibo",
-    "unicode": "e68b",
-    "unicode_decimal": 59019 },
-
-  {
-    "icon_id": "24881288",
-    "name": "videocam",
-    "font_class": "videocam",
-    "unicode": "e68c",
-    "unicode_decimal": 59020 },
-
-  {
-    "icon_id": "24881289",
-    "name": "download",
-    "font_class": "download",
-    "unicode": "e68d",
-    "unicode_decimal": 59021 },
-
-  {
-    "icon_id": "24879601",
-    "name": "help",
-    "font_class": "help",
-    "unicode": "e679",
-    "unicode_decimal": 59001 },
-
-  {
-    "icon_id": "24879602",
-    "name": "navigate-filled",
-    "font_class": "navigate-filled",
-    "unicode": "e67a",
-    "unicode_decimal": 59002 },
-
-  {
-    "icon_id": "24879603",
-    "name": "plusempty",
-    "font_class": "plusempty",
-    "unicode": "e67b",
-    "unicode_decimal": 59003 },
-
-  {
-    "icon_id": "24879604",
-    "name": "smallcircle",
-    "font_class": "smallcircle",
-    "unicode": "e67c",
-    "unicode_decimal": 59004 },
-
-  {
-    "icon_id": "24879605",
-    "name": "minus-filled",
-    "font_class": "minus-filled",
-    "unicode": "e67d",
-    "unicode_decimal": 59005 },
-
-  {
-    "icon_id": "24879606",
-    "name": "micoff",
-    "font_class": "micoff",
-    "unicode": "e67e",
-    "unicode_decimal": 59006 },
-
-  {
-    "icon_id": "24879588",
-    "name": "closeempty",
-    "font_class": "closeempty",
-    "unicode": "e66c",
-    "unicode_decimal": 58988 },
-
-  {
-    "icon_id": "24879589",
-    "name": "clear",
-    "font_class": "clear",
-    "unicode": "e66d",
-    "unicode_decimal": 58989 },
-
-  {
-    "icon_id": "24879590",
-    "name": "navigate",
-    "font_class": "navigate",
-    "unicode": "e66e",
-    "unicode_decimal": 58990 },
-
-  {
-    "icon_id": "24879591",
-    "name": "minus",
-    "font_class": "minus",
-    "unicode": "e66f",
-    "unicode_decimal": 58991 },
-
-  {
-    "icon_id": "24879592",
-    "name": "image",
-    "font_class": "image",
-    "unicode": "e670",
-    "unicode_decimal": 58992 },
-
-  {
-    "icon_id": "24879593",
-    "name": "mic",
-    "font_class": "mic",
-    "unicode": "e671",
-    "unicode_decimal": 58993 },
-
-  {
-    "icon_id": "24879594",
-    "name": "paperplane",
-    "font_class": "paperplane",
-    "unicode": "e672",
-    "unicode_decimal": 58994 },
-
-  {
-    "icon_id": "24879595",
-    "name": "close",
-    "font_class": "close",
-    "unicode": "e673",
-    "unicode_decimal": 58995 },
-
-  {
-    "icon_id": "24879596",
-    "name": "help-filled",
-    "font_class": "help-filled",
-    "unicode": "e674",
-    "unicode_decimal": 58996 },
-
-  {
-    "icon_id": "24879597",
-    "name": "plus-filled",
-    "font_class": "paperplane-filled",
-    "unicode": "e675",
-    "unicode_decimal": 58997 },
-
-  {
-    "icon_id": "24879598",
-    "name": "plus",
-    "font_class": "plus",
-    "unicode": "e676",
-    "unicode_decimal": 58998 },
-
-  {
-    "icon_id": "24879599",
-    "name": "mic-filled",
-    "font_class": "mic-filled",
-    "unicode": "e677",
-    "unicode_decimal": 58999 },
-
-  {
-    "icon_id": "24879600",
-    "name": "image-filled",
-    "font_class": "image-filled",
-    "unicode": "e678",
-    "unicode_decimal": 59000 },
-
-  {
-    "icon_id": "24855900",
-    "name": "locked-filled",
-    "font_class": "locked-filled",
-    "unicode": "e668",
-    "unicode_decimal": 58984 },
-
-  {
-    "icon_id": "24855901",
-    "name": "info",
-    "font_class": "info",
-    "unicode": "e669",
-    "unicode_decimal": 58985 },
-
-  {
-    "icon_id": "24855903",
-    "name": "locked",
-    "font_class": "locked",
-    "unicode": "e66b",
-    "unicode_decimal": 58987 },
-
-  {
-    "icon_id": "24855884",
-    "name": "camera-filled",
-    "font_class": "camera-filled",
-    "unicode": "e658",
-    "unicode_decimal": 58968 },
-
-  {
-    "icon_id": "24855885",
-    "name": "chat-filled",
-    "font_class": "chat-filled",
-    "unicode": "e659",
-    "unicode_decimal": 58969 },
-
-  {
-    "icon_id": "24855886",
-    "name": "camera",
-    "font_class": "camera",
-    "unicode": "e65a",
-    "unicode_decimal": 58970 },
-
-  {
-    "icon_id": "24855887",
-    "name": "circle",
-    "font_class": "circle",
-    "unicode": "e65b",
-    "unicode_decimal": 58971 },
-
-  {
-    "icon_id": "24855888",
-    "name": "checkmarkempty",
-    "font_class": "checkmarkempty",
-    "unicode": "e65c",
-    "unicode_decimal": 58972 },
-
-  {
-    "icon_id": "24855889",
-    "name": "chat",
-    "font_class": "chat",
-    "unicode": "e65d",
-    "unicode_decimal": 58973 },
-
-  {
-    "icon_id": "24855890",
-    "name": "circle-filled",
-    "font_class": "circle-filled",
-    "unicode": "e65e",
-    "unicode_decimal": 58974 },
-
-  {
-    "icon_id": "24855891",
-    "name": "flag",
-    "font_class": "flag",
-    "unicode": "e65f",
-    "unicode_decimal": 58975 },
-
-  {
-    "icon_id": "24855892",
-    "name": "flag-filled",
-    "font_class": "flag-filled",
-    "unicode": "e660",
-    "unicode_decimal": 58976 },
-
-  {
-    "icon_id": "24855893",
-    "name": "gear-filled",
-    "font_class": "gear-filled",
-    "unicode": "e661",
-    "unicode_decimal": 58977 },
-
-  {
-    "icon_id": "24855894",
-    "name": "home",
-    "font_class": "home",
-    "unicode": "e662",
-    "unicode_decimal": 58978 },
-
-  {
-    "icon_id": "24855895",
-    "name": "home-filled",
-    "font_class": "home-filled",
-    "unicode": "e663",
-    "unicode_decimal": 58979 },
-
-  {
-    "icon_id": "24855896",
-    "name": "gear",
-    "font_class": "gear",
-    "unicode": "e664",
-    "unicode_decimal": 58980 },
-
-  {
-    "icon_id": "24855897",
-    "name": "smallcircle-filled",
-    "font_class": "smallcircle-filled",
-    "unicode": "e665",
-    "unicode_decimal": 58981 },
-
-  {
-    "icon_id": "24855898",
-    "name": "map-filled",
-    "font_class": "map-filled",
-    "unicode": "e666",
-    "unicode_decimal": 58982 },
-
-  {
-    "icon_id": "24855899",
-    "name": "map",
-    "font_class": "map",
-    "unicode": "e667",
-    "unicode_decimal": 58983 },
-
-  {
-    "icon_id": "24855825",
-    "name": "refresh-filled",
-    "font_class": "refresh-filled",
-    "unicode": "e656",
-    "unicode_decimal": 58966 },
-
-  {
-    "icon_id": "24855826",
-    "name": "refresh",
-    "font_class": "refresh",
-    "unicode": "e657",
-    "unicode_decimal": 58967 },
-
-  {
-    "icon_id": "24855808",
-    "name": "cloud-upload",
-    "font_class": "cloud-upload",
-    "unicode": "e645",
-    "unicode_decimal": 58949 },
-
-  {
-    "icon_id": "24855809",
-    "name": "cloud-download-filled",
-    "font_class": "cloud-download-filled",
-    "unicode": "e646",
-    "unicode_decimal": 58950 },
-
-  {
-    "icon_id": "24855810",
-    "name": "cloud-download",
-    "font_class": "cloud-download",
-    "unicode": "e647",
-    "unicode_decimal": 58951 },
-
-  {
-    "icon_id": "24855811",
-    "name": "cloud-upload-filled",
-    "font_class": "cloud-upload-filled",
-    "unicode": "e648",
-    "unicode_decimal": 58952 },
-
-  {
-    "icon_id": "24855813",
-    "name": "redo",
-    "font_class": "redo",
-    "unicode": "e64a",
-    "unicode_decimal": 58954 },
-
-  {
-    "icon_id": "24855814",
-    "name": "images-filled",
-    "font_class": "images-filled",
-    "unicode": "e64b",
-    "unicode_decimal": 58955 },
-
-  {
-    "icon_id": "24855815",
-    "name": "undo-filled",
-    "font_class": "undo-filled",
-    "unicode": "e64c",
-    "unicode_decimal": 58956 },
-
-  {
-    "icon_id": "24855816",
-    "name": "more",
-    "font_class": "more",
-    "unicode": "e64d",
-    "unicode_decimal": 58957 },
-
-  {
-    "icon_id": "24855817",
-    "name": "more-filled",
-    "font_class": "more-filled",
-    "unicode": "e64e",
-    "unicode_decimal": 58958 },
-
-  {
-    "icon_id": "24855818",
-    "name": "undo",
-    "font_class": "undo",
-    "unicode": "e64f",
-    "unicode_decimal": 58959 },
-
-  {
-    "icon_id": "24855819",
-    "name": "images",
-    "font_class": "images",
-    "unicode": "e650",
-    "unicode_decimal": 58960 },
-
-  {
-    "icon_id": "24855821",
-    "name": "paperclip",
-    "font_class": "paperclip",
-    "unicode": "e652",
-    "unicode_decimal": 58962 },
-
-  {
-    "icon_id": "24855822",
-    "name": "settings",
-    "font_class": "settings",
-    "unicode": "e653",
-    "unicode_decimal": 58963 },
-
-  {
-    "icon_id": "24855823",
-    "name": "search",
-    "font_class": "search",
-    "unicode": "e654",
-    "unicode_decimal": 58964 },
-
-  {
-    "icon_id": "24855824",
-    "name": "redo-filled",
-    "font_class": "redo-filled",
-    "unicode": "e655",
-    "unicode_decimal": 58965 },
-
-  {
-    "icon_id": "24841702",
-    "name": "list",
-    "font_class": "list",
-    "unicode": "e644",
-    "unicode_decimal": 58948 },
-
-  {
-    "icon_id": "24841489",
-    "name": "mail-open-filled",
-    "font_class": "mail-open-filled",
-    "unicode": "e63a",
-    "unicode_decimal": 58938 },
-
-  {
-    "icon_id": "24841491",
-    "name": "hand-thumbsdown-filled",
-    "font_class": "hand-down-filled",
-    "unicode": "e63c",
-    "unicode_decimal": 58940 },
-
-  {
-    "icon_id": "24841492",
-    "name": "hand-thumbsdown",
-    "font_class": "hand-down",
-    "unicode": "e63d",
-    "unicode_decimal": 58941 },
-
-  {
-    "icon_id": "24841493",
-    "name": "hand-thumbsup-filled",
-    "font_class": "hand-up-filled",
-    "unicode": "e63e",
-    "unicode_decimal": 58942 },
-
-  {
-    "icon_id": "24841494",
-    "name": "hand-thumbsup",
-    "font_class": "hand-up",
-    "unicode": "e63f",
-    "unicode_decimal": 58943 },
-
-  {
-    "icon_id": "24841496",
-    "name": "heart-filled",
-    "font_class": "heart-filled",
-    "unicode": "e641",
-    "unicode_decimal": 58945 },
-
-  {
-    "icon_id": "24841498",
-    "name": "mail-open",
-    "font_class": "mail-open",
-    "unicode": "e643",
-    "unicode_decimal": 58947 },
-
-  {
-    "icon_id": "24841488",
-    "name": "heart",
-    "font_class": "heart",
-    "unicode": "e639",
-    "unicode_decimal": 58937 },
-
-  {
-    "icon_id": "24839963",
-    "name": "loop",
-    "font_class": "loop",
-    "unicode": "e633",
-    "unicode_decimal": 58931 },
-
-  {
-    "icon_id": "24839866",
-    "name": "pulldown",
-    "font_class": "pulldown",
-    "unicode": "e632",
-    "unicode_decimal": 58930 },
-
-  {
-    "icon_id": "24813798",
-    "name": "scan",
-    "font_class": "scan",
-    "unicode": "e62a",
-    "unicode_decimal": 58922 },
-
-  {
-    "icon_id": "24813786",
-    "name": "bars",
-    "font_class": "bars",
-    "unicode": "e627",
-    "unicode_decimal": 58919 },
-
-  {
-    "icon_id": "24813788",
-    "name": "cart-filled",
-    "font_class": "cart-filled",
-    "unicode": "e629",
-    "unicode_decimal": 58921 },
-
-  {
-    "icon_id": "24813790",
-    "name": "checkbox",
-    "font_class": "checkbox",
-    "unicode": "e62b",
-    "unicode_decimal": 58923 },
-
-  {
-    "icon_id": "24813791",
-    "name": "checkbox-filled",
-    "font_class": "checkbox-filled",
-    "unicode": "e62c",
-    "unicode_decimal": 58924 },
-
-  {
-    "icon_id": "24813794",
-    "name": "shop",
-    "font_class": "shop",
-    "unicode": "e62f",
-    "unicode_decimal": 58927 },
-
-  {
-    "icon_id": "24813795",
-    "name": "headphones",
-    "font_class": "headphones",
-    "unicode": "e630",
-    "unicode_decimal": 58928 },
-
-  {
-    "icon_id": "24813796",
-    "name": "cart",
-    "font_class": "cart",
-    "unicode": "e631",
-    "unicode_decimal": 58929 }] };exports.default = _default;
-
-/***/ }),
-
-/***/ 374:
-/*!*************************************************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.createAnimation = createAnimation;function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} // const defaultOption = {
-// 	duration: 300,
-// 	timingFunction: 'linear',
-// 	delay: 0,
-// 	transformOrigin: '50% 50% 0'
-// }
-var
-
-
-MPAnimation = /*#__PURE__*/function () {
-  function MPAnimation(options, _this) {_classCallCheck(this, MPAnimation);
-    this.options = options;
-    this.animation = uni.createAnimation(options);
-    this.currentStepAnimates = {};
-    this.next = 0;
-    this.$ = _this;
-
-  }_createClass(MPAnimation, [{ key: "_nvuePushAnimates", value: function _nvuePushAnimates(
-
-    type, args) {
-      var aniObj = this.currentStepAnimates[this.next];
-      var styles = {};
-      if (!aniObj) {
-        styles = {
-          styles: {},
-          config: {} };
-
-      } else {
-        styles = aniObj;
-      }
-      if (animateTypes1.includes(type)) {
-        if (!styles.styles.transform) {
-          styles.styles.transform = '';
-        }
-        var unit = '';
-        if (type === 'rotate') {
-          unit = 'deg';
-        }
-        styles.styles.transform += "".concat(type, "(").concat(args + unit, ") ");
-      } else {
-        styles.styles[type] = "".concat(args);
-      }
-      this.currentStepAnimates[this.next] = styles;
-    } }, { key: "_animateRun", value: function _animateRun()
-    {var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var ref = this.$.$refs['ani'].ref;
-      if (!ref) return;
-      return new Promise(function (resolve, reject) {
-        nvueAnimation.transition(ref, _objectSpread({
-          styles: styles },
-        config),
-        function (res) {
-          resolve();
-        });
-      });
-    } }, { key: "_nvueNextAnimate", value: function _nvueNextAnimate(
-
-    animates) {var _this2 = this;var step = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var fn = arguments.length > 2 ? arguments[2] : undefined;
-      var obj = animates[step];
-      if (obj) {var
-
-        styles =
-
-        obj.styles,config = obj.config;
-        this._animateRun(styles, config).then(function () {
-          step += 1;
-          _this2._nvueNextAnimate(animates, step, fn);
-        });
-      } else {
-        this.currentStepAnimates = {};
-        typeof fn === 'function' && fn();
-        this.isEnd = true;
-      }
-    } }, { key: "step", value: function step()
-
-    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-      this.animation.step(config);
-
-
-
-
-
-
-      return this;
-    } }, { key: "run", value: function run(
-
-    fn) {
-
-      this.$.animationData = this.animation.export();
-      this.$.timer = setTimeout(function () {
-        typeof fn === 'function' && fn();
-      }, this.$.durationTime);
-
-
-
-
-
-
-
-
-    } }]);return MPAnimation;}();
-
-
-
-var animateTypes1 = ['matrix', 'matrix3d', 'rotate', 'rotate3d', 'rotateX', 'rotateY', 'rotateZ', 'scale', 'scale3d',
-'scaleX', 'scaleY', 'scaleZ', 'skew', 'skewX', 'skewY', 'translate', 'translate3d', 'translateX', 'translateY',
-'translateZ'];
-
-var animateTypes2 = ['opacity', 'backgroundColor'];
-var animateTypes3 = ['width', 'height', 'left', 'right', 'top', 'bottom'];
-animateTypes1.concat(animateTypes2, animateTypes3).forEach(function (type) {
-  MPAnimation.prototype[type] = function () {var _this$animation;
-
-    (_this$animation = this.animation)[type].apply(_this$animation, arguments);
-
-
-
-
-    return this;
-  };
-});
-
-function createAnimation(option, _this) {
-  if (!_this) return;
-  clearTimeout(_this.timer);
-  return new MPAnimation(option, _this);
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 4:
-/*!*************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni, global) {Object.defineProperty(exports, "__esModule", { value: true });exports.compileI18nJsonStr = compileI18nJsonStr;exports.hasI18nJson = hasI18nJson;exports.initVueI18n = initVueI18n;exports.isI18nStr = isI18nStr;exports.normalizeLocale = normalizeLocale;exports.parseI18nJson = parseI18nJson;exports.resolveLocale = resolveLocale;exports.isString = exports.LOCALE_ZH_HANT = exports.LOCALE_ZH_HANS = exports.LOCALE_FR = exports.LOCALE_ES = exports.LOCALE_EN = exports.I18n = exports.Formatter = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var isArray = Array.isArray;
-var isObject = function isObject(val) {return val !== null && typeof val === 'object';};
-var defaultDelimiters = ['{', '}'];var
-BaseFormatter = /*#__PURE__*/function () {
-  function BaseFormatter() {_classCallCheck(this, BaseFormatter);
-    this._caches = Object.create(null);
-  }_createClass(BaseFormatter, [{ key: "interpolate", value: function interpolate(
-    message, values) {var delimiters = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : defaultDelimiters;
-      if (!values) {
-        return [message];
-      }
-      var tokens = this._caches[message];
-      if (!tokens) {
-        tokens = parse(message, delimiters);
-        this._caches[message] = tokens;
-      }
-      return compile(tokens, values);
-    } }]);return BaseFormatter;}();exports.Formatter = BaseFormatter;
-
-var RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
-var RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
-function parse(format, _ref) {var _ref2 = _slicedToArray(_ref, 2),startDelimiter = _ref2[0],endDelimiter = _ref2[1];
-  var tokens = [];
-  var position = 0;
-  var text = '';
-  while (position < format.length) {
-    var char = format[position++];
-    if (char === startDelimiter) {
-      if (text) {
-        tokens.push({ type: 'text', value: text });
-      }
-      text = '';
-      var sub = '';
-      char = format[position++];
-      while (char !== undefined && char !== endDelimiter) {
-        sub += char;
-        char = format[position++];
-      }
-      var isClosed = char === endDelimiter;
-      var type = RE_TOKEN_LIST_VALUE.test(sub) ?
-      'list' :
-      isClosed && RE_TOKEN_NAMED_VALUE.test(sub) ?
-      'named' :
-      'unknown';
-      tokens.push({ value: sub, type: type });
-    }
-    //  else if (char === '%') {
-    //   // when found rails i18n syntax, skip text capture
-    //   if (format[position] !== '{') {
-    //     text += char
-    //   }
-    // }
-    else {
-        text += char;
-      }
-  }
-  text && tokens.push({ type: 'text', value: text });
-  return tokens;
-}
-function compile(tokens, values) {
-  var compiled = [];
-  var index = 0;
-  var mode = isArray(values) ?
-  'list' :
-  isObject(values) ?
-  'named' :
-  'unknown';
-  if (mode === 'unknown') {
-    return compiled;
-  }
-  while (index < tokens.length) {
-    var token = tokens[index];
-    switch (token.type) {
-      case 'text':
-        compiled.push(token.value);
-        break;
-      case 'list':
-        compiled.push(values[parseInt(token.value, 10)]);
-        break;
-      case 'named':
-        if (mode === 'named') {
-          compiled.push(values[token.value]);
-        } else
-        {
-          if (true) {
-            console.warn("Type of token '".concat(token.type, "' and format of value '").concat(mode, "' don't match!"));
-          }
-        }
-        break;
-      case 'unknown':
-        if (true) {
-          console.warn("Detect 'unknown' type of token!");
-        }
-        break;}
-
-    index++;
-  }
-  return compiled;
-}
-
-var LOCALE_ZH_HANS = 'zh-Hans';exports.LOCALE_ZH_HANS = LOCALE_ZH_HANS;
-var LOCALE_ZH_HANT = 'zh-Hant';exports.LOCALE_ZH_HANT = LOCALE_ZH_HANT;
-var LOCALE_EN = 'en';exports.LOCALE_EN = LOCALE_EN;
-var LOCALE_FR = 'fr';exports.LOCALE_FR = LOCALE_FR;
-var LOCALE_ES = 'es';exports.LOCALE_ES = LOCALE_ES;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var hasOwn = function hasOwn(val, key) {return hasOwnProperty.call(val, key);};
-var defaultFormatter = new BaseFormatter();
-function include(str, parts) {
-  return !!parts.find(function (part) {return str.indexOf(part) !== -1;});
-}
-function startsWith(str, parts) {
-  return parts.find(function (part) {return str.indexOf(part) === 0;});
-}
-function normalizeLocale(locale, messages) {
-  if (!locale) {
-    return;
-  }
-  locale = locale.trim().replace(/_/g, '-');
-  if (messages && messages[locale]) {
-    return locale;
-  }
-  locale = locale.toLowerCase();
-  if (locale.indexOf('zh') === 0) {
-    if (locale.indexOf('-hans') > -1) {
-      return LOCALE_ZH_HANS;
-    }
-    if (locale.indexOf('-hant') > -1) {
-      return LOCALE_ZH_HANT;
-    }
-    if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
-      return LOCALE_ZH_HANT;
-    }
-    return LOCALE_ZH_HANS;
-  }
-  var lang = startsWith(locale, [LOCALE_EN, LOCALE_FR, LOCALE_ES]);
-  if (lang) {
-    return lang;
-  }
-}var
-I18n = /*#__PURE__*/function () {
-  function I18n(_ref3) {var locale = _ref3.locale,fallbackLocale = _ref3.fallbackLocale,messages = _ref3.messages,watcher = _ref3.watcher,formater = _ref3.formater;_classCallCheck(this, I18n);
-    this.locale = LOCALE_EN;
-    this.fallbackLocale = LOCALE_EN;
-    this.message = {};
-    this.messages = {};
-    this.watchers = [];
-    if (fallbackLocale) {
-      this.fallbackLocale = fallbackLocale;
-    }
-    this.formater = formater || defaultFormatter;
-    this.messages = messages || {};
-    this.setLocale(locale || LOCALE_EN);
-    if (watcher) {
-      this.watchLocale(watcher);
-    }
-  }_createClass(I18n, [{ key: "setLocale", value: function setLocale(
-    locale) {var _this = this;
-      var oldLocale = this.locale;
-      this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
-      if (!this.messages[this.locale]) {
-        // 可能初始化时不存在
-        this.messages[this.locale] = {};
-      }
-      this.message = this.messages[this.locale];
-      // 仅发生变化时，通知
-      if (oldLocale !== this.locale) {
-        this.watchers.forEach(function (watcher) {
-          watcher(_this.locale, oldLocale);
-        });
-      }
-    } }, { key: "getLocale", value: function getLocale()
-    {
-      return this.locale;
-    } }, { key: "watchLocale", value: function watchLocale(
-    fn) {var _this2 = this;
-      var index = this.watchers.push(fn) - 1;
-      return function () {
-        _this2.watchers.splice(index, 1);
-      };
-    } }, { key: "add", value: function add(
-    locale, message) {var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      var curMessages = this.messages[locale];
-      if (curMessages) {
-        if (override) {
-          Object.assign(curMessages, message);
-        } else
-        {
-          Object.keys(message).forEach(function (key) {
-            if (!hasOwn(curMessages, key)) {
-              curMessages[key] = message[key];
-            }
-          });
-        }
-      } else
-      {
-        this.messages[locale] = message;
-      }
-    } }, { key: "f", value: function f(
-    message, values, delimiters) {
-      return this.formater.interpolate(message, values, delimiters).join('');
-    } }, { key: "t", value: function t(
-    key, locale, values) {
-      var message = this.message;
-      if (typeof locale === 'string') {
-        locale = normalizeLocale(locale, this.messages);
-        locale && (message = this.messages[locale]);
-      } else
-      {
-        values = locale;
-      }
-      if (!hasOwn(message, key)) {
-        console.warn("Cannot translate the value of keypath ".concat(key, ". Use the value of keypath as default."));
-        return key;
-      }
-      return this.formater.interpolate(message[key], values).join('');
-    } }]);return I18n;}();exports.I18n = I18n;
-
-
-function watchAppLocale(appVm, i18n) {
-  // 需要保证 watch 的触发在组件渲染之前
-  if (appVm.$watchLocale) {
-    // vue2
-    appVm.$watchLocale(function (newLocale) {
-      i18n.setLocale(newLocale);
-    });
-  } else
-  {
-    appVm.$watch(function () {return appVm.$locale;}, function (newLocale) {
-      i18n.setLocale(newLocale);
-    });
-  }
-}
-function getDefaultLocale() {
-  if (typeof uni !== 'undefined' && uni.getLocale) {
-    return uni.getLocale();
-  }
-  // 小程序平台，uni 和 uni-i18n 互相引用，导致访问不到 uni，故在 global 上挂了 getLocale
-  if (typeof global !== 'undefined' && global.getLocale) {
-    return global.getLocale();
-  }
-  return LOCALE_EN;
-}
-function initVueI18n(locale) {var messages = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var fallbackLocale = arguments.length > 2 ? arguments[2] : undefined;var watcher = arguments.length > 3 ? arguments[3] : undefined;
-  // 兼容旧版本入参
-  if (typeof locale !== 'string') {var _ref4 =
-    [
-    messages,
-    locale];locale = _ref4[0];messages = _ref4[1];
-
-  }
-  if (typeof locale !== 'string') {
-    // 因为小程序平台，uni-i18n 和 uni 互相引用，导致此时访问 uni 时，为 undefined
-    locale = getDefaultLocale();
-  }
-  if (typeof fallbackLocale !== 'string') {
-    fallbackLocale =
-    typeof __uniConfig !== 'undefined' && __uniConfig.fallbackLocale ||
-    LOCALE_EN;
-  }
-  var i18n = new I18n({
-    locale: locale,
-    fallbackLocale: fallbackLocale,
-    messages: messages,
-    watcher: watcher });
-
-  var _t = function t(key, values) {
-    if (typeof getApp !== 'function') {
-      // app view
-      /* eslint-disable no-func-assign */
-      _t = function t(key, values) {
-        return i18n.t(key, values);
-      };
-    } else
-    {
-      var isWatchedAppLocale = false;
-      _t = function t(key, values) {
-        var appVm = getApp().$vm;
-        // 可能$vm还不存在，比如在支付宝小程序中，组件定义较早，在props的default里使用了t()函数（如uni-goods-nav），此时app还未初始化
-        // options: {
-        // 	type: Array,
-        // 	default () {
-        // 		return [{
-        // 			icon: 'shop',
-        // 			text: t("uni-goods-nav.options.shop"),
-        // 		}, {
-        // 			icon: 'cart',
-        // 			text: t("uni-goods-nav.options.cart")
-        // 		}]
-        // 	}
-        // },
-        if (appVm) {
-          // 触发响应式
-          appVm.$locale;
-          if (!isWatchedAppLocale) {
-            isWatchedAppLocale = true;
-            watchAppLocale(appVm, i18n);
-          }
-        }
-        return i18n.t(key, values);
-      };
-    }
-    return _t(key, values);
-  };
-  return {
-    i18n: i18n,
-    f: function f(message, values, delimiters) {
-      return i18n.f(message, values, delimiters);
-    },
-    t: function t(key, values) {
-      return _t(key, values);
-    },
-    add: function add(locale, message) {var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      return i18n.add(locale, message, override);
-    },
-    watch: function watch(fn) {
-      return i18n.watchLocale(fn);
-    },
-    getLocale: function getLocale() {
-      return i18n.getLocale();
-    },
-    setLocale: function setLocale(newLocale) {
-      return i18n.setLocale(newLocale);
-    } };
-
-}
-
-var isString = function isString(val) {return typeof val === 'string';};exports.isString = isString;
-var formater;
-function hasI18nJson(jsonObj, delimiters) {
-  if (!formater) {
-    formater = new BaseFormatter();
-  }
-  return walkJsonObj(jsonObj, function (jsonObj, key) {
-    var value = jsonObj[key];
-    if (isString(value)) {
-      if (isI18nStr(value, delimiters)) {
-        return true;
-      }
-    } else
-    {
-      return hasI18nJson(value, delimiters);
-    }
-  });
-}
-function parseI18nJson(jsonObj, values, delimiters) {
-  if (!formater) {
-    formater = new BaseFormatter();
-  }
-  walkJsonObj(jsonObj, function (jsonObj, key) {
-    var value = jsonObj[key];
-    if (isString(value)) {
-      if (isI18nStr(value, delimiters)) {
-        jsonObj[key] = compileStr(value, values, delimiters);
-      }
-    } else
-    {
-      parseI18nJson(value, values, delimiters);
-    }
-  });
-  return jsonObj;
-}
-function compileI18nJsonStr(jsonStr, _ref5) {var locale = _ref5.locale,locales = _ref5.locales,delimiters = _ref5.delimiters;
-  if (!isI18nStr(jsonStr, delimiters)) {
-    return jsonStr;
-  }
-  if (!formater) {
-    formater = new BaseFormatter();
-  }
-  var localeValues = [];
-  Object.keys(locales).forEach(function (name) {
-    if (name !== locale) {
-      localeValues.push({
-        locale: name,
-        values: locales[name] });
-
-    }
-  });
-  localeValues.unshift({ locale: locale, values: locales[locale] });
-  try {
-    return JSON.stringify(compileJsonObj(JSON.parse(jsonStr), localeValues, delimiters), null, 2);
-  }
-  catch (e) {}
-  return jsonStr;
-}
-function isI18nStr(value, delimiters) {
-  return value.indexOf(delimiters[0]) > -1;
-}
-function compileStr(value, values, delimiters) {
-  return formater.interpolate(value, values, delimiters).join('');
-}
-function compileValue(jsonObj, key, localeValues, delimiters) {
-  var value = jsonObj[key];
-  if (isString(value)) {
-    // 存在国际化
-    if (isI18nStr(value, delimiters)) {
-      jsonObj[key] = compileStr(value, localeValues[0].values, delimiters);
-      if (localeValues.length > 1) {
-        // 格式化国际化语言
-        var valueLocales = jsonObj[key + 'Locales'] = {};
-        localeValues.forEach(function (localValue) {
-          valueLocales[localValue.locale] = compileStr(value, localValue.values, delimiters);
-        });
-      }
-    }
-  } else
-  {
-    compileJsonObj(value, localeValues, delimiters);
-  }
-}
-function compileJsonObj(jsonObj, localeValues, delimiters) {
-  walkJsonObj(jsonObj, function (jsonObj, key) {
-    compileValue(jsonObj, key, localeValues, delimiters);
-  });
-  return jsonObj;
-}
-function walkJsonObj(jsonObj, walk) {
-  if (isArray(jsonObj)) {
-    for (var i = 0; i < jsonObj.length; i++) {
-      if (walk(jsonObj, i)) {
-        return true;
-      }
-    }
-  } else
-  if (isObject(jsonObj)) {
-    for (var key in jsonObj) {
-      if (walk(jsonObj, key)) {
-        return true;
-      }
-    }
-  }
-  return false;
-}
-
-function resolveLocale(locales) {
-  return function (locale) {
-    if (!locale) {
-      return locale;
-    }
-    locale = normalizeLocale(locale) || locale;
-    return resolveLocaleChain(locale).find(function (locale) {return locales.indexOf(locale) > -1;});
-  };
-}
-function resolveLocaleChain(locale) {
-  var chain = [];
-  var tokens = locale.split('-');
-  while (tokens.length) {
-    chain.push(tokens.join('-'));
-    tokens.pop();
-  }
-  return chain;
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 2)))
 
 /***/ }),
 
@@ -20612,9 +21066,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 41:
-/*!*******************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/index.js ***!
-  \*******************************************************/
+/*!*****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/index.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20635,22 +21089,24 @@ _module;exports.default = _default;
 /***/ }),
 
 /***/ 42:
-/*!*********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services sync nonrecursive .js$ ***!
-  \*********************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services sync nonrecursive .js$ ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./apk.js": 43,
-	"./device.js": 45,
-	"./http.js": 44,
+	"./admin.js": 43,
+	"./apk.js": 45,
+	"./device.js": 47,
+	"./http.js": 46,
+	"./http1.js": 44,
 	"./index.js": 41,
-	"./myserver.js": 46,
-	"./notice.js": 47,
-	"./product.js": 48,
-	"./statistic.js": 49,
-	"./user.js": 50
+	"./myserver.js": 48,
+	"./notice.js": 49,
+	"./product.js": 50,
+	"./statistic.js": 51,
+	"./user.js": 52
 };
 
 
@@ -20676,14 +21132,110 @@ webpackContext.id = 42;
 /***/ }),
 
 /***/ 43:
-/*!*****************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/apk.js ***!
-  \*****************************************************/
+/*!*****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/admin.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.downloadApp2 = exports.checkVersion2 = exports.downloadApp = exports.checkVersion = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.editUser = exports.deleteUser = exports.adminLogin = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http1.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+var adminLogin = function adminLogin(username, password) {// 登录
+  return (0, _http.default)({
+    url: 'https://api.ahusmart.com/admin',
+    method: 'post',
+    data: {
+      username: username,
+      password: password } });
+
+
+};exports.adminLogin = adminLogin;
+var baseUrl = "https://api.ahusmart.com/api/v1/admin";
+
+//删除用户
+var deleteUser = function deleteUser(username) {
+  return (0, _http.default)({
+    url: baseUrl + '/user/' + username,
+    method: 'delete' });
+
+};
+
+//修改用户信息
+exports.deleteUser = deleteUser;var editUser = function editUser(username, data) {
+  return (0, _http.default)({
+    url: baseUrl + '/user/' + username,
+    method: 'put',
+    data: data });
+
+};exports.editUser = editUser;
+
+/***/ }),
+
+/***/ 44:
+/*!*****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/http1.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = $http;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function $http(options) {var
+  url = options.url,method = options.method,data = options.data;
+
+  var header = {};
+  if (url === 'https://api.ahusmart.com/admin') {
+    // 登录/apk更新 不拦截
+  } else {
+    // 此外拦截，携带身份信息
+    var token = uni.getStorageSync('adminToken_nitrogen');
+    console.log(token);
+    if (!token) {
+      uni.showToast({
+        title: '身份已过期',
+        icon: 'none' });
+
+      setTimeout(function () {
+        uni.navigateTo({
+          url: '../pages/login' });
+
+      }, 500);
+      return new Promise(function (resolve, reject) {
+        reject('身份已过期');
+      });
+    }
+    header.token = token;
+  }
+
+  return new Promise(function (resolve, reject) {
+    uni.request({
+      url: url,
+      method: method,
+      data: data,
+      header: header }).
+    then(function (response) {var _response = _slicedToArray(
+      response, 2),error = _response[0],res = _response[1];
+      resolve(res.data);
+    }).catch(function (error) {var _error = _slicedToArray(
+      error, 2),err = _error[0],res = _error[1];
+      reject(err);
+    });
+  });
+
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 45:
+/*!***************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/apk.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.downloadApp2 = exports.checkVersion2 = exports.downloadApp = exports.checkVersion = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var baseUrlApp = 'https://app.ahusmart.com';
 
@@ -20717,10 +21269,10 @@ var downloadApp2 = function downloadApp2(projectName, version, filename) {
 
 /***/ }),
 
-/***/ 44:
-/*!******************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/http.js ***!
-  \******************************************************/
+/***/ 46:
+/*!****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/http.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20771,15 +21323,15 @@ var downloadApp2 = function downloadApp2(projectName, version, filename) {
 
 /***/ }),
 
-/***/ 45:
-/*!********************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/device.js ***!
-  \********************************************************/
+/***/ 47:
+/*!******************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/device.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.addDeviceSS = exports.addDeviceSS3 = exports.addDeviceSS2 = exports.checkFromDIANXINYUN = exports.checkFromHONEN = exports.issuePort = exports.deviceTemplate = exports.addDeviceToHONEN = exports.deleteDevice = exports.updateDevice = exports.getDeviceDetail = exports.getDeviceHisData = exports.getDeviceData = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.addDeviceSS = exports.addDeviceSS3 = exports.addDeviceSS2 = exports.checkFromDIANXINYUN = exports.checkFromHONEN = exports.issuePort = exports.deviceTemplate = exports.addDeviceToHONEN = exports.deleteDevice = exports.updateDevice = exports.getDeviceDetail = exports.getDeviceHisData = exports.getDeviceData = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 
 var baseUrl = "https://api.ahusmart.com/api/v1";
 
@@ -20910,15 +21462,15 @@ var addDeviceSS = function addDeviceSS(productKey, data) {// 云平台接口，�
 
 /***/ }),
 
-/***/ 46:
-/*!**********************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/myserver.js ***!
-  \**********************************************************/
+/***/ 48:
+/*!********************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/myserver.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getProductHistoryData = exports.newData = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getProductHistoryData = exports.newData = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var baseUrl = "http://49.4.8.167:30057";
 
@@ -20950,15 +21502,15 @@ var getProductHistoryData = function getProductHistoryData(username, productKeyL
 
 /***/ }),
 
-/***/ 47:
-/*!********************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/notice.js ***!
-  \********************************************************/
+/***/ 49:
+/*!******************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/notice.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.noticeByPage = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.noticeByPage = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var noticeByPage = function noticeByPage() {// 分页查看用户报警记录
   return (0, _http.default)({
@@ -20975,15 +21527,26 @@ var noticeByPage = function noticeByPage() {// 分页查看用户报警记录
 
 /***/ }),
 
-/***/ 48:
-/*!*********************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/product.js ***!
-  \*********************************************************/
+/***/ 5:
+/*!**********************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/pages.json ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 50:
+/*!*******************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/product.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.registerVeh = exports.getDeviceList = exports.getProduct = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.registerVeh = exports.getDeviceList = exports.getProduct = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var baseUrl = "https://api.ahusmart.com/api/v1";
 
@@ -21001,6 +21564,8 @@ var getDeviceList = function getDeviceList(productKey) {// 产品详情
 
 };exports.getDeviceList = getDeviceList;
 
+
+
 var registerVeh = function registerVeh(data) {//注册车辆
   return (0, _http.default)({
     url: baseUrl + "/product",
@@ -21009,9 +21574,14 @@ var registerVeh = function registerVeh(data) {//注册车辆
       "protocolType": "MQTT",
       "productName": data.productName,
       "productType": 1,
-      "typeIdentify": "tylcc",
+      "typeIdentify": data.typeIdentify,
       "description": "此产品为冷藏车产品",
       "extraInfo": {
+        "role": "user",
+        "status": {
+          "if": "un",
+          "grouper": "" },
+
         "tempAndHumi": {
           "Name": "温湿度传感器数量",
           "Value": data.num1 },
@@ -21052,15 +21622,15 @@ var registerVeh = function registerVeh(data) {//注册车辆
 
 /***/ }),
 
-/***/ 49:
-/*!***********************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/statistic.js ***!
-  \***********************************************************/
+/***/ 51:
+/*!*********************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/statistic.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getDeviceStatusExtra = exports.getAllStatus = exports.getDeviceKeys = exports.getAlertDistribution = exports.getUserAlertInfos = exports.updateSomeAlert = exports.updateOneAlert = exports.getProductDataLatest = exports.getProductDataPoint = exports.getRecentData = exports.getHistoryData = exports.getBatchDeviceData = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getDeviceStatusExtra = exports.getAllStatus = exports.getDeviceKeys = exports.getAlertDistribution = exports.getUserAlertInfos = exports.updateSomeAlert = exports.updateOneAlert = exports.getProductDataLatest = exports.getProductDataPoint = exports.getRecentData = exports.getHistoryData = exports.getBatchDeviceData = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var baseUrl = "https://api.ahusmart.com/api/v1";
 
@@ -21191,26 +21761,15 @@ var getDeviceStatusExtra = function getDeviceStatusExtra(data) {
 
 /***/ }),
 
-/***/ 5:
-/*!************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/pages.json ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ 50:
-/*!******************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/services/user.js ***!
-  \******************************************************/
+/***/ 52:
+/*!****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/services/user.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.updateUserInfo = exports.getUserInfo = exports.login = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.userRegister = exports.updateUserInfo = exports.getUserInfo = exports.login = void 0;var _http = _interopRequireDefault(__webpack_require__(/*! ./http.js */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var login = function login(username, password) {// 登录
   return (0, _http.default)({
@@ -21240,12 +21799,20 @@ var updateUserInfo = function updateUserInfo(data) {// 更新个人信息
 
 };exports.updateUserInfo = updateUserInfo;
 
+var userRegister = function userRegister(data) {// 注册用户
+  return (0, _http.default)({
+    url: 'https://api.ahusmart.com/session',
+    method: 'put',
+    data: data });
+
+};exports.userRegister = userRegister;
+
 /***/ }),
 
-/***/ 51:
-/*!***************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/utils/date.js ***!
-  \***************************************************/
+/***/ 53:
+/*!*************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/utils/date.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21283,35 +21850,10 @@ function formatTimeToStr(times, pattern) {
 
 /***/ }),
 
-/***/ 58:
-/*!****************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/store/store.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.mutations = exports.store = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 3));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-var store = _vue.default.observable({
-  version: '1.0',
-  hasLogin: false });exports.store = store;
-
-
-var mutations = {
-  setUsername: function setUsername(username) {
-    store.username = username;
-  },
-  setHasLogin: function setHasLogin(hasLogin) {
-    store.hasLogin = hasLogin;
-  } };exports.mutations = mutations;
-
-/***/ }),
-
 /***/ 6:
-/*!*******************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/index.js ***!
-  \*******************************************************/
+/*!*****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/index.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21460,10 +22002,35 @@ var install = function install(Vue) {
 
 /***/ }),
 
+/***/ 60:
+/*!**************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/store/store.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.mutations = exports.store = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+var store = _vue.default.observable({
+  version: '1.0',
+  hasLogin: false });exports.store = store;
+
+
+var mutations = {
+  setUsername: function setUsername(username) {
+    store.username = username;
+  },
+  setHasLogin: function setHasLogin(hasLogin) {
+    store.hasLogin = hasLogin;
+  } };exports.mutations = mutations;
+
+/***/ }),
+
 /***/ 7:
-/*!******************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/mixin/mixin.js ***!
-  \******************************************************************/
+/*!****************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/mixin/mixin.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21534,10 +22101,10 @@ var install = function install(Vue) {
 
 /***/ }),
 
-/***/ 73:
-/*!***************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/static/刷新.png ***!
-  \***************************************************/
+/***/ 75:
+/*!*************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/static/刷新.png ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21545,10 +22112,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE
 
 /***/ }),
 
-/***/ 74:
-/*!******************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/static/冷藏车注册.png ***!
-  \******************************************************/
+/***/ 76:
+/*!****************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/static/冷藏车注册.png ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21556,10 +22123,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAe
 
 /***/ }),
 
-/***/ 75:
-/*!***************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/static/定位.png ***!
-  \***************************************************/
+/***/ 77:
+/*!*************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/static/定位.png ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21568,9 +22135,9 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAe
 /***/ }),
 
 /***/ 8:
-/*!********************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/request/index.js ***!
-  \********************************************************************/
+/*!******************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/request/index.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21749,9 +22316,9 @@ new Request();exports.default = _default;
 /***/ }),
 
 /***/ 9:
-/*!*************************************************************************!*\
-  !*** /Users/wy/Desktop/all/uni-app/uview-ui/libs/function/deepMerge.js ***!
-  \*************************************************************************/
+/*!***********************************************************************************!*\
+  !*** /Volumes/Data - Data/Library/项目/uni-app/uview-ui/libs/function/deepMerge.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

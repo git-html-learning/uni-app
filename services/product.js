@@ -16,6 +16,8 @@ export const getDeviceList = (productKey) => { // 产品详情
 	})
 }
 
+
+
 export const registerVeh = (data) =>{   //注册车辆
     return $http({
         url: baseUrl +"/product",
@@ -24,9 +26,14 @@ export const registerVeh = (data) =>{   //注册车辆
                    "protocolType": "MQTT",
                    "productName": data.productName,
                    "productType": 1,
-                   "typeIdentify": "tylcc",
+                   "typeIdentify": data.typeIdentify,
                    "description": "此产品为冷藏车产品",
                    "extraInfo": {
+					   "role": "user",   
+					   "status": {
+						   "if":"un",
+						   "grouper":""
+					   },
                        "tempAndHumi": {
                            "Name": "温湿度传感器数量",
                            "Value": data.num1

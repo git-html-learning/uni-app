@@ -100,6 +100,9 @@
 				<text>震动监测</text>
 			</view>
 		</view>
+		<view style = "height: 30px;">
+			
+		</view>
 
 		<view>
 			<!-- 提示信息弹窗 -->
@@ -160,17 +163,12 @@
 						uni.setStorageSync('humiDown', humiDown)
 						uni.setStorageSync('humiUp', humiUp)
 						uni.setStorageSync('tempDown', tempDown)
-						uni.setStorageSync('tempUp', tempUp)
-						
-					}
-
-								
-				
+						uni.setStorageSync('tempUp', tempUp)					
+					}				
 				})
 			},
 			prepare() {
 				this.value= ""
-
 				uni.setStorageSync('truck_productKey', this.value)
 				getProduct().then((res) => {
 					console.log(res)
@@ -178,7 +176,7 @@
 					if (res.msg == "ok") {
 						this.options = []
 						res.data.productInfo.forEach(item => {
-							if (item.productName !== "通宇项目司机") {
+							if (item.typeIdentify!== "tysj" && item.typeIdentify.length ==15) {
 								var obj = {
 									text: item.productName,
 									value: item.productKey,
