@@ -116,7 +116,7 @@
 
 <script>
 	import {
-		getProduct
+		getProduct,getDeviceList
 	} from "@/services/product";
 	import {
 		getUserInfo
@@ -138,14 +138,14 @@
 			this.username = uni.getStorageSync('username_nitrogen')
 		},
 		onLoad() {
-			this.threshold();
+			// this.threshold();
 			this.prepare();
 		},
 		methods: {
 			threshold() {
-				var username = uni.getStorageSync('username_nitrogen')
-				console.log(username)
-				getUserInfo(username).then((res)=>{
+				// var username = uni.getStorageSync('username_nitrogen')
+				// console.log(username)
+				getDeviceList(this.value).then((res)=>{
 					console.log(res)
 					if (res.msg == "ok") {
 						var tireTemp = res.data.extraInfo.thresholdValue.tire.tireTemp;
@@ -168,8 +168,8 @@
 				})
 			},
 			prepare() {
-				this.value= ""
-				uni.setStorageSync('truck_productKey', this.value)
+				// this.value= ""//
+				// uni.setStorageSync('truck_productKey', this.value)
 				getProduct().then((res) => {
 					console.log(res)
 
@@ -283,6 +283,7 @@
 				console.log(index)
 				this.value = index
 				uni.setStorageSync('truck_productKey', this.value)
+				this.threshold();
 				console.log(this.options)
 				var typeIdentify = ""
 				if (this.options.length !==0) {

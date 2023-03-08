@@ -16,6 +16,13 @@ export const getDeviceList = (productKey) => { // 产品详情
 	})
 }
 
+export const editProduct = (productKey) => { // 修改产品信息
+	return $http({
+		url: baseUrl + '/product',
+		method: 'put'
+	})
+}
+
 
 
 export const registerVeh = (data) =>{   //注册车辆

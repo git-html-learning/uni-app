@@ -1,8 +1,45 @@
 <template>
 	<view class="tem">
 		<view class="title1">
-			{{productName}}
+			<text style = "text-align: center;">{{productName}}</text>
+			
+			
+			
+			<button size = "mini" type = "primary" style = "float: right; margin-top: 10px;" @click="open">
+				阈值设置
+			</button>
+
 		</view>
+		<uni-popup ref="popup" type="dialog">
+				<view style="background-color: #fff;padding: 15px;">
+				
+							<uni-forms :modelValue="tempAndHumi"  label-position="top" label-width = "100px">
+										<uni-forms-item label="温度最小值"  name = "tempDown">
+											<uni-easyinput type="text" v-model="tempAndHumi.tempDown" placeholder="请输入" />
+										</uni-forms-item>
+										<uni-forms-item label="温度最大值" name="tempUp">
+											<uni-easyinput type="text" v-model="tempAndHumi.tempUp" placeholder="请输入" />
+										</uni-forms-item>
+										<uni-forms-item label="湿度最小值" name="humiDown">
+											<uni-easyinput type="text" v-model="tempAndHumi.humiDown" placeholder="请输入" />
+										</uni-forms-item>
+										<uni-forms-item label="湿度最大值" name="humiUp">
+											<uni-easyinput type="text" v-model="tempAndHumi.humiUp" placeholder="请输入" />
+										</uni-forms-item>
+										<uni-forms-item >
+											<button style = 'float: left'  @click = "close" type = "info">取消</button>
+											<button style = 'float: right'  @click = "setting" type = "primary">修改</button>
+										</uni-forms-item>
+									</uni-forms>
+						</view>
+			<!-- <uni-popup-dialog mode="input" message="成功消息" :duration="2000" :before-close="true" @close="close" @confirm="confirm"></uni-popup-dialog> -->
+<!-- 		<view >
+			<input type="text">
+			<input type="text">
+		
+		</view> -->
+		
+		</uni-popup>
 		<t-table>
 			<t-tr>
 				<t-th>传感器</t-th>
@@ -43,6 +80,8 @@
 	import tTh from '@/components/t-table/t-th.vue';
 	import tTr from '@/components/t-table/t-tr.vue';
 	import tTd from '@/components/t-table/t-td.vue';
+import { getDeviceData } from '../../services/device';
+import { editProduct,getDeviceList } from '../../services/product';
 	export default {
 		components: {
 			tTable,
@@ -152,6 +191,12 @@
 						},
 					}
 				},
+				"tempAndHumi": {
+											"humiDown": "",
+											"humiUp": "",
+											"tempDown": "",
+											"tempUp": ""
+										},
 
 			};
 		},
@@ -160,8 +205,13 @@
 			console.log(this.productKey);
 			this.start()
 		},
+		
 		methods: {
 			async start() {
+				this.tempAndHumi.humiDown = uni.getStorageSync("humiDown")
+				this.tempAndHumi.humiUp = uni.getStorageSync("humiUp")
+				this.tempAndHumi.tempDown = uni.getStorageSync("tempDown")
+				this.tempAndHumi.tempUp = uni.getStorageSync("tempUp")
 				const res = await this.$api.getDeviceList(this.productKey)
 				// console.log(res);
 				this.productName = res.data.productName;
@@ -297,6 +347,18 @@
 					icon: 'none'
 				});
 			},
+				open() {
+						this.$refs.popup.open()
+					},
+					/**
+					 * 点击取消按钮触发
+					 * @param {Object} done
+					 */
+					close() {
+						// TODO 做一些其他的事情，before-close 为true的情况下，手动执行 close 才会关闭对话框
+						// ...
+						this.$refs.popup.close()
+					},
 			change(index) {
 				// console.log(index);
 				this.hisDate = []
@@ -340,6 +402,55 @@
 				})
 
 			},
+				
+			setting() {
+				console.log("设置阈值")
+					
+				if(this.tempAndHumi.tempDown == ""||this.tempAndHumi.tempUp == ""||this.tempAndHumi.humiDown == ""||this.tempAndHumi.humiUp == "") {
+						uni.showToast({
+										title: '阈值不可为空',
+										icon: 'none'
+									})
+				} else{
+					//修改产品信息
+					console.log("12")
+					// var value = uni.getStorageSync("value")
+						
+					getDeviceList(this.productKey).then((res)=>{
+						console.log(res)
+						if(res.code == 200) {
+								
+							var data = {
+								productName: res.data.productName,
+								productKey: res.data.productKey,
+								typeIdentify: res.data.typeIdentify,
+								protocolType: res.data.protocolType,
+								productType: res.data.productType,
+								extraInfo: res.data.extraInfo,
+								description: "",
+								
+							};
+							data.extraInfo.thresholdValue.tempAndHumi = this.tempAndHumi
+							console.log(data)
+								
+							editProduct(data).then((res)=>{
+								console.log(res)
+								if(res.code == 200) {
+									uni.showToast({
+										title:"修改成功"
+									})
+									uni.setStorageSync('humiDown', this.tempAndHumi.humiDown)
+									uni.setStorageSync('humiUp', this.tempAndHumi.humiUp)
+									uni.setStorageSync('tempDown', this.tempAndHumi.tempDown)
+									uni.setStorageSync('tempUp', this.tempAndHumi.tempUp)	
+								}
+							})
+						}
+						
+					})
+					
+				}
+			}
 
 		}
 	};
